@@ -1,7 +1,7 @@
 # GFG-Daily-Solutions
 Welcome to GFG-Daily-Solutions! 🚀 Here you can find solutions to the Problem of the Day (POTD) and other interesting problems from GeeksforGeeks.
 
-##📜 Table of Contents 📜
+## 📜 Table of Contents 📜
 
 For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- Any Questions. Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
