@@ -1,16 +1,23 @@
-## Table of Contents
+# GFG-Daily-Solutions
+Welcome to GFG-Daily-Solutions! 🚀 Here you can find solutions to the Problem of the Day (POTD) and other interesting problems from GeeksforGeeks.
 
-- [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)
-- [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/March%202024%20GFG%20SOLUTION)
-  - [Day 1: Peak Element](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/01(March)%20Peak%20element.md)
-  - [Day 2: First Element to Occur k Times](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/02(March)%20First%20element%20to%20occur%20k%20times.md)
-  - [Day 3: Largest Number Formed from an Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/03(March)%20Largest%20Number%20formed%20from%20an%20Array.md)
-  - [Day 4: Swap the Array Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/04(March)%20Swap%20the%20array%20elements.md)
-  - [Day 5: Maximum Index](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/05(March)%20Maximum%20Index.md)
-  - [Day 6: Search Pattern (Rabin-Karp Algorithm)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/06(March)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md)
-  - [Day 7: Longest Repeating and Non-overlapping Substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/07(March)%20Longest%20repeating%20and%20non-overlapping%20substring.md)
-  - [Day 8: Check if Frequencies Can Be Equal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/08(March)%20Check%20if%20frequencies%20can%20be%20equal.md)
-  - [Day 9: Find the N-th Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/09(March)%20Find%20the%20N-th%20character.md)
+##📜 Table of Contents 📜
+
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- Any Questions. Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+
+⭐ Star this repository if you find it helpful or intriguing! ⭐
+
+- [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
+- [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/March%202024%20GFG%20SOLUTION)💡
+  - [Day 1: Peak Element](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/01(March)%20Peak%20element.md)🏔️
+  - [Day 2: First Element to Occur k Times](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/02(March)%20First%20element%20to%20occur%20k%20times.md)🔄
+  - [Day 3: Largest Number Formed from an Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/03(March)%20Largest%20Number%20formed%20from%20an%20Array.md)🔢
+  - [Day 4: Swap the Array Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/04(March)%20Swap%20the%20array%20elements.md)↔️
+  - [Day 5: Maximum Index](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/05(March)%20Maximum%20Index.md)📈
+  - [Day 6: Search Pattern (Rabin-Karp Algorithm)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/06(March)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md)🔍
+  - [Day 7: Longest Repeating and Non-overlapping Substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/07(March)%20Longest%20repeating%20and%20non-overlapping%20substring.md)🔠
+  - [Day 8: Check if Frequencies Can Be Equal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/08(March)%20Check%20if%20frequencies%20can%20be%20equal.md)✅
+  - [Day 9: Find the N-th Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/09(March)%20Find%20the%20N-th%20character.md)🔤
 
 ## Introduction
 
