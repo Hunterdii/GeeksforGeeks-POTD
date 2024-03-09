@@ -24,22 +24,29 @@ This approach essentially scans through the string, considering all possible sub
 
 ```cpp
 class Solution {
-public:
-    string longestSubstring(string s, int n) {
-        int nax = 0, i = 0, j = 0;
-        string out = "-1";
+  public:
+    string longestSubstring(string S, int N) {
+        // code here
+        int maxLen = 0;
+        string ans = "-1";
+        int i = 0, j = 0;
     
-        for( ; i < n && j < n; ++j) {
-            string str = s.substr(i, j - i + 1);
+        while (i < N && j < N) {
+            string subString = S.substr(i, j - i + 1);
     
-            if (nax < str.size() && s.find(str, j + 1) != string::npos) {
-                nax = str.size();
-                out = str;
-            } else 
-                ++i;
+            if (S.find(subString, j + 1) != string::npos) {
+                int len = subString.length();
+                if (len > maxLen) {
+                    maxLen = len;
+                    ans = subString;
+                }
+            } else {
+                i++;
+            }
+            j++;
         }
-        return out;
-    }
+        return ans;
+    }
 };
 ```
 
