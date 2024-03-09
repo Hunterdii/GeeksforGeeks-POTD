@@ -1,4 +1,4 @@
-# GeeksforGeeks-POTD(Problem Of The Day) MARCH 2024
+# GeeksforGeeks-POTD(Problem Of The Day) 2024
 ## Solutions for 2024
 
 Greetings! Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Problem of the Day for the **year 2024**.
