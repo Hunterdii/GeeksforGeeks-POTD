@@ -19,6 +19,8 @@ Thank you for your input; together, we strive to create a space where learning i
   - [Day 7: Longest Repeating and Non-overlapping Substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/07(March)%20Longest%20repeating%20and%20non-overlapping%20substring.md)🔠
   - [Day 8: Check if Frequencies Can Be Equal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/08(March)%20Check%20if%20frequencies%20can%20be%20equal.md)✅
   - [Day 9: Find the N-th Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/09(March)%20Find%20the%20N-th%20character.md)🔤
+  - [Day 10: Remove Duplicate Characters](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/10(March)%20Remove%20all%20duplicates%20from%20a%20given%20string.md)🔠✂️
+
 
 ## Introduction
 
@@ -41,3 +43,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 MAR) :* Check if frequencies can be equal
 
 *Day 9(09 MAR) :* Find the N-th character
+
+*Day 10(10 MAR) :* Remove Duplicate Characters
