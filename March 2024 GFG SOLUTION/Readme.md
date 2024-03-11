@@ -1,10 +1,6 @@
-# GFG-Daily-Solutions
-Welcome to GFG-Daily-Solutions! 🚀 Here you can find solutions to the Problem of the Day (POTD) and other interesting problems from GeeksforGeeks.
-
 ## 📜 Table of Contents 📜
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). 
-Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
@@ -20,7 +16,7 @@ Thank you for your input; together, we strive to create a space where learning i
   - [Day 8: Check if Frequencies Can Be Equal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/08(March)%20Check%20if%20frequencies%20can%20be%20equal.md)✅
   - [Day 9: Find the N-th Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/09(March)%20Find%20the%20N-th%20character.md)🔤
   - [Day 10: Remove Duplicate Characters](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/10(March)%20Remove%20all%20duplicates%20from%20a%20given%20string.md)🔠✂️
-
+  - [Day 11: Count Pairs Sum in Matrices](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/11(March)%20Count%20pairs%20Sum%20in%20matrices.md)🔢
 
 ## Introduction
 
@@ -45,3 +41,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 9(09 MAR) :* Find the N-th character
 
 *Day 10(10 MAR) :* Remove Duplicate Characters
+
+*Day 11(11 MAR) :* Count Pairs Sum in Matrices
