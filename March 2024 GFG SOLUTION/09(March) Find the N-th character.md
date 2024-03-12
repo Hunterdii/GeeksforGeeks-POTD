@@ -1,7 +1,7 @@
 ## 09. Find the N-th character
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-the-n-th-character5925/1)
 
-### Improved Approach Explanation
+### My Approach 
 
 1. **Initialization:**
    - Start by determining the length of the input string `s` and store it in a variable called `len`. This gives us the number of characters we need to manipulate.
