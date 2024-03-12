@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 9: Find the N-th Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/09(March)%20Find%20the%20N-th%20character.md)🔤
   - [Day 10: Remove Duplicate Characters](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/10(March)%20Remove%20all%20duplicates%20from%20a%20given%20string.md)🔠✂️
   - [Day 11: Count Pairs Sum in Matrices](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/11(March)%20Count%20pairs%20Sum%20in%20matrices.md)🔢
+  - [Day 12: Generalised Fibonacci Numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/12(March)%20Generalised%20Fibonacci%20numbers.md)🔢
 
 ## Introduction
 
@@ -43,3 +44,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 10(10 MAR) :* Remove Duplicate Characters
 
 *Day 11(11 MAR) :* Count Pairs Sum in Matrices
+
+*Day 12(12 MAR) :* Generalised Fibonacci Numbers
