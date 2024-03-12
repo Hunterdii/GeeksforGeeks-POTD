@@ -1,5 +1,8 @@
+//{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
+
+// } Driver Code Ends
 
 #define ll long long
 
@@ -42,17 +45,18 @@ public:
     }
 };
 
-int main()
-{
+//{ Driver Code Starts.
+int main() {
     int t;
     cin >> t;
-    while (t--)
-    {
-        long long a, b, c, n, m;
-        cin >> a >> b >> c >> n >> m;
+    while (t--) {
+        long long a,b,c,n,m;
+        
+        cin>>a>>b>>c>>n>>m;
 
         Solution ob;
-        cout << ob.genFibNum(a, b, c, n, m) << endl;
+        cout << ob.genFibNum(a,b,c,n,m) << endl;
     }
-    return 0;
+    return 0;
 }
+// } Driver Code Ends
