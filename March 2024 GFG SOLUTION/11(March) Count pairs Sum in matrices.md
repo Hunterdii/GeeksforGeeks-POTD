@@ -1,5 +1,5 @@
 ## 11. Count Pairs with Given Sum in Two Sorted Matrices
-
+The problem statement can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-pairs-sum-in-matrices4332/1)
 Given two sorted matrices `mat1` and `mat2` of size n x n, each containing numbers arranged in strictly ascending order, with each row sorted from left to right, and the last element of a row being smaller than the first element of the next row. The task is to find and count all pairs {a, b} such that 'a' is from `mat1` and 'b' is from `mat2`, where the sum of 'a' and 'b' is equal to a given target value, 'x'.
 
 ### Approach Explanation
