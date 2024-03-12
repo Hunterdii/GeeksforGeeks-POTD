@@ -2,7 +2,7 @@
 
 The problem statement can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1)
 
-### Approach Explanation
+### My Approach
 
 1. **Initialization:**
    - Initialize an empty unordered set `seen` to store characters that have been encountered.
