@@ -1,7 +1,3 @@
-Certainly! Here's the updated README content for your solution dated 12th March:
-
----
-
 ## 12. Generalised Fibonacci Numbers
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/generalised-fibonacci-numbers1820/1)
