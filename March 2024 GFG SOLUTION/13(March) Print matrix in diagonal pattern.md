@@ -1,35 +1,51 @@
-## 02. First element to occur k times
+## 13. Print Matrix in Diagonal Pattern
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/print-matrix-in-diagonal-pattern/1)
+
+### Problem Description
+
+Given a square matrix `mat[][]` of size `n*n`, the task is to determine the diagonal pattern which is a linear arrangement of the elements of the matrix as depicted in the following example:
+
+**Example:**
+```
+Input:
+n = 3
+mat[][] = {{1, 2, 3},
+           {4, 5, 6},
+           {7, 8, 9}}
+Output: {1, 2, 4, 7, 5, 3, 6, 8, 9}
+```
+
+**Explaination:**
+- Starting from (0, 0): 1,
+- Move to the right to (0, 1): 2,
+- Move diagonally down to (1, 0): 4,
+- Move diagonally down to (2, 0): 7,
+- Move diagonally up to (1, 1): 5,
+- Move diagonally up to (1, 2): 3,
+- Move to the right to (2, 1): 6,
+- Move diagonally up to (0, 2): 8,
+- Move diagonally up to (2, 2): 9
+
+**Your Task:**
+
+You only need to implement the given function `matrixDiagonally()` which takes a matrix `mat[][]` of size `n*n` as an input and returns a list of integers containing the matrix diagonally. Do not read input, instead use the arguments given in the function.
+
+**Expected Time Complexity:** O(n*n).
+**Expected Auxiliary Space:** O(1).
+
+**Constraints:**
+- 1 <= n <= 100
+- -100 <= elements of matrix <= 100
 
 ### My Approach
 
-1. *Initialization:*
-   - Initialize an empty vector res to store pairs of coordinates and values.
-   - Initialize variables n to store the size of the matrix.
-
-2. *Iterating through the Matrix:*
-   - Iterate through the matrix using nested loops.
-   - For each element, determine its diagonal order:
-     - If the sum of row index and column index is even, the order is row-first.
-     - If the sum is odd, the order is column-first.
-   - Store the pair of coordinates and value in res.
-
-3. *Sorting:*
-   - Sort the vector res based on the sum of row and column indices.
-   - If the sums are equal, prioritize the pair with a smaller column index.
-
-4. *Extracting Diagonal Order:*
-   - Iterate through the sorted vector and extract the values, storing them in a separate vector diagonalOrder.
-
-5. *Return Diagonal Order:*
-   - Return the diagonalOrder vector representing the matrix elements in diagonal order.
-
-### Time and Auxiliary Space Complexity
-
-- *Time Complexity*: O(n^2), where n is the size of the matrix.
-- *Auxiliary Space Complexity*: O(n^2), since the vector res stores pairs for all elements of the matrix.
+1. We iterate through the matrix and store the elements along with their positions in a vector of pairs.
+2. We sort the vector of pairs based on the positions in such a way that elements with the same sum of indices (i+j) are sorted in ascending order.
+3. Finally, we extract the elements from the sorted vector and return them as the diagonal pattern.
 
 ### Code (C++)
+
 ```cpp
 class Solution{
 public:
@@ -65,8 +81,6 @@ public:
     }
 };
 ```
-
-### Contribution and Support
 
 For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). 
 Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
