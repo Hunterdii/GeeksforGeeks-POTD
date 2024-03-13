@@ -5,6 +5,9 @@ The problem can be found at the following link: [Question Link](https://www.geek
 ### Problem Description
 
 Given a square matrix `mat[][]` of size `n*n`, the task is to determine the diagonal pattern which is a linear arrangement of the elements of the matrix as depicted in the following example:
+<br/>
+<br/>
+![matrix-6](https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/711ce360-6e07-4bfb-9ad3-d97ecba15427)
 
 **Example:**
 ```
