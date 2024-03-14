@@ -1,7 +1,4 @@
-#User function Template for python3
-
 # User function Template for python3
-
 class Solution:
     def largestSubsquare(self, n, a):
         v1 = [[0 for _ in range(n)] for _ in range(n)]
