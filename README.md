@@ -22,6 +22,37 @@ Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Probl
 
 4. **Engage with the Community**: Share your insights, ask questions, or discuss alternative solutions with fellow programmers. Collaboration accelerates learning and fosters a supportive environment.
 
+5. **Feel free to use, modify, or learn from these solutions**: If you find any issues or improvements, please follow the [Contribution Guidelines](#contribution-guidelines) to contribute.
+
+## Languages Used
+
+- C++
+- Python
+- Java
+
+
+## Directory Structure
+
+The repository is organized into folders, each representing a specific GeeksforGeeks problem. Inside each folder, you'll find the solution file(s) and any additional resources.
+
+
+## How to Use
+
+You can browse the solutions by navigating through the folders corresponding to specific GeeksforGeeks problems. Each folder contains the solution file(s) and may include additional information or resources related to the problem.
+
+Feel free to use, modify, or learn from these solutions. If you find any issues or improvements, please follow the [Contribution Guidelines](#contribution-guidelines) to contribute.
+
+## Contribution Guidelines
+
+If you'd like to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make changes and commit them.
+4. Submit a pull request, explaining the changes you made.
+
+Please ensure your code follows the existing coding style and includes appropriate comments.
+
 ## Start Exploring!
 
 To begin your journey through the GeeksforGeeks Problem of the Day solutions for 2024, simply browse through the directory and select a problem that interests you. Happy coding!
