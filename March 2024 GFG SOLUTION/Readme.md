@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Print matrix in diagonal pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/13(March)%20Print%20matrix%20in%20diagonal%20pattern.md)🔀
   - [Day 14: Print matrix in diagonal pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/14(March)%20Largest%20subsquare%20surrounded%20by%20X.md)🔄
   - [Day 15: Linked List that is Sorted Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/15(March)%20Linked%20List%20that%20is%20Sorted%20Alternatingly.md)🧮
+  - [Day 16: Delete without head pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/16(March)%20Delete%20Node%20without%20Head%20Pointer.md)✂️💥
 
 ## Introduction
 
@@ -55,3 +56,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 MAR) :* Largest subsquare surrounded by X
 
 *Day 15(15 MAR) :* Linked List that is Sorted Alternatingly
+
+*Day 16(16 MAR) :* Delete without head pointer
+
