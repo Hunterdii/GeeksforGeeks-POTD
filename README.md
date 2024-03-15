@@ -1,9 +1,17 @@
 # GeeksforGeeks Problem of the Day Solutions 2024
+![GeeksforGeeks-POTD](https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%20%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Auto)
 
 Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Problem of the Day for the year 2024.
+## Table of Contents
 
+- [Introduction](#introduction)
+- [Languages Used](#languages-used)
+- [Directory Structure](#directory-structure)
+- [How To Use This Repository?](#how-to-use-this-repository)
+- [Contribution Guidelines](#contribution-guidelines)
+
+## Introduction
 ## Why explore this repository?
-
 1. **Daily Practice**: Practice makes perfect. By reviewing these solutions daily, you can enhance your problem-solving skills and programming techniques.
 
 2. **Diverse Topics**: The problems cover a wide range of topics including algorithms, data structures, dynamic programming, mathematics, and more. This variety helps you broaden your understanding of different concepts.
@@ -12,7 +20,7 @@ Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Probl
 
 4. **Community Collaboration**: Feel free to contribute your own solutions or suggest improvements to existing ones. Collaboration fosters learning and helps in building a stronger programming community.
 
-## How to use this repository?
+## How To Use This Repository?
 
 1. **Navigation**: Explore the directory to find solutions for each daily problem. The problems are organized chronologically, making it easy to locate specific ones.
 
@@ -35,12 +43,6 @@ Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Probl
 
 The repository is organized into folders, each representing a specific GeeksforGeeks problem. Inside each folder, you'll find the solution file(s) and any additional resources.
 
-
-## How to Use
-
-You can browse the solutions by navigating through the folders corresponding to specific GeeksforGeeks problems. Each folder contains the solution file(s) and may include additional information or resources related to the problem.
-
-Feel free to use, modify, or learn from these solutions. If you find any issues or improvements, please follow the [Contribution Guidelines](#contribution-guidelines) to contribute.
 
 ## Contribution Guidelines
 
