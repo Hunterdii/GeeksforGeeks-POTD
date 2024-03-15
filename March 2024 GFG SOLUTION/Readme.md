@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 12: Generalised Fibonacci Numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/12(March)%20Generalised%20Fibonacci%20numbers.md)🔢
   - [Day 13: Print matrix in diagonal pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/13(March)%20Print%20matrix%20in%20diagonal%20pattern.md)🔀
   - [Day 14: Print matrix in diagonal pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/14(March)%20Largest%20subsquare%20surrounded%20by%20X.md)🔄
+  - - [Day 15: Linked List that is Sorted Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/15(March)%20Linked%20List%20that%20is%20Sorted%20Alternatingly.md)🔗
 
 ## Introduction
 
@@ -52,3 +53,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 13(13 MAR) :* Print matrix in diagonal pattern
 
 *Day 14(14 MAR) :* Largest subsquare surrounded by X
+
+*Day 15(15 MAR) :* Linked List that is Sorted Alternatingly
