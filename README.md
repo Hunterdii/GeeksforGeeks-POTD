@@ -1,4 +1,4 @@
-# GeeksforGeeks Problem of the Day Solutions 2024
+# GeeksforGeeks Problem of the Day Solutions 2024    [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/March%202024%20GFG%20SOLUTION)
 ![GeeksforGeeks-POTD](https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%20%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&name=1&owner=1&pattern=Solid&stargazers=1&theme=Auto)
 
 Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Problem of the Day for the year 2024.
