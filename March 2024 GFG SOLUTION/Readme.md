@@ -1,6 +1,6 @@
 ## 📜 Table of Contents 📜
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input, together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 14: Print matrix in diagonal pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/14(March)%20Largest%20subsquare%20surrounded%20by%20X.md)🔄
   - [Day 15: Linked List that is Sorted Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/15(March)%20Linked%20List%20that%20is%20Sorted%20Alternatingly.md)🧮
   - [Day 16: Delete without head pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/16(March)%20Delete%20Node%20without%20Head%20Pointer.md)✂️💥
+  - [Day 17: Count Pairs whose sum is equal to X](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/17(March)%20Count%20Pairs%20whose%20sum%20is%20equal%20to%20X.md)🔢⏳
 
 ## Introduction
 
@@ -58,4 +59,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 MAR) :* Linked List that is Sorted Alternatingly
 
 *Day 16(16 MAR) :* Delete without head pointer
+
+*Day 17(17 MAR) :* Count Pairs whose sum is equal to X
 
