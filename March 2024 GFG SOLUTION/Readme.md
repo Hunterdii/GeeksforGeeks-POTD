@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Linked List that is Sorted Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/15(March)%20Linked%20List%20that%20is%20Sorted%20Alternatingly.md)🧮
   - [Day 16: Delete without head pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/16(March)%20Delete%20Node%20without%20Head%20Pointer.md)✂️💥
   - [Day 17: Count Pairs whose sum is equal to X](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/17(March)%20Count%20Pairs%20whose%20sum%20is%20equal%20to%20X.md)🔢⏳
+  - [Day 18: Level order traversal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/18(March)%20Level%20order%20traversal.md)🌳🚶‍♂️
 
 ## Introduction
 
@@ -62,3 +63,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 17(17 MAR) :* Count Pairs whose sum is equal to X
 
+*Day 18(18 MAR) :* Level order traversal
