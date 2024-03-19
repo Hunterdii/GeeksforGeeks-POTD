@@ -1,4 +1,4 @@
-## 19. Maximum Weight Paths
+## 19. Possible Paths in a Tree
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/possible-paths--141628/1)
 
