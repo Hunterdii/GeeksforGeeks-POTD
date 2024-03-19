@@ -8,76 +8,66 @@ using namespace std;
 //User function template for C++
 
 
-
 class Solution {
-private:
-    int res = 0;
-    vector<int> parent;
-    vector<int> size;
 public:
-    static bool cmp(vector<int>& C1, vector<int>& C2) {
-        return C1[2] < C2[2];
-    }
-
-    int get(int x) {
-        return x * (x - 1) / 2;
-    }
-
-    int FIND(int node) {
-        if (parent[node] == node) {
-            return node;
-        }
-        return parent[node] = FIND(parent[node]);
-    }
-
-    void MERGE(int node1, int node2) {
-        int PN1 = FIND(node1);
-        int PN2 = FIND(node2);
-        if (PN1 == PN2) {
-            return;
-        }
-        res -= get(size[PN1]);  // remove old dependency
-        res -= get(size[PN2]);
-        if (size[PN1] > size[PN2]) {
-            parent[PN2] = PN1;
-            size[PN1] += size[PN2];
-            res += get(size[PN1]);  // add answer for new component
-            size[PN2] = 0;
-        }
-        else {
-            parent[PN1] = PN2;
-            size[PN2] += size[PN1];
-            res += get(size[PN2]);
-            size[PN1] = 0;
-        }
-    }
-
     vector<int> maximumWeight(int n, vector<vector<int>>& edges, int q, vector<int>& queries) {
-        parent.resize(n + 1);
-        size.resize(n + 1, 1);
+        vector<int> parent(n + 1), sz(n + 1), res;
+        int ans = 0;
         for (int i = 0; i <= n; i++) {
             parent[i] = i;
+            sz[i] = 1;
         }
-        vector<pair<int, int>> newQ;
+        
+        vector<pair<int, pair<int, int>>> wt;
+        for (auto& edge : edges)
+            wt.push_back({edge[2], {edge[0], edge[1]}});
+        
+        sort(wt.begin(), wt.end());
+        
+        map<int, int> mp;
+        for (auto& edge : wt) {
+            int a = edge.first;
+            int b = edge.second.first;
+            int c = edge.second.second;
+            mp[a] = Union(b, c, parent, sz, ans);
+        }
+        
         for (int i = 0; i < q; i++) {
-            newQ.push_back({ queries[i], i });
-        }
-        sort(newQ.begin(), newQ.end());
-        sort(edges.begin(), edges.end(), cmp);
-        vector<int> ans(q, 0);
-        int i = 0;
-        for (int k = 0; k < q; k++) {
-            while (i < edges.size() && edges[i][2] <= newQ[k].first) {
-                MERGE(edges[i][0], edges[i][1]);
-                i++;
+            auto val = mp.upper_bound(queries[i]);
+            if (val == mp.begin())
+                res.push_back(0);
+            else {
+                val--;
+                res.push_back(val->second);
             }
-            ans[newQ[k].second] = res;
         }
+        return res;
+    }
+    
+private:
+    int root(int i, vector<int>& parent) {
+        while (parent[i] != i) {
+            parent[i] = parent[parent[i]];
+            i = parent[i];
+        }
+        return i;
+    }
+
+    int Union(int a, int b, vector<int>& parent, vector<int>& sz, int& ans) {
+        int ra = root(a, parent);
+        int rb = root(b, parent);
+        if (ra == rb)
+            return sz[ra] * sz[ra];
+        if (sz[ra] < sz[rb]) {
+            swap(ra, rb);
+            swap(a, b);
+        }
+        ans += sz[ra] * sz[rb];
+        parent[rb] = ra;
+        sz[ra] += sz[rb];
         return ans;
     }
 };
-
-
 
 
 
@@ -119,4 +109,4 @@ int main()
     return 0;
 }
 
-// } Driver Code Ends
+// } Driver Code Ends
