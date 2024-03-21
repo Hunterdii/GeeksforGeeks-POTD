@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 18: Level order traversal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/18(March)%20Level%20order%20traversal.md)🛤️
   - [Day 19: Possible Paths in a Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/19(March)%20Possible%20Paths%20in%20a%20Tree.md):🌳🚶‍♂️
   - [Day 20: Sum of nodes on the longest path from root to leaf node](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/20(March)%20Sum%20of%20nodes%20on%20the%20longest%20path%20from%20root%20to%20leaf%20node.md)🍃
+  - [Day 21: ZigZag Tree Traversal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/21(March)%20ZigZag%20Tree%20Traversal.md)🔀🌳
 
 ## Introduction
 
@@ -70,3 +71,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 MAR) :* Possible Paths in a Tree
 
 *Day 20(20 MAR) :* Sum of nodes on the longest path from root to leaf node
+
+*Day 21(21 MAR) :* ZigZag Tree Traversal
