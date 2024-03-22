@@ -28,7 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Sum of nodes on the longest path from root to leaf node](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/20(March)%20Sum%20of%20nodes%20on%20the%20longest%20path%20from%20root%20to%20leaf%20node.md)🍃
   - [Day 21: ZigZag Tree Traversal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/21(March)%20ZigZag%20Tree%20Traversal.md)🔀🌳
   - [Day 22: Diagonal sum in binary tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/22(March)%20Diagonal%20sum%20in%20binary%20tree.md)🌳➕
-
+  - [Day 23: Fibonacci series up to Nth term](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/23(March)%20Fibonacci%20series%20up%20to%20Nth%20term.md)🌈0️⃣1️⃣🌀
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -76,4 +76,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 MAR) :* ZigZag Tree Traversal
 
 *Day 22(22 MAR) :* Diagonal sum in binary tree
+
+*Day 23(23 MAR) :* Fibonacci series up to Nth term
+
 
