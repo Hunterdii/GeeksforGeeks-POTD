@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 21: ZigZag Tree Traversal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/21(March)%20ZigZag%20Tree%20Traversal.md)🔀🌳
   - [Day 22: Diagonal sum in binary tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/22(March)%20Diagonal%20sum%20in%20binary%20tree.md)🌳➕
   - [Day 23: Fibonacci series up to Nth term](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/23(March)%20Fibonacci%20series%20up%20to%20Nth%20term.md)🌈0️⃣1️⃣🌀
+  - [Day 24: Insert an Element at the Bottom of a Stack](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/24(March)%20Insert%20an%20Element%20at%20the%20Bottom%20of%20a%20Stack.md)📥➡️🔽
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -79,4 +80,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 23(23 MAR) :* Fibonacci series up to Nth term
 
-
+*Day 24(24 MAR) :* Insert an Element at the Bottom of a Stack
