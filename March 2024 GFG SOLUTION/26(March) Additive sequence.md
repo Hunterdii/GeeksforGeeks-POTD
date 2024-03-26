@@ -1,4 +1,4 @@
-## 25. Additive Sequence
+## 26. Additive Sequence
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/additive-sequence/1)
 
