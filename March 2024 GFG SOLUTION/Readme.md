@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 24: Insert an Element at the Bottom of a Stack](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/24(March)%20Insert%20an%20Element%20at%20the%20Bottom%20of%20a%20Stack.md)📥➡️🔽
   - [Day 25: Print N-bit binary numbers having more 1s than 0s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/25(March)%20Print%20N-bit%20binary%20numbers%20having%20more%201s%20than%200s.md)⚫️⚪️🔣
   - [Day 26: Additive sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/26(March)%20Additive%20sequence.md)➕🧩
+  - [Day 27: Find shortest safe route in a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/27(March)%20Find%20shortest%20safe%20route%20in%20a%20matrix.md)🏁🚶‍♂️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -87,3 +88,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 25(25 MAR) :* Print N-bit binary numbers having more 1s than 0s
 
 *Day 26(26 MAR) :* Additive sequence
+
+*Day 27(27 MAR) :* Find shortest safe route in a matrix
