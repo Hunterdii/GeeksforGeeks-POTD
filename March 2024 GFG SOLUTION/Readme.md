@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 25: Print N-bit binary numbers having more 1s than 0s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/25(March)%20Print%20N-bit%20binary%20numbers%20having%20more%201s%20than%200s.md)⚫️⚪️🔣
   - [Day 26: Additive sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/26(March)%20Additive%20sequence.md)➕🧩
   - [Day 27: Find shortest safe route in a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/27(March)%20Find%20shortest%20safe%20route%20in%20a%20matrix.md)🏁🚶‍♂️
+  - [Day 28: City With the Smallest Number of Neighbors at a Threshold Distance](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/28(March)%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance.md)🏙️🏃‍♂️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -90,3 +91,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 MAR) :* Additive sequence
 
 *Day 27(27 MAR) :* Find shortest safe route in a matrix
+
+*Day 28(28 MAR) :* City With the Smallest Number of Neighbors at a Threshold Distance
