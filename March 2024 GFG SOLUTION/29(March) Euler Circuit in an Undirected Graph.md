@@ -8,8 +8,6 @@ Given the number of vertices `v` and an adjacency list `adj` denoting a directed
 
 **Example:**
 
-![image](https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/2028909c-f65e-4c45-92a8-13a2fdcb7a22)
-
 
 Input:
 ```
@@ -19,6 +17,12 @@ edges[] = {{0, 1},
            {1, 3}, 
            {2, 3}}
 ```
+
+<p align="center">
+  <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/2028909c-f65e-4c45-92a8-13a2fdcb7a22" alt="Image" />
+</p>
+
+
 Output:
 ```
 1
