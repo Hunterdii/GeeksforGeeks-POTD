@@ -35,6 +35,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 27: Find shortest safe route in a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/27(March)%20Find%20shortest%20safe%20route%20in%20a%20matrix.md)🏁🚶‍♂️
   - [Day 28: City With the Smallest Number of Neighbors at a Threshold Distance](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/28(March)%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance.md)🏙️🏃‍♂️
   - [Day 29: Euler Circuit in an Undirected Graph](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/29(March)%20Euler%20Circuit%20in%20an%20Undirected%20Graph.md)🏞️🎢
+  - [Day 30: Minimum element in BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/March%202024%20GFG%20SOLUTION/30(March)%20Minimum%20element%20in%20BST.md)🌱⬇️
+
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -96,3 +98,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 MAR) :* City With the Smallest Number of Neighbors at a Threshold Distance
 
 *Day 29(29 MAR) :* Euler Circuit in an Undirected Graph
+
+*Day 30(30 MAR) :* Minimum element in BST
