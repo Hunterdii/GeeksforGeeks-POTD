@@ -17,7 +17,7 @@ Output:
 Explanation: 
 The greatest element in the tree which is less than or equal to 24 is 21. Searching will be like 5 -> 12 -> 21.
 
-#### Approach 1:
+### Approach 1 (Iterative Inorder Traversal):
 
 1. **Traversal:**
    - Start traversing the BST from the root.
@@ -29,8 +29,8 @@ The greatest element in the tree which is less than or equal to 24 is 21. Search
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** \( O(\text{Height of the BST}) \), as we traverse the BST till we find the greatest number less than or equal to \( N \).
-- **Expected Auxiliary Space Complexity:** \( O(1) \), as we use only a constant amount of additional space.
+- **Expected Time Complexity:** O(height of the BST), as we perform traversal up to the height of the BST.
+- **Expected Auxiliary Space Complexity:** O(1), as we use only constant extra space.
 
 ### Code (C++)
 
@@ -52,7 +52,7 @@ public:
 };
 ```
 
-#### Approach 2:
+### Approach 2 (Recursive Inorder Traversal):
 
 1. **Recursion:**
    - Perform an inorder traversal of the BST.
@@ -63,8 +63,8 @@ public:
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** \( O(\text{Height of the BST}) \), as we traverse the BST till we find the greatest number less than or equal to \( N \).
-- **Expected Auxiliary Space Complexity:** \( O(\text{Height of the BST}) \), due to the recursive function call stack.
+- **Expected Time Complexity:** O(height of the BST), as we perform traversal up to the height of the BST.
+- **Expected Auxiliary Space Complexity:** O(height of the BST), as the recursive stack space will be proportional to the height of the BST.
 
 ### Code (C++)
 
@@ -88,7 +88,7 @@ public:
 };
 ```
 
-#### Approach 3:
+### Approach 3 (Recursive Single Traversal):
 
 1. **Recursion with Optimization:**
    - Recursively traverse the BST.
@@ -100,8 +100,8 @@ public:
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** \( O(\text{Height of the BST}) \), as we traverse the BST till we find the greatest number less than or equal to \( N \).
-- **Expected Auxiliary Space Complexity:** \( O(\text{Height of the BST}) \), due to the recursive function call stack.
+- **Expected Time Complexity:** O(height of the BST), as we perform traversal up to the height of the BST.
+- **Expected Auxiliary Space Complexity:** O(height of the BST), as the recursive stack space will be proportional to the height of the BST.
 
 ### Code (C++)
 
