@@ -6,11 +6,11 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/March%202024%20GFG%20SOLUTION)💡
-  - [Day 1: Pairs violating the BST property]()🏔️
+  - [Day 1: Pairs violating the BST property](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/01(April)%20Pairs%20violating%20the%20BST%20property.md)🌳🚫
 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-*Day 1(01 MAR) :* Pairs violating the BST property
+*Day 1(01 APR) :* Pairs violating the BST property
 
