@@ -9,6 +9,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 1: Pairs violating the BST property](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/01(April)%20Pairs%20violating%20the%20BST%20property.md)🌳🚫
   - [Day 2: Minimum Absolute Difference In BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/02(April)%20Minimum%20Absolute%20Difference%20In%20BST.md)🌳↔️
   - [Day 3: Kth common ancestor in BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/03(April)%20Kth%20common%20ancestor%20in%20BST.md)🌳🕵️‍♂️
+  - [Day 4:Sum of all substrings of a number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/04(April)%20Sum%20of%20all%20substrings%20of%20a%20number.md)🔢💻
+
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -18,3 +20,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 2(02 APR) :* Minimum Absolute Difference In BST
 
 *Day 3(03 APR) :* Kth common ancestor in BST
+
+*Day 4(04 APR) :* Sum of all substrings of a number
