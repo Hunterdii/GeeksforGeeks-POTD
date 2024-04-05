@@ -1,4 +1,4 @@
-## 05. Convert to Strictly Increasing Array
+## 05. Strictly Increasing Array
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/convert-to-strictly-increasing-array3351/1)
 
