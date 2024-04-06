@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 4: Sum of all substrings of a number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/04(April)%20Sum%20of%20all%20substrings%20of%20a%20number.md)🔢💻
   - [Day 5: Strictly Increasing Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/05(April)%20Strictly%20Increasing%20Array.md)📈🔼🔢
   - [Day 6: Count ways to N'th Stair](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/06(April)%20Count%20Ways%20to%20N'th%20Stair.md)🔢🎢
+  - [Day 7: Maximize dot product](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/07(April)%20Maximize%20dot%20product.md)🎯📈 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -27,3 +28,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 5(05 APR) :* Strictly Increasing Array
 
 *Day 6(06 APR) :* Count ways to N'th Stair
+
+*Day 7(07 APR) :* Maximize dot product
