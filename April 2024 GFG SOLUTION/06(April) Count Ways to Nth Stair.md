@@ -1,4 +1,4 @@
-## 06. Count Ways to Nth Stair
+## 06. Count ways to N'th Stair
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-ways-to-nth-stairorder-does-not-matter1322/1)
 
