@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 7: Maximize dot product](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/07(April)%20Maximize%20dot%20product.md)🎯📈
   - [Day 8: Optimal Strategy For A Game](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/08(April)%20Optimal%20Strategy%20For%20A%20Game.md)🎮🤔
   - [Day 9: Minimum Points To Reach Destination](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/09(April)%20Minimum%20Points%20To%20Reach%20Destination.md)🏃‍♂️🎯
+  - [Day 10: Party of Couples](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/10(April)%20Party%20of%20Couples.md)👫🥂
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -36,3 +37,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 APR) :* Optimal Strategy For A Game
 
 *Day 9(09 APR) :* Minimum Points To Reach Destination
+
+*Day 10(10 APR) :* Party of Couples
