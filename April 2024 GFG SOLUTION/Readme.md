@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 12: Sum of Products](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/12(April)%20Sum%20of%20Products.md)🔢➕
   - [Day 13: Reverse Bits](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/13(April)%20Reverse%20Bits.md)🔀💻
   - [Day 14: Xoring and Clearing](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/14(April)%20Xoring%20and%20Clearing.md)⚙️🧹
+  - [Day 15: Count the elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/15(April)%20Count%20the%20elements.md)🔢🔝
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -51,3 +52,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 13(13 APR) :* Reverse Bits
 
 *Day 14(14 APR) :* Xoring and Clearing
+
+*Day 15(15 APR) :* Count the elements
