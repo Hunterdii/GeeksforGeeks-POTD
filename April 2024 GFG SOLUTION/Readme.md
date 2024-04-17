@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 14: Xoring and Clearing](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/14(April)%20Xoring%20and%20Clearing.md)⚙️🧹
   - [Day 15: Count the elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/15(April)%20Count%20the%20elements.md)🔢🔝
   - [Day 16: Minimize the Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/16(April)%20Minimize%20the%20Difference.md)⚖️🎯
+  - [Day 17: Count Pairs in an Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/17(April)%20%20Count%20Pairs%20in%20an%20Array.md)👫🔢
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -57,3 +58,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 APR) :* Count the elements
 
 *Day 16(16 APR) :* Minimize the Difference
+
+*Day 17(17 APR) :* Count Pairs in an Array
