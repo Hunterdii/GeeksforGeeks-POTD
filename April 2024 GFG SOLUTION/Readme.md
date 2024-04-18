@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Count the elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/15(April)%20Count%20the%20elements.md)🔢🔝
   - [Day 16: Minimize the Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/16(April)%20Minimize%20the%20Difference.md)⚖️🎯
   - [Day 17: Count Pairs in an Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/17(April)%20%20Count%20Pairs%20in%20an%20Array.md)👫🔢
+  - [Day 18: Two Repeated Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/18(April)%20Two%20Repeated%20Elements.md)🔁🔢
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -60,3 +61,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 APR) :* Minimize the Difference
 
 *Day 17(17 APR) :* Count Pairs in an Array
+
+*Day 18(18 APR) :* Two Repeated Elements
