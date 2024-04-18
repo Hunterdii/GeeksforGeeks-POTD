@@ -1,4 +1,4 @@
-## 17. 
+## 17. Count Pairs in an Array
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-pairs-in-an-array4145/1)
 
