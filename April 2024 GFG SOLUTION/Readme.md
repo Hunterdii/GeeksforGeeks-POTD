@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 18: Two Repeated Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/18(April)%20Two%20Repeated%20Elements.md)🔁🔢
   - [Day 19: Find missing in second array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/19(April)%20Find%20missing%20in%20second%20array.md)🔍➖
   - [Day 20: Union of Two Sorted Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/20(April)%20Union%20of%20Two%20Sorted%20Arrays.md)🔄🤝📝
+  - [Day 21: Three way partitioning](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/21(April)%20Three%20way%20partitioning.md)🔀📦
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -69,3 +70,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 APR) :* Find missing in second array
 
 *Day 20(20 APR) :* Union of Two Sorted Arrays
+
+*Day 21(21 APR) :* Three way partitioning
