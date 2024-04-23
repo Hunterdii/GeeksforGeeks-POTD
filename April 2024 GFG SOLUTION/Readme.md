@@ -27,7 +27,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 19: Find missing in second array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/19(April)%20Find%20missing%20in%20second%20array.md)🔍➖
   - [Day 20: Union of Two Sorted Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/20(April)%20Union%20of%20Two%20Sorted%20Arrays.md)🔄🤝📝
   - [Day 21: Three way partitioning](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/21(April)%20Three%20way%20partitioning.md)🔀📦
-  - [Day 22: Row with minimum number of 1's](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/22(April)%20Row%20with%20minimum%20number%20of%201's.md)🕵️‍♂️⏳
+  - [Day 22: Row with minimum number of 1's](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/22(April)%20Row%20with%20minimum%20number%20of%201's.md)👫👫⏳
+  - [Day 23: Rohan's Love for Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/23(April)%20Rohan's%20Love%20for%20Matrix.md)📐🔢🕵️‍♂️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -74,4 +75,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 21(21 APR) :* Three way partitioning
 
-Row with minimum number of 1's
+*Day 22(22 APR) :* Row with minimum number of 1's
+
+*Day 23(23 APR) :* Rohan's Love for Matrix
