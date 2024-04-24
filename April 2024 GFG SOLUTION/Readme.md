@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 21: Three way partitioning](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/21(April)%20Three%20way%20partitioning.md)🔀📦
   - [Day 22: Row with minimum number of 1's](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/22(April)%20Row%20with%20minimum%20number%20of%201's.md)👫👫⏳
   - [Day 23: Rohan's Love for Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/23(April)%20Rohan's%20Love%20for%20Matrix.md)📐🔢🕵️‍♂️
+  - [Day 24: Paths to reach origin](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/24(April)%20Paths%20to%20reach%20origin.md)🏃‍♂️🛣️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -78,3 +79,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 APR) :* Row with minimum number of 1's
 
 *Day 23(23 APR) :* Rohan's Love for Matrix
+
+*Day 24(24 APR) :* Paths to reach origin
