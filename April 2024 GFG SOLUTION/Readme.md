@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 23: Rohan's Love for Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/23(April)%20Rohan's%20Love%20for%20Matrix.md)📐🔢🕵️‍♂️
   - [Day 24: Paths to reach origin](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/24(April)%20Paths%20to%20reach%20origin.md)🏃‍♂️🛣️
   - [Day 25: Maximum sum of hour glass](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/25(April)%20Maximum%20Sum%20of%20Hourglass.md)⏳➕
+  - [Day 26: Exit Point in a Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/26(April)%20Exit%20Point%20in%20a%20Matrix.md)🚪🚶‍♂️🔢
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -84,3 +85,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 24(24 APR) :* Paths to reach origin
 
 *Day 25(25 APR) :* Maximum sum of hour glass
+
+*Day 26(26 APR) :* Exit Point in a Matrix
