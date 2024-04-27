@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 25: Maximum sum of hour glass](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/25(April)%20Maximum%20Sum%20of%20Hourglass.md)⏳➕
   - [Day 26: Exit Point in a Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/26(April)%20Exit%20Point%20in%20a%20Matrix.md)🚪🚶‍♂️🔢
   - [Day 27: Merge Sort on Doubly Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/27(April)%20Merge%20Sort%20on%20Doubly%20Linked%20List.md)🔄🔀🤝
+  - [Day 28: Delete Middle of Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/28(April)%20Delete%20Middle%20of%20Linked%20List.md)🗑️🚮🔗
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -90,3 +91,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 APR) :* Exit Point in a Matrix
 
 *Day 27(27 APR) :* Merge Sort on Doubly Linked List
+
+*Day 28(28 APR) :* Delete Middle of Linked List
