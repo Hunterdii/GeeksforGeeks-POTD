@@ -5,6 +5,9 @@
 <img src="https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark" alt="Image" width="750" />
 </p>!-->
 
+#### If you've got an ingenious solution or any questions, discussions, or insights regarding today's "Problem of the Day" solution, feel free to join our vibrant [discussion hub](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions). We eagerly await your input and strive to cultivate an environment where learning flourishes through collaboration. Let's dive in together!
+
+
 Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Problem of the Day for the year 2024.
 ## Table of Contents
 
