@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 27: Merge Sort on Doubly Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/27(April)%20Merge%20Sort%20on%20Doubly%20Linked%20List.md)🔄🔀🤝
   - [Day 28: Delete Middle of Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/28(April)%20Delete%20Middle%20of%20Linked%20List.md)🗑️🚮🔗
   - [Day 29: Remove every kth node](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/29(April)%20Remove%20every%20kth%20node.md)🧹🔗
+  - [Day 30: Add two numbers represented by linked lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/April%202024%20GFG%20SOLUTION/30(April)%20Add%20two%20numbers%20represented%20by%20linked%20lists.md)🔢➕
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -96,3 +97,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 APR) :* Delete Middle of Linked List
 
 *Day 29(29 APR) :* Remove every kth node
+
+*Day 30(30 APR) :* Add two numbers represented by linked lists
