@@ -7,7 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/May%202024%20GFG%20SOLUTION)💡
   - [Day 1: Arrange Consonants and Vowels](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/01(May)%20Arrange%20Consonants%20and%20Vowels.md)🅰️🅱️🔠
 
-
+## SORRY EXAM IS GOING FOR BEING LATE ☠️🥺!!
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
