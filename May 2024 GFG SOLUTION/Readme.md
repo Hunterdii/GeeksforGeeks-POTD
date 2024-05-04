@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 1: Arrange Consonants and Vowels](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/01(May)%20Arrange%20Consonants%20and%20Vowels.md)🅰️🅱️🔠
   - [Day 2: Serialize and deserialize a binary tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/02(May)%20Serialize%20and%20deserialize%20a%20binary%20tree.md)🌳📦🔍
   - [Day 3: K distance from root](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/03(May)%20K%20distance%20from%20root.md)🌳🏃‍♂️🔍
+  - [Day 4: Construct Binary Tree from Inorder and Postorder](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/04(May)%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder.md)🧱🔢🌳
 
 ## SORRY EXAM IS GOING FOR BEING LATE ☠️🥺!!
 ## Introduction
@@ -18,4 +19,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 2(02 MAY) :* Serialize and deserialize a binary tree
 
-Day 3(03 MAY) :* K distance from root
+*Day 3(03 MAY) :* K distance from root
+
+*Day 4(04 MAY) :* Construct Binary Tree from Inorder and Postorder
