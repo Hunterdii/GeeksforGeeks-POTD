@@ -14,6 +14,7 @@ The driver code will print the preorder traversal of the constructed tree.
    - \(n = 8\)
    - `in[] = {4, 8, 2, 5, 1, 6, 3, 7}`
    - `post[] = {8, 4, 5, 2, 6, 7, 3, 1}`
+   
    Output:
    ```
    1 2 4 8 5 3 6 7
