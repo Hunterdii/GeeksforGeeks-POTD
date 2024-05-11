@@ -9,10 +9,10 @@ class GFG {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(in.readLine());
         while (t-- > 0) {
-            int n = Integer.parseInt(in.readLine());
+            long n = Long.parseLong(in.readLine());
 
             Solution ob = new Solution();
-            List<Integer> ans = new ArrayList<Integer>();
+            List<Long> ans = new ArrayList<>();
             StringBuilder out = new StringBuilder();
             ans = ob.jugglerSequence(n);
             for (int i = 0; i < ans.size(); i++) out.append(ans.get(i) + " ");
@@ -26,16 +26,20 @@ class GFG {
 // User function Template for Java
 
 class Solution {
-    static List<Integer> jugglerSequence(int n) {
-        List<Integer> ans = new ArrayList<>();
-        ans.add(n);
+    static List<Long> jugglerSequence(long n) {
+        List<Long> res = new ArrayList<>();
+        res.add(n);
 
-        while (ans.get(ans.size() - 1) > 1) {
-            double sqrt_n = Math.sqrt(ans.get(ans.size() - 1));
-            int next_term = (ans.get(ans.size() - 1) % 2 == 0) ? (int) sqrt_n : (int) Math.pow(sqrt_n, 3);
-            ans.add(next_term);
+        while (n > 1) {
+            if (n % 2 == 1)
+                n = (long) (Math.sqrt(n) * n);
+            else
+                n = (long) Math.sqrt(n);
+
+            res.add(n);
         }
 
-        return ans;
+        return res;
     }
 }
+
