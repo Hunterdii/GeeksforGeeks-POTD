@@ -44,17 +44,20 @@ We start with 9 and use the Juggler Formula to generate the next terms until the
 ```cpp
 class Solution {
 public:
-    vector<int> jugglerSequence(int n) {
-        vector<int> ans;
-        ans.push_back(n);
+    std::vector<long long> jugglerSequence(long long n) {
+        std::vector<long long> res;
+        res.push_back(n);
 
-        while (ans.back() > 1) {
-            double sqrt_n = sqrt(ans.back());
-            int next_term = (ans.back() % 2 == 0) ? static_cast<int>(sqrt_n) : static_cast<int>(pow(sqrt_n, 3));
-            ans.push_back(next_term);
+        while (n > 1) {
+            if (n % 2)
+                n = static_cast<long long>(std::sqrt(n) * n);
+            else
+                n = static_cast<long long>(std::sqrt(n));
+
+            res.push_back(n);
         }
 
-        return ans;
+        return res;
     }
 };
 ```
