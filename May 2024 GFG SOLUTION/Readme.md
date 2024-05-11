@@ -15,7 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 8: Root to Leaf Paths](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/08(May)%20Root%20to%20Leaf%20Paths.md)🍃🛤️
   - [Day 9: Divisor Game](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/09(May)%20Divisor%20Game.md)🎮👾
   - [Day 10: Combination Sum II](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/10(May)%20Combination%20Sum%20II.md)🎯⏳🔢
-## SORRY EXAM IS GOING FOR BEING LATE ☠️🥺!!
+  - [Day 11: Juggler Sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/11(May)%20Juggler%20Sequence.md)➡️🛤️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -39,3 +39,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 9(09 MAY) :* Divisor Game
 
 *Day 10(10 MAY) :* Combination Sum II
+
+*Day 11(11 MAY) :* Juggler Sequence
