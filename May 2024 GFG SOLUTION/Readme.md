@@ -16,6 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 9: Divisor Game](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/09(May)%20Divisor%20Game.md)🎮👾
   - [Day 10: Combination Sum II](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/10(May)%20Combination%20Sum%20II.md)🎯⏳🔢
   - [Day 11: Juggler Sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/11(May)%20Juggler%20Sequence.md)➡️🛤️
+  - [Day 12: Minimum steps to destination](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/12(May)%20Minimum%20steps%20to%20destination.md)🏁🛤️🚶‍♂️ 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -41,3 +42,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 10(10 MAY) :* Combination Sum II
 
 *Day 11(11 MAY) :* Juggler Sequence
+
+*Day 12(12 MAY) :* Minimum steps to destination
