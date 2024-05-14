@@ -18,6 +18,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: Juggler Sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/11(May)%20Juggler%20Sequence.md)➡️🛤️
   - [Day 12: Minimum steps to destination](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/12(May)%20Minimum%20steps%20to%20destination.md)🏁🛤️🚶‍♂️
   - [Day 13: Number of Good Components](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/13(May)%20Number%20of%20Good%20Components.md)🔢🌟🧩
+  - [Day 14: Path With Minimum Effort](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/14(May)%20Path%20With%20Minimum%20Effort.md)🏞️🥾🧗‍♂️
+ 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -47,3 +49,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 12(12 MAY) :* Minimum steps to destination
 
 *Day 13(13 MAY) :* Number of Good Components
+
+*Day 14(14 MAY) :* Path With Minimum Effort
