@@ -47,6 +47,9 @@ Output:
 - **Expected Time Complexity:** O(n * m * log(n)), where n is the number of accounts and m is the average size of each account.
 - **Expected Auxiliary Space Complexity:** O(n * m), where n is the number of accounts and m is the average size of each account.
 
+
+## Sorry guys my answer is too big but its hard so please if once the not given correct try again in GFG complier 
+
 ### Code (C++)
 
 ```cpp
