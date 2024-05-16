@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Number of Good Components](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/13(May)%20Number%20of%20Good%20Components.md)🔢🌟🧩
   - [Day 14: Path With Minimum Effort](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/14(May)%20Path%20With%20Minimum%20Effort.md)🏞️🥾🧗‍♂️
   - [Day 15: Account Merge](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/15(May)%20Account%20Merge.md)📧🤝
+  - [Day 16: Divisibility tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/16(May)%20Divisibility%20tree.md)➗🌳
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -53,3 +54,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 MAY) :* Path With Minimum Effort
 
 *Day 15(15 MAY) :* Account Merge 
+
+*Day 16(16 MAY) :* Divisibility tree
