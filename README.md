@@ -1,4 +1,9 @@
 # GeeksforGeeks Problem of the Day Solutions 2024    [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/May%202024%20GFG%20SOLUTION)     
+
+
+### Guys Please vote I need Suggestion about the Leetcode POTD [Discussion Click Please Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/2)🙏
+
+
 <!--Latest!-->
 ![GeeksforGeeks-POTD](https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark)
 <!--<p align="center">
