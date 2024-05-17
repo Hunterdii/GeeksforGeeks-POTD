@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 14: Path With Minimum Effort](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/14(May)%20Path%20With%20Minimum%20Effort.md)🏞️🥾🧗‍♂️
   - [Day 15: Account Merge](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/15(May)%20Account%20Merge.md)📧🤝
   - [Day 16: Divisibility tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/16(May)%20Divisibility%20tree.md)➗🌳
+  - [Day 17: Find Pair Given Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/17(May)%20Find%20Pair%20Given%20Difference.md)🤝⚖️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -59,3 +60,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 MAY) :* Account Merge 
 
 *Day 16(16 MAY) :* Divisibility tree
+
+*Day 17(17 MAY) :* Find Pair Given Difference
