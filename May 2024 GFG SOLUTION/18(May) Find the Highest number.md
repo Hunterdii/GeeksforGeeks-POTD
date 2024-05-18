@@ -35,7 +35,7 @@ Highest element of array `a[]` is 6.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), as the `max_element` function iterates through the array exactly once to find the maximum element.
+- **Expected Time Complexity:** O(log(n)), as the `max_element` function iterates through the array exactly once to find the maximum element.
 - **Expected Auxiliary Space Complexity:** O(1), as no additional space is required beyond the input array.
 
 ### Code (C++)
