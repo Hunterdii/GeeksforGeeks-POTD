@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 17: Find Pair Given Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/17(May)%20Find%20Pair%20Given%20Difference.md)🤝⚖️
   - [Day 18: Find the Highest number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/18(May)%20Find%20the%20Highest%20number.md)🔝📈
   - [Day 19: Find the closest number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/19(May)%20Find%20the%20closest%20number.md)🎯📚
+  - [Day 20: Modular Exponentiation for large numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/20(May)%20Modular%20Exponentiation%20for%20large%20numbers.md)🧮🔢📈
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -68,3 +69,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 18(18 MAY) :* Find the Highest number
 
 *Day 19(19 MAY) :* Find the closest number
+
+*Day 20(20 MAY) :* Modular Exponentiation for large numbers
