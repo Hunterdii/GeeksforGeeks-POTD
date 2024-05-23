@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Modular Exponentiation for large numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/20(May)%20Modular%20Exponentiation%20for%20large%20numbers.md)🧮🔢📈
   - [Day 21: K closest elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/21(May)%20K%20closest%20elements.md)🎯🔢
   - [Day 22: Minimize Max Distance to Gas Station](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/22(May)%20Minimize%20Max%20Distance%20to%20Gas%20Station.md)🚗⛽🛣️
+  - [Day 23: K-Palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/23(May)%20K-Palindrome.md)📏🔍
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -77,3 +78,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 MAY) :* K closest elements
 
 *Day 22(22 MAY) :* Minimize Max Distance to Gas Station
+
+*Day 23(23 MAY) :* K-Palindrome
