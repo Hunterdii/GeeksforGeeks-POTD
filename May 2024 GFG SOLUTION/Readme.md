@@ -31,7 +31,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 21: K closest elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/21(May)%20K%20closest%20elements.md)🎯🔢
   - [Day 22: Minimize Max Distance to Gas Station](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/22(May)%20Minimize%20Max%20Distance%20to%20Gas%20Station.md)🚗⛽🛣️
   - [Day 23: K-Palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/23(May)%20K-Palindrome.md)📏🔍
-  - [Day 23: Partitions with Given Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/24(May)%20Partitions%20with%20Given%20Difference.md)🔢➖✂️
+  - [Day 24: Partitions with Given Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/24(May)%20Partitions%20with%20Given%20Difference.md)🔢➖✂️
+  - [Day 25: You and your books](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/25(May)%20You%20and%20your%20books.md)📚📖
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -83,3 +84,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 MAY) :* K-Palindrome
 
 *Day 24(24 MAY) :* Partitions with Given Difference
+
+*Day 25(25 MAY) :* You and your books
