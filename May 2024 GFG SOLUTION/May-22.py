@@ -16,10 +16,12 @@ class Solution:
 
     def findSmallestMaxDist(self, stations, K):
         stations.sort()
-        l, h = 1e-9, stations[-1] - stations[0]
-        
-        while h - l > 1e-6:
-            mid = (l + h) / 2.0
+        n = len(stations)
+        l = 1e-9
+        h = stations[-1] - stations[0]
+
+        while (h - l) > 1e-6:
+            mid = l + (h - l) / 2.0
             intervals = self.countIntervals(mid, stations)
             if intervals > K:
                 l = mid
