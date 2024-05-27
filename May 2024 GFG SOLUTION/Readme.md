@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 24: Partitions with Given Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/24(May)%20Partitions%20with%20Given%20Difference.md)🔢➖✂️
   - [Day 25: You and your books](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/25(May)%20You%20and%20your%20books.md)📚📖
   - [Day 26: Minimum Cost To Make Two Strings Identical](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/26(May)%20Minimum%20Cost%20To%20Make%20Two%20Strings%20Identical.md)✂️💰
+  - [Day 27: Longest subsequence-1](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/27(May)%20Longest%20subsequence-1.md)🔢🎯⏳
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -89,3 +90,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 25(25 MAY) :* You and your books
 
 *Day 26(26 MAY) :* Minimum Cost To Make Two Strings Identical
+
+*Day 27(27 MAY) :* Longest subsequence-1
