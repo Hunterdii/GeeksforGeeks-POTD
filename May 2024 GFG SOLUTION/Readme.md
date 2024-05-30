@@ -37,6 +37,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 27: Longest subsequence-1](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/27(May)%20Longest%20subsequence-1.md)🔢🎯⏳
   - [Day 28: Minimum cost to fill given weight in a bag](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/28(May)%20Minimum%20cost%20to%20fill%20given%20weight%20in%20a%20bag.md)👜💰⚖️
   - [Day 29: Geek and its Game of Coins](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/29(May)%20Geek%20and%20its%20Game%20of%20Coins.md)🪙🏆🎮
+  - [Day 30: String Subsequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/30(May)%20String%20Subsequence.md)🧑‍💻🔢
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -98,3 +99,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 MAY) :* Minimum cost to fill given weight in a bag
 
 *Day 29(29 MAY) :* Geek and its Game of Coins
+
+*Day 30(30 MAY) :* String Subsequence
