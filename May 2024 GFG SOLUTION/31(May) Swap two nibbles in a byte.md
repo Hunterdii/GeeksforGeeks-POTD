@@ -1,4 +1,4 @@
-## 23. Swap Two Nibbles in a Byte
+## 31. Swap Two Nibbles in a Byte
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/swap-two-nibbles-in-a-byte0446/1)
 
