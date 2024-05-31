@@ -38,6 +38,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 28: Minimum cost to fill given weight in a bag](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/28(May)%20Minimum%20cost%20to%20fill%20given%20weight%20in%20a%20bag.md)👜💰⚖️
   - [Day 29: Geek and its Game of Coins](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/29(May)%20Geek%20and%20its%20Game%20of%20Coins.md)🪙🏆🎮
   - [Day 30: String Subsequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/30(May)%20String%20Subsequence.md)🧑‍💻🔢
+  - [Day 31: Swap two nibbles in a byte](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/May%202024%20GFG%20SOLUTION/31(May)%20Swap%20two%20nibbles%20in%20a%20byte.md)🔄🔣🖥️
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -101,3 +102,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 MAY) :* Geek and its Game of Coins
 
 *Day 30(30 MAY) :* String Subsequence
+
+*Day 31(31 MAY) :* Swap two nibbles in a byte
