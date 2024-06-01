@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/June%202024%20GFG%20SOLUTION)💡
-  - [Day 1: Odd Even Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/01(June)%20Odd%20Even%20Problem.md)🏔️
+  - [Day 1: Odd Even Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/01(June)%20Odd%20Even%20Problem.md)📝📊
 
 ## Introduction
 
