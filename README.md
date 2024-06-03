@@ -1,4 +1,4 @@
-# GeeksforGeeks Problem of the Day Solutions 2024    [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/May%202024%20GFG%20SOLUTION)     
+# GeeksforGeeks Problem of the Day Solutions 2024    [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/June%202024%20GFG%20SOLUTION)     
 
 
 ### Guys Please vote I need Suggestion about the Leetcode POTD [Discussion Click Please Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/2)🙏
