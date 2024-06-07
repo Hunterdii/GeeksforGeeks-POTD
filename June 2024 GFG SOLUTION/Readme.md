@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 4: Binary representation of next number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/04(June)%20Binary%20representation%20of%20next%20number.md)0️⃣1️⃣💻
   - [Day 5: Swapping pairs make sum equal](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/05(June)%20Swapping%20pairs%20make%20sum%20equal.md)➕🔢⚖️
   - [Day 6: Max sum in the configuration](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/06(June)%20Max%20sum%20in%20the%20configuration.md)📊🔢📈
+  - [Day 7: Maximum occured integer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/07(June)%20Maximum%20occured%20integer.md)📚🔢✅
 
 ## Introduction
 
@@ -28,3 +29,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 5(05 JUN) :* Swapping pairs make sum equal
 
 *Day 6(06 JUN) :* Max sum in the configuration
+
+*Day 7(07 JUN) :* Maximum occured integer
