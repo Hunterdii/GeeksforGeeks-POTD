@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 7: Maximum occured integer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/07(June)%20Maximum%20occured%20integer.md)📚🔢✅
   - [Day 8: Index of an Extra Element](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/08(June)%20Index%20of%20an%20Extra%20Element.md)📊🔢🖥️
   - [Day 9: Convert array into Zig-Zag fashion](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/09(June)%20Convert%20array%20into%20Zig-Zag%20fashion.md)🌀🔀⚡
+  - [Day 10: Nuts and Bolts Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/10(June)%20Nuts%20and%20Bolts%20Problem.md)🥜🔩
 
 ## Introduction
 
@@ -37,3 +38,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 JUN) :* Index of an Extra Element
 
 *Day 9(09 JUN) :* Convert array into Zig-Zag fashion
+
+*Day 10(10 JUN) :* Nuts and Bolts Problem
