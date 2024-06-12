@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 9: Convert array into Zig-Zag fashion](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/09(June)%20Convert%20array%20into%20Zig-Zag%20fashion.md)🌀🔀⚡
   - [Day 10: Nuts and Bolts Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/10(June)%20Nuts%20and%20Bolts%20Problem.md)🥜🔩
   - [Day 11: Maximum Tip Calculator](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/11(June)%20Maximum%20Tip%20Calculator.md)📈🔢
+  - [Day 12: Count numbers containing 4](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/12(June)%20Count%20numbers%20containing%204.md)
 
 ## Introduction
 
@@ -43,3 +44,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 10(10 JUN) :* Nuts and Bolts Problem
 
 *Day 11(11 JUN) :* Maximum Tip Calculator
+
+*Day 12(12 JUN) :* Count numbers containing 4
