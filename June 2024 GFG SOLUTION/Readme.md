@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: Maximum Tip Calculator](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/11(June)%20Maximum%20Tip%20Calculator.md)📈🔢
   - [Day 12: Count numbers containing 4](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/12(June)%20Count%20numbers%20containing%204.md)🔢✅📘
   - [Day 13: Padovan Sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/13(June)%20Padovan%20Sequence.md)➕🖥️📚
+  - [Day 14: Armstrong Numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/14(June)%20Armstrong%20Numbers.md)
 
 ## Introduction
 
@@ -49,3 +50,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 12(12 JUN) :* Count numbers containing 4
 
 *Day 13(13 JUN) :* Padovan Sequence
+
+*Day 14(14 JUN) :* Armstrong Numbers
