@@ -11,22 +11,28 @@ An Armstrong number of three digits is a number such that the sum of the cubes o
 **Example:**
 
 Input:
+
 ```
 n = 153
 ```
+
 Output:
+
 ```
 Yes
 ```
+
 Explanation:
 153 is an Armstrong number since \(1^3 + 5^3 + 3^3 = 153\). Hence, the answer is "Yes".
 
 ### My Approach
 
 1. **Initialization:**
+
    - Convert the number to a string to easily access each digit.
 
 2. **Sum Calculation:**
+
    - Calculate the sum of the cubes of each digit.
 
 3. **Comparison:**
@@ -49,9 +55,9 @@ public:
     string armstrongNumber(int n) {
         string ans = to_string(n);
         if ((pow((ans[0]-'0'), 3) + pow((ans[1]-'0'), 3) + pow((ans[2]-'0'), 3)) == n) {
-            return "Yes";
+            return "true";
         }
-        return "No";
+        return "false";
     }
 };
 ```
@@ -68,7 +74,7 @@ class Solution {
             sum += Math.pow(digit, 3);
             n /= 10;
         }
-        return sum == original ? "Yes" : "No";
+        return sum == original ? "true" : "false";
     }
 }
 ```
@@ -84,7 +90,7 @@ class Solution:
             digit = n % 10
             sum += digit ** 3
             n //= 10
-        return "Yes" if sum == original else "No"
+        return "true" if sum == original else "false"
 ```
 
 ## Contribution and Support

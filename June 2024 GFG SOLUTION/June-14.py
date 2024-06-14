@@ -8,7 +8,7 @@ class Solution:
             digit = n % 10
             sum += digit ** 3
             n //= 10
-        return "Yes" if sum == original else "No"
+        return "true" if sum == original else "false"
 
 
 

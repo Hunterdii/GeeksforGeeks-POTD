@@ -27,6 +27,6 @@ class Solution {
             sum += Math.pow(digit, 3);
             n /= 10;
         }
-        return sum == original ? "Yes" : "No";
+        return sum == original ? "true" : "false";
     }
 }
