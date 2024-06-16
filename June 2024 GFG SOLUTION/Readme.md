@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Padovan Sequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/13(June)%20Padovan%20Sequence.md)➕🖥️📚
   - [Day 14: Armstrong Numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/14(June)%20Armstrong%20Numbers.md)💯🔢🧠
   - [Day 15: Mobile numeric keypad](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/15(June)%20Mobile%20numeric%20keypad.md)📱🔒
+  - [Day 16: Prime Pair with Target Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/16(June)%20Prime%20Pair%20with%20Target%20Sum.md)🔢📝🔍
 
 ## Introduction
 
@@ -55,3 +56,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 JUN) :* Armstrong Numbers
 
 *Day 15(15 JUN) :* Mobile numeric keypad
+
+*Day 16(16 JUN) :* Prime Pair with Target Sum
