@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 14: Armstrong Numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/14(June)%20Armstrong%20Numbers.md)💯🔢🧠
   - [Day 15: Mobile numeric keypad](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/15(June)%20Mobile%20numeric%20keypad.md)📱🔒
   - [Day 16: Prime Pair with Target Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/16(June)%20Prime%20Pair%20with%20Target%20Sum.md)🔢📝🔍
+  - [Day 17: Check If two Line segments Intersect](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/17(June)%20Check%20If%20two%20Line%20segments%20Intersect.md)📐📏🔄
 
 ## Introduction
 
@@ -58,3 +59,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 JUN) :* Mobile numeric keypad
 
 *Day 16(16 JUN) :* Prime Pair with Target Sum
+
+*Day 17(17 JUN) :* Check If two Line segments Intersect
