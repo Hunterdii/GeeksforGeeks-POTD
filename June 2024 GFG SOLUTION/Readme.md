@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 16: Prime Pair with Target Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/16(June)%20Prime%20Pair%20with%20Target%20Sum.md)🔢📝🔍
   - [Day 17: Check If two Line segments Intersect](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/17(June)%20Check%20If%20two%20Line%20segments%20Intersect.md)📐📏🔄
   - [Day 18: Number of Rectangles in a Circle](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/18(June)%20Number%20of%20Rectangles%20in%20a%20Circle.md)🔵🔢🟦
+  - [Day 19: Find maximum volume of a cuboid](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/19(June)%20Find%20maximum%20volume%20of%20a%20cuboid.md)📦📈
 
 ## Introduction
 
@@ -64,3 +65,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 17(17 JUN) :* Check If two Line segments Intersect
 
 *Day 18(18 JUN) :* Number of Rectangles in a Circle
+
+*Day 19(19 JUN) :* Find maximum volume of a cuboid
