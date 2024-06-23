@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Integral Points Inside Triangle](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/20(June)%20Integral%20Points%20Inside%20Triangle.md)🔺🗺️
   - [Day 21: Compare two fractions](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/21(June)%20Compare%20two%20fractions.md)📐➗⚖️
   - [Day 22: Extract the Number from the String](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/22(June)%20Extract%20the%20Number%20from%20the%20String.md)🔢✂️
+  - [Day 23: Print Bracket Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/23(June)%20Print%20Bracket%20Number.md)🖥️📝📚
 
 ## Introduction
 
@@ -76,3 +77,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 JUN) :* Compare two fractions
 
 *Day 22(22 JUN) :* Extract the Number from the String
+
+*Day 23(23 JUN) :* Print Bracket Number
