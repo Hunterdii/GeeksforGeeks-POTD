@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 22: Extract the Number from the String](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/22(June)%20Extract%20the%20Number%20from%20the%20String.md)🔢✂️
   - [Day 23: Print Bracket Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/23(June)%20Print%20Bracket%20Number.md)🖥️📝📚
   - [Day 24: Summed Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/24(June)%20Summed%20Matrix.md)➕🔢🧮
+  - [Day 25: Left Rotate Matrix K times](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/25(June)%20Left%20Rotate%20Matrix%20K%20times.md)🌀➡️
 
 ## Introduction
 
@@ -82,3 +83,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 JUN) :* Print Bracket Number
 
 *Day 24(24 JUN) :* Summed Matrix
+
+*Day 25(25 JUN) :* Left Rotate Matrix K times
