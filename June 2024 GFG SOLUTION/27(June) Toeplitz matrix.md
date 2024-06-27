@@ -38,7 +38,7 @@ Matrix of order 2x3:
 1 2 3 
 4 5 6
 ```
-Output: 0 (False) as values in all diagonals are not the same.
+Output: 0 (False) as values in all diagonals are different.
 
 ### My Approach
 
@@ -57,7 +57,7 @@ Output: 0 (False) as values in all diagonals are not the same.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), as we iterate through each element of the matrix.
+- **Expected Time Complexity:** O(n * m), as we iterate through each matrix element.
 - **Expected Auxiliary Space Complexity:** O(n + m), where `n` is the number of rows and `m` is the number of columns, for storing the diagonals in the map.
 
 ### Code
@@ -65,7 +65,7 @@ Output: 0 (False) as values in all diagonals are not the same.
 #### C++
 
 ```cpp
-bool isToepliz(vector<vector<int>>& mat) {
+bool isToeplitz(vector<vector<int>>& mat) {
         unordered_map<int, int> mp;
         int m = mat.size(), n = mat[0].size();
         
@@ -89,7 +89,7 @@ bool isToepliz(vector<vector<int>>& mat) {
 
 ```java
 class GfG {
-    boolean isToepliz(int mat[][]) {
+    boolean isToeplitz(int mat[][]) {
         Map<Integer, Integer> map = new HashMap<>();
         int m = mat.length, n = mat[0].length;
         
@@ -113,7 +113,7 @@ class GfG {
 #### Python
 
 ```python
-def isToepliz(mat):
+def isToeplitz(mat):
     mp = {}
     m, n = len(mat), len(mat[0])
     
