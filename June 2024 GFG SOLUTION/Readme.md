@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 27: Toeplitz matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/27(June)%20Toeplitz%20matrix.md)🔍↘️🔢
   - [Day 28: The Palindrome Pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/28(June)%20The%20Palindrome%20Pattern.md)🧩🔢
   - [Day 29: Identical Linked Lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/29(June)%20Identical%20Linked%20Lists.md)🔗📇
+  - [Day 30: Delete node in Doubly Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/30(June)%20Delete%20node%20in%20Doubly%20Linked%20List.md)📝🔗❌
 
 ## Introduction
 
@@ -97,3 +98,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 JUN) :* The Palindrome Pattern
 
 *Day 29(29 JUN) :* Identical Linked Lists
+
+*Day 30(30 JUN) :* Delete node in Doubly Linked List
