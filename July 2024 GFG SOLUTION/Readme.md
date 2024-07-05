@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: linked list of strings forms a palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/02(July)%20linked%20list%20of%20strings%20forms%20a%20palindrome.md)📝🔗
 - [Day 3: Remove all occurences of duplicates in a linked list](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/03(July)%20Remove%20all%20occurences%20of%20duplicates%20in%20a%20linked%20list.md)🔗↔️📝
 - [Day 4: Duplicate Subtrees](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/04(July)%20Duplicate%20Subtrees.md)🌳🗂️
+- [Day 5: Vertical Width of a Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/05(July)%20Vertical%20Width%20of%20a%20Binary%20Tree.md)🌳↕️📐
 
 ## Introduction
 
@@ -22,3 +23,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 3(03 JUL) :* Remove all occurences of duplicates in a linked list
 
 *Day 4(04 JUL) :* Duplicate Subtrees
+
+*Day 5(05 JUL) :* Vertical Width of a Binary Tree
