@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Populate Inorder Successor for all nodes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/06(July)%20Populate%20Inorder%20Successor%20for%20all%20nodes.md)🌳📝
 - [Day 7: Ancestors in Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/07(July)%20Ancestors%20in%20Binary%20Tree.md)👨‍👩‍👧‍👦🌳🧬
 - [Day 8: Search in Rotated Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/08(July)%20Search%20in%20Rotated%20Sorted%20Array.md)📜🔍💾
+- [Day 9: Closest Three Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/09(July)%20Closest%20Three%20Sum.md)🎯💡
 
 
  
@@ -36,3 +37,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 7(07 JUL) :* Ancestors in Binary Tree
 
 *Day 8(08 JUL) :* Search in Rotated Sorted Array
+
+*Day 9(09 JUL) :* Closest Three Sum
+
