@@ -16,6 +16,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Search in Rotated Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/08(July)%20Search%20in%20Rotated%20Sorted%20Array.md)📜🔍💾
 - [Day 9: Closest Three Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/09(July)%20Closest%20Three%20Sum.md)🎯💡
 - [Day 10: Largest square formed in a matrix(](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/10(July)%20Largest%20square%20formed%20in%20a%20matrix.md)🔲📏🔢
+- [Day 11: Maximum Connected group](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/11(July)%20Maximum%20Connected%20group.md)🕸️🔗🌐
+- [Day 12: Root to leaf path sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/12(July)%20Root%20to%20leaf%20path%20sum.md)🌳🟩➡️
 
 
  
@@ -41,4 +43,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 9(09 JUL) :* Closest Three Sum
 
-Largest square formed in a matrix
+*Day 10(10 JUL) :* Largest square formed in a matrix
+
+*Day 11(11 JUL) :* Maximum Connected group
+
+*Day 12(12 JUL) :* Root to leaf path sum
