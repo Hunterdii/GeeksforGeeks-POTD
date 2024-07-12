@@ -1,4 +1,4 @@
-## 23. Remove All Occurrences of Duplicates in a Linked List
+## 03. Remove All Occurrences of Duplicates in a Linked List
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/remove-all-occurences-of-duplicates-in-a-linked-list/1)
 
