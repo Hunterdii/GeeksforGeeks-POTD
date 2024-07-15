@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Shortest Path in Weighted undirected graph](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/13(July)%20Shortest%20Path%20in%20Weighted%20undirected%20graph.md)🛣️📉🗺️
 - [Day 14: Segregate 0s and 1s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/14(July)%20Segregate%200s%20and%201s.md)🔄⚖️💡
 - [Day 15: Smallest number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/15(July)%20Smallest%20number.md)🔢✨📊
+- [Day 16: Remaining String](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/16(July)%20Remaining%20String.md)🔍📝🔡
 
 
  
@@ -57,3 +58,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 JUL) :* Segregate 0s and 1s
 
 *Day 15(15 JUL) :* Smallest number
+
+*Day 16(16 JUL) :* Remaining String
