@@ -22,6 +22,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Segregate 0s and 1s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/14(July)%20Segregate%200s%20and%201s.md)🔄⚖️💡
 - [Day 15: Smallest number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/15(July)%20Smallest%20number.md)🔢✨📊
 - [Day 16: Remaining String](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/16(July)%20Remaining%20String.md)🔍📝🔡
+- [Day 17: Construct Binary Tree from Parent Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/17(July)%20Construct%20Binary%20Tree%20from%20Parent%20Array.md)🌳🛠️📊
+
+
 
 
  
@@ -60,3 +63,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 JUL) :* Smallest number
 
 *Day 16(16 JUL) :* Remaining String
+
+*Day 17(17 JUL) :* Construct Binary Tree from Parent Array
