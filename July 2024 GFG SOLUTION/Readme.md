@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Smallest number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/15(July)%20Smallest%20number.md)🔢✨📊
 - [Day 16: Remaining String](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/16(July)%20Remaining%20String.md)🔍📝🔡
 - [Day 17: Construct Binary Tree from Parent Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/17(July)%20Construct%20Binary%20Tree%20from%20Parent%20Array.md)🌳🛠️📊
+- [Day 18: Longest alternating subsequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/18(July)%20Longest%20alternating%20subsequence.md)🎢➡️
 
 
 
@@ -65,3 +66,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 JUL) :* Remaining String
 
 *Day 17(17 JUL) :* Construct Binary Tree from Parent Array
+
+*Day 18(18 JUL) :* Longest alternating subsequence
