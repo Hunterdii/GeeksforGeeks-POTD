@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: Construct Binary Tree from Parent Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/17(July)%20Construct%20Binary%20Tree%20from%20Parent%20Array.md)🌳🛠️📊
 - [Day 18: Longest alternating subsequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/18(July)%20Longest%20alternating%20subsequence.md)🎢➡️
 - [Day 19: Count Smaller elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/19(July)%20Count%20Smaller%20elements.md)📉🔢🔍
+- [Day 20: Remove Half Nodes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/20(July)%20Remove%20Half%20Nodes.md)🌳✂️🗑️
 
 
 
@@ -71,3 +72,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 18(18 JUL) :* Longest alternating subsequence
 
 *Day 19(19 JUL) :* Count Smaller elements
+
+*Day 20(20 JUL) :* Remove Half Nodes
