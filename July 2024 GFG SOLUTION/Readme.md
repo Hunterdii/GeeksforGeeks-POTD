@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Count Smaller elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/19(July)%20Count%20Smaller%20elements.md)📉🔢🔍
 - [Day 20: Remove Half Nodes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/20(July)%20Remove%20Half%20Nodes.md)🌳✂️🗑️
 - [Day 21: Maximum product subset of an array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/21(July)%20Maximum%20product%20subset%20of%20an%20array.md)🚀📊🔢
+- [Day 22: Largest BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/22(July)%20Largest%20BST.md)🌳📏🔍
 
 
 
@@ -77,3 +78,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 20(20 JUL) :* Remove Half Nodes
 
 *Day 21(21 JUL) :* Maximum product subset of an array
+
+*Day 22(22 JUL) :* Largest BST
