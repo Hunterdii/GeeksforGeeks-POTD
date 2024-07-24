@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Maximum product subset of an array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/21(July)%20Maximum%20product%20subset%20of%20an%20array.md)🚀📊🔢
 - [Day 22: Largest BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/22(July)%20Largest%20BST.md)🌳📏🔍
 - [Day 23: Merge two BST 's](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/22(July)%20Merge%20two%20BST%20's.md)🌳➡️📜
+- [Day 24: Check for BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/24(July)%20Check%20for%20BST.md)🌳📜🔍
 
 
 
@@ -83,3 +84,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 JUL) :* Largest BST
 
 *Day 23(23 JUL) :* Merge two BST 's
+
+*Day 24(24 JUL) :* Check for BST
