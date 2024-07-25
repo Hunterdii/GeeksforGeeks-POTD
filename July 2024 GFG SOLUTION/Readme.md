@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Merge two BST 's](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/22(July)%20Merge%20two%20BST%20's.md)🌳➡️📜
 - [Day 24: Check for BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/24(July)%20Check%20for%20BST.md)🌳📜🔍
 - [Day 25: Array to BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/25(July)%20Array%20to%20BST.md)🌳📏📜
+- [Day 26: K-Pangrams](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/26(July)%20K-Pangrams.md)🔢✨🅰️
 
 
 
@@ -89,3 +90,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 24(24 JUL) :* Check for BST
 
 *Day 25(25 JUL) :* Array to BST
+
+*Day 26(26 JUL) :* K-Pangrams
