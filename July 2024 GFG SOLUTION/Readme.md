@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Array to BST](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/25(July)%20Array%20to%20BST.md)🌳📏📜
 - [Day 26: K-Pangrams](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/26(July)%20K-Pangrams.md)🔢✨🅰️
 - [Day 27: Form a palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/27(July)%20Form%20a%20palindrome.md)🔄📝🔢
+- [Day 28: Remove Duplicates](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/28(July)%20Remove%20Duplicates.md)🗑️🧹🚫
  
 ## Introduction
 
@@ -91,3 +92,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 JUL) :* K-Pangrams
 
 *Day 27(27 JUL) :* Form a palindrome
+
+*Day 28(28 JUL) :* Remove Duplicates
