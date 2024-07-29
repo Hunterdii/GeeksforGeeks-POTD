@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: K-Pangrams](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/26(July)%20K-Pangrams.md)🔢✨🅰️
 - [Day 27: Form a palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/27(July)%20Form%20a%20palindrome.md)🔄📝🔢
 - [Day 28: Remove Duplicates](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/28(July)%20Remove%20Duplicates.md)🗑️🧹🚫
+- [Day 29:Row with max 1s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/29(July)%20Row%20with%20max%201s.md)🔍🆙🎯
  
 ## Introduction
 
@@ -94,3 +95,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 27(27 JUL) :* Form a palindrome
 
 *Day 28(28 JUL) :* Remove Duplicates
+
+*Day 29(29 JUL) :* Row with max 1s
