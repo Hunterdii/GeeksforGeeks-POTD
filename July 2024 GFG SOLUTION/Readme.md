@@ -34,7 +34,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: K-Pangrams](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/26(July)%20K-Pangrams.md)🔢✨🅰️
 - [Day 27: Form a palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/27(July)%20Form%20a%20palindrome.md)🔄📝🔢
 - [Day 28: Remove Duplicates](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/28(July)%20Remove%20Duplicates.md)🗑️🧹🚫
-- [Day 29:Row with max 1s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/29(July)%20Row%20with%20max%201s.md)🔍🆙🎯
+- [Day 29: Row with max 1s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/29(July)%20Row%20with%20max%201s.md)🔍🆙🎯
+- [Day 30: Rat in a Maze Problem - I](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/July%202024%20GFG%20SOLUTION/30(July)%20Rat%20in%20a%20Maze%20Problem%20-%20I.md)
  
 ## Introduction
 
@@ -97,3 +98,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 JUL) :* Remove Duplicates
 
 *Day 29(29 JUL) :* Row with max 1s
+
+*Day 30(30 JUL) :* Rat in a Maze Problem - I
