@@ -9,6 +9,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: Spirally traversing a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/01(Aug)%20Spirally%20traversing%20a%20matrix.md)🌀🔄📐
 - [Day 2: Edit Distance](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/02(Aug)%20Edit%20Distance.md)💻🔧🔄
 - [Day 3: The Celebrity Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/03(Aug)%20The%20Celebrity%20Problem.md)🕵️‍♂️🎉👥
+- [Day 4: N meetings in one room](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/04(Aug)%20N%20meetings%20in%20one%20room.md)📅🕒🏢📈📝
 
 
  ## Introduction
@@ -21,6 +22,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 3(03 JUL) :* The Celebrity Problem
 
+*Day 4(04 JUL) :* N meetings in one room
 
 
 
