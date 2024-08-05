@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Edit Distance](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/02(Aug)%20Edit%20Distance.md)💻🔧🔄
 - [Day 3: The Celebrity Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/03(Aug)%20The%20Celebrity%20Problem.md)🕵️‍♂️🎉👥
 - [Day 4: N meetings in one room](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/04(Aug)%20N%20meetings%20in%20one%20room.md)📅🕒🏢📈📝
+- [Day 5: Bottom View of Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/05(Aug)%20Bottom%20View%20of%20Binary%20Tree.md)🌳🔍👇
 
 
  ## Introduction
@@ -24,6 +25,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 JUL) :* N meetings in one room
 
+*Day 5(05 JUL) :* Bottom View of Binary Tree
 
 
 
