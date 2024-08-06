@@ -11,6 +11,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: The Celebrity Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/03(Aug)%20The%20Celebrity%20Problem.md)🕵️‍♂️🎉👥
 - [Day 4: N meetings in one room](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/04(Aug)%20N%20meetings%20in%20one%20room.md)📅🕒🏢📈📝
 - [Day 5: Bottom View of Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/05(Aug)%20Bottom%20View%20of%20Binary%20Tree.md)🌳🔍👇
+- [Day 6: Validate an IP Address](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/06(Aug)%20Validate%20an%20IP%20Address.md)🔍💻🔢
+
 
 
  ## Introduction
@@ -27,6 +29,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 5(05 JUL) :* Bottom View of Binary Tree
 
+*Day 6(06 JUL) :* Validate an IP Address
 
 
 
