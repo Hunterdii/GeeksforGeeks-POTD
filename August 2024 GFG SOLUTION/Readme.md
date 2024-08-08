@@ -13,6 +13,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Bottom View of Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/05(Aug)%20Bottom%20View%20of%20Binary%20Tree.md)🌳🔍👇
 - [Day 6: Validate an IP Address](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/06(Aug)%20Validate%20an%20IP%20Address.md)🔍💻🔢
 - [Day 7: K-th element of two Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/07(Aug)%20K-th%20element%20of%20two%20Arrays.md)📊🔍✨
+- [Day 8: Sum Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/08(Aug)%20Sum%20Tree.md)🌳 ➕ 🏡
 
 
 
@@ -33,6 +34,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 6(06 JUL) :* Validate an IP Address
 
 *Day 7(07 JUL) :* K-th element of two Arrays
+
+*Day 8(08 JUL) :* Sum Tree
 
 
 
