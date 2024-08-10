@@ -14,7 +14,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Validate an IP Address](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/06(Aug)%20Validate%20an%20IP%20Address.md)🔍💻🔢
 - [Day 7: K-th element of two Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/07(Aug)%20K-th%20element%20of%20two%20Arrays.md)📊🔍✨
 - [Day 8: Sum Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/08(Aug)%20Sum%20Tree.md)🌳 ➕ 🏡
-- [Day 9: Maximize Array Value After Rearrangement](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/09(Aug)%20Maximize%20Array%20Value%20After%20Rearrangement.md)🔄➕🔢 
+- [Day 9: Maximize Array Value After Rearrangement](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/09(Aug)%20Maximize%20Array%20Value%20After%20Rearrangement.md)🔄➕🔢
+- [Day 10: Rotate a Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/10(Aug)%20Rotate%20a%20Linked%20List.md)🔄🔗➡️
 
 
 
@@ -40,5 +41,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 JUL) :* Sum Tree
 
 *Day 9(09 JUL) :* Maximize Array Value After Rearrangement
+
+*Day 10(10 JUL) :* Rotate a Linked List
 
 
