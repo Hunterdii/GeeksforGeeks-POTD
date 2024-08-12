@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Maximize Array Value After Rearrangement](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/09(Aug)%20Maximize%20Array%20Value%20After%20Rearrangement.md)🔄➕🔢
 - [Day 10: Rotate a Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/10(Aug)%20Rotate%20a%20Linked%20List.md)🔄🔗➡️
 - [Day 11: Job Sequencing Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/11(Aug)%20Job%20Sequencing%20Problem.md)💼📅💰
+- [Day 12: Median of two sorted arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/12(Aug)%20Median%20of%20two%20sorted%20arrays.md)🔢➗📊
 
 
 
@@ -46,5 +47,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 10(10 JUL) :* Rotate a Linked List
 
 *Day 11(11 JUL) :* Job Sequencing Problem
+
+*Day 12(12 JUL) :* Median of two sorted arrays
 
 
