@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 11: Job Sequencing Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/11(Aug)%20Job%20Sequencing%20Problem.md)💼📅💰
 - [Day 12: Median of two sorted arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/12(Aug)%20Median%20of%20two%20sorted%20arrays.md)🔢➗📊
 - [Day 13: Square root of a number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/13(Aug)%20Square%20root%20of%20a%20number.md)🔢➡️📐
+- [Day 14: Longest Common Substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/14(Aug)%20Longest%20Common%20Substring.md)🔗📜📝
 
 
 
@@ -52,5 +53,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 12(12 JUL) :* Median of two sorted arrays
 
 *Day 13(13 JUL) :* Square root of a number
+
+*Day 14(14 JUL) :* Longest Common Substring
 
 
