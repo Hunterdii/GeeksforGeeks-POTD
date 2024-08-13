@@ -1,5 +1,8 @@
 # <b>14. Longest Common Substring</b>
 
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-common-substring1452/1)
+
+
 ## Problem Description
 
 Given two strings, `str1` and `str2`, your task is to find the length of the longest common substring between the two given strings.
