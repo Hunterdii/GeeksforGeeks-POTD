@@ -20,7 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Median of two sorted arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/12(Aug)%20Median%20of%20two%20sorted%20arrays.md)🔢➗📊
 - [Day 13: Square root of a number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/13(Aug)%20Square%20root%20of%20a%20number.md)🔢➡️📐
 - [Day 14: Longest Common Substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/14(Aug)%20Longest%20Common%20Substring.md)🔗📜📝
-
+- [Day 15: Add 1 to a Linked List Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/15(Aug)%20Add%201%20to%20a%20Linked%20List%20Number.md)🔢➕1➡️
 
 
 
@@ -55,5 +55,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 13(13 JUL) :* Square root of a number
 
 *Day 14(14 JUL) :* Longest Common Substring
+
+*Day 15(15 JUL) :* Add 1 to a Linked List Number
+
 
 
