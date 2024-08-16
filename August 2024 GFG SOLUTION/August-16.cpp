@@ -9,13 +9,8 @@ class Solution
 public:
     int maximizeTheCuts(int n, int x, int y, int z)
     {
-        // DP array to store the maximum cuts
         vector<int> dp(n + 1, -1);
-
-        // Base case: no cuts needed for length 0
         dp[0] = 0;
-
-        // Fill the DP array
         for (int i = 1; i <= n; i++)
         {
             if (i >= x && dp[i - x] != -1)
@@ -31,8 +26,6 @@ public:
                 dp[i] = max(dp[i], dp[i - z] + 1);
             }
         }
-
-        // If no cuts were made, return 0, else return dp[n]
         return dp[n] == -1 ? 0 : dp[n];
     }
 };
