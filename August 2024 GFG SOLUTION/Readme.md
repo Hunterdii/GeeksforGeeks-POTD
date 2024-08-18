@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Add 1 to a Linked List Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/15(Aug)%20Add%201%20to%20a%20Linked%20List%20Number.md)🔢➕1➡️
 - [Day 16: Maximize The Cut Segments](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/16(Aug)%20Maximize%20The%20Cut%20Segments.md)✂️📏➗
 - [Day 17: Product array puzzle](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/17(Aug)%20Product%20array%20puzzle.md)🧩🔍🤔
+- [Day 18: Split an array into two equal Sum subarrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/18(Aug)%20Split%20an%20array%20into%20two%20equal%20Sum%20subarrays.md)✂️➗📊
 
 
 
@@ -64,4 +65,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 17(17 JUL) :* Product array puzzle
 
+*Day 18(18 JUL) :* Split an array into two equal Sum subarrays
 
