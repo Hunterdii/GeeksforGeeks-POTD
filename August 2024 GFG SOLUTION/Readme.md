@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Maximize The Cut Segments](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/16(Aug)%20Maximize%20The%20Cut%20Segments.md)✂️📏➗
 - [Day 17: Product array puzzle](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/17(Aug)%20Product%20array%20puzzle.md)🧩🔍🤔
 - [Day 18: Split an array into two equal Sum subarrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/18(Aug)%20Split%20an%20array%20into%20two%20equal%20Sum%20subarrays.md)✂️➗📊
+- [Day 19: Kth Smallest](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/19(Aug)%20Kth%20Smallest.md)🔢🏅📈
 
 
 
@@ -67,3 +68,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 JUL) :* Split an array into two equal Sum subarrays
 
+*Day 19(19 JUL) :* Kth Smallest
