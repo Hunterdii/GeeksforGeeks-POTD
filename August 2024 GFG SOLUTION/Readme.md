@@ -33,42 +33,42 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-*Day 1(01 JUL) :* Spirally traversing a matrix
+*Day 1(01 AUG) :* Spirally traversing a matrix
 
-*Day 2(02 JUL) :* Edit Distance
+*Day 2(02 AUG) :* Edit Distance
 
-*Day 3(03 JUL) :* The Celebrity Problem
+*Day 3(03 AUG) :* The Celebrity Problem
 
-*Day 4(04 JUL) :* N meetings in one room
+*Day 4(04 AUG) :* N meetings in one room
 
-*Day 5(05 JUL) :* Bottom View of Binary Tree
+*Day 5(05 AUG) :* Bottom View of Binary Tree
 
-*Day 6(06 JUL) :* Validate an IP Address
+*Day 6(06 AUG) :* Validate an IP Address
 
-*Day 7(07 JUL) :* K-th element of two Arrays
+*Day 7(07 AUG) :* K-th element of two Arrays
 
-*Day 8(08 JUL) :* Sum Tree
+*Day 8(08 AUG) :* Sum Tree
 
-*Day 9(09 JUL) :* Maximize Array Value After Rearrangement
+*Day 9(09 AUG) :* Maximize Array Value After Rearrangement
 
-*Day 10(10 JUL) :* Rotate a Linked List
+*Day 10(10 AUG) :* Rotate a Linked List
 
-*Day 11(11 JUL) :* Job Sequencing Problem
+*Day 11(11 AUG) :* Job Sequencing Problem
 
-*Day 12(12 JUL) :* Median of two sorted arrays
+*Day 12(12 AUG) :* Median of two sorted arrays
 
-*Day 13(13 JUL) :* Square root of a number
+*Day 13(13 AUG) :* Square root of a number
 
-*Day 14(14 JUL) :* Longest Common Substring
+*Day 14(14 AUG) :* Longest Common Substring
 
-*Day 15(15 JUL) :* Add 1 to a Linked List Number
+*Day 15(15 AUG) :* Add 1 to a Linked List Number
 
-*Day 16(16 JUL) :* Maximize The Cut Segments
+*Day 16(16 AUG) :* Maximize The Cut Segments
 
-*Day 17(17 JUL) :* Product array puzzle
+*Day 17(17 AUG) :* Product array puzzle
 
-*Day 18(18 JUL) :* Split an array into two equal Sum subarrays
+*Day 18(18 AUG) :* Split an array into two equal Sum subarrays
 
-*Day 19(19 JUL) :* Kth Smallest
+*Day 19(19 AUG) :* Kth Smallest
 
-*Day 20(20 JUL) :* Burning Tree
+*Day 20(20 AUG) :* Burning Tree
