@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Kth Smallest](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/19(Aug)%20Kth%20Smallest.md)🔢🏅📈
 - [Day 20: Burning Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/20(Aug)%20Burning%20Tree.md)🔥🌳⏱️
 - [Day 21: Shortest path in Undirected Graph](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/21(Aug)%20Shortest%20path%20in%20Undirected%20Graph.md)🚀🛤️🌐
+- [Day 22: Alien Dictionary](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/22(Aug)%20Alien%20Dictionary.md)👽📚🔠
 
 
 
@@ -75,3 +76,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 20(20 AUG) :* Burning Tree
 
 *Day 21(21 AUG) :* Shortest path in Undirected Graph
+
+*Day 22(22 AUG) :* Alien Dictionary
