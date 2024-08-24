@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Shortest path in Undirected Graph](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/21(Aug)%20Shortest%20path%20in%20Undirected%20Graph.md)🚀🛤️🌐
 - [Day 22: Alien Dictionary](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/22(Aug)%20Alien%20Dictionary.md)👽📚🔠
 - [Day 23: Left View of Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/23(Aug)%20Left%20View%20of%20Binary%20Tree.md)🌳👀➡️
+- [Day 24: 0 - 1 Knapsack Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/24(Aug)%200%20-%201%20Knapsack%20Problem.md)🧳🔢💼
 
 
 
@@ -85,3 +86,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 AUG) :* Alien Dictionary
 
 *Day 23(23 AUG) :* Left View of Binary Tree
+
+*Day 24(24 AUG) :* 0 - 1 Knapsack Problem
