@@ -30,7 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Alien Dictionary](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/22(Aug)%20Alien%20Dictionary.md)👽📚🔠
 - [Day 23: Left View of Binary Tree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/23(Aug)%20Left%20View%20of%20Binary%20Tree.md)🌳👀➡️
 - [Day 24: 0 - 1 Knapsack Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/24(Aug)%200%20-%201%20Knapsack%20Problem.md)🧳🔢💼
-
+- [Day 25: Number of pairs](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/25(Aug)%20Number%20of%20pairs.md)🔢➕🔗 
 
 
 
@@ -88,3 +88,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 AUG) :* Left View of Binary Tree
 
 *Day 24(24 AUG) :* 0 - 1 Knapsack Problem
+
+*Day 25(25 AUG) :* Number of pairs
