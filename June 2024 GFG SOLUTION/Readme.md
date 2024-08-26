@@ -33,6 +33,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 25: Left Rotate Matrix K times](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/25(June)%20Left%20Rotate%20Matrix%20K%20times.md)🌀➡️
   - [Day 26: Coverage of all Zeros in a Binary Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/26(June)%20Coverage%20of%20all%20Zeros%20in%20a%20Binary%20Matrix.md)🌐📊💻
   - [Day 27: Toeplitz matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/27(June)%20Toeplitz%20matrix.md)🔍↘️🔢
+  - [Day 28: The Palindrome Pattern](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/28(June)%20The%20Palindrome%20Pattern.md)🧩🔢
+  - [Day 29: Identical Linked Lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/29(June)%20Identical%20Linked%20Lists.md)🔗📇
+  - [Day 30: Delete node in Doubly Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/June%202024%20GFG%20SOLUTION/30(June)%20Delete%20node%20in%20Doubly%20Linked%20List.md)📝🔗❌
 
 ## Introduction
 
@@ -91,3 +94,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 JUN) :* Coverage of all Zeros in a Binary Matrix
 
 *Day 27(27 JUN) :* Toeplitz matrix
+
+*Day 28(28 JUN) :* The Palindrome Pattern
+
+*Day 29(29 JUN) :* Identical Linked Lists
+
+*Day 30(30 JUN) :* Delete node in Doubly Linked List
