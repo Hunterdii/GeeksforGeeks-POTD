@@ -32,6 +32,14 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: 0 - 1 Knapsack Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/24(Aug)%200%20-%201%20Knapsack%20Problem.md)🧳🔢💼
 - [Day 25: Number of pairs](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/25(Aug)%20Number%20of%20pairs.md)🔢➕🔗
 - [Day 26: Wildcard Pattern Matching](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/26(Aug)%20Wildcard%20Pattern%20Matching.md)🔍✨🎯
+- [Day 27: Maximum Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/27(Aug)%20Maximum%20Difference.md)🔀📏✂️
+
+
+
+
+
+
+
 
 
 
@@ -93,3 +101,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 25(25 AUG) :* Number of pairs
 
 *Day 26(26 AUG) :* Wildcard Pattern Matching
+
+*Day 27(27 AUG) :* Maximum Difference
