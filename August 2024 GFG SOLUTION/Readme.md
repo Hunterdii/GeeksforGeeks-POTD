@@ -34,15 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: Wildcard Pattern Matching](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/26(Aug)%20Wildcard%20Pattern%20Matching.md)🔍✨🎯
 - [Day 27: Maximum Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/27(Aug)%20Maximum%20Difference.md)🔀📏✂️
 - [Day 28: Sorting Elements of an Array by Frequency](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/28(Aug)%20Sorting%20Elements%20of%20an%20Array%20by%20Frequency.md)🔢🗂️🎲
-
-
-
-
-
-
-
-
-
+- [Day 29: Find length of Loop](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/29(Aug)%20Find%20length%20of%20Loop.md)🔄🌀🔗
 
 
 
@@ -106,4 +98,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 27(27 AUG) :* Maximum Difference
 
 *Day 28(28 AUG) :* Sorting Elements of an Array by Frequency
+
+*Day 29(29 AUG) :* Find length of Loop
 
