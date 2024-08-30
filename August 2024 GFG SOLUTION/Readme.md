@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 27: Maximum Difference](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/27(Aug)%20Maximum%20Difference.md)🔀📏✂️
 - [Day 28: Sorting Elements of an Array by Frequency](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/28(Aug)%20Sorting%20Elements%20of%20an%20Array%20by%20Frequency.md)🔢🗂️🎲
 - [Day 29: Find length of Loop](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/29(Aug)%20Find%20length%20of%20Loop.md)🔄🌀🔗
+- [Day 30: N-Queen Problem](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/August%202024%20GFG%20SOLUTION/30(Aug)%20N-Queen%20Problem.md)♟️👑♔
 
 
 
@@ -101,3 +102,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 29(29 AUG) :* Find length of Loop
 
+*Day 30(30 AUG) :* N-Queen Problem
