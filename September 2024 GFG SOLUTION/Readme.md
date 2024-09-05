@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Minimum Cost Path](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/02(Sep)%20Minimum%20Cost%20Path.md)🛤️💰🏞️
 - [Day 3: Minimum number of deletions and insertions](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/03(Sep)%20Minimum%20number%20of%20deletions%20and%20insertions.md)🗑️➕📝
 - [Day 4: Count ways to N'th Stair(Order does not matter)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/04(Sep)%20Count%20ways%20to%20N'th%20Stair(Order%20does%20not%20matter).md)👟🪜🏁
+- [Day 5: Missing in Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/05(Sep)%20Missing%20in%20Array.md)🔍❓🧩
 
 
 
@@ -30,3 +31,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 3(03 SEP) :* Minimum number of deletions and insertions
 
 *Day 4(04 SEP) :* Count ways to N'th Stair(Order does not matter)
+
+*Day 5(05 SEP) :* Missing in Array
