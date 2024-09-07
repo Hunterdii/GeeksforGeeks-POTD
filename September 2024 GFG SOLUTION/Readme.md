@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 4: Count ways to N'th Stair(Order does not matter)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/04(Sep)%20Count%20ways%20to%20N'th%20Stair(Order%20does%20not%20matter).md)👟🪜🏁
 - [Day 5: Missing in Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/05(Sep)%20Missing%20in%20Array.md)🔍❓🧩
 - [Day 6: Kadane's Algorithm](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/06(Sep)%20Kadane's%20Algorithm.md)💻📊🔢
+- [Day 7: Nth Natural Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/07(Sep)%20Nth%20Natural%20Number.md)🔢🌍🔍
 
 
 
@@ -36,3 +37,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 5(05 SEP) :* Missing in Array
 
 *Day 6(06 SEP) :* Kadane's Algorithm
+
+*Day 7(07 SEP) :* Nth Natural Number
