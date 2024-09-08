@@ -13,6 +13,15 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Missing in Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/05(Sep)%20Missing%20in%20Array.md)🔍❓🧩
 - [Day 6: Kadane's Algorithm](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/06(Sep)%20Kadane's%20Algorithm.md)💻📊🔢
 - [Day 7: Nth Natural Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/07(Sep)%20Nth%20Natural%20Number.md)🔢🌍🔍
+- [Day 8: Minimum Jumps](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/08(Sep)%20Minimum%20Jumps.md)🏃‍♀️🏞️🪂
+
+
+
+
+
+
+
+
 
 
 
@@ -39,3 +48,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 6(06 SEP) :* Kadane's Algorithm
 
 *Day 7(07 SEP) :* Nth Natural Number
+
+*Day 8(08 SEP) :* Minimum Jumps
+
+
