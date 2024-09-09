@@ -1,41 +1,56 @@
-# **9. Minimum Number of Jumps to Reach End**
+# **09. Sort 0s, 1s, and 2s**
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/)
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1)
 
 **Note:** Sorry for uploading late, my exam is going on.
 
 ### Problem Description
 
-Given an array of integers `arr[]` where each element represents the maximum number of steps that can be jumped going forward from that element, find the minimum number of jumps to reach the end of the array (starting from the first element). If it is not possible to reach the end, return `-1`.
+Given an array `arr` containing only `0`s, `1`s, and `2`s, sort the array in ascending order.
 
 **Example:**
 
 Input:
 ```
-arr = [1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]
+arr = [0, 2, 1, 2, 0]
 ```
 Output:
 ```
-3
+0 0 1 2 2
 ```
-Explanation: The minimum number of jumps to reach the end is `3` (1 -> 3 -> 8 -> 9).
+Explanation: `0`s, `1`s, and `2`s are segregated into ascending order.
+
+Input:
+```
+arr = [0, 1, 0]
+```
+Output:
+```
+0 0 1
+```
+Explanation: `0`s, `1`s, and `2`s are segregated into ascending order.
 
 ### My Approach
 
-1. **Greedy Approach:**
-   - Track the maximum reachable index as we traverse the array.
-   - Use two variables, `maxReach` and `steps`, where `maxReach` keeps the maximum index we can reach, and `steps` counts the number of steps taken.
-   - At every index, check if `maxReach` needs to be updated based on the current value.
-   - When the current number of steps is exhausted, increment the jump counter and check if further progress can be made.
+1. **Three-Pointer Approach:**
+   - Use three pointers `low`, `mid`, and `high` to partition the array into three segments: 0s, 1s, and 2s.
 
-2. **Edge Cases:**
-   - If the array has only one element, no jumps are needed.
-   - If the first element is `0`, return `-1` because the end cannot be reached.
+2. **Initialization:**
+   - `low` and `mid` pointers start at the beginning of the array, while the `high` pointer starts at the end of the array.
+
+3. **Partitioning:**
+   - Iterate through the array using the `mid` pointer:
+     - If `arr[mid]` is `0`, swap `arr[mid]` with `arr[low]`, increment both `low` and `mid`.
+     - If `arr[mid]` is `1`, simply move the `mid` pointer forward.
+     - If `arr[mid]` is `2`, swap `arr[mid]` with `arr[high]` and decrement `high`.
+
+4. **Final Array:**
+   - After the loop, the array will be sorted in ascending order with all `0`s, `1`s, and `2`s in their respective positions.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), where `n` is the length of the input array. We only traverse the array once.
-- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of extra space for variables.
+- **Expected Time Complexity:** O(n), where `n` is the length of the array. Each element is processed at most once.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for pointers.
 
 ### Code (C++)
 
@@ -66,7 +81,6 @@ public:
 ### Code (Java)
 
 ```java
-class Solution {
 class Solution {
     public void sort012(ArrayList<Integer> arr) {
         int low = 0, mid = 0, high = arr.size() - 1;
@@ -108,7 +122,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
@@ -117,6 +131,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
-<p align="center">   
+<p align="center" >   
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
 </p>
+
+---
