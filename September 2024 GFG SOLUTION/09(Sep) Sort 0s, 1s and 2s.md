@@ -42,30 +42,23 @@ Explanation: The minimum number of jumps to reach the end is `3` (1 -> 3 -> 8 ->
 ```cpp
 class Solution {
 public:
-    int minJumps(vector<int>& arr) {
-        int n = arr.size();
-        if (n <= 1) return 0;    
-        if (arr[0] == 0) return -1; 
-        
-        int maxReach = arr[0];  
-        int steps = arr[0];      
-        int jumps = 1;          
-        
-        for (int i = 1; i < n; i++) {
-            if (i == n - 1) return jumps;  
-            
-            maxReach = max(maxReach, i + arr[i]);  
-            steps--;  
-            
-            if (steps == 0) {  
-                jumps++;  
-                if (i >= maxReach) return -1;  
-                
-                steps = maxReach - i; 
+    void sort012(vector<int>& arr) {
+        int low = 0, mid = 0, high = arr.size() - 1;
+
+        while (mid <= high) {
+            if (arr[mid] == 0) {
+                swap(arr[low], arr[mid]);
+                low++;
+                mid++;
+            } 
+            else if (arr[mid] == 1) {
+                mid++;
+            } 
+            else {  
+                swap(arr[mid], arr[high]);
+                high--;
             }
         }
-        
-        return -1;  
     }
 };
 ```
@@ -74,30 +67,22 @@ public:
 
 ```java
 class Solution {
-    static int minJumps(int[] arr) {
-        int n = arr.length;
-        if (n <= 1) return 0;
-        if (arr[0] == 0) return -1;
-        
-        int maxReach = arr[0];
-        int steps = arr[0];
-        int jumps = 1;
+class Solution {
+    public void sort012(ArrayList<Integer> arr) {
+        int low = 0, mid = 0, high = arr.size() - 1;
 
-        for (int i = 1; i < n; i++) {
-            if (i == n - 1) return jumps;
-
-            maxReach = Math.max(maxReach, i + arr[i]);
-            steps--;
-
-            if (steps == 0) {
-                jumps++;
-                if (i >= maxReach) return -1;
-
-                steps = maxReach - i;
+        while (mid <= high) {
+            if (arr.get(mid) == 0) {
+                Collections.swap(arr, low, mid);
+                low++;
+                mid++;
+            } else if (arr.get(mid) == 1) {
+                mid++;
+            } else {
+                Collections.swap(arr, mid, high);
+                high--;
             }
         }
-
-        return -1;
     }
 }
 ```
@@ -106,32 +91,19 @@ class Solution {
 
 ```python
 class Solution:
-    def minJumps(self, arr):
-        n = len(arr)
-        if n <= 1:
-            return 0
-        if arr[0] == 0:
-            return -1
-        
-        maxReach = arr[0]
-        steps = arr[0]
-        jumps = 1
+    def sort012(self, arr):
+        low, mid, high = 0, 0, len(arr) - 1
 
-        for i in range(1, n):
-            if i == n - 1:
-                return jumps
-
-            maxReach = max(maxReach, i + arr[i])
-            steps -= 1
-
-            if steps == 0:
-                jumps += 1
-                if i >= maxReach:
-                    return -1
-
-                steps = maxReach - i
-        
-        return -1
+        while mid <= high:
+            if arr[mid] == 0:
+                arr[low], arr[mid] = arr[mid], arr[low]
+                low += 1
+                mid += 1
+            elif arr[mid] == 1:
+                mid += 1
+            else:
+                arr[mid], arr[high] = arr[high], arr[mid]
+                high -= 1
 ```
 
 ## Contribution and Support
