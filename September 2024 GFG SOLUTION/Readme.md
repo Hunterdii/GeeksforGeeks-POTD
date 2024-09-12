@@ -17,7 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Sort 0s, 1s and 2s](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/09(Sep)%20Sort%200s%2C%201s%20and%202s.md)🚦⚖️🔢
 - [Day 10: Circle of strings](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/10(Sep)%20Circle%20of%20strings.md)🔄🔗⚙️
 - [Day 11: Minimum Cost of ropes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/11(Sep)%20Minimum%20Cost%20of%20ropes.md)🪢💰🧮
-
+- [Day 12: Middle of a Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/12(Sep)%20Middle%20of%20a%20Linked%20List.md)🐢🏃‍♂️🔗
 
 
 
@@ -67,3 +67,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 10(10 SEP) :* Circle of strings
 
 *Day 11(11 SEP) :* Minimum Cost of ropes
+
+*Day 12(12 SEP) :* Middle of a Linked List
