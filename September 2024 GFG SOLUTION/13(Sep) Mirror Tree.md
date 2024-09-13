@@ -1,4 +1,4 @@
-# **26. Mirror Tree**
+# **13. Mirror Tree**
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/mirror-tree/1)
 
