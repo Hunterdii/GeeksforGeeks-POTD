@@ -22,6 +22,10 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Alternate positive and negative numbers](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/14(Sep)%20Alternate%20positive%20and%20negative%20numbers.md)🔄➕➖
 - [Day 15: Binary Tree to DLL](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/15(Sep)%20Binary%20Tree%20to%20DLL.md)
 🌳➡️📜
+- [Day 16: Longest valid Parentheses](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/16(Sep)%20Longest%20valid%20Parentheses.md)🧩🟰✅
+
+
+
 
 
 
@@ -79,3 +83,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 SEP) :* Alternate positive and negative numbers
 
 *Day 15(15 SEP) :* Binary Tree to DLL
+
+*Day 16(16 SEP) :* Longest valid Parentheses
