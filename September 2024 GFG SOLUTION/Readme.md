@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 🌳➡️📜
 - [Day 16: Longest valid Parentheses](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/16(Sep)%20Longest%20valid%20Parentheses.md)🧩🟰✅
 - [Day 17: Minimize the Heights II](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/17(Sep)%20Minimize%20the%20Heights%20II.md)⛰️📏🎯
+- [Day 18: Parenthesis Checker](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/18(Sep)%20Parenthesis%20Checker.md)💻📑👨‍💻
 
 
 
@@ -88,3 +89,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 SEP) :* Longest valid Parentheses
 
 *Day 17(17 SEP) :* Minimize the Heights II
+
+*Day 18(18 SEP) :* Parenthesis Checker
+
