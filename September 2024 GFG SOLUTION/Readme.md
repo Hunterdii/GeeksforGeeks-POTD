@@ -27,33 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Parenthesis Checker](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/18(Sep)%20Parenthesis%20Checker.md)💻📑👨‍💻
 - [Day 19: Reverse Words](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/19(Sep)%20Reverse%20Words.md)🔄✍️📜
 - [Day 20: Facing the sun](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/20(Sep)%20Facing%20the%20sun.md)🌅👀👷
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Day 21: Clone a linked list with next and random pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/21(Sep)%20Clone%20a%20linked%20list%20with%20next%20and%20random%20pointer.md)🔗🎲🧑‍🤝‍🧑
 
  ## Introduction
 
@@ -98,3 +72,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 SEP) :* Reverse Words
 
 *Day 20(20 SEP) :* Facing the sun
+
+*Day 21(21 SEP) :* Clone a linked list with next and random pointer
