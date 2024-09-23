@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Facing the sun](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/20(Sep)%20Facing%20the%20sun.md)🌅👀👷
 - [Day 21: Clone a linked list with next and random pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/21(Sep)%20Clone%20a%20linked%20list%20with%20next%20and%20random%20pointer.md)🔗🎲🧑‍🤝‍🧑
 - [Day 22: Longest Prefix Suffix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/22(Sep)%20Longest%20Prefix%20Suffix.md)🔠🧵🔗
+- [Day 23: Missing And Repeating](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/23(Sep)%20Missing%20And%20Repeating.md)🔍➖➕
 
  ## Introduction
 
@@ -77,3 +78,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 SEP) :* Clone a linked list with next and random pointer
 
 *Day 22(22 SEP) :* Longest Prefix Suffix
+
+*Day 23(23 SEP) :* Missing And Repeating
