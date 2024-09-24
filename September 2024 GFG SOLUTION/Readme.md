@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Clone a linked list with next and random pointer](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/21(Sep)%20Clone%20a%20linked%20list%20with%20next%20and%20random%20pointer.md)🔗🎲🧑‍🤝‍🧑
 - [Day 22: Longest Prefix Suffix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/22(Sep)%20Longest%20Prefix%20Suffix.md)🔠🧵🔗
 - [Day 23: Missing And Repeating](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/23(Sep)%20Missing%20And%20Repeating.md)🔍➖➕
+- [Day 24: Smallest window in a string containing all the characters of another string](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/24(Sep)%20Smallest%20window%20in%20a%20string%20containing%20all%20the%20characters%20of%20another%20string.md)🔍📜🪟🔡
 
  ## Introduction
 
@@ -80,3 +81,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 SEP) :* Longest Prefix Suffix
 
 *Day 23(23 SEP) :* Missing And Repeating
+
+*Day 24(24 SEP) :* Smallest window in a string containing all the characters of another string
+
