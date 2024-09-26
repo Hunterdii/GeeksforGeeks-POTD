@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Missing And Repeating](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/23(Sep)%20Missing%20And%20Repeating.md)🔍➖➕
 - [Day 24: Smallest window in a string containing all the characters of another string](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/24(Sep)%20Smallest%20window%20in%20a%20string%20containing%20all%20the%20characters%20of%20another%20string.md)🔍📜🪟🔡
 - [Day 25: Palindrome Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/25(Sep)%20Palindrome%20Linked%20List.md)🔄📝🔗
+- [Day 26: Roof Top](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/26(Sep)%20Roof%20Top.md)🏠🌤️🚶‍♂️
 
  ## Introduction
 
@@ -87,3 +88,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 SEP) :* Palindrome Linked List
 
+*Day 26(26 SEP) :* Roof Top
