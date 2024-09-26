@@ -2,10 +2,17 @@
 <div align=center>
   <h3><b>📍Repository Visitor Count</b></h3>
 </div>
-
 <p align="center" >   
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
 </p>
+
+<!--<div href="https://star-history.com/#Hunterdii/GeeksforGeeks-POTD&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
+ </picture>
+</div>-->
 
 
 ### Guys Please vote I need Suggestion about the Leetcode POTD [Discussion Click Please Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/2)🙏
@@ -79,3 +86,15 @@ Please ensure your code follows the existing coding style and includes appropria
 To begin your journey through the GeeksforGeeks Problem of the Day solutions for 2024, simply browse through the directory and select a problem that interests you. Happy coding!
 
 **[Visit GeeksforGeeks Problem of the Day](https://practice.geeksforgeeks.org/problem-of-the-day)**
+
+---
+
+<div style="text-align: center;">
+  <a href="https://star-history.com/#Hunterdii/GeeksforGeeks-POTD&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
+    </picture>
+  </a>
+</div>
