@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Palindrome Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/25(Sep)%20Palindrome%20Linked%20List.md)🔄📝🔗
 - [Day 26: Roof Top](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/26(Sep)%20Roof%20Top.md)🏠🌤️🚶‍♂️
 - [Day 27: K Sized Subarray Maximum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/27(Sep)%20K%20Sized%20Subarray%20Maximum.md)📊🔢📈
+- [Day 28: Minimal Cost](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/September%202024%20GFG%20SOLUTION/28(Sep)%20Minimal%20Cost.md)🪨👟💸
 
  ## Introduction
 
@@ -92,3 +93,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 SEP) :* Roof Top
 
 *Day 27(27 SEP) :* K Sized Subarray Maximum
+
+*Day 28(28 SEP) :* Minimal Cost
