@@ -9,7 +9,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: Multiply two linked lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/01(Oct)%20Multiply%20two%20linked%20lists.md)🔗=✖
 - [Day 2: Rotate and delete](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/02(Oct)%20Rotate%20and%20delete.md)🔚🎯🗑️
 - [Day 3: Majority Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/03(Sep)%20Majority%20Vote.md)🗳️🔢✅
-
+- [Day 4: Deletion and Reverse in Circular Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/04(Sep)%20Deletion%20and%20Reverse%20in%20Circular%20Linked%20List.md)🗑️🔗💻
 
 ## Introduction
 
@@ -20,3 +20,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 2(02 SEP) :* Rotate and delete
 
 *Day 3(03 SEP) :* Majority Vote
+
+*Day 4(04 SEP) :* Deletion and Reverse in Circular Linked List
