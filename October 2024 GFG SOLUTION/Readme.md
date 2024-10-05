@@ -10,6 +10,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Rotate and delete](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/02(Oct)%20Rotate%20and%20delete.md)🔚🎯🗑️
 - [Day 3: Majority Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/03(Oct)%20Majority%20Vote.md)🗳️🔢✅
 - [Day 4: Deletion and Reverse in Circular Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/04(Oct)%20Deletion%20and%20Reverse%20in%20Circular%20Linked%20List.md)🗑️🔗💻
+- [Day 5: Not a subset sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/05(Oct)%20Not%20a%20subset%20sum.md)❌➗🔢
+
 
 ## Introduction
 
@@ -22,3 +24,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 3(03 OCT) :* Majority Vote
 
 *Day 4(04 OCT) :* Deletion and Reverse in Circular Linked List
+
+*Day 5(05 OCT) :* Not a subset sum
