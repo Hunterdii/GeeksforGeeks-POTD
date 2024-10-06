@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: Majority Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/03(Oct)%20Majority%20Vote.md)🗳️🔢✅
 - [Day 4: Deletion and Reverse in Circular Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/04(Oct)%20Deletion%20and%20Reverse%20in%20Circular%20Linked%20List.md)🗑️🔗💻
 - [Day 5: Not a subset sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/05(Oct)%20Not%20a%20subset%20sum.md)❌➗🔢
+- [Day 6: Find the number of islands](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/06(Oct)%20Find%20the%20number%20of%20islands.md)🏝️🌐🗺️
 
 
 ## Introduction
@@ -26,3 +27,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 4(04 OCT) :* Deletion and Reverse in Circular Linked List
 
 *Day 5(05 OCT) :* Not a subset sum
+
+*Day 6(06 OCT) :* Find the number of islands
