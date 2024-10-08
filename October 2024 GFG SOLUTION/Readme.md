@@ -13,6 +13,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Not a subset sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/05(Oct)%20Not%20a%20subset%20sum.md)❌➗🔢
 - [Day 6: Find the number of islands](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/06(Oct)%20Find%20the%20number%20of%20islands.md)🏝️🌐🗺️
 - [Day 7: XOR Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/07(Oct)%20XOR%20Linked%20List.md)💡🔗📋
+- [Day 8: Largest Pair Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/08(Oct)%20Largest%20Pair%20Sum.md)💡➕💥
+
 
 
 ## Introduction
@@ -32,3 +34,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 6(06 OCT) :* Find the number of islands
 
 *Day 7(07 OCT) :* XOR Linked List
+
+*Day 8(08 OCT) :* Largest Pair Sum
