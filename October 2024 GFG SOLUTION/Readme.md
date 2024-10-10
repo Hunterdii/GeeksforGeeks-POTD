@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: XOR Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/07(Oct)%20XOR%20Linked%20List.md)💡🔗📋
 - [Day 8: Largest Pair Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/08(Oct)%20Largest%20Pair%20Sum.md)💡➕💥
 - [Day 9: Linked List Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/09(Oct)%20Linked%20List%20Matrix.md)🧑‍💻🔗🧱
+- [Day 10: Max distance between same elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/10(Oct)%20Max%20distance%20between%20same%20elements.md)📏🔍✨
 
 
 
@@ -39,3 +40,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 OCT) :* Largest Pair Sum
 
 *Day 9(09 OCT) :* Linked List Matrix
+
+*Day 10(10 OCT) :* Max distance between same elements
