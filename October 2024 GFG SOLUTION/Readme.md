@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Max distance between same elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/10(Oct)%20Max%20distance%20between%20same%20elements.md)📏🔍✨
 - [Day 11: Reorganize The Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/11(Oct)%20Reorganize%20The%20Array.md)🔢📋🔧
 - [Day 12: Two Smallests in Every Subarray](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/12(Oct)%20Two%20Smallests%20in%20Every%20Subarray.md)🔢👥📈
+- [Day 13: Delete Alternate Nodes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/13(Oct)%20Delete%20Alternate%20Nodes.md)🚀🗑️🧑‍💻
 
 
 
@@ -48,3 +49,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 11(11 OCT) :* Reorganize The Array
 
 *Day 12(12 OCT) :* Two Smallests in Every Subarray
+
+*Day 13(13 OCT) :* Delete Alternate Nodes
