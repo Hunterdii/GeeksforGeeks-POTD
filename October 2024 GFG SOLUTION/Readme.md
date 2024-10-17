@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Count Linked List Nodes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/14(Oct)%20Count%20Linked%20List%20Nodes.md)🔗➡️🧮
 - [Day 15: Subarray range with given sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/15(Oct)%20Subarray%20range%20with%20given%20sum.md)🔢📏🔍
 - [Day 16: Two Swaps](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/16(Oct)%20Two%20Swaps.md)🔢✨🔧
+- [Day 17: Split Linked List Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/17(Oct)%20Split%20Linked%20List%20Alternatingly.md)🔗✂🧩
 
 
 
@@ -60,3 +61,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 15(15 OCT) :* Subarray range with given sum
 
 *Day 16(16 OCT) :* Two Swaps
+
+*Day 17(17 OCT) :* Split Linked List Alternatingly
