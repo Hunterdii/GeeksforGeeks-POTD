@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Subarray range with given sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/15(Oct)%20Subarray%20range%20with%20given%20sum.md)🔢📏🔍
 - [Day 16: Two Swaps](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/16(Oct)%20Two%20Swaps.md)🔢✨🔧
 - [Day 17: Split Linked List Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/17(Oct)%20Split%20Linked%20List%20Alternatingly.md)🔗✂🧩
+- [Day 18: Single Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/18(Oct)%20Single%20Number.md)🔢❓🧮
 
 
 
@@ -63,3 +64,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 OCT) :* Two Swaps
 
 *Day 17(17 OCT) :* Split Linked List Alternatingly
+
+*Day 18(18 OCT) :* Single Number
