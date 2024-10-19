@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Two Swaps](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/16(Oct)%20Two%20Swaps.md)🔢✨🔧
 - [Day 17: Split Linked List Alternatingly](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/17(Oct)%20Split%20Linked%20List%20Alternatingly.md)🔗✂🧩
 - [Day 18: Single Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/18(Oct)%20Single%20Number.md)🔢❓🧮
+- [Day 19: Nearest multiple of 10](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/19(Oct)%20Nearest%20multiple%20of%2010.md)💯✖️🔟
 
 
 
@@ -66,3 +67,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 17(17 OCT) :* Split Linked List Alternatingly
 
 *Day 18(18 OCT) :* Single Number
+
+*Day 19(19 OCT) :* Nearest multiple of 10
+
