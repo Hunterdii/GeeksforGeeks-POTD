@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Single Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/18(Oct)%20Single%20Number.md)🔢❓🧮
 - [Day 19: Nearest multiple of 10](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/19(Oct)%20Nearest%20multiple%20of%2010.md)💯✖️🔟
 - [Day 20: Sort a k sorted doubly linked list](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/20(Oct)%20Sort%20a%20k%20sorted%20doubly%20linked%20list.md)🔗📃🗂️
+- [Day 21: Split the Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/21(Oct)%20Split%20the%20Array.md)🧩🔢📏
 
 
 
@@ -72,4 +73,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 OCT) :* Nearest multiple of 10
 
 *Day 20(20 OCT) :* Sort a k sorted doubly linked list
+
+*Day 21(21 OCT) :* Split the Array
 
