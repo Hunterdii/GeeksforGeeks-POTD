@@ -4,7 +4,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 _Note: My externals exams are currently ongoing, which is the reason for the delayed upload **Sorry** ._
 
-### Problem Description
+## Problem Description
 
 Given an array `arr` of distinct integers, rearrange the array such that:
 - The first element is the largest,
@@ -32,7 +32,7 @@ This pattern continues until all elements are arranged accordingly.
 - `1 ≤ arr[i] ≤ 10^5`
 
 
-### My Approach
+## My Approach
 
 1. **Sorting:**  
    - First, sort the array to arrange elements in ascending order.
@@ -47,13 +47,13 @@ This pattern continues until all elements are arranged accordingly.
    - Append elements to the result list based on `highTurn`, ensuring the specified order.
   
 
-### Time and Auxiliary Space Complexity
+## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** `O(n log n)`, due to the sorting step of the array.
 - **Expected Auxiliary Space Complexity:** `O(n)`, as we use a separate array to store the rearranged elements.
 
 
-### Code (C++)
+## Code (C++)
 
 ```cpp
 class Solution {
@@ -81,7 +81,7 @@ public:
 };
 ```
 
-### Code (Java)
+## Code (Java)
 
 ```java
 import java.util.ArrayList;
@@ -110,7 +110,7 @@ class Solution {
 }
 ```
 
-### Code (Python)
+## Code (Python)
 
 ```python
 class Solution:
@@ -135,7 +135,7 @@ class Solution:
 ```
 
 
-### Contribution and Support
+## Contribution and Support
 
 For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 

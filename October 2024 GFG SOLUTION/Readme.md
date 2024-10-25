@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Sub-arrays with equal number of occurences](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/22(Oct)%20Sub-arrays%20with%20equal%20number%20of%20occurences.md)🔢🟰🎯
 - [Day 23: Find the Sum of Last N nodes of the Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/23(Oct)%20Find%20the%20Sum%20of%20Last%20N%20nodes%20of%20the%20Linked%20List.md)🔗📄🧮
 - [Day 24: Modify the Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/24(Oct)%20Modify%20the%20Array.md)🔄💡💻
+- [Day 25: Alternative Sorting](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/25(Oct)%20Alternative%20Sorting.md)🔢✨📐
 
 
 
@@ -85,3 +86,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 OCT) :* Find the Sum of Last N nodes of the Linked List
 
 *Day 24(24 OCT) :* Modify the Array
+
+*Day 25(25 OCT) :* Alternative Sorting
