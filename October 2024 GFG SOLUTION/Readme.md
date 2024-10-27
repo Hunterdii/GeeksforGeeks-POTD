@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Modify the Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/24(Oct)%20Modify%20the%20Array.md)🔄💡💻
 - [Day 25: Alternative Sorting](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/25(Oct)%20Alternative%20Sorting.md)🔢✨📐
 - [Day 26: Occurence of an integer in a Linked List](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/26(Oct)%20Occurence%20of%20an%20integer%20in%20a%20Linked%20List.md)🔢🔍🔗
+- [Day 27: Triplet Family](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/October%202024%20GFG%20SOLUTION/27(Oct)%20Triplet%20Family.md)👨‍👩‍👧👩‍👩‍👧👨‍👨‍👧
 
 
 
@@ -91,3 +92,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 25(25 OCT) :* Alternative Sorting
 
 *Day 26(26 OCT) :* Occurence of an integer in a Linked List
+
+*Day 27(27 OCT) :* Triplet Family
