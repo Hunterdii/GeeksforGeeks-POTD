@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)💡
-- [Day 1: Swap and Maximize](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/01(Nov)%20Swap%and%20Maximize.md)🔗=✖
+- [Day 1: Swap and Maximize](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/01(Nov)%20Swap%20and%20Maximize.md)🔄⬇️📉
 
 
 ## Introduction
