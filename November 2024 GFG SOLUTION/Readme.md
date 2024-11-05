@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Kth distance](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/02(Nov)%20Kth%20distance.md)🚗🛤️🧭
 - [Day 3: Is Linked List Length Even?](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/03(Nov)%20Is%20Linked%20List%20Length%20Even%3F.md)🔗🔢❌
 - [Day 4: Find All Triplets with Zero Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/04(Nov)%20Find%20All%20Triplets%20with%20Zero%20Sum.md)🔍➕👥
+- [Day 5: Rotate by 90 degree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md)🌀📐💠
 
 
 ## Introduction
@@ -24,3 +25,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 NOV) :* Find All Triplets with Zero Sum
 
+*Day 5(05 NOV) :* Rotate by 90 degree
