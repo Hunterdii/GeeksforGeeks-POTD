@@ -2,7 +2,7 @@ import requests
 import sys
 import re
 
-# GitHub API to fetch the latest commit
+# GitHub API to fetch the latest commit and changed files
 GITHUB_API_URL = "https://api.github.com"
 
 if __name__ == "__main__":
@@ -18,15 +18,25 @@ if __name__ == "__main__":
     response.raise_for_status()
     commit_data = response.json()[0]  # Get the latest commit
 
-    # Extract the latest commit's file name and URL
-    commit_message = commit_data["commit"]["message"]
-    commit_date = commit_data["commit"]["committer"]["date"]
-    
-    # Assume the file is in the `GFG SOLUTION` folder and match the file name based on the commit message (assuming this naming convention is consistent)
-    solution_filename = commit_message.strip().replace(" ", "%20") + ".md"
-    
-    # Construct the solution URL
-    solution_url = f"https://github.com/{repository}/blob/main/November%202024%20GFG%20SOLUTION/{solution_filename}"
+    # Fetch the list of changed files in the latest commit
+    files_url = commit_data["url"] + "/files"
+    response = requests.get(files_url, headers=headers)
+    response.raise_for_status()
+    files = response.json()
+
+    # Find the solution file from the changed files (based on the folder and expected filename format)
+    solution_filename = None
+    for file in files:
+        # Check if the file is in the "November 2024 GFG SOLUTION" folder and matches the filename pattern
+        if "November 2024 GFG SOLUTION" in file["filename"]:
+            solution_filename = file["filename"]
+            break
+
+    if not solution_filename:
+        raise ValueError("No valid solution file found in the latest commit.")
+
+    # Prepare the solution URL based on the file path
+    solution_url = f"https://github.com/{repository}/blob/main/{solution_filename}"
 
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
