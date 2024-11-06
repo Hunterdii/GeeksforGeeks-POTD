@@ -111,7 +111,7 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 <!--
 ## 🔥 **Today's Solution**
 <!--START_SECTION:potd-badge-->
-[![Today's POTD Solution](https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/Nov%202024%20GFG%20SOLUTION/06(Nov)Wednesday.md)
+
 <!--END_SECTION:potd-badge-->
 
 
