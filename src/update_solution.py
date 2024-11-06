@@ -2,6 +2,7 @@ import requests
 import json
 import sys
 import re
+from datetime import datetime
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -13,26 +14,24 @@ if __name__ == "__main__":
         "Authorization": f"token {token}"
     }
 
-    # Get the latest commit details
-    repo_name = "Hunterdii/GeeksforGeeks-POTD"  # Correct repo
-    commit_url = f"https://api.github.com/repos/{repo_name}/commits?sha=main"
+    # Correct repository name
+    repo_name = "Hunterdii/GeeksforGeeks-POTD"
 
-    # Make the request to fetch the latest commit
+    # Get the latest commit details for the correct repository
+    commit_url = f"https://api.github.com/repos/{repo_name}/commits?sha=main"
     response = requests.get(commit_url, headers=headers)
 
     if response.status_code != 200:
         print(f"Error fetching commit details: {response.text}")
         sys.exit(1)
 
-    # Parse the response JSON to get commit details
     commit_data = response.json()[0]
     commit_sha = commit_data['sha']
     commit_message = commit_data['commit']['message']
     commit_date = commit_data['commit']['committer']['date']
     
-    # Extract the question name or solution identifier from the commit message
-    # Assuming commit message starts with the identifier, like "01(Nov) Solution Name"
-    solution_identifier = commit_message.split(":")[0]
+    # Extract the question name or solution identifier from the commit message (e.g., "01(Nov) Solution Name")
+    solution_identifier = commit_message.split(":")[0]  # Assuming commit message starts with the identifier
     
     # Generate the badge URL dynamically based on the solution
     badge_url = f"https://img.shields.io/badge/Solution-{solution_identifier}-blue"
@@ -46,8 +45,8 @@ if __name__ == "__main__":
         content = readme.read()
 
     # Update the commit link and the badge in the README file
-    new_content = re.sub(r"(?<=<!--START_SECTION:latest-commit-->)[\s\S]*(?=<!--END_SECTION:latest-commit-->)", f" {commit_link} ", content)
-    new_content = re.sub(r"(?<=<!--START_SECTION:potd-badge-->)[\s\S]*(?=<!--END_SECTION:potd-badge-->)", f" {badge_link} ", new_content)
+    new_content = re.sub(r"(?<=<!--START_SECTION:latest-commit-->)[\s\S]*(?=<!--END_SECTION:latest-commit-->)", commit_link, content)
+    new_content = re.sub(r"(?<=<!--START_SECTION:potd-badge-->)[\s\S]*(?=<!--END_SECTION:potd-badge-->)", badge_link, new_content)
 
     # Write the updated content back to README
     with open(readmePath, "w") as readme:
