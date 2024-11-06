@@ -108,18 +108,17 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 
 # 🌟 **GeeksforGeeks Problem of the Day Solutions 2024** 🌟 
 
-
+<!--
 ## 🔥 **Today's Solution**
 <!--START_SECTION:potd-badge-->
 
 <!--END_SECTION:potd-badge-->
 
-
+<!--
 ## 🔗 **Latest Commit**
 <!--START_SECTION:latest-commit-->
 
 <!--END_SECTION:latest-commit-->
-
 
 
 <div align="center">
