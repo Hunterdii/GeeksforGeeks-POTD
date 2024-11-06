@@ -106,7 +106,7 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 -->
 
 
-# 🌟 **GeeksforGeeks Problem of the Day Solutions 2024** 🌟 
+# 🌟 GeeksforGeeks Problem of the Day Solutions 2024 🌟 
 
 <!--
 ## 🔥 **Today's Solution**
@@ -129,7 +129,7 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 </div>
 
 <div align="center">
-  <h3>🚀 **Welcome to Our Coding Community!** 🚀</h3>
+  <h3>🚀 Welcome to Our Coding Community! 🚀</h3>
   <p>🌱 Dive into GeeksforGeeks Problem of the Day Solutions and level up your coding skills!</p>
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor Count" />
 </div>
