@@ -4,7 +4,8 @@ import sys
 import re
 
 if __name__ == "__main__":
-    assert(len(sys.argv) == 3)  # Adjusted to take only the token and README path
+    assert(len(sys.argv) == 4)  # Adjusted to expect three arguments + the script name
+    handle = "Hunterdii"  # The fixed GitHub user handle
     token = sys.argv[1]
     readmePath = sys.argv[2]
 
@@ -13,7 +14,7 @@ if __name__ == "__main__":
     }
 
     # Set the target repository to the specific repo
-    repo_name = "Hunterdii/GeeksforGeeks-POTD"  
+    repo_name = "Hunterdii/GeeksforGeeks-POTD"
     commit_url = f"https://api.github.com/repos/{repo_name}/commits?sha=main"
     
     # Fetch the latest commit details
