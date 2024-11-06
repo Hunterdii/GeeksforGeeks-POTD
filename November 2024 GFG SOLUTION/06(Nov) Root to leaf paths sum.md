@@ -6,6 +6,7 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 Given a binary tree where each node value is a number, find the sum of all the numbers formed from root to leaf paths. The formation of these numbers follows the pattern `10 * parent + current`. The aim is to accumulate the values for each leaf path and return the total sum.
 
+
 #### Examples:
 
 **Input:**  
