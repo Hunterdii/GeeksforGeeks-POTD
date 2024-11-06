@@ -24,7 +24,7 @@ jobs:
         run: pip install requests
 
       - name: Update README with the Latest Commit
-        run: python update_commit.py ${{ github.repository }} ${{ secrets.GITHUB_TOKEN }} README.md
+        run: python src/update_commit.py ${{ github.repository }} ${{ secrets.GITHUB_TOKEN }} README.md
 
       - name: Commit and Push Changes
         run: |
