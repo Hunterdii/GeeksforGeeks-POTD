@@ -34,4 +34,3 @@ jobs:
           git add -A
           git diff-index --quiet HEAD || git commit -m "Update today's solution"
           git push
-
