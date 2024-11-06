@@ -110,11 +110,11 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 
 <!--
 ## 🔥 **Today's Solution**
-<!--START_SECTION:potd-badge-->[![Today's Solution](https://img.shields.io/badge/Solution-Update dailyCommitUpdate.yml-blue)](https://github.com/Hunterdii/GeeksforGeeks-POTD/commit/2d1d776a678a59af530cce49b3cba4708134c27e)<!--END_SECTION:potd-badge-->
+<!--START_SECTION:potd-badge-->[![Today's Solution](https://img.shields.io/badge/Solution-Update update_solution.py-blue)](https://github.com/Hunterdii/Hunterdii/commit/cf6a391ab5309ec7ffbfc5f082b22c174f7ed26b)<!--END_SECTION:potd-badge-->
 
 <!--
 ## 🔗 **Latest Commit**
-<!--START_SECTION:latest-commit-->Commit URL: https://github.com/Hunterdii/GeeksforGeeks-POTD/commit/2d1d776a678a59af530cce49b3cba4708134c27e<!--END_SECTION:latest-commit-->
+<!--START_SECTION:latest-commit-->Commit URL: https://github.com/Hunterdii/GeeksforGeeks-POTD/commit/cf6a391ab5309ec7ffbfc5f082b22c174f7ed26b<!--END_SECTION:latest-commit-->
 
 
 <div align="center">
