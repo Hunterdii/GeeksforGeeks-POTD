@@ -1,6 +1,7 @@
 import requests
 import sys
 import re
+from datetime import datetime
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -12,33 +13,26 @@ if __name__ == "__main__":
         "Authorization": f"token {token}"
     }
 
-    # Get the latest commit of the day for the repository
-    commit_url = f"https://api.github.com/repos/{repository}/commits"
-    response = requests.get(commit_url, headers=headers)
+    # Get the current date
+    today = datetime.today()
+    day_of_month = today.strftime("%d")  # Get current day of the month
+    month = today.strftime("%b")  # Get current month (e.g., Nov)
     
-    if not response.ok:
-        print(f"Failed to fetch commits: {response.status_code} {response.text}")
-        sys.exit(1)
-    
-    commits = response.json()
-    
-    # Assuming the first commit in the list is the most recent commit
-    latest_commit = commits[0]
-    commit_sha = latest_commit['sha']
-    commit_link = f"https://github.com/{repository}/commit/{commit_sha}"
+    # Format the solution file name for today (e.g., 07(Nov)Next Problem.md)
+    today_solution_filename = f"{day_of_month}({month}){today.strftime('%A')}.md"
 
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
-    badge_link = f"[![Today's POTD Solution]({badge_url})](https://github.com/{repository})"
+    badge_link = f"[![Today's POTD Solution]({badge_url})](https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename})"
 
     # Read the README file and update the sections for commit and badge
     with open(readme_path, "r") as readme:
         content = readme.read()
 
-    # Update commit link
+    # Update today's solution link
     content = re.sub(
         r"(?<=<!--START_SECTION:latest-commit-->).*?(?=<!--END_SECTION:latest-commit-->)", 
-        f"\n{commit_link}\n", 
+        f"\nhttps://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}\n", 
         content, 
         flags=re.DOTALL
     )
