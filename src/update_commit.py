@@ -1,8 +1,20 @@
-
 import requests
 import sys
-import re
+import os
 from datetime import datetime
+
+def get_latest_solution_file(directory: str):
+    # Get all files in the directory
+    files = os.listdir(directory)
+    
+    # Filter out only the files that match the date format for solutions (e.g., 06(Nov).md)
+    solution_files = [file for file in files if file.endswith('.md') and re.match(r"\d{2}\([A-Za-z]{3}\).+\.md", file)]
+    
+    # Sort the files based on date, assuming filenames are in the format "DD(Month)Name.md"
+    solution_files.sort(key=lambda f: datetime.strptime(f[:6], "%d(%b)"))
+    
+    # Return the most recent file
+    return solution_files[-1] if solution_files else None
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -10,17 +22,21 @@ if __name__ == "__main__":
     token = sys.argv[2]
     readme_path = sys.argv[3]
 
-    # Get the current date
-    today = datetime.today()
-    day_of_month = today.strftime("%d")  # Get current day of the month (e.g., 06)
-    month = today.strftime("%b")  # Get current month (e.g., Nov)
-
-    # Prepare the solution filename for today (e.g., 06(Nov)Root to leaf paths sum.md)
-    today_solution_filename = f"{day_of_month}({month}){today.strftime('%A')}.md"
-
-    # Prepare the commit URL for today (we don't need to change this as it will be dynamically picked from the latest commit)
-    solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}"
-
+    # Path where your solutions are stored
+    solution_dir = "November 2024 GFG SOLUTION"
+    
+    # Get the latest solution filename
+    latest_solution_file = get_latest_solution_file(solution_dir)
+    if not latest_solution_file:
+        raise Exception("No solution files found!")
+    
+    # Extract the day and month from the file name (e.g., 06(Nov))
+    day_of_month = latest_solution_file[:2]
+    month = latest_solution_file[3:6]
+    
+    # Prepare the solution URL
+    solution_url = f"https://raw.githubusercontent.com/{repository}/main/{solution_dir}/{latest_solution_file}"
+    
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
     badge_link = f"[![Today's POTD Solution]({badge_url})]({solution_url})"  # This makes the badge link to the solution for today
@@ -29,14 +45,6 @@ if __name__ == "__main__":
     with open(readme_path, "r") as readme:
         content = readme.read()
 
-    # Update today's solution link (for the commit)
-    # content = re.sub(
-    #     r"(?<=<!--START_SECTION:latest-commit-->).*?(?=<!--END_SECTION:latest-commit-->)", 
-    #     f"\n{solution_url}\n", 
-    #     content, 
-    #     flags=re.DOTALL
-    # )
-    
     # Update badge link
     content = re.sub(
         r"(?<=<!--START_SECTION:potd-badge-->).*?(?=<!--END_SECTION:potd-badge-->)", 
