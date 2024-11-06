@@ -1,53 +1,43 @@
 import requests
-import json
 import sys
 import re
-from datetime import datetime
+
+def get_latest_commit(repo):
+    url = f"https://api.github.com/repos/{repo}/commits"
+    response = requests.get(url)
+    if response.status_code != 200:
+        raise Exception(f"Failed to fetch commits: {response.status_code}, {response.text}")
+    latest_commit = response.json()[0]
+    commit_url = latest_commit["html_url"]
+    commit_message = latest_commit["commit"]["message"]
+    return commit_url, commit_message
+
+def update_readme(readme_path, commit_url, commit_message):
+    with open(readme_path, "r") as file:
+        content = file.read()
+
+    # Construct badge and link
+    badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
+    badge_link = f"[![Today's POTD Solution]({badge_url})](https://github.com/Hunterdii/GeeksforGeeks-POTD)"
+
+    # Update the sections in the README
+    updated_content = re.sub(
+        r"(?<=<!\-\-START_SECTION:latest\-commit\-\->)[\s\S]*(?=<!\-\-END_SECTION:latest\-commit\-\->)",
+        f"\n{commit_url}\n",
+        content
+    )
+    updated_content = re.sub(
+        r"(?<=<!\-\-START_SECTION:potd\-badge\-\->)[\s\S]*(?=<!\-\-END_SECTION:potd\-badge\-\->)",
+        f"\n{badge_link}\n",
+        updated_content
+    )
+
+    with open(readme_path, "w") as file:
+        file.write(updated_content)
 
 if __name__ == "__main__":
-    assert(len(sys.argv) == 4)
-    handle = sys.argv[1]  # GitHub username (e.g., Hunterdii)
-    token = sys.argv[2]   # GitHub token for authentication
-    readmePath = sys.argv[3]  # Path to the README.md file
-
-    headers = {
-        "Authorization": f"token {token}"
-    }
-
-    # Correct the repo name and fetch the latest commit details from the correct repository
-    repo_name = "GeeksforGeeks-POTD"  # Specify the correct repo name here
-    commit_url = f"https://api.github.com/repos/{handle}/{repo_name}/commits?sha=main"
-    response = requests.get(commit_url, headers=headers)
-
-    if response.status_code != 200:
-        print(f"Error fetching commit details: {response.text}")
-        sys.exit(1)
-
-    commit_data = response.json()[0]
-    commit_sha = commit_data['sha']
-    commit_message = commit_data['commit']['message']
-    commit_date = commit_data['commit']['committer']['date']
+    repo = sys.argv[1]
+    readme_path = sys.argv[2]
     
-    # Extract the question name or solution identifier from the commit message (example: "01(Nov) Solution Name")
-    solution_identifier = commit_message.split(":")[0]  # Assuming commit message starts with the identifier
-    
-    # Generate the badge URL dynamically based on the solution
-    badge_url = f"https://img.shields.io/badge/Solution-{solution_identifier}-blue"
-    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{handle}/{repo_name}/commit/{commit_sha})"
-    
-    # Prepare the commit link
-    commit_link = f"Commit URL: https://github.com/{handle}/{repo_name}/commit/{commit_sha}"
-
-    # Update README with the new commit and badge
-    with open(readmePath, "r") as readme:
-        content = readme.read()
-
-    # Update the commit link and the badge in the README file
-    new_content = re.sub(r"(?<=<!--START_SECTION:latest-commit-->)[\s\S]*(?=<!--END_SECTION:latest-commit-->)", commit_link, content)
-    new_content = re.sub(r"(?<=<!--START_SECTION:potd-badge-->)[\s\S]*(?=<!--END_SECTION:potd-badge-->)", badge_link, new_content)
-
-    # Write the updated content back to README
-    with open(readmePath, "w") as readme:
-        readme.write(new_content)
-
-    print("Successfully updated README with the latest commit and badge.")
+    commit_url, commit_message = get_latest_commit(repo)
+    update_readme(readme_path, commit_url, commit_message)
