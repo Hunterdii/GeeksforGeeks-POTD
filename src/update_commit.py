@@ -1,21 +1,7 @@
 import requests
 import sys
-import os
 import re
 from datetime import datetime
-
-def get_latest_solution_file(directory: str):
-    # Get all files in the directory
-    files = os.listdir(directory)
-    
-    # Filter out only the files that match the date format for solutions (e.g., 06(Nov).md)
-    solution_files = [file for file in files if file.endswith('.md') and re.match(r"\d{2}\([A-Za-z]{3}\).+\.md", file)]
-    
-    # Sort the files based on date, assuming filenames are in the format "DD(Month)Name.md"
-    solution_files.sort(key=lambda f: datetime.strptime(f[:6], "%d(%b)"))  # Fix format to include parentheses
-    
-    # Return the most recent file
-    return solution_files[-1] if solution_files else None
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -23,30 +9,49 @@ if __name__ == "__main__":
     token = sys.argv[2]
     readme_path = sys.argv[3]
 
-    # Path where your solutions are stored
-    solution_dir = "November 2024 GFG SOLUTION"
+    # GitHub API URL to get the latest commit info from the default branch (main)
+    api_url = f"https://api.github.com/repos/{repository}/commits/main"
+
+    # Make the API request
+    headers = {
+        "Authorization": f"token {token}"
+    }
+
+    response = requests.get(api_url, headers=headers)
+
+    # Check if the request is successful
+    if response.status_code != 200:
+        print(f"Error fetching latest commit: {response.json()}")
+        sys.exit(1)
+
+    # Parse the response to get the latest commit's file name
+    commit_data = response.json()
+    commit_files = commit_data["files"]
     
-    # Get the latest solution filename
-    latest_solution_file = get_latest_solution_file(solution_dir)
-    if not latest_solution_file:
-        raise Exception("No solution files found!")
-    
-    # Extract the day and month from the file name (e.g., 06(Nov))
-    day_of_month = latest_solution_file[:2]
-    month = latest_solution_file[3:6]
-    
-    # Prepare the solution URL
-    solution_url = f"https://raw.githubusercontent.com/{repository}/main/{solution_dir}/{latest_solution_file}"
-    
+    # Loop through the files to find the solution file (only considering files in the November folder)
+    solution_filename = ""
+    for file in commit_files:
+        filename = file["filename"]
+        if "November%202024%20GFG%20SOLUTION" in filename:
+            solution_filename = filename
+            break
+
+    if not solution_filename:
+        print("Solution file not found for today's date.")
+        sys.exit(1)
+
+    # Construct the solution URL for the current solution
+    solution_url = f"https://raw.githubusercontent.com/{repository}/main/{solution_filename}"
+
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
     badge_link = f"[![Today's POTD Solution]({badge_url})]({solution_url})"  # This makes the badge link to the solution for today
 
-    # Read the README file and update the sections for commit and badge
+    # Read the README file and update the sections for the badge link
     with open(readme_path, "r") as readme:
         content = readme.read()
 
-    # Update badge link
+    # Update the badge link in the README
     content = re.sub(
         r"(?<=<!--START_SECTION:potd-badge-->).*?(?=<!--END_SECTION:potd-badge-->)", 
         f"\n{badge_link}\n", 
