@@ -14,11 +14,8 @@ if __name__ == "__main__":
         "Authorization": f"token {token}"
     }
 
-    # Correct repository name
-    repo_name = "Hunterdii/GeeksforGeeks-POTD"
-
-    # Get the latest commit details for the correct repository
-    commit_url = f"https://api.github.com/repos/{repo_name}/commits?sha=main"
+    # Get the latest commit details
+    commit_url = f"https://api.github.com/repos/{handle}/{sys.argv[1]}/commits?sha=main"
     response = requests.get(commit_url, headers=headers)
 
     if response.status_code != 200:
@@ -30,15 +27,15 @@ if __name__ == "__main__":
     commit_message = commit_data['commit']['message']
     commit_date = commit_data['commit']['committer']['date']
     
-    # Extract the question name or solution identifier from the commit message (e.g., "01(Nov) Solution Name")
+    # Extract the question name or solution identifier from the commit message (example: "01(Nov) Solution Name")
     solution_identifier = commit_message.split(":")[0]  # Assuming commit message starts with the identifier
     
     # Generate the badge URL dynamically based on the solution
     badge_url = f"https://img.shields.io/badge/Solution-{solution_identifier}-blue"
-    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{repo_name}/commit/{commit_sha})"
+    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{handle}/{sys.argv[1]}/commit/{commit_sha})"
     
     # Prepare the commit link
-    commit_link = f"Commit URL: https://github.com/{repo_name}/commit/{commit_sha}"
+    commit_link = f"Commit URL: https://github.com/{handle}/{sys.argv[1]}/commit/{commit_sha}"
 
     # Update README with the new commit and badge
     with open(readmePath, "r") as readme:
