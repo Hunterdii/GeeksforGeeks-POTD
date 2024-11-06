@@ -3,7 +3,7 @@ name: Daily Commit Link and POTD Badge Tracker
 on:
   push:
     branches:
-      - main  # Trigger when changes are pushed to the main branch
+      - main  # or your default branch name
   schedule:
     - cron: '0 0 * * *'  # This will run daily at midnight UTC
   workflow_dispatch:
@@ -13,10 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.8
