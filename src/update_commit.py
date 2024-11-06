@@ -18,15 +18,18 @@ if __name__ == "__main__":
     response.raise_for_status()
     commit_data = response.json()[0]  # Get the latest commit
 
-    # Fetch the list of changed files in the latest commit
-    files_url = commit_data["url"] + "/files"
-    response = requests.get(files_url, headers=headers)
-    response.raise_for_status()
-    files = response.json()
+    # Extract the commit SHA
+    commit_sha = commit_data["sha"]
 
-    # Find the solution file from the changed files (based on the folder and expected filename format)
+    # Fetch the files for the specific commit using its SHA
+    commit_files_url = f"{GITHUB_API_URL}/repos/{repository}/commits/{commit_sha}"
+    response = requests.get(commit_files_url, headers=headers)
+    response.raise_for_status()
+    commit_details = response.json()
+
+    # Check the modified files in the latest commit
     solution_filename = None
-    for file in files:
+    for file in commit_details["files"]:
         # Check if the file is in the "November 2024 GFG SOLUTION" folder and matches the filename pattern
         if "November 2024 GFG SOLUTION" in file["filename"]:
             solution_filename = file["filename"]
