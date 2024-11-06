@@ -18,7 +18,7 @@ if __name__ == "__main__":
     today_solution_filename = f"{day_of_month}({month}){today.strftime('%A')}.md"
 
     # Prepare the commit URL for today (we don't need to change this as it will be dynamically picked from the latest commit)
-    # solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}"
+    solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}"
 
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
