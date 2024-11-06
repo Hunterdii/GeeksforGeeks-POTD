@@ -110,15 +110,17 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 
 
 ## 🔥 **Today's Solution**
-<!--START_SECTION:potd-badge--> 
+<!--START_SECTION:potd-badge-->
 
 <!--END_SECTION:potd-badge-->
 
 
 ## 🔗 **Latest Commit**
-<!--START_SECTION:latest-commit--> 
+<!--START_SECTION:latest-commit-->
 
 <!--END_SECTION:latest-commit-->
+
+
 
 <div align="center">
 
