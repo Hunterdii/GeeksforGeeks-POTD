@@ -19,7 +19,6 @@ if __name__ == "__main__":
     month = today.strftime("%b")  # Get current month (e.g., Nov)
 
     # Generate the filename based on the day of the month (e.g., 06(Nov) Root to leaf paths sum.md)
-    # The name structure might differ but should follow a predictable pattern
     today_solution_filename = f"{day_of_month}({month})"  # The pattern that matches the filename format.
 
     # Make a request to GitHub to list files in the directory
@@ -31,6 +30,11 @@ if __name__ == "__main__":
         sys.exit(1)
     
     files = response.json()
+
+    # Check if files are empty or response is not valid
+    if isinstance(files, dict) and files.get('message') == 'Not Found':
+        print(f"Directory not found: {dir_url}")
+        sys.exit(1)
 
     # Search for the correct file based on the date
     today_file = None
