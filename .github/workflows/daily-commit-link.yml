@@ -1,52 +1,35 @@
-name: Fetch Latest Commit and Extract Filename
+name: Daily Commit Link and POTD Badge Tracker
 
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch name
+  schedule:
+    - cron: '0 0 * * *'  # This will run daily at midnight UTC
+  workflow_dispatch:
 
 jobs:
-  extract-filename:
+  update-link:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-    - name: Fetch the latest commit from the repository
-      run: |
-        # Fetch the latest commit data with the changed files
-        COMMIT_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          "https://api.github.com/repos/${{ github.repository }}/commits?sha=main&per_page=1")
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.8
 
-        # Debugging: output the full commit data
-        echo "Commit Data: $COMMIT_DATA"
-        
-        # Check if the commit data was retrieved successfully
-        if [ -z "$COMMIT_DATA" ]; then
-          echo "Error: No commit data received" >&2
-          exit 1
-        fi
+      - name: Install requests
+        run: pip install requests
 
-        # Extract the filenames of changed files from the commit
-        CHANGED_FILES=$(echo $COMMIT_DATA | jq -r '.[0].files[].filename')
+      - name: Update README with the Latest Commit
+        run: python src/update_commit.py ${{ github.repository }} ${{ secrets.GITHUB_TOKEN }} README.md
 
-        # Find the .md file in the list of changed files
-        FILE_NAME=$(echo "$CHANGED_FILES" | grep -oP '\d{2}\(.*\).md' | head -n 1)
-
-        # Debugging: output the extracted filename
-        echo "Extracted Filename: $FILE_NAME"
-
-        # Check if a valid filename was extracted
-        if [ -z "$FILE_NAME" ]; then
-          echo "Error: No filename found in changed files" >&2
-          exit 1
-        fi
-
-        # Set an output to pass to the next step
-        echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
-
-    - name: Use extracted filename in next step
-      run: |
-        # Access the extracted filename
-        echo "The extracted filename is: $FILE_NAME"
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "Update latest commit and POTD badge"
+          git push
