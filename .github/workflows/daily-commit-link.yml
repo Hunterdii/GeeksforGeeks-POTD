@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Install jq
+        run: sudo apt-get install jq  # Install jq to parse JSON responses
+
       - name: Install requests
         run: pip install requests
 
@@ -29,9 +32,21 @@ jobs:
           # Fetch the latest commit from the repository
           COMMIT_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/commits?sha=main&per_page=1")
-          
+
+          # Check if the commit data was retrieved successfully
+          if [ -z "$COMMIT_DATA" ]; then
+            echo "Error: No commit data received" >&2
+            exit 1
+          fi
+
           # Extract the filename of the solution from the commit message
           FILE_NAME=$(echo $COMMIT_DATA | jq -r '.[0].commit.message' | grep -oP '\d{2}\(.*\).md')
+
+          # Check if a valid filename was extracted
+          if [ -z "$FILE_NAME" ]; then
+            echo "Error: No filename found in commit message" >&2
+            exit 1
+          fi
 
           # Set an output to pass to the next step
           echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
