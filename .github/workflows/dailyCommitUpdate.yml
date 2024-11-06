@@ -1,0 +1,37 @@
+name: Daily Commit and Solution Update
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 22 * * *'  # Runs once a day at 10 PM UTC
+  workflow_dispatch:
+
+jobs:
+  update-solution:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.8
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Get Latest Commit and Update Solution
+        run: python src/update_solution.py ${{ github.repository_owner }} ${{ secrets.GITHUB_TOKEN }} README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Update today's solution"
+          git push
+
