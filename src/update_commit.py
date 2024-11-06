@@ -1,9 +1,7 @@
 import requests
 import sys
 import re
-
-# GitHub API to fetch the latest commit and changed files
-GITHUB_API_URL = "https://api.github.com"
+from datetime import datetime
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -11,46 +9,43 @@ if __name__ == "__main__":
     token = sys.argv[2]
     readme_path = sys.argv[3]
 
-    # Fetch the latest commit information for the repository
-    commits_url = f"{GITHUB_API_URL}/repos/{repository}/commits?per_page=1"
-    headers = {"Authorization": f"token {token}"}
-    response = requests.get(commits_url, headers=headers)
-    response.raise_for_status()
-    commit_data = response.json()[0]  # Get the latest commit
+    # GitHub API to get the latest commit from the repository
+    api_url = f"https://api.github.com/repos/{repository}/commits"
+    
+    headers = {
+        "Authorization": f"token {token}"
+    }
 
-    # Extract the commit SHA
-    commit_sha = commit_data["sha"]
+    # Get the latest commit
+    response = requests.get(api_url, headers=headers)
+    if response.status_code != 200:
+        raise Exception(f"Error fetching commits: {response.status_code}, {response.text}")
+    
+    commits = response.json()
+    latest_commit = commits[0]  # Get the most recent commit
 
-    # Fetch the files for the specific commit using its SHA
-    commit_files_url = f"{GITHUB_API_URL}/repos/{repository}/commits/{commit_sha}"
-    response = requests.get(commit_files_url, headers=headers)
-    response.raise_for_status()
-    commit_details = response.json()
+    # Extract the commit date and message
+    commit_date = latest_commit['commit']['author']['date']
+    commit_message = latest_commit['commit']['message']
 
-    # Debug: Print out the modified files
-    print("Modified files in the latest commit:")
-    for file in commit_details["files"]:
-        print(f"- {file['filename']}")
+    # Extract the solution filename from the commit message (assumed format)
+    # Example: 'Add solution for 07(Nov) Insert in Sorted way in a Sorted DLL'
+    # We need to extract the file name: '07(Nov) Insert in Sorted way in a Sorted DLL.md'
+    
+    # The commit message is expected to have the solution's file name in a consistent format.
+    solution_filename = f"{commit_message.split(' ')[-1]}.md"
+    
+    # Prepare the solution URL based on the commit
+    today = datetime.today()
+    month = today.strftime("%b")  # Current month (e.g., Nov)
 
-    # Check the modified files in the latest commit
-    solution_filename = None
-    for file in commit_details["files"]:
-        # Check if the file is in the "November 2024 GFG SOLUTION" folder and matches the filename pattern
-        if "November 2024 GFG SOLUTION" in file["filename"]:
-            solution_filename = file["filename"]
-            break
-
-    if not solution_filename:
-        raise ValueError("No valid solution file found in the latest commit.")
-
-    # Prepare the solution URL based on the file path
-    solution_url = f"https://github.com/{repository}/blob/main/{solution_filename}"
+    solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{solution_filename}"
 
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
     badge_link = f"[![Today's POTD Solution]({badge_url})]({solution_url})"  # This makes the badge link to the solution
 
-    # Read the README file and update the sections for the commit and badge
+    # Read the README file and update the sections for the badge
     with open(readme_path, "r") as readme:
         content = readme.read()
 
