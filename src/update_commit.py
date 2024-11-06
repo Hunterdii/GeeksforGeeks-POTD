@@ -1,7 +1,7 @@
 import requests
 import sys
 import os
-import re  # This is missing in your original script
+import re
 from datetime import datetime
 
 def get_latest_solution_file(directory: str):
@@ -12,7 +12,7 @@ def get_latest_solution_file(directory: str):
     solution_files = [file for file in files if file.endswith('.md') and re.match(r"\d{2}\([A-Za-z]{3}\).+\.md", file)]
     
     # Sort the files based on date, assuming filenames are in the format "DD(Month)Name.md"
-    solution_files.sort(key=lambda f: datetime.strptime(f[:6], "%d(%b)"))
+    solution_files.sort(key=lambda f: datetime.strptime(f[:6], "%d(%b)"))  # Fix format to include parentheses
     
     # Return the most recent file
     return solution_files[-1] if solution_files else None
