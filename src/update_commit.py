@@ -16,10 +16,10 @@ if __name__ == "__main__":
     # Get the current date
     today = datetime.today()
     day_of_month = today.strftime("%d")  # Get current day of the month
-    month = today.strftime("%b")  # Get current month (e.g., Nov)
+    month = today.strftime("%B")  # Get current full month name (e.g., November)
     
-    # Format the solution file name for today (e.g., 07(Nov)Next Problem.md)
-    today_solution_filename = f"{day_of_month}({month}){today.strftime('%A')}.md"
+    # Format the solution file name for today (e.g., 06(Nov)Root to leaf paths sum.md)
+    today_solution_filename = f"{day_of_month}({today.strftime('%b')}){today.strftime('%A')}.md"
 
     # Prepare the badge URL and commit link to update README
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     with open(readme_path, "r") as readme:
         content = readme.read()
 
-    # Update today's solution link
+    # Update today's solution link in the README
     content = re.sub(
         r"(?<=<!--START_SECTION:latest-commit-->).*?(?=<!--END_SECTION:latest-commit-->)", 
         f"\nhttps://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}\n", 
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         flags=re.DOTALL
     )
     
-    # Update badge link
+    # Update the badge link
     content = re.sub(
         r"(?<=<!--START_SECTION:potd-badge-->).*?(?=<!--END_SECTION:potd-badge-->)", 
         f"\n{badge_link}\n", 
