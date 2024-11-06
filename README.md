@@ -114,11 +114,6 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 [![Today's POTD Solution](https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/Nov%202024%20GFG%20SOLUTION/06(Nov)Wednesday.md)
 <!--END_SECTION:potd-badge-->
 
-<!--
-## 🔗 **Latest Commit**
-<!--START_SECTION:latest-commit-->
-https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/Nov%202024%20GFG%20SOLUTION/06(Nov)Wednesday.md
-<!--END_SECTION:latest-commit-->
 
 
 <div align="center">
