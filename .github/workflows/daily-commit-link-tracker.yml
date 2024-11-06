@@ -1,4 +1,4 @@
-name: Daily Commit Link Tracker
+name: Daily Commit Link and POTD Badge Tracker
 
 on:
   push:
