@@ -9,34 +9,52 @@ if __name__ == "__main__":
     token = sys.argv[2]
     readme_path = sys.argv[3]
 
+    headers = {
+        "Authorization": f"token {token}"
+    }
+
     # Get the current date
     today = datetime.today()
     day_of_month = today.strftime("%d")  # Get current day of the month (e.g., 06)
     month = today.strftime("%b")  # Get current month (e.g., Nov)
 
-    # Prepare the solution filename for today (e.g., 06(Nov)Root to leaf paths sum.md)
-    today_solution_filename = f"{day_of_month}({month}){today.strftime('%A')}.md"
+    # Generate the filename based on the day of the month (e.g., 06(Nov) Root to leaf paths sum.md)
+    # The name structure might differ but should follow a predictable pattern
+    today_solution_filename = f"{day_of_month}({month})"  # The pattern that matches the filename format.
 
-    # Prepare the commit URL for today (we don't need to change this as it will be dynamically picked from the latest commit)
-    solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_solution_filename}"
+    # Make a request to GitHub to list files in the directory
+    dir_url = f"https://api.github.com/repos/{repository}/contents/{month}%202024%20GFG%20SOLUTION"
+    response = requests.get(dir_url, headers=headers)
+    
+    if not response.ok:
+        print(f"Failed to fetch files: {response.status_code} {response.text}")
+        sys.exit(1)
+    
+    files = response.json()
 
-    # Prepare the badge URL and commit link to update README
+    # Search for the correct file based on the date
+    today_file = None
+    for file in files:
+        if file['name'].startswith(today_solution_filename):
+            today_file = file['name']
+            break
+    
+    if not today_file:
+        print(f"No solution file found for {today_solution_filename}. Please check the directory.")
+        sys.exit(1)
+
+    # Prepare the correct file URL based on the found filename
+    solution_url = f"https://github.com/{repository}/blob/main/{month}%202024%20GFG%20SOLUTION/{today_file}"
+
+    # Prepare the badge URL with the correct link to today's solution
     badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
-    badge_link = f"[![Today's POTD Solution]({badge_url})]({solution_url})"  # This makes the badge link to the solution for today
+    badge_link = f"[![Today's POTD Solution]({badge_url})]({solution_url})"
 
-    # Read the README file and update the sections for commit and badge
+    # Read the README file and update the sections for the badge
     with open(readme_path, "r") as readme:
         content = readme.read()
 
-    # Update today's solution link (for the commit)
-    content = re.sub(
-        r"(?<=<!--START_SECTION:latest-commit-->).*?(?=<!--END_SECTION:latest-commit-->)", 
-        f"\n{solution_url}\n", 
-        content, 
-        flags=re.DOTALL
-    )
-    
-    # Update badge link
+    # Update the badge with the dynamic link to today's solution
     content = re.sub(
         r"(?<=<!--START_SECTION:potd-badge-->).*?(?=<!--END_SECTION:potd-badge-->)", 
         f"\n{badge_link}\n", 
