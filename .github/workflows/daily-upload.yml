@@ -3,6 +3,7 @@ name: Daily Upload Tracker
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs at midnight every day
+  workflow_dispatch: 
 
 jobs:
   update-streak:
