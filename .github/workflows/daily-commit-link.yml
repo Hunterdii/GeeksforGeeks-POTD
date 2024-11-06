@@ -3,10 +3,10 @@ name: Daily Commit Link and POTD Badge Tracker
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main  # Trigger on push to main branch
   schedule:
     - cron: '0 0 * * *'  # This will run daily at midnight UTC
-  workflow_dispatch:
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-link:
@@ -23,8 +23,21 @@ jobs:
       - name: Install requests
         run: pip install requests
 
+      - name: Get latest solution commit
+        id: latest_commit
+        run: |
+          # Fetch the latest commit from the repository
+          COMMIT_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/commits?sha=main&per_page=1")
+          
+          # Extract the filename of the solution from the commit message
+          FILE_NAME=$(echo $COMMIT_DATA | jq -r '.[0].commit.message' | grep -oP '\d{2}\(.*\).md')
+
+          # Set an output to pass to the next step
+          echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
+
       - name: Update README with the Latest Commit
-        run: python src/update_commit.py ${{ github.repository }} ${{ secrets.GITHUB_TOKEN }} README.md
+        run: python src/update_commit.py ${{ github.repository }} ${{ secrets.GITHUB_TOKEN }} README.md ${{ env.FILE_NAME }}
 
       - name: Commit and Push Changes
         run: |
