@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     # Generate the badge URL dynamically based on the solution
     badge_url = f"https://img.shields.io/badge/Solution-{solution_identifier}-blue"
-    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{repo_name}/commit/{commit_sha})"
+    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{handle}/{sys.argv[1]}/commit/{commit_sha})"
     
     # Prepare the commit link
     commit_link = f"Commit URL: https://github.com/{repo_name}/commit/{commit_sha}"
