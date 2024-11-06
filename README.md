@@ -117,7 +117,7 @@ To begin your journey through the GeeksforGeeks Problem of the Day solutions for
 <!--
 ## 🔗 **Latest Commit**
 <!--START_SECTION:latest-commit-->
-https://github.com/Hunterdii/GeeksforGeeks-POTD/commit/0ec2a11e35697f183aed208e9e8f931ee0fccdc7
+https://github.com/Hunterdii/GeeksforGeeks-POTD/commit/b964a6bb978c12689de4ee54b9bccb5772fa8e03
 <!--END_SECTION:latest-commit-->
 
 
