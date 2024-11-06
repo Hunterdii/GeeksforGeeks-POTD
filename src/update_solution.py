@@ -14,8 +14,11 @@ if __name__ == "__main__":
         "Authorization": f"token {token}"
     }
 
-    # Get the latest commit details
-    commit_url = f"https://api.github.com/repos/{handle}/{sys.argv[1]}/commits?sha=main"
+    # Specify the correct repository here for commit fetching
+    repo_name = "Hunterdii/GeeksforGeeks-POTD"  # Correct repo
+    commit_url = f"https://api.github.com/repos/{repo_name}/commits?sha=main"
+    
+    # Fetch the latest commit for the correct repo
     response = requests.get(commit_url, headers=headers)
 
     if response.status_code != 200:
@@ -26,16 +29,19 @@ if __name__ == "__main__":
     commit_sha = commit_data['sha']
     commit_message = commit_data['commit']['message']
     commit_date = commit_data['commit']['committer']['date']
-    
+
     # Extract the question name or solution identifier from the commit message (example: "01(Nov) Solution Name")
     solution_identifier = commit_message.split(":")[0]  # Assuming commit message starts with the identifier
-    
+
+    # Define the daily solution file path (e.g., "01(Nov)question_name.md")
+    solution_file_path = f"{solution_identifier}question_name.md"
+
     # Generate the badge URL dynamically based on the solution
     badge_url = f"https://img.shields.io/badge/Solution-{solution_identifier}-blue"
-    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{handle}/{sys.argv[1]}/commit/{commit_sha})"
+    badge_link = f"[![Today's Solution]({badge_url})](https://github.com/{repo_name}/commit/{commit_sha})"
     
     # Prepare the commit link
-    commit_link = f"Commit URL: https://github.com/{handle}/{sys.argv[1]}/commit/{commit_sha}"
+    commit_link = f"Commit URL: https://github.com/{repo_name}/commit/{commit_sha}"
 
     # Update README with the new commit and badge
     with open(readmePath, "r") as readme:
@@ -49,4 +55,8 @@ if __name__ == "__main__":
     with open(readmePath, "w") as readme:
         readme.write(new_content)
 
-    print("Successfully updated README with the latest commit and badge.")
+    # Create or update the daily solution file (e.g., "01(Nov)question_name.md")
+    with open(solution_file_path, "w") as solution_file:
+        solution_file.write(f"# Solution for {solution_identifier}\n\nThis is the solution for {solution_identifier}. Commit link: [Commit]({commit_link})\n")
+    
+    print(f"Successfully updated README with the latest commit, badge, and created {solution_file_path}.")
