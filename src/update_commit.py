@@ -1,6 +1,7 @@
 import requests
 import sys
 import os
+import re  # This is missing in your original script
 from datetime import datetime
 
 def get_latest_solution_file(directory: str):
