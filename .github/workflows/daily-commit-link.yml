@@ -2,8 +2,8 @@ name: Daily Commit Link and POTD Badge Tracker
 
 on:
   push:
-    branches:
-      - main  # or your default branch name
+    paths:
+      - "November 2024 GFG SOLUTION/*"  # Trigger workflow when any file in the folder is updated
   schedule:
     - cron: '0 0 * * *'  # This will run daily at midnight UTC
   workflow_dispatch:
