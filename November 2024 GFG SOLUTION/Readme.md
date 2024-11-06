@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 4: Find All Triplets with Zero Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/04(Nov)%20Find%20All%20Triplets%20with%20Zero%20Sum.md)🔍➕👥
 - [Day 5: Rotate by 90 degree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md)🌀📐💠
 - [Day 6: Root to leaf paths sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/06(Nov)%20Root%20to%20leaf%20paths%20sum.md)🌳🍃💰
+- [Day 7: Split array in three equal sum subarrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md)💡📊🎯
 
 
 ## Introduction
@@ -29,3 +30,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 5(05 NOV) :* Rotate by 90 degree
 
 *Day 6(06 NOV) :* Root to leaf paths sum
+
+*Day 7(07 NOV) :* Split array in three equal sum subarrays
