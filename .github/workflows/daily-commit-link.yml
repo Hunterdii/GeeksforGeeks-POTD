@@ -2,8 +2,8 @@ name: Daily Commit Link and POTD Badge Tracker
 
 on:
   push:
-    paths:
-      - "November 2024 GFG SOLUTION/*"  # Trigger workflow when any file in the folder is updated
+    branches:
+      - main  # Trigger when changes are pushed to the main branch
   schedule:
     - cron: '0 0 * * *'  # This will run daily at midnight UTC
   workflow_dispatch:
@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.8
