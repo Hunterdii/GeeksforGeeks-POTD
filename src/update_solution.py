@@ -1,43 +1,48 @@
-import requests
 import sys
 import re
+import requests
 
-def get_latest_commit(repo):
+def fetch_latest_commit(repo, token, file_pattern):
+    headers = {"Authorization": f"token {token}"}
     url = f"https://api.github.com/repos/{repo}/commits"
-    response = requests.get(url)
-    if response.status_code != 200:
-        raise Exception(f"Failed to fetch commits: {response.status_code}, {response.text}")
-    latest_commit = response.json()[0]
-    commit_url = latest_commit["html_url"]
-    commit_message = latest_commit["commit"]["message"]
-    return commit_url, commit_message
+    params = {"path": file_pattern, "per_page": 1}
+    response = requests.get(url, headers=headers, params=params)
+    
+    if response.ok and response.json():
+        commit_data = response.json()[0]
+        commit_url = commit_data["html_url"]
+        return commit_url
+    else:
+        print("Error fetching commit data:", response.status_code, response.text)
+        sys.exit(1)
 
-def update_readme(readme_path, commit_url, commit_message):
+def update_readme(readme_path, commit_url):
+    badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
+    badge_link = f"[![Today's POTD Solution]({badge_url})]({commit_url})"
+    
     with open(readme_path, "r") as file:
         content = file.read()
-
-    # Construct badge and link
-    badge_url = "https://img.shields.io/badge/GeeksforGeeks-Solution%20of%20the%20Day-blue"
-    badge_link = f"[![Today's POTD Solution]({badge_url})](https://github.com/Hunterdii/GeeksforGeeks-POTD)"
-
-    # Update the sections in the README
-    updated_content = re.sub(
-        r"(?<=<!\-\-START_SECTION:latest\-commit\-\->)[\s\S]*(?=<!\-\-END_SECTION:latest\-commit\-\->)",
+        
+    new_content = re.sub(
+        r"(?<=<!--START_SECTION:latest-commit-->)[\s\S]*(?=<!--END_SECTION:latest-commit-->)",
         f"\n{commit_url}\n",
         content
     )
-    updated_content = re.sub(
-        r"(?<=<!\-\-START_SECTION:potd\-badge\-\->)[\s\S]*(?=<!\-\-END_SECTION:potd\-badge\-\->)",
+    
+    new_content = re.sub(
+        r"(?<=<!--START_SECTION:potd-badge-->)[\s\S]*(?=<!--END_SECTION:potd-badge-->)",
         f"\n{badge_link}\n",
-        updated_content
+        new_content
     )
 
     with open(readme_path, "w") as file:
-        file.write(updated_content)
+        file.write(new_content)
 
 if __name__ == "__main__":
     repo = sys.argv[1]
-    readme_path = sys.argv[2]
+    token = sys.argv[2]
+    readme_path = sys.argv[3]
+    file_pattern = sys.argv[4]  # Example pattern: "01(Nov)question name.md"
     
-    commit_url, commit_message = get_latest_commit(repo)
-    update_readme(readme_path, commit_url, commit_message)
+    commit_url = fetch_latest_commit(repo, token, file_pattern)
+    update_readme(readme_path, commit_url)
