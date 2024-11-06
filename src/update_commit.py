@@ -27,6 +27,11 @@ if __name__ == "__main__":
     response.raise_for_status()
     commit_details = response.json()
 
+    # Debug: Print out the modified files
+    print("Modified files in the latest commit:")
+    for file in commit_details["files"]:
+        print(f"- {file['filename']}")
+
     # Check the modified files in the latest commit
     solution_filename = None
     for file in commit_details["files"]:
