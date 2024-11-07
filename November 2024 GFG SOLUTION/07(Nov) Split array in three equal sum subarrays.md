@@ -1,5 +1,7 @@
 # *07. Split Array in Three Equal Sum Subarrays*
 
+> **🚨 Note:** Apologies to previous visitors who may have encountered an incorrect solution. The solution has been fully resolved and updated according to the problem requirements.
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/split-array-in-three-equal-sum-subarrays/1)
 
 ## Problem Description
@@ -115,27 +117,37 @@ public:
 ```java
 class Solution {
     public List<Integer> findSplit(int[] arr) {
-        int n = arr.length;
         int totalSum = 0;
-        for (int i = 0; i < n; i++) {
-            totalSum += arr[i];
+        for (int num : arr) {
+            totalSum += num;
         }
 
-        if (totalSum % 3 != 0)
+        if (totalSum % 3 != 0) {
             return Arrays.asList(-1, -1);
+        }
 
-        int target = totalSum / 3;
+        int targetSum = totalSum / 3;
         int currentSum = 0;
-        int countFirst = 0;  
+        int firstIndex = -1, secondIndex = -1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr.length; i++) {
             currentSum += arr[i];
 
-            if (currentSum == 2 * target && countFirst > 0)
-                return Arrays.asList(countFirst - 1, i);  
+            if (currentSum == targetSum && firstIndex == -1) {
+                firstIndex = i;
+            } else if (currentSum == 2 * targetSum && firstIndex != -1) {
+                secondIndex = i;
+                break;
+            }
+        }
 
-            if (currentSum == target) {
-                countFirst++;  
+        if (firstIndex != -1 && secondIndex != -1) {
+            int lastPartSum = 0;
+            for (int i = secondIndex + 1; i < arr.length; i++) {
+                lastPartSum += arr[i];
+            }
+            if (lastPartSum == targetSum) {
+                return Arrays.asList(firstIndex, secondIndex);
             }
         }
 
@@ -148,25 +160,29 @@ class Solution {
 
 ```python
 class Solution:
+    
     def findSplit(self, arr):
-        n = len(arr)
-        totalSum = sum(arr)
-
-        if totalSum % 3 != 0:
+        total_sum = sum(arr)
+        if total_sum % 3 != 0:
             return [-1, -1]
 
-        target = totalSum // 3
-        currentSum = 0
-        countFirst = 0
+        target_sum = total_sum // 3
+        current_sum = 0
+        first_index, second_index = -1, -1
 
-        for i in range(n):
-            currentSum += arr[i]
+        for i in range(len(arr)):
+            current_sum += arr[i]
 
-            if currentSum == 2 * target and countFirst > 0:
-                return [countFirst - 1, i]
+            if current_sum == target_sum and first_index == -1:
+                first_index = i
+            elif current_sum == 2 * target_sum and first_index != -1:
+                second_index = i
+                break
 
-            if currentSum == target:
-                countFirst += 1
+        if first_index != -1 and second_index != -1:
+            last_part_sum = sum(arr[second_index + 1:])
+            if last_part_sum == target_sum:
+                return [first_index, second_index]
 
         return [-1, -1]
 ```
