@@ -17,10 +17,25 @@ class GFG {
             Solution ob = new Solution();
             List<Integer> result = ob.findSplit(arr);
 
-            if (result.get(0) == -1 && result.get(1) == -1) {
+            if (result.get(0) == -1 && result.get(1) == -1 || result.size() != 2) {
                 System.out.println("false");
             } else {
-                System.out.println("true");
+                int sum1 = 0, sum2 = 0, sum3 = 0;
+                for (int i = 0; i < arr.length; i++) {
+                    if (i <= result.get(0))
+                        sum1 += arr[i];
+
+                    else if (i <= result.get(1))
+                        sum2 += arr[i];
+
+                    else
+                        sum3 += arr[i];
+                }
+                if (sum1 == sum2 && sum2 == sum3) {
+                    System.out.println("true");
+                } else {
+                    System.out.println("false");
+                }
             }
             System.out.println("~");
         }
@@ -33,27 +48,37 @@ class GFG {
 // User function Template for Java
 class Solution {
     public List<Integer> findSplit(int[] arr) {
-        int n = arr.length;
         int totalSum = 0;
-        for (int i = 0; i < n; i++) {
-            totalSum += arr[i];
+        for (int num : arr) {
+            totalSum += num;
         }
 
-        if (totalSum % 3 != 0)
+        if (totalSum % 3 != 0) {
             return Arrays.asList(-1, -1);
+        }
 
-        int target = totalSum / 3;
+        int targetSum = totalSum / 3;
         int currentSum = 0;
-        int countFirst = 0;  
+        int firstIndex = -1, secondIndex = -1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr.length; i++) {
             currentSum += arr[i];
 
-            if (currentSum == 2 * target && countFirst > 0)
-                return Arrays.asList(countFirst - 1, i);  
+            if (currentSum == targetSum && firstIndex == -1) {
+                firstIndex = i;
+            } else if (currentSum == 2 * targetSum && firstIndex != -1) {
+                secondIndex = i;
+                break;
+            }
+        }
 
-            if (currentSum == target) {
-                countFirst++;  
+        if (firstIndex != -1 && secondIndex != -1) {
+            int lastPartSum = 0;
+            for (int i = secondIndex + 1; i < arr.length; i++) {
+                lastPartSum += arr[i];
+            }
+            if (lastPartSum == targetSum) {
+                return Arrays.asList(firstIndex, secondIndex);
             }
         }
 
