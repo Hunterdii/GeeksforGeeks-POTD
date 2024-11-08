@@ -13,6 +13,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Rotate by 90 degree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md)🌀📐💠
 - [Day 6: Root to leaf paths sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/06(Nov)%20Root%20to%20leaf%20paths%20sum.md)🌳🍃💰
 - [Day 7: Split array in three equal sum subarrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md)💡📊🎯
+- [Day 8: Minimum repeat to make substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/08(Nov)%20Minimum%20repeat%20to%20make%20substring.md)🔁✨🔍
 
 
 ## Introduction
@@ -32,3 +33,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 6(06 NOV) :* Root to leaf paths sum
 
 *Day 7(07 NOV) :* Split array in three equal sum subarrays
+
+*Day 8(08 NOV) :* Minimum repeat to make substring
+
