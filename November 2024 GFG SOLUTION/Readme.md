@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: Split array in three equal sum subarrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md)💡📊🎯
 - [Day 8: Minimum repeat to make substring](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/08(Nov)%20Minimum%20repeat%20to%20make%20substring.md)🔁✨🔍
 - [Day 9: Minimum sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/09(Nov)%20Minimum%20sum.md)💡➕💰
+- [Day 10: Union of Two Sorted Arrays with Distinct Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/10(Nov)%20Union%20of%20Two%20Sorted%20Arrays%20with%20Distinct%20Elements.md)🔗🤝🌐
 
 
 ## Introduction
@@ -38,3 +39,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 8(08 NOV) :* Minimum repeat to make substring
 
 *Day 9(09 NOV) :* Minimum sum
+
+*Day 10(10 NOV) :* Union of Two Sorted Arrays with Distinct Elements
