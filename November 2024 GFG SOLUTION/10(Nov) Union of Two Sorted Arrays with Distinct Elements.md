@@ -1,4 +1,4 @@
-# *09. Union of Two Sorted Arrays with Distinct Elements*
+# *10. Union of Two Sorted Arrays with Distinct Elements*
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-with-distinct-elements/1)
 
