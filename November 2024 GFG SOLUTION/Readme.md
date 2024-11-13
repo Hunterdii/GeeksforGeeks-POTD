@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Union of Two Sorted Arrays with Distinct Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/10(Nov)%20Union%20of%20Two%20Sorted%20Arrays%20with%20Distinct%20Elements.md)🔗🤝🌐
 - [Day 11: Make array elements unique](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/11(Nov)%20Make%20array%20elements%20unique.md)🔢✨📈
 - [Day 12: Meeting Rooms](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/12(Nov)%20Meeting%20Rooms.md)📅🏢⏰
+- [Day 13: Intersection Point in Y Shaped Linked Lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/13(Nov)%20Intersection%20Point%20in%20Y%20Shaped%20Linked%20Lists.md)🔗➡️💡
 
 
 ## Introduction
@@ -47,3 +48,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 11(11 NOV) :* Make array elements unique
 
 *Day 12(12 NOV) :* Meeting Rooms
+
+*Day 13(13 NOV) :* Intersection Point in Y Shaped Linked Lists
