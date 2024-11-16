@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Intersection Point in Y Shaped Linked Lists](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/13(Nov)%20Intersection%20Point%20in%20Y%20Shaped%20Linked%20Lists.md)🔗➡️💡
 - [Day 14: Nearly sorted](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/14(Nov)%20Nearly%20sorted.md)📑➡️✔️
 - [Day 15: Second Largest](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/15(Nov)%20Second%20Largest.md)🔥🥈📈
+- [Day 16: Move All Zeroes to End](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/16(Nov)%20Move%20All%20Zeroes%20to%20End.md)🔥➡️⚡
 
 
 ## Introduction
@@ -56,3 +57,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 NOV) :* Nearly sorted
 
 *Day 15(15 NOV) :* Second Largest
+
+*Day 16(16 NOV) :* Move All Zeroes to End
