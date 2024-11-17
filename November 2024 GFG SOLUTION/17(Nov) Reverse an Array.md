@@ -2,6 +2,17 @@
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/reverse-an-array/1)
 
+
+<div align="center">
+  <h2>🗳️ Cast Your Vote!</h2>
+  <p>Have your say in shaping the future of our repository! Visit our active discussion poll and make your voice heard. 🌟</p>
+  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/15" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Vote%20Now%20-%20Your%20Opinion%20Matters-blue?style=for-the-badge&logo=github&logoColor=white" alt="Vote Now Badge">
+  </a>
+</div>
+
+<br/>
+
 > **Note:** I'm currently in the middle of my exams until November 19, so I’ll be uploading daily POTD solutions, but not at a fixed time. Apologies for any inconvenience, and thank you for your patience!
 
 ## Problem Description
