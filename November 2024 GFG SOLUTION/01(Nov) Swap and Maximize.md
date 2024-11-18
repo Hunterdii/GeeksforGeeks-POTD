@@ -104,7 +104,7 @@ class Solution {
 }
 ```
 
-### Code (Python)
+## Code (Python)
 
 ```python
 class Solution:
