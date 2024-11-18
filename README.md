@@ -156,7 +156,7 @@ For any inquiries or feedback, please contact. Happy Contributing❤
   <a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=769514979&activity=stars" target="_blank" style="display: block;">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=dark" width="1100" height="auto">
-      <img alt="Star Geographical Distribution of doocs/leetcode" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=light" width="1100" height="auto">
+      <img alt="Star Geographical Distribution of GeeksforGeeks-POTD" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=light" width="1100" height="auto">
     </picture>
   </a>
   
