@@ -1,117 +1,33 @@
-<!--# GeeksforGeeks Problem of the Day Solutions 2024    [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)     
-<div align=center>
-  <h3><b>📍Repository Visitor Count</b></h3>
-</div>
-<p align="center" >   
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
-</p>
 
-<!--<div href="https://star-history.com/#Hunterdii/GeeksforGeeks-POTD&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
- </picture>
-</div>-->
-
-<!--
-### Guys Please vote I need Suggestion about the Leetcode POTD [Discussion Click Please Vote](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/1)🙏
-
-
-<!--Latest!-->
-<!--![GeeksforGeeks-POTD](https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark)-->
-<!--<p align="center">
-<img src="https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Welcome%20to%20the%20repository%20containing%20solutions%20for%20the%20GeeksforGeeks%0A%20(GFG)%20Problem%20of%20the%20Day%20for%20the%20year%202024&font=Rokkitt&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark" alt="Image" width="750" />
-</p>!-->
-<!--
-#### If you've got an ingenious solution or any questions, discussions, or insights regarding today's "Problem of the Day" solution, feel free to join our vibrant [discussion hub](https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions). We eagerly await your input and strive to cultivate an environment where learning flourishes through collaboration. Let's dive in together!
-
-
-Welcome to the repository containing solutions for the GeeksforGeeks (GFG) Problem of the Day for the year 2024.
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Languages Used](#languages-used)
-- [Directory Structure](#directory-structure)
-- [How To Use This Repository?](#how-to-use-this-repository)
-- [Contribution Guidelines](#contribution-guidelines)
-
-## Introduction
-## Why explore this repository?
-1. **Daily Practice**: Practice makes perfect. By reviewing these solutions daily, you can enhance your problem-solving skills and programming techniques.
-
-2. **Diverse Topics**: The problems cover a wide range of topics including algorithms, data structures, dynamic programming, mathematics, and more. This variety helps you broaden your understanding of different concepts.
-
-3. **Learning from Solutions**: Understanding various solution approaches is crucial for becoming a better programmer. Each solution in this repository comes with detailed explanations to help you grasp the underlying logic.
-
-4. **Community Collaboration**: Feel free to contribute your own solutions or suggest improvements to existing ones. Collaboration fosters learning and helps in building a stronger programming community.
-
-## How To Use This Repository?
-
-1. **Navigation**: Explore the directory to find solutions for each daily problem. The problems are organized chronologically, making it easy to locate specific ones.
-
-2. **Understanding Solutions**: Take your time to understand the logic behind each solution. If you encounter any difficulties, don't hesitate to ask for clarification or seek additional resources.
-
-3. **Experimentation**: After understanding a solution, try modifying it or implementing it in a different programming language. Experimentation reinforces your understanding and improves your coding versatility.
-
-4. **Engage with the Community**: Share your insights, ask questions, or discuss alternative solutions with fellow programmers. Collaboration accelerates learning and fosters a supportive environment.
-
-5. **Feel free to use, modify, or learn from these solutions**: If you find any issues or improvements, please follow the [Contribution Guidelines](#contribution-guidelines) to contribute.
-
-Absolutely! Here's how you can add a badge for C and mention its occasional usage:
-
----
-
-## Languages Used
-
-- ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)<br/>
-- ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)<br/>
-- ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<br/>
-- ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)  *(occasionally used)*
-
-
-## Directory Structure
-
-The repository is organized into folders, each representing a specific GeeksforGeeks problem. Inside each folder, you'll find the solution file(s) and any additional resources.
-
-
-## Contribution Guidelines
-
-If you'd like to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make changes and commit them.
-4. Submit a pull request, explaining the changes you made.
-
-Please ensure your code follows the existing coding style and includes appropriate comments.
-
-## Start Exploring!
-
-To begin your journey through the GeeksforGeeks Problem of the Day solutions for 2024, simply browse through the directory and select a problem that interests you. Happy coding!
-
-**[Visit GeeksforGeeks Problem of the Day](https://practice.geeksforgeeks.org/problem-of-the-day)**
-
----
-
-<div style="text-align: center;">
-  <a href="https://star-history.com/#Hunterdii/GeeksforGeeks-POTD&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
-    </picture>
-  </a>
-</div>
--->
-
-
-# 🌟 GeeksforGeeks Problem of the Day Solutions 2024 🌟 
-
-
+<h1> <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> GeeksforGeeks Problem of the Day Solutions 2024  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
 
 
 <div align="center">
+  
+  ## 📅 **November 2024 Problem of the Day Solutions** 📅
+
+| **Date**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
+|:---------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| 01 Nov    | Swap and Maximize 🔄⬇️📉                        |   | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/01(Nov)%20Swap%20and%20Maximize.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/01(Nov)%20Swap%20and%20Maximize.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/01(Nov)%20Swap%20and%20Maximize.md#code-python) |
+| 02 Nov    | Kth Distance 🚗🛤️🧭                             |          | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/02(Nov)%20Kth%20distance.md#code-c)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/02(Nov)%20Kth%20distance.md#code-java)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/02(Nov)%20Kth%20distance.md#code-python)        |
+| 03 Nov    | Is Linked List Length Even? 🔗🔢❌               |         | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/03(Nov)%20Is%20Linked%20List%20Length%20Even%3F.md#code-c)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/03(Nov)%20Is%20Linked%20List%20Length%20Even%3F.md#code-java)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/03(Nov)%20Is%20Linked%20List%20Length%20Even%3F.md#code-python)        |
+| 04 Nov    | Find All Triplets with Zero Sum 🔍➕👥          |          | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/04(Nov)%20Find%20All%20Triplets%20with%20Zero%20Sum.md#code-c)    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/04(Nov)%20Find%20All%20Triplets%20with%20Zero%20Sum.md#code-java)    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/04(Nov)%20Find%20All%20Triplets%20with%20Zero%20Sum.md#code-python)    |
+| 05 Nov    | Rotate by 90 Degree 🌀📐💠                       | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md#code-c)                     | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md#code-c-1)                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md#code-java)                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/05(Nov)%20Rotate%20by%2090%20degree.md#code-python)                    |
+| 06 Nov    | Root to Leaf Paths Sum 🌳🍃💰                    |                | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/06(Nov)%20Root%20to%20leaf%20paths%20sum.md#code-c)               | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/06(Nov)%20Root%20to%20leaf%20paths%20sum.md#code-java)               | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/06(Nov)%20Root%20to%20leaf%20paths%20sum.md#code-python)               |
+| 07 Nov    | Split Array in Three Equal Sum Subarrays 💡📊🎯  |                | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/07(Nov)%20Split%20array%20in%20three%20equal%20sum%20subarrays.md#code-python) |
+| 08 Nov    | Minimum repeat to make substring 🔁✨🔍         |               | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/08(Nov)%20Minimum%20repeat%20to%20make%20substring.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/08(Nov)%20Minimum%20repeat%20to%20make%20substring.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/08(Nov)%20Minimum%20repeat%20to%20make%20substring.md#code-python) |
+| 09 Nov    | Minimum sum 💡➕💰            |         | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/09(Nov)%20Minimum%20sum.md#code-c)       | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/09(Nov)%20Minimum%20sum.md#code-java)       | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/09(Nov)%20Minimum%20sum.md#code-python)       |
+| 10 Nov    | Union of Two Sorted Arrays with Distinct Elements 🔗🤝🌐             |          | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/10(Nov)%20Union%20of%20Two%20Sorted%20Arrays%20with%20Distinct%20Elements.md#code-c)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/10(Nov)%20Union%20of%20Two%20Sorted%20Arrays%20with%20Distinct%20Elements.md#code-java)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/10(Nov)%20Union%20of%20Two%20Sorted%20Arrays%20with%20Distinct%20Elements.md#code-python)        |
+| 11 Nov    | Make array elements unique 🔢✨📈                     |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/11(Nov)%20Make%20array%20elements%20unique.md#code-c)                  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/11(Nov)%20Make%20array%20elements%20unique.md#code-java)                  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/11(Nov)%20Make%20array%20elements%20unique.md#code-python)                  |
+| 12 Nov    | Meeting Rooms 📅🏢⏰                 |             | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/12(Nov)%20Meeting%20Rooms.md#code-c)            | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/12(Nov)%20Meeting%20Rooms.md#code-java)            | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/12(Nov)%20Meeting%20Rooms.md#code-python)            |
+| 13 Nov    | Intersection Point in Y Shaped Linked Lists 🔗➡️💡             |                      | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/13(Nov)%20Intersection%20Point%20in%20Y%20Shaped%20Linked%20Lists.md#code-c)                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/13(Nov)%20Intersection%20Point%20in%20Y%20Shaped%20Linked%20Lists.md#code-java)                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/13(Nov)%20Intersection%20Point%20in%20Y%20Shaped%20Linked%20Lists.md#code-python)                    |
+| 14 Nov    | Nearly sorted 📑➡️✔️             |      | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/14(Nov)%20Nearly%20sorted.md#code-c)    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/14(Nov)%20Nearly%20sorted.md#code-java)    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/14(Nov)%20Nearly%20sorted.md#code-python)    |
+| 15 Nov    | Second Largest 🔥🥈📈        |  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/15(Nov)%20Second%20Largest.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/15(Nov)%20Second%20Largest.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/15(Nov)%20Second%20Largest.md#code-python) |
+| 16 Nov    | Move All Zeroes to End 🔥➡️⚡                     |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/16(Nov)%20Move%20All%20Zeroes%20to%20End.md#code-c)                  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/16(Nov)%20Move%20All%20Zeroes%20to%20End.md#code-java)                  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/16(Nov)%20Move%20All%20Zeroes%20to%20End.md#code-python)                  |
+| 17 Nov    | Reverse an Array 🌀🔁💻              | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/17(Nov)%20Reverse%20an%20Array.md#code-c)        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/17(Nov)%20Reverse%20an%20Array.md#code-cpp)       | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/17(Nov)%20Reverse%20an%20Array.md#code-java)       | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/17(Nov)%20Reverse%20an%20Array.md#code-python)       |
+| 18 Nov    | Rotate Array 🔄📚🧑‍💻                   | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/18(Nov)%20Rotate%20Array.md#code-c)               | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/18(Nov)%20Rotate%20Array.md#code-cpp)              | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/18(Nov)%20Rotate%20Array.md#code-java)              | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/18(Nov)%20Rotate%20Array.md#code-python)              |
+| 19 Nov    | Next Permutation 🔢➡️🔀                  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md#code-c)               | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md#code-c-1)              | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md#code-java)              | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md#code-python)              |
+
 
 
 [**Explore Solutions Here!**](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)
@@ -199,7 +115,9 @@ We ❤️ contributions! Here's how you can contribute:
 <div align="center">
   
   🌟 *If this repository helps you, don't forget to* **star it**! 🌟
-  
+
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=769514979&machine=basicLinux32gb&location=?)
+
 </div>
 
 <div align="center">
@@ -237,6 +155,7 @@ For any inquiries or feedback, please contact. Happy Contributing❤
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="1100">
 </a>
 
+
 <div>
   <h2 align = "center"><img src="https://github.com/user-attachments/assets/00314b63-96bb-4e9a-92f6-4ead67e0fb7d" width="35" height="35">Our Contributors</h2>
   <div align = "center">
@@ -253,135 +172,33 @@ For any inquiries or feedback, please contact. Happy Contributing❤
 </a>
 
 
-## 🏆 **Achievements & Highlights**
-- **🌐 Global Reach**: Engaging with coders worldwide, from beginners to experts.
-- **🔥 Trending Topics**: Problems that sharpen your data structures and algorithms skills.
-
-# ⭐ **Ready to Level Up Your Coding Skills? Give This Repo a Star!**
-Your support fuels the journey. A star not only motivates but keeps the commitment alive. Let’s make coding collaborative and fun!
-
-
-**✨ Happy Coding!**
-
-
-
-<!--# 🌟 **GeeksforGeeks Problem of the Day Solutions 2024** 🌟 
-
-[**Explore Solutions Here!**](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)
-
----
-
-<div align="center">
-  <h3>🚀 **Welcome to Our Coding Community!** 🚀</h3>
-  <p>🌱 Dive into GeeksforGeeks Problem of the Day Solutions and level up your coding skills!</p>
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor Count" />
-</div>
-
----
-
-<p align="center">
-  <img src="https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Get%20daily%20solutions%20for%20GeeksforGeeks%20Problem%20of%20the%20Day%202024%20and%20become%20a%20coding%20pro!&font=Rokkitt&owner=1&pattern=Brick%20Wall&theme=Dark" alt="GeeksforGeeks POTD Banner" width="850"/>
-</p>
-
----
-
-<div align="center">
-  <h2>👥 **Join the Conversation**</h2>
-  <p>If you have any questions, insights, or solutions to share, don't miss out on our active <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions">Discussion Hub</a>! 🌟 Your participation is what makes this community great.</p>
-  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/1" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Join%20Discussion%20Hub%20-%20Vote%20%26%20Suggest-blue?style=for-the-badge&logo=github&logoColor=white" alt="Discussion Badge">
-  </a>
-</div>
-
----
-
-## 💡 **Why Follow This Repository?**
-
-- **🏋️‍♂️ Daily Practice:** Tackle a new problem every day and sharpen your problem-solving skills.
-- **🧠 Diverse Topics:** Master algorithms, data structures, dynamic programming, and more.
-- **🤝 Community Collaboration:** Discuss and improve solutions together for mutual growth.
-- **📈 Solution Explanations:** Each problem comes with clear, well-documented solutions to aid your learning.
-
----
-
-## 🔍 **How To Use This Repository**
-
-1. **📂 Navigate Effortlessly:** Problems are sorted by date for easy access.
-2. **📝 Study Explanations:** Grasp the core logic behind each solution.
-3. **🎭 Experiment & Practice:** Modify solutions or try implementing them in other languages.
-4. **💬 Engage & Collaborate:** Connect with the community to gain deeper insights.
-
----
-
-## 🚀 **Languages Used**
-
-- ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-- ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-- ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-- ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) *(occasionally used)*
-
----
-
-## 📁 **Directory Structure**
-
-```bash
-/
-├── November 2024 GFG SOLUTION/
-│   ├── 01_November_Solution.cpp
-│   ├── 02_November_Solution.java
-│   ├── 03_November_Solution.py
-│   └── ...
-└── README.md
-```
-
----
-
-## 🤝 **Contribution Guidelines**
-
-We ❤️ contributions! Here's how you can contribute:
-
-1. **Fork** this repository.
-2. **Create** a new branch for your feature or bug fix.
-3. **Commit** your changes with a clear message.
-4. **Submit** a pull request and we’ll review it together!
-
-> **Note:** Follow our coding style and include meaningful comments.
-
----
-
-## 🏆 **Your Star Counts!**
-
-<p align="center">
-  🌟 *If this repository helps you, don't forget to* **star it**! 🌟
-</p>
-
-<div align="center">
-  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD">
-    <img src="https://img.shields.io/github/stars/Hunterdii/GeeksforGeeks-POTD?style=for-the-badge&color=brightgreen" alt="GitHub Stars">
-  </a>
-</div>
-
----
-
-<div align="center">
-  <a href="https://star-history.com/#Hunterdii/GeeksforGeeks-POTD&Date">
+<div style="text-align: center; margin-bottom: 20px;">
+  
+  ## 🌍 Star Geographical Distribution
+  <p>This map shows the global distribution of stars for the repository. Click to explore more details.</p>
+  <a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=769514979&activity=stars" target="_blank" style="display: block;">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Hunterdii/GeeksforGeeks-POTD&type=Date" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=dark" width="1100" height="auto">
+      <img alt="Star Geographical Distribution of GeeksforGeeks-POTD" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=light" width="1100" height="auto">
     </picture>
   </a>
+  
+  <p><img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:22px; color: #FFD700" alt="Star GIF"> See the geographical spread of stars on the map above! <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:22px; color: #FFD700" alt="Star GIF"></p>
+  
 </div>
 
----
+
 
 ## 🏆 **Achievements & Highlights**
 - **🌐 Global Reach**: Engaging with coders worldwide, from beginners to experts.
 - **🔥 Trending Topics**: Problems that sharpen your data structures and algorithms skills.
 
-# ⭐ **Ready to Level Up Your Coding Skills? Give This Repo a Star!**
+<h1> <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:38px; color: #FFD700" alt="Star GIF">
+Ready to Level Up Your Coding Skills? Give This Repo a Star! </h1>
 Your support fuels the journey. A star not only motivates but keeps the commitment alive. Let’s make coding collaborative and fun!
 
----
+
+
 **✨ Happy Coding!**
--->
+
+
