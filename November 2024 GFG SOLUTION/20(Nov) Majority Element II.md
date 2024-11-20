@@ -1,4 +1,4 @@
-# *19. Majority Element II*  
+# *20. Majority Element II*  
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/majority-vote/1)
 
 
