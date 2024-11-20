@@ -25,6 +25,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: Reverse an Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/17(Nov)%20Reverse%20an%20Array.md)🌀🔁💻
 - [Day 18: Rotate Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/18(Nov)%20Rotate%20Array.md)🔄📚🧑‍💻
 - [Day 19: Next Permutation](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md)🔢➡️🔀
+- [Day 20: Majority Element II](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/20(Nov)%20Majority%20Element%20II.md)🗳️🔢🎯
+
 
 
 ## Introduction
@@ -68,3 +70,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 18(18 NOV) :* Rotate Array
 
 *Day 19(19 NOV) :* Next Permutation
+
+*Day 20(20 NOV) :* Majority Element II
