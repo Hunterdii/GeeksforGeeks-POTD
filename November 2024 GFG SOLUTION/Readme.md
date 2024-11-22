@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Next Permutation](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/19(Nov)%20Next%20Permutation.md)🔢➡️🔀
 - [Day 20: Majority Element II](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/20(Nov)%20Majority%20Element%20II.md)🗳️🔢🎯
 - [Day 21: Stock Buy and Sell – Multiple Transaction Allowed](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/21(Nov)%20Stock%20Buy%20and%20Sell%20%E2%80%93%20Multiple%20Transaction%20Allowed.md)💹💼💸
+- [Stock Buy and Sell – Max one Transaction Allowed](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/22(Nov)%20Stock%20Buy%20and%20Sell%20%E2%80%93%20Max%20one%20Transaction%20Allowed.md)📈💰🛒
 
 
 
@@ -75,3 +76,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 20(20 NOV) :* Majority Element II
 
 *Day 21(21 NOV) :* Stock Buy and Sell – Multiple Transaction Allowed
+
+*Day 22(22 NOV) :* Stock Buy and Sell – Max one Transaction Allowed
