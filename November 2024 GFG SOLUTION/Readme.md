@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Stock Buy and Sell – Multiple Transaction Allowed](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/21(Nov)%20Stock%20Buy%20and%20Sell%20%E2%80%93%20Multiple%20Transaction%20Allowed.md)💹💼💸
 - [Day 22: Stock Buy and Sell – Max one Transaction Allowed](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/22(Nov)%20Stock%20Buy%20and%20Sell%20%E2%80%93%20Max%20one%20Transaction%20Allowed.md)📈💰🛒
 - [Day 23: Minimize the Heights I](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/23(Nov)%20Minimize%20the%20Heights%20I.md)📉🏰🔧
+- [Day 24: Kadane's Algorithm](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/24(Nov)%20Kadane's%20Algorithm.md)💻📊🔢
 
 
 
@@ -81,3 +82,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 NOV) :* Stock Buy and Sell – Max one Transaction Allowed
 
 *Day 23(23 NOV) :* Minimize the Heights I
+
+*Day 24(24 NOV) :* Kadane's Algorithm
