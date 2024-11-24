@@ -5,8 +5,8 @@ Tags:
   - Arrays
 ---
 
-# _Day 7. Stock Buy and Sell – Multiple Transaction Allowed_
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/stock-buy-and-sell2615/1)
+# 🚀 _Day 7. Stock Buy and Sell – Multiple Transaction Allowed_ 🧠
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/stock-buy-and-sell2615)
 
 ## 💡 **Problem Description:**
 

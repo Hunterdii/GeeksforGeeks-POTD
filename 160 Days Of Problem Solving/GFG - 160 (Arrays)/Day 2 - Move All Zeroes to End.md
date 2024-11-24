@@ -5,9 +5,9 @@ Tags:
   - Arrays
 ---
 
-# _Day 2. Move All Zeroes to End_
+# 🚀 _Day 2. Move All Zeroes to End_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/move-all-zeroes-to-end-of-array0751)
 
 
 ## 💡 **Problem Description:**

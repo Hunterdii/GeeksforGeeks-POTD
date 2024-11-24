@@ -5,8 +5,8 @@ Tags:
   - Arrays  
 ---
 
-# _Day 10. Kadane's Algorithm_
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1)
+# 🚀 _Day 10. Kadane's Algorithm_ 🧠
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/kadanes-algorithm-1587115620)
 
 ## 💡 **Problem Description:**
 

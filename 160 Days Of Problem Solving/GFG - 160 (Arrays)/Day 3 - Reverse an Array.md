@@ -5,9 +5,9 @@ Tags:
   - Arrays
 ---
 
-# _Day 3. Reverse an Array_
+# 🚀 _Day 3. Reverse an Array_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/reverse-an-array/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/reverse-an-array)
 
 
 ## 💡 **Problem Description:**

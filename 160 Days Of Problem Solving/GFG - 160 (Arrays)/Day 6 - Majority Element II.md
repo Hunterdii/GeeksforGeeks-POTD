@@ -6,9 +6,9 @@ Tags:
   - Greedy
   - Two Pointers
 ---
-# _Day 6. Majority Element II_
+# 🚀 _Day 6. Majority Element II_ 🧠
   
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/majority-vote/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/majority-vote)
 
 
 ## 💡 **Problem Description:**

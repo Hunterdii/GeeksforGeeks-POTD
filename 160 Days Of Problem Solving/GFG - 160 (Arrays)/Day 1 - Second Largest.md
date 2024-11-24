@@ -6,9 +6,9 @@ Tags:
   - Searching
 ---
 
-# _Day 1. Second Largest_
+# 🚀 _Day 1. Second Largest_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/second-largest3735/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
 
 ## 💡 **Problem Description:**
 

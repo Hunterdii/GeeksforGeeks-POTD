@@ -4,9 +4,9 @@ Source: 160 Days of Problem Solving
 Tags:
   - Arrays
 ---
-# _Day 4. Rotate Array_
+# 🚀 _Day 4. Rotate Array_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/rotate-array-by-n-elements-1587115621)
 
 ## 💡 **Problem Description:**
 

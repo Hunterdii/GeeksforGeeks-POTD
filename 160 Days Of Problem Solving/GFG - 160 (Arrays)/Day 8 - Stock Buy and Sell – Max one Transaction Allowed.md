@@ -6,9 +6,9 @@ Tags:
   - Greedy
 ---
 
-# _Day 8. Stock Buy and Sell – Max one Transaction Allowed_
+# 🚀 _Day 8. Stock Buy and Sell – Max one Transaction Allowed_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/buy-stock-2/1)  
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/buy-stock-2)  
 
 ## 💡 **Problem Description:**
 

@@ -7,9 +7,9 @@ Tags:
   - constructive algo
 ---
 
-# _Day 5. Next Permutation_
+# 🚀 _Day 5. Next Permutation_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/next-permutation5226/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226)
 
 
 ## 💡 **Problem Description:**
