@@ -4,7 +4,8 @@ Source: 160 Days of Problem Solving
 Tags:
   - Arrays
 ---
-# *18. Rotate Array*
+# _Day 4. Rotate Array_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1)
 
 ## 💡 **Problem Description:**
