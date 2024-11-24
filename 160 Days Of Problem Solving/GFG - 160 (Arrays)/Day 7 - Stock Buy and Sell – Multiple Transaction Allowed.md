@@ -1,5 +1,5 @@
 ---
-Difficulty: Easy
+Difficulty: Hard
 Source: 160 Days of Problem Solving
 Tags:
   - Arrays
