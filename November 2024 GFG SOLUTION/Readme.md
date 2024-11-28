@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Maximum Product Subarray](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/25(Nov)%20Maximum%20Product%20Subarray.md)🔢➗🎯
 - [Day 26: Max Circular Subarray Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/26(Nov)%20Max%20Circular%20Subarray%20Sum.md)🔄🎯🌀
 - [Day 27: Smallest Positive Missing Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/27(Nov)%20Smallest%20Positive%20Missing%20Number.md)🔢❓🔍
+- [Day 28: Implement Atoi](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/28(Nov)%20Implement%20Atoi.md)⚙️🔑🧑‍🔬
 
 
 
@@ -93,3 +94,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 NOV) :* Max Circular Subarray Sum
 
 *Day 27(27 NOV) :* Smallest Positive Missing Number
+
+*Day 28(28 NOV) :* Implement Atoi
