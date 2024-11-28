@@ -35,10 +35,12 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📅 Day-wise Problem List**
 
-## **🔢 GFG 160 Days of Problem Solving (Strings 1) 🔤** 
+## **🔠 GFG 160 Days of Problem Solving (Strings 1) 🔠**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| **Day 1**    | Implement Atoi ⚙️🔑🧑‍🔬                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20Implement%20Atoi.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20Implement%20Atoi.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20Implement%20Atoi.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20Implement%20Atoi.md#code-python) |
+
 
 
 <!--## **🎉 Bonus Problems (Arrays)🎁**
