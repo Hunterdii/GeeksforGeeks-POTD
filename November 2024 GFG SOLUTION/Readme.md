@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 27: Smallest Positive Missing Number](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/27(Nov)%20Smallest%20Positive%20Missing%20Number.md)🔢❓🔍
 - [Day 28: Implement Atoi](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/28(Nov)%20Implement%20Atoi.md)⚙️🔑🧑‍🔬
 - [Day 29: Add Binary Strings](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/29(Nov)%20Add%20Binary%20Strings.md)🔢➕💻
+- [Day 30: Anagram](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/November%202024%20GFG%20SOLUTION/30(Nov)%20Anagram.md)🔠💡🤔
 
 
 
@@ -99,3 +100,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 NOV) :* Implement Atoi
 
 *Day 29(29 NOV) :* Add Binary Strings
+
+*Day 30(30 NOV) :* Anagram
