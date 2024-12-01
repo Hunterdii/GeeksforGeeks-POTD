@@ -27,8 +27,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 15/160 Problems 🎉  
-> **In Progress**: 145 Problems ⏳  
+> **Completed**: 17/160 Problems 🎉  
+> **In Progress**: 143 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 1**    | Implement Atoi ⚙️🔑🧑‍🔬                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20-%20Implement%20Atoi.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20-%20Implement%20Atoi.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20-%20Implement%20Atoi.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%201%20-%20Implement%20Atoi.md#code-python) |
 | **Day 2**    | Add Binary Strings 🔢➕💻                           |   | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%202%20-%20Add%20Binary%20Strings.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%202%20-%20Add%20Binary%20Strings.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%202%20-%20Add%20Binary%20Strings.md#code-python) |
 | **Day 3**    | Anagram 🔠💡🤔                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%203%20-%20Anagram.md#code-c)  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%203%20-%20Anagram.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%203%20-%20Anagram.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%203%20-%20Anagram.md#code-python) |
+| **Day 4**    |  Non-Repeating Character🔢📝💭                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%204%20-%20Non%20Repeating%20Character.md#code-c)  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%204%20-%20Non%20Repeating%20Character.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%204%20-%20Non%20Repeating%20Character.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%204%20-%20Non%20Repeating%20Character.md#code-python) |
+
 
 
 <!--## **🎉 Bonus Problems (Arrays)🎁**
