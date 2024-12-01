@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/December%202024%20GFG%20SOLUTION)💡
-- [Day 1: Non Repeating Character]()🔢📝💭
+- [Day 1: Non Repeating Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md)🔢📝💭
 
 
 
