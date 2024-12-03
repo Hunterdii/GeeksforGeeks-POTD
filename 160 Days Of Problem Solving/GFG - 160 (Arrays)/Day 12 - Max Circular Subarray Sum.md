@@ -188,7 +188,7 @@ def circularSubarraySum(arr):
     return max(max_sum, total_sum - min_sum)
 ```
 
-## Contribution and Support
+## 🎯 **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
 

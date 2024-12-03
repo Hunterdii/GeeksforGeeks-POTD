@@ -61,29 +61,22 @@ Certainly! Here's your approach described in words:
 ```cpp
 class Solution {
 public:
-    // Function to perform merge sort on a linked list
     Node* mergeSort(Node* head) {
-        // Base case: If the list is empty or has only one node, it is already sorted
         if (head == nullptr || head->next == nullptr) {
             return head;
         }
         
-        // Find the middle node of the list
         Node* mid = findMiddle(head);
         Node* nextToMid = mid->next;
         
-        // Split the list into two halves and recursively sort each half
-        mid->next = nullptr; // Break the list at the middle node
-        Node* left = mergeSort(head); // Sort the left half
-        Node* right = mergeSort(nextToMid); // Sort the right half
+        mid->next = nullptr; 
+        Node* left = mergeSort(head); 
+        Node* right = mergeSort(nextToMid); 
         
-        // Merge the sorted halves and return the merged list
         return merge(left, right);
     }
     
-    // Function to merge two sorted linked lists
     Node* merge(Node* left, Node* right) {
-        // Base cases: If either list is empty, return the other list
         if (left == nullptr) {
             return right;
         }
@@ -91,7 +84,6 @@ public:
             return left;
         }
         
-        // Compare the values of the nodes and merge the lists accordingly
         Node* result = nullptr;
         if (left->data <= right->data) {
             result = left;
@@ -101,18 +93,14 @@ public:
             result->next = merge(left, right->next);
         }
         
-        // Return the head of the merged list
         return result;
     }
     
-    // Function to find the middle node of a linked list
     Node* findMiddle(Node* head) {
-        // Base case: If the list is empty, return nullptr
         if (head == nullptr) {
             return nullptr;
         }
         
-        // Use the slow and fast pointer technique to find the middle node
         Node* slow = head;
         Node* fast = head->next;
         
@@ -121,19 +109,27 @@ public:
             fast = fast->next->next;
         }
         
-        // Return the middle node
         return slow;
     }
     
-    // Function to sort a linked list in non-decreasing order
     void sort(Node **head) {
-        // Call the mergeSort function and update the head of the list
         *head = mergeSort(*head);
     }
 };
 ```
-## Contribution and Support
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). 
-Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
-⭐ Star this repository if you find it helpful or intriguing! ⭐
+## Contribution and Support
+
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+
+⭐ If you find this helpful, please give this repository a star! ⭐
+
+---
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p>

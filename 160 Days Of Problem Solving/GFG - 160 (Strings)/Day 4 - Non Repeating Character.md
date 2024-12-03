@@ -73,7 +73,7 @@ All the characters in the given string are repeating.
 - **Expected Time Complexity:** O(n), where `n` is the size of the string. The algorithm requires two linear passes through the string.  
 - **Expected Auxiliary Space Complexity:** O(1), as the frequency array uses a fixed amount of additional space (`26` elements).
 
-
+## 📝 **Solution Code**
 
 ## Code (C)
 

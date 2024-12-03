@@ -22,19 +22,14 @@ The problem can be found at the following link: [Question Link](https://www.geek
 ```cpp
 class Solution{
 public:
-  // Utility method to get index of character ch
-  // in lower alphabet characters
   int getIdx(char ch)
   {
       return (ch - 'a');
   }
-  // Returns true if all non-zero elements
-  // values are same
   bool allSame(int freq[], int N)
   {
       int same;
    
-      //  get first non-zero element
       int i;
       for (i = 0; i < N; i++)
       {
@@ -45,7 +40,6 @@ public:
           }
       }
    
-      //  check equality of each element with variable same
       for (int j = i+1; j < N; j++)
           if (freq[j] > 0 && freq[j] != same)
               return false;
@@ -53,30 +47,22 @@ public:
       return true;
   }
    
-  // Returns true if we can make all character
-  // frequencies same
   bool sameFreq(string str)
   {
-      int M = 26; // size of hash map for all 26 letters
+      int M = 26; 
       int l = str.length();
    
-      //  fill frequency array
       int freq[M] = {0};
       for (int i = 0; i < l; i++)
           freq[getIdx(str[i])]++;
    
-      //  if all frequencies are same, then return true
       if (allSame(freq, M))
           return true;
    
-      /*  Try decreasing frequency of all character
-          by one and then check all equality of all
-          non-zero frequencies */
       for (char c = 'a'; c <= 'z'; c++)
       {
           int i = getIdx(c);
    
-          // Check character only if it occurs in str
           if (freq[i] > 0)
           {
               freq[i]--;
@@ -91,9 +77,18 @@ public:
 };
 ```
 
-### Contribution and Support
+## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). 
-Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ Star this repository if you find it helpful or intriguing! ⭐
+⭐ If you find this helpful, please give this repository a star! ⭐
+
+---
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p>

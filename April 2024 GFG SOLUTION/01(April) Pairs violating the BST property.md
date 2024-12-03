@@ -110,7 +110,18 @@ private:
 };
 ```
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/).
-Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+## Contribution and Support
 
-⭐ Star this repository if you find it helpful or intriguing! ⭐
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+
+⭐ If you find this helpful, please give this repository a star! ⭐
+
+---
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p>

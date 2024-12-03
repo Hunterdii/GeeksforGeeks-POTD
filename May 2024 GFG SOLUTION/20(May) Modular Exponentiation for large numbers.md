@@ -32,6 +32,12 @@ Explanation:
 3. **Modulo Operation:**
    - Ensure all intermediate results are taken modulo (M) to avoid overflow and to maintain the result within the bounds of (M).
 
+## Time and Auxiliary Space Complexity
+
+- **Expected Time Complexity:** \(O(\log n)\), as the problem size is halved in each recursive step.
+- **Expected Auxiliary Space Complexity:** \(O(1)\), as the space used is constant and independent of the input size. 
+
+
 ### Code
 
 #### C++
@@ -90,14 +96,19 @@ class Solution:
             return (((half * half) % m) * x) % m
 ```
 
-### Time and Auxiliary Space Complexity
-
-- **Expected Time Complexity:** \(O(\log n)\), as the problem size is halved in each recursive step.
-- **Expected Auxiliary Space Complexity:** \(O(1)\), as the space used is constant and independent of the input size. 
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/).
-Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ Star this repository if you find it helpful or intriguing! ⭐
+⭐ If you find this helpful, please give this repository a star! ⭐
+
+---
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p>
