@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/December%202024%20GFG%20SOLUTION)💡
 - [Day 1: Non Repeating Character](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md)🔢📝💭
 - [Day 2: Search Pattern (KMP Algorithm)](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/02(Dec)%20Search%20Pattern%20(KMP-Algorithm).md) 📚🔍🧠
+- [Day 3: Min Chars to Add for Palindrome](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/03(Dec)%20Min%20Chars%20to%20Add%20for%20Palindrome.md)✂️💬🔠
 
 
 
@@ -18,3 +19,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 1(01 DEC) :* Non Repeating Character
 
 *Day 2(02 DEC) :* Search Pattern (KMP Algorithm)
+
+*Day 3(03 DEC) :* Min Chars to Add for Palindrome
