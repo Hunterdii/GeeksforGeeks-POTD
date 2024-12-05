@@ -35,10 +35,11 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📅 Day-wise Problem List**
 
-## **🔠 GFG 160 Days of Problem Solving (Sorting) 🔠**
+## **🔀 GFG 160 Days of Problem Solving (Sorting) 🔀**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| **Day 1**    | Sort 0s, 1s, and 2s 🚦🔢🎨                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%201%20-%20Sort%200s%2C%201s%20and%202s.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%201%20-%20Sort%200s%2C%201s%20and%202s.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%201%20-%20Sort%200s%2C%201s%20and%202s.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%201%20-%20Sort%200s%2C%201s%20and%202s.md#code-python) |
 
 
 <!--## **🎉 Bonus Problems (Sorting)🎁**
