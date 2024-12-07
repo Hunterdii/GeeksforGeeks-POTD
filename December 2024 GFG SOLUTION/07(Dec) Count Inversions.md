@@ -59,8 +59,8 @@ All elements of the array are the same, so there are no inversions.
 
 
 ### Constraints:
-- `1 ≤ arr.size() ≤ 10^5`  
-- `1 ≤ arr[i] ≤ 10^4`  
+- $`1 ≤ arr.size() ≤ 10^5`$ 
+- $`1 ≤ arr[i] ≤ 10^4`$  
 
 ## My Approach
 
@@ -273,6 +273,7 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
