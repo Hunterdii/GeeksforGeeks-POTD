@@ -33,7 +33,9 @@
 
 
 <h1> <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> <b> GfG 160 - 160 Days of Problem Solving </b>  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
-_A journey through 160 days of learning and mastering problem-solving with GeeksforGeeks! From arrays to sorting, this roadmap has it all. Let's dive in!_
+
+>_A journey through 160 days of learning and mastering problem-solving with GeeksforGeeks! From arrays to sorting, this roadmap has it all. Let's dive in!_
+
 
 ## 🚀 **Arrays Mastery**  
 Unleash the power of arrays with these fundamental to advanced problems.  
@@ -160,6 +162,16 @@ Polish your sorting skills with these curated problems.
 📌 **Challenge 4:**  
 [**Smallest Positive Integer that can not be represented as Sum**](https://www.geeksforgeeks.org/problems/smallest-positive-integer-that-can-not-be-represented-as-sum--141631/1)  
 **Difficulty:** Hard  
+
+
+
+## 👤 Creator
+| ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
+|:--:|
+| **Het Patel** <br> <sub>Project Maintainer</sub> | 
+| [![LinkedIn](https://img.icons8.com/fluency/32/000000/linkedin.png)](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/) [![Gmail](https://img.icons8.com/fluency/32/000000/gmail.png)](mailto:hunterdii9879@gmail.com) |
+
+For any inquiries or feedback, please contact. Happy Contributing❤
 
 
 ## 🎯 **Why Join This Journey?**  
