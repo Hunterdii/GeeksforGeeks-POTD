@@ -1,5 +1,5 @@
 # *9. Insert Interval*  
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/insert-interval-1666733333)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/insert-interval-1666733333/1)
 
 
 <div align="center">
