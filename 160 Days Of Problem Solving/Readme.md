@@ -139,6 +139,7 @@ Polish your sorting skills with these curated problems.
 | Day 22     | Find H-Index | Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%202%20-%20Find%20H-Index.md) |  
 | Day 23     | Count Inversions | Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%203%20-%20Count%20Inversions.md) |  
 | Day 24     | Overlapping Intervals | Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%204%20-%20Overlapping%20Intervals.md) |  
+| Day 25     | Insert Interval | Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%205%20-%20Insert%20Interval.md) |  
 
 ### 🔖 **Bonus Problem:**  
 
@@ -168,10 +169,10 @@ Polish your sorting skills with these curated problems.
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
-| **Het Patel** <br> <sub>Project Maintainer</sub> | 
+| [**Het Patel**](https://github.com/sponsors/Hunterdii) <br> <sub>Project Maintainer</sub> |
 | [![LinkedIn](https://img.icons8.com/fluency/32/000000/linkedin.png)](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/) [![Gmail](https://img.icons8.com/fluency/32/000000/gmail.png)](mailto:hunterdii9879@gmail.com) |
 
-For any inquiries or feedback, please contact. Happy Contributing❤
+For any inquiries or feedback, please contact. Happy Contributing <img src="https://github.com/user-attachments/assets/00314b63-96bb-4e9a-92f6-4ead67e0fb7d" width="22" height="22">
 
 
 ## 🎯 **Why Join This Journey?**  
