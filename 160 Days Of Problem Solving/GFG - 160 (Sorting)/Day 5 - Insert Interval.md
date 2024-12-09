@@ -2,25 +2,21 @@
 Difficulty: Medium  
 Source: 160 Days of Problem Solving  
 Tags:
-  - Arrays
-  - Hash
   - Sorting
 ---
 
 # 🚀 _Day 5. Insert Intervals_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/insert-interval-1666733333/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/insert-interval-1666733333)
 
-
-
-## Problem Description
+## 💡 **Problem Description:**
 
 Geek has an array of non-overlapping intervals `intervals` where `intervals[i] = [starti, endi]` represent the start and the end of the `i`-th event. The array `intervals` is sorted in ascending order by `starti`.
 
 Geek wants to add a new interval `newInterval = [newStart, newEnd]` such that `intervals` is still sorted in ascending order by `starti` and has no overlapping intervals. Merge overlapping intervals if necessary.
 
 
-### Examples:
+## 🔍 **Example Walkthrough:**
 
 **Input:**  
 `intervals = [[1,3], [4,5], [6,7], [8,10]], newInterval = [5,6]`  
@@ -46,7 +42,7 @@ The `newInterval` `[4,9]` overlaps with `[3,5], [6,7], [8,10]`, so they are merg
 - $`0 ≤ start[i], end[i] ≤ 10^9`$
 
 
-## My Approach
+## 🎯 **My Approach:**
 
 1. **Iterative Merge:**  
    - Traverse the intervals and add those that come entirely before the `newInterval`.  
@@ -65,7 +61,7 @@ The `newInterval` `[4,9]` overlaps with `[3,5], [6,7], [8,10]`, so they are merg
    - Merging intervals is straightforward and uses a constant amount of additional space.
 
 
-## Time and Auxiliary Space Complexity
+## 🕒 **Time and Auxiliary Space Complexity** 
 
 **Expected Time Complexity:**  
 O(n), where `n` is the size of the intervals. Traversal through all intervals ensures linear time complexity.
@@ -73,6 +69,7 @@ O(n), where `n` is the size of the intervals. Traversal through all intervals en
 **Expected Auxiliary Space Complexity:**  
 O(n), as we store the resulting intervals in a new list.
 
+## 📝 **Solution Code**
 
 ## Code (C)
 
@@ -181,7 +178,7 @@ class Solution:
 ```
 
 
-## Contribution and Support
+## 🎯 **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
 
