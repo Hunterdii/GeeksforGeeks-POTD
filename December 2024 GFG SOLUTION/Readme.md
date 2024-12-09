@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Find H-Index](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/06(Dec)%20Find%20H-Index.md)📚📊🔍
 - [Day 7: Count Inversions](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/07(Dec)%20Count%20Inversions.md)🔄📊🔢
 - [Day 8: Overlapping Intervals](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/08(Dec)%20Overlapping%20Intervals.md)📅⏰🔁
+- [Day 9: Insert Interval](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/09(Dec)%20Insert%20Interval.md)📝🔲⏳ 
 
 
 ## Introduction
@@ -35,3 +36,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 7(07 DEC) :* Count Inversions
 
 *Day 8(08 DEC) :* Overlapping Intervals
+
+*Day 9(09 DEC) :* Insert Interval 
