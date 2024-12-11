@@ -1,6 +1,23 @@
 # *11. Merge Without Extra Space*  
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1)
 
+<div align="center">
+  <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
+</div>
+
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- My solutions for December are now live! Check out today's solution below:  
+  [**2779. Maximum Beauty of an Array After Applying Operation**](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2779.Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation.md)  
+
+<div align="center">
+  <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2779.Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation.md">
+    <img src="https://img.shields.io/badge/LeetCode%20POTD-Solution%20Live-brightgreen?style=for-the-badge&logo=leetcode" alt="LeetCode POTD Solution" />
+  </a>
+  <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2779.Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation.md">
+    <img src="https://img.shields.io/badge/Solutions-Up%20to%20Date-blue?style=for-the-badge" alt="Solutions Up-to-Date" />
+  </a>
+</div>
+
 
 ## Problem Description
 
