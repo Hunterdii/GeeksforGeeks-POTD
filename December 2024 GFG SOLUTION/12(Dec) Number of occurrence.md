@@ -1,6 +1,23 @@
 # *12. Number of Occurrences*  
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
 
+<div align="center">
+  <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
+</div>
+
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- My solutions for December are now live! Check out today's solution below:  
+  [**2558. Take Gifts From the Richest Pile**](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2558.Take%20Gifts%20From%20the%20Richest%20Pile.md)  
+
+<div align="center">
+  <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2558.Take%20Gifts%20From%20the%20Richest%20Pile.md">
+    <img src="https://img.shields.io/badge/LeetCode%20POTD-Solution%20Live-brightgreen?style=for-the-badge&logo=leetcode" alt="LeetCode POTD Solution" />
+  </a>
+  <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2558.Take%20Gifts%20From%20the%20Richest%20Pile.md">
+    <img src="https://img.shields.io/badge/Solutions-Up%20to%20Date-blue?style=for-the-badge" alt="Solutions Up-to-Date" />
+  </a>
+</div>
+
 
 ## Problem Description
 
