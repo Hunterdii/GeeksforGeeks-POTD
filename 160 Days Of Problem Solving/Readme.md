@@ -131,7 +131,7 @@ Master the art of string manipulation with these intriguing challenges.
 
 ## 🔥 **Sorting Challenges**  
 Polish your sorting skills with these curated problems.  
-✨ **Days Covered:** 21 to 24  
+✨ **Days Covered:** 21 to 27  
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-------------|  
@@ -165,6 +165,15 @@ Polish your sorting skills with these curated problems.
 📌 **Challenge 4:**  
 [**Smallest Positive Integer that can not be represented as Sum**](https://www.geeksforgeeks.org/problems/smallest-positive-integer-that-can-not-be-represented-as-sum--141631/1)  
 **Difficulty:** Hard  
+
+## 🔍 **Searching Proficiency**  
+Master the art of searching techniques with these essential problems.
+✨ **Days Covered:** 28 
+
+| 🌟 **Day** | 🧩 **Problem**              | 🚀 **Level** | 🔗 **Solution** |  
+|------------|----------------------------|--------------|-----------------|  
+| Day 28      | Number of Occurrence       | Easy         | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%201%20-%20Number%20of%20occurrence.md) |  
+
 
 
 
