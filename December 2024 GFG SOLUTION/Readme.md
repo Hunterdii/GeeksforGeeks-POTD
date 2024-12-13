@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Non-overlapping Intervals](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/10(Dec)%20Non-overlapping%20Intervals.md)✂️🔗✅
 - [Day 11: Merge Without Extra Space](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/11(Dec)%20Merge%20Without%20Extra%20Space.md) 📂🚫📦
 - [Day 12: Number of occurrence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/12(Dec)%20Number%20of%20occurrence.md)🧮📂📍
+- [Day 13: Sorted and Rotated Minimum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/13(Dec)%20Sorted%20and%20Rotated%20Minimum.md)🔢🔄🌐
 
 
 ## Introduction
@@ -47,3 +48,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 11(11 DEC) :* Merge Without Extra Space
 
 *Day 12(12 DEC) :* Number of occurrence
+
+*Day 13(13 DEC) :* Sorted and Rotated Minimum
