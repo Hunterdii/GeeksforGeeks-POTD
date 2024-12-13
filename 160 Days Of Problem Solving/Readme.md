@@ -166,13 +166,15 @@ Polish your sorting skills with these curated problems.
 [**Smallest Positive Integer that can not be represented as Sum**](https://www.geeksforgeeks.org/problems/smallest-positive-integer-that-can-not-be-represented-as-sum--141631/1)  
 **Difficulty:** Hard  
 
-## 🔍 **Searching Proficiency**  
-Master the art of searching techniques with these essential problems.
-✨ **Days Covered:** 28 
 
-| 🌟 **Day** | 🧩 **Problem**              | 🚀 **Level** | 🔗 **Solution** |  
-|------------|----------------------------|--------------|-----------------|  
+## 🔍 **Searching Proficiency** 
+Master the art of searching techniques with these essential problems.<br/>
+✨ **Days Covered:** 28 to 29 
+
+| 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
+|------------|---------------|--------------|-------------|  
 | Day 28      | Number of Occurrence       | Easy         | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%201%20-%20Number%20of%20occurrence.md) |  
+| Day 29      | Sorted and Rotated Minimum       | Easy         | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%202%20-%20Sorted%20and%20Rotated%20Minimum.md) |  
 
 
 
