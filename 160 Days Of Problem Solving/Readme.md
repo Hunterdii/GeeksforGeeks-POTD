@@ -185,7 +185,7 @@ Master the art of string manipulation with these intriguing challenges.
 
 
 
-## 🔖 **Bonus Problem:**  
+## 🔖 **Bonus Problems**  
 
 | 🎁 **Bonus No.**  | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------------|---------------|--------------|-----------------|  
@@ -266,8 +266,8 @@ Polish your sorting skills with these curated problems.
 
 | 🎁 **Bonus No.** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------------|---------------|--------------|-----------------|  
-| _1_             | **Minimum sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/1.%20Minimum%20sum.md) |  
-| _2_             | **Meeting Rooms** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/2.%20Meeting%20Rooms.md) |  
+| _1_             | **Minimum sum** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/1.%20Minimum%20sum.md) |  
+| _2_             | **Meeting Rooms** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/2.%20Meeting%20Rooms.md) |  
 | _3_             | **Form the Largest Number** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/3.%20Form%20the%20Largest%20Number.md) |  
 | _4_             | **Make array elements unique** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/4.%20Make%20array%20elements%20unique.md) |  
 
@@ -336,13 +336,14 @@ Master the art of searching techniques with these essential problems.
 
 
 
-## 🔖 **Bonus Problem:**  
+## 🔖 **Bonus Problems**  
 
-<!--| 🎁 **Bonus No.**  | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
-|------------------|---------------|--------------|-----------------|  
-| _NUM 1_    | **Fizz Buzz** 🧮🎉🔢 | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/1.%20Fizz%20Buzz.md) |  
--->
+***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
 
+> _Not Given Yet By GFG! 😄_
+
+**Note:**  
+> **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
 
 ### 📌 **Additional Challenges (From my side):**  
 
