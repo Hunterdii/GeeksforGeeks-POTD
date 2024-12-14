@@ -27,8 +27,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 25/160 Problems 🎉  
-> **In Progress**: 130 Problems ⏳  
+> **Completed**: 27/160 Problems 🎉  
+> **In Progress**: 133 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -49,11 +49,14 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 
 
-<!--## **🎉 Bonus Problems (Sorting)🎁**
+## **🎉 Bonus Problems (Sorting)🎁**
 
 | **Bonus Problem No.**  | **Problem Name**                                    | **C**  🖥️                                                                                                                               | **C++**  🚀                                                                                                                          | **Java** ☕                                                                                                                          | **Python**  🐍                                                                                                                       |
 |:--------:|:---------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
--->
+| _NUM 1_    | **Minimum sum** 💡➕💰 |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/1.%20Minimum%20sum.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/1.%20Minimum%20sum.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/1.%20Minimum%20sum.md#code-python) |
+| _NUM 2_    | **Meeting Rooms** 📅🏢⏰ |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/2.%20Meeting%20Rooms.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/2.%20Meeting%20Rooms.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/2.%20Meeting%20Rooms.md#code-python) |
+| _NUM 3_    | **Form the Largest Number** 🔢🎯💯 |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Form%20the%20Largest%20Number.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Form%20the%20Largest%20Number.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Form%20the%20Largest%20Number.md#code-python) |
+| _NUM 4_    | **Make array elements unique** 🧮🔢🔀 |                    | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-python) |
 
 
 ## **🤝 Contributing**
