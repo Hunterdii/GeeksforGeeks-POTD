@@ -262,13 +262,15 @@ Polish your sorting skills with these curated problems.
 | Day 27     | **Merge Without Extra Space** | 🔴 Hard | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%207%20-%20Merge%20Without%20Extra%20Space.md) |  
 
 
+## 🔖 **Bonus Problems**  
 
-## 🔖 **Bonus Problem:**  
-
-<!--| 🎁 **Bonus No.**  | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
+| 🎁 **Bonus No.** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------------|---------------|--------------|-----------------|  
-| _NUM 1_    | **Fizz Buzz** 🧮🎉🔢 | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/1.%20Fizz%20Buzz.md) |  
--->
+| _1_             | **Minimum sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/1.%20Minimum%20sum.md) |  
+| _2_             | **Meeting Rooms** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/2.%20Meeting%20Rooms.md) |  
+| _3_             | **Form the Largest Number** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/3.%20Form%20the%20Largest%20Number.md) |  
+| _4_             | **Make array elements unique** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁/4.%20Make%20array%20elements%20unique.md) |  
+
 
 
 ### 📌 **Additional Challenges (From my side):**  
