@@ -19,7 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 11: Merge Without Extra Space](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/11(Dec)%20Merge%20Without%20Extra%20Space.md) 📂🚫📦
 - [Day 12: Number of occurrence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/12(Dec)%20Number%20of%20occurrence.md)🧮📂📍
 - [Day 13: Sorted and Rotated Minimum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/13(Dec)%20Sorted%20and%20Rotated%20Minimum.md)🔢🔄🌐
-
+- [Day 14: Search in Rotated Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/14(Dec)%20Search%20in%20Rotated%20Sorted%20Array.md)🔍📐🔑
 
 ## Introduction
 
@@ -50,3 +50,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 12(12 DEC) :* Number of occurrence
 
 *Day 13(13 DEC) :* Sorted and Rotated Minimum
+
+*Day 14(14 DEC) :* Search in Rotated Sorted Array
