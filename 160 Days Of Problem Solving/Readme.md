@@ -326,13 +326,14 @@ Master the art of searching techniques with these essential problems.<br/>
 
 # 🔍 **Searching Proficiency**  
 Master the art of searching techniques with these essential problems.  
-✨ **Days Covered:** **28 to 30**
+✨ **Days Covered:** **28 to 31**
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
 | Day 28     | **Number of Occurrence** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%201%20-%20Number%20of%20occurrence.md) |  
 | Day 29     | **Sorted and Rotated Minimum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%202%20-%20Sorted%20and%20Rotated%20Minimum.md) |  
 | Day 30     | **Search in Rotated Sorted Array** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%203%20-%20Search%20in%20Rotated%20Sorted%20Array.md) |  
+| Day 31     | **Peak element** | 🟤 Basic | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%204%20-%20Peak%20element.md) |  
 
 
 
