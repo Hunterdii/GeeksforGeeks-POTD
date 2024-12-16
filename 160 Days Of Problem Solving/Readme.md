@@ -326,7 +326,7 @@ Master the art of searching techniques with these essential problems.<br/>
 
 # 🔍 **Searching Proficiency**  
 Master the art of searching techniques with these essential problems.  
-✨ **Days Covered:** **28 to 31**
+✨ **Days Covered:** **28 to 32**
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
@@ -334,6 +334,7 @@ Master the art of searching techniques with these essential problems.
 | Day 29     | **Sorted and Rotated Minimum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%202%20-%20Sorted%20and%20Rotated%20Minimum.md) |  
 | Day 30     | **Search in Rotated Sorted Array** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%203%20-%20Search%20in%20Rotated%20Sorted%20Array.md) |  
 | Day 31     | **Peak element** | 🟤 Basic | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%204%20-%20Peak%20element.md) |  
+| Day 32     | **K-th element of two Arrays** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%205%20-%20K-th%20element%20of%20two%20Arrays.md) |  
 
 
 
