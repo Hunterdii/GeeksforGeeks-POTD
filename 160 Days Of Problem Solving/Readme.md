@@ -335,6 +335,7 @@ Master the art of searching techniques with these essential problems.
 | Day 30     | **Search in Rotated Sorted Array** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%203%20-%20Search%20in%20Rotated%20Sorted%20Array.md) |  
 | Day 31     | **Peak element** | 🟤 Basic | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%204%20-%20Peak%20element.md) |  
 | Day 32     | **K-th element of two Arrays** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%205%20-%20K-th%20element%20of%20two%20Arrays.md) |  
+| Day 33     | **Aggressive Cows** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%206%20-%20Aggressive%20Cows.md) |  
 
 
 
