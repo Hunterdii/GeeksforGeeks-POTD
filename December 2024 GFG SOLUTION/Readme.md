@@ -20,6 +20,10 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Number of occurrence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/12(Dec)%20Number%20of%20occurrence.md)🧮📂📍
 - [Day 13: Sorted and Rotated Minimum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/13(Dec)%20Sorted%20and%20Rotated%20Minimum.md)🔢🔄🌐
 - [Day 14: Search in Rotated Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/14(Dec)%20Search%20in%20Rotated%20Sorted%20Array.md)🔍📐🔑
+- [Day 15: Peak Element](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/15(Dec)%20Peak%20element.md)🌄🔝⛰️
+- [Day 16: K-th Element of Two Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/16(Dec)%20K-th%20element%20of%20two%20Arrays.md)🔢🔍🎯
+- [Day 17: Aggressive Cows](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/17(Dec)%20Aggressive%20Cows.md)🐄🚜🐮
+
 
 ## Introduction
 
@@ -52,3 +56,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 13(13 DEC) :* Sorted and Rotated Minimum
 
 *Day 14(14 DEC) :* Search in Rotated Sorted Array
+
+*Day 15(15 DEC) :* Peak Element
+
+*Day 16(16 DEC) :* K-th Element of Two Arrays
+
+*Day 17(17 DEC) :* Aggressive Cows
