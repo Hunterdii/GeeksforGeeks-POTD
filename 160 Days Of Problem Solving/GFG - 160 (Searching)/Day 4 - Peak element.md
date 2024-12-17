@@ -78,6 +78,26 @@ You are given an array `arr[]` where no two adjacent elements are the same. A **
 
 ## 📝 **Solution Code**
 
+## Code (C)
+
+```c
+int peakElement(int *arr, int n) {
+    int lo = 0, hi = n - 1;
+
+    while (lo < hi) {
+        int mid = lo + (hi - lo) / 2;
+
+        if (arr[mid] > arr[mid + 1]) {
+            hi = mid;  
+        } else {
+            lo = mid + 1;  
+        }
+    }
+
+    return lo;  
+}
+```
+
 ## Code (C++)
 ```cpp
 class Solution {
