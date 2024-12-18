@@ -326,7 +326,7 @@ Master the art of searching techniques with these essential problems.<br/>
 
 # 🔍 **Searching Proficiency**  
 Master the art of searching techniques with these essential problems.  
-✨ **Days Covered:** **28 to 32**
+✨ **Days Covered:** **28 to 34**
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
@@ -336,6 +336,7 @@ Master the art of searching techniques with these essential problems.
 | Day 31     | **Peak element** | 🟤 Basic | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%204%20-%20Peak%20element.md) |  
 | Day 32     | **K-th element of two Arrays** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%205%20-%20K-th%20element%20of%20two%20Arrays.md) |  
 | Day 33     | **Aggressive Cows** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%206%20-%20Aggressive%20Cows.md) |  
+| Day 34     | **Allocate Minimum Pages** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%207%20-%20Allocate%20Minimum%20Pages.md) |  
 
 
 
