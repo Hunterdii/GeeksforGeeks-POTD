@@ -342,12 +342,18 @@ Master the art of searching techniques with these essential problems.
 
 ## 🔖 **Bonus Problems**  
 
-***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
+| 🎁 **Bonus No.**  | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
+|------------------|---------------|--------------|-----------------|  
+| _NUM 1_    | **Implement Lower Bound**   | 🟢 Easy     | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/1.%20Implement%20Lower%20Bound.md) |  
+| _NUM 2_    | **Bitonic Point** | 🟢 Easy  | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/2.%20Bitonic%20Point.md) |  
+| _NUM 3_    | **Median of 2 Sorted Arrays of Different Sizes** | 🔴 Hard | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/3.%20Median%20of%202%20Sorted%20Arrays%20of%20Different%20Sizes.md) |  
+| _NUM 4_    | **Square Root** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/4.%20Square%20Root.md) |  
+| _NUM 5_    | **Koko Eating Bananas** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/5.%20Koko%20Eating%20Bananas.md) |  
+| _NUM 6_    | **Minimum days to make M bouquets** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁/6.%20Minimum%20days%20to%20make%20M%20bouquets.md) |  
 
-> _Not Given Yet By GFG! 😄_
 
-**Note:**  
-> **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
+<!--**Note:**  
+> **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**-->
 
 ### 📌 **Additional Challenges (From my side):**  
 
