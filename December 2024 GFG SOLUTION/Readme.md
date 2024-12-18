@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Peak Element](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/15(Dec)%20Peak%20element.md)🌄🔝⛰️
 - [Day 16: K-th Element of Two Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/16(Dec)%20K-th%20element%20of%20two%20Arrays.md)🔢🔍🎯
 - [Day 17: Aggressive Cows](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/17(Dec)%20Aggressive%20Cows.md)🐄🚜🐮
+- [Day 18: Allocate Minimum Pages](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/18(Dec)%20Allocate%20Minimum%20Pages.md)📚📖📏
 
 
 ## Introduction
@@ -62,3 +63,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 DEC) :* K-th Element of Two Arrays
 
 *Day 17(17 DEC) :* Aggressive Cows
+
+*Day 18(18 DEC) :* Allocate Minimum Pages
