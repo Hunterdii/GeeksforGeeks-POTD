@@ -365,6 +365,36 @@ Master the art of searching techniques with these essential problems.
 | **Largest Divisible Subset** <br/> **OR** <br/> **Minimum Times A Has to Be Repeated Such That B is a Substring of It** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/searching-an-element-in-a-sorted-array-ternary-search--141631/1) / [Solve Now](https://www.geeksforgeeks.org/problems/minimum-times-a-has-to-be-repeated-such-that-b-is-a-substring-of-it--170631/1) |  
 | **Median of 2 Sorted Arrays of Different Sizes** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-different-sizes/1) |  
 
+
+
+# 🧮 **Matrix Maneuvers**  
+Navigate through the realm of matrices with these essential problems.  
+✨ **Days Covered:** **36**
+
+| 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
+|------------|---------------|--------------|-----------------|  
+| Day 36     | **Spirally traversing a matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%201%20-%20Spirally%20traversing%20a%20matrix.md) |  
+
+## 🔖 **Bonus Problems**  
+
+***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
+
+> _Not Given Yet By GFG! 😄_
+
+**Note:**  
+> **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
+
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Sum of elements in a matrix** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/sum-of-elements-in-a-matrix2000/1) |  
+| **Search in a Row-Column sorted matrix** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/search-in-a-matrix17201720/1) |  
+| **Search in a sorted Matrix** <br/> **OR** <br/> **Maximum sum Rectangle** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/search-in-a-matrix-1587115621/1) / [Solve Now](https://www.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1) |  
+| **Shortest Path by Removing K walls** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-path-by-removing-k-walls/1) |  
+
+
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
