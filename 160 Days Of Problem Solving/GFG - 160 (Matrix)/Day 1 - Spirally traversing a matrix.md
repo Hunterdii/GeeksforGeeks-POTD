@@ -8,7 +8,7 @@ Tags:
 
 # 🚀 _Day 1. Spirally Traversing a Matrix_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1)
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/matrix-gfg-160/problem/spirally-traversing-a-matrix-1587115621)
 
 
 ## 💡 **Problem Description:**
@@ -21,6 +21,10 @@ You are given a rectangular matrix `mat[][]` of size `n x m`. Your task is to re
 `mat[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]`  
 **Output:**  
 `[1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10]`
+
+<img src="https://github.com/user-attachments/assets/2ed3085d-e462-4b42-aecd-109e4ed636f8" width="48%">
+
+
 
 **Input:**  
 `mat[][] = [[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]]`  
