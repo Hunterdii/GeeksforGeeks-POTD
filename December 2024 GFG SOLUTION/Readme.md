@@ -24,6 +24,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: K-th Element of Two Arrays](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/16(Dec)%20K-th%20element%20of%20two%20Arrays.md)🔢🔍🎯
 - [Day 17: Aggressive Cows](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/17(Dec)%20Aggressive%20Cows.md)🐄🚜🐮
 - [Day 18: Allocate Minimum Pages](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/18(Dec)%20Allocate%20Minimum%20Pages.md)📚📖📏
+- [Day 19: Kth Missing Positive Number in a Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/19(Dec)%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md)🔢➡️❓
+- [Day 20: Spirally traversing a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/20(Dec)%20Spirally%20traversing%20a%20matrix.md)🌀🔢🔄
 
 
 ## Introduction
@@ -65,3 +67,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 17(17 DEC) :* Aggressive Cows
 
 *Day 18(18 DEC) :* Allocate Minimum Pages
+
+*Day 19(19 DEC) :* Kth Missing Positive Number in a Sorted Array
+
+*Day 20(20 DEC) :* Spirally traversing a matrix
