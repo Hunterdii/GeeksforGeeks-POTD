@@ -1,5 +1,5 @@
 
-<h1> <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> GeeksforGeeks Problem of the Day Solutions 2024  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
+<h1>  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> GeeksforGeeks Problem of the Day Solutions 2024  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
 
 
 <div align="center">
@@ -146,7 +146,7 @@
 
 
 
-[**Explore Solutions Here!**](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)
+<!--[**Explore Solutions Here!**](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)-->
 
 </div>
 
@@ -162,6 +162,7 @@
 </a>
 
 <p align="center">
+  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD" style="text-decoration: none;">
   <img src="https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Get%20daily%20solutions%20for%20GeeksforGeeks%20Problem%20of%20the%20Day%202024%20and%20become%20a%20coding%20pro!&font=Rokkitt&owner=1&pattern=Brick%20Wall&theme=Dark" alt="GeeksforGeeks POTD Banner" width="850"/>
 </p>
 
@@ -225,8 +226,9 @@ We ❤️ contributions! Here's how you can contribute:
 
 > **Note:** Follow our coding style and include meaningful comments.
 
-
-## 🏆 **Your Star Counts!**
+<h2>
+  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD">
+  <img src="https://github.com/user-attachments/assets/5b3cb883-6652-4525-a352-b4b9a3501e07" width = 35px height = 35px></a> <b></b> Your Star Counts! </b></h2>
 
 <div align="center">
   
@@ -289,8 +291,10 @@ For any inquiries or feedback, please contact. Happy Contributing❤
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-  
-  ## 🌍 Star Geographical Distribution
+
+<h2><img src="https://github.com/user-attachments/assets/8dfb6d9b-fa76-4863-b555-e4877ee9c801" width = 32px height = 30px></a>  Star Geographical Distribution </h2>
+
+ <!-- ## 🌍 Star Geographical Distribution-->
   <p>This map shows the global distribution of stars for the repository. Click to explore more details.</p>
   <a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=769514979&activity=stars" target="_blank" style="display: block;">
     <picture>
@@ -304,8 +308,10 @@ For any inquiries or feedback, please contact. Happy Contributing❤
 </div>
 
 
+<h2>
+  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD">
+   <img src="https://github.com/user-attachments/assets/5b3cb883-6652-4525-a352-b4b9a3501e07" width = 35px height = 35px></a>  Achievements & Highlights </h2>
 
-## 🏆 **Achievements & Highlights**
 - **🌐 Global Reach**: Engaging with coders worldwide, from beginners to experts.
 - **🔥 Trending Topics**: Problems that sharpen your data structures and algorithms skills.
 
