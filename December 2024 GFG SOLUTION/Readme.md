@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Allocate Minimum Pages](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/18(Dec)%20Allocate%20Minimum%20Pages.md)📚📖📏
 - [Day 19: Kth Missing Positive Number in a Sorted Array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/19(Dec)%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md)🔢➡️❓
 - [Day 20: Spirally traversing a matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/20(Dec)%20Spirally%20traversing%20a%20matrix.md)🌀🔢🔄
+- [Day 21: Rotate by 90 degree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/21(Dec)%20Rotate%20by%2090%20degree.md)📐↩️🏛️
 
 
 ## Introduction
@@ -71,3 +72,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 DEC) :* Kth Missing Positive Number in a Sorted Array
 
 *Day 20(20 DEC) :* Spirally traversing a matrix
+
+*Day 21(21 DEC) :* Rotate by 90 degree
