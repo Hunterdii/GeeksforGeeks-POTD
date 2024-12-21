@@ -6,6 +6,9 @@
   
 ## 📅 **December 2024 Problem of the Day Solutions** 📅
 
+[![Support Rust Learning](https://img.shields.io/badge/Support%20Rust%20Learning-Contribute%20Now-7a0c2f?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Hunterdii/30-Days-Of-Rust)
+
+
 | **Date**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:---------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | 01 Dec    | Non-Repeating Character🔢📝💭                        | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md#code-c)  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/01(Dec)%20Non%20Repeating%20Character.md#code-python) |
@@ -176,6 +179,36 @@
   <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/15" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Join%20Discussion%20Hub%20-%20Vote%20%26%20Suggest-blue?style=for-the-badge&logo=github&logoColor=white" alt="Discussion Badge">
   </a>
+</div>
+
+
+
+## **🚀 Join the Rust Revolution! 🚀** 
+
+
+
+Hello, GeeksforGeeks community! 🌟
+
+
+Looking to dive into **Rust**, one of the fastest-growing languages for **systems programming**? **30 Days of Rust** is your perfect starting point! From **basics to advanced concepts**, this repository is designed to provide you with practical, hands-on learning.
+
+But here's the best part — **we need your support** to make this resource even bigger and better! 💪 Whether you are a beginner or an experienced developer, your contributions can help grow this community.
+
+🔧 **What can you do to help?**
+- ⭐ **Star the repository** to show your interest.
+- 📚 **Contribute to the learning resources** or improve existing content.
+- 🌐 **Share the project** with fellow developers to expand the learning network.
+- 🔗 **Spread the word** to get more developers involved!
+
+Together, we can empower the next generation of developers and make **Rust** a language of choice for high-performance applications. 🚀
+
+_Support Rust Learning & Contribute to the Future of Programming!_
+
+
+<div align="center">
+  
+[![Rust Learning](https://img.shields.io/badge/Rust%20Learning%20Support-Empower%20Future%20Programmers-orange?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Hunterdii/30-Days-Of-Rust)
+
 </div>
 
 ## 💡 **Why Follow This Repository?**
