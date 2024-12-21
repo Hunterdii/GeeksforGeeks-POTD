@@ -374,6 +374,7 @@ Navigate through the realm of matrices with these essential problems.
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
 | Day 36     | **Spirally traversing a matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%201%20-%20Spirally%20traversing%20a%20matrix.md) |  
+| Day 37     | **Rotate by 90 degree** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md) | 
 
 ## 🔖 **Bonus Problems**  
 
