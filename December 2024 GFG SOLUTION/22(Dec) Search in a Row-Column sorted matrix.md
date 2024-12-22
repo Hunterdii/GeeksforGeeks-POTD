@@ -1,4 +1,4 @@
-# *20. Search in a Row-Column Sorted Matrix*  
+# *22. Search in a Row-Column Sorted Matrix*  
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/search-in-a-matrix17201720/1)
 
 ## Problem Description
