@@ -369,13 +369,14 @@ Master the art of searching techniques with these essential problems.
 
 # 🧮 **Matrix Maneuvers**  
 Navigate through the realm of matrices with these essential problems.  
-✨ **Days Covered:** **36**
+✨ **Days Covered:** **36 to 39**
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
 | Day 36     | **Spirally traversing a matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%201%20-%20Spirally%20traversing%20a%20matrix.md) |  
 | Day 37     | **Rotate by 90 degree** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md) | 
 | Day 38     | **Search in a Row-Column sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md) |
+| Day 39     | **Search in a row-wise sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md) |
 
 ## 🔖 **Bonus Problems**  
 
