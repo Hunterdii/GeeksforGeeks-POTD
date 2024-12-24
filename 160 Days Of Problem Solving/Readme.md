@@ -377,6 +377,7 @@ Navigate through the realm of matrices with these essential problems.
 | Day 37     | **Rotate by 90 degree** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md) | 
 | Day 38     | **Search in a Row-Column sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md) |
 | Day 39     | **Search in a row-wise sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md) |
+| Day 40     | **Search in a sorted Matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md) |
 
 ## 🔖 **Bonus Problems**  
 
