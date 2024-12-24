@@ -27,8 +27,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 38/160 Problems 🎉  
-> **In Progress**: 122 Problems ⏳  
+> **Completed**: 40/160 Problems 🎉  
+> **In Progress**: 120 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 2**    | Rotate by 90 degree 📐↩️🏛️                           | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md#code-python) |
 | **Day 3**    | Search in a Row-Column sorted matrix 🔍🔢📉                           |  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md#code-python) |
 | **Day 4**    | Search in a row-wise sorted matrix 📋🔍✅                           |  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md#code-cpp) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md#code-python) |
+| **Day 5**    | Search in a sorted Matrix 🔍🧮📈                           |  | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-c) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-java) | [Solution](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-python) |
 
 
 
