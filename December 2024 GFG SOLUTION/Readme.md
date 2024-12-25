@@ -29,7 +29,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Rotate by 90 degree](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/21(Dec)%20Rotate%20by%2090%20degree.md)📐↩️🏛️
 - [Day 22: Search in a Row-Column sorted matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/22(Dec)%20Search%20in%20a%20Row-Column%20sorted%20matrix.md)🔍🔢📉
 - [Day 23: Search in a row-wise sorted matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/23(Dec)%20Search%20in%20a%20row-wise%20sorted%20matrix.md)📋🔍✅
-- [Day 24: Search in a sorted Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/24(Dec)%20Search%20in%20a%20sorted%20Matrix.md)🔍🧮📈                        
+- [Day 24: Search in a sorted Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/24(Dec)%20Search%20in%20a%20sorted%20Matrix.md)🔍🧮📈
+- [Day 25: Set Matrix Zeroes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/25(Dec)%20%20Set%20Matrix%20Zeroes.md)🟦⬜🔢                      
 
 
 ## Introduction
@@ -83,3 +84,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 DEC) :* Search in a row-wise sorted matrix
 
 *Day 24(24 DEC) :* Search in a sorted Matrix
+
+*Day 25(25 DEC) :* Set Matrix Zeroes
