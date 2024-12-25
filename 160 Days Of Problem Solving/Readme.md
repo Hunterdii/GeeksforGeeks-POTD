@@ -369,7 +369,7 @@ Master the art of searching techniques with these essential problems.
 
 # 🧮 **Matrix Maneuvers**  
 Navigate through the realm of matrices with these essential problems.  
-✨ **Days Covered:** **36 to 39**
+✨ **Days Covered:** **36 to 41**
 
 | 🌟 **Day** | 🧩 **Problem** | 🚀 **Level** | 🔗 **Solution** |  
 |------------|---------------|--------------|-----------------|  
@@ -378,6 +378,7 @@ Navigate through the realm of matrices with these essential problems.
 | Day 38     | **Search in a Row-Column sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%203%20-%20Search%20in%20a%20Row-Column%20sorted%20matrix.md) |
 | Day 39     | **Search in a row-wise sorted matrix** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%204%20-%20Search%20in%20a%20row-wise%20sorted%20matrix.md) |
 | Day 40     | **Search in a sorted Matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md) |
+| Day 41     | **Set Matrix Zeroes** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%206%20-%20Set%20Matrix%20Zeroes.md) |
 
 ## 🔖 **Bonus Problems**  
 
