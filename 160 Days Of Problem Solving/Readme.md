@@ -380,11 +380,13 @@ Navigate through the realm of matrices with these essential problems.
 | Day 40     | **Search in a sorted Matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md) |
 | Day 41     | **Set Matrix Zeroes** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%206%20-%20Set%20Matrix%20Zeroes.md) |
 
+<!--
 ## 🔖 **Bonus Problems**  
 
 ***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
 
 > _Not Given Yet By GFG! 😄_
+-->
 
 **Note:**  
 > **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
@@ -398,6 +400,36 @@ Navigate through the realm of matrices with these essential problems.
 | **Search in a Row-Column sorted matrix** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/search-in-a-matrix17201720/1) |  
 | **Search in a sorted Matrix** <br/> **OR** <br/> **Maximum sum Rectangle** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/search-in-a-matrix-1587115621/1) / [Solve Now](https://www.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1) |  
 | **Shortest Path by Removing K walls** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-path-by-removing-k-walls/1) |  
+
+
+# 🔗 **Hash Hustle**  
+Master the art of hashing with these pivotal problems.  
+✨ **Days Covered:** **42**
+
+| 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
+|------------|--------------------------|--------------|-----------------|  
+| Day 42     | **Two Sum - Pair with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%201%20-%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md) |  
+
+## 🔖 **Bonus Problems**  
+
+***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
+
+> _Not Given Yet By GFG! 😄_
+
+<!--
+**Note:**  
+> **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
+-->
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Largest Element in Array** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1) |  
+| **Kth from End of Linked List** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1) |  
+| **Detect Loop in linked list** <br/> **OR** <br/> **K Sized Subarray Maximum** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1) / [Solve Now](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1) |  
+| **Clone List with Next and Random** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1) |  
+
 
 
 ## 👤 Creator
