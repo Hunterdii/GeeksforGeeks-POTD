@@ -404,11 +404,12 @@ Navigate through the realm of matrices with these essential problems.
 
 # 🔗 **Hash Hustle**  
 Master the art of hashing with these pivotal problems.  
-✨ **Days Covered:** **42**
+✨ **Days Covered:** **42 to 43**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 42     | **Two Sum - Pair with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%201%20-%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md) |  
+| Day 43     | **Count Pairs with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%202%20-%20Count%20pairs%20with%20given%20sum.md) |  
 
 ## 🔖 **Bonus Problems**  
 
