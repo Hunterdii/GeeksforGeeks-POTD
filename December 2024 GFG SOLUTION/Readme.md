@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Search in a sorted Matrix](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/24(Dec)%20Search%20in%20a%20sorted%20Matrix.md)🔍🧮📈
 - [Day 25: Set Matrix Zeroes](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/25(Dec)%20%20Set%20Matrix%20Zeroes.md)🟦⬜🔢
 - [Day 26: Two Sum - Pair with Given Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/26(Dec)%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md)➕🔢🧩
+- [Day 27: Count pairs with given sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/27(Dec)%20Count%20pairs%20with%20given%20sum.md)🔢🧮🛠️ 
 
 ## Introduction
 
@@ -88,3 +89,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 25(25 DEC) :* Set Matrix Zeroes
 
 *Day 26(26 DEC) :* Two Sum - Pair with Given Sum
+
+*Day 27(27 DEC) :* Count pairs with given sum
