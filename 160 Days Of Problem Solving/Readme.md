@@ -208,6 +208,7 @@ Master the art of hashing with these pivotal problems.
 | Day 42     | **Two Sum - Pair with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%201%20-%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md) |  
 | Day 43     | **Count Pairs with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%202%20-%20Count%20pairs%20with%20given%20sum.md) |  
 | Day 44     | **Find All Triplets with Zero Sum** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%203%20-%20Find%20All%20Triplets%20with%20Zero%20Sum.md) |  
+| Day 45     | **Intersection of Two arrays with Duplicate Elements** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%204%20-%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md) |  
 
 ## 🔖 **Bonus Problems**  
 
