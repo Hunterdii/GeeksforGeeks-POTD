@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: Two Sum - Pair with Given Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/26(Dec)%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md)➕🔢🧩
 - [Day 27: Count pairs with given sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/27(Dec)%20Count%20pairs%20with%20given%20sum.md)🔢🧮🛠️
 - [Day 28: Find All Triplets with Zero Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/28(Dec)%20Find%20All%20Triplets%20with%20Zero%20Sum.md)🔢🔍🎯
+- [Day 29: Intersection of Two arrays with Duplicate Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/29(Dec)%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md)🔗🔄📤📑
 
 ## Introduction
 
@@ -94,3 +95,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 27(27 DEC) :* Count pairs with given sum
 
 *Day 28(28 DEC) :* Find All Triplets with Zero Sum
+
+*Day 29(29 DEC) :* Intersection of Two arrays with Duplicate Elements
