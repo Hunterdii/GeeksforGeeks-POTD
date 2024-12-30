@@ -201,7 +201,7 @@ Navigate through the realm of matrices with these essential problems.
 
 # 🔗 **Hash Hustle**  
 Master the art of hashing with these pivotal problems.  
-✨ **Days Covered:** **42 to 44**
+✨ **Days Covered:** **42 to 46**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -209,6 +209,7 @@ Master the art of hashing with these pivotal problems.
 | Day 43     | **Count Pairs with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%202%20-%20Count%20pairs%20with%20given%20sum.md) |  
 | Day 44     | **Find All Triplets with Zero Sum** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%203%20-%20Find%20All%20Triplets%20with%20Zero%20Sum.md) |  
 | Day 45     | **Intersection of Two arrays with Duplicate Elements** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%204%20-%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md) |  
+| Day 46     | **Union of Arrays with Duplicates** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md) |
 
 ## 🔖 **Bonus Problems**  
 
