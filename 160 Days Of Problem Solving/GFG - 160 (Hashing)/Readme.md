@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 41/160 Problems 🎉  
-> **In Progress**: 119 Problems ⏳  
+> **Completed**: 46/160 Problems 🎉  
+> **In Progress**: 114 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
