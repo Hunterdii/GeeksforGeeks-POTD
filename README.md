@@ -8,6 +8,42 @@
 
 [![Support Rust Learning](https://img.shields.io/badge/Support%20Rust%20Learning-Contribute%20Now-7a0c2f?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Hunterdii/30-Days-Of-Rust)
 
+</div>
+
+<details>
+  <summary><h2><i>🎉 A Year to Remember: March - December Journey! 🎉 <span style="font-size: 1.2em; color: #FF6347;">(Click here for a surprise! 🎁)</span></i></h2></summary>
+
+  As we near the end of this incredible year, I want to take a moment to reflect on and celebrate our journey together. From **March to December**, we've accomplished something truly amazing:
+
+  - **🔢 Total Days Covered:** **To be precise, from March 1 to December 31, we covered Total - 306 days!**
+  - **📘 Daily Problem-Solving:** Solutions uploaded for countless **GeeksforGeeks Problems of the Day**—building consistency, problem-solving skills, and a thriving repository for learners around the world.
+  - **🌟 Repository Growth:** All credit goes to **you**—the visitors, the contributors, and the coding enthusiasts. Your constant support and engagement have turned this into more than just a repository—it's a hub of knowledge and inspiration.
+
+  I owe the success of this project to **you**, the viewers, who motivate me to keep uploading solutions, sharing approaches, and building a collaborative coding community. Your support has made this small idea grow into something much bigger than I could have imagined.
+
+  
+
+  ## **A Big Thank You! 🙏**
+
+  As we look forward to a new year filled with more challenges and learning opportunities, let's keep growing together. Here's to setting new milestones, tackling even tougher problems, and making this repository even more valuable in **2024**. 
+
+  Feel free to reach out for discussions, suggestions, or just to say hi—your ideas and encouragement fuel this journey!
+
+  
+
+  ## ⭐ **Don't Forget to Star the Repository** ⭐
+
+  If this repository has been helpful to you, please give it a star ⭐ to show your support and help it reach more learners and developers out there. Together, we grow stronger. 💪
+
+  
+
+  **Happy Coding & Happy New Year! 🥳🎆**  
+  *Hunterdii (Het Patel)*
+
+</details>
+
+
+<div align="center">
 
 | **Date**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:---------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
