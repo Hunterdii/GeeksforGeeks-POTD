@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 28: Find All Triplets with Zero Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/28(Dec)%20Find%20All%20Triplets%20with%20Zero%20Sum.md)🔢🔍🎯
 - [Day 29: Intersection of Two arrays with Duplicate Elements](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/29(Dec)%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md)🔗🔄📤📑
 - [Day 30: Union of Arrays with Duplicates](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/30(Dec)%20Union%20of%20Arrays%20with%20Duplicates.md)📚📦📑
+- [Day 31: Longest Consecutive Subsequence](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/December%202024%20GFG%20SOLUTION/31(Dec)%20Longest%20Consecutive%20Subsequence.md)🏃‍♂⏳🎯
 
 ## Introduction
 
@@ -100,3 +101,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 DEC) :* Intersection of Two arrays with Duplicate Elements
 
 *Day 30(30 DEC) :* Union of Arrays with Duplicates
+
+*Day 31(31 DEC) :* Longest Consecutive Subsequence
