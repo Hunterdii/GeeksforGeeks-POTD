@@ -11,7 +11,8 @@
 </div>
 
 <details>
-  <summary><h2><i>🎉 A Year to Remember: March - December Journey! 🎉 <span style="font-size: 1.2em; color: #FF6347;">(Click here for a surprise! 🎁)</span></i></h2></summary>
+  <summary><h2><i>🎉 A Year Journey to Remember! 🎉</i><img src="https://github.com/user-attachments/assets/c7dc37c3-2ae4-472b-a80a-4803d92c5895" width="35px" height="35px" style="vertical-align: middle;" />
+</h2></summary>
 
   As we near the end of this incredible year, I want to take a moment to reflect on and celebrate our journey together. From **March to December**, we've accomplished something truly amazing:
 
