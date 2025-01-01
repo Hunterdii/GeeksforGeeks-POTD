@@ -46,6 +46,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 4**    | Intersection of Two arrays with Duplicate Elements 🔄📤📑                            |  | [Solution](./Day%204%20-%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md#code-c) | [Solution](./Day%204%20-%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md#code-java) | [Solution](./Day%204%20-%20Intersection%20of%20Two%20arrays%20with%20Duplicate%20Elements.md#code-python) |
 | **Day 5**    | Union of Arrays with Duplicates 📚📦📑                            |  | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-c) | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-java) | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-python) |
 | **Day 6**    | Longest Consecutive Subsequence 🏃‍♂⏳🎯                            |  | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-c) | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-java) | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-python) |
+| **Day 7**    | Print Anagrams Together 🔡👥🤝                            |  | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-c) | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-java) | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-python) |
 
 
 
