@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 46/160 Problems 🎉  
-> **In Progress**: 114 Problems ⏳  
+> **Completed**: 48/160 Problems 🎉  
+> **In Progress**: 112 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -47,6 +47,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 5**    | Union of Arrays with Duplicates 📚📦📑                            |  | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-c) | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-java) | [Solution](./Day%205%20-%20Union%20of%20Arrays%20with%20Duplicates.md#code-python) |
 | **Day 6**    | Longest Consecutive Subsequence 🏃‍♂⏳🎯                            |  | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-c) | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-java) | [Solution](./Day%206%20-%20Longest%20Consecutive%20Subsequence.md#code-python) |
 | **Day 7**    | Print Anagrams Together 🔡👥🤝                            |  | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-c) | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-java) | [Solution](./Day%207%20-%20Print%20Anagrams%20Together.md#code-python) |
+| **Day 8**    | Subarrays with sum K 🔢➕🎯                            |  | [Solution](./Day%208%20-%20Subarrays%20with%20sum%20K.md#code-c) | [Solution](./Day%208%20-%20Subarrays%20with%20sum%20K.md#code-java) | [Solution](./Day%208%20-%20Subarrays%20with%20sum%20K.md#code-python) |
 
 
 
