@@ -201,7 +201,7 @@ Navigate through the realm of matrices with these essential problems.
 
 # 🔗 **Hash Hustle**  
 Master the art of hashing with these pivotal problems.  
-✨ **Days Covered:** **42 to 49**
+✨ **Days Covered:** **42 to 50**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -213,6 +213,7 @@ Master the art of hashing with these pivotal problems.
 | Day 47     | **Longest Consecutive Subsequence** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%206%20-%20Longest%20Consecutive%20Subsequence.md) |
 | Day 48     | **Print Anagrams Together** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%207%20-%20Print%20Anagrams%20Together.md) |
 | Day 49     | **Subarrays with sum K** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%208%20-%20Subarrays%20with%20sum%20K.md) |
+| Day 50     | **Count Subarrays with given XOR** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%209%20-%20Count%20Subarrays%20with%20given%20XOR.md) |
 
 ## 🔖 **Bonus Problems**  
 
