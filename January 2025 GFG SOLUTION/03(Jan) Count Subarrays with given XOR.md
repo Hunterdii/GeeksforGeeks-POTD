@@ -1,0 +1,156 @@
+# *03. Count Subarrays with Given XOR*
+
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1)
+
+
+
+## **Problem Description**
+
+Given an array of integers `arr[]` and an integer `k`, count the number of subarrays whose XOR is equal to `k`.
+
+
+
+## **Examples**
+
+### **Example 1**
+
+**Input:**  
+`arr = [4, 2, 2, 6, 4], k = 6`  
+**Output:**  
+`4`  
+
+**Explanation:**  
+The subarrays having XOR of their elements as `6` are:  
+1. `[4, 2]`  
+2. `[4, 2, 2, 6, 4]`  
+3. `[2, 2, 6]`  
+4. `[6]`
+
+Hence, the output is `4`.
+
+
+
+### **Example 2**
+
+**Input:**  
+`arr = [5, 6, 7, 8, 9], k = 5`  
+**Output:**  
+`2`  
+
+**Explanation:**  
+The subarrays having XOR of their elements as `5` are:  
+1. `[5]`  
+2. `[5, 6, 7, 8, 9]`
+
+Hence, the output is `2`.
+
+
+
+## **Constraints**
+
+- $`1 ≤ arr.size() ≤ 10^5`$
+- $`0 ≤ arr[i] ≤ 10^5`$
+- $`0 ≤ k ≤ 10^5`$
+
+
+
+## **My Approach**
+
+The problem is solved using the **Prefix XOR** technique combined with a **Hash Map** for efficient subarray counting.  
+
+1. **Key Observations**:  
+   - Let `XOR(A, B)` represent the XOR of elements in subarray `[A...B]`.  
+   - If the XOR of a subarray `[i...j]` equals `k`, then:  
+     $\( \text{XOR(0, i-1)} \oplus \text{XOR(0, j)} = k \)$.  
+     Rearranging gives:  
+     $\( \text{XOR(0, i-1)} = \text{XOR(0, j)} \oplus k \)$.  
+
+2. **Algorithm Steps**:  
+   - Traverse the array while maintaining a **Prefix XOR** (`prefXOR`) of all elements encountered so far.
+   - Use a hash map to store the frequency of each `prefXOR` value encountered.
+   - For each element, calculate:  
+     $\( \text{TargetXOR} = \text{prefXOR} \oplus k \)$.  
+     If `TargetXOR` exists in the hash map, it means there are subarrays ending at the current index whose XOR equals `k`.
+   - Add these counts to the result.
+   - Finally, update the hash map with the current `prefXOR`.
+
+
+
+## **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:**  
+  $\( O(n) \)$, where `n` is the size of the array. We traverse the array once, and each hash map operation (insertion or lookup) takes $\( O(1) \)$ on average.
+
+- **Expected Auxiliary Space Complexity:**  
+  $\( O(n) \)$, as we store up to `n` unique `prefXOR` values in the hash map.
+
+
+
+
+## Code (C++)
+
+```cpp
+class Solution {
+public:
+    long subarrayXor(vector<int> &arr, int k) {
+        long res = 0, prefXOR = 0;
+        unordered_map<int, int> mp;
+        for (int val : arr) {
+            prefXOR ^= val;
+            res += mp[prefXOR ^ k] + (prefXOR == k);
+            mp[prefXOR]++;
+        }
+        return res;
+    }
+};
+
+```
+
+## Code (Java)
+
+```java
+class Solution {
+    public long subarrayXor(int[] arr, int k) {
+        long res = 0, prefXOR = 0;
+        Map<Long, Integer> mp = new HashMap<>();
+        mp.put(0L, 1);  
+        for (int val : arr) {
+            prefXOR ^= val; 
+            res += mp.getOrDefault(prefXOR ^ k, 0); 
+            mp.put(prefXOR, mp.getOrDefault(prefXOR, 0) + 1); 
+        }
+        
+        return res;
+    }
+}
+```
+
+## Code (Python)
+
+```python
+class Solution:
+    def subarrayXor(self, arr, k):
+        res, prefXOR = 0, 0
+        count = {0: 1}
+        for val in arr:
+            prefXOR ^= val
+            res += count.get(prefXOR ^ k, 0)
+            count[prefXOR] = count.get(prefXOR, 0) + 1
+        return res
+```
+
+## **Contribution and Support**
+
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+
+⭐ If you find this helpful, please give this repository a star! ⭐
+
+---
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p> 
