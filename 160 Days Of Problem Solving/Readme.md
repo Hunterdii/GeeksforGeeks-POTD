@@ -215,12 +215,12 @@ Master the art of hashing with these pivotal problems.
 | Day 49     | **Subarrays with sum K** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%208%20-%20Subarrays%20with%20sum%20K.md) |
 | Day 50     | **Count Subarrays with given XOR** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%209%20-%20Count%20Subarrays%20with%20given%20XOR.md) |
 
-## 🔖 **Bonus Problems**  
+<!--## 🔖 **Bonus Problems**  
 
 ***Get ready for thrilling challenges that will take your problem-solving abilities to new heights! 🚀😎***
 
 > _Not Given Yet By GFG! 😄_
-
+-->
 <!--
 **Note:**  
 > **I'm currently interning full-time, so I can only tackle bonus problems on the weekends. I apologize for the delayed uploads and sincerely appreciate your patience! I’ll continue to share daily problems in the limited time I have, and I’m committed to bringing you more exciting challenges soon! 🙏**
@@ -234,6 +234,25 @@ Master the art of hashing with these pivotal problems.
 | **Kth from End of Linked List** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1) |  
 | **Detect Loop in linked list** <br/> **OR** <br/> **K Sized Subarray Maximum** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1) / [Solve Now](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1) |  
 | **Clone List with Next and Random** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1) |  
+
+
+# 🔄 **Pointer Pursuit**  
+Optimize your journey with the elegance of two-pointer techniques.  
+✨ **Days Covered:** **51**
+
+| 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
+|------------|--------------------------|--------------|-----------------|  
+| Day 51     | **Count Subarrays with given XOR** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md) |
+
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Reverse a string with spaces intact** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/reverse-a-string-with-spaces-intact5213/1) |  
+| **Two sum -Pairs with 0 Sum** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1) |  
+| **Remove loop in Linked List** <br/> **OR** <br/> **3 Sum Closest** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1) / [Solve Now](https://www.geeksforgeeks.org/problems/3-sum-closest/1) |  
+| **Shortest Range In BST** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-range-in-bst--141631/1) |  
 
 
 
