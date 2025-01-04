@@ -8,7 +8,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/January%202026%20GFG%20SOLUTION)💡
 - [Day 1: Print Anagrams Together](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/01(Jan)%20Print%20Anagrams%20Together.md)🔡👥🤝
 - [Day 2: Subarrays with sum K](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/02(Jan)%20Subarrays%20with%20sum%20K.md)🔢➕🎯
-- [Day 3: Count Subarrays with given XOR](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/03(Jan)%20Count%20Subarrays%20with%20given%20XOR.md)💻🔢🧮 
+- [Day 3: Count Subarrays with given XOR](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/03(Jan)%20Count%20Subarrays%20with%20given%20XOR.md)💻🔢🧮
+- [Day 4: Count all triplets with given sum in sorted array ](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/04(Jan)%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md)🔢🔽🔍	
 
   
 ## Introduction
@@ -20,3 +21,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 2(02 JAN) :* Subarrays with sum K 
 
 *Day 3(03 JAN) :* Count Subarrays with given XOR 
+
+*Day 4(04 JAN) :* Count all triplets with given sum in sorted array 
