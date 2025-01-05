@@ -238,11 +238,12 @@ Master the art of hashing with these pivotal problems.
 
 # 🔄 **Pointer Pursuit**  
 Optimize your journey with the elegance of two-pointer techniques.  
-✨ **Days Covered:** **51**
+✨ **Days Covered:** **51 to 52**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 51     | **Count Subarrays with given XOR** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md) |
+| Day 52     | **Count Pairs whose sum is less than target** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
