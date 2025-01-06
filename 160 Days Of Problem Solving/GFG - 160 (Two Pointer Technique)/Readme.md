@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 52/160 Problems 🎉  
-> **In Progress**: 108 Problems ⏳  
+> **Completed**: 53/160 Problems 🎉  
+> **In Progress**: 107 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Count all triplets with given sum in sorted array 🔢🔽🔍                         |                    | [Solution](./Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md#code-c) | [Solution](./Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md#code-java) | [Solution](./Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md#code-python) |
 | **Day 2**    | Count Pairs whose sum is less than target 👫🔢👨‍💻	                         |                    | [Solution](./Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md#code-c) | [Solution](./Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md#code-java) | [Solution](./Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md#code-python) |
+| **Day 3**    | Sum Pair closest to target 🎯💡🔢	                         |                    | [Solution](./Day%203%20-%20Sum%20Pair%20closest%20to%20target.md#code-c) | [Solution](./Day%203%20-%20Sum%20Pair%20closest%20to%20target.md#code-java) | [Solution](./Day%203%20-%20Sum%20Pair%20closest%20to%20target.md#code-python) |
 
 
 
