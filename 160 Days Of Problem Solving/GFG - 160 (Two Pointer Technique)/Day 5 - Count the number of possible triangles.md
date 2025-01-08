@@ -9,7 +9,13 @@ Tags:
 
 # 🚀 _Day 5. Count the number of possible triangles_ 🧠
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1)
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/two-pointer-technique-gfg-160/problem/count-possible-triangles-1587115620)
+
+
+
+Please don't block our ads :( － Ad sponsors allow us to make Codeshare free.
+Hide Ads
+)
 
 ## 💡 **Problem Description:**
 
