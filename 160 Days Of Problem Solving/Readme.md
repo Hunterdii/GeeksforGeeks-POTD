@@ -238,7 +238,7 @@ Master the art of hashing with these pivotal problems.
 
 # 🔄 **Pointer Pursuit**  
 Optimize your journey with the elegance of two-pointer techniques.  
-✨ **Days Covered:** **51 to 54**
+✨ **Days Covered:** **51 to 55**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -246,6 +246,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 | Day 52     | **Count Pairs whose sum is less than target** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md) |
 | Day 53     | **Sum Pair closest to target** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%203%20-%20Sum%20Pair%20closest%20to%20target.md) |
 | Day 54     | **Pair with given sum in a sorted array** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md) |
+| Day 55     | **Count the number of possible triangles** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
