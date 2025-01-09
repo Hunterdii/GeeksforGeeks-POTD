@@ -1,4 +1,4 @@
-# *9. Subarray with Given Sum*
+# *9. Indexes of Subarray Sum*
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1)
 
