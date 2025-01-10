@@ -238,7 +238,7 @@ Master the art of hashing with these pivotal problems.
 
 # 🔄 **Pointer Pursuit**  
 Optimize your journey with the elegance of two-pointer techniques.  
-✨ **Days Covered:** **51 to 56**
+✨ **Days Covered:** **51 to 57**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -248,6 +248,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 | Day 54     | **Pair with given sum in a sorted array** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md) |
 | Day 55     | **Count the number of possible triangles** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md) |
 | Day 56     | **Indexes of Subarray Sum** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%206%20-%20Indexes%20of%20Subarray%20Sum.md) |
+| Day 57     | **Count distinct elements in every window** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
