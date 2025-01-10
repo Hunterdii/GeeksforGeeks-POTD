@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 56/160 Problems 🎉  
-> **In Progress**: 104 Problems ⏳  
+> **Completed**: 57/160 Problems 🎉  
+> **In Progress**: 103 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -46,6 +46,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 4**    | Pair with given sum in a sorted array 🔢🧮✅	                         |                    | [Solution](./Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md#code-c) | [Solution](./Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md#code-java) | [Solution](./Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md#code-python) |
 | **Day 5**    | Count the number of possible triangles 📐📏🧮	                         |         [Solution](./Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md#code-c)           | [Solution](./Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md#code-c-1) | [Solution](./Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md#code-java) | [Solution](./Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md#code-python) |
 | **Day 6**    | Indexes of Subarray Sum 📊📐🔍                           |     |    [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-c)     | [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-java) | [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-python) |
+| **Day 7**    | Count distinct elements in every window 🔢🎯📈                           |     |    [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-c)     | [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-java) | [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-python) |
 
 
 
