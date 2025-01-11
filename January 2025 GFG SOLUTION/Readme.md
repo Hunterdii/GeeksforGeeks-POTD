@@ -16,7 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Count the number of possible triangles](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/08(Jan)%20Count%20the%20number%20of%20possible%20triangles.md)📐📏🧮
 - [Day 9: Indexes of Subarray Sum](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/09(Jan)%20Indexes%20of%20Subarray%20Sum.md)📊📐🔍
 - [Day 10: Count all triplets with given sum in sorted array](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/10(Jan)%20Count%20distinct%20elements%20in%20every%20window.md)🔢🎯📈
-
+- [Day 11: Longest substring with distinct characters](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/January%202025%20GFG%20SOLUTION/11(Jan)%20Longest%20substring%20with%20distinct%20characters.md)🧵🔤🧠 
   
 ## Introduction
 
@@ -41,3 +41,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 9(09 JAN) :* Indexes of Subarray Sum
 
 *Day 10(10 JAN) :* Count all triplets with given sum in sorted array
+
+*Day 11(11 JAN) :* Longest substring with distinct characters 
