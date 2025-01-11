@@ -238,7 +238,7 @@ Master the art of hashing with these pivotal problems.
 
 # 🔄 **Pointer Pursuit**  
 Optimize your journey with the elegance of two-pointer techniques.  
-✨ **Days Covered:** **51 to 57**
+✨ **Days Covered:** **51 to 58**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -249,6 +249,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 | Day 55     | **Count the number of possible triangles** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%205%20-%20Count%20the%20number%20of%20possible%20triangles.md) |
 | Day 56     | **Indexes of Subarray Sum** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%206%20-%20Indexes%20of%20Subarray%20Sum.md) |
 | Day 57     | **Count distinct elements in every window** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md) |
+| Day 58     | **Longest substring with distinct characters** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%208%20-%20Longest%20substring%20with%20distinct%20characters.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
