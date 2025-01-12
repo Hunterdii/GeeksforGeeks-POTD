@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 58/160 Problems 🎉  
-> **In Progress**: 102 Problems ⏳  
+> **Completed**: 59/160 Problems 🎉  
+> **In Progress**: 101 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -48,6 +48,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 6**    | Indexes of Subarray Sum 📊📐🔍                           |     |    [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-c)     | [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-java) | [Solution](./Day%206%20-%20Indexes%20of%20Subarray%20Sum.md#code-python) |
 | **Day 7**    | Count distinct elements in every window 🔢🎯📈                           |     |    [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-c)     | [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-java) | [Solution](./Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md#code-python) |
 | **Day 8**    | Longest substring with distinct characters 🧵🔤🧠                           |     |    [Solution](./Day%208%20-%20Longest%20substring%20with%20distinct%20characters.md#code-c)     | [Solution](./Day%208%20-%20Longest%20substring%20with%20distinct%20characters.md#code-java) | [Solution](./Day%208%20-%20Longest%20substring%20with%20distinct%20characters.md#code-python) |
+| **Day 9**    | Trapping Rain Water 🌧️💧🏞️                           |     |    [Solution](./Day%209%20-%20Trapping%20Rain%20Water.md#code-c)     | [Solution](./Day%209%20-%20Trapping%20Rain%20Water.md#code-java) | [Solution](./Day%209%20-%20Trapping%20Rain%20Water.md#code-python) |
 
 
 
