@@ -238,7 +238,7 @@ Master the art of hashing with these pivotal problems.
 
 # 🔄 **Pointer Pursuit**  
 Optimize your journey with the elegance of two-pointer techniques.  
-✨ **Days Covered:** **51 to 59**
+✨ **Days Covered:** **51 to 60**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -251,6 +251,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 | Day 57     | **Count distinct elements in every window** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%207%20-%20Count%20distinct%20elements%20in%20every%20window.md) |
 | Day 58     | **Longest substring with distinct characters** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%208%20-%20Longest%20substring%20with%20distinct%20characters.md) |
 | Day 59     | **Trapping Rain Water** | 🔴 Hard | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%209%20-%20Trapping%20Rain%20Water.md) |
+| Day 60     | **Container With Most Water** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%2010%20-%20Container%20With%20Most%20Water.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
