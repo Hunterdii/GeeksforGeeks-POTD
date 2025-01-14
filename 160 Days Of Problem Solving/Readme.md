@@ -270,7 +270,7 @@ Master the art of prefix sum with these essential problems.
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
-| Day 51     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
+| Day 61     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
 
 
 ## 👤 Creator
