@@ -264,6 +264,14 @@ Optimize your journey with the elegance of two-pointer techniques.
 | **Shortest Range In BST** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-range-in-bst--141631/1) |  
 
 
+# 🔗 **Prefix Precision**  
+Master the art of prefix sum with these essential problems.  
+✨ **Days Covered:** **61**
+
+| 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
+|------------|--------------------------|--------------|-----------------|  
+| Day 51     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
+
 
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
