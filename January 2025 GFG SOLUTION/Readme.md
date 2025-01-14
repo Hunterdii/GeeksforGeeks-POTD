@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 11: Longest substring with distinct characters](11(Jan)%20Longest%20substring%20with%20distinct%20characters.md)🧵🔤🧠
 - [Day 12: Trapping Rain Water](12(Jan)%20Trapping%20Rain%20Water.md)🌧️💧🏞️
 - [Day 13: Container With Most Water](13(Jan)%20Container%20With%20Most%20Water.md)📦🌊📐
+- [Day 14: Equilibrium Point](14(Jan)%20Equilibrium%20Point.md)⚖️🔍🧮
   
 ## Introduction
 
@@ -50,4 +51,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 13(13 JAN) :* Container With Most Water
 
+*Day 14(14 JAN) :* Equilibrium Point 
 
