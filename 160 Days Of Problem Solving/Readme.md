@@ -266,11 +266,12 @@ Optimize your journey with the elegance of two-pointer techniques.
 
 # 🔗 **Prefix Precision**  
 Master the art of prefix sum with these essential problems.  
-✨ **Days Covered:** **61**
+✨ **Days Covered:** **61 to 62**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 61     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
+| Day 62     | **Longest Subarray with Sum K** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md) |
 
 
 ## 👤 Creator
