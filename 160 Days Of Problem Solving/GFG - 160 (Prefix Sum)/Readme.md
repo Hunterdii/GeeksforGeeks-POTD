@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 61/160 Problems 🎉  
-> **In Progress**: 99 Problems ⏳  
+> **Completed**: 62/160 Problems 🎉  
+> **In Progress**: 98 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -41,6 +41,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Equilibrium Point ⚖️🔍🧮                         |                    | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-c) | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-java) | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-python) |
+| **Day 2**    | Longest Subarray with Sum K 🌟🔍🛠️                         |                    | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-c) | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-java) | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-python) |
 
 
 
