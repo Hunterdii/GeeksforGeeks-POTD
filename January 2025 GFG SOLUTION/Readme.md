@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Trapping Rain Water](12(Jan)%20Trapping%20Rain%20Water.md)🌧️💧🏞️
 - [Day 13: Container With Most Water](13(Jan)%20Container%20With%20Most%20Water.md)📦🌊📐
 - [Day 14: Equilibrium Point](14(Jan)%20Equilibrium%20Point.md)⚖️🔍🧮
+- [Day 15: Longest Subarray with Sum K](15(Jan)%20Longest%20Subarray%20with%20Sum%20K.md)🌟🔍🛠️
   
 ## Introduction
 
@@ -53,3 +54,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 14(14 JAN) :* Equilibrium Point 
 
+*Day 15(15 JAN) :* Longest Subarray with Sum K
