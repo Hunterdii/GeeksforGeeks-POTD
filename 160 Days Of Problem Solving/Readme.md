@@ -266,12 +266,22 @@ Optimize your journey with the elegance of two-pointer techniques.
 
 # 🔗 **Prefix Precision**  
 Master the art of prefix sum with these essential problems.  
-✨ **Days Covered:** **61 to 62**
+✨ **Days Covered:** **61 to 63**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 61     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
 | Day 62     | **Longest Subarray with Sum K** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md) |
+| Day 63     | **Largest subarray of 0's and 1's** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md) |
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Farthest Index** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/longest-equal-prefix3139/1) |  
+| **Max Sum Subarray of size K** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1) |  
+| **Longest subarray with sum divisible by K** <br/> **OR** <br/> **Subarray Sum Divisible By K** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1) / [Solve Now](https://www.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k2617/1) |  
+| **Largest rectangular sub-matrix whose sum is 0** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/largest-rectangular-sub-matrix-whose-sum-is-0/1) |  
 
 
 ## 👤 Creator
