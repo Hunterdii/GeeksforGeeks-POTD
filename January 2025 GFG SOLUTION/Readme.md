@@ -21,6 +21,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Container With Most Water](13(Jan)%20Container%20With%20Most%20Water.md)📦🌊📐
 - [Day 14: Equilibrium Point](14(Jan)%20Equilibrium%20Point.md)⚖️🔍🧮
 - [Day 15: Longest Subarray with Sum K](15(Jan)%20Longest%20Subarray%20with%20Sum%20K.md)🌟🔍🛠️
+- [Day 16: Largest subarray of 0's and 1's](16(Jan)%20Largest%20subarray%20of%200's%20and%201's.md)🔢🟢🔴
+
   
 ## Introduction
 
@@ -55,3 +57,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 JAN) :* Equilibrium Point 
 
 *Day 15(15 JAN) :* Longest Subarray with Sum K
+
+*Day 16(16 JAN) :* Largest subarray of 0's and 1's
