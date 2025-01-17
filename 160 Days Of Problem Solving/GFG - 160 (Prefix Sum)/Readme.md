@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 63/160 Problems 🎉  
-> **In Progress**: 97 Problems ⏳  
+> **Completed**: 64/160 Problems 🎉  
+> **In Progress**: 96 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 1**    | Equilibrium Point ⚖️🔍🧮                         |                    | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-c) | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-java) | [Solution](Day%201%20-%20Equilibrium%20Point.md#code-python) |
 | **Day 2**    | Longest Subarray with Sum K 🌟🔍🛠️                         |                    | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-c) | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-java) | [Solution](Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md#code-python) |
 | **Day 3**    | Largest subarray of 0's and 1's 🔢➕🔴                         |                    | [Solution](Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-c) | [Solution](Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-java) | [Solution](Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-python) |
+| **Day 4**    | Product array puzzle🧩📦✖                         |                    | [Solution](Day%204%20-%20Product%20array%20puzzle.md#code-c) | [Solution](Day%204%20-%20Product%20array%20puzzle.md#code-java) | [Solution](Day%204%20-%20Product%20array%20puzzle.md#code-python) |
 
 
 
