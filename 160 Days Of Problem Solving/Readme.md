@@ -242,7 +242,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
-| Day 51     | **Count Subarrays with given XOR** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md) |
+| Day 51     | **Count all triplets with given sum in sorted array** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md) |
 | Day 52     | **Count Pairs whose sum is less than target** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md) |
 | Day 53     | **Sum Pair closest to target** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%203%20-%20Sum%20Pair%20closest%20to%20target.md) |
 | Day 54     | **Pair with given sum in a sorted array** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%204%20-%20Pair%20with%20given%20sum%20in%20a%20sorted%20array.md) |
@@ -264,7 +264,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 | **Shortest Range In BST** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-range-in-bst--141631/1) |  
 
 
-# 🔗 **Prefix Precision**  
+# 🗺️ **Prefix Precision**  
 Master the art of prefix sum with these essential problems.  
 ✨ **Days Covered:** **61 to 64**
 
@@ -285,6 +285,24 @@ Master the art of prefix sum with these essential problems.
 | **Max Sum Subarray of size K** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1) |  
 | **Longest subarray with sum divisible by K** <br/> **OR** <br/> **Subarray Sum Divisible By K** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1) / [Solve Now](https://www.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k2617/1) |  
 | **Largest rectangular sub-matrix whose sum is 0** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/largest-rectangular-sub-matrix-whose-sum-is-0/1) |  
+
+
+# 🔗 **Linked List Chronicles**  
+Master the art of linked lists with smart manipulation and efficient designs.  
+✨ **Days Covered:** **65**
+
+| 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
+|------------|--------------------------|--------------|-----------------|  
+| Day 1      | Reverse a Linked List           | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%201%20-%20Reverse%20a%20linked%20list.md)   |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Linked List Insertion At End** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1) |  
+| **Kth from End of Linked List** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1) |  
+| **Intersection Point in Y Shaped Linked Lists** <br/> **OR** <br/> **Flattening a Linked List** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/intersection-point-in-y-shaped-linked-lists--170645/1) / [Solve Now](https://www.geeksforgeeks.org/problems/flattening-a-linked-list--170645/1) |  
+| **Reverse a sublist of a linked list** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/reverse-a-sublist-of-a-linked-list/1) |  
 
 
 ## 👤 Creator
