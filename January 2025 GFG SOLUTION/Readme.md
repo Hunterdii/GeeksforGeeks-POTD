@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Longest Subarray with Sum K](15(Jan)%20Longest%20Subarray%20with%20Sum%20K.md)🌟🔍🛠️
 - [Day 16: Largest subarray of 0's and 1's](16(Jan)%20Largest%20subarray%20of%200's%20and%201's.md)🔢🟢🔴
 - [Day 17: Product array puzzle](17(Jan)%20Product%20array%20puzzle.md)🧩📦✖
+- [Day 18: Reverse a linked list](18(Jan)%20Reverse%20a%20linked%20list.md)🔄🔗↔️
 
   
 ## Introduction
@@ -62,3 +63,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 JAN) :* Largest subarray of 0's and 1's
 
 *Day 17(17 JAN) :* Product array puzzle
+
+*Day 18(18 JAN) :* Reverse a linked list
