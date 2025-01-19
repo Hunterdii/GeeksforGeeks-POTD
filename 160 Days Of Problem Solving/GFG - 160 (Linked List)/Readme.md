@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 65/160 Problems 🎉  
-> **In Progress**: 95 Problems ⏳  
+> **Completed**: 64/160 Problems 🎉  
+> **In Progress**: 94 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -41,6 +41,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Reverse a linked list 🔄🔗↔️                         |                    | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-c) | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-java) | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-python) |
+| **Day 2**    | Rotate a Linked List🚀🔄💫                         |                    | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-c) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-java) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-python) |
 
 
 
