@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Largest subarray of 0's and 1's](16(Jan)%20Largest%20subarray%20of%200's%20and%201's.md)🔢🟢🔴
 - [Day 17: Product array puzzle](17(Jan)%20Product%20array%20puzzle.md)🧩📦✖
 - [Day 18: Reverse a linked list](18(Jan)%20Reverse%20a%20linked%20list.md)🔄🔗↔️
+- [Day 19: Rotate a Linked List](19(Jan)%20Rotate%20a%20Linked%20List.md)🚀🔄💫
 
   
 ## Introduction
@@ -65,3 +66,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 17(17 JAN) :* Product array puzzle
 
 *Day 18(18 JAN) :* Reverse a linked list
+
+*Day 19(19 JAN) :* Rotate a Linked List
