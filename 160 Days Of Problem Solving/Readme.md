@@ -289,12 +289,13 @@ Master the art of prefix sum with these essential problems.
 
 # 🔗 **Linked List Chronicles**  
 Master the art of linked lists with smart manipulation and efficient designs.  
-✨ **Days Covered:** **65 to 66**
+✨ **Days Covered:** **65 to 67**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 65      | Reverse a Linked List           | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%201%20-%20Reverse%20a%20linked%20list.md)   |  
 | Day 66      | Rotate a Linked List           | 🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%202%20-%20Rotate%20a%20Linked%20List.md)   |  
+| Day 67      | Merge two sorted linked lists           | 🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md)   |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
