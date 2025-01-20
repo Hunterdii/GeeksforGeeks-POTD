@@ -25,6 +25,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: Product array puzzle](17(Jan)%20Product%20array%20puzzle.md)🧩📦✖
 - [Day 18: Reverse a linked list](18(Jan)%20Reverse%20a%20linked%20list.md)🔄🔗↔️
 - [Day 19: Rotate a Linked List](19(Jan)%20Rotate%20a%20Linked%20List.md)🚀🔄💫
+- [Day 20: Merge two sorted linked lists](20(Jan)%20Merge%20two%20sorted%20linked%20lists.md)🔗➕📚
+
 
   
 ## Introduction
@@ -68,3 +70,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 18(18 JAN) :* Reverse a linked list
 
 *Day 19(19 JAN) :* Rotate a Linked List
+
+*Day 20(20 JAN) :* Merge two sorted linked lists
