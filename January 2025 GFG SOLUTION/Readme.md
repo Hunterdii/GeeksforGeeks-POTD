@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Reverse a linked list](18(Jan)%20Reverse%20a%20linked%20list.md)🔄🔗↔️
 - [Day 19: Rotate a Linked List](19(Jan)%20Rotate%20a%20Linked%20List.md)🚀🔄💫
 - [Day 20: Merge two sorted linked lists](20(Jan)%20Merge%20two%20sorted%20linked%20lists.md)🔗➕📚
+- [Day 21: Linked List Group Reverse](21(Jan)%20Linked%20List%20Group%20Reverse.md)🔗🔄🌀
 
 
   
@@ -72,3 +73,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 JAN) :* Rotate a Linked List
 
 *Day 20(20 JAN) :* Merge two sorted linked lists
+
+*Day 21(21 JAN) :* Linked List Group Reverse
