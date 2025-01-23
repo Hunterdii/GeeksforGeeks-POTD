@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 69/160 Problems 🎉  
-> **In Progress**: 91 Problems ⏳  
+> **Completed**: 70/160 Problems 🎉  
+> **In Progress**: 90 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -41,10 +41,11 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Reverse a linked list 🔄🔗↔️                         |                    | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-c) | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-java) | [Solution](Day%201%20-%20Reverse%20a%20linked%20list.md#code-python) |
-| **Day 2**    | Rotate a Linked List🚀🔄💫                         |                    | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-c) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-java) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-python) |
-| **Day 3**    | Merge two sorted linked lists🔗➕📚                         |           [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-c)         | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-c-1) | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-java) | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-python) |
-| **Day 4**    | Linked List Group Reverse🔗🔄🌀                         |                  | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-c) | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-java) | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-python) |
-| **Day 5**    | Add Number Linked Lists➕🔗🔢🚀                         |                  | [Solution](Day%205%20-%20Add%20Number%20Linked%20Lists.md#code-c) | [Solution](Day%205%20-%20Add%20Number%20Linked%20Lists.md#code-java) | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-python) |
+| **Day 2**    | Rotate a Linked List 🚀🔄💫                         |                    | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-c) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-java) | [Solution](Day%202%20-%20Rotate%20a%20Linked%20List.md#code-python) |
+| **Day 3**    | Merge two sorted linked lists 🔗➕📚                         |           [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-c)         | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-c-1) | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-java) | [Solution](Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md#code-python) |
+| **Day 4**    | Linked List Group Reverse 🔗🔄🌀                         |                  | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-c) | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-java) | [Solution](Day%204%20-%20Linked%20List%20Group%20Reverse.md#code-python) |
+| **Day 5**    | Add Number Linked Lists ➕🔗🚀                         |                  | [Solution](Day%205%20-%20Add%20Number%20Linked%20Lists.md#code-c) | [Solution](Day%205%20-%20Add%20Number%20Linked%20Lists.md#code-java) | [Solution](Day%205%20-%20Add%20Number%20Linked%20Lists.md#code-python) |
+| **Day 6**    | Clone List with Next and Random 🔗📋🤔                         |                  | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-c) | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-java) | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-python) |
 
 
 
