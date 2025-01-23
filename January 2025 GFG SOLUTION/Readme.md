@@ -27,7 +27,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Rotate a Linked List](19(Jan)%20Rotate%20a%20Linked%20List.md)🚀🔄💫
 - [Day 20: Merge two sorted linked lists](20(Jan)%20Merge%20two%20sorted%20linked%20lists.md)🔗➕📚
 - [Day 21: Linked List Group Reverse](21(Jan)%20Linked%20List%20Group%20Reverse.md)🔗🔄🌀
-- [Day 22: Add Number Linked Lists](22(Jan)%20Add%20Number%20Linked%20Lists.md)➕🔗🔢🚀
+- [Day 22: Add Number Linked Lists](22(Jan)%20Add%20Number%20Linked%20Lists.md)➕🔗🚀
+- [Day 23: Clone List with Next and Random](23(Jan)%20Clone%20List%20with%20Next%20and%20Random.md)🔗📋🤔
 
 
   
@@ -78,3 +79,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 JAN) :* Linked List Group Reverse
 
 *Day 22(22 JAN) :* Add Number Linked Lists
+
+*Day 23(23 JAN) :* Clone List with Next and Random
