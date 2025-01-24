@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Linked List Group Reverse](21(Jan)%20Linked%20List%20Group%20Reverse.md)🔗🔄🌀
 - [Day 22: Add Number Linked Lists](22(Jan)%20Add%20Number%20Linked%20Lists.md)➕🔗🚀
 - [Day 23: Clone List with Next and Random](23(Jan)%20Clone%20List%20with%20Next%20and%20Random.md)🔗📋🤔
+- [Day 24: Detect Loop in linked list](23(Jan)%20Detect%20Loop%20in%20linked%20list.md)🔗🐍🚦
 
 
   
@@ -81,3 +82,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 22(22 JAN) :* Add Number Linked Lists
 
 *Day 23(23 JAN) :* Clone List with Next and Random
+
+*Day 24(24 JAN) :* Detect Loop in linked list
