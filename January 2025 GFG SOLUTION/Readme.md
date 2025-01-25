@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Add Number Linked Lists](22(Jan)%20Add%20Number%20Linked%20Lists.md)➕🔗🚀
 - [Day 23: Clone List with Next and Random](23(Jan)%20Clone%20List%20with%20Next%20and%20Random.md)🔗📋🤔
 - [Day 24: Detect Loop in linked list](24(Jan)%20Detect%20Loop%20in%20linked%20list.md)🔗🐍🚦
+- [Day 25: Find the first node of loop in linked list](25(Jan)%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md)🔗🔁🛑
 
 
   
@@ -84,3 +85,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 JAN) :* Clone List with Next and Random
 
 *Day 24(24 JAN) :* Detect Loop in linked list
+
+*Day 25(25 JAN) :* Find the first node of loop in linked list
