@@ -289,7 +289,7 @@ Master the art of prefix sum with these essential problems.
 
 # 🔗 **Linked List Chronicles**  
 Master the art of linked lists with smart manipulation and efficient designs.  
-✨ **Days Covered:** **65 to 72**
+✨ **Days Covered:** **65 to 73**
 
 | 🌟 **Day** | 🧩 **Problem**           | 🚀 **Level** | 🔗 **Solution** |  
 |------------|--------------------------|--------------|-----------------|  
@@ -301,6 +301,7 @@ Master the art of linked lists with smart manipulation and efficient designs.
 | Day 70      | Clone List with Next and Random           |     🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md)   |  
 | Day 71      | Detect Loop in linked list           |     🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%207%20-%20Detect%20Loop%20in%20linked%20list.md)   |  
 | Day 72      | Find the first node of loop in linked list           |     🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md)   |  
+| Day 73      | Remove loop in Linked List            |     🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%209%20-%20Remove%20loop%20in%20Linked%20List.md)   |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
