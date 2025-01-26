@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 72/160 Problems 🎉  
-> **In Progress**: 88 Problems ⏳  
+> **Completed**: 73/160 Problems 🎉  
+> **In Progress**: 87 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -48,6 +48,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 6**    | Clone List with Next and Random 🔗📋🤔                         |                  | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-c) | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-java) | [Solution](Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md#code-python) |
 | **Day 7**    | Detect Loop in linked list 🔗🐍🚦                         |                  | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-c) | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-java) | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-python) |
 | **Day 8**    | Find the first node of loop in linked list 🔗🔁🛑                         |                  | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-c) | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-java) | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-python) |
+| **Day 9**    | Remove loop in Linked List 🔗🚫📃                         |                  | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-c) | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-java-1) | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-python-1) |
 
 
 
