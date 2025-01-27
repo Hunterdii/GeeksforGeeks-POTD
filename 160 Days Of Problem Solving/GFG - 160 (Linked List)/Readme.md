@@ -28,8 +28,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 73/160 Problems 🎉  
-> **In Progress**: 87 Problems ⏳  
+> **Completed**: 74/160 Problems 🎉  
+> **In Progress**: 86 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -49,6 +49,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 7**    | Detect Loop in linked list 🔗🐍🚦                         |                  | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-c) | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-java) | [Solution](Day%207%20-%20Detect%20Loop%20in%20linked%20list.md#code-python) |
 | **Day 8**    | Find the first node of loop in linked list 🔗🔁🛑                         |                  | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-c) | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-java) | [Solution](Day%208%20-%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md#code-python) |
 | **Day 9**    | Remove loop in Linked List 🔗🚫📃                         |                  | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-c) | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-java-1) | [Solution](Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-python-1) |
+| **Day 10**    | LRU Cache 🔗📤💾                         |                  | [Solution](Day%2010%20-%20LRU%20Cache.md#code-c) | [Solution](Day%2010%20-%20LRU%20Cache.md#code-java) | [Solution](Day%2010%20-%20LRU%20Cache.md#code-python) |
 
 
 
