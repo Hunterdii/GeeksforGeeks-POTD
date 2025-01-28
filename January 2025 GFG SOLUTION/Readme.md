@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Find the first node of loop in linked list](25(Jan)%20Find%20the%20first%20node%20of%20loop%20in%20linked%20list.md)🔗🔁🛑
 - [Day 26: Remove loop in Linked List](26(Jan)%20Remove%20loop%20in%20Linked%20List.md)🔗🚫📃
 - [Day 27: LRU Cache](27(Jan)%20LRU%20Cache.md)🔗📤💾
+- [Day 28: Permutations of a String](28(Jan)%20Permutations%20of%20a%20String.md)🔠🔄🧩
 
 
   
@@ -93,3 +94,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 JAN) :* Remove loop in Linked List
 
 *Day 27(27 JAN) :* LRU Cache
+
+*Day 28(28 JAN) :* Permutations of a String
