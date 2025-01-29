@@ -29,8 +29,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 75/160 Problems 🎉  
-> **In Progress**: 85 Problems ⏳  
+> **Completed**: 76/160 Problems 🎉  
+> **In Progress**: 84 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Permutations of a String 🔠🔄🧩                         |                    | [Solution](Day%201%20-%20Permutations%20of%20a%20String.md#code-c) | [Solution](Day%201%20-%20Permutations%20of%20a%20String.md#code-java) | [Solution](Day%201%20-%20Permutations%20of%20a%20String.md#code-python-1) |
+| **Day 2**    | Implement Pow ⚡🔢🚀                         |                    | [Solution](Day%202%20-%20Implement%20Pow.md#code-c) | [Solution](Day%202%20-%20Implement%20Pow.md#code-java) | [Solution](Day%202%20-%20Implement%20Pow.md#code-python) |
 
 
 ## **🤝 Contributing**
