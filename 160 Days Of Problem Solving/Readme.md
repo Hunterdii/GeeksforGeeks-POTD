@@ -317,11 +317,12 @@ Master the art of linked lists with smart manipulation and efficient designs.
 # 🌀 **Recursion and Backtracking Adventure**
 Dive into the magical world of recursion and backtracking to crack even the trickiest problems! 
 
-✨ **Days Covered:** **75**
+✨ **Days Covered:** **75 to 76**
 
 | 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
 | Day 75      | Permutations of a Given String        | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%201%20-%20Permutations%20of%20a%20String.md) |
+| Day 76      | Implement Pow                         | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%202%20-%20Implement%20Pow.md) |
 
 
 ## 👤 Creator
