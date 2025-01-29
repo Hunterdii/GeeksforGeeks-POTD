@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: Remove loop in Linked List](26(Jan)%20Remove%20loop%20in%20Linked%20List.md)🔗🚫📃
 - [Day 27: LRU Cache](27(Jan)%20LRU%20Cache.md)🔗📤💾
 - [Day 28: Permutations of a String](28(Jan)%20Permutations%20of%20a%20String.md)🔠🔄🧩
+- [Day 29: Implement Pow](29(Jan)%20Implement%20Pow.md)⚡🔢🚀
 
 
   
@@ -96,3 +97,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 27(27 JAN) :* LRU Cache
 
 *Day 28(28 JAN) :* Permutations of a String
+
+*Day 29(29 JAN) :* Implement Pow
