@@ -296,7 +296,7 @@ Master the art of linked lists with smart manipulation and efficient designs.
 | Day 65      | Reverse a Linked List           | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%201%20-%20Reverse%20a%20linked%20list.md)   |  
 | Day 66      | Rotate a Linked List           | 🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%202%20-%20Rotate%20a%20Linked%20List.md)   |  
 | Day 67      | Merge two sorted linked lists           | 🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%203%20-%20Merge%20two%20sorted%20linked%20lists.md)   |  
-| Day 68      | Merge two sorted linked lists           |    🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%204%20-%20Linked%20List%20Group%20Reverse.md)   |  
+| Day 68      | Linked List Group Reverse         |    🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%204%20-%20Linked%20List%20Group%20Reverse.md)   |  
 | Day 69      | Add Number Linked Lists           |     🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%205%20-%20Add%20Number%20Linked%20Lists.md)   |  
 | Day 70      | Clone List with Next and Random           |     🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%206%20-%20Clone%20List%20with%20Next%20and%20Random.md)   |  
 | Day 71      | Detect Loop in linked list           |     🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%207%20-%20Detect%20Loop%20in%20linked%20list.md)   |  
