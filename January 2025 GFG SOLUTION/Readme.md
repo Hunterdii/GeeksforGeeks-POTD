@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 27: LRU Cache](27(Jan)%20LRU%20Cache.md)🔗📤💾
 - [Day 28: Permutations of a String](28(Jan)%20Permutations%20of%20a%20String.md)🔠🔄🧩
 - [Day 29: Implement Pow](29(Jan)%20Implement%20Pow.md)⚡🔢🚀
+- [Day 30: N-Queen Problem](30(Jan)%20N-Queen%20Problem.md)👑♟️🔢
 
 
   
@@ -99,3 +100,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 28(28 JAN) :* Permutations of a String
 
 *Day 29(29 JAN) :* Implement Pow
+
+*Day 30(30 JAN) :* N-Queen Problem
