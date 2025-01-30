@@ -317,12 +317,22 @@ Master the art of linked lists with smart manipulation and efficient designs.
 # 🌀 **Recursion and Backtracking Adventure**
 Dive into the magical world of recursion and backtracking to crack even the trickiest problems! 
 
-✨ **Days Covered:** **75 to 76**
+✨ **Days Covered:** **75 to 77**
 
 | 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
 | Day 75      | Permutations of a Given String        | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%201%20-%20Permutations%20of%20a%20String.md) |
 | Day 76      | Implement Pow                         | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%202%20-%20Implement%20Pow.md) |
+| Day 77      | N-Queen Problem                         | 🔴 Hard      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%203%20-%20N-Queen%20Problem.md) |
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Print 1 To N Without Loop** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?page=1) |  
+| **Josephus problem** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/josephus-problem/1) |  
+| **Open the gates** <br/> **OR** <br/> **Largest number in K swaps** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/word-boggle-ii--141631/1) / [Solve Now](https://www.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1) |  
+| **String Permutations** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1) |  
 
 
 ## 👤 Creator
