@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 28: Permutations of a String](28(Jan)%20Permutations%20of%20a%20String.md)🔠🔄🧩
 - [Day 29: Implement Pow](29(Jan)%20Implement%20Pow.md)⚡🔢🚀
 - [Day 30: N-Queen Problem](30(Jan)%20N-Queen%20Problem.md)👑♟️🔢
+- [Day 31: Solve the Sudoku](31(Jan)%20Solve%20the%20Sudoku.md)🧩📝🎯
 
 
   
@@ -102,3 +103,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 JAN) :* Implement Pow
 
 *Day 30(30 JAN) :* N-Queen Problem
+
+*Day 31(31 JAN) :* Solve the Sudoku
