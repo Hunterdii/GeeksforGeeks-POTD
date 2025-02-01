@@ -5,12 +5,12 @@ For discussions, questions, or doubts related to this solution, please visit my 
 ### 🔮Your feedback is valuable! Please consider leaving a 🌟 star 🌟 and sharing your thoughts in the comments.
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
-- [Solutions](February%202025%20GFG%20SOLUTION)💡
-- [Day 1: Word Search]()📖🔠🔎
+- [Solutions](/February%202025%20GFG%20SOLUTION)💡
+- [Day 1: Word Search](01(Feb)%20Word%20Search.md)📖🔠🔎
 
   
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-*Day 1(01 JAN) :* Word Search
+*Day 1(01 FEB) :* Word Search
