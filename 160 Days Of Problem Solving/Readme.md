@@ -317,14 +317,15 @@ Master the art of linked lists with smart manipulation and efficient designs.
 # 🌀 **Recursion and Backtracking Adventure**
 Dive into the magical world of recursion and backtracking to crack even the trickiest problems! 
 
-✨ **Days Covered:** **75 to 78**
+✨ **Days Covered:** **75 to 79**
 
 | 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
 | Day 75      | Permutations of a Given String        | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%201%20-%20Permutations%20of%20a%20String.md) |
-| Day 76      | Implement Pow                         | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%202%20-%20Implement%20Pow.md) |
+| Day 76      | Implement Pow                         |  🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%202%20-%20Implement%20Pow.md) |
 | Day 77      | N-Queen Problem                         | 🔴 Hard      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%203%20-%20N-Queen%20Problem.md) |
 | Day 78      | Solve the Sudoku                         | 🔴 Hard      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%204%20-%20Solve%20the%20Sudoku.md) |
+| Day 79      | Word Search                         |    🟡 Medium   | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%205%20-%20Word%20Search.md) |
 
 ### 📌 **Additional Challenges (From my side):**  
 
