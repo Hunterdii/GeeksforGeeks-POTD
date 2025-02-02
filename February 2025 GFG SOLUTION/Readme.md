@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](/February%202025%20GFG%20SOLUTION)💡
 - [Day 1: Word Search](01(Feb)%20Word%20Search.md)📖🔠🔎
+- [Day 2: Level order traversal](02(Feb)%20Level%20order%20traversal.md)🌳📤📈
 
   
 ## Introduction
@@ -14,3 +15,5 @@ For discussions, questions, or doubts related to this solution, please visit my 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
 *Day 1(01 FEB) :* Word Search
+
+*Day 2(02 FEB) :* Level order traversal
