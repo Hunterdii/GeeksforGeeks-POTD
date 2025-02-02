@@ -7,7 +7,7 @@
 Unleash the power of arrays with these fundamental to advanced problems.  
 ✨ **Days Covered:** **1 to 13**  
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🚀 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|---------------|--------------|-----------------|  
 | Day 1      | **Second Largest** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Arrays)/Day%201%20-%20Second%20Largest.md) |  
 | Day 2      | **Move All Zeroes to End** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Arrays)/Day%202%20-%20Move%20All%20Zeroes%20to%20End.md) |  
@@ -50,7 +50,7 @@ Unleash the power of arrays with these fundamental to advanced problems.
 Master the art of string manipulation with these intriguing challenges.  
 ✨ **Days Covered:** **14 to 20**  
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 💡 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|---------------|--------------|-----------------|  
 | Day 14     | **Implement Atoi** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Strings)/Day%201%20-%20Implement%20Atoi.md) |  
 | Day 15     | **Add Binary Strings** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Strings)/Day%202%20-%20Add%20Binary%20Strings.md) |  
@@ -89,7 +89,7 @@ Master the art of string manipulation with these intriguing challenges.
 Polish your sorting skills with these curated problems.  
 ✨ **Days Covered:** **21 to 27**  
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🔥 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|---------------|--------------|-----------------|  
 | Day 21     | **Sort 0s, 1s, and 2s** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%201%20-%20Sort%200s%2C%201s%20and%202s.md) |  
 | Day 22     | **Find H-Index** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Sorting)/Day%202%20-%20Find%20H-Index.md) |  
@@ -125,7 +125,7 @@ Polish your sorting skills with these curated problems.
 Master the art of searching techniques with these essential problems.  
 ✨ **Days Covered:** **28 to 35**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🔍 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|---------------|--------------|-----------------|  
 | Day 28     | **Number of Occurrence** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%201%20-%20Number%20of%20occurrence.md) |  
 | Day 29     | **Sorted and Rotated Minimum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Searching)/Day%202%20-%20Sorted%20and%20Rotated%20Minimum.md) |  
@@ -168,7 +168,7 @@ Master the art of searching techniques with these essential problems.
 Navigate through the realm of matrices with these essential problems.  
 ✨ **Days Covered:** **36 to 41**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🧮 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|---------------|--------------|-----------------|  
 | Day 36     | **Spirally traversing a matrix** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%201%20-%20Spirally%20traversing%20a%20matrix.md) |  
 | Day 37     | **Rotate by 90 degree** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Matrix)/Day%202%20-%20Rotate%20by%2090%20degree.md) | 
@@ -199,11 +199,11 @@ Navigate through the realm of matrices with these essential problems.
 | **Shortest Path by Removing K walls** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-path-by-removing-k-walls/1) |  
 
 
-# 🔗 **Hash Hustle**  
+# #️⃣ **Hash Hustle**  
 Master the art of hashing with these pivotal problems.  
 ✨ **Days Covered:** **42 to 50**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
+| 🗓️ **Day** | #️⃣ **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
 |------------|--------------------------|--------------|-----------------|  
 | Day 42     | **Two Sum - Pair with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%201%20-%20Two%20Sum%20-%20Pair%20with%20Given%20Sum.md) |  
 | Day 43     | **Count Pairs with Given Sum** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Hashing)/Day%202%20-%20Count%20pairs%20with%20given%20sum.md) |  
@@ -240,7 +240,7 @@ Master the art of hashing with these pivotal problems.
 Optimize your journey with the elegance of two-pointer techniques.  
 ✨ **Days Covered:** **51 to 60**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |
+| 🗓️ **Day** | 🔄 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |
 |------------|--------------------------|--------------|-----------------|  
 | Day 51     | **Count all triplets with given sum in sorted array** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%201%20-%20Count%20all%20triplets%20with%20given%20sum%20in%20sorted%20array.md) |
 | Day 52     | **Count Pairs whose sum is less than target** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%202%20-%20Count%20Pairs%20whose%20sum%20is%20less%20than%20target.md) |
@@ -268,7 +268,7 @@ Optimize your journey with the elegance of two-pointer techniques.
 Master the art of prefix sum with these essential problems.  
 ✨ **Days Covered:** **61 to 64**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🗺️ **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |------------|--------------------------|--------------|-----------------|  
 | Day 61     | **Equilibrium Point** | 🟢 Easy | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%201%20-%20Equilibrium%20Point.md) |
 | Day 62     | **Longest Subarray with Sum K** | 🟡 Medium | [Solved Check It Now!](./GFG%20-%20160%20(Prefix%20Sum)/Day%202%20-%20Longest%20Subarray%20with%20Sum%20K.md) |
@@ -291,7 +291,7 @@ Master the art of prefix sum with these essential problems.
 Master the art of linked lists with smart manipulation and efficient designs.  
 ✨ **Days Covered:** **65 to 74**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
+| 🗓️ **Day** | 🔗 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
 |------------|--------------------------|--------------|-----------------|  
 | Day 65      | Reverse a Linked List           | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%201%20-%20Reverse%20a%20linked%20list.md)   |  
 | Day 66      | Rotate a Linked List           | 🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Linked%20List)/Day%202%20-%20Rotate%20a%20Linked%20List.md)   |  
@@ -319,7 +319,7 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 
 ✨ **Days Covered:** **75 to 79**
 
-| 🗓️ **Day** | 🧠 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+| 🗓️ **Day** | 🌀 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
 | Day 75      | Permutations of a Given String        | 🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%201%20-%20Permutations%20of%20a%20String.md) |
 | Day 76      | Implement Pow                         |  🟡 Medium      | [Solved Check It Now!](./GFG%20-%20160%20(Recursion%20and%20Backtracking)/Day%202%20-%20Implement%20Pow.md) |
@@ -331,10 +331,28 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 
 | 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
 |----------------|--------------|---------------------|  
-| **Print 1 To N Without Loop** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?page=1) |  
+| **Print 1 To N Without Loop** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1) |  
 | **Josephus problem** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/josephus-problem/1) |  
 | **Open the gates** <br/> **OR** <br/> **Largest number in K swaps** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/word-boggle-ii--141631/1) / [Solve Now](https://www.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1) |  
 | **String Permutations** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1) |  
+
+# 🌳 **Tree Traversals and Techniques**  
+Explore the depths of tree data structures with powerful traversal techniques!  
+
+✨ **Days Covered:** **80**  
+
+| 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
+|-------------|------------------------------------------|----------------|--------------------------------------------------|  
+| Day 80      | Level Order Traversal      |   🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%201%20-%20Level%20order%20traversal.md) |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Count Leaves in Binary Tree** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1) |  
+| **Mirror Tree** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/mirror-tree/1) |  
+| **Tree Boundary Traversal** <br/> **OR** <br/> **Connect Nodes at Same Level** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1) / [Solve Now](https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level--170647/1) |  
+| **Sorted Linked List to BST** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1) |  
 
 
 ## 👤 Creator
