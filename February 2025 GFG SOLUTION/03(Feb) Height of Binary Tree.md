@@ -56,6 +56,12 @@ We can solve the problem using recursion by computing the height of the left and
 
 ## **1️⃣ Recursive DFS (Top-Down)**
 
+## Code (C)
+```c
+int max(int a,int b){return a>b?a:b;}
+int height(struct Node* node){return node?1+max(height(node->left),height(node->right)):-1;}
+```
+
 ## Code (C++)
 
 ```cpp
