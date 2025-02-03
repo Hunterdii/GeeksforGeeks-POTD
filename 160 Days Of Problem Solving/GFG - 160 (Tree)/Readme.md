@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 79/160 Problems 🎉  
-> **In Progress**: 81 Problems ⏳  
+> **Completed**: 81/160 Problems 🎉  
+> **In Progress**: 79 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**    | Level order traversal 🌳📤📈                        |                    | [Solution](Day%201%20-%20Level%20order%20traversal.md#code-c) | [Solution](Day%201%20-%20Level%20order%20traversal.md#code-java) | [Solution](Day%201%20-%20Level%20order%20traversal.md#code-python) |
+| **Day 2**    | Height of Binary Tree🌲📏🪵                        |           [Solution](Day%202%20-%20Height%20of%20Binary%20Tree.md#code-c)         | [Solution](Day%202%20-%20Height%20of%20Binary%20Tree.md#code-c-1) | [Solution](Day%202%20-%20Height%20of%20Binary%20Tree.md#code-java) | [Solution](Day%202%20-%20Height%20of%20Binary%20Tree.md#code-python) |
 
 
 ## **🤝 Contributing**
