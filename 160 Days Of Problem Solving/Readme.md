@@ -339,12 +339,13 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 # 🌳 **Tree Traversals and Techniques**  
 Explore the depths of tree data structures with powerful traversal techniques!  
 
-✨ **Days Covered:** **80 to 81**  
+✨ **Days Covered:** **80 to 82**  
 
 | 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
 | Day 80      | Level Order Traversal      |   🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%201%20-%20Level%20order%20traversal.md) |  
 | Day 81      | Height of Binary Tree      |   🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%202%20-%20Height%20of%20Binary%20Tree.md) |  
+| Day 82      | Diameter of a Binary Tree      |   🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
