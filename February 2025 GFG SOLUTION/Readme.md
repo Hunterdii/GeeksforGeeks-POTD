@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Level order traversal](02(Feb)%20Level%20order%20traversal.md)🌳📤📈
 - [Day 3: Height of Binary Tree](03(Feb)%20Height%20of%20Binary%20Tree.md)🌲📏🪵
 - [Day 4: Diameter of a Binary Tree](04(Feb)%20Diameter%20of%20a%20Binary%20Tree.md)🌳📏🔄
+- [Day 5: Mirror Tree](05(Feb)%20Mirror%20Tree.md)🌳🪞📌
 
   
 ## Introduction
@@ -23,3 +24,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 3(03 FEB) :* Height of Binary Tree
 
 *Day 4(04 FEB) :* Diameter of a Binary Tree
+
+*Day 5(05 FEB) :* Mirror Tree 
