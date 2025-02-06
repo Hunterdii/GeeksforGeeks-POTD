@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: Height of Binary Tree](03(Feb)%20Height%20of%20Binary%20Tree.md)🌲📏🪵
 - [Day 4: Diameter of a Binary Tree](04(Feb)%20Diameter%20of%20a%20Binary%20Tree.md)🌳📏🔄
 - [Day 5: Mirror Tree](05(Feb)%20Mirror%20Tree.md)🌳🪞📌
+- [Day 6: Construct Tree from Inorder & Preorder](06(Feb)%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md)🌳🔀📜
 
   
 ## Introduction
@@ -26,3 +27,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 4(04 FEB) :* Diameter of a Binary Tree
 
 *Day 5(05 FEB) :* Mirror Tree 
+
+*Day 6(06 FEB) :* Construct Tree from Inorder & Preorder
