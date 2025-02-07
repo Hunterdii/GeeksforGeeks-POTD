@@ -339,7 +339,7 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 # 🌳 **Tree Traversals and Techniques**  
 Explore the depths of tree data structures with powerful traversal techniques!  
 
-✨ **Days Covered:** **80 to 84**  
+✨ **Days Covered:** **80 to 85**  
 
 | 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
@@ -348,6 +348,7 @@ Explore the depths of tree data structures with powerful traversal techniques!
 | Day 82      | Diameter of a Binary Tree      |   🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md) |  
 | Day 83      | Mirror Tree      |    🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%204%20-%20Mirror%20Tree.md) |  
 | Day 84      | Construct Tree from Inorder & Preorder      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md) |  
+| Day 85      | Inorder Traversal      |    🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%206%20-%20Inorder%20Traversal.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
