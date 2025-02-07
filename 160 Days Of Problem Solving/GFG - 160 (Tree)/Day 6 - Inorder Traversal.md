@@ -5,7 +5,7 @@ Tags:
   - Tree
 ---
 
-# 🚀 _Day 7. Inorder Traversal_ 🧠
+# 🚀 _Day 6. Inorder Traversal_ 🧠
 
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/inorder-traversal)  
