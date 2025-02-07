@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 84/160 Problems 🎉  
-> **In Progress**: 76 Problems ⏳  
+> **Completed**: 85/160 Problems 🎉  
+> **In Progress**: 75 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -47,6 +47,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 3**    | Diameter of a Binary Tree 🌳📏🔄                        |           [Solution](Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md#code-c)         | [Solution](Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md#code-c-1) | [Solution](Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md#code-java) | [Solution](Day%203%20-%20Diameter%20of%20a%20Binary%20Tree.md#code-python) |
 | **Day 4**    | Mirror Tree 🌳🪞📌                        |           [Solution](Day%204%20-%20Mirror%20Tree.md#code-c)         | [Solution](Day%204%20-%20Mirror%20Tree.md#code-c-1) | [Solution](Day%204%20-%20Mirror%20Tree.md#code-java) | [Solution](Day%204%20-%20Mirror%20Tree.md#code-python) |
 | **Day 5**    | Construct Tree from Inorder & Preorder 🌳🔀📜                       |                   | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-c) | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-java) | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-python) |
+| **Day 6**    | Inorder Traversal 🌳➡️📄                        |           [Solution](Day%206%20-%20Inorder%20Traversal.md#code-c)         | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-c-1) | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-java) | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-python) |
 
 
 ## **🤝 Contributing**
