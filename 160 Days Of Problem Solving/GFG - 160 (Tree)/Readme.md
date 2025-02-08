@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 85/160 Problems 🎉  
-> **In Progress**: 75 Problems ⏳  
+> **Completed**: 86/160 Problems 🎉  
+> **In Progress**: 74 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -48,6 +48,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 4**    | Mirror Tree 🌳🪞📌                        |           [Solution](Day%204%20-%20Mirror%20Tree.md#code-c)         | [Solution](Day%204%20-%20Mirror%20Tree.md#code-c-1) | [Solution](Day%204%20-%20Mirror%20Tree.md#code-java) | [Solution](Day%204%20-%20Mirror%20Tree.md#code-python) |
 | **Day 5**    | Construct Tree from Inorder & Preorder 🌳🔀📜                       |                   | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-c) | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-java) | [Solution](Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md#code-python) |
 | **Day 6**    | Inorder Traversal 🌳➡️📄                        |           [Solution](Day%206%20-%20Inorder%20Traversal.md#code-c)         | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-c-1) | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-java) | [Solution](Day%206%20-%20Inorder%20Traversal.md#code-python) |
+| **Day 7**    | Tree Boundary Traversal 🌳📐🌿                        |               | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-c) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-java) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-python) |
 
 
 ## **🤝 Contributing**
