@@ -339,7 +339,7 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 # 🌳 **Tree Traversals and Techniques**  
 Explore the depths of tree data structures with powerful traversal techniques!  
 
-✨ **Days Covered:** **80 to 86**  
+✨ **Days Covered:** **80 to 87**  
 
 | 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
@@ -350,7 +350,7 @@ Explore the depths of tree data structures with powerful traversal techniques!
 | Day 84      | Construct Tree from Inorder & Preorder      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%205%20-%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md) |  
 | Day 85      | Inorder Traversal      |    🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%206%20-%20Inorder%20Traversal.md) |  
 | Day 86      | Tree Boundary Traversal      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%207%20-%20Tree%20Boundary%20Traversal.md) |  
-
+| Day 87      | Maximum path sum from any node      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
