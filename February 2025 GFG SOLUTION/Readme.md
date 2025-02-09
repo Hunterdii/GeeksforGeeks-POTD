@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Construct Tree from Inorder & Preorder](06(Feb)%20Construct%20Tree%20from%20Inorder%20%26%20Preorder.md)🌳🔀📜
 - [Day 7: Inorder Traversal](07(Feb)%20Inorder%20Traversal.md)🌳➡️📄
 - [Day 8: Tree Boundary Traversal](08(Feb)%20Tree%20Boundary%20Traversal.md)🌳📐🌿
+- [Day 9: Maximum path sum from any node](09(Feb)%20Maximum%20path%20sum%20from%20any%20node.md)🌳🛤️🔼
 
   
 ## Introduction
@@ -35,3 +36,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 7(07 FEB) :* Inorder Traversal
 
 *Day 8(08 FEB) :* Tree Boundary Traversal 
+
+*Day 9(09 FEB) :* Maximum path sum from any node
