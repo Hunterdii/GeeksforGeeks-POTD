@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 88/160 Problems 🎉  
-> **In Progress**: 72 Problems ⏳  
+> **Completed**: 89/160 Problems 🎉  
+> **In Progress**: 71 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -51,6 +51,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 7**    | Tree Boundary Traversal 🌳📐🌿                        |               | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-c) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-java) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-python) |
 | **Day 8**    | Maximum path sum from any node 🌳🛤️🔼                        |               | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-c) | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-java) | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-python) |
 | **Day 9**    | K Sum Paths 🌳🛤️🔍                       |               | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-c) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-java) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-python) |
+| **Day 9**    | Check for BST 🌳✅🔍                       |               | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-c) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-java) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-python) |
 
 
 ## **🤝 Contributing**
