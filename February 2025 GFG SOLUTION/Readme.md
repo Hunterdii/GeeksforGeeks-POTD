@@ -16,6 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Tree Boundary Traversal](08(Feb)%20Tree%20Boundary%20Traversal.md)🌳📐🌿
 - [Day 9: Maximum path sum from any node](09(Feb)%20Maximum%20path%20sum%20from%20any%20node.md)🌳🛤️🔼
 - [Day 10: K Sum Paths](10(Feb)%20K%20Sum%20Paths.md)🌳🛤️🔍
+- [Day 11: Check for BST](11(Feb)%20Check%20for%20BST.md)🌳✅🔍
 
   
 ## Introduction
@@ -41,3 +42,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 9(09 FEB) :* Maximum path sum from any node
 
 *Day 10(10 FEB) :* K Sum Paths
+
+*Day 11(11 FEB) :* Check for BST
