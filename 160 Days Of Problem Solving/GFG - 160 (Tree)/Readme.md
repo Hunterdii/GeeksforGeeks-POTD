@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 89/160 Problems 🎉  
-> **In Progress**: 71 Problems ⏳  
+> **Completed**: 90/160 Problems 🎉  
+> **In Progress**: 70 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -51,7 +51,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 7**    | Tree Boundary Traversal 🌳📐🌿                        |               | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-c) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-java) | [Solution](Day%207%20-%20Tree%20Boundary%20Traversal.md#code-python) |
 | **Day 8**    | Maximum path sum from any node 🌳🛤️🔼                        |               | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-c) | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-java) | [Solution](Day%208%20-%20Maximum%20path%20sum%20from%20any%20node.md#code-python) |
 | **Day 9**    | K Sum Paths 🌳🛤️🔍                       |               | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-c) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-java) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-python) |
-| **Day 9**    | Check for BST 🌳✅🔍                       |               | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-c) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-java) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-python) |
+| **Day 10**    | Check for BST 🌳✅🔍                       |               | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-c) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-java) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-python) |
+| **Day 11**    | k-th Smallest in BST 🌳🔢🗂️                       |        [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c)       | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c-1) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-java) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-python) |
 
 
 ## **🤝 Contributing**
