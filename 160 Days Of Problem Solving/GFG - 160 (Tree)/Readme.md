@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 90/160 Problems 🎉  
-> **In Progress**: 70 Problems ⏳  
+> **Completed**: 92/160 Problems 🎉  
+> **In Progress**: 68 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -53,6 +53,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 9**    | K Sum Paths 🌳🛤️🔍                       |               | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-c) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-java) | [Solution](Day%209%20-%20K%20Sum%20Paths.md#code-python) |
 | **Day 10**    | Check for BST 🌳✅🔍                       |               | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-c) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-java) | [Solution](Day%2010%20-%20Check%20for%20BST.md#code-python) |
 | **Day 11**    | k-th Smallest in BST 🌳🔢🗂️                       |        [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c)       | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c-1) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-java) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-python) |
+| **Day 12**    | Pair Sum in BST.md 🌳➕🔢                       |               | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-c) | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-java) | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-python) |
+| **Day 13**    | Fixing Two nodes of a BST 🌳🔄🛠️                      |               | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-c) | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-java) | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-python) |
 
 
 ## **🤝 Contributing**
