@@ -339,7 +339,7 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 # 🌳 **Tree Traversals and Techniques**  
 Explore the depths of tree data structures with powerful traversal techniques!  
 
-✨ **Days Covered:** **80 to 90**  
+✨ **Days Covered:** **80 to 92**  
 
 | 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
@@ -354,6 +354,8 @@ Explore the depths of tree data structures with powerful traversal techniques!
 | Day 88      | K Sum Paths      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%209%20-%20K%20Sum%20Paths.md) |  
 | Day 89      | Check for BST      |    🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2010%20-%20Check%20for%20BST.md) |  
 | Day 90      | k-th Smallest in BST      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2011%20-%20k-th%20Smallest%20in%20BST.md) |  
+| Day 91      | k-th Smallest in BST      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2012%20-%20Pair%20Sum%20in%20BST.md) |  
+| Day 92      | Fixing Two nodes of a BST      |    🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
