@@ -72,7 +72,7 @@ The nodes **10 and 5** were swapped by mistake. After swapping them back, the BS
 - $\(1 \leq \text{Number of Nodes} \leq 10^3\)$  
 
 
-## **My Approach**  
+## 🎯 **My Approach:**
 
 ### **Optimized Inorder Traversal (`O(N)` Time, `O(H)` Space)**
 1. **Use an inorder traversal** to detect swapped nodes in the BST.  
@@ -89,13 +89,14 @@ The nodes **10 and 5** were swapped by mistake. After swapping them back, the BS
 5. **Swap the values** of the two misplaced nodes.  
 
 
-## **Time and Auxiliary Space Complexity**  
+## 🕒 **Time and Auxiliary Space Complexity** 
 
 - **Expected Time Complexity:** `O(N)`, since we traverse each node once.  
 - **Expected Auxiliary Space Complexity:** `O(H)`, due to the recursion stack in the inorder traversal.  
 
+## 📝 **Solution Code**
 
-## **Code (C++)**  
+## Code (C++)  
 
 ```cpp
 class Solution {
@@ -122,7 +123,7 @@ public:
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
-## **1️⃣ Iterative Inorder Traversal (Stack)**
+## **2️⃣ Iterative Inorder Traversal (Stack)**
 ### **Approach**
 1. **Use a stack for inorder traversal** (instead of recursion).  
 2. **Detect swapped nodes** by checking the inorder order.  
@@ -156,7 +157,7 @@ public:
 🔹 **Avoids recursion stack overflow issues using an explicit stack.**  
 
 
-## **2️⃣ Morris Traversal (`O(1)` Space)**
+## **3️⃣ Morris Traversal (`O(1)` Space)**
 ### **Approach**
 1. **Use Morris Traversal** to perform an **inorder traversal without extra space**.  
 2. **Identify misplaced nodes** while modifying the BST structure temporarily.  
@@ -217,7 +218,7 @@ public:
 
 
 
-## **Code (Java)**  
+## Code (Java)  
 
 ```java
 class Solution {
@@ -249,7 +250,7 @@ class Solution {
 }
 ```
 
-## **Code (Python)**  
+## Code (Python)  
 
 ```python
 class Solution:
