@@ -18,6 +18,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: K Sum Paths](10(Feb)%20K%20Sum%20Paths.md)🌳🛤️🔍
 - [Day 11: Check for BST](11(Feb)%20Check%20for%20BST.md)🌳✅🔍
 - [Day 12: k-th Smallest in BST](12(Feb)%20k-th%20Smallest%20in%20BST.md)🌳🔢🗂️
+- [Day 13: Pair Sum in BST](13(Feb)%20Pair%20Sum%20in%20BST.md)🌳➕🔢
+- [Day 14: Fixing Two nodes of a BST](14(Feb)%20Fixing%20Two%20nodes%20of%20a%20BST.md)🌳🔄🛠️
 
   
 ## Introduction
@@ -47,3 +49,7 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 11(11 FEB) :* Check for BST
 
 *Day 12(12 FEB) :* k-th Smallest in BST
+
+*Day 13(13 FEB) :* Pair Sum in BST
+
+*Day 14(14 FEB) :* Fixing Two nodes of a BST
