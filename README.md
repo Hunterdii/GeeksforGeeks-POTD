@@ -1,15 +1,40 @@
 
+
 <h1>  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> GeeksforGeeks Problem of the Day Solutions 2024  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
 
 
 <div align="center">
   
-## 📅 **February 2025 Problem of the Day Solutions** 📅
+## [📅 **February 2025 Problem of the Day Solutions** 📅](/February%202025%20GFG%20SOLUTION)
 
-[![Smart AI Resume Analyzer](https://img.shields.io/badge/Smart%20AI%20Resume%20Analyzer-Enhance%20Your%20Job%20Search-007acc?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Hunterdii/Smart-AI-Resume-Analyzer)
+## 🚀 My Open-Source Projects  
 
-[![Support Rust Learning](https://img.shields.io/badge/Support%20Rust%20Learning-Contribute%20Now-7a0c2f?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Hunterdii/30-Days-Of-Rust)
-
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Hunterdii/Smart-AI-Resume-Analyzer">
+        <img src="https://img.shields.io/badge/Smart%20AI%20Resume%20Analyzer-Enhance%20Your%20Job%20Search-007acc?style=for-the-badge&logo=python&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hunterdii/Awesome-Java">
+        <img src="https://img.shields.io/badge/Awesome%20Java-Master%20Java%20Concepts-007396?style=for-the-badge&logo=java&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Hunterdii/tryhackme-free-rooms">
+        <img src="https://img.shields.io/badge/TryHackMe%20Free%20Rooms-Boost%20Your%20Hacking%20Skills-990000?style=for-the-badge&logo=hackthebox&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hunterdii/30-Days-Of-Rust">
+        <img src="https://img.shields.io/badge/Support%20Rust%20Learning-Contribute%20to%20Rust-7a0c2f?style=for-the-badge&logo=rust&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 | **Date**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
@@ -27,10 +52,11 @@
 | 11 Feb    | Check for BST 🌳✅🔍	                        |      | [Solution](/February%202025%20GFG%20SOLUTION/11(Feb)%20Check%20for%20BST.md#code-c) | [Solution](/February%202025%20GFG%20SOLUTION/11(Feb)%20Check%20for%20BST.md#code-java) | [Solution](/February%202025%20GFG%20SOLUTION/11(Feb)%20Check%20for%20BST.md#code-python) |
 | 12 Feb    | k-th Smallest in BST 🌳🔢🗂️	                        |   [Solution](/February%202025%20GFG%20SOLUTION/12(Feb)%20k-th%20Smallest%20in%20BST.md#code-c)   | [Solution](/February%202025%20GFG%20SOLUTION/12(Feb)%20k-th%20Smallest%20in%20BST.md#code-c-1) | [Solution](/February%202025%20GFG%20SOLUTION/12(Feb)%20k-th%20Smallest%20in%20BST.md#code-java) | [Solution](/February%202025%20GFG%20SOLUTION/12(Feb)%20k-th%20Smallest%20in%20BST.md#code-python) |
 | 13 Feb    | Pair Sum in BST 🌳➕🔢	                        |     | [Solution](/February%202025%20GFG%20SOLUTION/13(Feb)%20Pair%20Sum%20in%20BST.md#code-c) | [Solution](/February%202025%20GFG%20SOLUTION/13(Feb)%20Pair%20Sum%20in%20BST.md#code-java) | [Solution](/February%202025%20GFG%20SOLUTION/13(Feb)%20Pair%20Sum%20in%20BST.md#code-python) |
+| 14 Feb    | Fixing Two nodes of a BST 🌳🔄🛠️	                        |     | [Solution](/February%202025%20GFG%20SOLUTION/14(Feb)%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-c) | [Solution](/February%202025%20GFG%20SOLUTION/14(Feb)%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-java) | [Solution](/February%202025%20GFG%20SOLUTION/14(Feb)%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-python) |
 
 
 
-## **🌴 GFG 160 Days of Problem Solving (Tree) 🌴**
+##  **[🌴 GFG 160 Days of Problem Solving (Tree) 🌴](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Tree))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -57,7 +83,8 @@
 <details>
 <summary> <h2><b>✨ Previously Solved Questions </b></h2> (Click to expand)</summary>
 
-## **🔢 GFG 160 Days of Problem Solving (Arrays 1–13) 🔢** 
+## **[🔢 GFG 160 Days of Problem Solving (Arrays 1–13) 🔢](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays))** 
+
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -76,7 +103,7 @@
 | **Day 13**    | Smallest Positive Missing Number 🔢❓🔍                | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/Day%2013%20-%20Smallest%20Positive%20Missing%20Number.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/Day%2013%20-%20Smallest%20Positive%20Missing%20Number.md#code-cpp) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/Day%2013%20-%20Smallest%20Positive%20Missing%20Number.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/Day%2013%20-%20Smallest%20Positive%20Missing%20Number.md#code-python) |
 
 
-## **🔠 GFG 160 Days of Problem Solving (Strings) 🔠**
+## **[🔠 GFG 160 Days of Problem Solving (Strings) 🔠](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -89,7 +116,7 @@
 | **Day 7**    |  Strings Rotations of Each Other 🔄🔠🌀                           | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%207%20-%20Strings%20Rotations%20of%20Each%20Other.md#code-c)  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%207%20-%20Strings%20Rotations%20of%20Each%20Other.md#code-cpp) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%207%20-%20Strings%20Rotations%20of%20Each%20Other.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/Day%207%20-%20Strings%20Rotations%20of%20Each%20Other.md#code-python) |
 
 
-## **🔀 GFG 160 Days of Problem Solving (Sorting) 🔀**
+## **[🔀 GFG 160 Days of Problem Solving (Sorting) 🔀](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -101,7 +128,7 @@
 | **Day 6**    | Non-overlapping Intervals✂️🔗✅                            | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%206%20-%20Non-overlapping%20Intervals.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%206%20-%20Non-overlapping%20Intervals.md#code-c-1) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%206%20-%20Non-overlapping%20Intervals.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%206%20-%20Non-overlapping%20Intervals.md#code-python) |
 | **Day 7**    |  Merge Without Extra Space 📂🚫📦                           | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%207%20-%20Merge%20Without%20Extra%20Space.md#code-c)  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%207%20-%20Merge%20Without%20Extra%20Space.md#code-c-1) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%207%20-%20Merge%20Without%20Extra%20Space.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/Day%207%20-%20Merge%20Without%20Extra%20Space.md#code-python) |
 
-## **👀 GFG 160 Days of Problem Solving (Searching) 👀**
+## **[👀 GFG 160 Days of Problem Solving (Searching) 👀](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -114,7 +141,7 @@
 | **Day 7**    | Allocate Minimum Pages 📚📖📏                      |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%207%20-%20Allocate%20Minimum%20Pages.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%207%20-%20Allocate%20Minimum%20Pages.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%207%20-%20Allocate%20Minimum%20Pages.md#code-python) |     
 | **Day 8**    | Kth Missing Positive Number in a Sorted Array 🔢➡️❓                           | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%208%20-%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%208%20-%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md#code-c-1) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%208%20-%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/Day%208%20-%20Kth%20Missing%20Positive%20Number%20in%20a%20Sorted%20Array.md#code-python) |
 
-## **📐 GFG 160 Days of Problem Solving (Matrix) 📐**
+## **[📐 GFG 160 Days of Problem Solving (Matrix) 📐](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -125,7 +152,7 @@
 | **Day 5**    | Search in a sorted Matrix 🔍🧮📈                           |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%205%20-%20Search%20in%20a%20sorted%20Matrix.md#code-python) |
 | **Day 6**    | Set Matrix Zeroes 🟦⬜🔢                           |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%206%20-%20Set%20Matrix%20Zeroes.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%206%20-%20Set%20Matrix%20Zeroes.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Matrix)/Day%206%20-%20Set%20Matrix%20Zeroes.md#code-python) |
 
-## **🔒 GFG 160 Days of Problem Solving (Hashing) 🔒**
+## **[🔒 GFG 160 Days of Problem Solving (Hashing) 🔒](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Hashing))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -140,7 +167,7 @@
 | **Day 9**    | Count Subarrays with given XOR 💻🔢🧮                             |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Hashing)/Day%209%20-%20Count%20Subarrays%20with%20given%20XOR.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Hashing)/Day%209%20-%20Count%20Subarrays%20with%20given%20XOR.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Hashing)/Day%209%20-%20Count%20Subarrays%20with%20given%20XOR.md#code-python) |
 
 
-## **👫 GFG 160 Days of Problem Solving (Two Pointer Technique) 👫**
+## **[👫 GFG 160 Days of Problem Solving (Two Pointer Technique) 👫](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -155,7 +182,7 @@
 | **Day 9**    | Trapping Rain Water 🌧️💧🏞️   		                             |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%209%20-%20Trapping%20Rain%20Water.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%209%20-%20Trapping%20Rain%20Water.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%209%20-%20Trapping%20Rain%20Water.md#code-python) |  
 | **Day 10**    | Container With Most Water📦🌊📐   		                             |  | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%2010%20-%20Container%20With%20Most%20Water.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%2010%20-%20Container%20With%20Most%20Water.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Two%20Pointer%20Technique)/Day%2010%20-%20Container%20With%20Most%20Water.md#code-python) |  
 
-## **➕ GFG 160 Days of Problem Solving (Prefix Sum) ➕**
+## **[➕ GFG 160 Days of Problem Solving (Prefix Sum) ➕](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -164,7 +191,7 @@
 | **Day 3**    | Largest subarray of 0's and 1's 🔢➕🔴                        |                    | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%203%20-%20Largest%20subarray%20of%200's%20and%201's.md#code-python) |
 | **Day 4**    | Product array puzzle🧩📦✖                        |                    | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%204%20-%20Product%20array%20puzzle.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%204%20-%20Product%20array%20puzzle.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Prefix%20Sum)/Day%204%20-%20Product%20array%20puzzle.md#code-python) |
 
-## **🔗 GFG 160 Days of Problem Solving (Linked List) 🔗**
+## **[🔗 GFG 160 Days of Problem Solving (Linked List) 🔗](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -179,7 +206,7 @@
 | **Day 9**    |  Remove loop in Linked List 🔗🚫📃                        |   | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-java-1) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%209%20-%20Remove%20loop%20in%20Linked%20List.md#code-python-1) |
 | **Day 10**    |  LRU Cache 🔗📤💾                       |   | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%2010%20-%20LRU%20Cache.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%2010%20-%20LRU%20Cache.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Linked%20List)/Day%2010%20-%20LRU%20Cache.md#code-python) |
 
-## **🌀 GFG 160 Days of Problem Solving (Recursion and Backtracking) 🌀**
+## **[🌀 GFG 160 Days of Problem Solving (Recursion and Backtracking) 🌀](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Recursion%20and%20Backtracking))**
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -196,7 +223,7 @@
 <details>
 <summary> <h3><b>🎁 Previously Solved Bonus Problem </b></h3> (Click to expand)</summary>
 
-## **🎉 Bonus Problems (Arrays)🎁**
+## **[🎉 Bonus Problems (Arrays)🎁](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/🎉BONUS%20PROBLEMS%20🎁)**
 
 | **Bonus Problem No.**  | **Problem Name**                                    | **C**  🖥️                                                                                                                               | **C++**  🚀                                                                                                                          | **Java** ☕                                                                                                                          | **Python**  🐍                                                                                                                       |
 |:--------:|:---------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -205,7 +232,7 @@
 | _NUM 3_    | **Maximize Number of 1's** 🔢🔥💡 |             | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Maximize%20Number%20of%201's.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Maximize%20Number%20of%201's.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/3.%20Maximize%20Number%20of%201's.md#code-python) |
 | _NUM 4_    | **Last Moment Before All Ants Fall Out of a Plank** 🐜🌍⏳ |         | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank.md#code-c) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Arrays)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank.md#code-python) |
 
-## **🎉 Bonus Problems (Strings)🎁**
+## **[🎉 Bonus Problems (Strings)🎁](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/🎉BONUS%20PROBLEMS%20🎁)**
 
 | **Bonus Problem No.**  | **Problem Name**                                    | **C**  🖥️                                                                                                                               | **C++**  🚀                                                                                                                          | **Java** ☕                                                                                                                          | **Python**  🐍                                                                                                                       |
 |:--------:|:---------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -216,7 +243,7 @@
 | _NUM 5_    | **Longest Prefix Suffix** 🔍✂️🔗 |         | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/5.%20Longest%20Prefix%20Suffix.md#code-cpp) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/5.%20Longest%20Prefix%20Suffix.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/5.%20Longest%20Prefix%20Suffix.md#code-python) |
 | _NUM 6_    | **Integer to Words** 1️⃣🔠📚 |         | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/6.%20Integer%20to%20Words.md#code-cpp) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/6.%20Integer%20to%20Words.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Strings)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/6.%20Integer%20to%20Words.md#code-python) |
 
-## **🎉 Bonus Problems (Sorting)🎁**
+## **[🎉 Bonus Problems (Sorting)🎁](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/🎉BONUS%20PROBLEMS%20🎁)**
 
 | **Bonus Problem No.**  | **Problem Name**                                    | **C**  🖥️                                                                                                                               | **C++**  🚀                                                                                                                          | **Java** ☕                                                                                                                          | **Python**  🐍                                                                                                                       |
 |:--------:|:---------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -226,7 +253,7 @@
 | _NUM 4_    | **Make array elements unique** 🧮🔢🔀 |                    | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-cpp) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-java) | [Solution](./160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Sorting)/%F0%9F%8E%89BONUS%20PROBLEMS%20%F0%9F%8E%81/4.%20Make%20array%20elements%20unique.md#code-python) |
 
 
-## **🎉 Bonus Problems (Searching)🎁**
+## **[🎉 Bonus Problems (Searching)🎁](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Searching)/🎉BONUS%20PROBLEMS%20🎁)**
 
 | **Bonus Problem No.**  | **Problem Name**                                    | **C**  🖥️                                                                                                                               | **C++**  🚀                                                                                                                          | **Java** ☕                                                                                                                          | **Python**  🐍                                                                                                                       |
 |:--------:|:---------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -329,6 +356,62 @@ _Support Rust Learning & Contribute to the Future of Programming!_
 
 </div>
 
+
+## **🔥 Master Java with Awesome-Java! 🔥**
+
+Hey Developers! 🚀  
+
+Are you looking to **level up your Java skills**? Whether you’re a beginner or an experienced developer, **Awesome-Java** is packed with useful Java resources, best practices, and hands-on coding exercises.  
+
+### **Why should you explore this repo?**  
+✅ Well-structured Java concepts 🔍  
+✅ Covers **Core Java, OOP, DSA, Java 8+, Concurrency, and more** 🏗️  
+✅ Includes **real-world projects & solutions** 💻  
+✅ Beginner-friendly explanations 📘  
+✅ Open-source contributions welcome! 🌍  
+
+🔧 **How can you contribute?**  
+- ⭐ **Star the repository** to show your support!  
+- 🛠️ **Improve existing code** or add new concepts.  
+- 💬 **Suggest topics** that should be covered.  
+- 🤝 **Join discussions** and help others learn Java!  
+
+Let’s build an **Awesome Java** resource together! 🚀  
+
+<div align="center">
+  
+[![Awesome Java](https://img.shields.io/badge/Awesome%20Java-Contribute%20Now-007396?style=for-the-badge&logo=java&logoColor=white)](https://github.com/Hunterdii/Awesome-Java)
+
+</div>
+
+
+
+## **💀 TryHackMe Free Rooms - Learn Ethical Hacking! 💀**
+
+Cybersecurity enthusiasts, this one’s for you! 🚀  
+
+**TryHackMe Free Rooms** is a curated list of **free hacking labs** from TryHackMe that help you build hands-on **pentesting, red teaming, and cybersecurity skills**.  
+
+### **What’s inside?**  
+🔹 List of **completely free** hacking labs 🆓  
+🔹 Topics covering **Web Exploitation, Networking, Forensics, Reverse Engineering, and more!** 💻  
+🔹 Beginner-friendly **guided walkthroughs** 🕵️‍♂️  
+🔹 Perfect for **CTF practice & OSCP prep** 🎯  
+🔹 Community contributions encouraged! 🤝  
+
+🔧 **How can you contribute?**  
+- ⭐ **Star the repository** to support ethical hacking education!  
+- 📢 **Suggest or add new rooms** from TryHackMe.  
+- 📝 **Write walkthroughs** for tricky challenges.  
+- 🔗 **Share this with fellow hackers** to grow the community!  
+
+Join now & start hacking! 🚀  
+
+<div align="center">
+  
+[![TryHackMe Free Rooms](https://img.shields.io/badge/TryHackMe%20Free%20Rooms-Contribute%20Now-990000?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/Hunterdii/tryhackme-free-rooms)
+
+</div>
 
 
 
