@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 92/160 Problems 🎉  
-> **In Progress**: 68 Problems ⏳  
+> **Completed**: 93/160 Problems 🎉  
+> **In Progress**: 67 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -55,6 +55,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 11**    | k-th Smallest in BST 🌳🔢🗂️                       |        [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c)       | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-c-1) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-java) | [Solution](Day%2011%20-%20k-th%20Smallest%20in%20BST.md#code-python) |
 | **Day 12**    | Pair Sum in BST.md 🌳➕🔢                       |               | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-c) | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-java) | [Solution](Day%2012%20-%20Pair%20Sum%20in%20BST.md#code-python) |
 | **Day 13**    | Fixing Two nodes of a BST 🌳🔄🛠️                      |               | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-c) | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-java) | [Solution](Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md#code-python) |
+| **Day 14**    | Lowest Common Ancestor in a BST🌳🔍🤝                      |               | [Solution](Day%2014%20-%20Lowest%20Common%20Ancestor%20in%20a%20BST.md#code-c) | [Solution](Day%2014%20-%20Lowest%20Common%20Ancestor%20in%20a%20BST.md#code-java) | [Solution](Day%2014%20-%20Lowest%20Common%20Ancestor%20in%20a%20BST.md#code-python) |
 
 
 ## **🤝 Contributing**
