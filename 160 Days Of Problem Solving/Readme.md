@@ -339,7 +339,7 @@ Dive into the magical world of recursion and backtracking to crack even the tric
 # 🌳 **Tree Traversals and Techniques**  
 Explore the depths of tree data structures with powerful traversal techniques!  
 
-✨ **Days Covered:** **80 to 93**  
+✨ **Days Covered:** **80 to 94**  
 
 | 🗓️ **Day**  | 🌲 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    |  
 |-------------|------------------------------------------|----------------|--------------------------------------------------|  
@@ -357,6 +357,7 @@ Explore the depths of tree data structures with powerful traversal techniques!
 | Day 91      | Pair Sum in BST      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2012%20-%20Pair%20Sum%20in%20BST.md) |  
 | Day 92      | Fixing Two nodes of a BST      |    🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2013%20-%20Fixing%20Two%20nodes%20of%20a%20BST.md) |  
 | Day 93      | Lowest Common Ancestor in a BST      |    🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2014%20-%20Lowest%20Common%20Ancestor%20in%20a%20BST.md) |  
+| Day 94      | Serialize and deserialize a binary tree      |    🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tree)/Day%2015%20-%20Serialize%20and%20deserialize%20a%20binary%20tree.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
