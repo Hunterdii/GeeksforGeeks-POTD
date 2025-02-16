@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Pair Sum in BST](13(Feb)%20Pair%20Sum%20in%20BST.md)🌳➕🔢
 - [Day 14: Fixing Two nodes of a BST](14(Feb)%20Fixing%20Two%20nodes%20of%20a%20BST.md)🌳🔄🛠️
 - [Day 15: Lowest Common Ancestor in a BST](15(Feb)%20Lowest%20Common%20Ancestor%20in%20a%20BST.md)🌳🔍🤝
+- [Day 16: Serialize and deserialize a binary tree](16(Feb)%20Serialize%20and%20deserialize%20a%20binary%20tree.md)🌲📤💾
 
   
 ## Introduction
@@ -56,3 +57,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 14(14 FEB) :* Fixing Two nodes of a BST
 
 *Day 15(15 FEB) :* Lowest Common Ancestor in a BST
+
+*Day 16(16 FEB) :* Serialize and deserialize a binary tree
