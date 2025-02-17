@@ -369,6 +369,23 @@ Explore the depths of tree data structures with powerful traversal techniques!
 | **Tree Boundary Traversal** <br/> **OR** <br/> **Connect Nodes at Same Level** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1) / [Solve Now](https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level--170647/1) |  
 | **Sorted Linked List to BST** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1) |  
 
+# 🔺 **Heap Havoc**  
+Master the art of heaps with priority queues, min-heaps, and max-heaps!
+
+✨ **Days Covered:** **95**
+
+| 🗓️ **Day** | 🔗 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
+|------------|--------------------------|--------------|-----------------|  
+| Day 95      | k largest elements           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%201%20-%20k%20largest%20elements.md) |
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Height of Heap** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/height-of-heap5025/1) |  
+| **Minimum Cost of ropes** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1) |  
+| **Kth Largest in a Stream** <br/> **OR** <br/> **Merge k Sorted Arrays** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1) / [Solve Now](https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays--151335/1) |  
+| **Find median in a stream** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1) |  
 
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
