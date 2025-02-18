@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Lowest Common Ancestor in a BST](15(Feb)%20Lowest%20Common%20Ancestor%20in%20a%20BST.md)🌳🔍🤝
 - [Day 16: Serialize and deserialize a binary tree](16(Feb)%20Serialize%20and%20deserialize%20a%20binary%20tree.md)🌲📤💾
 - [Day 17: K Largest Elements](17(Feb)%20k%20largest%20elements.md)🔢📈🥇
+- [Day 18: K Closest Points to Origin](18(Feb)%20K%20Closest%20Points%20to%20Origin.md)📍🗺️🔢
   
 ## Introduction
 
@@ -61,3 +62,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 16(16 FEB) :* Serialize and deserialize a binary tree
 
 *Day 17(17 FEB) :* k largest elements
+
+*Day 18(18 FEB) :* K Closest Points to Origin
