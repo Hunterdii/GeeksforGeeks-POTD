@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 95/160 Problems 🎉  
-> **In Progress**: 65 Problems ⏳  
+> **Completed**: 96/160 Problems 🎉  
+> **In Progress**: 64 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | k largest elements 🔢📈🥇        |  | [Solution](Day%201%20-%20k%20largest%20elements.md#code-c) | [Solution](Day%201%20-%20k%20largest%20elements.md#code-java) | [Solution](Day%201%20-%20k%20largest%20elements.md#code-python) |
+| **Day 2**  | K Closest Points to Origin 📍🗺️🔢        |  | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-c) | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-java) | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
