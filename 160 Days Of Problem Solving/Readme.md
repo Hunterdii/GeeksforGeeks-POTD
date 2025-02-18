@@ -372,11 +372,12 @@ Explore the depths of tree data structures with powerful traversal techniques!
 # 🔺 **Heap Havoc**  
 Master the art of heaps with priority queues, min-heaps, and max-heaps!
 
-✨ **Days Covered:** **95**
+✨ **Days Covered:** **95 to 96**
 
 | 🗓️ **Day** | 🔗 **Problem**                           | 🌟 **Level**   | 📂 **Solution**                                    | 
 |------------|--------------------------|--------------|-----------------|  
 | Day 95      | k largest elements           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%201%20-%20k%20largest%20elements.md) |
+| Day 96      | K Closest Points to Origin           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%202%20-%20K%20Closest%20Points%20to%20Origin.md) |
 
 ### 📌 **Additional Challenges (From my side):**  
 
