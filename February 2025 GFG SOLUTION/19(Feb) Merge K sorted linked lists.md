@@ -199,8 +199,6 @@ class Solution {
 ## **Code (Python)**  
 
 ```python
-import heapq
-
 class Solution:
     def mergeKLists(self, lists):
         heap = [(node.data, i, node) for i, node in enumerate(lists) if node]
