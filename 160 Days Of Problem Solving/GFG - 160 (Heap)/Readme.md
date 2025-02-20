@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 97/160 Problems 🎉  
-> **In Progress**: 63 Problems ⏳  
+> **Completed**: 98/160 Problems 🎉  
+> **In Progress**: 62 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -45,6 +45,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 1**  | k largest elements 🔢📈🥇        |  | [Solution](Day%201%20-%20k%20largest%20elements.md#code-c) | [Solution](Day%201%20-%20k%20largest%20elements.md#code-java) | [Solution](Day%201%20-%20k%20largest%20elements.md#code-python) |
 | **Day 2**  | K Closest Points to Origin 📍🗺️🔢        |  | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-c) | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-java) | [Solution](Day%202%20-%20K%20Closest%20Points%20to%20Origin.md#code-python) |
 | **Day 3**  | Merge K sorted linked lists 🔗📄➡️        |  | [Solution](Day%203%20-%20Merge%20K%20sorted%20linked%20lists.md#code-c) | [Solution](Day%203%20-%20Merge%20K%20sorted%20linked%20lists.md#code-java) | [Solution](Day%203%20-%20Merge%20K%20sorted%20linked%20lists.md#code-python) |
+| **Day 4**  | Merge K sorted linked lists 📊⏳📈         |  | [Solution](Day%204%20-%20Find%20median%20in%20a%20stream.md#code-c) | [Solution](Day%204%20-%20Find%20median%20in%20a%20stream.md#code-java) | [Solution](Day%204%20-%20Find%20median%20in%20a%20stream.md#code-python) |
 
 
 ## **🤝 Contributing**
