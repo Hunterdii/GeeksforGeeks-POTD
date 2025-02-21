@@ -391,6 +391,27 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 | **Kth Largest in a Stream** <br/> **OR** <br/> **Merge k Sorted Arrays** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1) / [Solve Now](https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays--151335/1) |  
 | **Find median in a stream** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1) |  
 
+
+# 🏗️ **Stack Struggle**  
+Master the art of **stacks** with next greater elements, valid parentheses, and more!  
+
+✨ **Days Covered:** **99**  
+
+| 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|----------------------------------|--------------|-----------------|  
+| Day 99     | Parenthesis Checker     | Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%201%20-%20Parenthesis%20Checker.md) |  
+
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Preorder Traversal** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/preorder-traversal/1) |  
+| **Level Order in spiral form** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1) |  
+| **Get Min from Stack** <br/> **OR** <br/> **The Celebrity Problem** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/1) / [Solve Now](https://www.geeksforgeeks.org/problems/the-celebrity-problem/1) |  
+| **Max rectangle** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/max-rectangle/1) |  
+
+
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
