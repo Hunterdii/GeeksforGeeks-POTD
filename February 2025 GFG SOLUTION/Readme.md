@@ -25,7 +25,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: K Largest Elements](17(Feb)%20k%20largest%20elements.md)🔢📈🥇
 - [Day 18: K Closest Points to Origin](18(Feb)%20K%20Closest%20Points%20to%20Origin.md)📍🗺️🔢
 - [Day 19: Merge K sorted linked lists](19(Feb)%20Merge%20K%20sorted%20linked%20lists.md)🔗📄➡️
-- [Day 20: Find median in a stream](20(Feb)%20Find%20median%20in%20a%20stream.md)📊⏳📈 
+- [Day 20: Find median in a stream](20(Feb)%20Find%20median%20in%20a%20stream.md)📊⏳📈
+- [Day 21: Parenthesis Checker](21(Feb)%20Parenthesis%20Checker.md)🏗️✅🗄️
 
   
 ## Introduction
@@ -71,3 +72,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 19(19 FEB) :* Merge K sorted linked lists
 
 *Day 20(20 FEB) :* Find median in a stream
+
+*Day 21(21 FEB) :* Parenthesis Checker
