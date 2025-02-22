@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 99/160 Problems 🎉  
-> **In Progress**: 61 Problems ⏳  
+> **Completed**: 100/160 Problems 🎉  
+> **In Progress**: 60 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Parenthesis Checker 🏗️✅🗄️        |  | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-c) | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-java) | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-python) |
+| **Day 2**  | Longest valid Parentheses 🟰➡️🎭        |  | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-c) | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-java) | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-python) |
 
 
 ## **🤝 Contributing**
