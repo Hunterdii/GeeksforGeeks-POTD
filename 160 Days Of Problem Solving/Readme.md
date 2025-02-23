@@ -379,7 +379,7 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 | Day 95      | k largest elements           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%201%20-%20k%20largest%20elements.md) |
 | Day 96      | K Closest Points to Origin           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%202%20-%20K%20Closest%20Points%20to%20Origin.md) |
 | Day 97      | Merge K sorted linked lists           |   🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%203%20-%20Merge%20K%20sorted%20linked%20lists.md) |
-| Day 98      | Merge K sorted linked lists           |   🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%204%20-%20Find%20median%20in%20a%20stream.md) |
+| Day 98      | Find median in a stream           |   🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Heap)/Day%204%20-%20Find%20median%20in%20a%20stream.md) |
 
 
 ### 📌 **Additional Challenges (From my side):**  
@@ -395,12 +395,13 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 # 🏗️ **Stack Struggle**  
 Master the art of **stacks** with next greater elements, valid parentheses, and more!  
 
-✨ **Days Covered:** **99 to 100**  
+✨ **Days Covered:** **99 to 101**  
 
 | 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
 | Day 99     | Parenthesis Checker     | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%201%20-%20Parenthesis%20Checker.md) |  
 | Day 100     | Longest valid Parentheses     | 🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%202%20-%20Longest%20valid%20Parentheses.md) |  
+| Day 101     | Next Greater Element     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%203%20-%20Next%20Greater%20Element.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
