@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Find median in a stream](20(Feb)%20Find%20median%20in%20a%20stream.md)📊⏳📈
 - [Day 21: Parenthesis Checker](21(Feb)%20Parenthesis%20Checker.md)🏗️✅🗄️
 - [Day 22: Longest valid Parentheses](22(Feb)%20Longest%20valid%20Parentheses.md)🟰➡️🎭
+- [Day 23: Next Greater Element](23(Feb)%20Next%20Greater%20Element.md)➡️🔝🔍
 
   
 ## Introduction
@@ -77,3 +78,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 21(21 FEB) :* Parenthesis Checker
 
 *Day 22(22 FEB) :* Longest valid Parentheses
+
+*Day 23(23 FEB) :* Next Greater Element
