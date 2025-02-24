@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 101/160 Problems 🎉  
-> **In Progress**: 59 Problems ⏳  
+> **Completed**: 102/160 Problems 🎉  
+> **In Progress**: 58 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -45,6 +45,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 1**  | Parenthesis Checker 🏗️✅🗄️        |  | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-c) | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-java) | [Solution](Day%201%20-%20Parenthesis%20Checker.md#code-python) |
 | **Day 2**  | Longest valid Parentheses 🟰➡️🎭        |  | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-c) | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-java) | [Solution](Day%202%20-%20Longest%20valid%20Parentheses.md#code-python) |
 | **Day 3**  | Next Greater Element ➡️🔝🔍        |  | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-c) | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-java) | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-python) |
+| **Day 4**  | Stock span problem 💹⏳📋        |  | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-c) | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-java) | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-python) |
 
 
 ## **🤝 Contributing**
