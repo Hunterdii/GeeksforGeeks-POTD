@@ -395,13 +395,14 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 # 🏗️ **Stack Struggle**  
 Master the art of **stacks** with next greater elements, valid parentheses, and more!  
 
-✨ **Days Covered:** **99 to 101**  
+✨ **Days Covered:** **99 to 102**  
 
 | 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
 | Day 99     | Parenthesis Checker     | 🟢 Easy        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%201%20-%20Parenthesis%20Checker.md) |  
 | Day 100     | Longest valid Parentheses     | 🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%202%20-%20Longest%20valid%20Parentheses.md) |  
 | Day 101     | Next Greater Element     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%203%20-%20Next%20Greater%20Element.md) |  
+| Day 102     | Stock span problem     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%204%20-%20Stock%20span%20problem.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
