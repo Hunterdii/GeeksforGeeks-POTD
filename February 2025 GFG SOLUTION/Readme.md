@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Longest valid Parentheses](22(Feb)%20Longest%20valid%20Parentheses.md)🟰➡️🎭
 - [Day 23: Next Greater Element](23(Feb)%20Next%20Greater%20Element.md)➡️🔝🔍
 - [Day 24: Stock span problem](24(Feb)%20Stock%20span%20problem.md)💹⏳📋
+- [Day 25: Histogram Max Rectangular Area](25(Feb)%20Histogram%20Max%20Rectangular%20Area.md)📦🔲📐
 
   
 ## Introduction
@@ -83,3 +84,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 23(23 FEB) :* Next Greater Element
 
 *Day 24(24 FEB) :* Stock span problem
+
+*Day 25(25 FEB) :* Histogram Max Rectangular Area
