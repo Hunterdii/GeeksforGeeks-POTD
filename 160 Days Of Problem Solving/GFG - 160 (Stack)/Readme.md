@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 103/160 Problems 🎉  
-> **In Progress**: 57 Problems ⏳  
+> **Completed**: 104/160 Problems 🎉  
+> **In Progress**: 56 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -47,6 +47,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 3**  | Next Greater Element ➡️🔝🔍        |  | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-c) | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-java) | [Solution](Day%203%20-%20Next%20Greater%20Element.md#code-python) |
 | **Day 4**  | Stock span problem 💹⏳📋        |  | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-c) | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-java) | [Solution](Day%204%20-%20Stock%20span%20problem.md#code-python) |
 | **Day 5**  | Histogram Max Rectangular Area 📦🔲📐        |  | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-c) | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-java) | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-python) |
+| **Day 6**  | Maximum of minimum for every window size 📈🪟📉        |  | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-c) | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-java) | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-python) |
 
 
 ## **🤝 Contributing**
