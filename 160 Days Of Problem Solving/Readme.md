@@ -395,7 +395,7 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 # 🏗️ **Stack Struggle**  
 Master the art of **stacks** with next greater elements, valid parentheses, and more!  
 
-✨ **Days Covered:** **99 to 103**  
+✨ **Days Covered:** **99 to 104**  
 
 | 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -404,6 +404,7 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 | Day 101     | Next Greater Element     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%203%20-%20Next%20Greater%20Element.md) |  
 | Day 102     | Stock span problem     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%204%20-%20Stock%20span%20problem.md) |  
 | Day 103     | Histogram Max Rectangular Area     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md) |  
+| Day 104     | Maximum of minimum for every window size     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
