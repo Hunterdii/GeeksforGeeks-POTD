@@ -405,6 +405,7 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 | Day 102     | Stock span problem     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%204%20-%20Stock%20span%20problem.md) |  
 | Day 103     | Histogram Max Rectangular Area     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md) |  
 | Day 104     | Maximum of minimum for every window size     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md) |  
+| Day 105     | Get Min from Stack     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%207%20-%20Get%20Min%20from%20Stack.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
