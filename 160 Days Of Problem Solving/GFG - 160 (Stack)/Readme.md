@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 105/160 Problems 🎉  
-> **In Progress**: 55 Problems ⏳  
+> **Completed**: 106/160 Problems 🎉  
+> **In Progress**: 54 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -49,6 +49,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 5**  | Histogram Max Rectangular Area 📦🔲📐        |  | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-c) | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-java) | [Solution](Day%205%20-%20Histogram%20Max%20Rectangular%20Area.md#code-python) |
 | **Day 6**  | Maximum of minimum for every window size 📈🪟📉        |  | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-c) | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-java) | [Solution](Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md#code-python) |
 | **Day 7**  | Get Min from Stack 🔝📦🔽        |  | [Solution](Day%207%20-%20Get%20Min%20from%20Stack.md#code-c) | [Solution](Day%207%20-%20Get%20Min%20from%20Stack.md#code-java) | [Solution](Day%207%20-%20Get%20Min%20from%20Stack.md#code-python) |
+| **Day 8**  | Evaluation of Postfix Expression 📥✖️➗        |  | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-c) | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-java) | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-python) |
 
 
 ## **🤝 Contributing**
