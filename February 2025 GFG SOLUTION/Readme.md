@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Histogram Max Rectangular Area](25(Feb)%20Histogram%20Max%20Rectangular%20Area.md)📦🔲📐
 - [Day 26: Maximum of minimum for every window size](26(Feb)%20Maximum%20of%20minimum%20for%20every%20window%20size.md)📈🪟📉
 - [Day 27: Get Min from Stack](27(Feb)%20Get%20Min%20from%20Stack.md)🔝📦🔽
+- [Day 28: Evaluation of Postfix Expression](28(Feb)%20Evaluation%20of%20Postfix%20Expression.md)📥✖️➗
   
 ## Introduction
 
@@ -91,3 +92,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 26(26 FEB) :* Maximum of minimum for every window size
 
 *Day 27(27 FEB) :* Get Min from Stack
+
+*Day 28(28 FEB) :* Evaluation of Postfix Expression
