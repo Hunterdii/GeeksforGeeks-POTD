@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](/March%202025%20GFG%20SOLUTION)💡
-- [Day 1: Decode the string](01(MAR)%20Decode%20the%20string.md)🔍🔠🔓
+- [Day 1: Decode the string](01(Mar)%20Decode%20the%20string.md)🔍🔠🔓
   
 ## Introduction
 
