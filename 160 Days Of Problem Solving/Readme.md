@@ -395,7 +395,7 @@ Master the art of heaps with priority queues, min-heaps, and max-heaps!
 # 🏗️ **Stack Struggle**  
 Master the art of **stacks** with next greater elements, valid parentheses, and more!  
 
-✨ **Days Covered:** **99 to 106**  
+✨ **Days Covered:** **99 to 107**  
 
 | 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -407,7 +407,9 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 | Day 104     | Maximum of minimum for every window size     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md) |  
 | Day 105     | Get Min from Stack     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%207%20-%20Get%20Min%20from%20Stack.md) |  
 | Day 106     | Evaluation of Postfix Expression      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md) |  
+| * Day 107 *    | Decode the string      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%209%20-%20Decode%20the%20string.md) |  
 
+> **Note:** The sum for the **160-day challenge (Stack - Day 107: Decode the String)** is not displayed yet, but this problem is mostly the same as the one given on [**March 1**](https://www.geeksforgeeks.org/problems/decode-the-string2444/1) under the stack category.
 
 ### 📌 **Additional Challenges (From my side):**  
 
