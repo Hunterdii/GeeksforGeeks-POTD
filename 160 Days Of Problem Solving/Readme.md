@@ -407,9 +407,8 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 | Day 104     | Maximum of minimum for every window size     |  🔴 Hard        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%206%20-%20Maximum%20of%20minimum%20for%20every%20window%20size.md) |  
 | Day 105     | Get Min from Stack     |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%207%20-%20Get%20Min%20from%20Stack.md) |  
 | Day 106     | Evaluation of Postfix Expression      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md) |  
-| * Day 107 *    | Decode the string      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%209%20-%20Decode%20the%20string.md) |  
+| Day 107    | Decode the string      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Stack)/Day%209%20-%20Decode%20the%20string.md) |  
 
-> **Note:** The sum for the **160-day challenge (Stack - Day 107: Decode the String)** is not displayed yet, but this problem is mostly the same as the one given on [**March 1**](https://www.geeksforgeeks.org/problems/decode-the-string2444/1) under the stack category.
 
 ### 📌 **Additional Challenges (From my side):**  
 
@@ -419,6 +418,23 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 | **Level Order in spiral form** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1) |  
 | **Get Min from Stack** <br/> **OR** <br/> **The Celebrity Problem** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/1) / [Solve Now](https://www.geeksforgeeks.org/problems/the-celebrity-problem/1) |  
 | **Max rectangle** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/max-rectangle/1) |  
+
+# 🔃 **Queue Quest & Deque Duel**  
+Conquer **queues & deques** with problems on **first non-repeating characters, sliding windows, and more!**
+
+✨ **Days Covered:** **108**  
+
+| 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|----------------------------------|--------------|-----------------|  
+| Day 108    | K Sized Subarray Maximum      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Queue%20and%20Deque)/Day%201%20-%20K%20Sized%20Subarray%20Maximum.md) |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Queue Using Array** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/implement-queue-using-array/1) |  
+| **Level Order in spiral form** <br/> **OR** <br/> **Stack using two queues** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/queue-using-two-stacks/1) / [Solve Now](https://www.geeksforgeeks.org/problems/stack-using-two-queues/1) |  
+| **Subarrays Product Less than K** <br/> **OR** <br/> **Stream First Non-repeating** <br/> **OR** <br/> **Rotten Oranges** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1) / [Solve Now](https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1) / [Solve Now](https://www.geeksforgeeks.org/problems/rotten-oranges2536/1) |  
 
 
 ## 👤 Creator
