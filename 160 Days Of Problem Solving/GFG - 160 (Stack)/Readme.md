@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 106/160 Problems 🎉  
-> **In Progress**: 54 Problems ⏳  
+> **Completed**: 107/160 Problems 🎉  
+> **In Progress**: 53 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -52,7 +52,6 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 8**  | Evaluation of Postfix Expression 📥✖️➗        |  | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-c) | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-java) | [Solution](Day%208%20-%20Evaluation%20of%20Postfix%20Expression.md#code-python) |
 | * **Day 9**  * | Decode the string 🔍🔠🔓       |  | [Solution](Day%209%20-%20Decode%20the%20string.md#code-c) | [Solution](Day%209%20-%20Decode%20the%20string.md#code-java) | [Solution](Day%209%20-%20Decode%20the%20string.md#code-python) |
 
-> **Note:** The sum is not displayed yet for the 160-day challenge (**Stack - Day 9: Decode the String**), but this is mostly the same problem given for [**March 1**](https://www.geeksforgeeks.org/problems/decode-the-string2444/1) under the stack category.  
 
 
 ## **🤝 Contributing**
