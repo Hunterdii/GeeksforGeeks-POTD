@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](https://github.com/Hunterdii/GeeksforGeeks-POTD/blob/main/README.md)📝
 - [Solutions](/March%202025%20GFG%20SOLUTION)💡
 - [Day 1: Decode the string](01(Mar)%20Decode%20the%20string.md)🔍🔠🔓
+- [Day 2: K Sized Subarray Maximum](02(Mar)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
   
 ## Introduction
 
@@ -14,9 +15,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 1(01 MAR) :* Decode the string
 
-<!--*Day 2(02 MAR) :* 
+*Day 2(02 MAR) :* K Sized Subarray Maximum
 
-*Day 3(03 MAR) :* 
+<!--*Day 3(03 MAR) :* 
 
 *Day 4(04 MAR) :* 
 
