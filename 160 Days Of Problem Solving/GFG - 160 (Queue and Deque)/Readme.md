@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 106/160 Problems 🎉  
-> **In Progress**: 54 Problems ⏳  
+> **Completed**: 108/160 Problems 🎉  
+> **In Progress**: 52 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,7 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
-| **Day 1**  | K Sized Subarray Maximum 🔢🟩🔄        |  | [Solution](#code-c) | [Solution](#code-java) | [Solution](#code-python) |
+| **Day 1**  | K Sized Subarray Maximum 🔢🟩🔄        |  | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-c) | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-java) | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-python) |
 
 
 ## **🤝 Contributing**
