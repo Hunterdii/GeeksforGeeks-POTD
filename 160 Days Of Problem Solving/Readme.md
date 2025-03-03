@@ -422,11 +422,12 @@ Master the art of **stacks** with next greater elements, valid parentheses, and 
 # 🔃 **Queue Quest & Deque Duel**  
 Conquer **queues & deques** with problems on **first non-repeating characters, sliding windows, and more!**
 
-✨ **Days Covered:** **108**  
+✨ **Days Covered:** **108 to 109**  
 
 | 🗓️ **Day** | 🔗 **Problem**                      | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
 | Day 108    | K Sized Subarray Maximum      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Queue%20and%20Deque)/Day%201%20-%20K%20Sized%20Subarray%20Maximum.md) |  
+| Day 109    | Longest Bounded-Difference Subarray      |  🟡 Medium        | [Solved Check It Now!](./GFG%20-%20160%20(Queue%20and%20Deque)/Day%202%20-%20Longest%20Bounded-Difference%20Subarray.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
