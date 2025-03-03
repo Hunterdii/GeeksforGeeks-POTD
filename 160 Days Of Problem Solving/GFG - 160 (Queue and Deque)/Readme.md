@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 108/160 Problems 🎉  
-> **In Progress**: 52 Problems ⏳  
+> **Completed**: 109/160 Problems 🎉  
+> **In Progress**: 51 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | K Sized Subarray Maximum 🔢🟩🔄        |  | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-c) | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-java) | [Solution](Day%201%20-%20K%20Sized%20Subarray%20Maximum.md#code-python) |
+| **Day 2**  | Longest Bounded-Difference Subarray 📏🔢🟰        |  | [Solution](Day%202%20-%20Longest%20Bounded-Difference%20Subarray.md#code-c) | [Solution](Day%202%20-%20Longest%20Bounded-Difference%20Subarray.md#code-java) | [Solution](Day%202%20-%20Longest%20Bounded-Difference%20Subarray.md#code-python) |
 
 
 ## **🤝 Contributing**
