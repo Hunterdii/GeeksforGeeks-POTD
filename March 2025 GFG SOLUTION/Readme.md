@@ -9,7 +9,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: Decode the string](01(Mar)%20Decode%20the%20string.md)🔍🔠🔓
 - [Day 2: K Sized Subarray Maximum](02(Mar)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
 - [Day 3: Longest Bounded-Difference Subarray](03(Mar)%20Longest%20Bounded-Difference%20Subarray.md)📏🔢🟰
-  
+- [Day 4: Longest Increasing Subsequence](04(Mar)%20Longest%20Increasing%20Subsequence.md)🔝📈🧩
+
+
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
@@ -20,9 +22,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 3(03 MAR) :* Longest Bounded-Difference Subarray 
 
-<!--*Day 4(04 MAR) :* 
+*Day 4(04 MAR) :* Longest Increasing Subsequence
 
-*Day 5(05 MAR) :* 
+<!--*Day 5(05 MAR) :* 
 
 *Day 6(06 MAR) :* 
 
