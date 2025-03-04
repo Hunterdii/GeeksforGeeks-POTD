@@ -41,7 +41,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
-| **Day 1**  | Longest Increasing Subsequence 🔝📈🧩        |  | [Solution](#code-c) | [Solution](#code-java) | [Solution](#code-python) |
+| **Day 1**  | Longest Increasing Subsequence 🔝📈🧩        |  | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-c) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-java) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-python) |
 
 
 ## **🤝 Contributing**
