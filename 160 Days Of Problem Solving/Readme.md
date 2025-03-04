@@ -438,6 +438,25 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 | **Subarrays Product Less than K** <br/> **OR** <br/> **Stream First Non-repeating** <br/> **OR** <br/> **Rotten Oranges** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1) / [Solve Now](https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1) / [Solve Now](https://www.geeksforgeeks.org/problems/rotten-oranges2536/1) |  
 
 
+# 🧵 **Dynamic Programming Dojo**  
+Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
+
+✨ **Days Covered:** **110**  
+
+| 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|----------------------------------|--------------|-----------------|  
+| Day 110    | Longest Increasing Subsequence 📈  | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%201%20-%20Longest%20Increasing%20Subsequence.md) |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Sum Except First and Last** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/max-length-chain/1) |  
+| **Count all possible paths from top left to bottom right** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/count-all-possible-paths-from-top-left-to-bottom-right3011/1) |  
+| **Egg Dropping Puzzle** <br/> **OR** <br/> **Stock buy and sell** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1) / [Solve Now](https://www.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1) |  
+| **The Painter's Partition Problem-II** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1) |  
+
+
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
