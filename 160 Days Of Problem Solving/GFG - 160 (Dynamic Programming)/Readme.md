@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 110/160 Problems 🎉  
-> **In Progress**: 50 Problems ⏳  
+> **Completed**: 111/160 Problems 🎉  
+> **In Progress**: 49 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Longest Increasing Subsequence 🔝📈🧩        |  | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-c) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-java) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-python) |
+| **Day 2**  | Longest String Chain 🔗⛓️🔠        |  | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-c) | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-java) | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-python) |
 
 
 ## **🤝 Contributing**
