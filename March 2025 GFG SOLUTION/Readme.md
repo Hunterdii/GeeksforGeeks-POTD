@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: K Sized Subarray Maximum](02(Mar)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
 - [Day 3: Longest Bounded-Difference Subarray](03(Mar)%20Longest%20Bounded-Difference%20Subarray.md)📏🔢🟰
 - [Day 4: Longest Increasing Subsequence](04(Mar)%20Longest%20Increasing%20Subsequence.md)🔝📈🧩
+- [Day 5: Longest String Chain](05(Mar)%20Longest%20String%20Chain.md)🔗⛓️🔠
 
 
 ## Introduction
@@ -24,9 +25,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 MAR) :* Longest Increasing Subsequence
 
-<!--*Day 5(05 MAR) :* 
+*Day 5(05 MAR) :* Longest String Chain
 
-*Day 6(06 MAR) :* 
+<!--*Day 6(06 MAR) :* 
 
 *Day 7(07 MAR) :* 
 
