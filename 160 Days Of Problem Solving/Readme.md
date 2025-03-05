@@ -441,11 +441,12 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110**  
+✨ **Days Covered:** **110 to 111**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
-| Day 110    | Longest Increasing Subsequence 📈  | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%201%20-%20Longest%20Increasing%20Subsequence.md) |  
+| Day 110    | Longest Increasing Subsequence   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%201%20-%20Longest%20Increasing%20Subsequence.md) |  
+| Day 111    | Longest String Chain   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%202%20-%20Longest%20String%20Chain.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
