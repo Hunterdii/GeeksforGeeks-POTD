@@ -81,6 +81,8 @@ The longest palindromic subsequence is `"abdba"`, which has a length of **5**.
 
 ## 📝 **Solution Code**
 
+## **Code (C++)**
+
 ```cpp
 class Solution {
 public:
