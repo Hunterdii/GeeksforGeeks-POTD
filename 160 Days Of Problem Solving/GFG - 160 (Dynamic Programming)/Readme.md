@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 112/160 Problems 🎉  
-> **In Progress**: 48 Problems ⏳  
+> **Completed**: 113/160 Problems 🎉  
+> **In Progress**: 47 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -44,6 +44,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 1**  | Longest Increasing Subsequence 🔝📈🧩        |  | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-c) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-java) | [Solution](Day%201%20-%20Longest%20Increasing%20Subsequence.md#code-python) |
 | **Day 2**  | Longest String Chain 🔗⛓️🔠        |  | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-c) | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-java) | [Solution](Day%202%20-%20Longest%20String%20Chain.md#code-python) |
 | **Day 3**  | Longest Common Subsequence 📏✂️📚        |  | [Solution](Day%203%20-%20Longest%20Common%20Subsequence.md#code-c) | [Solution](Day%203%20-%20Longest%20Common%20Subsequence.md#code-java) | [Solution](Day%203%20-%20Longest%20Common%20Subsequence.md#code-python) |
+| **Day 4**  | Longest Palindromic Subsequence 🔁💫🔬        |  | [Solution](Day%204%20-%20Longest%20Palindromic%20Subsequence.md#code-c) | [Solution](Day%204%20-%20Longest%20Palindromic%20Subsequence.md#code-java) | [Solution](Day%204%20-%20Longest%20Palindromic%20Subsequence.md#code-python) |
 
 
 ## **🤝 Contributing**
