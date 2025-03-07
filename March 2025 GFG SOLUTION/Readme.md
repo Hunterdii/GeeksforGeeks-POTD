@@ -11,6 +11,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: Longest Bounded-Difference Subarray](03(Mar)%20Longest%20Bounded-Difference%20Subarray.md)📏🔢🟰
 - [Day 4: Longest Increasing Subsequence](04(Mar)%20Longest%20Increasing%20Subsequence.md)🔝📈🧩
 - [Day 5: Longest String Chain](05(Mar)%20Longest%20String%20Chain.md)🔗⛓️🔠
+- [Day 6: Longest Common Subsequence](06(Mar)%20Longest%20Common%20Subsequence.md)📏✂️📚
+- [Day 7: Longest Palindromic Subsequence](07(Mar)%20Longest%20Palindromic%20Subsequence.md)🔁💫🔬
 
 
 ## Introduction
@@ -27,11 +29,11 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 5(05 MAR) :* Longest String Chain
 
-<!--*Day 6(06 MAR) :* 
+*Day 6(06 MAR) :* Longest Common Subsequence 
 
-*Day 7(07 MAR) :* 
+*Day 7(07 MAR) :* Longest Palindromic Subsequence
 
-*Day 8(08 MAR) :* 
+<!--*Day 8(08 MAR) :* 
 
 *Day 9(09 MAR) :* 
 
