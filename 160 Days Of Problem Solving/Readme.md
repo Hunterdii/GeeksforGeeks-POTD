@@ -441,7 +441,7 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110 to 113**  
+✨ **Days Covered:** **110 to 114**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -449,6 +449,7 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 111    | Longest String Chain   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%202%20-%20Longest%20String%20Chain.md) |  
 | Day 112    | Longest Common Subsequence   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%203%20-%20Longest%20Common%20Subsequence.md) |  
 | Day 113    | Longest Palindromic Subsequence   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%204%20-%20Longest%20Palindromic%20Subsequence.md) |  
+| Day 114    | Longest Palindrome in a String   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%205%20-%20Longest%20Palindrome%20in%20a%20String.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
