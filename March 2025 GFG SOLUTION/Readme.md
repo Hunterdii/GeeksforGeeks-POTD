@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Longest Common Subsequence](06(Mar)%20Longest%20Common%20Subsequence.md)📏✂️📚
 - [Day 7: Longest Palindromic Subsequence](07(Mar)%20Longest%20Palindromic%20Subsequence.md)🔁💫🔬
 - [Day 8: Longest Palindrome in a String](08(Mar)%20Longest%20Palindrome%20in%20a%20String.md)🔠📏🔄
+- [Day 9: Palindrome SubStrings](09(Mar)%20Palindrome%20SubStrings.md)📜🔄🔢
 
 
 ## Introduction
@@ -36,9 +37,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 8(08 MAR) :* Longest Palindrome in a String
 
-<!--*Day 9(09 MAR) :* 
+*Day 9(09 MAR) :* Palindrome SubStrings 
 
-*Day 10(10 MAR) :* 
+<!--*Day 10(10 MAR) :* 
 
 *Day 11(11 MAR) :* 
 
