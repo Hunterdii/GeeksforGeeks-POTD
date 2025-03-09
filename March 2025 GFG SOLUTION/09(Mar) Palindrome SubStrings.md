@@ -1,4 +1,4 @@
-# *9. Palindromic Substrings*
+# *9. Palindrome SubStrings*
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string0652/1)
 
