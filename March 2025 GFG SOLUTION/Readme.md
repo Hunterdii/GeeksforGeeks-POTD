@@ -16,6 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Longest Palindrome in a String](08(Mar)%20Longest%20Palindrome%20in%20a%20String.md)🔠📏🔄
 - [Day 9: Palindrome SubStrings](09(Mar)%20Palindrome%20SubStrings.md)📜🔄🔢
 - [Day 10: Edit Distance](10(Mar)%20Edit%20Distance.md)✂️🧮🔢
+- [Day 11: Ways to Reach the n'th Stair](11(Mar)%20Ways%20to%20Reach%20the%20n'th%20Stair.md)➡️🏃‍♂️🔢
 
 
 ## Introduction
@@ -42,9 +43,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 10(10 MAR) :* Edit Distance
 
-<!--*Day 11(11 MAR) :* 
+*Day 11(11 MAR) :* Ways to Reach the n'th Stair
 
-*Day 12(12 MAR) :* 
+<!--*Day 12(12 MAR) :* 
 
 *Day 13(13 MAR) :* 
 
