@@ -17,6 +17,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Palindrome SubStrings](09(Mar)%20Palindrome%20SubStrings.md)📜🔄🔢
 - [Day 10: Edit Distance](10(Mar)%20Edit%20Distance.md)✂️🧮🔢
 - [Day 11: Ways to Reach the n'th Stair](11(Mar)%20Ways%20to%20Reach%20the%20n'th%20Stair.md)➡️🏃‍♂️🔢
+- [Day 12: Min Cost Climbing Stairs](12(Mar)%20Min%20Cost%20Climbing%20Stairs.md)🏃‍♂️💰🔝
+
 
 
 ## Introduction
@@ -45,9 +47,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 11(11 MAR) :* Ways to Reach the n'th Stair
 
-<!--*Day 12(12 MAR) :* 
+*Day 12(12 MAR) :* Min Cost Climbing Stairs
 
-*Day 13(13 MAR) :* 
+<!--*Day 13(13 MAR) :* 
 
 *Day 14(14 MAR) :* 
 
