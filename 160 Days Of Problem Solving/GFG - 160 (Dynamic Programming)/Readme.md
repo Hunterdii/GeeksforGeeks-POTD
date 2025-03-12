@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 117/160 Problems 🎉  
-> **In Progress**: 43 Problems ⏳  
+> **Completed**: 118/160 Problems 🎉  
+> **In Progress**: 42 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -49,6 +49,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 6**  | Palindrome SubStrings 📜🔄🔢        |  | [Solution](Day%206%20-%20Palindrome%20SubStrings.md#code-c) | [Solution](Day%206%20-%20Palindrome%20SubStrings.md#code-java-1) | [Solution](Day%206%20-%20Palindrome%20SubStrings.md#code-python-1) |
 | **Day 7**  | Edit Distance ✂️🧮🔢        |  | [Solution](Day%207%20-%20Edit%20Distance.md#code-c) | [Solution](Day%207%20-%20Edit%20Distance.md#code-java) | [Solution](Day%207%20-%20Edit%20Distance.md#code-python) |
 | **Day 8**  | Ways to Reach the n'th Stair ➡️🏃‍♂️🔢        |  | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-c) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-java) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-python) |
+| **Day 9**  | Min Cost Climbing Stairs 🏃‍♂️💰🔝        |  | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-c) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-java) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-python) |
 
 
 ## **🤝 Contributing**
