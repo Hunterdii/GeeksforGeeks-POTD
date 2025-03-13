@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Edit Distance](10(Mar)%20Edit%20Distance.md)✂️🧮🔢
 - [Day 11: Ways to Reach the n'th Stair](11(Mar)%20Ways%20to%20Reach%20the%20n'th%20Stair.md)➡️🏃‍♂️🔢
 - [Day 12: Min Cost Climbing Stairs](12(Mar)%20Min%20Cost%20Climbing%20Stairs.md)🏃‍♂️💰🔝
+- [Day 13: 0 - 1 Knapsack Problem](13(Mar)%200%20-%201%20Knapsack%20Problem.md)🎒💰🔢
 
 
 
@@ -49,9 +50,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 12(12 MAR) :* Min Cost Climbing Stairs
 
-<!--*Day 13(13 MAR) :* 
+*Day 13(13 MAR) :* 0 - 1 Knapsack Problem
 
-*Day 14(14 MAR) :* 
+<!--*Day 14(14 MAR) :* 
 
 *Day 15(15 MAR) :* 
 
