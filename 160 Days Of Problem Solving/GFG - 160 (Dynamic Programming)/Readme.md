@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 118/160 Problems 🎉  
-> **In Progress**: 42 Problems ⏳  
+> **Completed**: 119/160 Problems 🎉  
+> **In Progress**: 41 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -50,6 +50,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 7**  | Edit Distance ✂️🧮🔢        |  | [Solution](Day%207%20-%20Edit%20Distance.md#code-c) | [Solution](Day%207%20-%20Edit%20Distance.md#code-java) | [Solution](Day%207%20-%20Edit%20Distance.md#code-python) |
 | **Day 8**  | Ways to Reach the n'th Stair ➡️🏃‍♂️🔢        |  | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-c) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-java) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-python) |
 | **Day 9**  | Min Cost Climbing Stairs 🏃‍♂️💰🔝        |  | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-c) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-java) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-python) |
+| **Day 10**  | 0 - 1 Knapsack Problem 🎒💰🔢        |  | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-c) | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-java) | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-python) |
 
 
 ## **🤝 Contributing**
