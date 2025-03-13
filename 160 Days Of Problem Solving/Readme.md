@@ -441,7 +441,7 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110 to 118**  
+✨ **Days Covered:** **110 to 119**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -454,6 +454,7 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 116    | Edit Distance   | 🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%207%20-%20Edit%20Distance.md) |  
 | Day 117    | Ways to Reach the n'th Stair   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md) |  
 | Day 118    | Min Cost Climbing Stairs   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md) |  
+| Day 119    | 0 - 1 Knapsack Problem   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2010%20-%200%20-%201%20Knapsack%20Problem.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
