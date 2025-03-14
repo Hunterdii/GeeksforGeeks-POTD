@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 11: Ways to Reach the n'th Stair](11(Mar)%20Ways%20to%20Reach%20the%20n'th%20Stair.md)➡️🏃‍♂️🔢
 - [Day 12: Min Cost Climbing Stairs](12(Mar)%20Min%20Cost%20Climbing%20Stairs.md)🏃‍♂️💰🔝
 - [Day 13: 0 - 1 Knapsack Problem](13(Mar)%200%20-%201%20Knapsack%20Problem.md)🎒💰🔢
+- [Day 14: Coin Change (Count Ways)](14(Mar)%20Coin%20Change%20(Count%20Ways).md)🪙🔢💰
 
 
 
@@ -52,9 +53,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 13(13 MAR) :* 0 - 1 Knapsack Problem
 
-<!--*Day 14(14 MAR) :* 
+*Day 14(14 MAR) :* Coin Change (Count Ways)
 
-*Day 15(15 MAR) :* 
+<!--*Day 15(15 MAR) :* 
 
 *Day 16(16 MAR) :* 
 
