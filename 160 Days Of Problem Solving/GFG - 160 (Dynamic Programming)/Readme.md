@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 119/160 Problems 🎉  
-> **In Progress**: 41 Problems ⏳  
+> **Completed**: 120/160 Problems 🎉  
+> **In Progress**: 40 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -51,6 +51,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 8**  | Ways to Reach the n'th Stair ➡️🏃‍♂️🔢        |  | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-c) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-java) | [Solution](Day%208%20-%20Ways%20to%20Reach%20the%20n'th%20Stair.md#code-python) |
 | **Day 9**  | Min Cost Climbing Stairs 🏃‍♂️💰🔝        |  | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-c) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-java) | [Solution](Day%209%20-%20Min%20Cost%20Climbing%20Stairs.md#code-python) |
 | **Day 10**  | 0 - 1 Knapsack Problem 🎒💰🔢        |  | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-c) | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-java) | [Solution](Day%2010%20-%200%20-%201%20Knapsack%20Problem.md#code-python) |
+| **Day 11**  | Coin Change (Count Ways) 🪙🔢💰        |  | [Solution](Day%2011%20-%20Coin%20Change%20(Count%20Ways).md#code-c) | [Solution](Day%2011%20-%20Coin%20Change%20(Count%20Ways).md#code-java) | [Solution](Day%2011%20-%20Coin%20Change%20(Count%20Ways).md#code-python) |
 
 
 ## **🤝 Contributing**
