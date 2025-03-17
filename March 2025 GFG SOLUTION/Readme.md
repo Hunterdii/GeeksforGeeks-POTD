@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Coin Change (Count Ways)](14(Mar)%20Coin%20Change%20(Count%20Ways).md)🪙🔢💰
 - [Day 15: Coin Change (Minimum Coins)](15(Mar)%20Coin%20Change%20(Minimum%20Coins).md)🪙📉💰
 - [Day 16: Minimum Jumps](16(Mar)%20Minimum%20Jumps.md)🏃‍♂️💨➡️
+- [Day 17: Subset Sum Problem](17(Mar)%20Subset%20Sum%20Problem.md) 🎯🔢✅
 
 
 
@@ -61,9 +62,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 16(16 MAR) :* Minimum Jumps
 
-<!--*Day 17(17 MAR) :* 
+*Day 17(17 MAR) :* Subset Sum Problem 
 
-*Day 18(18 MAR) :* 
+<!--*Day 18(18 MAR) :* 
 
 *Day 19(19 MAR) :* 
 
