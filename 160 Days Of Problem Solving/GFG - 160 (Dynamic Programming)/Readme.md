@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 123/160 Problems 🎉  
-> **In Progress**: 37 Problems ⏳  
+> **Completed**: 124/160 Problems 🎉  
+> **In Progress**: 36 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -55,6 +55,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 12**  | Coin Change (Minimum Coins) 🪙📉💰        |  | [Solution](Day%2012%20-%20Coin%20Change%20(Minimum%20Coins).md#code-c) | [Solution](Day%2012%20-%20Coin%20Change%20(Minimum%20Coins).md#code-java) | [Solution](Day%2012%20-%20Coin%20Change%20(Minimum%20Coins).md#code-python) |
 | **Day 13**  | Minimum Jumps 🏃‍♂️💨➡️        |  | [Solution](Day%2013%20-%20Minimum%20Jumps.md#code-c) | [Solution](Day%2013%20-%20Minimum%20Jumps.md#code-java) | [Solution](Day%2013%20-%20Minimum%20Jumps.md#code-python) |
 | **Day 14**  | Subset Sum Problem 🎯🔢✅        |  | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-c) | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-java) | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-python) |
+| **Day 15**  | Partition Equal Subset Sum ➗🔢❌        |  | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-c) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-java) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-python) |
 
 
 ## **🤝 Contributing**
