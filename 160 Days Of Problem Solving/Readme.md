@@ -441,7 +441,7 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110 to 123**  
+✨ **Days Covered:** **110 to 124**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -458,7 +458,8 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 120    | Coin Change (Count Ways)   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2011%20-%20Coin%20Change%20(Count%20Ways).md) |  
 | Day 121    | Coin Change (Minimum Coins)   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2012%20-%20Coin%20Change%20(Minimum%20Coins).md) |  
 | Day 122    | Minimum Jumps   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2013%20-%20Minimum%20Jumps.md) |  
-| Day 123    | Minimum Jumps   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2014%20-%20Subset%20Sum%20Problem.md) |  
+| Day 123    | Subset Sum Problem   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2014%20-%20Subset%20Sum%20Problem.md) |
+| Day 124    | Partition Equal Subset Sum   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
