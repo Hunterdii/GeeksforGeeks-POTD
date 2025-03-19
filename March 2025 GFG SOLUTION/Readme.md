@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Minimum Jumps](16(Mar)%20Minimum%20Jumps.md)🏃‍♂️💨➡️
 - [Day 17: Subset Sum Problem](17(Mar)%20Subset%20Sum%20Problem.md)🎯🔢✅
 - [Day 18: Partition Equal Subset Sum](18(Mar)%20Partition%20Equal%20Subset%20Sum.md)➗🔢❌
+- [Day 19: Stock Buy and Sell – Max K Transactions Allowed](19(Mar)%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md)💰💵🛒
 
 
 
@@ -67,9 +68,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 MAR) :* Partition Equal Subset Sum 
 
-<!--*Day 19(19 MAR) :* 
+*Day 19(19 MAR) :* Stock Buy and Sell – Max K Transactions Allowed
 
-*Day 20(20 MAR) :* 
+<!--*Day 20(20 MAR) :* 
 
 *Day 21(21 MAR) :* 
 
