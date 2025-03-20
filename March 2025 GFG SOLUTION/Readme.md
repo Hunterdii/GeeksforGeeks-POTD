@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: Subset Sum Problem](17(Mar)%20Subset%20Sum%20Problem.md)🎯🔢✅
 - [Day 18: Partition Equal Subset Sum](18(Mar)%20Partition%20Equal%20Subset%20Sum.md)➗🔢❌
 - [Day 19: Stock Buy and Sell – Max K Transactions Allowed](19(Mar)%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md)💰💵🛒
+- [Day 20: Stock Buy and Sell – Max 2 Transactions Allowed](20(Mar)%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md)💰💹💵
 
 
 
@@ -70,9 +71,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 19(19 MAR) :* Stock Buy and Sell – Max K Transactions Allowed
 
-<!--*Day 20(20 MAR) :* 
+*Day 20(20 MAR) :* Stock Buy and Sell – Max 2 Transactions Allowed 
 
-*Day 21(21 MAR) :* 
+<!--*Day 21(21 MAR) :* 
 
 *Day 22(22 MAR) :* 
 
