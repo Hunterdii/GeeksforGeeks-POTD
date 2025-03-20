@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 125/160 Problems 🎉  
-> **In Progress**: 35 Problems ⏳  
+> **Completed**: 126/160 Problems 🎉  
+> **In Progress**: 34 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -57,6 +57,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 14**  | Subset Sum Problem 🎯🔢✅        |  | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-c) | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-java) | [Solution](Day%2014%20-%20Subset%20Sum%20Problem.md#code-python) |
 | **Day 15**  | Partition Equal Subset Sum ➗🔢❌        |  | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-c) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-java) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-python) |
 | **Day 16**  | Stock Buy and Sell – Max K Transactions Allowed 💰💵🛒        |  | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-c) | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-java) | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-python) |
+| **Day 17**  | Stock Buy and Sell – Max 2 Transactions Allowed 💰💹💵        |  | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-c) | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-java) | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-python) |
 
 
 ## **🤝 Contributing**
