@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 126/160 Problems 🎉  
-> **In Progress**: 34 Problems ⏳  
+> **Completed**: 127/160 Problems 🎉  
+> **In Progress**: 33 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -58,6 +58,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 15**  | Partition Equal Subset Sum ➗🔢❌        |  | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-c) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-java) | [Solution](Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md#code-python) |
 | **Day 16**  | Stock Buy and Sell – Max K Transactions Allowed 💰💵🛒        |  | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-c) | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-java) | [Solution](Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md#code-python) |
 | **Day 17**  | Stock Buy and Sell – Max 2 Transactions Allowed 💰💹💵        |  | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-c) | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-java) | [Solution](Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md#code-python) |
+| **Day 18**  | Stickler Thief 🦹‍♂️🏠🚔        |  | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-c) | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-java) | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-python) |
 
 
 ## **🤝 Contributing**
