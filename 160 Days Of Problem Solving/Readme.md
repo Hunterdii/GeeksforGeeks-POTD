@@ -462,6 +462,7 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 124    | Partition Equal Subset Sum   | 🟡 Medium     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2015%20-%20Partition%20Equal%20Subset%20Sum.md) |  
 | Day 125    | Stock Buy and Sell – Max K Transactions Allowed   |  🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2016%20-%20Stock%20Buy%20and%20Sell%20–%20Max%20K%20Transactions%20Allowed.md) |  
 | Day 126    | Stock Buy and Sell – Max 2 Transactions Allowed   |  🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md) |  
+| Day 127    | Stickler Thief   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2018%20-%20Stickler%20Thief.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
