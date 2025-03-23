@@ -85,6 +85,7 @@ digits = "05"
 - **Expected Auxiliary Space Complexity:** O(1), since we use only two variables.  
 
 
+## **Code (C++)**  
 
 ```cpp
 class Solution {
@@ -150,7 +151,6 @@ public:
   - Decode `s[i]` alone (`countWays(i+1)`).  
   - Decode `s[i]s[i+1]` if valid (`countWays(i+2)`).  
 
-### **Code (C++)**  
 
 ```cpp
 class Solution {
