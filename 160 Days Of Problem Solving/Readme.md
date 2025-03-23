@@ -441,7 +441,7 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110 to 128**  
+✨ **Days Covered:** **110 to 129**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -464,6 +464,7 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 126    | Stock Buy and Sell – Max 2 Transactions Allowed   |  🔴 Hard     | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2017%20-%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md) |  
 | Day 127    | Stickler Thief   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2018%20-%20Stickler%20Thief.md) |  
 | Day 128    | Stickler Thief II   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2019%20-%20Stickler%20Thief%20II.md) |  
+| Day 129    | Total Decoding Messages   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2020%20-%20Total%20Decoding%20Messages.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
