@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Stock Buy and Sell – Max 2 Transactions Allowed](20(Mar)%20Stock%20Buy%20and%20Sell%20–%20Max%202%20Transactions%20Allowed.md)💰💹💵
 - [Day 21: Stickler Thief](21(Mar)%20Stickler%20Thief.md)🦹‍♂️🏠🚔
 - [Day 22: Stickler Thief II](22(Mar)%20Stickler%20Thief%20II.md)🦹‍♂️🏠💰
+- [Day 23: Total Decoding Messages](23(Mar)%20Total%20Decoding%20Messages.md)🔢➡️🔡	
 
 
 
@@ -79,9 +80,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 22(22 MAR) :* Stickler Thief II 
 
-<!--*Day 23(23 MAR) :* 
+*Day 23(23 MAR) :* Total Decoding Messages
 
-*Day 24(24 MAR) :* 
+<!--*Day 24(24 MAR) :* 
 
 *Day 25(25 MAR) :* 
 
