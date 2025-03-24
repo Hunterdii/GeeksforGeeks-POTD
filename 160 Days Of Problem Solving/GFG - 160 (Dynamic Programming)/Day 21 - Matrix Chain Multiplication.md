@@ -184,7 +184,7 @@ public:
 - If **you need recursion**, use **Memoized DP** (`O(N³) Time, O(N²) Space`).  
 </details>
   
-## **Java**
+## **Code (Java)** 
 ```java
 class Solution {
     static int matrixMultiplication(int[] arr) {
@@ -201,7 +201,8 @@ class Solution {
     }
 }
 ```
-## **Python**
+## **Code (Python)**
+
 ```python
 class Solution:
     def matrixMultiplication(self, arr):
