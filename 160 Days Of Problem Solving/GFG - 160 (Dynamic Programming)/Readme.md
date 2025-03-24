@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 129/160 Problems 🎉  
-> **In Progress**: 31 Problems ⏳  
+> **Completed**: 130/160 Problems 🎉  
+> **In Progress**: 30 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -61,6 +61,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 18**  | Stickler Thief 🦹‍♂️🏠🚔        |  | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-c) | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-java) | [Solution](Day%2018%20-%20Stickler%20Thief.md#code-python) |
 | **Day 19**  | Stickler Thief II 🦹‍♂️🏠💰	        |  | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-c) | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-java) | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-python) |
 | **Day 20**  | Total Decoding Messages 🔢➡️🔡		        |  | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-c) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-java) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-python) |
+| **Day 21**  | Matrix Chain Multiplication ➗📈🔢		        |  | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-c) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-java) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-python) |
 
 
 ## **🤝 Contributing**
