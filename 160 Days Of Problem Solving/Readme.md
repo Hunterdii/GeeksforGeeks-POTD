@@ -441,7 +441,7 @@ Conquer **queues & deques** with problems on **first non-repeating characters, s
 # 🧵 **Dynamic Programming Dojo**  
 Master the art of **optimal subproblems, overlapping solutions & memoized magic!** 🧠💻  
 
-✨ **Days Covered:** **110 to 130**  
+✨ **Days Covered:** **110 to 131**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
@@ -466,6 +466,7 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | Day 128    | Stickler Thief II   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2019%20-%20Stickler%20Thief%20II.md) |  
 | Day 129    | Total Decoding Messages   |  🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2020%20-%20Total%20Decoding%20Messages.md) |  
 | Day 130    | Matrix Chain Multiplication |  🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2021%20-%20Matrix%20Chain%20Multiplication.md) |
+| Day 131    | Boolean Parenthesization |  🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Dynamic%20Programming)/Day%2022%20-%20Boolean%20Parenthesization.md) |
 
 ### 📌 **Additional Challenges (From my side):**  
 
