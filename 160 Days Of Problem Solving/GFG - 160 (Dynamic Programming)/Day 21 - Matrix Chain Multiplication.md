@@ -1,5 +1,5 @@
 ---
-Difficulty: Medium  
+Difficulty: Hard  
 Source: 160 Days of Problem Solving  
 Tags:
   - Dynamic Programming
@@ -9,7 +9,7 @@ Tags:
 # 🚀 _Day 21. Matrix Chain Multiplication_ 🧠
 
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1)
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/matrix-chain-multiplication0303)
 
 ## 💡 **Problem Description:** 
 
