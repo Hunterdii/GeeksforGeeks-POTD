@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 130/160 Problems 🎉  
-> **In Progress**: 30 Problems ⏳  
+> **Completed**: 131/160 Problems 🎉  
+> **In Progress**: 29 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -62,6 +62,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 19**  | Stickler Thief II 🦹‍♂️🏠💰	        |  | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-c) | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-java) | [Solution](Day%2019%20-%20Stickler%20Thief%20II.md#code-python) |
 | **Day 20**  | Total Decoding Messages 🔢➡️🔡		        |  | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-c) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-java) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-python) |
 | **Day 21**  | Matrix Chain Multiplication ➗📈🔢		        |  | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-c) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-java) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-python) |
+| **Day 22**  | Boolean Parenthesization 🧮✅❌	        |  | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-c) | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-java) | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-python) |
 
 
 ## **🤝 Contributing**
