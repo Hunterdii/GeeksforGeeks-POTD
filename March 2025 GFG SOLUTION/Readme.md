@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Stickler Thief II](22(Mar)%20Stickler%20Thief%20II.md)🦹‍♂️🏠💰
 - [Day 23: Total Decoding Messages](23(Mar)%20Total%20Decoding%20Messages.md)🔢➡️🔡
 - [Day 24: Matrix Chain Multiplication](24(Mar)%20Matrix%20Chain%20Multiplication.md)➗📈🔢
+- [Day 25: Boolean Parenthesization](25(Mar)%20Boolean%20Parenthesization.md)🧮✅❌
 
 
 
@@ -85,9 +86,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 24(24 MAR) :* Matrix Chain Multiplication
 
-<!--*Day 25(25 MAR) :* 
+*Day 25(25 MAR) :* Boolean Parenthesization
 
-*Day 26(26 MAR) :* 
+<!--*Day 26(26 MAR) :* 
 
 *Day 27(27 MAR) :* 
 
