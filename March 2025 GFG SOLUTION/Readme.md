@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Total Decoding Messages](23(Mar)%20Total%20Decoding%20Messages.md)🔢➡️🔡
 - [Day 24: Matrix Chain Multiplication](24(Mar)%20Matrix%20Chain%20Multiplication.md)➗📈🔢
 - [Day 25: Boolean Parenthesization](25(Mar)%20Boolean%20Parenthesization.md)🧮✅❌
+- [Day 26: Word Break](26(Mar)%20Word%20Break.md)📖✂️🚀
 
 
 
@@ -88,8 +89,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 MAR) :* Boolean Parenthesization
 
-<!--*Day 26(26 MAR) :* 
+*Day 26(26 MAR) :* Word Break
 
-*Day 27(27 MAR) :* 
+<!--*Day 27(27 MAR) :* 
 
 *Day 28(28 MAR) :* -->
