@@ -63,6 +63,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 20**  | Total Decoding Messages 🔢➡️🔡		        |  | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-c) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-java) | [Solution](Day%2020%20-%20Total%20Decoding%20Messages.md#code-python) |
 | **Day 21**  | Matrix Chain Multiplication ➗📈🔢		        |  | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-c) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-java) | [Solution](Day%2021%20-%20Matrix%20Chain%20Multiplication.md#code-python) |
 | **Day 22**  | Boolean Parenthesization 🧮✅❌	        |  | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-c) | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-java) | [Solution](Day%2022%20-%20Boolean%20Parenthesization.md#code-python) |
+| **Day 23**  | Word Break 📖✂️🚀	        |  | [Solution](Day%2023%20-%20Word%20Break.md#code-c) | [Solution](Day%2023%20-%20Word%20Break.md#code-java) | [Solution](Day%2023%20-%20Word%20Break.md#code-python) |
 
 
 ## **🤝 Contributing**
