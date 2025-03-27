@@ -479,6 +479,27 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 | **The Painter's Partition Problem-II** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1) |  
 
 
+# 💵 **Greedy Algorithm Arena**  
+Master the art of **locally optimal choices leading to globally optimal solutions!** ⚡📈  
+
+✨ **Days Covered:** **133**  
+
+| 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|----------------------------------|--------------|-----------------|  
+| Day 133      | Minimum Platforms              | 🟡 Medium    | [Check Solution](./GFG%20-%20160%20(Greedy)/Day%201%20-%20Minimum%20Platforms.md) |  
+
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Maximum product of two numbers** | 🟤 Basic | [Solve Now](https://www.geeksforgeeks.org/problems/maximum-product-of-two-numbers2730/1) |  
+| **Largest number with given sum** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/largest-number-with-given-sum-1587115620/1) |  
+| **Jump Game** <br/> **OR** <br/> **Minimum Spanning Tree - Kruskal's Algorithm** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/jump-game/1) / [Solve Now](https://www.geeksforgeeks.org/problems/minimum-spanning-tree-kruskals-algorithm/1) |  
+| **Water Connection Problem** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/water-connection-problem5822/1) |  
+
+
+
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
