@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 132/160 Problems 🎉  
-> **In Progress**: 28 Problems ⏳  
+> **Completed**: 133/160 Problems 🎉  
+> **In Progress**: 27 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -41,7 +41,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
-| **Day 1**  | Minimum Platforms 🚉🚆⏳        |  | [Solution](#code-c) | [Solution](#code-java) | [Solution](#code-python) |
+| **Day 1**  | Minimum Platforms 🚉🚆⏳        |  | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-c) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-java) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-python) |
 
 
 ## **🤝 Contributing**
