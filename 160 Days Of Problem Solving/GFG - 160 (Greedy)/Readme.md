@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 133/160 Problems 🎉  
-> **In Progress**: 27 Problems ⏳  
+> **Completed**: 134/160 Problems 🎉  
+> **In Progress**: 26 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Minimum Platforms 🚉🚆⏳        |  | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-c) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-java) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-python) |
+| **Day 2**  | Activity Selection 📅⏳🏆        |  | [Solution](Day%202%20-%20Activity%20Selection.md#code-c) | [Solution](Day%202%20-%20Activity%20Selection.md#code-java) | [Solution](Day%202%20-%20Activity%20Selection.md#code-python) |
 
 
 ## **🤝 Contributing**
