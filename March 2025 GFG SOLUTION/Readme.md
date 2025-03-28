@@ -32,7 +32,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Matrix Chain Multiplication](24(Mar)%20Matrix%20Chain%20Multiplication.md)➗📈🔢
 - [Day 25: Boolean Parenthesization](25(Mar)%20Boolean%20Parenthesization.md)🧮✅❌
 - [Day 26: Word Break](26(Mar)%20Word%20Break.md)📖✂️🚀
-- [Day 27: Minimum Platforms](27(Mar)%20Minimum%20Platforms.md)🚉🚆⏳	
+- [Day 27: Minimum Platforms](27(Mar)%20Minimum%20Platforms.md)🚉🚆⏳
+- [Day 28: Activity Selection](28(Mar)%20Activity%20Selection.md)📅⏳🏆	
 
 
 
@@ -94,4 +95,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 27(27 MAR) :* Minimum Platforms	
 
-<!--*Day 28(28 MAR) :* -->
+*Day 28(28 MAR) :* Activity Selection
