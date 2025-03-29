@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 134/160 Problems 🎉  
-> **In Progress**: 26 Problems ⏳  
+> **Completed**: 135/160 Problems 🎉  
+> **In Progress**: 25 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Minimum Platforms 🚉🚆⏳        |  | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-c) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-java) | [Solution](Day%201%20-%20Minimum%20Platforms.md#code-python) |
 | **Day 2**  | Activity Selection 📅⏳🏆        |  | [Solution](Day%202%20-%20Activity%20Selection.md#code-c) | [Solution](Day%202%20-%20Activity%20Selection.md#code-java) | [Solution](Day%202%20-%20Activity%20Selection.md#code-python) |
+| **Day 3**  | Job Sequencing Problem 📅💼💰        |  | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-c) | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-java) | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-python) |
 
 
 ## **🤝 Contributing**
