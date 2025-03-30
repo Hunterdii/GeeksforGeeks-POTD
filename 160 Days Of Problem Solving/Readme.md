@@ -482,13 +482,14 @@ Master the art of **optimal subproblems, overlapping solutions & memoized magic!
 # 💵 **Greedy Algorithm Arena**  
 Master the art of **locally optimal choices leading to globally optimal solutions!** ⚡📈  
 
-✨ **Days Covered:** **133 to 135**  
+✨ **Days Covered:** **133 to 136**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|----------------------------------|--------------|-----------------|  
 | Day 133      | Minimum Platforms              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Greedy)/Day%201%20-%20Minimum%20Platforms.md) |  
 | Day 134      | Activity Selection              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Greedy)/Day%202%20-%20Activity%20Selection.md) |  
 | Day 135      | Job Sequencing Problem              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Greedy)/Day%203%20-%20Job%20Sequencing%20Problem.md) |  
+| Day 136      | Gas Station              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Greedy)/Day%204%20-%20Gas%20Station.md) |  
 
 
 ### 📌 **Additional Challenges (From my side):**  
