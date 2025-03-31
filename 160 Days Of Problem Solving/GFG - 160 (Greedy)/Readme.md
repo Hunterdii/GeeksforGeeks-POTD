@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 136/160 Problems 🎉  
-> **In Progress**: 24 Problems ⏳  
+> **Completed**: 137/160 Problems 🎉  
+> **In Progress**: 23 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -45,6 +45,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 2**  | Activity Selection 📅⏳🏆        |  | [Solution](Day%202%20-%20Activity%20Selection.md#code-c) | [Solution](Day%202%20-%20Activity%20Selection.md#code-java) | [Solution](Day%202%20-%20Activity%20Selection.md#code-python) |
 | **Day 3**  | Job Sequencing Problem 📅💼💰        |  | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-c) | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-java) | [Solution](Day%203%20-%20Job%20Sequencing%20Problem.md#code-python) |
 | **Day 4**  | Gas Station ⛽🚗💨        |  | [Solution](Day%204%20-%20Gas%20Station.md#code-c) | [Solution](Day%204%20-%20Gas%20Station.md#code-java) | [Solution](Day%204%20-%20Gas%20Station.md#code-python) |
+| **Day 5**  | Maximize partitions in a String 🔠🧩📏        |  | [Solution](Day%205%20-%20Maximize%20partitions%20in%20a%20String.md#code-c) | [Solution](Day%205%20-%20Maximize%20partitions%20in%20a%20String.md#code-java) | [Solution](Day%205%20-%20Maximize%20partitions%20in%20a%20String.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
