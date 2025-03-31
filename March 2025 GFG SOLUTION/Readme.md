@@ -35,7 +35,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 27: Minimum Platforms](27(Mar)%20Minimum%20Platforms.md)🚉🚆⏳
 - [Day 28: Activity Selection](28(Mar)%20Activity%20Selection.md)📅⏳🏆
 - [Day 29: Job Sequencing Problem](29(Mar)%20Job%20Sequencing%20Problem.md)📅💼💰
-- [Day 30: Gas Station](30(Mar)%20Gas%20Station.md)⛽🚗💨 
+- [Day 30: Gas Station](30(Mar)%20Gas%20Station.md)⛽🚗💨
+- [Day 31: Maximize partitions in a String](31(Mar)%20Maximize%20partitions%20in%20a%20String.md)🔠🧩📏
 
 
 
@@ -102,3 +103,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 MAR) :* Job Sequencing Problem
 
 *Day 30(30 MAR) :* Gas Station 
+
+*Day 31(31 MAR) :* Maximize partitions in a String
