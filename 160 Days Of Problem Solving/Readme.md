@@ -502,6 +502,22 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | **Water Connection Problem** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/water-connection-problem5822/1) |  
 
 
+# 🌐 **Graph Mastery Zone**  
+**Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
+
+✨ **Days Covered:** **138**  
+
+| 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|-------------------------------------|----------------|-----------------|  
+| Day 138      | DFS of Graph              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%201%20-%20DFS%20of%20Graph.md) |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Shortest path from 1 to n** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/shortest-path-from-1-to-n0156/1) |  
+| **Find the number of islands** <br/> **OR** <br/> **Snake and Ladder Problem** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1) / [Solve Now](https://www.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1) |  
+| **Word Ladder I**  <br/> **OR** <br/> **Assignment Problem** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/word-ladder/1) / [Solve Now](https://www.geeksforgeeks.org/problems/assignment-problem3016/1) |  
 
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
