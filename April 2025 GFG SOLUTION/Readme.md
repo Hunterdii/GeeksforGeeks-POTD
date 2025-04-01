@@ -4,9 +4,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 ### 🔮Your feedback is valuable! Please consider leaving a 🌟 star 🌟 and sharing your thoughts in the comments.
 
-- [Introduction](./README.md)📝
-- [Solutions](April%202025%20GFG%20SOLUTION)💡
-  - [Day 1: DFS of Graph]()🌐🔍🌲
+- [Introduction](../README.md)📝
+- [Solutions]()💡
+  - [Day 1: DFS of Graph](01(Apr)%20DFS%20of%20Graph.md)🌐🔍🌲
 
 
 
