@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
   - [Day 1: DFS of Graph](01(Apr)%20DFS%20of%20Graph.md)🌐🔍🌲
+  - [Day 2: BFS of graph](02(Apr)%20BFS%20of%20graph.md)🌐🚶‍♂️🌲
 
 
 
@@ -16,9 +17,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 1(01 APR) :* DFS of Graph
 
-<!--*Day 2(02 APR) :*
+*Day 2(02 APR) :* BFS of graph
 
-*Day 3(03 APR) :* 
+<!--*Day 3(03 APR) :* 
 
 *Day 4(04 APR) :* 
 
