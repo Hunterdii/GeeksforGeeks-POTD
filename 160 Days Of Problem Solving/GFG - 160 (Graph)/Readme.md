@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 138/160 Problems 🎉  
-> **In Progress**: 22 Problems ⏳  
+> **Completed**: 139/160 Problems 🎉  
+> **In Progress**: 21 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | DFS of Graph 🌐🔍🌲        |  | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-c) | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-java) | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-python) |
+| **Day 2**  | BFS of graph 🌐🚶‍♂️🌲        |  | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-c) | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-java) | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
