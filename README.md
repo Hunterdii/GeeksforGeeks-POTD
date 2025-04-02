@@ -1,5 +1,3 @@
-
-
 <h1>  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"> GeeksforGeeks Problem of the Day Solutions 2024  <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:40px; color: #FFD700" alt="Star GIF"></h1>
 
 
@@ -40,7 +38,7 @@
 | **Date**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:---------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | 01 Apr    | DFS of Graph 🌐🔍🌲                        |  | [Solution](/April%202025%20GFG%20SOLUTION/01(Apr)%20DFS%20of%20Graph.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/01(Apr)%20DFS%20of%20Graph.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/01(Apr)%20DFS%20of%20Graph.md#code-python) |
-| 02 Apr    | BFS of graph🌐🚶‍♂️🌲                        |  | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-python) |
+| 02 Apr    | BFS of graph 🌐🚶‍♂️🌲                        |  | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/02(Apr)%20BFS%20of%20graph.md#code-python) |
 
 
 ## **[🌐 GFG 160 Days of Problem Solving (Graph) 🌐](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph))**  
@@ -337,7 +335,6 @@
 </details>
 </div>
 </div>
-<!--[**Explore Solutions Here!**](https://github.com/Hunterdii/GeeksforGeeks-POTD/tree/main/November%202024%20GFG%20SOLUTION)-->
 
 </div>
 
@@ -511,19 +508,6 @@ Join now & start hacking! 🚀
 - [![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)](https://github.com/search?q=repo%3AHunterdii%2FGeeksforGeeks-POTD++language%3Ac+path%3ANovember+2024+GFG+SOLUTION&type=code)
 
 
-<!--## 📁 **Directory Structure**
-
-```bash
-/
-├── November 2024 GFG SOLUTION/
-│   ├── 01(Nov) Swap and Maximize.md
-│   ├── November-01.cpp
-│   ├── November-01.java
-│   ├── November-01.py
-│   └── ...
-└── README.md
-```
--->
 
 ## 🤝 **Contribution Guidelines**
 
