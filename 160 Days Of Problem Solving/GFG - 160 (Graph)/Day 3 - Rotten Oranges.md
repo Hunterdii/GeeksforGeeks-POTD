@@ -2,7 +2,7 @@
 Difficulty: Medium  
 Source: 160 Days of Problem Solving  
 Tags:
-  - Greedy
+  - Graph
   - Matrix
   - Queue
 ---
