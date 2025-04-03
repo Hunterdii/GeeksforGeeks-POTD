@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
   - [Day 1: DFS of Graph](01(Apr)%20DFS%20of%20Graph.md)🌐🔍🌲
   - [Day 2: BFS of graph](02(Apr)%20BFS%20of%20graph.md)🌐🚶‍♂️🌲
+  - [Day 3: Rotten Oranges](03(Apr)%20Rotten%20Oranges.md)🍊🦠⏳
 
 
 
@@ -19,9 +20,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 2(02 APR) :* BFS of graph
 
-<!--*Day 3(03 APR) :* 
+*Day 3(03 APR) :* Rotten Oranges
 
-*Day 4(04 APR) :* 
+<!--*Day 4(04 APR) :* 
 
 *Day 5(05 APR) :* 
 
