@@ -505,12 +505,13 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🌐 **Graph Mastery Zone**  
 **Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
 
-✨ **Days Covered:** **138 to 139**  
+✨ **Days Covered:** **138 to 140**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
 | Day 138      | DFS of Graph              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%201%20-%20DFS%20of%20Graph.md) |  
 | Day 139      | BFS of Graph              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%202%20-%20BFS%20of%20graph.md) |  
+| Day 140      | Rotten Oranges              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%203%20-%20Rotten%20Oranges.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
