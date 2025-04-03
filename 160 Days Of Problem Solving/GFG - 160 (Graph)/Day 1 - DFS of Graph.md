@@ -2,7 +2,7 @@
 Difficulty: Easy  
 Source: 160 Days of Problem Solving  
 Tags:
-  - Greedy
+  - Graph
   - DFS
 ---
 
