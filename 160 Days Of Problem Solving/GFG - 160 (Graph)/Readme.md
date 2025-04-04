@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 139/160 Problems 🎉  
-> **In Progress**: 21 Problems ⏳  
+> **Completed**: 141/160 Problems 🎉  
+> **In Progress**: 19 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | DFS of Graph 🌐🔍🌲        |  | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-c) | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-java) | [Solution](Day%201%20-%20DFS%20of%20Graph.md#code-python) |
 | **Day 2**  | BFS of graph 🌐🚶‍♂️🌲        |  | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-c) | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-java) | [Solution](Day%202%20-%20BFS%20of%20graph.md#code-python) |
+| **Day 3**  | Rotten Oranges 🍊🦠⏳        |  | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-c) | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-java) | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-python) |
+| **Day 4**  | Undirected Graph Cycle ♻️🔍💠        |  | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-c) | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-java) | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
