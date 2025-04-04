@@ -9,6 +9,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 1: DFS of Graph](01(Apr)%20DFS%20of%20Graph.md)🌐🔍🌲
   - [Day 2: BFS of graph](02(Apr)%20BFS%20of%20graph.md)🌐🚶‍♂️🌲
   - [Day 3: Rotten Oranges](03(Apr)%20Rotten%20Oranges.md)🍊🦠⏳
+  - [Day 4: Undirected Graph Cycle](04(Apr)%20Undirected%20Graph%20Cycle.md)♻️🔍💠
 
 
 
@@ -22,9 +23,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 3(03 APR) :* Rotten Oranges
 
-<!--*Day 4(04 APR) :* 
+*Day 4(04 APR) :* Undirected Graph Cycle
 
-*Day 5(05 APR) :* 
+<!--*Day 5(05 APR) :* 
 
 *Day 6(06 APR) :* 
 
