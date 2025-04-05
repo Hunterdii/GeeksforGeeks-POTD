@@ -1,4 +1,4 @@
-# *20. Spirally Traversing a Matrix*
+# _20. Spirally Traversing a Matrix_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1)
 
@@ -26,18 +26,20 @@ You are given a rectangular matrix `mat[][]` of size `n x m`. Your task is to re
 `[32, 44, 27, 23, 62, 50, 28, 54]`
 
 ### Constraints:
+
 - `1 <= n, m <= 1000`
 - `0 <= mat[i][j] <= 100`
 
 ## My Approach
 
 1. **Spiral Traversal Algorithm**:  
-   The problem can be efficiently solved by following the four main directions in a loop:  
+   The problem can be efficiently solved by following the four main directions in a loop:
+
    - Traverse the top row from left to right.
    - Traverse the rightmost column from top to bottom.
    - Traverse the bottom row from right to left.
    - Traverse the leftmost column from bottom to top.  
-   After traversing one complete cycle (i.e., the outermost layer), shrink the matrix (i.e., update the boundaries) and repeat until all elements are visited.
+     After traversing one complete cycle (i.e., the outermost layer), shrink the matrix (i.e., update the boundaries) and repeat until all elements are visited.
 
 2. **Steps:**
    - Define boundaries (`top`, `left`, `bottom`, `right`) to represent the four edges of the matrix.
@@ -47,7 +49,7 @@ You are given a rectangular matrix `mat[][]` of size `n x m`. Your task is to re
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), where `n` is the number of rows and `m` is the number of columns in the matrix. We traverse each element exactly once.
+- **Expected Time Complexity:** O(n \* m), where `n` is the number of rows and `m` is the number of columns in the matrix. We traverse each element exactly once.
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space (for the boundary variables).
 
 ## Code (C)
@@ -101,7 +103,8 @@ public:
 <details>
   <summary><h2 align='center'>👨‍💻 Alternative Approaches</h2></summary>
 
-## Layered Spiral Traversal  
+## Layered Spiral Traversal
+
 ```cpp
 
 class Solution {
@@ -133,8 +136,8 @@ public:
     }
 };
 ```
-</details>
 
+</details>
 
 ## Code (Java)
 
@@ -190,7 +193,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

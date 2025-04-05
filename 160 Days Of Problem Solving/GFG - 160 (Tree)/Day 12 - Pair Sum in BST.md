@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Tree
   - Binary Search Tree
@@ -8,17 +8,18 @@ Tags:
 
 # 🚀 _Day 12. Pair Sum in BST_ 🧠
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/find-a-pair-with-given-target-in-bst)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/find-a-pair-with-given-target-in-bst)
 
 ## 💡 **Problem Description:**
 
-Given a **Binary Search Tree (BST)** and a target value, check whether there exists a **pair of nodes** in the BST whose sum equals the given target.  
+Given a **Binary Search Tree (BST)** and a target value, check whether there exists a **pair of nodes** in the BST whose sum equals the given target.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
         7
        / \
@@ -26,25 +27,25 @@ Given a **Binary Search Tree (BST)** and a target value, check whether there exi
      / \    \
     2   4    9
 ```
-Target = `12`  
 
+Target = `12`
 
 <img src="https://github.com/user-attachments/assets/aacf824a-2b30-4bba-bf21-dffb9e684328" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 True
 ```
 
-#### **Explanation:**  
-In the given BST, there exist two nodes **(8 and 4)** that sum up to 12.  
+#### **Explanation:**
 
+In the given BST, there exist two nodes **(8 and 4)** that sum up to 12.
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 ```
         9
        / \
@@ -52,54 +53,50 @@ In the given BST, there exist two nodes **(8 and 4)** that sum up to 12.
      / \     \
     2   6     12
 ```
-Target = `23`  
 
+Target = `23`
 
 <img src="https://github.com/user-attachments/assets/085824bb-b0da-46fe-9288-1bc5430e9e5a" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 False
 ```
 
-#### **Explanation:**  
-No pair of nodes in the BST sum up to 23.  
+#### **Explanation:**
 
+No pair of nodes in the BST sum up to 23.
 
+### **Constraints:**
 
-### **Constraints:**  
-- $\(1 \leq \text{Number of Nodes} \leq 10^5\)$  
-- $\(1 \leq \text{target} \leq 10^6\)$  
-
-
+- $\(1 \leq \text{Number of Nodes} \leq 10^5\)$
+- $\(1 \leq \text{target} \leq 10^6\)$
 
 ## 🎯 **My Approach:**
 
 ### **Optimized Two-Pointer on Inorder Traversal (`O(N)` Time, `O(N)` Space)**
-1. **Convert BST to sorted array** using inorder traversal.  
-2. **Use two-pointer approach** (left and right) to find the target sum efficiently.  
 
-### **Algorithm Steps:**  
-1. **Perform an inorder traversal** and store the BST elements in a sorted list.  
-2. Use **two pointers** (`left` at the start, `right` at the end) and check the sum:  
-   - If `arr[left] + arr[right] == target`, return `true`.  
-   - If `arr[left] + arr[right] < target`, move `left++`.  
-   - If `arr[left] + arr[right] > target`, move `right--`.  
-3. If no such pair exists, return `false`.  
+1. **Convert BST to sorted array** using inorder traversal.
+2. **Use two-pointer approach** (left and right) to find the target sum efficiently.
 
+### **Algorithm Steps:**
 
+1. **Perform an inorder traversal** and store the BST elements in a sorted list.
+2. Use **two pointers** (`left` at the start, `right` at the end) and check the sum:
+   - If `arr[left] + arr[right] == target`, return `true`.
+   - If `arr[left] + arr[right] < target`, move `left++`.
+   - If `arr[left] + arr[right] > target`, move `right--`.
+3. If no such pair exists, return `false`.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** `O(N)`, since we traverse each node once.  
-- **Expected Auxiliary Space Complexity:** `O(N)`, due to storing the inorder traversal.  
-
-
+- **Expected Time Complexity:** `O(N)`, since we traverse each node once.
+- **Expected Auxiliary Space Complexity:** `O(N)`, due to storing the inorder traversal.
 
 ## 📝 **Solution Code**
 
-## Code (C++)  
+## Code (C++)
 
 ```cpp
 class Solution {
@@ -124,15 +121,14 @@ public:
 };
 ```
 
-
-
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ## **2️⃣ Optimized Hash Set Approach (`O(N)` Time, `O(H)` Space)**
-1. **Use DFS to traverse the tree** while maintaining a **hash set** of visited values.  
-2. **Check if (target - current node value) exists** in the set, if yes, return `true`.  
-3. **Insert the current node value** into the set and continue.  
+
+1. **Use DFS to traverse the tree** while maintaining a **hash set** of visited values.
+2. **Check if (target - current node value) exists** in the set, if yes, return `true`.
+3. **Insert the current node value** into the set and continue.
 
 ```cpp
 class Solution {
@@ -141,7 +137,7 @@ public:
         unordered_set<int> seen;
         return dfs(root, target, seen);
     }
-    
+
     bool dfs(Node* root, int target, unordered_set<int>& seen) {
         if (!root) return false;
         if (seen.count(target - root->data)) return true;
@@ -150,14 +146,14 @@ public:
     }
 };
 ```
+
 🔹 **Avoids extra space for storing inorder traversal**  
-🔹 **Uses Hash Set for `O(1)` lookup**  
-
-
+🔹 **Uses Hash Set for `O(1)` lookup**
 
 ## **3️⃣ BST Iterator + Two-Pointer (`O(N)` Time, `O(H)` Space)**
-1. **Use two iterators:** one for **inorder (left to right)** and one for **reverse inorder (right to left)**.  
-2. **Move iterators towards each other** until the pair is found or iterators cross.  
+
+1. **Use two iterators:** one for **inorder (left to right)** and one for **reverse inorder (right to left)**.
+2. **Move iterators towards each other** until the pair is found or iterators cross.
 
 ```cpp
 class BSTIterator {
@@ -168,14 +164,14 @@ public:
         reverse = isReverse;
         pushAll(root);
     }
-    
+
     int next() {
         Node* node = st.top(); st.pop();
         if (!reverse) pushAll(node->right);
         else pushAll(node->left);
         return node->data;
     }
-    
+
     bool hasNext() { return !st.empty(); }
 
 private:
@@ -201,30 +197,29 @@ public:
     }
 };
 ```
+
 🔹 **Optimized space using `O(H)` stack instead of `O(N)` vector**  
-🔹 **Uses BST Iterators for an efficient two-pointer search**  
+🔹 **Uses BST Iterators for an efficient two-pointer search**
 
+## **Comparison of Approaches**
 
-## **Comparison of Approaches**  
-
-| **Approach**                       | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method**         | ✅ **Pros**                               | ⚠️ **Cons**                      |
-|------------------------------------|-----------------|------------------|---------------|---------------------------------|-----------------------------|
-| **Two-Pointer on Inorder Array**  | 🟢 `O(N)`      | 🟡 `O(N)`        | Two Pointers   | Simple and efficient            | Extra space for list       |
-| **Hash Set (DFS)**       | 🟢 `O(N)`      | 🟡 `O(N)`        | Hashing        | Faster lookup, no sorting needed | Hashing overhead           |
-| **BST Iterator (Two-Pointer)** | 🟡 `O(N^2)`    | 🟢 `O(H)`        | Recursion      | No extra storage used           | Slow for large BSTs        |
+| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method** | ✅ **Pros**                      | ⚠️ **Cons**          |
+| -------------------------------- | ---------------------- | ----------------------- | ------------- | -------------------------------- | -------------------- |
+| **Two-Pointer on Inorder Array** | 🟢 `O(N)`              | 🟡 `O(N)`               | Two Pointers  | Simple and efficient             | Extra space for list |
+| **Hash Set (DFS)**               | 🟢 `O(N)`              | 🟡 `O(N)`               | Hashing       | Faster lookup, no sorting needed | Hashing overhead     |
+| **BST Iterator (Two-Pointer)**   | 🟡 `O(N^2)`            | 🟢 `O(H)`               | Recursion     | No extra storage used            | Slow for large BSTs  |
 
 ---
 
-## 💡 **Best Choice?**  
-- **For simplicity:** ✅ **Two-Pointer on Inorder Array** is easiest to understand.  
-- **For faster lookups:** ✅ **Hash Set (`O(H)` space)** avoids sorting overhead.  
-- **For minimal space:** ✅ **BST Iterator (`O(H)` space, `O(N)` time)** avoids extra space but is slow for large BSTs.  
+## 💡 **Best Choice?**
+
+- **For simplicity:** ✅ **Two-Pointer on Inorder Array** is easiest to understand.
+- **For faster lookups:** ✅ **Hash Set (`O(H)` space)** avoids sorting overhead.
+- **For minimal space:** ✅ **BST Iterator (`O(H)` space, `O(N)` time)** avoids extra space but is slow for large BSTs.
 
 </details>
 
-
-
-## Code (Java)  
+## Code (Java)
 
 ```java
 class Solution {
@@ -250,9 +245,7 @@ class Solution {
 }
 ```
 
-
-
-## Code (Python)  
+## Code (Python)
 
 ```python
 class Solution:
@@ -280,7 +273,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -293,4 +286,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-

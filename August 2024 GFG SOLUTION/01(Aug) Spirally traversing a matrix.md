@@ -9,26 +9,32 @@ You are given a rectangular matrix, and your task is to return an array while tr
 **Example:**
 
 Input:
+
 ```
 matrix = [[1, 2, 3, 4],
           [5, 6, 7, 8],
           [9, 10, 11, 12],
           [13, 14, 15, 16]]
 ```
+
 Output:
+
 ```
 [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10]
 ```
+
 Explanation:
 The matrix is traversed in spiral form, starting from the top-left corner and moving in a clockwise direction.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Define variables `top`, `bottom`, `left`, and `right` to represent the current bounds of the matrix.
    - Initialize an empty vector `output` to store the elements in spiral order.
 
 2. **Spiral Traversal:**
+
    - Use a while loop to traverse the matrix as long as the current bounds are valid (`top <= bottom` and `left <= right`).
    - Traverse from left to right along the top boundary and update `top`.
    - Traverse from top to bottom along the right boundary and update `right`.
@@ -40,8 +46,8 @@ The matrix is traversed in spiral form, starting from the top-left corner and mo
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n*m), as we iterate through all the elements of the matrix once.
-- **Expected Auxiliary Space Complexity:** O(n*m), as we store all the elements of the matrix in the output vector.
+- **Expected Time Complexity:** O(n\*m), as we iterate through all the elements of the matrix once.
+- **Expected Auxiliary Space Complexity:** O(n\*m), as we store all the elements of the matrix in the output vector.
 
 ### Code (C++)
 
@@ -160,7 +166,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

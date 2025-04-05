@@ -11,18 +11,23 @@ Given two integer arrays `val[]` and `wt[]` which represent values and weights a
 **Examples:**
 
 **Input:**
+
 ```
 W = 4, val[] = {1, 2, 3}, wt[] = {4, 5, 1}
 ```
+
 **Output:**
+
 ```
 3
 ```
+
 **Explanation:** Choose the last item that weighs 1 unit and holds a value of 3.
 
 ### **My Approach**
 
 1. **Dynamic Programming Approach:**
+
    - Initialize an array `K` of size `W + 1` with all elements as 0. This array will store the maximum value that can be obtained for each capacity from `0` to `W`.
    - Iterate through each item, and for each item, iterate through the capacities from `W` down to the weight of the item. Update the array `K` to store the maximum value possible for each capacity.
 
@@ -31,7 +36,7 @@ W = 4, val[] = {1, 2, 3}, wt[] = {4, 5, 1}
 
 ### **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O(N*W), as we iterate through each item and for each item, we iterate through the capacities.
+- **Expected Time Complexity:** O(N\*W), as we iterate through each item and for each item, we iterate through the capacities.
 - **Expected Auxiliary Space Complexity:** O(W), as we use a one-dimensional array of size `W + 1` to store the maximum value for each capacity.
 
 ### **Code (C++)**
@@ -78,11 +83,11 @@ class Solution:
     def knapSack(self, W, wt, val):
         n = len(wt)
         K = [0] * (W + 1)
-        
+
         for i in range(n):
             for w in range(W, wt[i] - 1, -1):
                 K[w] = max(K[w], val[i] + K[w - wt[i]])
-        
+
         return K[W]
 ```
 
@@ -92,7 +97,7 @@ Sorry for uploading this late; my exams are going on.
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

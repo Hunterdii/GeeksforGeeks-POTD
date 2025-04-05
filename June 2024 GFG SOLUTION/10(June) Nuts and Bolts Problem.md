@@ -9,22 +9,27 @@ Given a set of `n` nuts and `n` bolts, you need to match them efficiently. Compa
 **Example:**
 
 Input:
+
 ```
 n = 5
 nuts[] = {@, %, $, #, ^}
 bolts[] = {%, @, #, $ ^}
 ```
+
 Output:
+
 ```
 # $ % @ ^
 # $ % @ ^
 ```
+
 Explanation:
 As per the order, `#` should come first, followed by `$`, then `%`, `@`, and `^`.
 
 ### My Approach
 
 1. **Sorting:**
+
    - Sort both the `nuts` and `bolts` arrays.
    - Since the allowed characters have a fixed order, we can simply use the standard sorting algorithm.
 
@@ -77,7 +82,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

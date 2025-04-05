@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Dynamic Programming
 ---
@@ -11,90 +11,96 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ## 💡 **Problem Description:**
 
-Given **two strings** `s1` and `s2`, **return the length of their longest common subsequence (LCS)**. If there is no common subsequence, return `0`.  
+Given **two strings** `s1` and `s2`, **return the length of their longest common subsequence (LCS)**. If there is no common subsequence, return `0`.
 
-A **subsequence** is a sequence that can be derived from the given string by deleting some or no elements without changing the order of the remaining elements. For example, `"ABE"` is a subsequence of `"ABCDE"`.  
+A **subsequence** is a sequence that can be derived from the given string by deleting some or no elements without changing the order of the remaining elements. For example, `"ABE"` is a subsequence of `"ABCDE"`.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 s1 = "ABCDGH", s2 = "AEDFHR"
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 3
 ```
 
-#### **Explanation:**  
-The longest common subsequence of `"ABCDGH"` and `"AEDFHR"` is **"ADH"**, which has a length of 3.  
+#### **Explanation:**
 
+The longest common subsequence of `"ABCDGH"` and `"AEDFHR"` is **"ADH"**, which has a length of 3.
 
-### **Example 2:**  
+### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 s1 = "ABC", s2 = "AC"
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 2
 ```
 
-#### **Explanation:**  
-The longest common subsequence of `"ABC"` and `"AC"` is **"AC"**, which has a length of 2.  
+#### **Explanation:**
 
+The longest common subsequence of `"ABC"` and `"AC"` is **"AC"**, which has a length of 2.
 
-### **Example 3:**  
+### **Example 3:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 s1 = "XYZW", s2 = "XYWZ"
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 3
 ```
 
-#### **Explanation:**  
-The longest common subsequences of `"XYZW"` and `"XYWZ"` are **"XYZ"** and **"XYW"**, both of length 3.  
+#### **Explanation:**
 
+The longest common subsequences of `"XYZW"` and `"XYWZ"` are **"XYZ"** and **"XYW"**, both of length 3.
 
-### **Constraints:**  
-- $\(1 \leq \text{length}(s1), \text{length}(s2) \leq 10^3\)$  
-- Both `s1` and `s2` contain only **uppercase English letters**.  
+### **Constraints:**
 
+- $\(1 \leq \text{length}(s1), \text{length}(s2) \leq 10^3\)$
+- Both `s1` and `s2` contain only **uppercase English letters**.
 
 ## 🎯 **My Approach:**
 
 ### **Space-Optimized 1D DP**
 
-### **Key Idea**  
+### **Key Idea**
+
 - Use **only two arrays (current and previous rows)** to store LCS lengths for substrings.
 - The value at `dp[j]` represents the **LCS length of `s1[0..i-1]` and `s2[0..j-1]`**.
 - Only **the previous row is needed** to compute the current row, so space is reduced to **O(M)**, where M is the length of the second string.
 
-### **Algorithm Steps**  
-1. Use two **rolling 1D arrays** (or one array with a few variables) to store only the previous row and current row.  
-2. **Traverse** the strings from `i = 1..n` and `j = 1..m`:  
-   - If `s1[i - 1] == s2[j - 1]`, we do `curr[j] = prev[j - 1] + 1`.  
-   - Else, `curr[j] = max(prev[j], curr[j - 1])`.  
-3. **Swap** `prev` and `curr` at the end of each `i` iteration.  
-4. The result is `prev[m]`, which is the **length of LCS**.  
+### **Algorithm Steps**
 
-This approach is more **space-efficient** than the standard `O(N * M)` DP table because it only keeps **two rows** (or one row with updates).  
+1. Use two **rolling 1D arrays** (or one array with a few variables) to store only the previous row and current row.
+2. **Traverse** the strings from `i = 1..n` and `j = 1..m`:
+   - If `s1[i - 1] == s2[j - 1]`, we do `curr[j] = prev[j - 1] + 1`.
+   - Else, `curr[j] = max(prev[j], curr[j - 1])`.
+3. **Swap** `prev` and `curr` at the end of each `i` iteration.
+4. The result is `prev[m]`, which is the **length of LCS**.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+This approach is more **space-efficient** than the standard `O(N * M)` DP table because it only keeps **two rows** (or one row with updates).
 
-- **Expected Time Complexity:** `O(N * M)`, where `N` is the length of `s1` and `M` is the length of `s2`.  
-- **Expected Auxiliary Space Complexity:** `O(N)`, using the space-optimized approach (storing only one dimension).  
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
+- **Expected Time Complexity:** `O(N * M)`, where `N` is the length of `s1` and `M` is the length of `s2`.
+- **Expected Auxiliary Space Complexity:** `O(N)`, using the space-optimized approach (storing only one dimension).
 
 ## 📝 **Solution Code**
 
@@ -117,14 +123,13 @@ public:
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
-## **2️⃣ Dynamic Programming with 2D Table (O(N * M) Time, O(N * M) Space)**
+## **2️⃣ Dynamic Programming with 2D Table (O(N _ M) Time, O(N _ M) Space)**
 
 ### **Algorithm Steps:**
+
 1. Create a 2D table `dp` where `dp[i][j]` stores the **length of the LCS of s1[0..i-1] and s2[0..j-1]**.
 2. If characters match, `dp[i][j] = dp[i-1][j-1] + 1`.
 3. If characters don't match, `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`.
@@ -146,16 +151,17 @@ public:
     }
 };
 ```
+
 🔹 **Easier to visualize** the DP table.  
-🔹 **Simpler to reconstruct** the actual LCS if needed.  
+🔹 **Simpler to reconstruct** the actual LCS if needed.
 
+## **3️⃣ Recursive + Memoization (Top-Down DP, O(N \* M))**
 
-## **3️⃣ Recursive + Memoization (Top-Down DP, O(N * M))**
+### **Algorithm Steps:**
 
-### **Algorithm Steps:**  
-1. Define a function `helper(i, j)` that returns the LCS of `s1[0..i-1]` and `s2[0..j-1]`.  
-2. If characters match, `1 + helper(i-1, j-1)`.  
-3. Otherwise, `max(helper(i-1, j), helper(i, j-1))`.  
+1. Define a function `helper(i, j)` that returns the LCS of `s1[0..i-1]` and `s2[0..j-1]`.
+2. If characters match, `1 + helper(i-1, j-1)`.
+3. Otherwise, `max(helper(i-1, j), helper(i, j-1))`.
 4. Use a 2D memo array `dp[i][j]` to **avoid recalculations**.
 
 ```cpp
@@ -169,7 +175,7 @@ public:
     int helper(string &s1, string &s2, int i, int j, vector<vector<int>> &dp) {
         if (i == 0 || j == 0) return 0;
         if (dp[i][j] != -1) return dp[i][j];
-        if (s1[i - 1] == s2[j - 1]) 
+        if (s1[i - 1] == s2[j - 1])
             return dp[i][j] = 1 + helper(s1, s2, i - 1, j - 1, dp);
         return dp[i][j] = max(helper(s1, s2, i - 1, j, dp), helper(s1, s2, i, j - 1, dp));
     }
@@ -177,29 +183,23 @@ public:
 ```
 
 🔹 **Top-down approach** can be more intuitive for some.  
-🔹 **Same `O(N*M)` complexity** with memoization.  
-
-
-
+🔹 **Same `O(N*M)` complexity** with memoization.
 
 ## **📊 Comparison of Approaches**
 
-| **Approach**                          | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                              | ⚠️ **Cons**                       |
-|----------------------------------|--------------------|-----------------|---------------------------------|---------------------------------|
-| **Space-Optimized 1D DP**       | 🟢 O(N * M)       | 🟢 O(N)              | Memory efficient          | No reconstruction |
-| **2D Dynamic Programming**      | 🟢 O(N * M)       | 🔴 O(N * M)      | Full table stored          | Higher space usage  |
-| **Memoized Recursive**          | 🟢 O(N * M)       | 🟡 O(N * M)         | Intuitive for some         | Needs recursion overhead |
-
+| **Approach**               | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**        | ⚠️ **Cons**              |
+| -------------------------- | ---------------------- | ----------------------- | ------------------ | ------------------------ |
+| **Space-Optimized 1D DP**  | 🟢 O(N \* M)           | 🟢 O(N)                 | Memory efficient   | No reconstruction        |
+| **2D Dynamic Programming** | 🟢 O(N \* M)           | 🔴 O(N \* M)            | Full table stored  | Higher space usage       |
+| **Memoized Recursive**     | 🟢 O(N \* M)           | 🟡 O(N \* M)            | Intuitive for some | Needs recursion overhead |
 
 ## 💡 **Best Choice?**
+
 - ✅ Use **Space-Optimized 1D DP** for **length-only** queries.
 - ✅ Use **2D DP with Backtracking** if you need to **recover the actual LCS string**.
 - ✅ Use **Recursive + Memoization** for **simple coding competitions** (top-down is intuitive for some coders).
 
-
 </details>
-
-
 
 ## **Code (Java)**
 
@@ -219,7 +219,6 @@ class Solution {
 }
 ```
 
-
 ## **Code (Python)**
 
 ```python
@@ -238,11 +237,11 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

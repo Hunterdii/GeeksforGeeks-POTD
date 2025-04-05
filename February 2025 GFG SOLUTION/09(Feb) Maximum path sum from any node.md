@@ -1,4 +1,4 @@
-# *9. Maximum Path Sum from Any Node*
+# _9. Maximum Path Sum from Any Node_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1)
 
@@ -12,7 +12,7 @@ Given a binary tree, the task is to find the maximum path sum. The path may star
 `root[] = [10, 2, 10, 20, 1, N, -25, N, N, N, N, 3, 4]`  
 **Output:**  
 `42`  
-**Explanation:** 
+**Explanation:**
 
 <img src="https://github.com/user-attachments/assets/c3753c3d-a5a4-422d-8309-8d18099f5f6b" width="40%">
 
@@ -22,13 +22,14 @@ The maximum path sum is represented using the green colored nodes in the binary 
 `root[] = [-17, 11, 4, 20, -2, 10]`  
 **Output:**  
 `31`  
-**Explanation:** 
+**Explanation:**
 
 <img src="https://github.com/user-attachments/assets/eab45812-cd7f-4020-9e00-e39bb5481183" width="40%">
 
 The maximum path sum is represented using the green colored nodes in the binary tree.
 
 ## Constraints:
+
 - 1 ≤ number of nodes ≤ $10^3$
 - -10^4 ≤ node->data ≤ $10^4$
 
@@ -38,7 +39,6 @@ The maximum path sum is represented using the green colored nodes in the binary 
    Use a recursive DFS (post-order) approach to calculate, for each node:
    - **maxSingle:** The maximum path sum including the node and at most one of its subtrees.
    - **Global Maximum:** Update a global result with the sum of the node value and the maximum contributions from both left and right subtrees.
-   
 2. **Steps:**
    - Recursively compute the maximum path sum from the left and right children.
    - Discard negative sums by taking `max(0, value)`.
@@ -68,12 +68,14 @@ public:
     }
 };
 ```
+
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ## **2️⃣ Bottom-Up Dynamic Programming Approach**
 
 ### **Algorithm**
+
 - Use post-order traversal to compute two values for each node:
   - **maxSingle**: Maximum path sum including the current node and at most one child.
   - **maxTop**: Maximum path sum where the current node is the highest node (root of the path).
@@ -96,10 +98,10 @@ public:
 };
 ```
 
-
 ## **3️⃣ Iterative Post-Order Traversal Using Stack**
 
 ### **Algorithm**
+
 - Perform an **iterative post-order traversal** using a stack.
 - Maintain a map to store the maximum path sum for each node.
 - For each node, compute:
@@ -138,19 +140,19 @@ public:
 
 ## 🔍 **Comparison of Approaches**
 
-| **Approach**                     | **Time Complexity** | **Space Complexity** | **Pros**                          | **Cons**                        |
-|----------------------------------|---------------------|----------------------|-----------------------------------|---------------------------------|
-| **Recursive DFS (Optimized)**    | 🟢 O(N)                | 🟡 O(H) (stack space)   | Clean, concise, easy to implement | Stack overflow for deep trees  |
-| **Bottom-Up DP**                 | 🟢 O(N)                | 🟡 O(H)                 | Explicit DP states, easy to debug | Slightly verbose               |
-| **Iterative Post-Order (Stack)** | 🟢 O(N)                | 🟡 O(H)                 | Avoids recursion stack overflow   | More complex logic, verbose    |
+| **Approach**                     | **Time Complexity** | **Space Complexity**  | **Pros**                          | **Cons**                      |
+| -------------------------------- | ------------------- | --------------------- | --------------------------------- | ----------------------------- |
+| **Recursive DFS (Optimized)**    | 🟢 O(N)             | 🟡 O(H) (stack space) | Clean, concise, easy to implement | Stack overflow for deep trees |
+| **Bottom-Up DP**                 | 🟢 O(N)             | 🟡 O(H)               | Explicit DP states, easy to debug | Slightly verbose              |
+| **Iterative Post-Order (Stack)** | 🟢 O(N)             | 🟡 O(H)               | Avoids recursion stack overflow   | More complex logic, verbose   |
 
 ### 🚀 **Best Choice?**
+
 - ✅ **Balanced Trees:** Recursive DFS is simple and fast.
 - ✅ **Very Deep Trees:** Iterative post-order avoids stack overflow.
 - ✅ **For Debugging/DP:** Bottom-Up DP gives clear intermediate states.
 
 </details>
-
 
 ## Code (Java)
 
@@ -170,8 +172,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -189,11 +189,9 @@ class Solution:
         return res
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

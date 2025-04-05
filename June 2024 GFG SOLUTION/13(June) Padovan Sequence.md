@@ -14,23 +14,29 @@ Since the output may be very large, return the result modulo \(10^9 + 7\).
 **Examples:**
 
 Input:
+
 ```
 n = 3
 ```
+
 Output:
+
 ```
 2
 ```
+
 Explanation:
 \[ P(3) = P(1) + P(0) = 1 + 1 = 2 \]
 
 ### My Approach
 
 1. **Initialization:**
+
    - If `n` is 0, 1, or 2, return 1 since these are the base cases of the Padovan sequence.
    - Initialize an array or variables to keep track of the previous three terms of the sequence.
 
 2. **Padovan Calculation:**
+
    - Iterate from `i = 3` to `n`.
    - Calculate the `i`th term as the sum of the term two steps before and the term three steps before, modulo \(10^9 + 7\).
 
@@ -106,7 +112,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

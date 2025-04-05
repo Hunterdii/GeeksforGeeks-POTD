@@ -14,15 +14,20 @@ Return the sorted list after performing the given `q` queries.
 **Example:**
 
 Input:
+
 ```
 q = 5
 queries[] = {{0, 6}, {0, 3}, {0, 2}, {1, 4}, {1, 5}}
 ```
+
 Output:
+
 ```
 1 2 3 7
 ```
+
 Explanation:
+
 ```
 [0] (initial value)
 [0 6] (add 6 to list)
@@ -31,20 +36,24 @@ Explanation:
 [4 2 7 6] (XOR each element by 4)
 [1 7 2 3] (XOR each element by 5)
 ```
+
 The sorted list after performing all the queries is `[1 2 3 7]`.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize `xr` to store the cumulative XOR value.
    - Create a vector `results` to store the elements of the list.
 
 2. **Process Queries:**
+
    - Iterate through the queries in reverse order.
    - If the query type is `0`, append the result of XORing the value with `xr` to the results.
    - If the query type is `1`, update `xr` by XORing it with the given value.
 
 3. **Final Adjustments:**
+
    - Append the final cumulative `xr` value to the results.
    - Sort the `results` vector.
 
@@ -71,11 +80,11 @@ public:
                 xr ^= queries[i][1];
             }
         }
-        
+
         results.push_back(xr);
-        
+
         std::sort(results.begin(), results.end());
-        
+
         return results;
     }
 };
@@ -123,7 +132,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

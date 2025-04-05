@@ -9,13 +9,14 @@ Given two BSTs, return elements of merged BSTs in sorted form.
 **Examples:**
 
 **Input:**
+
 ```
 BST1:
        5
      /   \
     3     6
    / \
-  2   4  
+  2   4
 
 BST2:
         2
@@ -26,20 +27,24 @@ BST2:
             /
            6
 ```
+
 **Output:**
+
 ```
 1 2 2 3 3 4 5 6 6 7
 ```
+
 **Explanation:**
 After merging and sorting the two BSTs, we get 1 2 2 3 3 4 5 6 6 7.
-
 
 ### My Approach
 
 1. **Inorder Traversal:**
+
    - Create a function `inorder` to perform an inorder traversal on a BST and store the elements in a vector (C++) or list (Java and Python).
 
 2. **Merge BSTs:**
+
    - Create a function `merge` to merge two BSTs. Perform an inorder traversal on both BSTs to get the elements.
    - Sort the combined list of elements.
 
@@ -117,7 +122,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

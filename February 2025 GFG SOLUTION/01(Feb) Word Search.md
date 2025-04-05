@@ -1,4 +1,4 @@
-# *1. Word Search*
+# _1. Word Search_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/word-search/1)
 
@@ -10,91 +10,93 @@ either **horizontally** or **vertically**. The **same cell cannot be used more t
 
 ## Examples:
 
-**Input:**  
+**Input:**
+
 ```
 mat[][] = [['T', 'E', 'E'],
            ['S', 'G', 'K'],
            ['T', 'E', 'L']]
 word = "GEEK"
 ```
+
 **Output:**  
 `true`  
-**Explanation:** 
+**Explanation:**
 
 <img src="https://github.com/user-attachments/assets/93e597c2-f34a-418c-b5bf-9a945371ac55" width="30%">
 
 The letters used to construct "GEEK" are found in the grid.
 
+**Input:**
 
-
-**Input:**  
 ```
 mat[][] = [['T', 'E', 'U'],
            ['S', 'G', 'K'],
            ['T', 'E', 'L']]
 word = "GEEK"
 ```
+
 **Output:**  
 `false`  
-**Explanation:**  
+**Explanation:**
 
 <img src="https://github.com/user-attachments/assets/c90d723f-a1bd-4483-ba9d-e5903684b481" width="30%">
 
 The word "GEEK" cannot be formed from the given grid.
 
+**Input:**
 
-
-**Input:**  
 ```
 mat[][] = [['A', 'B', 'A'],
            ['B', 'A', 'B']]
 word = "AB"
 ```
+
 **Output:**  
 `true`  
-**Explanation:** 
+**Explanation:**
 
 <img src="https://github.com/user-attachments/assets/f8d9c68d-6447-4817-8646-7c1a1497ac5e" width="30%">
 
 There are multiple ways to construct the word "AB".
 
-
-
 ### Constraints:
+
 - `1 ≤ n, m ≤ 100`
 - `1 ≤ L ≤ n * m`  
-(where `L` is the length of the word)
+  (where `L` is the length of the word)
 
 ## My Approach
 
+1. **Start from Each Cell**
 
-1. **Start from Each Cell**  
-   - Iterate over the matrix to find the first letter of the word.  
+   - Iterate over the matrix to find the first letter of the word.
    - If a match is found, perform **DFS** from that position.
 
-2. **Recursive DFS Traversal**  
-   - Check the four possible directions: **up, down, left, right**.  
-   - If the next character in the word is found, move to that cell.  
+2. **Recursive DFS Traversal**
+
+   - Check the four possible directions: **up, down, left, right**.
+   - If the next character in the word is found, move to that cell.
    - Temporarily mark the cell as visited (`'#'`) to prevent reusing it in the same search path.
 
-3. **Backtracking**  
-   - Restore the cell's original value after exploring all paths from that cell.  
+3. **Backtracking**
+
+   - Restore the cell's original value after exploring all paths from that cell.
    - If the complete word is found, return `true`.
 
-4. **Optimization**  
-   - If the first letter of `word` is not found in `mat[][]`, return `false` immediately.  
-   - Stop searching as soon as the word is found.  
+4. **Optimization**
+   - If the first letter of `word` is not found in `mat[][]`, return `false` immediately.
+   - Stop searching as soon as the word is found.
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** `O(n * m * 4^L)`, where `n × m` is the size of the matrix and `L` is the length of the word.  
-  - We perform DFS from every cell (`O(n * m)`).  
-  - Each DFS call explores up to **4 directions**, leading to a worst-case exponential growth (`O(4^L)`).  
+- **Expected Time Complexity:** `O(n * m * 4^L)`, where `n × m` is the size of the matrix and `L` is the length of the word.
 
-- **Expected Auxiliary Space Complexity:** `O(L)`, due to the recursive call stack of depth **L** (length of the word).  
-  - We modify the grid temporarily (`O(n * m)`) but revert it back (constant space usage).  
+  - We perform DFS from every cell (`O(n * m)`).
+  - Each DFS call explores up to **4 directions**, leading to a worst-case exponential growth (`O(4^L)`).
 
-
+- **Expected Auxiliary Space Complexity:** `O(L)`, due to the recursive call stack of depth **L** (length of the word).
+  - We modify the grid temporarily (`O(n * m)`) but revert it back (constant space usage).
 
 ## Code (C++)
 
@@ -104,14 +106,14 @@ public:
     bool dfs(vector<vector<char>> &b, string &w, int i, int j, int k) {
         if(k == w.size()) return true;
         if(i < 0 || j < 0 || i >= b.size() || j >= b[0].size() || b[i][j] != w[k]) return false;
-        char t = b[i][j]; 
+        char t = b[i][j];
         b[i][j] = '#';
         bool f = dfs(b, w, i-1, j, k+1) || dfs(b, w, i+1, j, k+1) ||
                  dfs(b, w, i, j-1, k+1) || dfs(b, w, i, j+1, k+1);
         b[i][j] = t;
         return f;
     }
-    
+
     bool isWordExist(vector<vector<char>> &b, string w) {
         for(int i = 0; i < b.size(); i++)
             for(int j = 0; j < b[0].size(); j++)
@@ -121,8 +123,6 @@ public:
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -149,8 +149,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -167,11 +165,9 @@ class Solution:
         return any(dfs(i, j, 0) for i in range(len(b)) for j in range(len(b[0])) if b[i][j] == w[0])
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

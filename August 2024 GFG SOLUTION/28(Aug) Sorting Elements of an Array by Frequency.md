@@ -11,21 +11,27 @@ Given an array of integers `arr`, the task is to sort the array according to the
 **Examples:**
 
 Input:
+
 ```
 arr[] = [5, 5, 4, 6, 4]
 ```
+
 Output:
+
 ```
 [4, 4, 5, 5, 6]
 ```
+
 Explanation: Both `5` and `4` have a frequency of `2`. Since `4` is smaller, it comes before `5`. `6` has a frequency of `1`, so it comes last.
 
 ### My Approach
 
 1. **Frequency Count:**
+
    - Use a hash map to count the frequency of each element in the array.
 
 2. **Sorting:**
+
    - Convert the frequency map into a list of pairs `(element, frequency)`.
    - Sort this list first by frequency in descending order. If two elements have the same frequency, sort them by the element value in ascending order.
 
@@ -58,7 +64,7 @@ public:
         for (const auto& entry : freqVec) {
             result.insert(result.end(), entry.second, entry.first);
         }
-        
+
         return result;
     }
 };
@@ -110,11 +116,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>
@@ -122,4 +129,3 @@ For discussions, questions, or doubts related to this solution, please visit my 
 <p align="center" >   
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
 </p>
-

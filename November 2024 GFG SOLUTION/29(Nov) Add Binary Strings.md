@@ -1,4 +1,4 @@
-# *29. Add Binary Strings* 
+# _29. Add Binary Strings_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/add-binary-strings3805/1)
 
@@ -6,9 +6,9 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - My latest solution is now live:  
-  **[2577. Minimum Time to Visit a Cell In a Grid](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2577.Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid.md)**  
+  **[2577. Minimum Time to Visit a Cell In a Grid](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2577.Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2577.Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid.md">
@@ -31,46 +31,50 @@ You are given two binary strings `s1` and `s2` consisting of only `0`s and `1`s.
 **Output:**  
 `"10100"`
 
-**Explanation:**  
+**Explanation:**
+
 ```
- 1101  
-+ 111  
-—————  
+ 1101
++ 111
+—————
 10100
 ```
+
 **Input:**  
 `s1 = "00100"`, `s2 = "010"`  
 **Output:**  
 `"110"`
 
-**Explanation:**  
+**Explanation:**
+
 ```
- 100  
+ 100
 + 10
- ———  
+ ———
  110
 ```
 
 ### Constraints:
+
 - $`1 <= s1.size(), s2.size() <= 10^6`$
 
 ## My Approach
 
-1. **Binary Addition Logic:**  
+1. **Binary Addition Logic:**
+
    - The problem is a standard binary addition problem. We will iterate through the two strings from right to left, adding corresponding bits and considering a carry.
    - If both bits are `1`, we set the sum bit to `0` and carry `1`. If one bit is `1`, the sum bit is `1` with no carry, and if both bits are `0`, the sum bit is `0` with no carry.
    - The process continues until all digits are processed, and the carry is added if necessary.
 
-2. **Steps:**  
+2. **Steps:**
    - Start from the rightmost bit of both strings, keeping track of any carry from the previous step.
    - Add corresponding bits, including the carry, and append the result to a result string.
    - Continue the process until both strings are exhausted.
    - Reverse the result string (since we process from right to left) and remove any leading zeros.
-  
+
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(n), where `n` is the length of the longest string. We only perform a linear scan through the strings to perform the addition.
-  
 - **Expected Auxiliary Space Complexity:** O(n), as we store the result in a new string that may be of length up to the size of the input strings.
 
 ## Code (C++)
@@ -105,26 +109,26 @@ class Solution {
     public String addBinary(String s1, String s2) {
         int n1 = s1.length(), n2 = s2.length();
         StringBuilder result = new StringBuilder();
-        
+
         int carry = 0;
         int i = n1 - 1, j = n2 - 1;
-        
+
         while (i >= 0 || j >= 0 || carry == 1) {
             int sum = carry;
-            
-            if (i >= 0) sum += s1.charAt(i--) - '0';  
-            if (j >= 0) sum += s2.charAt(j--) - '0';  
-            
-            result.append(sum % 2);  
-            carry = sum / 2;         
+
+            if (i >= 0) sum += s1.charAt(i--) - '0';
+            if (j >= 0) sum += s2.charAt(j--) - '0';
+
+            result.append(sum % 2);
+            carry = sum / 2;
         }
-        
+
         result.reverse();
-        
+
         while (result.length() > 1 && result.charAt(0) == '0') {
             result.deleteCharAt(0);
         }
-        
+
         return result.toString();
     }
 }
@@ -158,7 +162,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

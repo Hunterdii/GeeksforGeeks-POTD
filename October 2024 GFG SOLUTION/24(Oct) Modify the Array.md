@@ -1,4 +1,4 @@
-# *24. Modify the Array*
+# _24. Modify the Array_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/ease-the-array0633/1)
 
@@ -6,15 +6,18 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 Given an array `arr`, return the modified array in such a way that if the current and next numbers are valid (non-zero) and are equal, then double the current number's value and replace the next number with 0. After the modification, rearrange the array such that all 0s are shifted to the end.
 
-*Note:* Assume '0' as the invalid number and all others as valid numbers. The sequence of valid numbers should remain in the same order.
+_Note:_ Assume '0' as the invalid number and all others as valid numbers. The sequence of valid numbers should remain in the same order.
 
 #### Example:
 
-Input: 
+Input:
+
 ```
 arr[] = [2, 2, 0, 4, 0, 8]
 ```
+
 Output:
+
 ```
 [4, 4, 8, 0, 0, 0]
 ```
@@ -22,10 +25,13 @@ Output:
 Explanation: At index 0 and 1, both elements are the same. Thus, the element at index 0 becomes 4, and the element at index 1 becomes 0. After shifting all the zeros to the end, the array becomes `[4, 4, 8, 0, 0, 0]`.
 
 Input:
+
 ```
 arr[] = [0, 2, 2, 2, 0, 6, 6, 0, 0, 8]
 ```
+
 Output:
+
 ```
 [4, 2, 12, 8, 0, 0, 0, 0, 0, 0]
 ```
@@ -35,6 +41,7 @@ Explanation: At index 5 and 6, both elements are the same. Thus, the element at 
 ### My Approach
 
 1. **Iterate through the array:**
+
    - For each element, check if it is not zero and if it is equal to the next element. If both conditions are true, double the current element and set the next element to zero.
 
 2. **Rearranging the array:**
@@ -55,12 +62,12 @@ public:
 
         for (int i = 0; i < n - 1; i++) {
             if (arr[i] != 0 && arr[i] == arr[i + 1]) {
-                arr[i] = 2 * arr[i];  
-                arr[i + 1] = 0;       
+                arr[i] = 2 * arr[i];
+                arr[i + 1] = 0;
             }
         }
 
-        int nonZeroIndex = 0; 
+        int nonZeroIndex = 0;
         for (int i = 0; i < n; i++) {
             if (arr[i] != 0) {
                 arr[nonZeroIndex++] = arr[i];
@@ -138,11 +145,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

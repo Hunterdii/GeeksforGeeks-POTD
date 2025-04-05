@@ -1,4 +1,4 @@
-# *27. Triplet Family*
+# _27. Triplet Family_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/triplet-family/1)
 
@@ -8,37 +8,48 @@ _Note: My externals exams are currently ongoing, which is the reason for the del
 
 Given an array `arr` of integers, find whether there exist three numbers such that the sum of two elements equals the third element.
 
-*Example:*
+_Example:_
 
 Input:
+
 ```
 arr[] = [1, 2, 3, 4, 5]
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation: The pair (1, 2) sums to 3.
 
 Input:
+
 ```
 arr[] = [5, 3, 4]
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation: No triplets satisfy the condition.
 
 ## My Approach
 
 1. **Sorting the Array:**
+
    - First, sort the array to allow for efficient searching of pairs.
 
 2. **Iterating Through the Array:**
+
    - Loop through the array from the last element to the third element, treating the current element as the target.
 
 3. **Two-Pointer Technique:**
+
    - For each target, use a two-pointer approach to find if there exist two numbers in the sorted array that sum up to the target:
      - Set one pointer at the start of the array and the other just before the target.
      - If the sum of the two pointers equals the target, return true.
@@ -62,7 +73,7 @@ public:
         int n = arr.size();
         if (n < 3) return false;
 
-        sort(arr.begin(), arr.end()); 
+        sort(arr.begin(), arr.end());
 
         for (int i = n - 1; i >= 2; --i) {
             int target = arr[i];
@@ -73,12 +84,12 @@ public:
 
                 if (sum == target) return true;
                 if (sum < target)
-                    ++left; 
+                    ++left;
                 else
-                    --right; 
+                    --right;
             }
         }
-        return false; 
+        return false;
     }
 };
 ```
@@ -102,13 +113,13 @@ class Solution {
 
                 if (sum == target) return true;
                 if (sum < target) {
-                    left++; 
+                    left++;
                 } else {
-                    right--; 
+                    right--;
                 }
             }
         }
-        return false; 
+        return false;
     }
 }
 ```
@@ -134,19 +145,18 @@ class Solution:
                 if sum_ == target:
                     return True
                 elif sum_ < target:
-                    left += 1  
+                    left += 1
                 else:
-                    right -= 1 
+                    right -= 1
 
-        return False  
+        return False
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
-
 
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>

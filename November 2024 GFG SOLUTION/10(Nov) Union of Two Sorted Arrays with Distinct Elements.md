@@ -1,4 +1,4 @@
-# *10. Union of Two Sorted Arrays with Distinct Elements*
+# _10. Union of Two Sorted Arrays with Distinct Elements_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-with-distinct-elements/1)
 
@@ -9,36 +9,48 @@ Given two sorted arrays `a[]` and `b[]`, where each array contains distinct elem
 ### Examples:
 
 **Input:**
+
 ```
 a[] = [1, 2, 3, 4, 5]
 b[] = [1, 2, 3, 6, 7]
 ```
+
 **Output:**
+
 ```
 1 2 3 4 5 6 7
 ```
+
 **Explanation:** The distinct elements in both arrays are: 1, 2, 3, 4, 5, 6, 7.
 
 **Input:**
+
 ```
 a[] = [2, 3, 4, 5]
 b[] = [1, 2, 3, 4]
 ```
+
 **Output:**
+
 ```
 1 2 3 4 5
 ```
+
 **Explanation:** The distinct elements in both arrays are: 1, 2, 3, 4, 5.
 
 **Input:**
+
 ```
 a[] = [1]
 b[] = [2]
 ```
+
 **Output:**
+
 ```
 1 2
 ```
+
 **Explanation:** The distinct elements in both arrays are: 1, 2.
 
 ## My Approach
@@ -206,7 +218,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

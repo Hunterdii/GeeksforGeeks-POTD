@@ -14,16 +14,21 @@ You are given an array `arr[]` of size \(n\). You need to do the following:
 **Example 1:**
 
 Input:
+
 ```
 n = 10
 arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 ```
+
 Output:
+
 ```
 1 3 1 7 1 3 1 15 1 3
 0 0 0 0 0 0 0 0 0 0
 ```
+
 Explanation:
+
 - First, we take the XOR of every element with their indices, like \( (1 \oplus 0), (2 \oplus 1), (3 \oplus 2), (4 \oplus 3) \), and so on.
 - Now print the resultant array.
 - Now set all the elements of the array to zero.
@@ -32,12 +37,13 @@ Explanation:
 ### My Approach
 
 1. **XOR Calculation:**
+
    - Iterate through the array and calculate the bitwise XOR of each element with its corresponding index.
 
 2. **Printing:**
    - Print the array after XOR calculation.
-   
 3. **Set to Zero:**
+
    - Set all the elements of the array to zero.
 
 4. **Printing:**
@@ -74,7 +80,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

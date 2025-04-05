@@ -1,6 +1,6 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - Tree
 ---
@@ -14,60 +14,60 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 Given the root of a binary tree with `n` nodes, the task is to find its **level order traversal**.  
 Level order traversal of a tree is **breadth-first traversal** for the tree, where we visit nodes level by level.
 
-
-
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1**  
-**Input:**  
+### **Example 1**
+
+**Input:**
+
 ```
 root[] = [1, 2, 3]
 ```
 
 <img src="https://github.com/user-attachments/assets/148468bb-8f80-42c1-817d-d4d62af9a8e9" width="30%">
 
-**Output:**  
+**Output:**
+
 ```
 [[1], [2, 3]]
 ```
 
+### **Example 2**
 
+**Input:**
 
-### **Example 2**  
-**Input:**  
 ```
 root[] = [10, 20, 30, 40, 50]
 ```
 
 <img src="https://github.com/user-attachments/assets/7d845e3a-0803-42d0-a175-e8ceb1925850" width="30%">
 
-**Output:**  
+**Output:**
+
 ```
 [[10], [20, 30], [40, 50]]
 ```
 
+### **Example 3**
 
+**Input:**
 
-### **Example 3**  
-**Input:**  
 ```
 root[] = [1, 3, 2, N, N, N, 4, 6, 5]
 ```
 
 <img src="https://github.com/user-attachments/assets/e0cceec8-7faf-45ba-bdef-d064f8953c96" width="30%">
 
-**Output:**  
+**Output:**
+
 ```
 [[1], [3, 2], [4], [6, 5]]
 ```
 
-
-
 ### **Constraints**
+
 - 1 ≤ number of nodes ≤ $10^5$
 - 0 ≤ node->data ≤ $10^9$
-
-
 
 ## 🎯 **My Approach:**
 
@@ -81,11 +81,9 @@ root[] = [1, 3, 2, N, N, N, 4, 6, 5]
 
 This approach ensures that each node is visited **exactly once**, making it **efficient and optimal** for level-order traversal.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** `O(n)`, where `n` is the number of nodes in the tree. Each node is visited exactly once.  
+- **Expected Time Complexity:** `O(n)`, where `n` is the number of nodes in the tree. Each node is visited exactly once.
 - **Expected Auxiliary Space Complexity:** `O(n)`, since, in the worst case, we store all nodes in the queue.
 
 ## 📝 **Solution Code**
@@ -113,12 +111,11 @@ public:
 };
 ```
 
-
-
 <details>
   <summary><h2 align='center'>🌲 Alternative Approaches</h2></summary>
 
 ### **1️⃣ Iterative BFS (Optimized) – Using Queue**
+
 This is the most commonly used approach, leveraging **BFS (Breadth-First Search)** using a queue.
 
 ```cpp
@@ -143,9 +140,8 @@ public:
 };
 ```
 
-
-
 ### **2️⃣ Recursive DFS (Depth First Search)**
+
 This approach utilizes **DFS recursion** to store nodes level-wise.
 
 ```cpp
@@ -167,9 +163,8 @@ private:
 };
 ```
 
-
-
 ### **3️⃣ BFS Using Single Loop (Memory Efficient)**
+
 This is a **slightly more optimized** BFS version that avoids extra memory operations.
 
 ```cpp
@@ -196,28 +191,23 @@ public:
 };
 ```
 
-
-
 ### **Comparison of Approaches**
 
-| **Approach**                       | **Time Complexity** | **Space Complexity** | **Best For**             |
-|--|--|--|--|
-| **Iterative BFS (Queue) (1️⃣)**   | **O(n)** | **O(n)** (queue storage) | General case (most used) |
-| **Recursive DFS (2️⃣)**           | **O(n)** | **O(n)** (recursion stack) | Balanced trees (elegant) |
-| **Memory Efficient BFS (3️⃣)**   | **O(n)** | **O(n)** (optimized queue) | Space-efficient traversal |
-
-
+| **Approach**                   | **Time Complexity** | **Space Complexity**       | **Best For**              |
+| ------------------------------ | ------------------- | -------------------------- | ------------------------- |
+| **Iterative BFS (Queue) (1️⃣)** | **O(n)**            | **O(n)** (queue storage)   | General case (most used)  |
+| **Recursive DFS (2️⃣)**         | **O(n)**            | **O(n)** (recursion stack) | Balanced trees (elegant)  |
+| **Memory Efficient BFS (3️⃣)**  | **O(n)**            | **O(n)** (optimized queue) | Space-efficient traversal |
 
 ### **Final Recommendation**
+
 - **For General Use (Fast & Simple)** → Use **Iterative BFS (1️⃣)**
 - **For Elegant Recursive Solutions** → Use **DFS Recursion (2️⃣)**
-- **For Space Efficiency** → Use **Memory-Efficient BFS (3️⃣)**  
+- **For Space Efficiency** → Use **Memory-Efficient BFS (3️⃣)**
 
 🚀 **The most optimized and commonly used approach is 1️⃣ (Iterative BFS with Queue).**
 
 </details>
-
-
 
 ## Code (Java)
 
@@ -243,8 +233,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -258,11 +246,9 @@ class Solution:
         return res
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

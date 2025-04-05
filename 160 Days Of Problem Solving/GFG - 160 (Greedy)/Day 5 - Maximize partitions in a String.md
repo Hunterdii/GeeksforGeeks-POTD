@@ -1,16 +1,15 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - Greedy
 ---
 
 # 🚀 _Day 5. Maximize partitions in a String_ 🧠
 
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/greedy-gfg-160/problem/maximize-partitions-in-a-string)
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/greedy-gfg-160/problem/maximize-partitions-in-a-string)  
-
-## 💡 **Problem Description:** 
+## 💡 **Problem Description:**
 
 Given a string **s** consisting of lowercase English alphabets, your task is to determine the **maximum number of substrings** that can be formed by partitioning **s** such that **no two substrings share common characters**.
 
@@ -18,78 +17,95 @@ Given a string **s** consisting of lowercase English alphabets, your task is to 
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
-#### **Input:**  
+### **Example 1:**
+
+#### **Input:**
+
 ```plaintext
 s = "acbbcc"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 2
 ```
-#### **Explanation:**  
-Possible partitions:  
-- `"a"` and `"cbbcc"`  
-- `"ac"` and `"bbcc"`  
+
+#### **Explanation:**
+
+Possible partitions:
+
+- `"a"` and `"cbbcc"`
+- `"ac"` and `"bbcc"`
 
 The maximum possible substrings with **no common characters** are **2**.
 
+### **Example 2:**
 
-### **Example 2:**  
-#### **Input:**  
+#### **Input:**
+
 ```plaintext
 s = "ababcbacadefegdehijhklij"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 3
 ```
-#### **Explanation:**  
-Partitioning at index **8** and **15** produces three substrings:  
-- `"ababcbaca"`  
-- `"defegde"`  
-- `"hijhklij"`  
+
+#### **Explanation:**
+
+Partitioning at index **8** and **15** produces three substrings:
+
+- `"ababcbaca"`
+- `"defegde"`
+- `"hijhklij"`
 
 Each of these substrings contains **unique** characters within them.
 
+### **Example 3:**
 
-### **Example 3:**  
-#### **Input:**  
+#### **Input:**
+
 ```plaintext
 s = "aaa"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 1
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 Since the string consists of the **same** character, no partition can be performed.  
 The entire string itself is a **single valid substring**.
 
+### **Constraints:**
 
-### **Constraints:**  
-- $1 \leq |s| \leq 10^5$  
-- $'a' \leq s[i] \leq 'z'$  
-
+- $1 \leq |s| \leq 10^5$
+- $'a' \leq s[i] \leq 'z'$
 
 ## 🎯 **My Approach:**
 
 ### **Greedy Approach Using Last Occurrence**
-1. **Find the last occurrence of each character** and store it.  
-2. **Traverse the string** and maintain an interval that expands based on character occurrences.  
-3. When the **current index reaches the last occurrence of the characters in that segment**, count it as a partition.  
 
+1. **Find the last occurrence of each character** and store it.
+2. **Traverse the string** and maintain an interval that expands based on character occurrences.
+3. When the **current index reaches the last occurrence of the characters in that segment**, count it as a partition.
 
-### **Algorithm Steps:**  
-1. **Precompute the last occurrence** of each character in **O(N)** time.  
-2. **Traverse the string**, maintaining an `end` pointer that marks the furthest last occurrence of encountered characters.  
-3. If the **current index** reaches `end`, increment the partition count.  
+### **Algorithm Steps:**
 
+1. **Precompute the last occurrence** of each character in **O(N)** time.
+2. **Traverse the string**, maintaining an `end` pointer that marks the furthest last occurrence of encountered characters.
+3. If the **current index** reaches `end`, increment the partition count.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O(N), as we scan the string twice (once to find last occurrences, once for partitioning).  
-- **Expected Auxiliary Space Complexity:** O(1), since we use a **fixed-size** array (26 elements for lowercase letters).  
+- **Expected Time Complexity:** O(N), as we scan the string twice (once to find last occurrences, once for partitioning).
+- **Expected Auxiliary Space Complexity:** O(1), since we use a **fixed-size** array (26 elements for lowercase letters).
 
 ## 📝 **Solution Code**
 
@@ -101,7 +117,7 @@ public:
     int maxPartitions(string &s) {
         int ans = 0, end = 0;
         vector<int> last(26);
-        for (int i = 0; i < s.size(); i++) 
+        for (int i = 0; i < s.size(); i++)
             last[s[i] - 'a'] = i;
         for (int i = 0; i < s.size(); i++) {
             end = max(end, last[s[i] - 'a']);
@@ -115,11 +131,13 @@ public:
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## 📊 **2️⃣ Interval Merging Approach**  
-#### **Algorithm Steps:**  
-1. **Preprocess:** For each character, record its first and last occurrence in the string.  
-2. **Interval Creation:** Create intervals \([first, last]\) for each character that appears.  
-3. **Merge Intervals:** Sort these intervals by their starting index and merge overlapping intervals. Each merged interval represents a valid partition.  
+## 📊 **2️⃣ Interval Merging Approach**
+
+#### **Algorithm Steps:**
+
+1. **Preprocess:** For each character, record its first and last occurrence in the string.
+2. **Interval Creation:** Create intervals \([first, last]\) for each character that appears.
+3. **Merge Intervals:** Sort these intervals by their starting index and merge overlapping intervals. Each merged interval represents a valid partition.
 
 ```cpp
 class Solution {
@@ -152,24 +170,26 @@ public:
 };
 ```
 
-#### 📝 **Complexity Analysis:**  
-- ✅ **Time Complexity:** O(N + K log K)  
-  - O(N) for scanning the string (where N is the string length)  
-  - O(K log K) for sorting intervals (with at most K = 26 intervals)  
+#### 📝 **Complexity Analysis:**
+
+- ✅ **Time Complexity:** O(N + K log K)
+  - O(N) for scanning the string (where N is the string length)
+  - O(K log K) for sorting intervals (with at most K = 26 intervals)
 - ✅ **Space Complexity:** O(K) – Uses extra space for intervals (K is constant, at most 26).
 
 🔹 **Pros:** Visualizes problem as merging intervals.  
-🔹 **Cons:** Requires sorting, making it slightly slower than the greedy approach.  
+🔹 **Cons:** Requires sorting, making it slightly slower than the greedy approach.
 
-#### ✅ **Why This Approach?**  
+#### ✅ **Why This Approach?**
+
 This method visualizes the problem as merging intervals, making it easier to understand the segmentation of the string, especially for conceptual clarity.
 
+## 🔁 **3️⃣ First & Last Occurrence Approach**
 
+#### **Algorithm Steps:**
 
-## 🔁 **3️⃣ First & Last Occurrence Approach**  
-#### **Algorithm Steps:**  
-1. **Record Occurrences:** Use two arrays to store the first and last occurrences of each character.  
-2. **Greedy Partitioning:** Traverse the string and update the partition end using the last occurrence of each character. When the current index equals the partition end, a partition is identified.  
+1. **Record Occurrences:** Use two arrays to store the first and last occurrences of each character.
+2. **Greedy Partitioning:** Traverse the string and update the partition end using the last occurrence of each character. When the current index equals the partition end, a partition is identified.
 
 ```cpp
 class Solution {
@@ -193,31 +213,31 @@ public:
 };
 ```
 
-#### 📝 **Complexity Analysis:**  
-- ✅ **Time Complexity:** O(N) – Single pass for recording occurrences and one pass for partitioning.  
+#### 📝 **Complexity Analysis:**
+
+- ✅ **Time Complexity:** O(N) – Single pass for recording occurrences and one pass for partitioning.
 - ✅ **Space Complexity:** O(1) – Fixed-size arrays (26 elements each) are used.
 
-
 🔹 **Pros:** Fastest approach, minimal space usage.  
-🔹 **Cons:** Needs careful index management.  
+🔹 **Cons:** Needs careful index management.
 
-#### ✅ **Why This Approach?**  
+#### ✅ **Why This Approach?**
+
 It leverages the concept of last occurrence effectively to decide partitions with minimal extra space and linear runtime.
-
-
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                    | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                           | ⚠️ **Cons**                              |
-|---------------------------------|-------------------------|-------------------------|-------------------------------------------------------|------------------------------------------|
-| Greedy (Optimized)              | 🟢 O(N)                | 🟢 O(1)                | Best performance, straightforward implementation.   | Requires careful management of indices.|
-| Interval Merging Approach       | 🟢 O(N + K log K)      | 🟢 O(K)                | Intuitive by visualizing partitions as intervals.     | Slightly more code due to sorting.       |
-| First & Last Occurrence Approach| 🟢 O(N)                | 🟢 O(1)                | Simple and efficient with minimal extra space.        | Similar to the greedy approach.          |
+| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                       | ⚠️ **Cons**                             |
+| -------------------------------- | ---------------------- | ----------------------- | ------------------------------------------------- | --------------------------------------- |
+| Greedy (Optimized)               | 🟢 O(N)                | 🟢 O(1)                 | Best performance, straightforward implementation. | Requires careful management of indices. |
+| Interval Merging Approach        | 🟢 O(N + K log K)      | 🟢 O(K)                 | Intuitive by visualizing partitions as intervals. | Slightly more code due to sorting.      |
+| First & Last Occurrence Approach | 🟢 O(N)                | 🟢 O(1)                 | Simple and efficient with minimal extra space.    | Similar to the greedy approach.         |
 
-✅ **Best Choice?**  
-- **For best performance:** Use the **Greedy Approach (O(N), O(1))**.  
-- **For conceptual clarity:** Use the **Interval Merging Approach**.  
-- **For a structured solution:** Use **First & Last Occurrence Approach**.  
+✅ **Best Choice?**
+
+- **For best performance:** Use the **Greedy Approach (O(N), O(1))**.
+- **For conceptual clarity:** Use the **Interval Merging Approach**.
+- **For a structured solution:** Use **First & Last Occurrence Approach**.
 
 </details>
 
@@ -227,7 +247,7 @@ It leverages the concept of last occurrence effectively to decide partitions wit
 class Solution {
     public int maxPartitions(String s) {
         int[] last = new int[26];
-        for (int i = 0; i < s.length(); i++) 
+        for (int i = 0; i < s.length(); i++)
             last[s.charAt(i) - 'a'] = i;
         int count = 0, end = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -256,7 +276,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

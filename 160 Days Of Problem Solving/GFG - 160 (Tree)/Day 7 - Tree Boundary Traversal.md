@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Tree
 ---
@@ -12,6 +12,7 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 ## 💡 **Problem Description:**
 
 Given a binary tree, the task is to return a list of nodes representing its boundary traversal in an **anticlockwise direction**, starting from the **root**. The boundary includes:
+
 1. The **left boundary** (excluding the leaf nodes).
 2. All the **leaf nodes** (both from left and right subtrees).
 3. The **right boundary** (excluding the leaf nodes), added in **reverse order**.
@@ -19,30 +20,34 @@ Given a binary tree, the task is to return a list of nodes representing its boun
 ## 🔍 **Example Walkthrough:**
 
 ### **Example 1**
+
 **Input:**  
  `root[] = [1, 2, 3, 4, 5, 6, 7, N, N, 8, 9, N, N, N, N] `
- 
+
 **Output:**  
 `[1, 2, 4, 8, 9, 6, 7, 3]`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 <img src="https://github.com/user-attachments/assets/e18cfc62-05ae-4b66-82da-1602ab7cf9af" width="40%">
 
-
-
 ### **Example 2**
+
 **Input:**  
 `root[] = [1, 2, N, 4, 9, 6, 5, N, 3, N, N, N, N 7, 8]`
 
 **Output:**  
 `[1, 2, 4, 6, 5, 7, 8]`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 <img src="https://github.com/user-attachments/assets/4318b5b8-868d-4a62-9cdc-92e85e3e4326" width="40%">
 
 ### **Example 3**
+
 **Input:**  
-`root[] = [1, N, 2, N, 3, N, 4, N, N]` 
+`root[] = [1, N, 2, N, 3, N, 4, N, N]`
+
 ```
     1
      \
@@ -52,10 +57,11 @@ Given a binary tree, the task is to return a list of nodes representing its boun
          \
           4
 ```
+
 **Output:**  
-  `[1, 4, 3, 2]`
-  
-#### **Explanation:**  
+ `[1, 4, 3, 2]`
+
+#### **Explanation:**
 
 - `Left boundary: [1] (as there is no left subtree)`
 - `Leaf nodes: [4]`
@@ -63,28 +69,29 @@ Given a binary tree, the task is to return a list of nodes representing its boun
 - `Final traversal: [1, 4, 3, 2]`
 
 ## **Constraints**
+
 - 1 <= Number of Nodes <= $10^4$
 - 1 <= Node Value <= $10^5$
-
 
 ## 🎯 **My Approach:**
 
 The boundary traversal of a binary tree consists of three parts:
 
-1. **Left Boundary:**  
+1. **Left Boundary:**
+
    - Traverse the leftmost nodes, **excluding** the leaf nodes.
    - Move **left whenever possible**; otherwise, move **right**.
 
-2. **Leaf Nodes:**  
+2. **Leaf Nodes:**
+
    - Perform **inorder traversal** to collect leaf nodes.
 
-3. **Right Boundary:**  
+3. **Right Boundary:**
    - Traverse the rightmost nodes, **excluding** the leaf nodes.
    - Move **right whenever possible**; otherwise, move **left**.
    - Store nodes in a stack to reverse them before adding to the final result.
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Time Complexity:** `O(N)` Each node is visited **at most once**, so the time complexity is **O(N)**.
 - **Auxiliary Space Complexity:** `O(H)` (Height of the tree) The recursion stack space in a **skewed tree** can be **O(N)**. In a **balanced tree**, it will be **O(log N)**.
@@ -124,12 +131,13 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ## **2️⃣ Iterative Approach Using Queue (BFS)**
+
 #### **Algorithm**
+
 - Traverse the left boundary iteratively.
 - Collect leaf nodes via BFS.
 - Traverse the right boundary iteratively in **reverse order**.
@@ -141,7 +149,7 @@ public:
         if (!root) return {};
         vector<int> res;
         if (root->left || root->right) res.push_back(root->data);
-        
+
         Node* cur = root->left;
         while (cur) {
             if (cur->left || cur->right) res.push_back(cur->data);
@@ -173,9 +181,10 @@ public:
 };
 ```
 
-
 ## **3️⃣ Iterative DFS (Using Stack)**
+
 #### **Algorithm**
+
 - Use **DFS traversal** to visit nodes iteratively.
 - Push the **left boundary**.
 - Collect **leaf nodes**.
@@ -222,24 +231,21 @@ public:
 };
 ```
 
-
 ## **🔍 Comparison of Approaches**
-| Approach | Time Complexity | Space Complexity | Method | Pros | Cons |
-|----------|---------------|----------------|--------|------|------|
-| **Recursive DFS** | 🟢 O(N) | 🟡 O(H) | Recursion | Simple & structured | Stack overflow for deep trees |
-| **Iterative BFS** | 🟢 O(N) | 🔴 O(W) | Queue-based | Avoids recursion depth issues | More memory for wide trees |
-| **Iterative DFS (Stack)** | 🟢 O(N) | 🟡 O(H) | Stack-based | Explicit traversal order | Extra space for stack |
+
+| Approach                  | Time Complexity | Space Complexity | Method      | Pros                          | Cons                          |
+| ------------------------- | --------------- | ---------------- | ----------- | ----------------------------- | ----------------------------- |
+| **Recursive DFS**         | 🟢 O(N)         | 🟡 O(H)          | Recursion   | Simple & structured           | Stack overflow for deep trees |
+| **Iterative BFS**         | 🟢 O(N)         | 🔴 O(W)          | Queue-based | Avoids recursion depth issues | More memory for wide trees    |
+| **Iterative DFS (Stack)** | 🟢 O(N)         | 🟡 O(H)          | Stack-based | Explicit traversal order      | Extra space for stack         |
 
 ### **🚀 Best Choice?**
+
 - **For balanced trees**, the **Recursive DFS** method is best.
 - **For deep trees**, the **Iterative BFS** is preferable.
 - **For explicit iterative control**, the **DFS with Stack** is an option.
 
 </details>
-
-
-
-
 
 ## Code (Java)
 
@@ -312,7 +318,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

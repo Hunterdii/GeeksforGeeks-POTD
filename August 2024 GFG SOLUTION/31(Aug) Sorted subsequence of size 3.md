@@ -15,27 +15,35 @@ You are given an array `arr`, and you need to find any three elements in it such
 **Example:**
 
 Input:
+
 ```
 arr = [1, 2, 1, 1, 3]
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: A subsequence `1 2 3` exists.
 
 ### My Approach
 
 1. **Initialization:**
+
    - We maintain two auxiliary arrays `smaller` and `greater` to store indices of elements that are smaller and greater than the current element, respectively.
 
 2. **Traverse Array to Fill Smaller Array:**
+
    - Start from the left of the array and update `smaller[i]` with the index of the smallest element seen so far to the left of the current element.
 
 3. **Traverse Array to Fill Greater Array:**
+
    - Start from the right of the array and update `greater[i]` with the index of the largest element seen so far to the right of the current element.
 
 4. **Find the Required Subsequence:**
+
    - Scan through the array to find an element such that both `smaller[i]` and `greater[i]` are not `-1`. Return the elements at these indices as the result.
 
 5. **Edge Cases:**
@@ -53,7 +61,7 @@ class Solution {
 public:
     vector<int> find3Numbers(vector<int> arr) {
         int n = arr.size();
-        if (n < 3) return {}; 
+        if (n < 3) return {};
 
         vector<int> smaller(n, -1);
         vector<int> greater(n, -1);
@@ -82,7 +90,7 @@ public:
             }
         }
 
-        return {}; 
+        return {};
     }
 };
 ```
@@ -93,7 +101,7 @@ public:
 class Solution {
     public List<Integer> find3Numbers(int[] arr) {
         int n = arr.length;
-        if (n < 3) return new ArrayList<>(); 
+        if (n < 3) return new ArrayList<>();
 
         int[] smaller = new int[n];
         int[] greater = new int[n];
@@ -124,7 +132,7 @@ class Solution {
             }
         }
 
-        return new ArrayList<>(); 
+        return new ArrayList<>();
     }
 }
 ```
@@ -164,11 +172,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -16,26 +16,33 @@ Given two strings, `pattern` and `str`, which may be of different sizes, return 
 **Example:**
 
 Input:
+
 ```
 pattern = "ba*a?"
 str = "baaabab"
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: Replace `*` with `"aab"` and `?` with `"b"`.
 
 ### My Approach
 
 1. **Dynamic Programming (DP) Setup:**
+
    - Create a 2D DP array where `dp[i][j]` will be `1` if the first `i` characters in `pattern` match the first `j` characters in `str`, else `0`.
 
 2. **Initialization:**
+
    - `dp[0][0] = 1` because an empty pattern matches an empty string.
    - If `pattern[j-1]` is `*`, then `dp[j]` can inherit the value from `dp[j-1]` since `*` can represent an empty sequence.
 
 3. **DP Array Population:**
+
    - For each character in `str` and `pattern`, update the DP array:
      - If `pattern[j-1]` is `?` or `pattern[j-1]` matches `str[i-1]`, then set `newDp[j] = dp[j-1]`.
      - If `pattern[j-1]` is `*`, set `newDp[j] = dp[j] || newDp[j-1]`, allowing `*` to match multiple characters.
@@ -45,8 +52,8 @@ Explanation: Replace `*` with `"aab"` and `?` with `"b"`.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n*m), where `n` is the length of `str` and `m` is the length of `pattern`, as we iterate over all possible pairs of characters.
-- **Expected Auxiliary Space Complexity:** O(n*m), due to the DP array that stores matching results for all substrings.
+- **Expected Time Complexity:** O(n\*m), where `n` is the length of `str` and `m` is the length of `pattern`, as we iterate over all possible pairs of characters.
+- **Expected Auxiliary Space Complexity:** O(n\*m), due to the DP array that stores matching results for all substrings.
 
 ### Code (C++)
 
@@ -140,11 +147,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

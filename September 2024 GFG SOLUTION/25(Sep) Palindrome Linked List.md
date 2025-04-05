@@ -1,4 +1,4 @@
-# *25. Palindrome Linked List*
+# _25. Palindrome Linked List_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1)
 
@@ -7,13 +7,13 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given a singly linked list of integers, the task is to check if the given linked list is a palindrome or not.
 
 - **Example 1:**
-  
+
   Input: LinkedList: `1 -> 2 -> 1 -> 1 -> 2 -> 1`  
   Output: `true`  
   Explanation: The given linked list is `1 -> 2 -> 1 -> 1 -> 2 -> 1`, which is a palindrome.
 
 - **Example 2:**
-  
+
   Input: LinkedList: `1 -> 2 -> 3 -> 4`  
   Output: `false`  
   Explanation: The given linked list is `1 -> 2 -> 3 -> 4`, which is not a palindrome.
@@ -21,12 +21,15 @@ Given a singly linked list of integers, the task is to check if the given linked
 ### My Approach
 
 1. **Two Pointer Technique:**
+
    - Utilize the slow and fast pointer method to find the middle of the linked list. The slow pointer will move one step at a time, while the fast pointer will move two steps.
-  
+
 2. **Reversing the First Half:**
+
    - While traversing, reverse the first half of the linked list. This helps in comparing the first half and the second half in a single pass.
 
 3. **Comparison:**
+
    - Compare the reversed first half with the second half of the linked list. If all corresponding nodes match, the linked list is a palindrome.
 
 4. **Final Result:**
@@ -43,10 +46,10 @@ Given a singly linked list of integers, the task is to check if the given linked
 class Solution {
 public:
     bool isPalindrome(Node* head) {
-        if (!head || !head->next) return true;  
+        if (!head || !head->next) return true;
         Node *slow = head, *fast = head;
         Node* prev = nullptr;
-        
+
         while (fast && fast->next) {
             fast = fast->next->next;
             Node* next = slow->next;
@@ -56,7 +59,7 @@ public:
         }
         Node* secondHalf = slow;
         if (fast) {
-            secondHalf = slow->next;  
+            secondHalf = slow->next;
         }
         Node* firstHalf = prev;
         while (secondHalf) {
@@ -91,7 +94,7 @@ class Solution {
 
         Node secondHalf = slow;
         if (fast != null) {
-            secondHalf = slow.next; 
+            secondHalf = slow.next;
         }
 
         Node firstHalf = prev;
@@ -130,7 +133,7 @@ class Solution:
 
         second_half = slow
         if fast:
-            second_half = slow.next  
+            second_half = slow.next
 
         first_half = prev
         while second_half:
@@ -144,11 +147,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

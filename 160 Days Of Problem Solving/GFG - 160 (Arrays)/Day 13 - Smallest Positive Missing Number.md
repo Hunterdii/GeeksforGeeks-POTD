@@ -1,9 +1,9 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Arrays
-  - Searching  
+  - Searching
 ---
 
 # 🚀 _Day 13. Smallest Positive Missing Number_ 🧠
@@ -43,24 +43,26 @@ Smallest positive missing number is 4.
 Smallest positive missing number is 1.
 
 ### Constraints:
+
 - $`1 <= arr.size() <= 10^5`$
 - $`-10^6 <= arr[i] <= 10^6`$
 
 ## 🎯 **My Approach:**
 
-1. **In-place Rearrangement**:  
+1. **In-place Rearrangement**:
+
    - The problem can be solved using an in-place rearrangement technique that places elements at their correct indices.
    - The idea is to rearrange the elements such that for any element `arr[i]`, it should be placed at index `arr[i] - 1`.
    - After rearranging the elements, traverse the array again to find the smallest missing positive integer.
 
-2. **Steps:**  
-   - Iterate through the array, and for each element that is within the valid range `[1, n]`, place it in its correct position.  
+2. **Steps:**
+   - Iterate through the array, and for each element that is within the valid range `[1, n]`, place it in its correct position.
    - Once the array is rearranged, traverse the array to identify the smallest index `i` where `arr[i] != i + 1`. This indicates the missing number.
    - If all elements are in place, the missing number is `n + 1`.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires two linear scans of the array, making it efficient.  
+- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires two linear scans of the array, making it efficient.
 - **Expected Auxiliary Space Complexity:** O(1), as we use only a constant amount of additional space.
 
 ## 📝 **Solution Code**
@@ -78,7 +80,7 @@ int missingNumber(int arr[], int n) {
     }
     for (int i = 0; i < n; i++) {
         if (arr[i] != i + 1) {
-            return i + 1; 
+            return i + 1;
         }
     }
     return n + 1;
@@ -99,7 +101,7 @@ public:
         }
         for (int i = 0; i < n; i++) {
             if (arr[i] != i + 1) {
-                return i + 1; 
+                return i + 1;
             }
         }
         return n + 1;
@@ -147,7 +149,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

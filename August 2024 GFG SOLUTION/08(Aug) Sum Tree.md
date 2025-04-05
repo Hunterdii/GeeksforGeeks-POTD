@@ -9,39 +9,49 @@ Given a Binary Tree, check whether it is a Sum Tree or not. A Sum Tree is a Bina
 **Example:**
 
 Input:
+
 ```
     3
-  /   \    
+  /   \
  1     2
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation:
 The sum of the left subtree and right subtree is 1 + 2 = 3, which is the value of the root node. Therefore, the given binary tree is a Sum Tree.
 
 Input:
+
 ```
           10
         /    \
       20      30
-    /   \ 
+    /   \
    10    10
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation:
 The given tree is not a Sum Tree. For the root node, the sum of elements in the left subtree is 40 and the sum of elements in the right subtree is 30. The root element is 10, which is not equal to 30 + 40.
 
 ### My Approach
 
 1. **Leaf Node Check:**
+
    - Define a helper function `isLeaf` to check if a node is a leaf node (i.e., it has no children).
 
 2. **Sum Tree Check:**
+
    - Define a recursive helper function `checkSumTree` that checks whether a given tree is a Sum Tree. This function calculates the sum of the nodes in the left and right subtrees and verifies if the current node's value equals this sum.
 
 3. **Main Function:**
@@ -162,10 +172,9 @@ class Solution:
         return False
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

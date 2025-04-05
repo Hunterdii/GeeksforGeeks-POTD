@@ -15,23 +15,29 @@ Given two integers \(n\) and \(m\) and a 2D matrix \(mat\) of dimensions \(n \ti
 </p>
 
 Input:
+
 ```
 n = 3, m = 3
 mat = [[1, 2, 3],
        [4, 5, 6],
        [7, 8, 9]]
 ```
+
 Output:
+
 ```
 35
 ```
+
 Explanation:
 There is only one hourglass in the matrix:
+
 ```
 1 2 3
   5
 7 8 9
 ```
+
 The sum of this hourglass is 35.
 
 **Your Task:**
@@ -42,6 +48,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 **Expected Auxillary Space:** \(O(1)\)
 
 **Constraints:**
+
 - \(1 \leq n \leq 150\)
 - \(3 \leq m \leq 150\)
 - \(0 \leq \text{mat}[i][j] \leq 10^6\)
@@ -50,16 +57,12 @@ You don't need to read input or print anything. Your task is to complete the fun
 
 1. **Initialization:**
    - Initialize a variable `ans` to store the maximum sum of the hourglass. Set it to the minimum integer value initially.
-   
 2. **Iterate Through Matrix:**
    - Iterate through the matrix using two nested loops to cover all possible hourglasses.
-   
 3. **Calculate Hourglass Sum:**
    - For each hourglass, calculate its sum by adding the values of all its elements.
-   
 4. **Update Maximum Sum:**
    - Update the maximum sum (`ans`) if the sum of the current hourglass is greater than the current maximum.
-   
 5. **Return Result:**
    - Return the maximum sum of the hourglass found.
 
@@ -92,7 +95,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

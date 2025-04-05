@@ -1,4 +1,4 @@
-# *23. Minimize the Heights I*
+# _23. Minimize the Heights I_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/minimize-the-heights3351/1)
 
@@ -6,9 +6,9 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
   <h2>✨ LeetCode Problem of the Day (POTD) Solutions ✨</h2>
 </div>
 
-- Continuing the **LeetCode Problem of the Day (POTD)** journey! 🎯  
+- Continuing the **LeetCode Problem of the Day (POTD)** journey! 🎯
 - Today's problem is live:  
-  **[1861. Rotating the Box](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/1861.Rotating%20the%20Box.md)**  
+  **[1861. Rotating the Box](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/1861.Rotating%20the%20Box.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/1861.Rotating%20the%20Box.md">
@@ -44,6 +44,7 @@ The array can be modified as `[3, 3, 6, 8]`. The difference between the largest 
 The array can be modified as `[6, 12, 9, 13, 17]`. The difference between the largest and smallest heights is `17 - 6 = 11`.
 
 ### Constraints:
+
 - `1 ≤ k ≤ 10^4`
 - `1 ≤ number of towers ≤ 10^5`
 - `0 ≤ arr[i] ≤ 10^5`
@@ -53,7 +54,7 @@ The array can be modified as `[6, 12, 9, 13, 17]`. The difference between the la
 1. **Sorting Approach:**  
    The idea is to first sort the array and then attempt to modify the heights in such a way that the difference between the tallest and shortest towers is minimized. By modifying the tallest and shortest towers with either an addition or subtraction of `k`, we minimize the range. The goal is to iterate through the modified array to find the minimum possible difference.
 
-2. **Steps:**  
+2. **Steps:**
    - Sort the array to bring the shortest and tallest towers together.
    - Adjust the smallest and largest elements with either addition or subtraction of `k`.
    - Use a sliding window approach to minimize the difference between the largest and smallest heights after modification.
@@ -71,7 +72,7 @@ public:
     int getMinDiff(int k, vector<int>& arr) {
         vector<pair<int, int>> v;
         int n = arr.size();
-        vector<int> taken(n, 0); 
+        vector<int> taken(n, 0);
 
         for (int i = 0; i < n; i++) {
             v.emplace_back(arr[i] - k, i);
@@ -177,7 +178,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

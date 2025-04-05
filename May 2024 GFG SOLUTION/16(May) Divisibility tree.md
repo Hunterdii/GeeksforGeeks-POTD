@@ -9,16 +9,20 @@ Given a tree with \(n\) nodes and edge connections between them, where the tree 
 **Example 1:**
 
 Input:
+
 ```
 n = 10
 edges = {{2,1},{3,1},{4,3},{5,2},{6,1},{7,2},{8,6},{9,8},{10,8}}
 ```
+
 Output:
+
 ```
 2
 ```
+
 Explanation:
-Take two integers at a time i.e. 2 is connected with 1, 3 is connected with 1,4 is 
+Take two integers at a time i.e. 2 is connected with 1, 3 is connected with 1,4 is
 connected with 3, 5 is connected with 2 and so on. Fig will understand you better.
 Original tree:
 
@@ -27,6 +31,7 @@ Original tree:
 </p>
 
 After removing edge 1-3 and 1-6. So ans is 2 because all nodes are even.
+
 <p align="center">
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/5ddab435-7a79-4414-9e2c-381e682abc49" alt="Image" width="270" />
 </p>
@@ -37,12 +42,14 @@ Removing the edge 2-1 converts the tree into a disjoint union tree, with the nod
 ### My Approach
 
 1. **Depth-First Search (DFS):**
+
 - Construct an adjacency list representation of the tree from the given edges.
 - Implement a DFS traversal starting from node 1 to explore the tree.
 - During DFS, count the number of nodes in each connected component.
 - If the count of nodes in a connected component is odd, it means removing an edge from that component will make all nodes in that component divisible by 2.
 
 2. **Edge Removal:**
+
 - During DFS, whenever an odd count of nodes in a connected component is encountered, increment a counter for edge removal.
 - Finally, return the count of edges to be removed.
 
@@ -88,7 +95,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

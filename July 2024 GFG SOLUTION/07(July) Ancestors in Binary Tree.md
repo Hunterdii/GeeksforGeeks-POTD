@@ -15,6 +15,7 @@ Given a Binary Tree and an integer target, find all the ancestors of the given t
 **Examples:**
 
 Input:
+
 ```
          1
        /   \
@@ -25,17 +26,20 @@ Input:
  7
 target = 7
 ```
+
 Output:
+
 ```
 [4, 2, 1]
 ```
+
 Explanation:
 The given target is 7. If we go above the level of node 7, then we find 4, 2, and 1. Hence the ancestors of node 7 are 4, 2, and 1.
-
 
 ### My Approach
 
 1. **Helper Function:**
+
    - Define a helper function `findAncestors` to recursively find the ancestors.
    - If the current node is `None`, return `False`.
    - If the current node's data matches the target, return `True`.
@@ -65,7 +69,7 @@ public:
 
         if (root->data == target) return true;
 
-        if (findAncestors(root->left, target, ancestors) || 
+        if (findAncestors(root->left, target, ancestors) ||
             findAncestors(root->right, target, ancestors)) {
             ancestors.push_back(root->data);
             return true;
@@ -92,7 +96,7 @@ class Solution {
 
         if (root.data == target) return true;
 
-        if (findAncestors(root.left, target, ancestors) || 
+        if (findAncestors(root.left, target, ancestors) ||
             findAncestors(root.right, target, ancestors)) {
             ancestors.add(root.data);
             return true;
@@ -120,7 +124,7 @@ class Solution:
         if root.data == target:
             return True
 
-        if (self.findAncestors(root.left, target, ancestors) or 
+        if (self.findAncestors(root.left, target, ancestors) or
             self.findAncestors(root.right, target, ancestors)):
             ancestors.append(root.data)
             return True
@@ -135,7 +139,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

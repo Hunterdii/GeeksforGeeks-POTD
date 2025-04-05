@@ -9,6 +9,7 @@ Given a Binary Tree, find and return the vertical width of the tree.
 **Examples:**
 
 **Input:**
+
 ```
          1
        /   \
@@ -18,12 +19,16 @@ Given a Binary Tree, find and return the vertical width of the tree.
            \   \
             8   9
 ```
+
 **Output:**
+
 ```
 6
 ```
+
 **Explanation:**
 The width of a binary tree is the number of vertical paths in that tree. The above tree contains 6 vertical lines.
+
 <p align="center">
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/d6a8468f-8bef-4d5f-8ffb-88daf8a36c1d" alt="Image" width="370" />
 </p>
@@ -31,11 +36,13 @@ The width of a binary tree is the number of vertical paths in that tree. The abo
 ### Approach
 
 1. **Initialization:**
+
    - Define a helper function `solve` that traverses the tree and updates the maximum and minimum horizontal distances from the root.
    - Use `maxi` and `mini` to track the maximum and minimum horizontal distances respectively.
    - Initialize `maxi` and `mini` to 0.
 
 2. **Tree Traversal:**
+
    - Perform a pre-order traversal (DFS) of the tree.
    - For each node, update `maxi` and `mini` based on the current horizontal distance `x`.
    - For the left child, the horizontal distance is `x - 1`.
@@ -117,7 +124,7 @@ def verticalWidth(root):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

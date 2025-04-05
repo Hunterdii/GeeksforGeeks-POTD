@@ -9,24 +9,30 @@ Given a number `n`, find the number of binary strings of length `n` that contain
 **Example:**
 
 Input:
+
 ```
 n = 2
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 There are 4 strings of length 2, the strings are 00, 01, 10, and 11. Only the string 11 has consecutive 1's.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Define a constant `MOD` as \(10^9 + 7\).
    - Initialize variables `a` and `b` to 1, representing the first two Fibonacci numbers.
    - Initialize `res` to 1 to store the number of binary strings with consecutive 1's.
 
 2. **Fibonacci Calculation:**
+
    - Iterate from `i = 3` to `n`.
    - Calculate the next Fibonacci number `c` as the sum of the previous two terms: `c = (a + b) % MOD`.
    - Update `a` to `b` and `b` to `c`.
@@ -77,7 +83,7 @@ class Solution {
         long a = 1, b = 1;
         long res = 1;
         for (int i = 3; i <= n; i++) {
-            long c = (a + b) % MOD; 
+            long c = (a + b) % MOD;
             a = b;
             b = c;
             res = (res * 2 + a) % MOD;
@@ -106,7 +112,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

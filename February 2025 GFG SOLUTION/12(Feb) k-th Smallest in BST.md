@@ -1,20 +1,18 @@
-# *12. k-th Smallest in BST*  
+# _12. k-th Smallest in BST_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1)
 
-
-
-## **Problem Description**  
+## **Problem Description**
 
 Given a **Binary Search Tree (BST)** and an integer **k**, the task is to find the **k-th smallest element** in the BST.  
-If there is **no k-th smallest element** present, return `-1`.  
-
-
+If there is **no k-th smallest element** present, return `-1`.
 
 ## **Examples**
 
-### **Example 1:**  
-#### **Input:**  
+### **Example 1:**
+
+#### **Input:**
+
 ```
         2
        / \
@@ -24,17 +22,20 @@ k = 2
 
 <img src="https://github.com/user-attachments/assets/1fe38e2a-319a-4341-8e86-ce6a684e8c05" width="30%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 2
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 The elements in ascending order are `[1, 2, 3]`. The 2nd smallest element is `2`.
 
+### **Example 2:**
 
+#### **Input:**
 
-### **Example 2:**  
-#### **Input:**  
 ```
         2
        / \
@@ -44,17 +45,20 @@ k = 5
 
 <img src="https://github.com/user-attachments/assets/29a82ac1-c034-409c-b613-974c78334f0d" width="30%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 -1
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 The BST contains only 3 elements. Hence, there is **no 5th smallest element**.
 
+### **Example 3:**
 
+#### **Input:**
 
-### **Example 3:**  
-#### **Input:**  
 ```
             20
            /  \
@@ -68,21 +72,21 @@ k = 3
 
 <img src="https://github.com/user-attachments/assets/9d1a42b6-beee-4b2d-9125-575094385d0c" width="30%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 10
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 The in-order traversal of the BST is `[4, 8, 10, 12, 14, 20, 22]`.  
 The 3rd smallest element is `10`.
 
+## **Constraints:**
 
-
-## **Constraints:**  
-- 1 ≤ number of nodes, k ≤ $10^5$  
-- 1 ≤ node->data ≤ $10^5$  
-
-
+- 1 ≤ number of nodes, k ≤ $10^5$
+- 1 ≤ node->data ≤ $10^5$
 
 ## **My Approach**
 
@@ -92,32 +96,29 @@ The 3rd smallest element is `10`.
 - It temporarily modifies the tree structure but restores it before completion.
 
 #### **Algorithm Steps:**
+
 1. Start from the root node.
-2. If the left child is `NULL`:  
+2. If the left child is `NULL`:
    - **Visit the current node** (decrement `k`).
-   - If `k == 0`, return the current node's value.  
-   - Move to the right child.  
-3. If the left child exists:  
+   - If `k == 0`, return the current node's value.
+   - Move to the right child.
+3. If the left child exists:
    - Find the **rightmost node** in the left subtree (inorder predecessor).
-   - If the rightmost node's right is `NULL`:  
+   - If the rightmost node's right is `NULL`:
      - Make the current node its right child (create a temporary thread).
      - Move to the left child.
-   - If the rightmost node’s right is the current node (thread exists):  
+   - If the rightmost node’s right is the current node (thread exists):
      - Remove the thread (restore the original tree).
      - **Visit the current node** (decrement `k`).
-     - If `k == 0`, return the current node's value.  
-     - Move to the right child.  
+     - If `k == 0`, return the current node's value.
+     - Move to the right child.
 4. If the traversal completes without finding the k-th smallest, return `-1`.
-
-
 
 ## **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** `O(N)` We visit each node exactly twice (once to create a thread and once to remove it), which is linear with respect to the number of nodes.  
+- **Expected Time Complexity:** `O(N)` We visit each node exactly twice (once to create a thread and once to remove it), which is linear with respect to the number of nodes.
 
 - **Expected Auxiliary Space Complexity:** `O(1)` No additional stack or recursion is used. Only a few pointers are manipulated.
-
-
 
 ## Code (C)
 
@@ -143,7 +144,6 @@ int kthSmallest(struct Node* root, int k) {
     return -1;
 }
 ```
-
 
 ## Code (C++)
 
@@ -173,11 +173,11 @@ class Solution {
 };
 ```
 
-
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ## **2️⃣ Recursive Inorder Traversal**
+
 ```cpp
 class Solution {
 public:
@@ -189,16 +189,17 @@ public:
         return kthSmallest(root->right, k);
     }
 };
-``` 
-🔹 **Optimized by using `k` as a reference, reducing redundant calculations.**  
+```
 
+🔹 **Optimized by using `k` as a reference, reducing redundant calculations.**
 
 ## **3️⃣ Iterative Inorder Traversal (Using Stack)**
+
 ```cpp
 class Solution {
 public:
     int kthSmallest(Node* root, int k) {
-        if (!root) return -1; 
+        if (!root) return -1;
         stack<Node*> st;
         while (true) {
             while (root) {
@@ -207,25 +208,25 @@ public:
             }
             if (st.empty()) return -1;
             root = st.top(); st.pop();
-            if (--k == 0) return root->data; 
+            if (--k == 0) return root->data;
             root = root->right;
         }
     }
 };
-``` 
-🔹 **Handles larger trees efficiently without recursion depth issues.**  
+```
 
-
+🔹 **Handles larger trees efficiently without recursion depth issues.**
 
 ## **Comparison of Approaches**
 
-| **Approaches**                        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method**         | ✅ **Pros**                                  | ⚠️ **Cons**                           |
-|--------------------------------|-----------------|------------------|---------------|------------------------------------------|----------------------------------|
-| **Morris Traversal (Optimized)** | 🟢 `O(N)`      | 🟢 `O(1)`        | No extra space | No extra space used                     | Modifies tree temporarily       |
-| **Recursive Inorder**         | 🟢 `O(N)`      | 🟡 `O(H)`        | Recursion     | Simple and concise                       | Stack space for recursion       |
-| **Iterative Inorder (Stack)** | 🟢 `O(H + K)`  | 🟡 `O(H)`        | Stack-based   | Avoids recursion depth issues            | Uses extra memory for stack     |
+| **Approaches**                   | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method**  | ✅ **Pros**                   | ⚠️ **Cons**                 |
+| -------------------------------- | ---------------------- | ----------------------- | -------------- | ----------------------------- | --------------------------- |
+| **Morris Traversal (Optimized)** | 🟢 `O(N)`              | 🟢 `O(1)`               | No extra space | No extra space used           | Modifies tree temporarily   |
+| **Recursive Inorder**            | 🟢 `O(N)`              | 🟡 `O(H)`               | Recursion      | Simple and concise            | Stack space for recursion   |
+| **Iterative Inorder (Stack)**    | 🟢 `O(H + K)`          | 🟡 `O(H)`               | Stack-based    | Avoids recursion depth issues | Uses extra memory for stack |
 
-## 💡 **Best Choice?**  
+## 💡 **Best Choice?**
+
 - **For space efficiency:** ✅ Morris Traversal (`O(1)` space).
 - **For simplicity:** ✅ Recursive Inorder Traversal is intuitive.
 - **For large/deep trees:** ✅ Iterative Inorder Traversal (Stack) avoids recursion depth issues.
@@ -259,7 +260,6 @@ class Solution {
 }
 ```
 
-
 ## Code (Python)
 
 ```python
@@ -287,11 +287,9 @@ class Solution:
         return -1
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

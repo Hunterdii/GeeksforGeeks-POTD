@@ -1,6 +1,6 @@
 ---
-Difficulty: Hard  
-Source: 160 Days of Problem Solving  
+Difficulty: Hard
+Source: 160 Days of Problem Solving
 Tags:
   - Dynamic Programming
   - Matrix
@@ -8,110 +8,115 @@ Tags:
 
 # 🚀 _Day 21. Matrix Chain Multiplication_ 🧠
 
-
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/matrix-chain-multiplication0303)
 
-## 💡 **Problem Description:** 
+## 💡 **Problem Description:**
 
 Given an array `arr[]` where the `i`th matrix has the dimensions **(arr[i-1] × arr[i])** for `i ≥ 1`, find the most efficient way to multiply these matrices together. The efficient way is the one that involves the least number of scalar multiplications.
 
 You need to find the **minimum number of multiplications** required to multiply the matrices.
 
-
-
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```plaintext
 arr[] = [2, 1, 3, 4]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```plaintext
 20
 ```
 
-#### **Explanation:**  
-We have three matrices:  
-- `M1 (2×1)`, `M2 (1×3)`, and `M3 (3×4)`.  
-- There are two ways to multiply them:  
+#### **Explanation:**
 
-  1. **((M1 × M2) × M3)**  
-     - Cost = `(2 × 1 × 3) + (2 × 3 × 4) = 30`  
+We have three matrices:
 
-  2. **(M1 × (M2 × M3))**  
-     - Cost = `(1 × 3 × 4) + (2 × 1 × 4) = 20`  
+- `M1 (2×1)`, `M2 (1×3)`, and `M3 (3×4)`.
+- There are two ways to multiply them:
+
+  1. **((M1 × M2) × M3)**
+
+     - Cost = `(2 × 1 × 3) + (2 × 3 × 4) = 30`
+
+  2. **(M1 × (M2 × M3))**
+     - Cost = `(1 × 3 × 4) + (2 × 1 × 4) = 20`
 
 The minimum cost is **20**.
 
+### **Example 2:**
 
+#### **Input:**
 
-### **Example 2:**  
-
-#### **Input:**  
 ```plaintext
 arr[] = [1, 2, 3, 4, 3]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```plaintext
 30
 ```
 
-#### **Explanation:**  
-We have four matrices:  
-- `M1 (1×2)`, `M2 (2×3)`, `M3 (3×4)`, and `M4 (4×3)`.  
+#### **Explanation:**
+
+We have four matrices:
+
+- `M1 (1×2)`, `M2 (2×3)`, `M3 (3×4)`, and `M4 (4×3)`.
 - The minimum multiplication cost is **30**.
 
+### **Example 3:**
 
+#### **Input:**
 
-### **Example 3:**  
-
-#### **Input:**  
 ```plaintext
 arr[] = [3, 4]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```plaintext
 0
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 There is only **one** matrix, so no multiplication is required.
 
+## **Constraints:**
 
-
-## **Constraints:**  
-- $\(2 \leq \text{arr.size()} \leq 100\)$  
-- $\(1 \leq \text{arr}[i] \leq 200\)$  
-
+- $\(2 \leq \text{arr.size()} \leq 100\)$
+- $\(1 \leq \text{arr}[i] \leq 200\)$
 
 ## 🎯 **My Approach:**
 
-## **Bottom-Up Dynamic Programming**  
+## **Bottom-Up Dynamic Programming**
 
-### **Key Idea:**  
-We define **`dp[i][j]`** as the minimum number of scalar multiplications required to multiply matrices **from index `i` to `j`**.  
+### **Key Idea:**
 
-### **Algorithm Steps:**  
-1. **Create a DP table** `dp[i][j]`, initialized to 0.  
-2. Iterate over **chain lengths** (`len = 2` to `n-1`).  
-3. Iterate over **starting indices** (`i = 1` to `n-len`), setting `j = i + len - 1`.  
-4. Compute the **minimum cost** for multiplying matrices from `i` to `j` by iterating over possible partition points `k`.  
-5. **Return `dp[1][n-1]`**, which contains the minimum multiplication cost.  
+We define **`dp[i][j]`** as the minimum number of scalar multiplications required to multiply matrices **from index `i` to `j`**.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+### **Algorithm Steps:**
 
+1. **Create a DP table** `dp[i][j]`, initialized to 0.
+2. Iterate over **chain lengths** (`len = 2` to `n-1`).
+3. Iterate over **starting indices** (`i = 1` to `n-len`), setting `j = i + len - 1`.
+4. Compute the **minimum cost** for multiplying matrices from `i` to `j` by iterating over possible partition points `k`.
+5. **Return `dp[1][n-1]`**, which contains the minimum multiplication cost.
 
-- **Expected Time Complexity:** O(N³), since we iterate over `O(N²)` subproblems, and each subproblem requires `O(N)` operations.  
-- **Expected Auxiliary Space Complexity:** O(N²), for storing the DP table.  
+## 🕒 **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:** O(N³), since we iterate over `O(N²)` subproblems, and each subproblem requires `O(N)` operations.
+- **Expected Auxiliary Space Complexity:** O(N²), for storing the DP table.
 
 ## 📝 **Solution Code**
 
 ## **Code (C++)**
+
 ```cpp
 class Solution {
 public:
@@ -135,12 +140,15 @@ public:
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
 ## **1️⃣ Recursive + Memoization (Top-Down DP) – O(N³)**
+
 ### **Algorithm Steps:**
+
 1. Use a `dp[i][j]` table to store results of subproblems.
 2. If `dp[i][j]` is already computed, return it.
 3. Otherwise, compute `solve(i, j)` recursively and store results.
 
 ### **Code (C++):**
+
 ```cpp
 class Solution {
 public:
@@ -164,27 +172,26 @@ public:
     }
 };
 ```
+
 ✅ **Time Complexity:** `O(N³)`  
 ✅ **Space Complexity:** `O(N²)`
 
-
-
-
-
 ## **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                     |
-|----------------------------------|------------------------|-------------------------|----------------------------------|---------------------------------|
-| **Bottom-Up DP**                 | 🟢 O(N³)               | 🟡 O(N²)                 | Efficient and easy to implement | Uses `O(N²)` space              |
-| **Recursive + Memoization**      | 🟢 O(N³)               | 🔴 O(N²)                  | Reduces redundant calculations | Still uses `O(N²)` memory       |
+| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                     | ⚠️ **Cons**               |
+| --------------------------- | ---------------------- | ----------------------- | ------------------------------- | ------------------------- |
+| **Bottom-Up DP**            | 🟢 O(N³)               | 🟡 O(N²)                | Efficient and easy to implement | Uses `O(N²)` space        |
+| **Recursive + Memoization** | 🟢 O(N³)               | 🔴 O(N²)                | Reduces redundant calculations  | Still uses `O(N²)` memory |
 
+✅ **Best Choice?**
 
-✅ **Best Choice?**  
-- If **memory is not an issue**, use **Bottom-Up DP** (`O(N³) Time, O(N²) Space`).  
-- If **you need recursion**, use **Memoized DP** (`O(N³) Time, O(N²) Space`).  
+- If **memory is not an issue**, use **Bottom-Up DP** (`O(N³) Time, O(N²) Space`).
+- If **you need recursion**, use **Memoized DP** (`O(N³) Time, O(N²) Space`).
 </details>
-  
-## **Code (Java)** 
+
+
+## **Code (Java)**
+
 ```java
 class Solution {
     static int matrixMultiplication(int[] arr) {
@@ -201,6 +208,7 @@ class Solution {
     }
 }
 ```
+
 ## **Code (Python)**
 
 ```python
@@ -213,15 +221,13 @@ class Solution:
                 j, dp[i][i + l - 1] = i + l - 1, float('inf')
                 for k in range(i, j):
                     dp[i][j] = min(dp[i][j], arr[i - 1] * arr[k] * arr[j] + dp[i][k] + dp[k + 1][j])
-        
+
         return dp[1][n - 1]
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

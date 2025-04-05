@@ -1,82 +1,83 @@
-# *28. Evaluation of Postfix Expression*  
+# _28. Evaluation of Postfix Expression_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1)
 
+## **Problem Description**
 
-## **Problem Description**  
-
-You are given an array of strings `arr` that represents a valid arithmetic expression written in **Reverse Polish Notation (Postfix Notation)**.  
+You are given an array of strings `arr` that represents a valid arithmetic expression written in **Reverse Polish Notation (Postfix Notation)**.
 
 Your task is to evaluate the expression and return an integer representing its value.
 
-### **Operators Supported**  
-- `+` Addition  
-- `-` Subtraction  
-- `*` Multiplication  
+### **Operators Supported**
+
+- `+` Addition
+- `-` Subtraction
+- `*` Multiplication
 - `/` Integer Division (rounds towards zero)
 
-### **Key Points**  
+### **Key Points**
+
 - All numbers are valid integers.
 - No division by zero.
 - Result and intermediate values fit in **32-bit signed integer**.
 
-
 ## **Examples**
 
-### **Example 1**  
+### **Example 1**
 
-#### **Input:**  
-arr = ["2", "3", "1", "*", "+", "9", "-"]  
+#### **Input:**
 
-#### **Output:**  
-`-4`  
+arr = ["2", "3", "1", "*", "+", "9", "-"]
 
-#### **Explanation:**  
+#### **Output:**
+
+`-4`
+
+#### **Explanation:**
+
 Expression equivalent to:  
-$\(2 + (3 \times 1) - 9 = 5 - 9 = -4\)$  
+$\(2 + (3 \times 1) - 9 = 5 - 9 = -4\)$
 
+### **Example 2**
 
+#### **Input:**
 
-### **Example 2**  
+arr = ["100", "200", "+", "2", "/", "5", "*", "7", "+"]
 
-#### **Input:**  
-arr = ["100", "200", "+", "2", "/", "5", "*", "7", "+"]  
+#### **Output:**
 
-#### **Output:**  
-`757`  
+`757`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 Expression equivalent to:  
-$\(\frac{100 + 200}{2} \times 5 + 7 = 150 \times 5 + 7 = 757\)$  
+$\(\frac{100 + 200}{2} \times 5 + 7 = 150 \times 5 + 7 = 757\)$
 
+### **Constraints**
 
+- $\(1 \leq arr.size() \leq 10^5\)$
+- $\(arr[i]\)$ is either an **operator**: "+", "-", "\*", "/" or an **integer** in the range $\([-10^4, 10^4]\)$
 
-### **Constraints**  
-- $\(1 \leq arr.size() \leq 10^5\)$  
-- $\(arr[i]\)$ is either an **operator**: "+", "-", "*", "/" or an **integer** in the range $\([-10^4, 10^4]\)$
-
-
-## **My Approach**  
+## **My Approach**
 
 ### **Stack-Based Evaluation (O(N) Time, O(N) Space)**
 
 This approach processes each element in the postfix expression in a **single pass** and uses a **stack** to store operands. Operators pop the top two operands, evaluate them, and push the result back onto the stack.
 
-### **Algorithm Steps:**  
-1. **Initialize an empty stack.**  
-2. **Iterate through each token in the array:**  
-    - If the token is an **operator**, pop the top two operands, apply the operation, and push the result back.  
-    - If the token is a **number**, convert it to integer and push it onto the stack.  
-3. **At the end, the stack will contain exactly one value — the final result.**  
+### **Algorithm Steps:**
 
-This method guarantees all operations happen in **O(1)** time, and we iterate over the array exactly once.  
+1. **Initialize an empty stack.**
+2. **Iterate through each token in the array:**
+   - If the token is an **operator**, pop the top two operands, apply the operation, and push the result back.
+   - If the token is a **number**, convert it to integer and push it onto the stack.
+3. **At the end, the stack will contain exactly one value — the final result.**
 
+This method guarantees all operations happen in **O(1)** time, and we iterate over the array exactly once.
 
-## **Time and Auxiliary Space Complexity**  
+## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(N), where N = length of `arr`, as each token is processed exactly once.
 - **Expected Auxiliary Space Complexity:** O(N), for storing the operands in the stack.
-
 
 ## **Code (C++)**
 
@@ -100,15 +101,12 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## **2️⃣ Using `vector<int>` as Stack (O(N) Time, O(N) Space)**
 
-This approach **simulates a stack using a `vector<int>`**, treating the `back()` element as the top of the stack.  
-
+This approach **simulates a stack using a `vector<int>`**, treating the `back()` element as the top of the stack.
 
 ```cpp
 class Solution {
@@ -135,11 +133,9 @@ public:
 🔹 **Pros:** Avoids `stack<int>`, works similarly.  
 🔹 **Cons:** Same time and space complexity.
 
-
 ## **3️⃣ Recursive Approach (O(N) Time, O(N) Space)**
 
 This approach recursively processes tokens from **right to left**, mimicking evaluation directly from the postfix array itself. It’s more theoretical and educational than practical due to recursion overhead.
-
 
 ```cpp
 class Solution {
@@ -169,23 +165,20 @@ public:
 🔹 **Pros:** Recursive parsing for educational purposes.  
 🔹 **Cons:** Not suitable for large input due to stack overflow risk.
 
-
 ## **📊 Comparison of Approaches**
 
-| **Approach**                  | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                 | ⚠️ **Cons**                  |
-|-------------------------------|----------------------|------------------------|---------------------|--------------------|
-| **Iterative Stack**             | 🟢 O(N)              | 🟢 O(N)                | Simple & optimal     | None                  |
-| **Vector as Stack**             | 🟢 O(N)              | 🟢 O(N)                | Avoids `stack<int>`   | Same complexity      |
-| **Recursive Parsing**           | 🟡 O(N)              | 🔴 O(N) (call stack)   | Educational          | Stack overflow risk |
+| **Approach**          | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**         | ⚠️ **Cons**         |
+| --------------------- | ---------------------- | ----------------------- | ------------------- | ------------------- |
+| **Iterative Stack**   | 🟢 O(N)                | 🟢 O(N)                 | Simple & optimal    | None                |
+| **Vector as Stack**   | 🟢 O(N)                | 🟢 O(N)                 | Avoids `stack<int>` | Same complexity     |
+| **Recursive Parsing** | 🟡 O(N)                | 🔴 O(N) (call stack)    | Educational         | Stack overflow risk |
 
+## 💡 **Best Choice?**
 
-## 💡 **Best Choice?**  
-
-- ✅ **For competitive programming:** **Iterative Stack (`O(N)` Time, `O(N)` Space)**.  
+- ✅ **For competitive programming:** **Iterative Stack (`O(N)` Time, `O(N)` Space)**.
 - ✅ **For educational learning:** Recursive parsing is interesting to explore recursion-based parsing.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -209,7 +202,6 @@ class Solution {
 }
 ```
 
-
 ## **Code (Python)**
 
 ```python
@@ -230,11 +222,11 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

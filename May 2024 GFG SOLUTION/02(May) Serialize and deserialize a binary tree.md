@@ -12,30 +12,37 @@ Serialize a binary tree means to store the tree in an array so that it can be la
 **Example:**
 
 Input:
+
 ```
      1
    /   \
   2     3
 ```
-Output: 
+
+Output:
+
 ```
 2 1 3
 ```
+
 Explanation: In-order traversal of the tree.
 
 ### My Approach
 
 1. **Serialization:**
+
 - Use a queue for level order traversal.
 - Push each node's data into the array.
 - If a node is NULL, push INT_MIN to indicate a NULL node.
 
 2. **Deserialization:**
+
 - Read data from the array and create nodes.
 - Use a queue for level order traversal.
 - Link nodes properly based on array values.
 
 3. **Return:**
+
 - Return the serialized or deserialized tree.
 
 ### Time and Auxiliary Space Complexity
@@ -51,14 +58,14 @@ public:
     //Function to serialize a tree and return an array containing nodes.
     void serializeUtil(Node *root, vector<int> &arr) {
         if (!root) return;
-        
+
         queue<Node*> q;
         q.push(root);
-        
+
         while (!q.empty()) {
             Node* curr = q.front();
             q.pop();
-            
+
             if (curr) {
                 arr.push_back(curr->data);
                 q.push(curr->left);
@@ -68,39 +75,39 @@ public:
             }
         }
     }
-    
+
     vector<int> serialize(Node *root) {
         vector<int> arr;
         serializeUtil(root, arr);
         return arr;
     }
-    
+
     //Function to deserialize an array and construct the tree.
     Node* deSerialize(vector<int> &A) {
         if (A.empty() || A[0] == INT_MIN) return NULL;
-        
+
         Node* root = new Node(A[0]);
         queue<Node*> q;
         q.push(root);
-        
+
         int i = 1;
         while (!q.empty() && i < A.size()) {
             Node* curr = q.front();
             q.pop();
-            
+
             if (i < A.size() && A[i] != INT_MIN) {
                 curr->left = new Node(A[i]);
                 q.push(curr->left);
             }
             i++;
-            
+
             if (i < A.size() && A[i] != INT_MIN) {
                 curr->right = new Node(A[i]);
                 q.push(curr->right);
             }
             i++;
         }
-        
+
         return root;
     }
 };
@@ -108,7 +115,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

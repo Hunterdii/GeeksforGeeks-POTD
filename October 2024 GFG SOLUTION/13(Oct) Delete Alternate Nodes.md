@@ -1,4 +1,4 @@
-# *13. Delete Alternate Nodes*
+# _13. Delete Alternate Nodes_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/delete-alternate-nodes/1)
 
@@ -22,9 +22,11 @@ LinkedList: `99 -> 59 -> 42 -> 20`
 ### My Approach
 
 1. **Initialization:**
+
    - Start with the head of the linked list and initialize a pointer to track the current node.
 
 2. **Iteration:**
+
    - Loop through the linked list. For each node, skip the next node (delete it) and link the current node to the node after the next node.
 
 3. **Node Deletion:**
@@ -41,13 +43,13 @@ LinkedList: `99 -> 59 -> 42 -> 20`
 class Solution {
 public:
     void deleteAlt(struct Node* head) {
-        if (!head) return; 
+        if (!head) return;
         struct Node* current = head;
         while (current && current->next) {
-            struct Node* temp = current->next;  
-            current->next = current->next->next; 
-            delete temp;  
-            current = current->next;  
+            struct Node* temp = current->next;
+            current->next = current->next->next;
+            delete temp;
+            current = current->next;
         }
     }
 };
@@ -58,14 +60,14 @@ public:
 ```java
 class Solution {
     public void deleteAlt(Node head) {
-        if (head == null) return;  
+        if (head == null) return;
         Node current = head;
 
         while (current != null && current.next != null) {
-            Node temp = current.next;  
-            current.next = current.next.next;  
-            temp = null;  
-            current = current.next;  
+            Node temp = current.next;
+            current.next = current.next.next;
+            temp = null;
+            current = current.next;
         }
     }
 }
@@ -76,23 +78,24 @@ class Solution {
 ```python
 class Solution:
     def deleteAlt(self, head):
-        if not head:  
+        if not head:
             return
 
         current = head
         while current and current.next:
-            temp = current.next  
-            current.next = current.next.next  
-            current = current.next  
+            temp = current.next
+            current.next = current.next.next
+            current = current.next
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

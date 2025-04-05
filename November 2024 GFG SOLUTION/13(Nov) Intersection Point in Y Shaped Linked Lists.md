@@ -1,4 +1,4 @@
-# *13. Intersection Point in Y Shaped Linked Lists*
+# _13. Intersection Point in Y Shaped Linked Lists_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1)
 
@@ -11,12 +11,14 @@ Given two singly linked lists, return the point where the two linked lists inter
 ### Examples:
 
 **Input:**
+
 ```
 Linked list 1: 4 -> 1 -> 8 -> 4 -> 5
 Linked list 2: 5 -> 6 -> 1 -> 8 -> 4 -> 5
 ```
 
-**Output:**  
+**Output:**
+
 ```
 8
 ```
@@ -25,12 +27,14 @@ Linked list 2: 5 -> 6 -> 1 -> 8 -> 4 -> 5
 The linked lists merge at node with value 8, which is the starting point of the common part.
 
 **Input:**
+
 ```
 Linked list 1: 4 -> 4 -> 4 -> 4 -> 4
 Linked list 2: 4 -> 4 -> 4
 ```
 
-**Output:**  
+**Output:**
+
 ```
 4
 ```
@@ -39,12 +43,14 @@ Linked list 2: 4 -> 4 -> 4
 Both lists start with the same values. The common part starts at node with value 4.
 
 **Input:**
+
 ```
 Linked list 1: 1 -> 2 -> 3
 Linked list 2: 4 -> 5 -> 6
 ```
 
-**Output:**  
+**Output:**
+
 ```
 -1
 ```
@@ -55,11 +61,13 @@ There is no common part, so the function returns -1.
 ## My Approach
 
 1. **Two-Pointer Technique:**
+
    - Use two pointers, one starting at the head of each linked list.
    - Traverse both linked lists. When a pointer reaches the end of one list, redirect it to the head of the other list.
    - Continue until the two pointers either meet at the intersection point or reach the end without meeting.
 
-2. **Why This Works:**  
+2. **Why This Works:**
+
    - By switching pointers between the lists, both pointers traverse the same combined distance, effectively synchronizing their meeting point.
 
 3. **Edge Cases:**
@@ -155,7 +163,7 @@ def intersetPoint(head1, head2):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

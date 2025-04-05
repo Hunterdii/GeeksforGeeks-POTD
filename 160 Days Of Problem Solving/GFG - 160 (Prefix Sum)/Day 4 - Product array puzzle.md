@@ -1,13 +1,12 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - prefix-sum
   - Arrays
 ---
 
 # 🚀 _Day 4. Product array puzzle_ 🧠
-
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/prefix-sum-gfg-160/problem/product-array-puzzle4525)
 
@@ -29,8 +28,6 @@ For `i = 2`, `res[i] = 10 * 3 * 6 * 2 = 360`.
 For `i = 3`, `res[i] = 10 * 3 * 5 * 2 = 300`.  
 For `i = 4`, `res[i] = 10 * 3 * 5 * 6 = 900`.
 
-
-
 **Input:**  
 `arr[] = [12, 0]`  
 **Output:**  
@@ -39,29 +36,25 @@ For `i = 4`, `res[i] = 10 * 3 * 5 * 6 = 900`.
 For `i = 0`, `res[i] = 0`.  
 For `i = 1`, `res[i] = 12`.
 
-
-
 ### Constraints:
+
 - $`2 <= arr.size() <= 10^5`$
 - `-100 <= arr[i] <= 100`
-
-
 
 ## 🎯 **My Approach:**
 
 1. **Handling Zeroes:**  
    If the array contains:
+
    - **More than one zero**: Every element in `res[]` will be `0`.
    - **Exactly one zero**: Only the position corresponding to the zero will have the product of all other non-zero elements, and the rest will be `0`.
    - **No zeroes**: Use the total product of all elements and divide by the current element for each position in the result array.
 
-2. **Efficient Computation:**  
+2. **Efficient Computation:**
    - Iterate through the array once to calculate the total product of non-zero elements and the count of zeroes.
    - Build the result array in a second pass.
 
-
-
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires two linear traversals of the array.
 - **Expected Auxiliary Space Complexity:** O(1), as the solution uses only a constant amount of additional space.
@@ -83,8 +76,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -93,14 +84,12 @@ class Solution {
         int n = arr.length, product = 1, zeroCount = 0;
         for (int x : arr) if (x == 0) zeroCount++; else product *= x;
         if (zeroCount > 1) return new int[n];
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)
             arr[i] = zeroCount > 0 ? (arr[i] == 0 ? product : 0) : product / arr[i];
         return arr;
     }
 }
 ```
-
-
 
 ## Code (Python)
 
@@ -116,11 +105,9 @@ class Solution:
         return [product if x == 0 else 0 if zero_count else product // x for x in arr]
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,67 +1,71 @@
-# *18. Partition Equal Subset Sum*  
+# _18. Partition Equal Subset Sum_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/subset-sum-problem2014/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/subset-sum-problem2014/1)
 
-## **Problem Description**  
+## **Problem Description**
 
-Given an array `arr[]`, determine if it can be **partitioned into two subsets** such that the sum of elements in both parts is the same.  
+Given an array `arr[]`, determine if it can be **partitioned into two subsets** such that the sum of elements in both parts is the same.
 
-Each element must be in exactly **one subset**.  
-
+Each element must be in exactly **one subset**.
 
 ## **Examples**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 arr = [1, 5, 11, 5]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 True
 ```
 
-#### **Explanation:**  
-The array can be partitioned into **[1, 5, 5]** and **[11]**, both having the sum **11**.  
+#### **Explanation:**
 
+The array can be partitioned into **[1, 5, 5]** and **[11]**, both having the sum **11**.
 
-### **Example 2:**  
+### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 arr = [1, 3, 5]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 False
 ```
 
-#### **Explanation:**  
-There is no way to split the array into two subsets with equal sum.  
+#### **Explanation:**
 
+There is no way to split the array into two subsets with equal sum.
 
-## **Constraints:**  
-- $\(1 \leq arr.size \leq 100\)$  
-- $\(1 \leq arr[i] \leq 200\)$  
+## **Constraints:**
 
+- $\(1 \leq arr.size \leq 100\)$
+- $\(1 \leq arr[i] \leq 200\)$
 
-## **Optimized 1D Dynamic Programming**  
+## **Optimized 1D Dynamic Programming**
 
-### **Approach:**  
-1. **Calculate the total sum** of the array. If it's **odd**, return false (cannot be evenly split).  
-2. **Use a DP table (`dp[j]`)**, where `dp[j]` tells if we can form sum `j`.  
-3. **Initialize** `dp[0] = true`, since a sum of **0** is always possible.  
+### **Approach:**
+
+1. **Calculate the total sum** of the array. If it's **odd**, return false (cannot be evenly split).
+2. **Use a DP table (`dp[j]`)**, where `dp[j]` tells if we can form sum `j`.
+3. **Initialize** `dp[0] = true`, since a sum of **0** is always possible.
 4. **Iterate through each element** in the array:
-   - Update `dp[j] = dp[j] OR dp[j - num]` for `j = target` down to `num`.  
-5. If `dp[target]` is **true**, we can partition the array into two subsets with equal sum.  
+   - Update `dp[j] = dp[j] OR dp[j - num]` for `j = target` down to `num`.
+5. If `dp[target]` is **true**, we can partition the array into two subsets with equal sum.
 
+## **Time and Auxiliary Space Complexity**
 
-## **Time and Auxiliary Space Complexity**  
-
-- **Expected Time Complexity:** $O(N \times sum)$, as we iterate over the elements and process sums up to `sum/2`.  
-- **Expected Auxiliary Space Complexity:** $O(sum)$, as we use a 1D DP array of size `sum/2 + 1`.  
-
+- **Expected Time Complexity:** $O(N \times sum)$, as we iterate over the elements and process sums up to `sum/2`.
+- **Expected Auxiliary Space Complexity:** $O(sum)$, as we use a 1D DP array of size `sum/2 + 1`.
 
 ## **Code (C++)**
 
@@ -85,12 +89,14 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## **2️⃣ Dynamic Programming (O(N×sum) Time, O(N×sum) Space) — 2D DP**  
-### **Algorithm Steps:**  
-1. Use a **2D DP table**, where `dp[i][j]` represents whether a subset with sum `j` can be formed using the first `i` elements.  
-2. **Base Case:**  
-   - `dp[0][0] = true` (sum 0 can be formed with zero elements).  
-   - `dp[i][0] = true` for all `i` (sum 0 is always achievable).  
+## **2️⃣ Dynamic Programming (O(N×sum) Time, O(N×sum) Space) — 2D DP**
+
+### **Algorithm Steps:**
+
+1. Use a **2D DP table**, where `dp[i][j]` represents whether a subset with sum `j` can be formed using the first `i` elements.
+2. **Base Case:**
+   - `dp[0][0] = true` (sum 0 can be formed with zero elements).
+   - `dp[i][0] = true` for all `i` (sum 0 is always achievable).
 3. **Recurrence Relation:**  
    $\[
    dp[i][j] = dp[i-1][j] \quad \text{(exclude element)}
@@ -122,19 +128,21 @@ class Solution {
     }
 };
 ```
+
 ✅ **Time Complexity:** `O(N × sum)`  
-✅ **Space Complexity:** `O(N × sum)`  
+✅ **Space Complexity:** `O(N × sum)`
 
+## **3️⃣ Recursive + Memoization (O(N×sum) Time, O(N×sum) Space)**
 
-## **3️⃣ Recursive + Memoization (O(N×sum) Time, O(N×sum) Space)**  
-### **Algorithm Steps:**  
-1. Define a **recursive function** `canPartition(i, target)` that checks if a subset of `arr[0...i]` sums up to `target`.  
-2. **Base Cases:**  
-   - If `target == 0`, return `true`.  
-   - If `i < 0` or `target < 0`, return `false`.  
-3. **Recurrence Relation:**  
-   - Exclude `arr[i]`: `canPartition(i - 1, target)`.  
-   - Include `arr[i]` if `arr[i] ≤ target`: `canPartition(i - 1, target - arr[i])`.  
+### **Algorithm Steps:**
+
+1. Define a **recursive function** `canPartition(i, target)` that checks if a subset of `arr[0...i]` sums up to `target`.
+2. **Base Cases:**
+   - If `target == 0`, return `true`.
+   - If `i < 0` or `target < 0`, return `false`.
+3. **Recurrence Relation:**
+   - Exclude `arr[i]`: `canPartition(i - 1, target)`.
+   - Include `arr[i]` if `arr[i] ≤ target`: `canPartition(i - 1, target - arr[i])`.
 4. **Use Memoization (`dp[i][target]`)** to avoid redundant calculations.
 
 ```cpp
@@ -157,23 +165,25 @@ class Solution {
     }
 };
 ```
+
 ✅ **Time Complexity:** `O(N × sum)`  
-✅ **Space Complexity:** `O(N × sum) (recursion stack)`  
+✅ **Space Complexity:** `O(N × sum) (recursion stack)`
 
 ## **Comparison of Approaches**
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                    |
-|----------------------------------|------------------------|-------------------------|------------------------------------|--------------------------------|
-| **1D DP (Space Optimized)**      | 🟡 `O(N × sum)`      | 🟢 `O(sum/2)`           | Best space-efficient solution     | Requires careful indexing       |
-| **2D DP (Tabulation)**           | 🟡 `O(N × sum)`      | 🔴 `O(N × sum)`       | Intuitive approach                | High space usage               |
-| **Recursive + Memoization**      | 🟡 `O(N × sum)`      | 🔴 `O(N × sum)`       | Natural recursion flow            | Stack overhead                 |
+
+| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**               |
+| --------------------------- | ---------------------- | ----------------------- | ----------------------------- | ------------------------- |
+| **1D DP (Space Optimized)** | 🟡 `O(N × sum)`        | 🟢 `O(sum/2)`           | Best space-efficient solution | Requires careful indexing |
+| **2D DP (Tabulation)**      | 🟡 `O(N × sum)`        | 🔴 `O(N × sum)`         | Intuitive approach            | High space usage          |
+| **Recursive + Memoization** | 🟡 `O(N × sum)`        | 🔴 `O(N × sum)`         | Natural recursion flow        | Stack overhead            |
 
 ✅ **Best Choice?**
-- **If optimizing space:** Use **1D DP (Space-Optimized)**.  
-- **If space is not a concern:** Use **2D DP (Tabulation)** for easier understanding.  
-- **For recursion lovers:** Use **Recursive + Memoization**.  
 
-</details>  
+- **If optimizing space:** Use **1D DP (Space-Optimized)**.
+- **If space is not a concern:** Use **2D DP (Tabulation)** for easier understanding.
+- **For recursion lovers:** Use **Recursive + Memoization**.
 
+</details>
 
 ## **Code (Java)**
 
@@ -193,7 +203,6 @@ class Solution {
 }
 ```
 
-
 ## **Code (Python)**
 
 ```python
@@ -211,7 +220,7 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

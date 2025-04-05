@@ -1,103 +1,123 @@
-# *21. Parenthesis Checker*  
+# _21. Parenthesis Checker_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1)
 
-## **Problem Description**  
+## **Problem Description**
 
-Given a string `s`, composed of different combinations of `(`, `)`, `{`, `}`, `[`, `]`, verify the **validity of the arrangement**.  
+Given a string `s`, composed of different combinations of `(`, `)`, `{`, `}`, `[`, `]`, verify the **validity of the arrangement**.
 
-A string is **valid** if:  
-1. **Open brackets** must be closed by the **same type** of brackets.  
-2. **Open brackets** must be closed in the **correct order**.  
+A string is **valid** if:
 
+1. **Open brackets** must be closed by the **same type** of brackets.
+2. **Open brackets** must be closed in the **correct order**.
 
-## **Examples**  
+## **Examples**
 
-### **Example 1:**  
-#### **Input:**  
+### **Example 1:**
+
+#### **Input:**
+
 ```plaintext
 s = "[{()}]"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 true
 ```
-#### **Explanation:**  
-All brackets are correctly paired and well-formed.  
 
+#### **Explanation:**
 
-### **Example 2:**  
-#### **Input:**  
+All brackets are correctly paired and well-formed.
+
+### **Example 2:**
+
+#### **Input:**
+
 ```plaintext
 s = "[()()]{}"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 true
 ```
-#### **Explanation:**  
-All brackets are well-formed.  
 
+#### **Explanation:**
 
-### **Example 3:**  
-#### **Input:**  
+All brackets are well-formed.
+
+### **Example 3:**
+
+#### **Input:**
+
 ```plaintext
 s = "([]"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 false
 ```
-#### **Explanation:**  
-The expression is **not balanced** as there is a missing `')'` at the end.  
 
+#### **Explanation:**
 
-### **Example 4:**  
-#### **Input:**  
+The expression is **not balanced** as there is a missing `')'` at the end.
+
+### **Example 4:**
+
+#### **Input:**
+
 ```plaintext
 s = "([{]})"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 false
 ```
-#### **Explanation:**  
-The expression is **not balanced** as there is a **closing `]` before the closing `}`**.  
 
+#### **Explanation:**
 
-### **Constraints:**  
-- $1 \leq |s| \leq 10^6$  
-- `s[i]` ∈ `{ '(', ')', '{', '}', '[', ']' }`  
+The expression is **not balanced** as there is a **closing `]` before the closing `}`**.
 
+### **Constraints:**
 
-## **My Approach**  
+- $1 \leq |s| \leq 10^6$
+- `s[i]` ∈ `{ '(', ')', '{', '}', '[', ']' }`
+
+## **My Approach**
 
 ### **Stack-Based Validation (O(N) Time, O(N) Space)**
-1. **Iterate over the string** and use a **stack** to track opening brackets.  
+
+1. **Iterate over the string** and use a **stack** to track opening brackets.
 2. **When encountering a closing bracket**:
-   - If the stack is empty, return `false`.  
-   - Check whether the **top of the stack matches** the expected opening bracket.  
-   - If matched, pop the stack. Otherwise, return `false`.  
-3. **After iterating the string**, the stack should be **empty** for a valid expression.  
+   - If the stack is empty, return `false`.
+   - Check whether the **top of the stack matches** the expected opening bracket.
+   - If matched, pop the stack. Otherwise, return `false`.
+3. **After iterating the string**, the stack should be **empty** for a valid expression.
 
-### **Algorithm Steps:**  
-1. **Use a stack** to store open brackets `{[(`.  
+### **Algorithm Steps:**
+
+1. **Use a stack** to store open brackets `{[(`.
 2. **Iterate through the string**:
-   - If `s[i]` is an **opening bracket**, push it onto the stack.  
+   - If `s[i]` is an **opening bracket**, push it onto the stack.
    - If `s[i]` is a **closing bracket**:
-     - Check if the **stack is empty** (invalid case).  
-     - **Compare the top element** of the stack with `s[i]`.  
-     - If it **matches**, pop the stack. Otherwise, return `false`.  
-3. **After the loop**, return **true** if the stack is empty, else **false**.  
+     - Check if the **stack is empty** (invalid case).
+     - **Compare the top element** of the stack with `s[i]`.
+     - If it **matches**, pop the stack. Otherwise, return `false`.
+3. **After the loop**, return **true** if the stack is empty, else **false**.
 
+## **Time and Auxiliary Space Complexity**
 
-## **Time and Auxiliary Space Complexity**  
+- **Expected Time Complexity:** `O(N)`, since each character is processed once in the loop.
+- **Expected Auxiliary Space Complexity:** `O(N)`, in the worst case, all characters are pushed onto the stack.
 
-- **Expected Time Complexity:** `O(N)`, since each character is processed once in the loop.  
-- **Expected Auxiliary Space Complexity:** `O(N)`, in the worst case, all characters are pushed onto the stack.  
-
-
-## **Code (C++)**  
+## **Code (C++)**
 
 ```cpp
 class Solution {
@@ -113,7 +133,6 @@ class Solution {
     }
 };
 ```
-
 
 <details>
   <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
@@ -146,42 +165,39 @@ class Solution {
 ```
 
 🔹 **Pros:** **Explicit matching** is better than `abs(top - c) > 2`.  
-🔹 **Cons:** Uses **extra hash map** (though small overhead).  
+🔹 **Cons:** Uses **extra hash map** (though small overhead).
 
+## **📊 Comparison of Approaches**
 
-## **📊 Comparison of Approaches**  
+| **Approach**             | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**            |
+| ------------------------ | ---------------------- | ----------------------- | ---------------------------------- | ---------------------- |
+| **Stack-Based Matching** | 🟢 `O(N)`              | 🟡 `O(N)`               | Simple and effective               | Uses extra stack space |
+| **Hash Map Lookup**      | 🟢 `O(N)`              | 🟡 `O(N)`               | Explicit and easy-to-read matching | Slightly more memory   |
 
-| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                            | ⚠️ **Cons**                  |
-|-----------------------------|----------------------|------------------------|--------------------------------|------------------------------|
-| **Stack-Based Matching**     | 🟢 `O(N)`           | 🟡 `O(N)`               | Simple and effective            | Uses extra stack space |
-| **Hash Map Lookup**          | 🟢 `O(N)`           | 🟡 `O(N)`               | Explicit and easy-to-read matching | Slightly more memory |
+## **💡 Best Choice?**
 
-
-## **💡 Best Choice?**  
 ✅ **For general use:** **Stack-Based Matching (`O(N)`)**.  
 ✅ **For minimal space usage:** **Two-Pointer (`O(1)`)**, but fails for mixed brackets.  
-✅ **For explicit matching:** **Hash Map (`O(N)`)**, great for readability.  
+✅ **For explicit matching:** **Hash Map (`O(N)`)**, great for readability.
 
 </details>
 
-
-## **Code (Java)**  
+## **Code (Java)**
 
 ```java
 class Solution {
     static boolean isBalanced(String s) {
         Stack<Character> st = new Stack<>();
-        for (char c : s.toCharArray()) 
+        for (char c : s.toCharArray())
             if ("({[".indexOf(c) >= 0) st.push(c);
             else if (st.isEmpty() || Math.abs(st.peek() - c) > 2) return false;
             else st.pop();
         return st.isEmpty();
     }
 }
-```  
+```
 
-
-## **Code (Python)**  
+## **Code (Python)**
 
 ```python
 class Solution:
@@ -194,12 +210,11 @@ class Solution:
         return not st
 ```
 
-
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
 ---
 

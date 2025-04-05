@@ -9,45 +9,56 @@ Given an array `arr`, partition it into two subsets (possibly empty) such that e
 **Example:**
 
 Input:
+
 ```
 n = 4
 d = 3
 arr[] = {5, 2, 6, 4}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 There is only one possible partition of this array. Partition: `{6, 4}`, `{5, 2}`. The subset difference between subset sums is: `(6 + 4) - (5 + 2) = 3`.
 
 **Example:**
 
 Input:
+
 ```
 n = 4
 d = 0
 arr[] = {1, 1, 1, 1}
 ```
+
 Output:
+
 ```
 6
 ```
+
 Explanation:
 We can choose two `1`s from indices `{0,1}`, `{0,2}`, `{0,3}`, `{1,2}`, `{1,3}`, `{2,3}` and put them in `S1` and the remaining two `1`s in `S2`. Thus, there are a total of 6 ways to partition the array `arr`.
 
 ### Approach
 
 1. **Initialization:**
+
    - Calculate the total sum of the array elements.
    - If the total sum is less than `d` or if `(total_sum - d) % 2` is not zero, return 0, as no valid partition is possible.
    - Define `target = (total_sum - d) / 2`, the sum we need to find in one subset.
 
 2. **Dynamic Programming Table:**
+
    - Initialize a DP array `dp` of size `target + 1` with all zeros.
    - `dp[0]` is set to 1 as there is exactly one way to achieve a sum of 0, which is by not picking any elements.
 
 3. **Filling the DP Table:**
+
    - Iterate through each element in the array.
    - For each element, update the DP table from `target` down to the element's value to count the number of ways to form each possible sum up to `target`.
 
@@ -56,7 +67,7 @@ We can choose two `1`s from indices `{0,1}`, `{0,2}`, `{0,3}`, `{1,2}`, `{1,3}`,
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * sum(arr)), as we iterate through each element and for each element, we iterate through all possible sums up to `target`.
+- **Expected Time Complexity:** O(n \* sum(arr)), as we iterate through each element and for each element, we iterate through all possible sums up to `target`.
 - **Expected Auxiliary Space Complexity:** O(sum(arr)), as we use a DP array of size `target + 1`.
 
 ### Code
@@ -71,7 +82,7 @@ public:
     int findWays(vector<int>& num, int tar) {
         int n = num.size();
         vector<int> dp(tar + 1, 0);
-        
+
         dp[0] = 1; // Base case: there's one way to make sum 0
 
         for (int ind = 0; ind < n; ind++) {
@@ -101,8 +112,8 @@ class Solution {
     public static int findWays(int[] num, int tar) {
         int n = num.length;
         int[] dp = new int[tar + 1];
-        
-        dp[0] = num[0] == 0 ? 2 : 1; 
+
+        dp[0] = num[0] == 0 ? 2 : 1;
 
         if (num[0] != 0 && num[0] <= tar) {
             dp[num[0]] = 1;
@@ -116,9 +127,9 @@ class Solution {
 
                 newDp[target] = (notTaken + taken) % MOD;
             }
-            dp = newDp; 
+            dp = newDp;
         }
-        
+
         return dp[tar];
     }
 
@@ -166,7 +177,7 @@ class Solution:
         for ind in range(1, len(num)):
             for target in range(tar, num[ind] - 1, -1):
                 dp[target] = (dp[target] + dp[target - num[ind]]) % self.MOD
-        
+
         return dp[tar]
 
     def countPartitions(self, n: int, d: int, arr: List[int]) -> int:
@@ -178,7 +189,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

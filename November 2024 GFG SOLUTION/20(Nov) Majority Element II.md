@@ -1,14 +1,14 @@
-# *20. Majority Element II*  
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/majority-vote/1)
+# _20. Majority Element II_
 
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/majority-vote/1)
 
 <div align="center">
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - My first solution is now live:  
-  **[2516. Take K of Each Character From Left and Right](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2516.Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right.md)**  
+  **[2516. Take K of Each Character From Left and Right](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2516.Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2516.Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right.md">
@@ -22,7 +22,7 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 ## Problem Description
 
-You are given an array of integers `arr[]` where each number represents a vote for a candidate. Return the candidates that have votes greater than one-third of the total votes. If there's no majority vote, return an empty array.  
+You are given an array of integers `arr[]` where each number represents a vote for a candidate. Return the candidates that have votes greater than one-third of the total votes. If there's no majority vote, return an empty array.
 
 **Note:** The answer should be returned in an increasing order.
 
@@ -45,25 +45,27 @@ You are given an array of integers `arr[]` where each number represents a vote f
 No candidate occurs more than `n / 3` times.
 
 ### Constraints:
+
 - `1 <= arr.size() <= 10^6`
 - `-10^9 <= arr[i] <= 10^9`
 
 ## My Approach
 
-1. **Boyer-Moore Voting Algorithm**:  
-   - The problem can be efficiently solved using the Boyer-Moore Voting Algorithm to find the top two candidates with the potential to exceed `n / 3` votes.  
-   - First, identify the two potential majority elements.  
-   - Then, verify their counts to ensure they actually exceed the threshold.  
+1. **Boyer-Moore Voting Algorithm**:
+
+   - The problem can be efficiently solved using the Boyer-Moore Voting Algorithm to find the top two candidates with the potential to exceed `n / 3` votes.
+   - First, identify the two potential majority elements.
+   - Then, verify their counts to ensure they actually exceed the threshold.
    - This approach reduces the problem to a linear pass through the array.
 
-2. **Steps:**  
-   - Traverse the array to find two majority candidates (`num1` and `num2`) using count variables.  
-   - Traverse again to count occurrences of the candidates and validate the result.  
+2. **Steps:**
+   - Traverse the array to find two majority candidates (`num1` and `num2`) using count variables.
+   - Traverse again to count occurrences of the candidates and validate the result.
    - Ensure the final output is sorted to meet the problem requirements.
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires two linear scans of the array, making it efficient.  
+- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires two linear scans of the array, making it efficient.
 - **Expected Auxiliary Space Complexity:** O(1), as we use only a constant amount of additional space.
 
 ## Code (C)
@@ -113,8 +115,8 @@ class Solution {
 public:
     vector<int> findMajority(vector<int>& arr) {
         int n = arr.size();
-        int num1 = INT_MIN, num2 = INT_MIN; 
-        int c1 = 0, c2 = 0; 
+        int num1 = INT_MIN, num2 = INT_MIN;
+        int c1 = 0, c2 = 0;
         for (int x : arr) {
             if (x == num1) {
                 c1++;
@@ -141,7 +143,7 @@ public:
         if (c1 > n / 3) res.push_back(num1);
         if (c2 > n / 3) res.push_back(num2);
 
-        sort(res.begin(), res.end()); 
+        sort(res.begin(), res.end());
         return res;
     }
 };
@@ -219,9 +221,10 @@ class Solution:
         res.sort()
         return res
 ```
+
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

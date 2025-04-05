@@ -11,22 +11,28 @@ If it is not possible to make any cuts, return 0.
 **Example:**
 
 Input:
+
 ```
 n = 4, x = 2, y = 1, z = 1
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation: The total length is 4, and the cut lengths are 2, 1, and 1. We can make a maximum of 4 segments, each of length 1.
 
 ### My Approach
 
 1. **Dynamic Programming (DP) Initialization:**
+
    - Create a DP array `dp` of size `n + 1` initialized to -1, except `dp[0]` which is set to 0. This array will store the maximum number of segments that can be made for each length from 0 to `n`.
    - Initialize an array `cuts` containing the values `x`, `y`, and `z`.
 
 2. **Filling the DP Array:**
+
    - Iterate through each length `i` from 1 to `n`.
    - For each length `i`, iterate over the possible cuts in `cuts`. If the current length `i` is greater than or equal to the cut length and the previous length `i - cut` can be achieved (`dp[i - cut] != -1`), update `dp[i]` as the maximum of its current value and `dp[i - cut] + 1`.
 
@@ -107,7 +113,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

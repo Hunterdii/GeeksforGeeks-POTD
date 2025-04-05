@@ -10,6 +10,7 @@ Level order traversal of a tree is breadth-first traversal for the tree.
 **Example 1:**
 
 Input:
+
 ```
         10
      /      \
@@ -17,7 +18,9 @@ Input:
   /   \
  40   60
 ```
+
 Output:
+
 ```
 10 20 30 40 60
 ```
@@ -25,9 +28,11 @@ Output:
 ### My Approach
 
 1. **Initialization:**
+
    - Start by checking if the tree is empty. If it is, return an empty result vector.
 
 2. **Level Order Traversal:**
+
    - Use a queue to perform a level-order traversal.
    - Push the root node into the queue.
    - While the queue is not empty, do the following:
@@ -54,24 +59,24 @@ public:
     vector<int> levelOrder(Node* root) {
         vector<int> result;
         if (!root) return result; // Check if the tree is empty
-        
+
         queue<Node*> q;
         q.push(root);
-        
+
         while (!q.empty()) {
             int levelSize = q.size(); // Get the number of nodes at the current level
-            
+
             for (int i = 0; i < levelSize; ++i) {
                 Node* node = q.front();
                 q.pop();
                 result.push_back(node->data);
-                
+
                 // Enqueue child nodes if they exist
                 if (node->left) q.push(node->left);
                 if (node->right) q.push(node->right);
             }
         }
-        
+
         return result;
     }
 };
@@ -79,7 +84,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

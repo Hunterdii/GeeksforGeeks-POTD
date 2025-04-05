@@ -11,22 +11,27 @@ Given a Binary Tree, convert it into its mirror image. The mirror image of a tre
 **Example:**
 
 Input:
+
 ```
       1
     /  \
    2    3
 ```
+
 Output: `3 1 2`
 
 Explanation: The tree is
+
 ```
   1    (mirror)     1
  /  \    =>        /  \
 2    3           3   2
 ```
+
 The inorder traversal of the mirrored tree is `3 1 2`.
 
 Input:
+
 ```
       10
      /  \
@@ -34,9 +39,11 @@ Input:
    /  \
   40  60
 ```
+
 Output: `30 10 60 20 40`
 
 Explanation: The tree is
+
 ```
       10               10
     /    \  (mirror)    /    \
@@ -44,11 +51,13 @@ Explanation: The tree is
   /  \                     /   \
  40  60                 60   40
 ```
+
 The inorder traversal of the mirrored tree is `30 10 60 20 40`.
 
 ### My Approach
 
 1. **Recursive Approach:**
+
    - Traverse the tree using a recursive function.
    - For each node, swap its left and right children.
    - Recursively apply the same process to the left and right subtrees.
@@ -105,11 +114,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

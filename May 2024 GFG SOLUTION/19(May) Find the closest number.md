@@ -9,21 +9,26 @@ Given a sorted array `arr[]` of positive integers and a target number `k`, find 
 **Example:**
 
 Input:
+
 ```
 n = 4
 k = 4
 arr[] = {1, 3, 6, 7}
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation:
 The closest number to 4 in the array {1, 3, 6, 7} is 3.
 
 ### Approach
 
 1. **Binary Search:**
+
    - Initialize two pointers, `left` and `right`, at the beginning and end of the array respectively.
    - Perform binary search to find the closest number to `k`.
    - While `left` is less than `right`, calculate the middle index `mid`.
@@ -31,10 +36,12 @@ The closest number to 4 in the array {1, 3, 6, 7} is 3.
    - After the loop, check if the previous element of the found closest number has a smaller absolute difference with `k`. If so, return it; otherwise, return the found closest number.
 
 2. **Return Closest Number:**
+
    - After finding the index of the closest number, check if the absolute difference of the previous element and `k` is smaller.
    - If it is smaller, return the previous element; otherwise, return the closest number found.
 
 3. **Time Complexity:**
+
    - The binary search approach has a time complexity of O(log n) as it reduces the search space by half in each iteration.
 
 4. **Space Complexity:**
@@ -47,17 +54,17 @@ class Solution {
 public:
     int findClosest(int n, int k, int arr[]) {
         int left = 0, right = n - 1;
-        
+
         while (left < right) {
             int mid = left + (right - left) / 2;
-            
+
             if (arr[mid] < k) {
                 left = mid + 1;
             } else {
                 right = mid;
             }
         }
-        
+
         if (left > 0 && abs(arr[left - 1] - k) < abs(arr[left] - k)) {
             return arr[left - 1];
         } else {
@@ -69,7 +76,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

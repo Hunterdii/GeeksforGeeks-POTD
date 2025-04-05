@@ -9,22 +9,26 @@ Given an array `arr[]` of size `n`, calculate the sum of Bitwise ANDs, i.e., cal
 **Example:**
 
 Input:
+
 ```
 n = 3
 arr = {5, 10, 15}
 ```
+
 Output:
+
 ```
 15
 ```
+
 Explanation:
 The bitwise ANDs of all pairs where `i < j` are `(5 & 10) = 0`, `(5 & 15) = 5`, and `(10 & 15) = 10`.
 Therefore, the total sum = `(0 + 5 + 10) = 15`.
 
-
 ### My Approach
 
 1. **Iterative Bitwise AND Calculation:**
+
    - Initialize `ans` to 0.
    - Iterate over each bit position from 0 to 31.
    - For each bit position, count the number of elements in the array `arr[]` where the bit is set (`1`).
@@ -59,7 +63,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *20. Sort a K-Sorted Doubly Linked List*
+# _20. Sort a K-Sorted Doubly Linked List_
 
 ### Problem Description
 
@@ -23,6 +23,7 @@ Doubly Linked List: `5 <-> 6 <-> 7 <-> 3 <-> 4 <-> 4`, k = 3
 ### My Approach
 
 1. **Priority Queue (Min-Heap)**
+
    - The idea is to use a min-heap (priority queue) to keep track of the smallest element within the next `k` nodes. By popping the minimum element and adding the next element from the list, we ensure sorting within the `k` constraint.
 
 2. **Steps**:
@@ -33,8 +34,7 @@ Doubly Linked List: `5 <-> 6 <-> 7 <-> 3 <-> 4 <-> 4`, k = 3
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity**: O(n*log k), where `n` is the number of nodes and `k` is the distance from the correct position. Inserting and extracting from the heap of size `k` takes `O(log k)` time, and we do this for all `n` nodes.
-  
+- **Expected Time Complexity**: O(n\*log k), where `n` is the number of nodes and `k` is the distance from the correct position. Inserting and extracting from the heap of size `k` takes `O(log k)` time, and we do this for all `n` nodes.
 - **Expected Auxiliary Space Complexity**: O(k), as we only maintain a heap of size `k` at any point.
 
 ### Code (C++)
@@ -93,7 +93,7 @@ class Solution {
         });
 
         DLLNode newHead = null, last = null;
-        
+
         for (int i = 0; head != null && i <= k; i++) {
             pq.add(head);
             head = head.next;
@@ -166,7 +166,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

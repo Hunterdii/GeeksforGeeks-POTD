@@ -1,4 +1,4 @@
-# *12. Two Smallest in Every Subarray*
+# _12. Two Smallest in Every Subarray_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-sum-of-smallest-and-second-smallest-in-an-array/1)
 
@@ -15,17 +15,18 @@ Output:
 `11`
 
 **Explanation:**  
-Subarrays with smallest and second smallest are:  
-- Subarray: [4, 3], smallest = 3, second smallest = 4, sum = 7  
-- Subarray: [4, 3, 1], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [4, 3, 1, 5], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [4, 3, 1, 5, 6], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [3, 1], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [3, 1, 5], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [3, 1, 5, 6], smallest = 1, second smallest = 3, sum = 4  
-- Subarray: [1, 5], smallest = 1, second smallest = 5, sum = 6  
-- Subarray: [1, 5, 6], smallest = 1, second smallest = 5, sum = 6  
-- Subarray: [5, 6], smallest = 5, second smallest = 6, sum = 11  
+Subarrays with smallest and second smallest are:
+
+- Subarray: [4, 3], smallest = 3, second smallest = 4, sum = 7
+- Subarray: [4, 3, 1], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [4, 3, 1, 5], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [4, 3, 1, 5, 6], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [3, 1], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [3, 1, 5], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [3, 1, 5, 6], smallest = 1, second smallest = 3, sum = 4
+- Subarray: [1, 5], smallest = 1, second smallest = 5, sum = 6
+- Subarray: [1, 5, 6], smallest = 1, second smallest = 5, sum = 6
+- Subarray: [5, 6], smallest = 5, second smallest = 6, sum = 11
 
 Maximum sum among all above choices is, 5 + 6 = 11, hence the answer is 11.
 
@@ -39,7 +40,7 @@ Output:
 ### My Approach
 
 1. **Iterate through the array:** Loop through the array and examine each possible subarray of size greater than one.
-  
+
 2. **Find the two smallest elements:** For each subarray, determine the smallest and second smallest elements. This can be achieved by keeping track of the two smallest numbers while iterating through the subarray.
 
 3. **Calculate the sum:** For each subarray, calculate the sum of the two smallest elements and keep track of the maximum sum encountered.
@@ -60,10 +61,10 @@ public:
         int n = arr.size();
         if (n < 2)
             return -1;
-        int maxSum = arr[0] + arr[1]; 
+        int maxSum = arr[0] + arr[1];
         for (int i = 1; i < n - 1; ++i) {
             int currentSum = arr[i] + arr[i + 1];
-            maxSum = max(maxSum, currentSum); 
+            maxSum = max(maxSum, currentSum);
         }
         return maxSum;
     }
@@ -92,17 +93,18 @@ class Solution {
 class Solution:
     def pairWithMaxSum(self, arr):
         if len(arr) < 2:
-            return -1 
+            return -1
         return max(arr[i] + arr[i + 1] for i in range(len(arr) - 1))
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

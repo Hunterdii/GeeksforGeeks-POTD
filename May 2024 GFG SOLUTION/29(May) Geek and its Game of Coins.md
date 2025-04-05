@@ -9,25 +9,31 @@ Given three numbers `n`, `x`, and `y`, Geek and his friend are playing a coin ga
 **Example 1:**
 
 Input:
+
 ```
 n = 5
 x = 3
 y = 4
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 There are 5 coins. Geek can win by picking 3 coins in the first move. Now 2 coins are left, so his friend will pick 1 coin, and then Geek can pick the last coin and win.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a vector `dp` of size `n + 1` initialized to 0. This vector will be used to determine if the current player can force a win starting with `i` coins.
    - Set `dp[1]` to 1 since with 1 coin, Geek can win by taking the coin.
 
 2. **Dynamic Programming Calculation:**
+
    - Iterate from `i = 2` to `n`.
    - For each `i`, check if Geek can win by picking 1, `x`, or `y` coins:
      - If `dp[i - 1]` is 0, then picking 1 coin leaves the opponent in a losing position, so set `dp[i]` to 1.
@@ -50,9 +56,9 @@ There are 5 coins. Geek can win by picking 3 coins in the first move. Now 2 coin
 class Solution {
   public:
     int findWinner(int n, int x, int y) {
-        std::vector<int> dp(n + 1, 0); 
-        dp[1] = 1; 
-        
+        std::vector<int> dp(n + 1, 0);
+        dp[1] = 1;
+
         for (int i = 2; i <= n; ++i) {
             if (i >= 1 && dp[i - 1] == 0) dp[i] = 1;
             else if (i >= x && dp[i - x] == 0) dp[i] = 1;
@@ -111,7 +117,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

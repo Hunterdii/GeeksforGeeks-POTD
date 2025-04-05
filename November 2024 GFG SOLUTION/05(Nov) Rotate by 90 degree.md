@@ -1,7 +1,6 @@
-# *05. Rotate by 90 Degrees*
+# _05. Rotate by 90 Degrees_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/rotate-by-90-degree0356/1)
-
 
 ## Problem Description
 
@@ -30,13 +29,15 @@ Given a square matrix `mat[][]`, the task is to rotate it by 90 degrees in a clo
 **Output:**  
 `1`
 
-**Constraints:**  
+**Constraints:**
+
 - `1 ≤ mat.size() ≤ 1000`
 - `1 ≤ mat[i][j] ≤ 100`
 
 ## My Approach
 
 1. **Layer-by-Layer Rotation:**
+
    - Divide the matrix into layers, starting from the outermost layer and moving towards the inner layers.
    - For each element in the current layer, perform a four-way swap to rotate it 90 degrees clockwise.
    - Swap elements in groups of four, ensuring all elements are moved without using extra space.
@@ -121,12 +122,12 @@ def rotate(mat):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
- ---
- 
+---
+
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>

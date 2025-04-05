@@ -11,14 +11,17 @@ Given a Binary Tree (BT), convert it to a Doubly Linked List (DLL) in place. The
 **Example 1:**
 
 Input:
+
 ```
       1
     /  \
    3    2
 ```
+
 Output:
+
 ```
-3 1 2 
+3 1 2
 2 1 3
 ```
 
@@ -27,6 +30,7 @@ Explanation: DLL would be 3 <=> 1 <=> 2.
 **Example 2:**
 
 Input:
+
 ```
        10
       /   \
@@ -34,9 +38,11 @@ Input:
    /   \
   40   60
 ```
+
 Output:
+
 ```
-40 20 60 10 30 
+40 20 60 10 30
 30 10 60 20 40
 ```
 
@@ -45,12 +51,15 @@ Explanation: DLL would be 40 <=> 20 <=> 60 <=> 10 <=> 30.
 ### My Approach
 
 1. **Recursive Inorder Traversal:**
+
    - Perform an inorder traversal of the binary tree while adjusting the left and right pointers to convert it into a doubly linked list.
 
 2. **Tracking Previous Node:**
+
    - Maintain a `prev` pointer to link each node with its predecessor during traversal.
 
 3. **Head of DLL:**
+
    - Set the head of the DLL as the first node encountered during the inorder traversal (i.e., the leftmost node of the tree).
 
 4. **Step-by-Step Conversion:**
@@ -71,9 +80,9 @@ class Solution {
         if (root == NULL) return NULL;
         Node* head = bToDLLUtil(root->left);
         if (prev == NULL)
-            head = root; 
+            head = root;
         else {
-            root->left = prev; 
+            root->left = prev;
             prev->right = root;
         }
         prev = root;
@@ -83,7 +92,7 @@ class Solution {
     }
 
     Node* bToDLL(Node* root) {
-        prev = NULL; 
+        prev = NULL;
         return bToDLLUtil(root);
     }
 };
@@ -99,17 +108,17 @@ class Solution
     {
         if (root == null) return null;
         Node head = bToDLL(root.left);
-        if (prev == null) 
+        if (prev == null)
             head = root;
         else {
             root.left = prev;
             prev.right = root;
         }
-        
-        prev = root; 
+
+        prev = root;
         bToDLL(root.right);
-        
-        return head; 
+
+        return head;
     }
 }
 ```
@@ -129,20 +138,21 @@ class Solution:
         else:
             root.left = self.prev
             self.prev.right = root
-        
-        self.prev = root  
+
+        self.prev = root
         self.bToDLL(root.right)
-        
+
         return head
 ```
 
 ### Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>
@@ -150,4 +160,3 @@ For discussions, questions, or doubts related to this solution, please visit my 
 <p align="center" >   
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
 </p>
-

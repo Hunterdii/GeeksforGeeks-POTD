@@ -9,29 +9,36 @@ We have a horizontal number line. On that number line, we have gas stations at p
 **Example 1:**
 
 Input:
+
 ```
 n = 10
 stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 k = 9
 ```
+
 Output:
+
 ```
 0.50
 ```
+
 Explanation:
 Each of the 9 stations can be added midway between all the existing adjacent stations.
 
 ### My Approach
 
 1. **Sort the Array:**
+
    - Ensure that the gas stations are in sorted order, which is already given in the problem constraints.
 
 2. **Binary Search:**
+
    - Use binary search to find the smallest possible maximum distance `d`.
    - Set `l` (low) to a very small positive value (e.g., `1e-9`) to avoid division by zero.
    - Set `h` (high) to the difference between the first and last gas stations in the array.
 
 3. **Counting Intervals:**
+
    - For each mid-point (`mid = (l + h) / 2.0`) in the binary search, calculate the number of additional gas stations needed if `mid` were the maximum distance.
    - If the number of additional gas stations required exceeds `k`, adjust the binary search bounds accordingly.
 
@@ -62,7 +69,7 @@ public:
         int n = s.size();
         double l = 1e-9; // Start with a very small positive value to avoid division by zero
         double h = s[n - 1] - s[0];
-        
+
         while ((h - l) > 1e-6) {
             double mid = l + (h - l) / 2.0;
             int intervals = countIntervals(mid, s);
@@ -92,7 +99,7 @@ class Solution {
         int n = s.length;
         double l = 1e-9;
         double h = s[n - 1] - s[0];
-        
+
         while ((h - l) > 1e-6) {
             double mid = l + (h - l) / 2.0;
             int intervals = countIntervals(mid, s);
@@ -123,7 +130,7 @@ class Solution:
         n = len(stations)
         l = 1e-9
         h = stations[-1] - stations[0]
-        
+
         while (h - l) > 1e-6:
             mid = l + (h - l) / 2.0
             intervals = self.countIntervals(mid, stations)
@@ -136,7 +143,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

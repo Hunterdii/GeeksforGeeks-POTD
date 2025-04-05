@@ -9,6 +9,7 @@ Given a list of accounts where each element is a list of strings, with the first
 **Example:**
 
 Input:
+
 ```
 accounts = [
     ["John", "johnsmith@mail.com", "john_newyork@mail.com"],
@@ -17,7 +18,9 @@ accounts = [
     ["John", "johnnybravo@mail.com"]
 ]
 ```
+
 Output:
+
 ```
 [
     ["John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"],
@@ -29,14 +32,17 @@ Output:
 ### Approach
 
 1. **Union-Find Data Structure:**
+
    - Use Union-Find to group accounts belonging to the same person.
    - Map each email to its owner's index and name.
 
 2. **Union Operation:**
+
    - Iterate through each account.
    - For each account, union all emails with the same owner's index.
 
 3. **Grouping:**
+
    - Group emails by their root (representative) indices.
 
 4. **Building Result:**
@@ -44,11 +50,10 @@ Output:
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m * log(n)), where n is the number of accounts and m is the average size of each account.
-- **Expected Auxiliary Space Complexity:** O(n * m), where n is the number of accounts and m is the average size of each account.
+- **Expected Time Complexity:** O(n _ m _ log(n)), where n is the number of accounts and m is the average size of each account.
+- **Expected Auxiliary Space Complexity:** O(n \* m), where n is the number of accounts and m is the average size of each account.
 
-
-## Sorry guys my answer is too big but its hard so please if once the not given correct try again in GFG complier 
+## Sorry guys my answer is too big but its hard so please if once the not given correct try again in GFG complier
 
 ### Code (C++)
 
@@ -142,7 +147,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

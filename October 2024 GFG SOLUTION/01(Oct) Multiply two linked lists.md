@@ -1,4 +1,4 @@
-# *01. Multiply Two Linked Lists*
+# _01. Multiply Two Linked Lists_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/multiply-two-linked-lists/1)
 
@@ -7,30 +7,34 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given elements as nodes of two singly linked lists, the task is to multiply these two linked lists, L1 and L2. The nodes contain digits, and the linked lists represent numbers.
 
 - You are required to return the multiplication of these two numbers modulo \(10^9 + 7\).
-  
+
 #### Example 1:
 
-Input: 
+Input:
+
 - LinkedList L1: 3 -> 2
 - LinkedList L2: 2
-  
-Output: 
+
+Output:
+
 - 64
 
 Explanation: Multiplication of 32 and 2 gives 64.
 
-
 ### Constraints:
+
 - \(1 \leq \text{number of nodes} \leq 10^5\)
 - \(1 \leq \text{node.data} \leq 10^3\)
 
 ### My Approach
 
 1. **Linked List to Number Conversion:**
+
    - Traverse through each linked list, treating the digits as part of a number, and accumulate the number formed.
    - While calculating the number from the linked lists, take the modulo \(10^9 + 7\) to prevent overflow.
 
 2. **Multiplication and Modulo Operation:**
+
    - Multiply the two numbers obtained from the linked lists.
    - Take the result modulo \(10^9 + 7\) to ensure the result is within the specified range.
 
@@ -106,11 +110,12 @@ class Solution:
 
 ## Contribution and Support
 
-For any discussions, questions, or feedback related to this solution, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/het-patel-8b110525a/). Your support and input help foster a collaborative learning environment.
+For any discussions, questions, or feedback related to this solution, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Your support and input help foster a collaborative learning environment.
 
 ⭐ Star this repository if you found it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -9,35 +9,43 @@ Given two sorted arrays `arr1` and `arr2` and an integer `k`, find the element t
 **Example:**
 
 Input:
+
 ```
 k = 5
 arr1 = [2, 3, 6, 7, 9]
 arr2 = [1, 4, 8, 10]
 ```
+
 Output:
+
 ```
 6
 ```
+
 Explanation:
 The final combined sorted array is [1, 2, 3, 4, 6, 7, 8, 9, 10]. The 5th element of this array is 6.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Define a helper function `kth` to find the k-th element in two sorted subarrays.
 - The helper function takes arrays `arr1` and `arr2`, start and end indices of the subarrays, and the value `k`.
 
 2. **Base Cases:**
+
 - If the starting index of `arr1` exceeds its ending index, return the k-th element from `arr2`.
 - If the starting index of `arr2` exceeds its ending index, return the k-th element from `arr1`.
 
 3. **Recursive Case:**
+
 - Calculate the midpoints of the subarrays.
 - Compare the sum of the midpoints with `k`.
 - Depending on the comparison:
   - Adjust the subarray bounds and `k` for the recursive call.
 
 4. **Return:**
+
 - Call the helper function `kth` with the initial bounds and `k-1`.
 
 ### Time and Auxiliary Space Complexity
@@ -89,10 +97,10 @@ class Solution {
     private long kth(int[] arr1, int[] arr2, int s1, int e1, int s2, int e2, int k) {
         if (s1 >= e1) return arr2[s2 + k];
         if (s2 >= e2) return arr1[s1 + k];
-        
+
         int mid1 = (e1 - s1) / 2;
         int mid2 = (e2 - s2) / 2;
-        
+
         if (mid1 + mid2 < k) {
             if (arr1[s1 + mid1] > arr2[s2 + mid2]) {
                 return kth(arr1, arr2, s1, e1, s2 + mid2 + 1, e2, k - mid2 - 1);
@@ -122,10 +130,10 @@ class Solution:
             return arr2[s2 + k]
         if s2 >= e2:
             return arr1[s1 + k]
-        
+
         mid1 = (e1 - s1) // 2
         mid2 = (e2 - s2) // 2
-        
+
         if mid1 + mid2 < k:
             if arr1[s1 + mid1] > arr2[s2 + mid2]:
                 return self.kth(arr1, arr2, s1, e1, s2 + mid2 + 1, e2, k - mid2 - 1)
@@ -140,7 +148,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

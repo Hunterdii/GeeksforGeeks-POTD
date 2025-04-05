@@ -10,38 +10,44 @@ The driver code will print the preorder traversal of the constructed tree.
 
 **Examples:**
 
-1. Input:
-   - \(n = 8\)
-   - `in[] = {4, 8, 2, 5, 1, 6, 3, 7}`
-   - `post[] = {8, 4, 5, 2, 6, 7, 3, 1}`
-   
-   Output:
-   ```
-   1 2 4 8 5 3 6 7
-   ```
-   Explanation: 
-   For the given postorder and inorder traversal of the tree, the resultant binary tree will be:
+1.  Input:
 
-                1
-             /      \
-           2        3
-         /  \      /  \
-        4   5    6   7
-         \
-          8
+    - \(n = 8\)
+    - `in[] = {4, 8, 2, 5, 1, 6, 3, 7}`
+    - `post[] = {8, 4, 5, 2, 6, 7, 3, 1}`
+
+    Output:
+
+    ```
+    1 2 4 8 5 3 6 7
+    ```
+
+    Explanation:
+    For the given postorder and inorder traversal of the tree, the resultant binary tree will be:
+
+                 1
+              /      \
+            2        3
+          /  \      /  \
+         4   5    6   7
+          \
+           8
 
 ### Approach
 
 1. **Building Tree:**
+
    - We begin by selecting the last element of the postorder traversal array as the root of the binary tree.
    - We find the index of the root in the inorder traversal to determine the left and right subtrees.
    - Recursively, we construct the right subtree first and then the left subtree.
 
 2. **Helper Function:**
+
    - We use a helper function to build the tree recursively.
    - This function takes parameters such as the inorder and postorder arrays, along with indices indicating the current range of elements.
 
 3. **Time Complexity:**
+
    - Since for each node, we search for its index in the inorder traversal, the time complexity of constructing the tree is \(O(n^2)\), where \(n\) is the number of nodes in the tree.
 
 4. **Auxiliary Space Complexity:**
@@ -82,7 +88,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

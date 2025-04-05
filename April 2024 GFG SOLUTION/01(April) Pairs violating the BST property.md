@@ -4,7 +4,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ### Problem Description
 
-Given a binary tree with \(n\) nodes, find the number of pairs violating the BST property. 
+Given a binary tree with \(n\) nodes, find the number of pairs violating the BST property.
 
 BST has the following properties:
 
@@ -14,11 +14,14 @@ BST has the following properties:
 
 **Example:**
 
-Input : 
+Input :
+
 ```
 n = 5
 ```
+
 Input tree:
+
 ```
           10
         /    \
@@ -26,20 +29,24 @@ Input tree:
       / \     /
      20 30   60
 ```
+
 Output :
+
 ```
 5
 ```
-Explanation : 
+
+Explanation :
 Pairs violating BST property are:
+
 - (10,50), 10 should be greater than its left child value.
 - (40,30), 40 should be less than its right child value.
 - (50,20), (50,30) and (50,40), maximum of left subtree of 10 is 50 greater than 20, 30 and 40 of its right subtree.
 
-
 ### My Approach
 
 1. **Inorder Traversal and Merge Sort:**
+
 - Perform an inorder traversal of the binary tree to get the sorted values.
 - Use merge sort to count the number of inversions in the sorted array, which represents the number of pairs violating the BST property.
 
@@ -112,7 +119,7 @@ private:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,6 +1,6 @@
 ## 16. Delete Node without Head Pointer
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/delete-without-head-pointer/1)
 
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/delete-without-head-pointer/1)
 
 ### My Approach
 
@@ -16,7 +16,6 @@ This approach effectively removes the `del_node` from the linked list without ac
 - **Expected Time Complexity:** O(1), as we perform a constant number of operations regardless of the size of the linked list.
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space.
 
-
 You are given a node `del_node` of a Singly Linked List where you have to delete a value of the given node from the linked list but you are not given the head of the list.
 By deleting the node value, we do not mean removing it from memory. We mean:
 
@@ -27,16 +26,20 @@ By deleting the node value, we do not mean removing it from memory. We mean:
 **Example 1:**
 
 Input:
+
 ```
 Linked List = 10 -> 20 -> 4 -> 30
 del_node = 20
 ```
-Output: 
+
+Output:
+
 ```
 10 4 30
 ```
-Explanation: 
-After deleting 20 from the linked list, 
+
+Explanation:
+After deleting 20 from the linked list,
 we have remaining nodes as 10, 4, 30.
 
 ### Code (C++)
@@ -58,7 +61,7 @@ class Solution
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

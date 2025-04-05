@@ -9,30 +9,36 @@ Given a binary matrix `mat` of size `n * m`, find out the maximum length of a si
 **Example:**
 
 Input:
+
 ```
 n = 6, m = 5
-mat = [[0, 1, 1, 0, 1], 
+mat = [[0, 1, 1, 0, 1],
        [1, 1, 0, 1, 0],
        [0, 1, 1, 1, 0],
        [1, 1, 1, 1, 0],
        [1, 1, 1, 1, 1],
        [0, 0, 0, 0, 0]]
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation:
 The maximum length of a side of the square sub-matrix is 3 where every element is 1.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create a vector `dp` of size `m` to store the lengths of square sides ending at each column of the current row.
 - Initialize `maxsize` to 0 to keep track of the maximum length of the square sub-matrix found.
 - Use `prev` to store the value of `dp[j]` from the previous row during the iteration.
 
 2. **Square Calculation:**
+
 - Iterate through each element of the matrix:
   - For the first row and the first column, set `dp[j]` to `mat[i][j]`.
   - For other elements, if `mat[i][j]` is 1, calculate the minimum of `dp[j]`, `dp[j - 1]`, and `prev`, then add 1 to get the side length of the square ending at `mat[i][j]`.
@@ -40,11 +46,12 @@ The maximum length of a side of the square sub-matrix is 3 where every element i
   - Update `prev` to the value of `dp[j]` before the current update.
 
 3. **Return:**
+
 - Return `maxsize`, which is the maximum length of the side of the square sub-matrix with all 1s.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), as we iterate through each element of the matrix.
+- **Expected Time Complexity:** O(n \* m), as we iterate through each element of the matrix.
 - **Expected Auxiliary Space Complexity:** O(m), as we use a vector of size `m` to store intermediate results.
 
 ### Code (C++)
@@ -130,7 +137,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

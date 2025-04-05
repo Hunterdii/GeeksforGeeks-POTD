@@ -1,6 +1,7 @@
 ## 20. Sum of the Longest Root to Leaf Path
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1)
+
 ### Problem Description
 
 Given a binary tree having n nodes. Find the sum of all nodes on the longest path from root to any leaf node. If two or more paths compete for the longest path, then the path having the maximum sum of nodes will be considered.
@@ -8,29 +9,35 @@ Given a binary tree having n nodes. Find the sum of all nodes on the longest pat
 **Example:**
 
 Input:
+
 ```
-        4        
-       /  \       
-      2   5      
-     / \   /  \     
-    7  1 2  3    
+        4
+       /  \
+      2   5
+     / \   /  \
+    7  1 2  3
       /
      6
 ```
-Output: 
+
+Output:
+
 ```
 13
 ```
+
 Explanation:
+
 ```
-        4        
-       /  \       
-      2   5      
-     / \   /  \     
-    7  1 2  3 
+        4
+       /  \
+      2   5
+     / \   /  \
+    7  1 2  3
       /
      6
 ```
+
 The highlighted nodes (4, 2, 1, 6) above are part of the longest root to leaf path having the sum = (4 + 2 + 1 + 6) = 13
 
 ### My Approach
@@ -59,34 +66,33 @@ class Solution {
             }
             return;
         }
-        
+
         sum += root->data;
         dfs(root->left, len + 1, maxLen, sum, maxSum);
         dfs(root->right, len + 1, maxLen, sum, maxSum);
     }
-    
+
 public:
     int sumOfLongRootToLeafPath(Node *root) {
         if (root == nullptr) {
             return 0;
         }
-        
+
         int len = 0;
         int maxLen = 0;
         int sum = 0;
         int maxSum = 0;
-        
+
         dfs(root, len, maxLen, sum, maxSum);
-        
+
         return maxSum;
     }
 };
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

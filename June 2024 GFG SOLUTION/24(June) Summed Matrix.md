@@ -10,27 +10,34 @@ A matrix is constructed of size \(n \times n\) and given an integer `q`. The val
 
 **Examples:**
 
-Input: 
+Input:
+
 ```
 n = 4, q = 7
 ```
-Output: 
+
+Output:
+
 ```
 2
 ```
+
 Explanation:
 Matrix becomes:
+
 ```
-2 3 4 5 
-3 4 5 6 
+2 3 4 5
+3 4 5 6
 4 5 6 7
 5 6 7 8
 ```
+
 The count of 7 is 2.
 
 ### My Approach
 
 1. **Conditions and Calculation:**
+
 - If `q` is greater than `2 * n`, there are no cells with value `q` since the maximum possible value in the matrix is `2 * n`.
 - If `q` is less than or equal to `n + 1`, the value `q` can appear in the cells forming a diagonal line in the upper triangle of the matrix, and the number of such cells is `q - 1`.
 - If `q` is greater than `n + 1` but less than or equal to `2 * n`, the value `q` can appear in the cells forming a diagonal line in the lower triangle of the matrix, and the number of such cells is `2 * n - q + 1`.
@@ -88,7 +95,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

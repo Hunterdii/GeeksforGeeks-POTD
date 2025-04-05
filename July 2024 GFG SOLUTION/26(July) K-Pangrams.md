@@ -11,31 +11,41 @@ A single operation consists of swapping an existing alphabetic character with an
 **Example:**
 
 Input:
+
 ```
 str = "the quick brown fox jumps over the lazy dog", k = 0
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation: The sentence contains all 26 characters and is already a pangram.
 
 Input:
+
 ```
 str = "aaaaaaaaaaaaaaaaaaaaaaaaaa", k = 25
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation: The string contains 26 instances of 'a'. Since only 25 operations are allowed, we can keep 1 instance and change all others to make `str` a pangram.
 
 ### My Approach
 
 1. **Frequency Calculation:**
+
    - Create a frequency map to count occurrences of each alphabetic character in the string.
 
 2. **Check for Pangram:**
+
    - Calculate the total number of characters in the string (`cnt`).
    - Count the number of unique alphabetic characters (`uniq`).
    - Check if the string has at least 26 characters (`cnt >= 26`) and if the number of missing unique characters to form a pangram is less than or equal to `k` (`(26 - uniq) <= k`).
@@ -124,7 +134,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

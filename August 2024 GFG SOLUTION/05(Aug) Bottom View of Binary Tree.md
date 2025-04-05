@@ -11,25 +11,31 @@ Given a binary tree, return an array where elements represent the bottom view of
 **Example:**
 
 Input:
+
 ```
        1
      /   \
     3     2
 ```
+
 Output:
+
 ```
 3 1 2
 ```
+
 Explanation:
 The bottom view of the binary tree will be 3, 1, 2.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a map `bottomViewMap` to store the bottom view nodes at each horizontal distance (hd).
    - Use a queue to perform a level order traversal of the tree, storing pairs of nodes and their corresponding horizontal distances.
 
 2. **Level Order Traversal:**
+
    - Push the root node with horizontal distance 0 into the queue.
    - For each node, update the `bottomViewMap` with the node's value at its horizontal distance.
    - If the node has a left child, push it into the queue with horizontal distance `hd - 1`.
@@ -91,7 +97,7 @@ class Solution {
             return res;
 
         TreeMap<Integer, Integer> bottomViewMap = new TreeMap<>();
-        
+
         Queue<Pair<Node, Integer>> q = new LinkedList<>();
         q.add(new Pair<>(root, 0));
 
@@ -144,28 +150,28 @@ class Solution:
         res = []
         if not root:
             return res
-        
+
         bottom_view_map = defaultdict(int)
         q = deque([(root, 0)])
-        
+
         while q:
             node, hd = q.popleft()
             bottom_view_map[hd] = node.data
-            
+
             if node.left:
                 q.append((node.left, hd - 1))
             if node.right:
                 q.append((node.right, hd + 1))
-        
+
         for key in sorted(bottom_view_map.keys()):
             res.append(bottom_view_map[key])
-        
+
         return res
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

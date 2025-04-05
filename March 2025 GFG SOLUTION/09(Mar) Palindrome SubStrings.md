@@ -1,4 +1,4 @@
-# *9. Palindrome SubStrings*
+# _9. Palindrome SubStrings_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string0652/1)
 
@@ -8,72 +8,86 @@ Given a string **s**, count all **palindromic substrings** present in the string
 
 ## **Examples**
 
-### **Example 1**  
-**Input:**  
+### **Example 1**
+
+**Input:**
+
 ```
 s = "abaab"
 ```
-**Output:**  
+
+**Output:**
+
 ```
 3
 ```
+
 **Explanation:**  
 All palindromic substrings are: `"aba"`, `"aa"`, and `"baab"`.
 
-### **Example 2**  
-**Input:**  
+### **Example 2**
+
+**Input:**
+
 ```
 s = "aaa"
 ```
-**Output:**  
+
+**Output:**
+
 ```
 3
 ```
+
 **Explanation:**  
 All palindromic substrings are: `"aa"`, `"aa"`, and `"aaa"`.
 
-### **Example 3**  
-**Input:**  
+### **Example 3**
+
+**Input:**
+
 ```
 s = "abbaeae"
 ```
-**Output:**  
+
+**Output:**
+
 ```
 4
 ```
+
 **Explanation:**  
 All palindromic substrings are: `"bb"`, `"abba"`, `"aea"`, and `"eae"`.
 
 ## **Constraints**
+
 - $\( 2 \leq \text{length}(s) \leq 10^3 \)$
 - String contains only **lowercase English characters**.
-
 
 ## **My Approach**
 
 ### **Dynamic Programming (DP) (O(N²) Time, O(N²) Space)**
 
 1. We use a **2D boolean DP array** `dp[i][j]` to indicate whether the substring `s[i..j]` is a palindrome.
-2. **Base cases**: Every single character is trivially a palindrome (we won't count single-character palindromes as per problem statement).  
+2. **Base cases**: Every single character is trivially a palindrome (we won't count single-character palindromes as per problem statement).
 3. We fill the DP table in a manner that checks if the **characters at both ends** match and if the **inside substring** is also a palindrome.
 4. Whenever we find `dp[i][j] = true` and `(j - i + 1) >= 2`, we **increment** our palindrome count.
 5. Return the final count of **palindromic substrings** of length >= 2.
 
-### **Algorithm Steps**  
-1. Create a 2D array `dp[n][n]`, initialized to `false`, where `n` is the length of `s`.  
-2. Traverse the string **in reverse order** for the starting index `i` (from `n-1` down to `0`).  
-3. Set `dp[i][i] = true` for all `i` (single-character palindromes, though not counted, are needed to build multi-character palindromes).  
-4. For each `i`, iterate `j` from `i+1` to `n-1`:  
-   - If `s[i] == s[j]` and the substring in-between is a palindrome (or `j - i == 1` for adjacent chars), set `dp[i][j] = true`.  
-   - If `dp[i][j]` is `true`, **increment** the count.  
+### **Algorithm Steps**
+
+1. Create a 2D array `dp[n][n]`, initialized to `false`, where `n` is the length of `s`.
+2. Traverse the string **in reverse order** for the starting index `i` (from `n-1` down to `0`).
+3. Set `dp[i][i] = true` for all `i` (single-character palindromes, though not counted, are needed to build multi-character palindromes).
+4. For each `i`, iterate `j` from `i+1` to `n-1`:
+   - If `s[i] == s[j]` and the substring in-between is a palindrome (or `j - i == 1` for adjacent chars), set `dp[i][j] = true`.
+   - If `dp[i][j]` is `true`, **increment** the count.
 5. The result is the total count of palindromic substrings of length ≥ 2.
 
+## **Time and Auxiliary Space Complexity**
 
-## **Time and Auxiliary Space Complexity**  
-
-- **Expected Time Complexity:** **O(N²)**, where N is the length of the string. We have nested loops iterating through the string to fill the DP table.  
+- **Expected Time Complexity:** **O(N²)**, where N is the length of the string. We have nested loops iterating through the string to fill the DP table.
 - **Expected Auxiliary Space Complexity:** **O(N²)**, for maintaining the 2D DP table.
-
 
 ## **Code (C++)**
 
@@ -99,9 +113,10 @@ class Solution {
 
 ## **1️⃣ Expand Around Center (O(N²) Time, O(1) Space)**
 
-**Idea:**  
-- Treat each index (and index gap) as a potential palindrome center.  
-- Expand outward while the characters match.  
+**Idea:**
+
+- Treat each index (and index gap) as a potential palindrome center.
+- Expand outward while the characters match.
 - Count palindromic substrings of length ≥ 2.
 
 ```cpp
@@ -117,10 +132,11 @@ public:
     }
 };
 ```
-🔹 **No extra space needed**  
-🔹 **Simple to implement**  
 
-## **Code (Java)**  
+🔹 **No extra space needed**  
+🔹 **Simple to implement**
+
+## **Code (Java)**
 
 ```java
 class Solution {
@@ -135,8 +151,8 @@ class Solution {
 }
 ```
 
+## **Code (Python)**
 
-## **Code (Python)**  
 ```python
 class Solution:
     def countPS(self, s):
@@ -149,12 +165,12 @@ class Solution:
         return res - n
 ```
 
-
 ## **2️⃣ Manacher’s Algorithm (O(N) Time, O(N) Space)**
 
-**Idea:**  
-- Transform string into a format with separators (e.g., `#a#b#a#b#`).  
-- Use Manacher’s algorithm to find palindromes in `O(N)`.  
+**Idea:**
+
+- Transform string into a format with separators (e.g., `#a#b#a#b#`).
+- Use Manacher’s algorithm to find palindromes in `O(N)`.
 - Count palindromes of length ≥ 2 from the computed radius array.
 
 ```cpp
@@ -171,7 +187,7 @@ public:
             int mirr = 2 * c - i;
             if (i < r) p[i] = min(r - i, p[mirr]);
 
-            while (i + p[i] + 1 < n && i - p[i] - 1 >= 0 && t[i + p[i] + 1] == t[i - p[i] - 1]) 
+            while (i + p[i] + 1 < n && i - p[i] - 1 >= 0 && t[i + p[i] + 1] == t[i - p[i] - 1])
                 p[i]++;
 
             if (i + p[i] > r) {
@@ -186,28 +202,27 @@ public:
     }
 };
 ```
+
 🔹 **Fastest for large `N`**  
-🔹 **Trickier to implement**  
+🔹 **Trickier to implement**
 
-## **📊 Comparison of Approaches**  
+## **📊 Comparison of Approaches**
 
-| **Approach**                  | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                            | ⚠️ **Cons**                            |
-|-------------------------------|------------------------|-------------------------|----------------------------------------|-----------------------------------------|
-| **Dynamic Programming (DP)**   | 🟡 O(N²)               | 🟡 O(N²)                | Reliable and efficient for mid-size N  | Requires 2D DP table                    |
-| **Expand Around Center**       | 🟡 O(N²)               | 🟢 O(1)                 | Simple and space-efficient             | Slower for very large `N`               |
-| **Manacher’s Algorithm**       | 🟢 O(N)                | 🟡 O(N)                 | Fastest for `N > 10⁵`                 | Complex to implement                    |
+| **Approach**                 | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                           | ⚠️ **Cons**               |
+| ---------------------------- | ---------------------- | ----------------------- | ------------------------------------- | ------------------------- |
+| **Dynamic Programming (DP)** | 🟡 O(N²)               | 🟡 O(N²)                | Reliable and efficient for mid-size N | Requires 2D DP table      |
+| **Expand Around Center**     | 🟡 O(N²)               | 🟢 O(1)                 | Simple and space-efficient            | Slower for very large `N` |
+| **Manacher’s Algorithm**     | 🟢 O(N)                | 🟡 O(N)                 | Fastest for `N > 10⁵`                 | Complex to implement      |
 
+## 💡 **Best Choice?**
 
-
-## 💡 **Best Choice?**  
-- ✅ **For simplicity:** Use **Expand Around Center**.  
-- ✅ **For optimal runtime on large inputs:** Use **Manacher’s Algorithm**.  
-- ✅ **For learning DP concepts:** Use the **Dynamic Programming** approach.  
+- ✅ **For simplicity:** Use **Expand Around Center**.
+- ✅ **For optimal runtime on large inputs:** Use **Manacher’s Algorithm**.
+- ✅ **For learning DP concepts:** Use the **Dynamic Programming** approach.
 
 </details>
 
-
-## **Code (Java)**  
+## **Code (Java)**
 
 ```java
 class Solution {
@@ -227,8 +242,8 @@ class Solution {
 }
 ```
 
+## **Code (Python)**
 
-## **Code (Python)**  
 ```python
 class Solution:
     def countPS(self, s):
@@ -243,12 +258,11 @@ class Solution:
         return res
 ```
 
-
 > **Note:** Single-character palindromes are not counted as per problem statement. All approaches shown ensure only palindromes of length **≥ 2** are incremented.
 
-## **Contribution and Support**  
+## **Contribution and Support**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

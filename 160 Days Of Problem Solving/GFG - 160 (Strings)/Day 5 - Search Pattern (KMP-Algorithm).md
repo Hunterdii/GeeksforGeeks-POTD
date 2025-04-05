@@ -1,32 +1,30 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Strings
-  - Pattern Searching  
+  - Pattern Searching
 ---
 
 # 🚀 _Day 5. Search Pattern (KMP Algorithm)_ 🧠
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/search-pattern0205)
 
-
 ## 💡 **Problem Description:**
 
-You are given two strings:  
-- `txt`: The text string in which the pattern is to be searched.  
-- `pat`: The pattern string to search for.  
+You are given two strings:
+
+- `txt`: The text string in which the pattern is to be searched.
+- `pat`: The pattern string to search for.
 
 The task is to print all indices in `txt` where `pat` starts, using 0-based indexing. Return an empty list if no occurrences are found.
-
-
 
 ## 🔍 **Example Walkthrough:**
 
 **Input:**  
 `txt = "abcab", pat = "ab"`  
 **Output:**  
-`[0, 3]`  
+`[0, 3]`
 
 **Explanation:**  
 The pattern `ab` appears at indices 0 and 3 in the text string.
@@ -41,40 +39,38 @@ The pattern `ab` appears at indices 0 and 3 in the text string.
 **Output:**  
 `[]`
 
-
-
 ## Constraints:
+
 - `1 <= txt.length, pat.length <= 10^6`
 - Both strings consist of lowercase English alphabets.
-
-
 
 ## 🎯 **My Approach:**
 
 The **Knuth-Morris-Pratt (KMP)** algorithm is an efficient pattern matching algorithm that avoids unnecessary comparisons, making it well-suited for this task.
 
-1. **Compute the Longest Prefix Suffix (LPS) Array:**  
-   - Preprocess the pattern string `pat` to build the LPS array.  
-   - The LPS array stores the length of the longest prefix which is also a suffix for substrings of `pat`.  
+1. **Compute the Longest Prefix Suffix (LPS) Array:**
+
+   - Preprocess the pattern string `pat` to build the LPS array.
+   - The LPS array stores the length of the longest prefix which is also a suffix for substrings of `pat`.
    - This preprocessing helps in skipping characters during comparisons.
 
-2. **Search Using the LPS Array:**  
-   - Traverse the `txt` and use the `pat` LPS array to efficiently find matches.  
+2. **Search Using the LPS Array:**
+
+   - Traverse the `txt` and use the `pat` LPS array to efficiently find matches.
    - If a mismatch occurs, use the LPS array to skip unnecessary comparisons.
 
-3. **Output the Indices:**  
-   - Store the starting indices of matches found in `txt`.  
+3. **Output the Indices:**
+   - Store the starting indices of matches found in `txt`.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Preprocessing (LPS Array):** O(m), where `m` is the length of the pattern string.  
-- **Searching:** O(n), where `n` is the length of the text string.  
-- **Overall Time Complexity:** O(n + m).  
+- **Preprocessing (LPS Array):** O(m), where `m` is the length of the pattern string.
+- **Searching:** O(n), where `n` is the length of the text string.
+- **Overall Time Complexity:** O(n + m).
 
 ### Auxiliary Space Complexity:
-- **Space for LPS Array:** O(m).  
+
+- **Space for LPS Array:** O(m).
 
 ## 📝 **Solution Code**
 
@@ -114,7 +110,7 @@ int* search(char pat[], char txt[], int* resultSize) {
 
     computeLPSArray(pat, m, lps);
 
-    int* result = (int*)malloc(10 * sizeof(int)); 
+    int* result = (int*)malloc(10 * sizeof(int));
     if (!result) {
         fprintf(stderr, "Memory allocation failed for result\n");
         free(lps);
@@ -157,8 +153,6 @@ int* search(char pat[], char txt[], int* resultSize) {
 }
 ```
 
-
-
 ## Code (C++)
 
 ```cpp
@@ -167,9 +161,9 @@ class Solution {
     vector<int> search(string& pat, string& txt) {
         int m = pat.size();
         int n = txt.size();
-        vector<int> lps(m, 0);  
+        vector<int> lps(m, 0);
         vector<int> result;
-        int len = 0; 
+        int len = 0;
         for (int i = 1; i < m; ) {
             if (pat[i] == pat[len]) {
                 len++;
@@ -184,15 +178,15 @@ class Solution {
                 }
             }
         }
-        int i = 0; 
-        int j = 0; 
+        int i = 0;
+        int j = 0;
         while (i < n) {
             if (txt[i] == pat[j]) {
                 i++;
                 j++;
             }
             if (j == m) {
-                result.push_back(i - j); 
+                result.push_back(i - j);
                 j = lps[j - 1];
             } else if (i < n && txt[i] != pat[j]) {
                 if (j != 0) {
@@ -206,8 +200,6 @@ class Solution {
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -263,8 +255,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -310,10 +300,9 @@ class Solution:
         return result
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

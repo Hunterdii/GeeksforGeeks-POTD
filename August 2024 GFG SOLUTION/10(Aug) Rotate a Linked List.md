@@ -9,15 +9,20 @@ Given the head of a singly linked list, the task is to rotate the linked list cl
 **Example 1:**
 
 Input:
+
 ```
-linkedlist: 2->4->7->8->9 
+linkedlist: 2->4->7->8->9
 k = 3
 ```
+
 Output:
+
 ```
 8->9->2->4->7
 ```
+
 Explanation:
+
 - Rotate 1: 4 -> 7 -> 8 -> 9 -> 2
 - Rotate 2: 7 -> 8 -> 9 -> 2 -> 4
 - Rotate 3: 8 -> 9 -> 2 -> 4 -> 7
@@ -25,11 +30,14 @@ Explanation:
 **Example 2:**
 
 Input:
+
 ```
-linkedlist: 1->2->3->4->5->6->7->8 
+linkedlist: 1->2->3->4->5->6->7->8
 k = 4
 ```
+
 Output:
+
 ```
 5->6->7->8->1->2->3->4
 ```
@@ -37,10 +45,12 @@ Output:
 ### My Approach
 
 1. **Initialization:**
+
    - Traverse the linked list to find the last node and establish a pointer `p` to it.
    - Iterate through the list `k` times, detaching the first node each time and appending it to the end.
 
 2. **Rotation Logic:**
+
    - In each rotation, update the head pointer to point to the next node, detach the current head, and attach it to the end by updating `p->next`. Update `p` to point to the newly added node.
 
 3. **Return:**
@@ -116,13 +126,13 @@ class Solution:
             t.next = None
             p.next = t
             p = t
-        
+
         return head
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

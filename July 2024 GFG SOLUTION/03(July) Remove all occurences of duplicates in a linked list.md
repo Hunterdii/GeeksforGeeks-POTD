@@ -9,22 +9,28 @@ Given a sorted linked list, delete all nodes that have duplicate numbers (all oc
 **Examples:**
 
 Input:
+
 ```
 Linked List = 23->28->28->35->49->49->53->53
 ```
+
 Output:
+
 ```
 23 35
 ```
+
 Explanation: The duplicate numbers are 28, 49, and 53, which are removed from the list.
 
 ### Approach
 
 1. **Initialization:**
+
    - Create a dummy node that points to the head of the linked list to handle edge cases, such as when the head itself is a duplicate.
    - Initialize pointers `prev` and `current`, where `prev` points to the dummy node, and `current` points to the head.
 
 2. **Iterate Through the List:**
+
    - Traverse the linked list with the `current` pointer.
    - Use a nested loop to check for consecutive nodes with the same value, marking them as duplicates.
    - If duplicates are found, skip all nodes with the duplicate value by adjusting the `next` pointer of `prev` to point to the node after `current`.
@@ -47,7 +53,7 @@ public:
     Node* removeAllDuplicates(Node* head) {
         if (!head) return nullptr;
 
-        Node dummy(-1); 
+        Node dummy(-1);
         dummy.next = head;
         Node* prev = &dummy;
         Node* current = head;
@@ -59,7 +65,7 @@ public:
                 isDuplicate = true;
             }
             if (isDuplicate) {
-                prev->next = current->next; 
+                prev->next = current->next;
             } else {
                 prev = prev->next;
             }
@@ -92,7 +98,7 @@ class Solution {
             if (isDuplicate) {
                 prev.next = current.next;
             } else {
-                prev = prev.next; 
+                prev = prev.next;
             }
             current = current.next;
         }
@@ -131,7 +137,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,7 +1,6 @@
-# *18. Allocate Minimum Pages*
+# _18. Allocate Minimum Pages_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1)
-
 
 ## Problem Description
 
@@ -13,76 +12,81 @@ You are given an array `arr[]` of integers, where each element `arr[i]` represen
 
 The objective is to minimize the maximum number of pages assigned to any student. In other words, find the arrangement where the student who receives the most pages has the smallest possible maximum.
 
-**Note:** 
+**Note:**
+
 - Return `-1` if a valid assignment is not possible.
 - Allocation must be **contiguous**.
-
-
 
 ## Example:
 
 #### Input:
+
 ```
 arr[] = [12, 34, 67, 90]
 k = 2
 ```
 
 #### Output:
+
 ```
 113
 ```
 
 #### Explanation:
+
 Allocation can be done in the following ways:
-1. [12] and [34, 67, 90] → Maximum Pages = 191  
-2. [12, 34] and [67, 90] → Maximum Pages = 157  
-3. [12, 34, 67] and [90] → Maximum Pages = 113  
+
+1. [12] and [34, 67, 90] → Maximum Pages = 191
+2. [12, 34] and [67, 90] → Maximum Pages = 157
+3. [12, 34, 67] and [90] → Maximum Pages = 113
 
 The minimum of these cases is `113`, which is selected as the output.
 
-
-
 #### Input:
+
 ```
 arr[] = [15, 17, 20]
 k = 5
 ```
 
 #### Output:
+
 ```
 -1
 ```
 
 #### Explanation:
+
 Allocation is not possible as `k > len(arr)`.
 
-
-
 #### Input:
+
 ```
 arr[] = [22, 23, 67]
 k = 1
 ```
 
 #### Output:
+
 ```
 112
 ```
 
 #### Constraints:
+
 - $`1 <= arr.size() <= 10^6`$
 - $`1 <= arr[i] <= 10^3`$
 - $`1 <= k <= 10^3`$
 
-
-
 ## My Approach
 
 1. **Binary Search on Result:**
+
    - The result lies between `max(arr)` (the maximum pages of a single book) and `sum(arr)` (all pages given to one student).
    - Use binary search to find the smallest valid value.
 
 2. **Validation Function:**
+
    - Check if it is possible to allocate books such that no student receives more than `mid` pages:
      - Iterate through the books.
      - Add pages to the current student until it exceeds `mid`.
@@ -94,10 +98,8 @@ k = 1
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * log(sum(arr) - max(arr))), where `n` is the size of the array. This is because we perform binary search over the range `[max(arr), sum(arr)]` and validate each mid-point in O(n).
+- **Expected Time Complexity:** O(n \* log(sum(arr) - max(arr))), where `n` is the size of the array. This is because we perform binary search over the range `[max(arr), sum(arr)]` and validate each mid-point in O(n).
 - **Expected Auxiliary Space Complexity:** O(1), as we do not use any additional space apart from a few variables.
-
-
 
 ## Code (C++)
 
@@ -106,7 +108,7 @@ class Solution {
 public:
     int findPages(vector<int>& arr, int k) {
         int n = arr.size();
-        if (k > n) return -1; 
+        if (k > n) return -1;
         int low = *max_element(arr.begin(), arr.end()), high = accumulate(arr.begin(), arr.end(), 0);
         while (low < high) {
             int mid = (low + high) / 2, students = 1, sum = 0;
@@ -121,18 +123,16 @@ public:
 };
 ```
 
-
-
 ### Code (Java)
 
 ```java
 class Solution {
     public static int findPages(int[] arr, int k) {
         int n = arr.length;
-        if (k > n) return -1; 
+        if (k > n) return -1;
 
-        int low = Arrays.stream(arr).max().getAsInt(); 
-        int high = Arrays.stream(arr).sum(); 
+        int low = Arrays.stream(arr).max().getAsInt();
+        int high = Arrays.stream(arr).sum();
 
         while (low < high) {
             int mid = (low + high) / 2;
@@ -155,8 +155,6 @@ class Solution {
 }
 ```
 
-
-
 ### Code (Python)
 
 ```python
@@ -164,9 +162,9 @@ class Solution:
     def findPages(self, arr, k):
         n = len(arr)
         if k > n:
-            return -1  
+            return -1
 
-        low, high = max(arr), sum(arr)  
+        low, high = max(arr), sum(arr)
 
         while low < high:
             mid = (low + high) // 2
@@ -187,13 +185,9 @@ class Solution:
         return low
 ```
 
-
-
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *14. Nearly Sorted*
+# _14. Nearly Sorted_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/nearly-sorted-1587115620/1)
 
@@ -12,13 +12,15 @@ You are expected to achieve this without using the built-in sorting functions.
 
 ### Examples:
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [6, 5, 3, 2, 8, 10, 9]
 k = 3
 ```
 
-**Output:**  
+**Output:**
+
 ```
 [2, 3, 5, 6, 8, 9, 10]
 ```
@@ -26,13 +28,15 @@ k = 3
 **Explanation:**  
 Since each element is at most 3 positions away from its target, sorting is achieved by rearranging the elements within this bound.
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [1, 4, 5, 2, 3, 6, 7, 8, 9, 10]
 k = 2
 ```
 
-**Output:**  
+**Output:**
+
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
@@ -43,6 +47,7 @@ The sorted array will be `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 ## My Approach
 
 1. **Using a Min-Heap for Efficient Sorting:**
+
    - As each element is at most `k` positions from its target, we can maintain a min-heap of size `k + 1` while iterating through the array. This ensures that the smallest of the `k+1` elements is always at the top of the heap and ready to be placed in its correct position.
    - Traverse the array and maintain the heap with the next `k + 1` elements. Once the heap is of size `k + 1`, pop the smallest element from the heap and place it at the current index.
    - After processing all elements, empty the heap into the array to complete the sorted order.
@@ -62,7 +67,7 @@ The sorted array will be `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 class Solution {
 public:
     void nearlySorted(std::vector<int>& arr, int k) {
-        if (k == 0) return; 
+        if (k == 0) return;
 
         std::priority_queue<int, std::vector<int>, std::greater<int>> minHeap;
 
@@ -86,13 +91,12 @@ public:
 };
 ```
 
-
 ## Code (Java)
 
 ```java
 class Solution {
     public void nearlySorted(int[] arr, int k) {
-        if (k == 0) return; 
+        if (k == 0) return;
 
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
@@ -122,7 +126,7 @@ import heapq
 class Solution:
     def nearlySorted(self, arr, k):
         if k == 0:
-            return 
+            return
         minHeap = []
         for i in range(min(k + 1, len(arr))):
             heapq.heappush(minHeap, arr[i])
@@ -139,7 +143,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

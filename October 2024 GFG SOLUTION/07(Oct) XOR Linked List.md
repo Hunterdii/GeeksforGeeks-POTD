@@ -1,4 +1,4 @@
-# *7. XOR Linked List*
+# _7. XOR Linked List_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/xor-linked-list/1)
 
@@ -17,13 +17,13 @@ A utility function `XOR()` takes two Node pointers to get the bitwise XOR of the
    LinkedList: 9<->5<->4<->7<->3<->10  
    **Output:**  
    10 3 7 4 5 9  
-   9 5 4 7 3 10  
+   9 5 4 7 3 10
 
 2. **Input:**  
    LinkedList: 58<->96<->31  
    **Output:**  
    31 96 58  
-   58 96 31  
+   58 96 31
 
 ---
 
@@ -31,20 +31,23 @@ A utility function `XOR()` takes two Node pointers to get the bitwise XOR of the
 
 1. **Node Structure:**  
    Define a `Node` structure that contains:
+
    - An integer data field.
    - A pointer `npx`, which will store the XOR of the previous and next node addresses.
 
-2. **Insert Function:**  
+2. **Insert Function:**
+
    - Create a new node with the given data.
    - Update the `npx` of the new node to point to the current head.
    - If the list is not empty, update the `npx` of the old head to point to the new node using the XOR operation.
 
-3. **GetList Function:**  
+3. **GetList Function:**
+
    - Traverse the list starting from the head.
    - Use the `XOR` of the previous node and the current node's `npx` to find the next node in the list.
    - Collect data from each node and return it as a list.
 
-4. **Utility Function:**  
+4. **Utility Function:**
    - Implement the `XOR` function that takes two Node pointers and returns their XOR.
 
 ---
@@ -63,7 +66,7 @@ struct Node* insert(struct Node* head, int data) {
     struct Node* new_node = new Node(data);
     new_node->npx = head;
     if (head != NULL) {
-        head->npx = XOR(new_node, head->npx);  
+        head->npx = XOR(new_node, head->npx);
     }
     return new_node;
 }
@@ -128,7 +131,7 @@ def getList(head):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

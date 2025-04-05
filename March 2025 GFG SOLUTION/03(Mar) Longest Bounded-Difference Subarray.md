@@ -1,83 +1,85 @@
-# *3. Longest Bounded-Difference Subarray*
+# _3. Longest Bounded-Difference Subarray_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-bounded-difference-subarray/1)
 
-
 ## **Problem Description**
 
-Given an array of positive integers `arr[]` and a non-negative integer `x`, the task is to find the **longest sub-array** where the absolute difference between any two elements is not greater than `x`.  
+Given an array of positive integers `arr[]` and a non-negative integer `x`, the task is to find the **longest sub-array** where the absolute difference between any two elements is not greater than `x`.
 
 If multiple such subarrays exist, return the one that **starts at the smallest index**.
-
 
 ## **Examples**
 
 ### Example 1
 
 #### Input
+
 ```
 arr[] = [8, 4, 2, 6, 7]
 x = 4
 ```
 
 #### Output
+
 ```
 [4, 2, 6]
 ```
 
 #### Explanation
+
 - The sub-array [4, 2, 6] has no pair of elements with absolute difference greater than 4.
 - Other subarrays either don't meet the condition or are shorter.
-
 
 ### Example 2
 
 #### Input
+
 ```
 arr[] = [15, 10, 1, 2, 4, 7, 2]
 x = 5
 ```
 
 #### Output
+
 ```
 [2, 4, 7, 2]
 ```
 
 #### Explanation
-- The sub-array described by indexes [3..6], i.e. [2, 4, 7, 2] contains no such difference of two elements which is greater than 5. 
 
+- The sub-array described by indexes [3..6], i.e. [2, 4, 7, 2] contains no such difference of two elements which is greater than 5.
 
 ### **Constraints**
+
 - $1 \leq N \leq 10^5$
 - $1 \leq arr[i] \leq 10^9$
 - $0 \leq x \leq 10^9$
 
-  
 ## **My Approach**
 
-### **Sliding Window with Deque**  
-This approach uses **two deques** to dynamically maintain the **minimum and maximum elements** within the sliding window.  
+### **Sliding Window with Deque**
+
+This approach uses **two deques** to dynamically maintain the **minimum and maximum elements** within the sliding window.
 
 - **minQ** tracks the **minimum values** in the current window.
 - **maxQ** tracks the **maximum values** in the current window.
 - If `maxQ.front() - minQ.front()` exceeds `x`, we shrink the window from the left.
 - At every step, we check if the current window length is the longest valid window seen so far.
 
-### **Steps:**  
+### **Steps:**
+
 1. Initialize `start` pointer and two deques: `minQ` (for minimum) and `maxQ` (for maximum).
 2. Expand the window by adding the current element to both deques.
 3. If the difference between max and min exceeds `x`, shrink the window by incrementing `start`.
 4. Track the **longest valid window** and its starting position.
 5. Return the subarray corresponding to the longest valid window.
 
-
 ## **Time and Auxiliary Space Complexity**
 
-| Complexity | Analysis |
-|------------|----------|
-| **Time Complexity** | `O(N)` - Each element is pushed and popped from the deque at most once. |
-| **Space Complexity** | `O(N)` - In the worst case, both deques can hold all indices. |
-
+| Complexity           | Analysis                                                                |
+| -------------------- | ----------------------------------------------------------------------- |
+| **Time Complexity**  | `O(N)` - Each element is pushed and popped from the deque at most once. |
+| **Space Complexity** | `O(N)` - In the worst case, both deques can hold all indices.           |
 
 ## **Code (C++)**
 
@@ -103,14 +105,13 @@ public:
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## **2️⃣ Using Ordered Set (O(N log N) Time, O(N) Space)**
 
 ### Key Idea
+
 - Use a **`multiset`** to dynamically maintain the window elements.
 - Get the **min** and **max** in constant time using `*begin()` and `*rbegin()`.
 - Shrink the window if the max-min difference exceeds `x`.
@@ -131,10 +132,10 @@ public:
 };
 ```
 
-
 ## **3️⃣ Brute Force (O(N²) Time, O(1) Space)**
 
 ### Key Idea
+
 - For every subarray `arr[i..j]`, check the max and min values and verify the condition.
 - This is only feasible for small arrays.
 
@@ -156,23 +157,21 @@ public:
 };
 ```
 
-
 ## **📊 Comparison of Approaches**
 
-| **Approach**              | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**              | ⚠️ **Cons**              |
-|--------------------------|---------------------|------------------|--------------------|------------------|
-| **Sliding Window + Deque (Optimal)** | 🟢 O(N)  | 🟢 O(N) | Fastest for all cases | Slightly complex |
-| **Ordered Set (Multiset)**  | 🟡 O(N log N) | 🟡 O(N) | Elegant window handling | Slower than deque |
-| **Brute Force**         | 🔴 O(N²) | 🟢 O(1) | Simple to implement | Very slow for large arrays |
-
+| **Approach**                         | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**             | ⚠️ **Cons**                |
+| ------------------------------------ | ---------------------- | ----------------------- | ----------------------- | -------------------------- |
+| **Sliding Window + Deque (Optimal)** | 🟢 O(N)                | 🟢 O(N)                 | Fastest for all cases   | Slightly complex           |
+| **Ordered Set (Multiset)**           | 🟡 O(N log N)          | 🟡 O(N)                 | Elegant window handling | Slower than deque          |
+| **Brute Force**                      | 🔴 O(N²)               | 🟢 O(1)                 | Simple to implement     | Very slow for large arrays |
 
 ## 💡 **Best Choice?**
+
 - ✅ **For optimal performance:** Sliding Window + Monotonic Deque (O(N) time, O(N) space).
 - ✅ **For simpler code:** Ordered Set is easier than deques.
 - ✅ **For small inputs:** Brute Force is acceptable for $N \leq 100$.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -204,6 +203,7 @@ class Solution {
 ```
 
 ## **Code (Python)**
+
 ```python
 from collections import deque
 
@@ -224,11 +224,11 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

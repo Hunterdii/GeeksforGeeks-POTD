@@ -9,34 +9,41 @@ Given an array `arr[]` of size `n` and an integer `x`, return `1` if there exist
 **Example:**
 
 Input:
+
 ```
 n = 6
 x = 78
 arr[] = {5, 20, 3, 2, 5, 80}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 Pair (2, 80) has an absolute difference of 78.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Initialize an unordered set `seen` to store the elements encountered while traversing the array.
 
 2. **Pair Finding:**
+
 - Iterate through the array.
 - For each element `arr[i]`, check if `arr[i] - x` or `arr[i] + x` exists in the set `seen`. If yes, return `1` as a pair with the required absolute difference exists.
 - If not found, insert the current element `arr[i]` into the set `seen`.
 
 3. **Return:**
+
 - If no such pair is found after traversing the array, return `-1`.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * log(n)), as the insertion and lookup operations in an unordered set have an average time complexity of O(1), but the total time complexity would be dominated by the linear traversal of the array.
+- **Expected Time Complexity:** O(n \* log(n)), as the insertion and lookup operations in an unordered set have an average time complexity of O(1), but the total time complexity would be dominated by the linear traversal of the array.
 - **Expected Auxiliary Space Complexity:** O(n), as we use an unordered set to store the elements encountered while traversing the array.
 
 ### Code (C++)
@@ -48,7 +55,7 @@ public:
         unordered_set<int> seen;
 
         for (int i = 0; i < n; ++i) {
-            
+
             if (seen.find(arr[i] - x) != seen.end() || seen.find(arr[i] + x) != seen.end()) {
                 return 1;
             }
@@ -62,7 +69,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

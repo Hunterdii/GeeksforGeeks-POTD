@@ -1,23 +1,24 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Arrays
   - Divide and Conquer
   - Sorting
 ---
 
-
 # 🚀 _Day 3. Count Inversions_ 🧠
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/inversion-of-array-1587115620)
 
 ## 💡 **Problem Description:**
 
-Given an array of integers `arr[]`. Find the **Inversion Count** in the array.  
+Given an array of integers `arr[]`. Find the **Inversion Count** in the array.
 
-Two elements `arr[i]` and `arr[j]` form an inversion if `arr[i] > arr[j]` and `i < j`.  
+Two elements `arr[i]` and `arr[j]` form an inversion if `arr[i] > arr[j]` and `i < j`.
 
 Inversion Count indicates how far (or close) the array is from being sorted:
+
 - If the array is already sorted, the inversion count is 0.
 - If the array is sorted in reverse order, the inversion count is maximum.
 
@@ -31,7 +32,6 @@ Inversion Count indicates how far (or close) the array is from being sorted:
 **Explanation:**  
 The sequence `2, 4, 1, 3, 5` has three inversions: (2, 1), (4, 1), (4, 3).
 
-
 **Input:**  
 `arr[] = [2, 3, 4, 5, 6]`  
 **Output:**  
@@ -39,7 +39,6 @@ The sequence `2, 4, 1, 3, 5` has three inversions: (2, 1), (4, 1), (4, 3).
 
 **Explanation:**  
 The array is already sorted, so there are no inversions.
-
 
 **Input:**  
 `arr[] = [10, 10, 10]`  
@@ -49,28 +48,30 @@ The array is already sorted, so there are no inversions.
 **Explanation:**  
 All elements of the array are the same, so there are no inversions.
 
-
 ### Constraints:
-- $`1 ≤ arr.size() ≤ 10^5`$ 
-- $`1 ≤ arr[i] ≤ 10^4`$  
+
+- $`1 ≤ arr.size() ≤ 10^5`$
+- $`1 ≤ arr[i] ≤ 10^4`$
 
 ## 🎯 **My Approach:**
 
-1. **Merge Sort-Based Counting**:  
+1. **Merge Sort-Based Counting**:
+
    - The problem can be efficiently solved using a modified **Merge Sort** algorithm.
    - During the merge step, count the number of inversions based on the positions of elements in the two halves.
 
-2. **Steps:**  
-   - **Divide:** Recursively divide the array into two halves.  
-   - **Merge:** Merge the two halves while counting inversions.  
-   - **Count Inversions:** For every pair `(i, j)` where `arr[i] > arr[j]` and `i < j`, increment the count.  
+2. **Steps:**
 
-3. **Advantages:**  
-   - This approach efficiently counts inversions with a time complexity of **O(n log n)**, compared to the naive **O(n^2)** method.  
+   - **Divide:** Recursively divide the array into two halves.
+   - **Merge:** Merge the two halves while counting inversions.
+   - **Count Inversions:** For every pair `(i, j)` where `arr[i] > arr[j]` and `i < j`, increment the count.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+3. **Advantages:**
+   - This approach efficiently counts inversions with a time complexity of **O(n log n)**, compared to the naive **O(n^2)** method.
 
-- **Expected Time Complexity:** O(n log n), as the algorithm performs a logarithmic number of merge steps, with each step taking linear time.  
+## 🕒 **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:** O(n log n), as the algorithm performs a logarithmic number of merge steps, with each step taking linear time.
 - **Expected Auxiliary Space Complexity:** O(n), as we use an additional array for temporary storage during the merge process.
 
 ## 📝 **Solution Code**
@@ -117,7 +118,6 @@ int countInversions(int arr[], int n) {
 }
 ```
 
-
 ## Code (Cpp)
 
 ```cpp
@@ -163,7 +163,6 @@ public:
 };
 ```
 
-
 ## Code (Java)
 
 ```java
@@ -208,7 +207,6 @@ class Solution {
     }
 }
 ```
-
 
 ## Code (Python)
 
@@ -259,10 +257,9 @@ class Solution:
         return self.mergeSortAndCount(arr, temp, 0, n - 1)
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

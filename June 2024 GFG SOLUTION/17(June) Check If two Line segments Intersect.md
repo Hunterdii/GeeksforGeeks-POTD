@@ -9,30 +9,35 @@ Given the coordinates of the endpoints \((p1, q1)\) and \((p2, q2)\) of two line
 **Example:**
 
 Input:
+
 ```
 p1 = (1, 1), q1 = (10, 1), p2 = (1, 2), q2 = (10, 2)
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation:
 The two line segments formed by \(p1 - q1\) and \(p2 - q2\) do not intersect.
 
 ### My Approach
 
 1. **Helper Functions:**
-    - `onSegment(p, q, r)`: Checks if point `q` lies on line segment `pr`.
-    - `orientation(p, q, r)`: Finds the orientation of the triplet (p, q, r).
-      - 0 -> p, q, r are collinear
-      - 1 -> Clockwise
-      - 2 -> Counterclockwise
+
+   - `onSegment(p, q, r)`: Checks if point `q` lies on line segment `pr`.
+   - `orientation(p, q, r)`: Finds the orientation of the triplet (p, q, r).
+     - 0 -> p, q, r are collinear
+     - 1 -> Clockwise
+     - 2 -> Counterclockwise
 
 2. **Main Function:**
-    - `doIntersect(p1, q1, p2, q2)`: Uses the orientation of the triplets to determine if the line segments intersect.
-    - Check general and special cases:
-        - General Case: Line segments \(p1 - q1\) and \(p2 - q2\) intersect if orientations of the points are different.
-        - Special Case: If points are collinear, check if they lie on the segments.
+   - `doIntersect(p1, q1, p2, q2)`: Uses the orientation of the triplets to determine if the line segments intersect.
+   - Check general and special cases:
+     - General Case: Line segments \(p1 - q1\) and \(p2 - q2\) intersect if orientations of the points are different.
+     - Special Case: If points are collinear, check if they lie on the segments.
 
 ### Time and Auxiliary Space Complexity
 
@@ -124,11 +129,11 @@ class Solution:
     def orientation(self, p, q, r):
         val = (q[1] - p[1]) * (r[0] - q[0]) - (q[0] - p[0]) * (r[1] - q[1])
         if val == 0:
-            return 0  
+            return 0
         elif val > 0:
-            return 1 
+            return 1
         else:
-            return 2  
+            return 2
 
     def doIntersect(self, p1, q1, p2, q2):
         o1 = self.orientation(p1, q1, p2)
@@ -153,7 +158,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *12. Meeting Rooms*
+# _12. Meeting Rooms_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/attend-all-meetings/1)
 
@@ -11,11 +11,13 @@ Given an array `arr[][]`, where `arr[i][0]` is the starting time of the i-th mee
 ### Examples:
 
 **Input:**
+
 ```
 arr[][] = [[1, 4], [10, 15], [7, 10]]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 true
 ```
@@ -24,11 +26,13 @@ true
 Since all the meetings are held at different times, it is possible to attend all the meetings.
 
 **Input:**
+
 ```
 arr[][] = [[2, 4], [9, 12], [6, 10]]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 false
 ```
@@ -38,7 +42,8 @@ The second and third meetings overlap, making it impossible to attend all of the
 
 ## My Approach
 
-1. **Sorting and Overlap Checking:**  
+1. **Sorting and Overlap Checking:**
+
    - First, sort the meetings based on their starting times.
    - Traverse through the sorted list, comparing the end time of the current meeting with the start time of the next meeting.
    - If any meeting starts before the previous one ends, return `false` as overlapping prevents attending all meetings.
@@ -98,14 +103,14 @@ public:
 ```java
 class Solution {
     static boolean canAttend(int[][] arr) {
-        Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0])); 
-        
+        Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
+
         for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i][1] > arr[i + 1][0]) { 
+            if (arr[i][1] > arr[i + 1][0]) {
                 return false;
             }
         }
-        return true; 
+        return true;
     }
 }
 ```
@@ -115,16 +120,16 @@ class Solution {
 ```python
 class Solution:
     def canAttend(self, arr):
-        arr.sort(key=lambda x: x[0])  
+        arr.sort(key=lambda x: x[0])
         for i in range(len(arr) - 1):
-            if arr[i][1] > arr[i + 1][0]:  
+            if arr[i][1] > arr[i + 1][0]:
                 return False
-        return True  
+        return True
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -137,4 +142,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-

@@ -1,4 +1,4 @@
-# *28. Permutations of a String*
+# _28. Permutations of a String_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1)
 
@@ -6,11 +6,10 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 You are given a string `s`, which may contain duplicate characters. Your task is to generate and return an array of all unique permutations of the string. You can return the permutations in any order.
 
-
-
 ## Examples:
 
-### **Example 1**  
+### **Example 1**
+
 **Input:**  
 `s = "ABC"`  
 **Output:**  
@@ -18,9 +17,8 @@ You are given a string `s`, which may contain duplicate characters. Your task is
 **Explanation:**  
 Given string `ABC` has 6 unique permutations.
 
+### **Example 2**
 
-
-### **Example 2**  
 **Input:**  
 `s = "ABSG"`  
 **Output:**  
@@ -28,9 +26,8 @@ Given string `ABC` has 6 unique permutations.
 **Explanation:**  
 Given string `ABSG` has 24 unique permutations.
 
+### **Example 3**
 
-
-### **Example 3**  
 **Input:**  
 `s = "AAA"`  
 **Output:**  
@@ -38,21 +35,20 @@ Given string `ABSG` has 24 unique permutations.
 **Explanation:**  
 No other unique permutations can be formed as all the characters are the same.
 
+### **Constraints**
 
-
-### **Constraints**  
 - `1 <= s.size() <= 9`
 - `s` contains only uppercase English alphabets.
-
-
 
 ## My Approach
 
 1. **Lexicographical Permutation Method:**
+
    - Sort the characters of the string to generate permutations in lexicographical order.
    - Use a loop to find the **next lexicographical permutation** until all permutations are found.
 
 2. **DFS with Backtracking:**
+
    - Use backtracking to generate all permutations.
    - Avoid duplicates by skipping over elements that are the same and ensuring a sorted order before starting.
 
@@ -63,15 +59,12 @@ No other unique permutations can be formed as all the characters are the same.
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(N! * N), where N is the length of the string. Generating all permutations takes **O(N!)**, and sorting or creating permutations takes **O(N)**.
+- **Expected Time Complexity:** O(N! \* N), where N is the length of the string. Generating all permutations takes **O(N!)**, and sorting or creating permutations takes **O(N)**.
 - **Expected Auxiliary Space Complexity:** O(N), for storing intermediate permutations in recursion or iteration.
-
-
 
 ## **Approach : Using STL `next_permutation()`**
 
 ## Code (C++)
-
 
 ```cpp
 class Solution {
@@ -91,9 +84,9 @@ public:
   <summary><h2 align='center'>👨‍💻 Alternative Approaches</h2></summary>
 
 **Approach 2: Using DFS with Backtracking**
-- **Expected Time Complexity:** O(N! * N), where N is the length of the string. Backtracking generates all unique permutations.
-- **Expected Auxiliary Space Complexity:** O(N), for recursion stack and used flags.
 
+- **Expected Time Complexity:** O(N! \* N), where N is the length of the string. Backtracking generates all unique permutations.
+- **Expected Auxiliary Space Complexity:** O(N), for recursion stack and used flags.
 
 ## **Approach 2: DFS with Backtracking**
 
@@ -168,8 +161,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -192,14 +183,9 @@ class Solution:
         return ''.join(s[:i + 1] + s[i + 1:][::-1])
 ```
 
-
-
-
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

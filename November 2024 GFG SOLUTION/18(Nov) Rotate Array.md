@@ -1,4 +1,5 @@
-# *18. Rotate Array*
+# _18. Rotate Array_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1)
 
 <div align="center">
@@ -8,7 +9,6 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
     <img src="https://img.shields.io/badge/Vote%20Now%20-%20Your%20Opinion%20Matters-blue?style=for-the-badge&logo=github&logoColor=white" alt="Vote Now Badge">
   </a>
 </div>
-
 
 <br/>
 
@@ -47,12 +47,14 @@ When rotated by 3 elements, it becomes `[8, 10, 12, 14, 16, 18, 20, 2, 4, 6]`.
 When we rotate 9 times, we'll get `[3, 9, 1, 7]` as the resultant array.
 
 ### Constraints:
+
 - `1 <= arr.size(), d <= 10^5`
 - `0 <= arr[i] <= 10^5`
 
 ## My Approach
 
 1. **Rotation Process:**
+
    - The idea is to rotate the array in three parts by reversing the elements in each part:
      1. Reverse the first `d` elements.
      2. Reverse the remaining elements from index `d` to `n-1`.
@@ -111,7 +113,6 @@ class Solution {
 };
 ```
 
-
 ## Code (Java)
 
 ```java
@@ -148,10 +149,9 @@ class Solution:
         arr[0:n] = reversed(arr[0:n])
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

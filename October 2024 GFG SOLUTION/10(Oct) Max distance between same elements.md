@@ -1,4 +1,4 @@
-# *10. Max Distance Between Same Elements*
+# _10. Max Distance Between Same Elements_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/max-distance-between-same-elements/1)
 
@@ -6,7 +6,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 Given an array `arr[]` with repeated elements, the task is to find the maximum distance between two occurrences of any element.
 
-*Note:* The array is guaranteed to contain at least one repeating element.
+_Note:_ The array is guaranteed to contain at least one repeating element.
 
 #### Examples:
 
@@ -33,10 +33,8 @@ Thus, the maximum distance is 10.
 
 1. **Tracking First Occurrences:**
    - We iterate through the array and maintain a hash map to store the first occurrence of each element.
-   
 2. **Calculating Maximum Distance:**
    - For each element, if it appears again in the array, we calculate the distance between its current index and the first occurrence stored in the hash map. We update the maximum distance accordingly.
-   
 3. **Final Result:**
    - After iterating through the array, the maximum distance found will be the result.
 
@@ -102,7 +100,7 @@ class Solution:
 
 ## Contribution and Support
 
-For any questions or discussions about this solution, feel free to reach out to me on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let's keep learning and improving together!
+For any questions or discussions about this solution, feel free to reach out to me on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let's keep learning and improving together!
 
 ⭐ **Star** this repository if you find the solutions helpful! ⭐
 

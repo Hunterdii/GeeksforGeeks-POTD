@@ -1,17 +1,17 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Dynamic Programming
 ---
 
 # 🚀 _Day 20. Total Decoding Messages_ 🧠
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/total-decoding-messages1235)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/total-decoding-messages1235)
 
-## **Problem Description**  
+## **Problem Description**
 
-A message containing letters **A-Z** is encoded using the following mapping:  
+A message containing letters **A-Z** is encoded using the following mapping:
 
 ```
 'A' -> "1"
@@ -20,79 +20,94 @@ A message containing letters **A-Z** is encoded using the following mapping:
 'Z' -> "26"
 ```
 
-Given a **numeric string `digits`**, return the total number of ways the message can be decoded.  
+Given a **numeric string `digits`**, return the total number of ways the message can be decoded.
 
-## **Examples**  
+## **Examples**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 digits = "123"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 3
 ```
-#### **Explanation:**  
-"123" can be decoded as:  
-- `"ABC"` (1, 2, 3)  
-- `"LC"` (12, 3)  
-- `"AW"` (1, 23)  
 
+#### **Explanation:**
 
-### **Example 2:**  
+"123" can be decoded as:
 
-#### **Input:**  
+- `"ABC"` (1, 2, 3)
+- `"LC"` (12, 3)
+- `"AW"` (1, 23)
+
+### **Example 2:**
+
+#### **Input:**
+
 ```
 digits = "90"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 0
 ```
-#### **Explanation:**  
-"90" is not a valid encoding because '0' cannot be decoded.  
 
+#### **Explanation:**
 
-### **Example 3:**  
+"90" is not a valid encoding because '0' cannot be decoded.
 
-#### **Input:**  
+### **Example 3:**
+
+#### **Input:**
+
 ```
 digits = "05"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 0
 ```
-#### **Explanation:**  
-"05" is not valid because leading zero makes it an invalid encoding.  
 
+#### **Explanation:**
 
-### **Constraints:**  
-- $\(1 \leq \text{digits.length} \leq 10^3\)$  
+"05" is not valid because leading zero makes it an invalid encoding.
+
+### **Constraints:**
+
+- $\(1 \leq \text{digits.length} \leq 10^3\)$
 
 ## 🎯 **My Approach:**
 
-## **Optimized Space Dynamic Programming**  
+## **Optimized Space Dynamic Programming**
 
-### **Algorithm Steps:**  
-1. **Edge Case Handling**: If `digits[0] == '0'`, return 0 because it cannot be decoded.  
-2. **Use Two Variables (`prev2` and `prev1`)**:  
-   - `prev1`: Stores the number of ways to decode up to index `i-1`.  
-   - `prev2`: Stores the number of ways to decode up to index `i-2`.  
-3. **Iterate Over the String**:  
-   - If `digits[i]` is not `'0'`, add `prev1` to the current count.  
-   - If `digits[i-1]digits[i]` forms a valid number (10-26), add `prev2`.  
-4. **Update `prev2` and `prev1` for the next iteration**.  
+### **Algorithm Steps:**
 
+1. **Edge Case Handling**: If `digits[0] == '0'`, return 0 because it cannot be decoded.
+2. **Use Two Variables (`prev2` and `prev1`)**:
+   - `prev1`: Stores the number of ways to decode up to index `i-1`.
+   - `prev2`: Stores the number of ways to decode up to index `i-2`.
+3. **Iterate Over the String**:
+   - If `digits[i]` is not `'0'`, add `prev1` to the current count.
+   - If `digits[i-1]digits[i]` forms a valid number (10-26), add `prev2`.
+4. **Update `prev2` and `prev1` for the next iteration**.
 
-## **Time and Auxiliary Space Complexity**  
-- **Expected Time Complexity:** O(N), as we iterate through the string once.  
-- **Expected Auxiliary Space Complexity:** O(1), since we use only two variables.  
+## **Time and Auxiliary Space Complexity**
 
+- **Expected Time Complexity:** O(N), as we iterate through the string once.
+- **Expected Auxiliary Space Complexity:** O(1), since we use only two variables.
 
-## **Code (C++)**  
+## **Code (C++)**
+
 ```cpp
 class Solution {
 public:
@@ -112,21 +127,22 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">🛠 Alternative Solutions</h2></summary>
 
-## **2️⃣ Dynamic Programming with Array (O(N) Time, O(N) Space)**  
+## **2️⃣ Dynamic Programming with Array (O(N) Time, O(N) Space)**
 
-### **Approach:**  
-- Instead of two variables, maintain a **DP array `dp[i]`**, where `dp[i]` stores the number of ways to decode the string **up to index `i`**.  
-- Transition:  
-  - If `s[i]` is not `'0'`, add `dp[i-1]` to `dp[i]`.  
-  - If `s[i-1]s[i]` forms a valid number (10-26), add `dp[i-2]` to `dp[i]`.  
+### **Approach:**
 
-### **Time and Auxiliary Space Complexity**  
-- **Expected Time Complexity:** O(N), as we iterate through the string once.  
-- **Expected Auxiliary Space Complexity:** O(N), due to the DP array.  
+- Instead of two variables, maintain a **DP array `dp[i]`**, where `dp[i]` stores the number of ways to decode the string **up to index `i`**.
+- Transition:
+  - If `s[i]` is not `'0'`, add `dp[i-1]` to `dp[i]`.
+  - If `s[i-1]s[i]` forms a valid number (10-26), add `dp[i-2]` to `dp[i]`.
+
+### **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:** O(N), as we iterate through the string once.
+- **Expected Auxiliary Space Complexity:** O(N), due to the DP array.
 
 ```cpp
 class Solution {
@@ -147,21 +163,22 @@ public:
 };
 ```
 
+## **3️⃣ Memoization (Top-Down DP, O(N) Time, O(N) Space)**
 
-## **3️⃣ Memoization (Top-Down DP, O(N) Time, O(N) Space)**  
+### **Approach:**
 
-### **Approach:**  
-- Use recursion with memoization to store results.  
-- Define `countWays(i)` as the number of ways to decode `s[i:]`.  
-- Base case: If `i == n`, return `1`.  
-- If `s[i]` is `'0'`, return `0`.  
-- Recursive cases:  
-  - Decode `s[i]` alone (`countWays(i+1)`).  
-  - Decode `s[i]s[i+1]` if valid (`countWays(i+2)`).  
+- Use recursion with memoization to store results.
+- Define `countWays(i)` as the number of ways to decode `s[i:]`.
+- Base case: If `i == n`, return `1`.
+- If `s[i]` is `'0'`, return `0`.
+- Recursive cases:
+  - Decode `s[i]` alone (`countWays(i+1)`).
+  - Decode `s[i]s[i+1]` if valid (`countWays(i+2)`).
 
-### **Time and Auxiliary Space Complexity**  
-- **Expected Time Complexity:** O(N), due to memoization.  
-- **Expected Auxiliary Space Complexity:** O(N), due to recursion stack and DP array.  
+### **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:** O(N), due to memoization.
+- **Expected Auxiliary Space Complexity:** O(N), due to recursion stack and DP array.
 
 ```cpp
 class Solution {
@@ -188,8 +205,8 @@ public:
 
 </details>
 
+## **Code (Java)**
 
-## **Code (Java)**  
 ```java
 class Solution {
     public int countWays(String s) {
@@ -197,7 +214,7 @@ class Solution {
         int prev2 = 1, prev1 = 1;
         for (int i = 1; i < s.length(); i++) {
             int curr = (s.charAt(i) != '0') ? prev1 : 0;
-            if (s.charAt(i - 1) != '0' && Integer.parseInt(s.substring(i - 1, i + 1)) <= 26) 
+            if (s.charAt(i - 1) != '0' && Integer.parseInt(s.substring(i - 1, i + 1)) <= 26)
                 curr += prev2;
             prev2 = prev1;
             prev1 = curr;
@@ -207,8 +224,8 @@ class Solution {
 }
 ```
 
+## **Code (Python)**
 
-## **Code (Python)**  
 ```python
 class Solution:
     def countWays(self, s: str) -> int:
@@ -224,10 +241,9 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on **LinkedIn**: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on **LinkedIn**: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ If you find this helpful, please give this repository a **star**! ⭐  
-
+⭐ If you find this helpful, please give this repository a **star**! ⭐
 
 <div align="center">
   <h3><b>📍 Visitor Count</b></h3>

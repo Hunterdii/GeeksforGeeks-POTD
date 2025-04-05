@@ -9,6 +9,7 @@ Given a binary tree and a node data called `target`, find the minimum time requi
 **Example:**
 
 Input:
+
 ```
         1
       /   \
@@ -20,13 +21,17 @@ Input:
                  \
                  10
 ```
+
 Target Node = 8
 
 Output:
+
 ```
 7
 ```
+
 Explanation: If leaf with the value 8 is set on fire:
+
 - After 1 sec: 5 is set on fire.
 - After 2 sec: 2, 7 are set on fire.
 - After 3 sec: 4, 1 are set on fire.
@@ -40,9 +45,11 @@ It takes 7 seconds to burn the complete tree.
 ### My Approach
 
 1. **Depth Calculation:**
+
    - Implement a helper function `maxDepth` to calculate the maximum depth of a node. This function will be used to determine the maximum distance from a given node to its furthest leaf.
 
 2. **Tree Traversal:**
+
    - Implement a helper function `traverse` to recursively search for the target node. This function updates the maximum time required to burn the tree based on the depth of the left and right subtrees.
 
 3. **Calculate Minimum Time:**
@@ -70,7 +77,7 @@ public:
             ret = std::max(ret, maxDepth(n->right));
             return 1;
         }
-        
+
         int left = traverse(n->left, target, ret);
         int right = traverse(n->right, target, ret);
 
@@ -103,7 +110,7 @@ class Solution {
         if (node == null) return 0;
         return 1 + Math.max(maxDepth(node.left), maxDepth(node.right));
     }
-    
+
     private int traverse(Node node, int target, int[] ret) {
         if (node == null) return 0;
         if (node.data == target) {
@@ -145,7 +152,7 @@ class Solution:
             if not node:
                 return 0
             return 1 + max(maxDepth(node.left), maxDepth(node.right))
-        
+
         def traverse(node, target):
             if not node:
                 return 0
@@ -153,14 +160,14 @@ class Solution:
                 ret[0] = max(ret[0], maxDepth(node.left))
                 ret[0] = max(ret[0], maxDepth(node.right))
                 return 1
-            
+
             left = traverse(node.left, target)
             right = traverse(node.right, target)
 
             if left > 0:
                 ret[0] = max(ret[0], left + maxDepth(node.right))
                 return left + 1
-            
+
             if right > 0:
                 ret[0] = max(ret[0], right + maxDepth(node.left))
                 return right + 1
@@ -174,7 +181,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

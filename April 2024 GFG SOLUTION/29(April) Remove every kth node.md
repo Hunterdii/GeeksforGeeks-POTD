@@ -9,16 +9,20 @@ Given a singly linked list having \(n\) nodes, your task is to remove every \(k\
 **Example:**
 
 Input:
+
 ```
 n = 8
-Linked list: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 
+Linked list: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 k = 2
 ```
-Output: 
+
+Output:
+
 ```
 1 -> 3 -> 5 -> 7
 ```
-Explanation: 
+
+Explanation:
 After removing every 2nd node of the linked list, the resultant linked list will be: 1 -> 3 -> 5 -> 7.
 
 **Your Task:**
@@ -31,14 +35,17 @@ The task is to complete the function `deleteK()` which takes the head of the lin
 ### My Approach
 
 1. **Initialization:**
+
 - Traverse the linked list while keeping track of the current node and its previous node.
 - Initialize an index variable to keep track of the position of the current node.
 
 2. **Deletion Process:**
+
 - Whenever the index becomes equal to \(k\), delete the current node by updating the next pointer of the previous node to skip the current node.
 - Reset the index to 1 and continue traversing the linked list.
 
 3. **Return:**
+
 - Return the head of the modified linked list.
 
 ### Code (C++)
@@ -49,7 +56,7 @@ public:
     Node* deleteK(Node* head, int K) {
         if (head == nullptr || K <= 0)
             return head;
-        
+
         if (K == 1) {
             // Deleting entire list
             while (head) {
@@ -86,7 +93,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

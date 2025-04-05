@@ -1,6 +1,6 @@
 ---
-Difficulty: Hard  
-Source: 160 Days of Problem Solving  
+Difficulty: Hard
+Source: 160 Days of Problem Solving
 Tags:
   - Dynamic Programming
   - Strings
@@ -8,97 +8,112 @@ Tags:
 
 # 🚀 _Day 7. Edit Distance_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/edit-distance3702)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/edit-distance3702)
 
 ## 💡 **Problem Description:**
 
-Given two strings **s1** and **s2**, you need to find the minimum number of operations required to convert **s1** into **s2**. The valid operations are:  
-1. **Insert** a character at any position.  
-2. **Delete** any character from the string.  
-3. **Replace** any character with another character.  
+Given two strings **s1** and **s2**, you need to find the minimum number of operations required to convert **s1** into **s2**. The valid operations are:
+
+1. **Insert** a character at any position.
+2. **Delete** any character from the string.
+3. **Replace** any character with another character.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 s1 = "geek"
 s2 = "gesek"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 1
 ```
-#### **Explanation:**  
-We can insert `'s'` between the two `'e'` in **"geek"** to form **"gesek"**.  
 
-### **Example 2:**  
+#### **Explanation:**
 
-#### **Input:**  
+We can insert `'s'` between the two `'e'` in **"geek"** to form **"gesek"**.
+
+### **Example 2:**
+
+#### **Input:**
+
 ```
 s1 = "gfg"
 s2 = "gfg"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 0
 ```
-#### **Explanation:**  
-The strings are already the same, so **0** operations are required.  
 
-### **Example 3:**  
+#### **Explanation:**
 
-#### **Input:**  
+The strings are already the same, so **0** operations are required.
+
+### **Example 3:**
+
+#### **Input:**
+
 ```
 s1 = "abcd"
 s2 = "bcfe"
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 3
 ```
-#### **Explanation:**  
-- Remove `'a'` from **"abcd"** → **"bcd"**  
-- Replace `'d'` with `'f'` → **"bcf"**  
-- Insert `'e'` at the end → **"bcfe"**  
 
-### **Constraints:**  
-- $\(1 \leq s1.length(), s2.length() \leq 10^3\)$  
-- Both strings are in lowercase.  
+#### **Explanation:**
 
+- Remove `'a'` from **"abcd"** → **"bcd"**
+- Replace `'d'` with `'f'` → **"bcf"**
+- Insert `'e'` at the end → **"bcfe"**
+
+### **Constraints:**
+
+- $\(1 \leq s1.length(), s2.length() \leq 10^3\)$
+- Both strings are in lowercase.
 
 ## 🎯 **My Approach:**
 
-### **Space-Optimized Dynamic Programming**  
-1. We use **two 1D arrays** (`prev` and `curr`) of size \( n+1 \) (where \( n \) is the length of \( s2 \)).  
-2. **Initialize** the `prev` array such that `prev[j] = j`, meaning if \( s1 \) is empty, it takes `j` operations (all inserts) to match \( s2[0..j-1] \).  
-3. **Iterate** over each character in \( s1 \) (index `i`) and fill `curr`:  
-   - `curr[0] = i` (if \( s2 \) is empty, we need `i` deletions to match).  
-   - For each `j` in \( s2 \), compare `s1[i-1]` with `s2[j-1]`:  
-     - If they match, carry over `prev[j-1]`.  
-     - Otherwise, `curr[j] = 1 + min({ replace, delete, insert })`.  
-4. **Swap** `prev` and `curr` after each iteration to save space.  
+### **Space-Optimized Dynamic Programming**
+
+1. We use **two 1D arrays** (`prev` and `curr`) of size \( n+1 \) (where \( n \) is the length of \( s2 \)).
+2. **Initialize** the `prev` array such that `prev[j] = j`, meaning if \( s1 \) is empty, it takes `j` operations (all inserts) to match \( s2[0..j-1] \).
+3. **Iterate** over each character in \( s1 \) (index `i`) and fill `curr`:
+   - `curr[0] = i` (if \( s2 \) is empty, we need `i` deletions to match).
+   - For each `j` in \( s2 \), compare `s1[i-1]` with `s2[j-1]`:
+     - If they match, carry over `prev[j-1]`.
+     - Otherwise, `curr[j] = 1 + min({ replace, delete, insert })`.
+4. **Swap** `prev` and `curr` after each iteration to save space.
 5. Finally, `prev[n]` holds the edit distance.
 
-### **Algorithm Steps:**  
-1. Let $\( m = \text{length}(s1), n = \text{length}(s2) \)$.  
-2. Initialize `prev` array of size \( n+1 \) with `prev[j] = j`.  
-3. Loop `i` from `1` to `m`:  
-   - Set `curr[0] = i`.  
-   - For each `j` from `1` to `n`:  
-     - If `s1[i-1] == s2[j-1]`, then `curr[j] = prev[j-1]`.  
-     - Else `curr[j] = 1 + min( prev[j-1], prev[j], curr[j-1] )`.  
-   - Swap `prev` and `curr`.  
+### **Algorithm Steps:**
+
+1. Let $\( m = \text{length}(s1), n = \text{length}(s2) \)$.
+2. Initialize `prev` array of size \( n+1 \) with `prev[j] = j`.
+3. Loop `i` from `1` to `m`:
+   - Set `curr[0] = i`.
+   - For each `j` from `1` to `n`:
+     - If `s1[i-1] == s2[j-1]`, then `curr[j] = prev[j-1]`.
+     - Else `curr[j] = 1 + min( prev[j-1], prev[j], curr[j-1] )`.
+   - Swap `prev` and `curr`.
 4. Answer is `prev[n]`.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** $\( O(M \times N) \)$, as we iterate through each character of $\( s1 \)$ and $\( s2 \)$.  
-- **Expected Auxiliary Space Complexity:** $\( O(N) \)$, because we only keep two 1D arrays of size $\( n+1 \)$.  
+- **Expected Time Complexity:** $\( O(M \times N) \)$, as we iterate through each character of $\( s1 \)$ and $\( s2 \)$.
+- **Expected Auxiliary Space Complexity:** $\( O(N) \)$, because we only keep two 1D arrays of size $\( n+1 \)$.
 
 ## 📝 **Solution Code**
 
@@ -125,11 +140,12 @@ public:
 <details>
   <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## **2️⃣ Dynamic Programming (O(M * N) Time, O(M * N) Space)**
+## **2️⃣ Dynamic Programming (O(M _ N) Time, O(M _ N) Space)**
 
-**Idea:**  
-- Create a 2D DP array where `dp[i][j]` represents the minimum operations to convert `s1[0...i-1]` to `s2[0...j-1]`.  
-- If characters match, carry forward the diagonal value.  
+**Idea:**
+
+- Create a 2D DP array where `dp[i][j]` represents the minimum operations to convert `s1[0...i-1]` to `s2[0...j-1]`.
+- If characters match, carry forward the diagonal value.
 - Otherwise, consider the minimum of insert, delete, and replace.
 
 ```cpp
@@ -150,26 +166,25 @@ public:
     }
 };
 ```
+
 🔹 **More intuitive for understanding**  
 🔹 **Easier to debug**
 
+## **📊 Comparison of Approaches**
 
-## **📊 Comparison of Approaches**  
+| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**              | ⚠️ **Cons**              |
+| --------------------------- | ---------------------- | ----------------------- | ------------------------ | ------------------------ |
+| **Space Optimized DP (1D)** | 🟡 O(M \* N)           | 🟢 O(N)                 | Efficient for large data | Slightly harder to debug |
+| **DP (2D Table)**           | 🟡 O(M \* N)           | 🟡 O(M \* N)            | Easier to understand     | More memory-intensive    |
 
-| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**                   |
-|-----------------------------|------------------------|-------------------------|-------------------------------|-------------------------------|
-| **Space Optimized DP (1D)**  | 🟡 O(M * N)            | 🟢 O(N)                  | Efficient for large data       | Slightly harder to debug       |
-| **DP (2D Table)**            | 🟡 O(M * N)            | 🟡 O(M * N)              | Easier to understand          | More memory-intensive         |
+## 💡 **Best Choice?**
 
-
-## 💡 **Best Choice?**  
-- ✅ **For learning concepts:** Use the **2D DP** approach.  
-- ✅ **For optimal performance:** Use the **Space Optimized DP** approach.  
+- ✅ **For learning concepts:** Use the **2D DP** approach.
+- ✅ **For optimal performance:** Use the **Space Optimized DP** approach.
 
 </details>
 
-
-## **Code (Java)**  
+## **Code (Java)**
 
 ```java
 class Solution {
@@ -190,7 +205,7 @@ class Solution {
 }
 ```
 
-## **Code (Python)**  
+## **Code (Python)**
 
 ```python
 class Solution:
@@ -205,10 +220,9 @@ class Solution:
         return prev[n]
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

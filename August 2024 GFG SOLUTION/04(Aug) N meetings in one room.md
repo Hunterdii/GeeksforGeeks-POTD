@@ -9,25 +9,31 @@ You are given timings of `n` meetings in the form of `(start[i], end[i])` where 
 **Example:**
 
 Input:
+
 ```
 n = 6
 start[] = [1, 3, 0, 5, 8, 5]
 end[] = [2, 4, 6, 7, 9, 9]
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation:
 Maximum four meetings can be held with given start and end timings. The meetings are - (1, 2), (3, 4), (5, 7), and (8, 9).
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a list of meetings where each meeting is represented as a tuple of `(start[i], end[i])`.
    - Sort the meetings based on their end times to prioritize the meeting that ends the earliest.
 
 2. **Meeting Selection:**
+
    - Iterate through the sorted list of meetings.
    - Keep track of the end time of the last selected meeting.
    - For each meeting, if its start time is greater than the end time of the last selected meeting, include it in the count and update the end time.
@@ -43,6 +49,7 @@ Maximum four meetings can be held with given start and end timings. The meetings
 ### Code
 
 **C++**
+
 ```cpp
 class Solution {
 public:
@@ -71,6 +78,7 @@ public:
 ```
 
 **Java**
+
 ```java
 class Solution {
     public int maxMeetings(int n, int[] start, int[] end) {
@@ -103,6 +111,7 @@ class Solution {
 ```
 
 **Python**
+
 ```python
 class Solution:
     def maximumMeetings(self, n, start, end):
@@ -121,7 +130,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -9,31 +9,35 @@ Given `n` integer ranges, the task is to return the maximum occurring integer in
 **Example:**
 
 Input:
+
 ```
 n = 4
 l[] = {1, 4, 3, 1}
 r[] = {15, 8, 5, 4}
 maxx = 15
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation:
 The given ranges are [1, 15], [4, 8], [3, 5], [1, 4]. The smallest number that is most common or appears most times in the ranges is 4.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create an array `a` of size `maxx + 2` initialized to zero. This array will be used to keep track of the frequency of the occurrences of numbers within the ranges.
-  
+
 2. **Increment and Decrement:**
    - For each range `(l[i], r[i])`, increment the value at index `l[i]` and decrement the value at index `r[i] + 1` in the array `a`. This helps in marking the start and end of the range.
-   
 3. **Calculate Frequency:**
    - Traverse the array `a` and compute the prefix sum to get the frequency of each number in the ranges.
-   
 4. **Determine Maximum Occurrence:**
+
    - Track the maximum frequency and the corresponding number. If multiple numbers have the same maximum frequency, choose the smallest number.
 
 5. **Return:**
@@ -61,7 +65,7 @@ public:
         }
         int maxCount = a[0], result = 0;
         for (int i = 1; i <= maxx; ++i) {
-            a[i] += a[i - 1]; 
+            a[i] += a[i - 1];
             if (a[i] > maxCount) {
                 maxCount = a[i];
                 result = i;
@@ -107,7 +111,7 @@ class Solution:
             a[l[i]] += 1
             if r[i] + 1 <= maxx:
                 a[r[i] + 1] -= 1
-        
+
         maxCount = a[0]
         result = 0
         for i in range(1, maxx + 1):
@@ -115,13 +119,13 @@ class Solution:
             if a[i] > maxCount:
                 maxCount = a[i]
                 result = i
-        
+
         return result
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,9 +1,8 @@
-# *26. Occurrence of an Integer in a Linked List*
+# _26. Occurrence of an Integer in a Linked List_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/occurence-of-an-integer-in-a-linked-list/1)
 
 _Note: My externals exams are currently ongoing, which is the reason for the delayed upload **Sorry** ._
-
 
 ## Problem Description
 
@@ -29,6 +28,7 @@ Linked List: `1->2->1->2->1`, Key = `3`
 ## My Approach
 
 1. **Traversal through the Linked List:**
+
    - Initialize a counter to zero.
    - Traverse each node in the list from the head to the end.
    - For each node, check if its data matches the key. If it does, increment the counter.
@@ -59,7 +59,8 @@ public:
 <details>
   <summary><h2 align='center'>👨‍💻 Alternative Approachs </h2></summary>
 
-  _1)_
+_1)_
+
 ```cpp
 class Solution {
 public:
@@ -73,13 +74,15 @@ public:
     }
 };
 ```
-  _2)_
+
+_2)_
+
 ```cpp
 class Solution {
   public:
     int count(Node* head, int key) {
         int count = 0;
-        while (head) { 
+        while (head) {
             if (head->data == key)
                 ++count;
             head = head->next;
@@ -88,7 +91,9 @@ class Solution {
     }
 };
 ```
-  _3)_
+
+_3)_
+
 ```cpp
  class Solution {
   public:
@@ -138,10 +143,9 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
-
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

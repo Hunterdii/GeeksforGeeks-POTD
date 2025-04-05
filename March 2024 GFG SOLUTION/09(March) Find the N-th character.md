@@ -1,19 +1,22 @@
 ## 09. Find the N-th character
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-the-n-th-character5925/1)
 
-### My Approach 
+### My Approach
 
 1. **Initialization:**
+
    - Start by determining the length of the input string `s` and store it in a variable called `len`. This gives us the number of characters we need to manipulate.
 
 2. **Iteration Process:**
    - Iterate `r` times, as specified, to apply the transformation on the string.
    - For each iteration:
-   
 3. **Temporary Storage:**
+
    - Create a temporary string `temp` and copy the content of the original string `s` into it. This preserves the original string for further iterations.
 
 4. **Character Transformation:**
+
    - Traverse through each character of the original string `s`.
    - For each character at position `j`, apply the following transformation:
      - If the corresponding character in `temp` at position `j/2` is `'0'`, set `s[j]` to `'0' + (j % 2)`.
@@ -30,6 +33,7 @@ This approach essentially iterates over the string `s` multiple times, adjusting
 - **Auxiliary Space Complexity** : `O(|s|)`, as the temporary string temp is of the same length as the input string.
 
 ### Code (C++)
+
 ```cpp
 class Solution{
   public:
@@ -53,7 +57,7 @@ class Solution{
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

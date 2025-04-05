@@ -5,6 +5,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 ### Problem Description
 
 Given an array of size \(n\) and a range \([a, b]\), partition the array around the range such that the array is divided into three parts:
+
 1. All elements smaller than \(a\) come first.
 2. All elements in the range \(a\) to \(b\) come next.
 3. All elements greater than \(b\) appear in the end.
@@ -14,24 +15,30 @@ Note: The individual elements of the three sets can appear in any order. Return 
 **Example:**
 
 Input:
+
 ```
 n = 5
 array[] = {1, 2, 3, 3, 4}
 [a, b] = [1, 2]
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 One possible arrangement is: {1, 2, 3, 3, 4}. If you return a valid arrangement, the output will be 1.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize two pointers, `left` and `right`, pointing to the start and end of the array respectively.
 
 2. **Partitioning:**
+
    - Iterate through the array using a loop variable `i`.
    - If `array[i]` is less than \(a\), swap `array[i]` with `array[left]` and increment both `left` and `i`.
    - If `array[i]` is greater than \(b\), swap `array[i]` with `array[right]` and decrement `right`.
@@ -53,7 +60,7 @@ public:
     void threeWayPartition(vector<int>& array, int a, int b) {
         int n = array.size();
         int left = 0, right = n - 1;
-        
+
         for (int i = 0; i <= right;) {
             if (array[i] < a) {
                 swap(array[i], array[left]);
@@ -72,7 +79,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

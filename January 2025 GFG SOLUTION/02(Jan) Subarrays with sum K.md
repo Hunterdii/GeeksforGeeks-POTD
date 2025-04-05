@@ -1,4 +1,4 @@
-# *02. Subarrays with Sum K*
+# _02. Subarrays with Sum K_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1)
 
@@ -8,34 +8,46 @@ Given an unsorted array of integers, find the number of continuous subarrays hav
 
 **Examples:**
 
-Input:  
+Input:
+
 ```
 arr = [10, 2, -2, -20, 10], k = -10
 ```
-Output:  
+
+Output:
+
 ```
 3
 ```
+
 Explanation: Subarrays: `arr[0...3]`, `arr[1...4]`, and `arr[3...4]` have a sum exactly equal to `-10`.
 
-Input:  
+Input:
+
 ```
 arr = [9, 4, 20, 3, 10, 5], k = 33
 ```
-Output:  
+
+Output:
+
 ```
 2
 ```
+
 Explanation: Subarrays: `arr[0...2]` and `arr[2...4]` have a sum exactly equal to `33`.
 
-Input:  
+Input:
+
 ```
 arr = [1, 3, 5], k = 0
 ```
-Output:  
+
+Output:
+
 ```
 0
 ```
+
 Explanation: No subarray has a sum of `0`.
 
 **Constraints:**
@@ -44,34 +56,31 @@ Explanation: No subarray has a sum of `0`.
 - $\(-10^3 \leq \text{arr[i]} \leq 10^3\)$
 - $\(-10^7 \leq k \leq 10^7\)$
 
-
-
 ## My Approach
 
 To solve this problem efficiently:
 
 1. **Prefix Sum with Hash Map:**
+
    - Maintain a running sum (`sum`) as you traverse the array.
    - Use a hash map (`prefixSumCount`) to store the count of prefix sums encountered so far.
    - For each element, check if the difference `sum - k` exists in the hash map. If it does, it means there is a subarray ending at the current index with a sum equal to `k`.
 
 2. **Increment Hash Map:**
+
    - Add the current running sum to the hash map or increment its count if it already exists.
 
 3. **Count Matching Subarrays:**
+
    - Increment the count by the number of times `sum - k` has been encountered so far.
 
 4. **Final Answer:**
    - The variable `count` will hold the number of subarrays with a sum equal to `k`.
 
-
-
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** \(O(n)\), as we traverse the array once and perform \(O(1)\) operations for each element.
 - **Expected Auxiliary Space Complexity:** \(O(n)\), to store the hash map containing prefix sums.
-
-
 
 ## Code (C++)
 
@@ -93,8 +102,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -115,8 +122,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -133,11 +138,9 @@ class Solution:
         return count
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

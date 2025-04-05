@@ -11,28 +11,37 @@ Given the head of a linked list, find the middle element. If the list has an odd
 **Examples:**
 
 Input:
+
 ```
 Linked list: 1->2->3->4->5
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation: The middle element of the linked list 1->2->3->4->5 is 3.
 
 Input:
+
 ```
 Linked list: 2->4->6->7->5->1
 ```
+
 Output:
+
 ```
 7
 ```
+
 Explanation: The middle element of the linked list 2->4->6->7->5->1 is 7.
 
 ### My Approach
 
 1. **Two Pointer Approach:**
+
    - Initialize two pointers, `slow` and `fast`. Both pointers start at the head of the linked list.
    - Move the `slow` pointer one step at a time, and the `fast` pointer two steps at a time.
    - When the `fast` pointer reaches the end of the linked list, the `slow` pointer will be at the middle.
@@ -51,7 +60,7 @@ Explanation: The middle element of the linked list 2->4->6->7->5->1 is 7.
 class Solution {
 public:
     int getMiddle(Node* head) {
-        if (head == nullptr)  
+        if (head == nullptr)
             return -1;
         Node* slow = head;
         Node* fast = head;
@@ -59,7 +68,7 @@ public:
             slow = slow->next;
             fast = fast->next->next;
         }
-        return slow->data;  
+        return slow->data;
     }
 };
 ```
@@ -78,7 +87,7 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
         }
-        return slow.data; 
+        return slow.data;
     }
 }
 ```
@@ -90,7 +99,7 @@ class Solution:
     def findMid(self, head):
         if head is None:
             return -1
-        
+
         slow = head
         fast = head
 
@@ -98,16 +107,17 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
 
-        return slow.data  
+        return slow.data
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -1,4 +1,4 @@
-## 30. String Subsequence 
+## 30. String Subsequence
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-number-of-times-a-string-occurs-as-a-subsequence3020/1)
 
@@ -9,24 +9,30 @@ Given two strings, `s1` and `s2`, count the number of subsequences of string `s1
 **Example 1:**
 
 Input:
+
 ```
 s1 = "geeksforgeeks"
 s2 = "gks"
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation:
 We can pick characters from `s1` as a subsequence from indices {0,3,4}, {0,3,12}, {0,11,12} and {8,11,12}. So total 4 subsequences of `s1` that are equal to `s2`.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a memoization table `memo` of size `(n+1) x (m+1)` initialized to -1, where `n` is the length of `s1` and `m` is the length of `s2`.
    - Define the modulo value `mod` as \(10^9 + 7\).
 
 2. **Dynamic Programming Function:**
+
    - Use a recursive function `dp(i, j)` to calculate the number of ways to match the first `i` characters of `s1` with the first `j` characters of `s2`.
    - Base cases:
      - If `j == 0`, return 1 since an empty `s2` can be matched in one way.
@@ -54,16 +60,16 @@ public:
         int n = s1.length(), m = s2.length();
         vector<int> dp(m + 1, 0);
         int mod = 1e9 + 7;
-        dp[0] = 1; 
+        dp[0] = 1;
 
         for (int i = 1; i <= n; i++) {
             int prev = dp[0];
             for (int j = 1; j <= m; j++) {
-                int temp = dp[j]; 
+                int temp = dp[j];
                 if (s1[i - 1] == s2[j - 1]) {
                     dp[j] = (prev + dp[j]) % mod;
                 }
-                prev = temp; 
+                prev = temp;
             }
         }
         return dp[m] % mod;
@@ -87,8 +93,8 @@ class Solution {
     }
 
     private static int dp(int i, int j, String s1, String s2, int[][] memo, int mod) {
-        if (j == 0) return 1; 
-        if (i == 0) return 0; 
+        if (j == 0) return 1;
+        if (i == 0) return 0;
         if (memo[i][j] != -1) return memo[i][j];
 
         if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
@@ -143,7 +149,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

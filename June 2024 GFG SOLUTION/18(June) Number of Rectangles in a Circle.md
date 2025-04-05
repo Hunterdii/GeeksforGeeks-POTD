@@ -9,33 +9,43 @@ Given a circular sheet of radius `r`, find the total number of rectangles with i
 **Examples:**
 
 Input:
+
 ```
 r = 1
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: Only 1 rectangle of dimensions 1x1.
 
 Input:
+
 ```
 r = 2
 ```
+
 Output:
+
 ```
 8
 ```
+
 Explanation: The 8 possible rectangles are:
 (1x1), (1x2), (1x3), (2x1), (2x2), (2x3), (3x1), (3x2).
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize a variable `ans` to store the count of rectangles that can fit within the circle.
    - Define a `limit` variable as `4 * R * R` which represents the square of the diameter of the circle.
 
 2. **Rectangle Calculation:**
+
    - Use nested loops to iterate over possible rectangle dimensions `(i, j)` where `i` and `j` range from 1 to `2 * R`.
    - For each pair `(i, j)`, check if the sum of their squared dimensions is less than or equal to `limit`.
    - If the condition is satisfied, increment `ans`.
@@ -55,7 +65,7 @@ class Solution {
 public:
     int rectanglesInCircle(int R) {
         int ans = 0;
-        int limit = 2 * R * 2 * R; 
+        int limit = 2 * R * 2 * R;
         for (int i = 1; i < 2 * R + 1; i++) {
             for (int j = 1; j < 2 * R + 1; j++) {
                 if (i * i + j * j <= limit) {
@@ -103,7 +113,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

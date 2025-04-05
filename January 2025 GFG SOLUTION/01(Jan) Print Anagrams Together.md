@@ -1,4 +1,4 @@
-# *1. Print Anagrams Together*
+# _1. Print Anagrams Together_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/print-anagrams-together/1)
 
@@ -16,6 +16,7 @@ Note: The final output will be in lexicographic order.
 `[["act", "cat", "tac"], ["god", "dog"]]`  
 Explanation:  
 There are 2 groups of anagrams:
+
 - "god", "dog" make group 1
 - "act", "cat", "tac" make group 2
 
@@ -25,6 +26,7 @@ There are 2 groups of anagrams:
 `[["is"], ["no", "on"]]`  
 Explanation:  
 There are 2 groups of anagrams:
+
 - "is" makes group 1
 - "no", "on" make group 2
 
@@ -32,18 +34,21 @@ There are 2 groups of anagrams:
 `arr[] = ["listen", "silent", "enlist", "abc", "cab", "bac", "rat", "tar", "art"]`  
 **Output:**  
 `[["abc", "cab", "bac"], ["listen", "silent", "enlist"], ["rat", "tar", "art"]]`  
-Explanation:  
+Explanation:
+
 - Group 1: "abc", "bac", and "cab" are anagrams.
 - Group 2: "listen", "silent", and "enlist" are anagrams.
 - Group 3: "rat", "tar", and "art" are anagrams.
 
 ### Constraints:
+
 - `1 <= arr.size() <= 100`
 - `1 <= arr[i].size() <= 10`
 
 ## My Approach
 
-1. **Sorting-Based Grouping**:  
+1. **Sorting-Based Grouping**:
+
    - An anagram is a word formed by rearranging the letters of another word. Hence, for grouping anagrams, we can sort each string and use the sorted version as the key in a map (unordered_map).
    - The key idea is that anagrams, when sorted, will produce the same string. For example, "act", "cat", and "tac" will all produce "act" when sorted.
 
@@ -55,10 +60,10 @@ Explanation:
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:**  
-  O(n * m * log(m)), where `n` is the number of strings and `m` is the maximum length of any string. Sorting each string takes O(m * log(m)), and we do this for all `n` strings.
+  O(n _ m _ log(m)), where `n` is the number of strings and `m` is the maximum length of any string. Sorting each string takes O(m \* log(m)), and we do this for all `n` strings.
 
 - **Expected Auxiliary Space Complexity:**  
-  O(n * m), where `n` is the number of strings and `m` is the maximum length of any string. The space is used for the hashmap and the output list.
+  O(n \* m), where `n` is the number of strings and `m` is the maximum length of any string. The space is used for the hashmap and the output list.
 
 ## Code (C++)
 
@@ -86,7 +91,8 @@ public:
 <details>
   <summary><h2 align='center'>👨‍💻 Alternative Approaches</h2></summary>
 
-## Approach Using Sorting and Hash Map  
+## Approach Using Sorting and Hash Map
+
 ```cpp
 class Solution {
 public:
@@ -104,8 +110,8 @@ public:
     }
 };
 ```
-</details>
 
+</details>
 
 ## Code (Java)
 
@@ -137,14 +143,13 @@ class Solution:
         for s in arr:
             sorted_s = ''.join(sorted(s))
             umap[sorted_s].append(s)
-        
+
         return list(umap.values())
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *02. Kth Distance*
+# _02. Kth Distance_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/kth-distance3757/1)
 
@@ -6,39 +6,52 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 Given an unsorted array `arr` and a number `k` which is smaller than the size of the array, return true if the array contains any duplicate within `k` distance throughout the array; otherwise, return false.
 
-*Example:*
+_Example:_
 
-Input: 
+Input:
+
 ```
 arr[] = [1, 2, 3, 4, 1, 2, 3, 4] and k = 3
 ```
-Output: 
+
+Output:
+
 ```
 false
 ```
+
 Explanation: All duplicates are more than `k` distance away.
 
-Input: 
+Input:
+
 ```
 arr[] = [1, 2, 3, 1, 4, 5] and k = 3
 ```
-Output: 
+
+Output:
+
 ```
 true
 ```
+
 Explanation: `1` is repeated at distance `3`.
 
-Input: 
+Input:
+
 ```
 arr[] = [6, 8, 4, 1, 8, 5, 7] and k = 3
 ```
-Output: 
+
+Output:
+
 ```
 true
 ```
+
 Explanation: `8` is repeated at distance `3`.
 
 ## Constraints
+
 - `1 ≤ arr.size() ≤ 10^6`
 - `1 ≤ k < arr.size()`
 - `1 ≤ arr[i] ≤ 10^5`
@@ -46,9 +59,11 @@ Explanation: `8` is repeated at distance `3`.
 ## My Approach
 
 1. **Using a Hash Map:**
+
    - Create a hash map to store the last index of each element encountered in the array.
-  
+
 2. **Iterate Through the Array:**
+
    - For each element, check if it exists in the map.
    - If it does, check the difference between the current index and the stored index of that element. If the difference is less than or equal to `k`, return true.
    - Otherwise, update the last index of that element in the map.
@@ -117,11 +132,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -1,4 +1,4 @@
-# *28. Find All Triplets with Zero Sum*
+# _28. Find All Triplets with Zero Sum_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/find-all-triplets-with-zero-sum/1)
 
@@ -14,6 +14,7 @@ Given an array `arr[]` of size `n`, the task is to find all possible triplets `i
 `[[0, 1, 4], [2, 3, 4]]`  
 Explanation:  
 The triplets with a sum of zero are:
+
 - `arr[0] + arr[1] + arr[4] = 0 + (-1) + 1 = 0`
 - `arr[2] + arr[3] + arr[4] = 2 + (-3) + 1 = 0`
 
@@ -32,12 +33,14 @@ Explanation:
 No triplet with sum 0.
 
 ### Constraints:
+
 - $`3 <= arr.size() <= 10^3`$
 - $`-10^4 <= arr[i] <= 10^4`$
 
 ## My Approach
 
 1. **Optimized Approach using Hash Map**:
+
    - We use a hash map to store the sum of pairs of elements in the array.
    - For each element `arr[i]`, check if the negative of that element exists as a sum of some pair `(arr[j] + arr[k])`. If so, it's a valid triplet.
    - Ensure that no index is repeated by sorting and using a set to store the triplets in a sorted manner.
@@ -75,8 +78,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -100,8 +101,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -122,18 +121,16 @@ class Solution:
             target = -arr[i]
             if target in pair_sum_map:
                 for pair in pair_sum_map[target]:
-                    if i not in pair: 
+                    if i not in pair:
                         triplet = tuple(sorted([i, pair[0], pair[1]]))
                         result.add(triplet)
 
         return sorted([list(triplet) for triplet in result])
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

@@ -1,4 +1,4 @@
-# *15. Second Largest*
+# _15. Second Largest_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/second-largest3735/1)
 
@@ -6,18 +6,20 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 ## Problem Description
 
-Given an array of positive integers `arr[]`, return the second largest element from the array. If the second largest element doesn't exist, return `-1`. 
+Given an array of positive integers `arr[]`, return the second largest element from the array. If the second largest element doesn't exist, return `-1`.
 
 **Note:** The second largest element should not be equal to the largest element.
 
 ### Examples:
 
 **Input:**
+
 ```
 arr[] = [12, 35, 1, 10, 34, 1]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 34
 ```
@@ -26,11 +28,13 @@ arr[] = [12, 35, 1, 10, 34, 1]
 The largest element of the array is 35, and the second largest element is 34.
 
 **Input:**
+
 ```
 arr[] = [10, 5, 10]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 5
 ```
@@ -39,11 +43,13 @@ arr[] = [10, 5, 10]
 The largest element of the array is 10, and the second largest element is 5.
 
 **Input:**
+
 ```
 arr[] = [10, 10, 10]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 -1
 ```
@@ -52,12 +58,14 @@ arr[] = [10, 10, 10]
 The largest element of the array is 10, and there is no distinct second largest element.
 
 ### Constraints:
+
 - $\(2 \leq \text{arr.size()} \leq 10^5\)$
 - $\(1 \leq \text{arr[i]} \leq 10^5\)$
 
 ## My Approach
 
-1. **Tracking Largest and Second Largest:**  
+1. **Tracking Largest and Second Largest:**
+
    - Initialize two variables, `first` and `second`, to the smallest possible values.
    - Traverse through the array:
      - If the current element is greater than `first`, update `second` to `first`, and then set `first` to the current element.
@@ -89,7 +97,7 @@ public:
                 second = num;
             }
         }
-        
+
         return second == INT_MIN ? -1 : second;
     }
 };
@@ -132,7 +140,7 @@ class Solution {
                 second = num;
             }
         }
-        
+
         return second == Integer.MIN_VALUE ? -1 : second;
     }
 }
@@ -158,7 +166,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

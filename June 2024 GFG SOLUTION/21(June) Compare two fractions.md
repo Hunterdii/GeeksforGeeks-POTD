@@ -11,24 +11,30 @@ Note: The string `str` contains "a/b, c/d" (fractions are separated by a comma `
 **Examples:**
 
 Input:
+
 ```
 str = "5/6, 11/45"
 ```
+
 Output:
+
 ```
 5/6
 ```
+
 Explanation:
 5/6 = 0.8333 and 11/45 = 0.2444, so 5/6 is the greater fraction.
 
 ### My Approach
 
 1. **Parse the Input String:**
+
    - Split the input string `str` into two parts using `", "` as the delimiter to separate the fractions.
    - Extract the numerator and denominator for each fraction by splitting each part using `'/'`.
 
 2. **Compare the Fractions:**
-   - Calculate the cross multiplication for comparison: 
+
+   - Calculate the cross multiplication for comparison:
      - Compare `a * d` with `b * c`.
    - Based on the comparison:
      - Return the greater fraction as a string.
@@ -136,7 +142,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

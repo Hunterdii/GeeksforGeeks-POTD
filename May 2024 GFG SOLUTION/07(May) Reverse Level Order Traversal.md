@@ -9,31 +9,39 @@ Given a binary tree, find its reverse level order traversal, starting from the l
 **Example:**
 
 Input:
+
 ```
         1
       /   \
      3     2
 ```
+
 Output:
+
 ```
 3 2 1
 ```
+
 Explanation:
 Traversing level 1: 3 2
 Traversing level 0: 1
 
 Input:
+
 ```
        10
       /  \
      20   30
-    / \ 
+    / \
    40  60
 ```
+
 Output:
+
 ```
 40 60 20 30 10
 ```
+
 Explanation:
 Traversing level 2: 40 60
 Traversing level 1: 20 30
@@ -42,18 +50,22 @@ Traversing level 0: 10
 ### My Approach
 
 1. **Initialization:**
+
 - Initialize an empty vector `ans` to store the reverse level order traversal.
 
 2. **BFS Traversal:**
+
 - Perform a Breadth First Search (BFS) traversal of the binary tree.
 - Use a queue to keep track of nodes at each level.
 - Pop nodes from the queue and push their children (if any) into the queue.
 - Record the data of popped nodes into the `ans` vector.
 
 3. **Reverse the Result:**
+
 - Reverse the `ans` vector to obtain the reverse level order traversal.
 
 4. **Return:**
+
 - Return the `ans` vector containing the reverse level order traversal.
 
 ### Time and Auxiliary Space Complexity
@@ -90,9 +102,10 @@ vector<int> reverseLevelOrder(Node *root) {
     return ans;
 }
 ```
+
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

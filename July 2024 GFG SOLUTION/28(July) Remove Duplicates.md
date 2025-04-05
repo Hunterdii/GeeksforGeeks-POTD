@@ -11,26 +11,33 @@ Given a string `str` without spaces, the task is to remove all duplicate charact
 **Examples:**
 
 Input:
+
 ```
 str = "zvvo"
 ```
+
 Output:
+
 ```
 zvo
 ```
+
 Explanation: Only keep the first occurrence.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create an array `fre` of size 26 initialized to 0, which will store the frequency of each character.
 - Create an empty string or list `result` to store the final result.
 
 2. **Iterate through the string:**
+
 - For each character `c` in the string `str`, check if it has been encountered before by using the `fre` array.
 - If `fre[c - 'a']` is 0, append the character `c` to `result` and mark it as encountered by setting `fre[c - 'a']` to 1.
 
 3. **Return:**
+
 - Join the characters in `result` (if using a list) and return the final string.
 
 ### Time and Auxiliary Space Complexity
@@ -45,15 +52,15 @@ class Solution {
 public:
     string removeDups(string str) {
         int fre[26] = {0};
-        string result = ""; 
-        
+        string result = "";
+
         for (char c : str) {
-            if (fre[c - 'a'] == 0) { 
-                result += c; 
-                fre[c - 'a'] = 1; 
+            if (fre[c - 'a'] == 0) {
+                result += c;
+                fre[c - 'a'] = 1;
             }
         }
-        
+
         return result;
     }
 };
@@ -64,16 +71,16 @@ public:
 ```java
 class Solution {
     public String removeDups(String str) {
-        int[] fre = new int[26]; 
-        StringBuilder result = new StringBuilder(); 
-        
+        int[] fre = new int[26];
+        StringBuilder result = new StringBuilder();
+
         for (char c : str.toCharArray()) {
-            if (fre[c - 'a'] == 0) { 
-                result.append(c); 
-                fre[c - 'a'] = 1; 
+            if (fre[c - 'a'] == 0) {
+                result.append(c);
+                fre[c - 'a'] = 1;
             }
         }
-        
+
         return result.toString();
     }
 }
@@ -84,20 +91,20 @@ class Solution {
 ```python
 class Solution:
     def removeDups(self, str):
-        fre = [0] * 26 
-        result = [] 
-        
+        fre = [0] * 26
+        result = []
+
         for c in str:
             if fre[ord(c) - ord('a')] == 0:
-                result.append(c) 
-                fre[ord(c) - ord('a')] = 1 
-        
+                result.append(c)
+                fre[ord(c) - ord('a')] = 1
+
         return ''.join(result)
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

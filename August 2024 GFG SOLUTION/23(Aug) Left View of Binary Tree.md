@@ -1,4 +1,3 @@
-
 # **23. Left View of Binary Tree**
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1)
@@ -7,23 +6,26 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ## **Note:** Sorry for uploading late; my exam is going on.
 
-
 Given a Binary Tree, return the Left view of it. The Left view of a Binary Tree is the set of nodes visible when the tree is visited from the Left side. The task is to complete the function `leftView()`, which accepts the root of the tree as an argument. If no left view is possible, return an empty list.
 
 **Example:**
 
 Input:
+
 ```
    1
  /  \
 3    2
 ```
+
 Output:
+
 ```
 1 3
 ```
 
 Input:
+
 ```
         10
        /  \
@@ -31,7 +33,9 @@ Input:
     /  \
    40  60
 ```
+
 Output:
+
 ```
 10 20 40
 ```
@@ -39,6 +43,7 @@ Output:
 ### **My Approach**
 
 1. **Recursive Traversal:**
+
    - Use a recursive function to traverse the tree and keep track of the maximum level visited so far.
    - If the current level is greater than the maximum level seen so far, add the current node’s value to the result.
    - Traverse the left subtree before the right subtree to ensure the leftmost node at each level is considered first.
@@ -128,7 +133,7 @@ def LeftView(root):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

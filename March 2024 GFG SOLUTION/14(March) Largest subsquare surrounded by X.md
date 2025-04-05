@@ -1,4 +1,3 @@
-
 ## 14. Largest Subsquare Surrounded by X
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/largest-subsquare-surrounded-by-x0558/1)
@@ -8,6 +7,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given a square matrix `a` of size `n x n`, where each cell can be either 'X' or 'O', you need to find the size of the largest square subgrid that is completely surrounded by 'X'. More formally, you need to find the largest square within the grid where all its border cells are 'X'.
 
 **Example:**
+
 ```
 Input:
 n = 2
@@ -16,8 +16,8 @@ a = [[X,X],
 Output:
 2
 Explanation:
-The largest square submatrix 
-surrounded by X is the whole 
+The largest square submatrix
+surrounded by X is the whole
 input matrix.
 ```
 
@@ -25,12 +25,14 @@ input matrix.
 - **Expected Auxiliary Space Complexity:** O(n^2), where n is the size of the input square matrix, for storing the dynamic programming array.
 
 **Constraints:**
+
 - 1 <= n <= 1000
 - `a[i][j]` belongs to {'X','O'}
 
 ### My Approach
 
 1. **Preprocessing:**
+
    - Convert the given matrix `a` into a binary matrix where 'X' is represented as 1 and 'O' is represented as 0.
 
 2. **Dynamic Programming:**
@@ -48,7 +50,7 @@ class Solution {
     int largestSubsquare(int n, vector<vector<char>> a) {
         vector<vector<int>> v1(n,vector<int>(n,0));
         vector<vector<int>> v2(n,vector<int>(n,0));
-        
+
         // col
         for(int i=0;i<n;i++)
         {
@@ -67,7 +69,7 @@ class Solution {
                 }
             }
         }
-        
+
         // rows
         int maxi=10002;
         for(int j=0;j<n;j++)
@@ -84,8 +86,8 @@ class Solution {
                 }
             }
         }
-        
-        
+
+
         //finding max submatrix
         int ans=0;
         for(int i=0;i<n;i++)
@@ -94,14 +96,14 @@ class Solution {
             {
                 if(a[i][j]=='O')
                 continue;
-                
+
                 int size=min(v1[i][j],v2[i][j]);
-                
+
                 while(size>ans)
                 {
                     if((v1[i+size-1][j])>=size and (v2[i][j+size-1])>=size)
                     ans=size;
-                    
+
                     size--;
                 }
             }
@@ -114,7 +116,7 @@ class Solution {
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

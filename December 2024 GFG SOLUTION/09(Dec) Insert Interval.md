@@ -1,14 +1,14 @@
-# *9. Insert Interval*  
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/insert-interval-1666733333/1)
+# _9. Insert Interval_
 
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/insert-interval-1666733333/1)
 
 <div align="center">
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- Continuing the series of **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- Continuing the series of **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - The solution for **December 9 - Insert Interval** is now live:  
-  [**3152 - Special Array II**](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/3152.Special%20Array%20II.md)  
+  [**3152 - Special Array II**](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/3152.Special%20Array%20II.md)
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/3152.Special%20Array%20II.md">
@@ -19,13 +19,11 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
   </a>
 </div>
 
-
 ## Problem Description
 
 Geek has an array of non-overlapping intervals `intervals` where `intervals[i] = [starti, endi]` represent the start and the end of the `i`-th event. The array `intervals` is sorted in ascending order by `starti`.
 
 Geek wants to add a new interval `newInterval = [newStart, newEnd]` such that `intervals` is still sorted in ascending order by `starti` and has no overlapping intervals. Merge overlapping intervals if necessary.
-
 
 ### Examples:
 
@@ -37,7 +35,6 @@ Geek wants to add a new interval `newInterval = [newStart, newEnd]` such that `i
 **Explanation:**  
 The `newInterval` `[5,6]` overlaps with `[4,5]` and `[6,7]`, so they are merged into `[4,7]`.
 
-
 **Input:**  
 `intervals = [[1,2], [3,5], [6,7], [8,10], [12,16]], newInterval = [4,9]`  
 **Output:**  
@@ -46,31 +43,30 @@ The `newInterval` `[5,6]` overlaps with `[4,5]` and `[6,7]`, so they are merged 
 **Explanation:**  
 The `newInterval` `[4,9]` overlaps with `[3,5], [6,7], [8,10]`, so they are merged into `[3,10]`.
 
-
 ### Constraints:
 
-- $`1 ≤ intervals.size() ≤ 10^5`$  
+- $`1 ≤ intervals.size() ≤ 10^5`$
 - $`0 ≤ start[i], end[i] ≤ 10^9`$
-
 
 ## My Approach
 
-1. **Iterative Merge:**  
-   - Traverse the intervals and add those that come entirely before the `newInterval`.  
-   - Merge intervals that overlap with `newInterval`.  
-   - Add intervals that come entirely after `newInterval`.  
+1. **Iterative Merge:**
 
-2. **Steps:**  
+   - Traverse the intervals and add those that come entirely before the `newInterval`.
+   - Merge intervals that overlap with `newInterval`.
+   - Add intervals that come entirely after `newInterval`.
+
+2. **Steps:**
+
    - Traverse through the given intervals:
-     - If an interval ends before the `newInterval` starts, add it to the result.  
-     - If an interval starts after the `newInterval` ends, add the `newInterval` to the result and process the current interval as the next `newInterval`.  
-     - Otherwise, merge overlapping intervals by updating the start and end of the `newInterval`.  
+     - If an interval ends before the `newInterval` starts, add it to the result.
+     - If an interval starts after the `newInterval` ends, add the `newInterval` to the result and process the current interval as the next `newInterval`.
+     - Otherwise, merge overlapping intervals by updating the start and end of the `newInterval`.
    - Append the last `newInterval` to the result after traversal.
 
-3. **Efficiency:**  
-   - The approach involves a single traversal of the array, making it optimal.  
+3. **Efficiency:**
+   - The approach involves a single traversal of the array, making it optimal.
    - Merging intervals is straightforward and uses a constant amount of additional space.
-
 
 ## Time and Auxiliary Space Complexity
 
@@ -79,7 +75,6 @@ O(n), where `n` is the size of the intervals. Traversal through all intervals en
 
 **Expected Auxiliary Space Complexity:**  
 O(n), as we store the resulting intervals in a new list.
-
 
 ## Code (C)
 
@@ -92,11 +87,11 @@ Interval* insertInterval(Interval* intervals, int intervalsSize, Interval newInt
     for (int i = 0; i < intervalsSize; i++) {
         if (intervals[i].end < newInterval.start) {
             result[idx++] = intervals[i];
-        } 
+        }
         else if (intervals[i].start <= newInterval.end) {
             newInterval.start = (newInterval.start < intervals[i].start) ? newInterval.start : intervals[i].start;
             newInterval.end = (newInterval.end > intervals[i].end) ? newInterval.end : intervals[i].end;
-        } 
+        }
         else {
             result[idx++] = newInterval;
             newInterval = intervals[i];
@@ -109,7 +104,6 @@ Interval* insertInterval(Interval* intervals, int intervalsSize, Interval newInt
 }
 ```
 
-
 ## Code (Cpp)
 
 ```cpp
@@ -119,26 +113,25 @@ public:
         vector<vector<int>> result;
         for (auto &interval : intervals) {
             if (interval[1] < newInterval[0]) {
-                
+
                 result.push_back(interval);
             } else if (interval[0] > newInterval[1]) {
-                
+
                 result.push_back(newInterval);
-                newInterval = interval; 
+                newInterval = interval;
             } else {
-                
+
                 newInterval[0] = min(newInterval[0], interval[0]);
                 newInterval[1] = max(newInterval[1], interval[1]);
             }
         }
-        
+
         result.push_back(newInterval);
         return result;
     }
 };
 
 ```
-
 
 ## Code (Java)
 
@@ -167,7 +160,6 @@ class Solution {
 }
 ```
 
-
 ## Code (Python)
 
 ```python
@@ -187,12 +179,11 @@ class Solution:
         return result
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ If you find this helpful, please give this repository a star! ⭐  
+⭐ If you find this helpful, please give this repository a star! ⭐
 
 ---
 

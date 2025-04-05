@@ -1,102 +1,109 @@
-# *19. Stock Buy and Sell – Max K Transactions Allowed*  
+# _19. Stock Buy and Sell – Max K Transactions Allowed_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-profit4657/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-profit4657/1)
 
-## **Problem Description**  
+## **Problem Description**
 
-In the stock market, a person can buy a stock and sell it on a future date. You are given an array **prices[]** representing stock prices on different days and a positive integer **k**.  
+In the stock market, a person can buy a stock and sell it on a future date. You are given an array **prices[]** representing stock prices on different days and a positive integer **k**.
 
-Find out the **maximum profit** a person can make with **at most k transactions**.  
+Find out the **maximum profit** a person can make with **at most k transactions**.
 
-A **transaction** consists of **buying** and subsequently **selling** a stock. A new transaction can only start after completing the previous one.  
+A **transaction** consists of **buying** and subsequently **selling** a stock. A new transaction can only start after completing the previous one.
 
-## **Examples**  
+## **Examples**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 prices = [10, 22, 5, 80]
 k = 2
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 87
 ```
 
-#### **Explanation:**  
-1. **Buy at 10, Sell at 22** → Profit = **12**  
+#### **Explanation:**
+
+1. **Buy at 10, Sell at 22** → Profit = **12**
 2. **Buy at 5, Sell at 80** → Profit = **75**  
-**Total Profit = 12 + 75 = 87**  
+   **Total Profit = 12 + 75 = 87**
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 ```
 prices = [20, 580, 420, 900]
 k = 3
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 1040
 ```
 
-#### **Explanation:**  
-1. **Buy at 20, Sell at 580** → Profit = **560**  
+#### **Explanation:**
+
+1. **Buy at 20, Sell at 580** → Profit = **560**
 2. **Buy at 420, Sell at 900** → Profit = **480**  
-**Total Profit = 560 + 480 = 1040**  
+   **Total Profit = 560 + 480 = 1040**
 
+### **Example 3:**
 
-### **Example 3:**  
+#### **Input:**
 
-#### **Input:**  
 ```
 prices = [100, 90, 80, 50, 25]
 k = 1
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 0
 ```
 
-#### **Explanation:**  
-- The stock price is **continuously decreasing**, so there is **no profit possible**.  
+#### **Explanation:**
 
+- The stock price is **continuously decreasing**, so there is **no profit possible**.
 
-### **Constraints:**  
-- $\(1 \leq \text{prices.size()} \leq 10^3\)$  
-- $\(1 \leq k \leq 200\)$  
-- $\(1 \leq \text{prices}[i] \leq 10^3\)$  
+### **Constraints:**
 
+- $\(1 \leq \text{prices.size()} \leq 10^3\)$
+- $\(1 \leq k \leq 200\)$
+- $\(1 \leq \text{prices}[i] \leq 10^3\)$
 
 ## **Optimized Dynamic Programming (1D DP, O(K×N) Time, O(2K) Space)**
-### **Approach:**  
-1. If **2 * k >= n**, it's optimal to perform **all profitable transactions**, similar to an **unlimited transactions problem**.  
+
+### **Approach:**
+
+1. If **2 \* k >= n**, it's optimal to perform **all profitable transactions**, similar to an **unlimited transactions problem**.
 2. Otherwise, we use a **1D DP table** (`dp[2*k+1]`) to store the **best profit for different transaction states**:
-   - **Odd indices** → Buying states  
-   - **Even indices** → Selling states  
-3. **Iterate through the stock prices** and update `dp[]` based on previous values:  
-   - If **buying**, maximize profit by either **holding** or **buying today**.  
-   - If **selling**, maximize profit by either **selling today** or **holding**.  
+   - **Odd indices** → Buying states
+   - **Even indices** → Selling states
+3. **Iterate through the stock prices** and update `dp[]` based on previous values:
+   - If **buying**, maximize profit by either **holding** or **buying today**.
+   - If **selling**, maximize profit by either **selling today** or **holding**.
 
-### **Algorithm Steps:**  
-1. If `k == 0`, return **0** (no transactions allowed).  
-2. If **2 * k >= n**, return the **sum of all upward price differences**.  
-3. Initialize `dp[2*k+1]` with `-∞` for buy states and `0` for the rest.  
-4. **Iterate through prices** and update `dp[j]` for **all transactions**.  
+### **Algorithm Steps:**
 
+1. If `k == 0`, return **0** (no transactions allowed).
+2. If **2 \* k >= n**, return the **sum of all upward price differences**.
+3. Initialize `dp[2*k+1]` with `-∞` for buy states and `0` for the rest.
+4. **Iterate through prices** and update `dp[j]` for **all transactions**.
 
-## **Time and Auxiliary Space Complexity**  
+## **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O(K × N), since we iterate over `prices[]` for each transaction.  
-- **Expected Auxiliary Space Complexity:** O(2K), since we only use a `dp[]` array of size `2K + 1`.  
+- **Expected Time Complexity:** O(K × N), since we iterate over `prices[]` for each transaction.
+- **Expected Auxiliary Space Complexity:** O(2K), since we only use a `dp[]` array of size `2K + 1`.
 
-
-## **Code (C++)**  
+## **Code (C++)**
 
 ```cpp
 class Solution {
@@ -123,18 +130,20 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## **2️⃣ Dynamic Programming (O(K×N) Time, O(K×N) Space) — 2D DP**  
-### **Algorithm Steps:**  
-1. Use a **2D DP table**, where `dp[i][j]` represents the maximum profit at day `j` with at most `i` transactions.  
-2. **Base Case:**  
-   - `dp[0][j] = 0` (No transactions, no profit).  
-   - `dp[i][0] = 0` (At day 0, profit is zero).  
+## **2️⃣ Dynamic Programming (O(K×N) Time, O(K×N) Space) — 2D DP**
+
+### **Algorithm Steps:**
+
+1. Use a **2D DP table**, where `dp[i][j]` represents the maximum profit at day `j` with at most `i` transactions.
+2. **Base Case:**
+   - `dp[0][j] = 0` (No transactions, no profit).
+   - `dp[i][0] = 0` (At day 0, profit is zero).
 3. **Recurrence Relation:**  
    $\[
    dp[i][j] = \max(dp[i][j-1], prices[j] + \max(dp[i-1][p] - prices[p]) \quad \text{for } 0 \leq p < j
    \]$
-   - `dp[i][j-1]`: No transaction on day `j`.  
-   - `prices[j] + max(dp[i-1][p] - prices[p])`: Buy at some `p`, sell at `j`.  
+   - `dp[i][j-1]`: No transaction on day `j`.
+   - `prices[j] + max(dp[i-1][p] - prices[p])`: Buy at some `p`, sell at `j`.
 
 ```cpp
 class Solution {
@@ -154,25 +163,27 @@ class Solution {
     }
 };
 ```
+
 ✅ **Time Complexity:** `O(K × N)`  
-✅ **Space Complexity:** `O(K × N)`  
+✅ **Space Complexity:** `O(K × N)`
 
+## **3️⃣ Recursive + Memoization (O(K×N) Time, O(K×N) Space)**
 
-## **3️⃣ Recursive + Memoization (O(K×N) Time, O(K×N) Space)**  
-### **Algorithm Steps:**  
-1. Define a **recursive function** `solve(i, t, holding)`, where:  
-   - `i` is the current index (day).  
-   - `t` is the number of transactions left.  
-   - `holding` is `true` if we own a stock.  
-2. **Base Cases:**  
-   - If `i == n` or `t == 0`, return `0`.  
-3. **Recurrence Relation:**  
-   - If `holding`:  
-     - Sell: `prices[i] + solve(i + 1, t - 1, false)`.  
-     - Hold: `solve(i + 1, t, true)`.  
-   - If **not holding**:  
-     - Buy: `-prices[i] + solve(i + 1, t, true)`.  
-     - Skip: `solve(i + 1, t, false)`.  
+### **Algorithm Steps:**
+
+1. Define a **recursive function** `solve(i, t, holding)`, where:
+   - `i` is the current index (day).
+   - `t` is the number of transactions left.
+   - `holding` is `true` if we own a stock.
+2. **Base Cases:**
+   - If `i == n` or `t == 0`, return `0`.
+3. **Recurrence Relation:**
+   - If `holding`:
+     - Sell: `prices[i] + solve(i + 1, t - 1, false)`.
+     - Hold: `solve(i + 1, t, true)`.
+   - If **not holding**:
+     - Buy: `-prices[i] + solve(i + 1, t, true)`.
+     - Skip: `solve(i + 1, t, false)`.
 4. **Use Memoization (`dp[i][t][holding]`)** to store computed values.
 
 ```cpp
@@ -196,28 +207,28 @@ class Solution {
     }
 };
 ```
+
 ✅ **Time Complexity:** `O(K × N)`  
-✅ **Space Complexity:** `O(K × N) (recursion stack)`  
-
-
-
+✅ **Space Complexity:** `O(K × N) (recursion stack)`
 
 ## **Comparison of Approaches**
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                    |
-|----------------------------------|------------------------|-------------------------|------------------------------------|--------------------------------|
-| **1D DP (Space Optimized)**      | 🟡 `O(K × N)`         | 🟢 `O(2K)`              | Best space-efficient solution     | Harder to understand           |
-| **2D DP (Tabulation)**           | 🟡 `O(K × N)`         | 🔴 `O(K × N)`          | Intuitive approach                | High space usage               |
-| **Recursive + Memoization**      | 🟡 `O(K × N)`         | 🔴 `O(K × N)`          | Natural recursion flow            | Stack overhead                 |
+
+| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**          |
+| --------------------------- | ---------------------- | ----------------------- | ----------------------------- | -------------------- |
+| **1D DP (Space Optimized)** | 🟡 `O(K × N)`          | 🟢 `O(2K)`              | Best space-efficient solution | Harder to understand |
+| **2D DP (Tabulation)**      | 🟡 `O(K × N)`          | 🔴 `O(K × N)`           | Intuitive approach            | High space usage     |
+| **Recursive + Memoization** | 🟡 `O(K × N)`          | 🔴 `O(K × N)`           | Natural recursion flow        | Stack overhead       |
 
 ✅ **Best Choice?**
-- **If optimizing space:** Use **1D DP (Space-Optimized)**.  
-- **If space is not a concern:** Use **2D DP (Tabulation)** for easier understanding.  
-- **For recursion lovers:** Use **Recursive + Memoization**.  
 
-</details>  
+- **If optimizing space:** Use **1D DP (Space-Optimized)**.
+- **If space is not a concern:** Use **2D DP (Tabulation)** for easier understanding.
+- **For recursion lovers:** Use **Recursive + Memoization**.
 
+</details>
 
-## **Code (Java)**  
+## **Code (Java)**
+
 ```java
 class Solution {
     public static int maxProfit(int[] prices, int k) {
@@ -240,8 +251,8 @@ class Solution {
 }
 ```
 
+## **Code (Python)**
 
-## **Code (Python)**  
 ```python
 class Solution:
     def maxProfit(self, prices, k):
@@ -260,7 +271,7 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -273,5 +284,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-
-

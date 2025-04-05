@@ -1,4 +1,5 @@
 ## 07. Longest repeating and non-overlapping substring
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-repeating-and-non-overlapping-substring3421/1)
 
 ### My Approach
@@ -30,10 +31,10 @@ class Solution {
         int maxLen = 0;
         string ans = "-1";
         int i = 0, j = 0;
-    
+
         while (i < N && j < N) {
             string subString = S.substr(i, j - i + 1);
-    
+
             if (S.find(subString, j + 1) != string::npos) {
                 int len = subString.length();
                 if (len > maxLen) {
@@ -52,7 +53,7 @@ class Solution {
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

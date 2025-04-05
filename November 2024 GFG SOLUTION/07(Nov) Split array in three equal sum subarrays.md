@@ -1,4 +1,4 @@
-# *07. Split Array in Three Equal Sum Subarrays*
+# _07. Split Array in Three Equal Sum Subarrays_
 
 > **🚨 Note:** Apologies to previous visitors who may have encountered an incorrect solution. The solution has been fully resolved and updated according to the problem requirements.
 
@@ -13,11 +13,13 @@ Note: The driver code will print `true` if the array can be split into three equ
 ### Examples:
 
 **Input:**
+
 ```
 arr[] = [1, 3, 4, 0, 4]
 ```
 
 **Output:**
+
 ```
 true
 ```
@@ -26,11 +28,13 @@ true
 The pair `(1, 2)` is valid because the sum of subarrays `arr[0..1]`, `arr[2..3]`, and `arr[4..4]` are all equal to 4.
 
 **Input:**
+
 ```
 arr[] = [2, 3, 4]
 ```
 
 **Output:**
+
 ```
 false
 ```
@@ -39,11 +43,13 @@ false
 No three subarrays exist which have equal sums.
 
 **Input:**
+
 ```
 arr[] = [0, 1, 1]
 ```
 
 **Output:**
+
 ```
 false
 ```
@@ -51,6 +57,7 @@ false
 ## My Approach
 
 1. **Sum Calculation and Check:**
+
    - First, compute the total sum of the array.
    - If the total sum is not divisible by 3, return `{-1, -1}` because it’s impossible to split the array into three parts with equal sums.
 
@@ -74,29 +81,29 @@ public:
         for (int num : arr) {
             total_sum += num;
         }
-        
+
         if (total_sum % 3 != 0) {
             return {-1, -1};
         }
-        
+
         int target_sum = total_sum / 3;
         int current_sum = 0;
         int first_index = -1, second_index = -1;
         int n = arr.size();
-        
+
         for (int i = 0; i < n; i++) {
             current_sum += arr[i];
-            
+
             if (current_sum == target_sum && first_index == -1) {
                 first_index = i;
             }
-            
+
             if (current_sum == 2 * target_sum && first_index != -1) {
                 second_index = i;
                 break;
             }
         }
-        
+
         if (first_index != -1 && second_index != -1) {
             int last_part_sum = 0;
             for (int i = second_index + 1; i < n; i++) {
@@ -106,7 +113,7 @@ public:
                 return {first_index, second_index};
             }
         }
-        
+
         return {-1, -1};
     }
 };
@@ -160,7 +167,7 @@ class Solution {
 
 ```python
 class Solution:
-    
+
     def findSplit(self, arr):
         total_sum = sum(arr)
         if total_sum % 3 != 0:
@@ -189,7 +196,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

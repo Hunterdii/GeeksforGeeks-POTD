@@ -2,7 +2,6 @@
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-common-substring1452/1)
 
-
 ## Problem Description
 
 Given two strings, `str1` and `str2`, your task is to find the length of the longest common substring between the two given strings.
@@ -16,22 +15,25 @@ Given two strings, `str1` and `str2`, your task is to find the length of the lon
   str1 = "ABCDGH"
   str2 = "ACDGHR"
   ```
-- **Output:** 
+- **Output:**
   ```
   4
   ```
 - **Explanation:** The longest common substring is `"CDGH"`, which has a length of 4.
 
 ### Constraints:
+
 - `1 <= str1.size(), str2.size() <= 1000`
 - Both strings may contain upper and lower case alphabets.
 
 ### My Approach
 
 1. **Dynamic Programming Table Initialization:**
+
    - Create two 1D arrays `prev` and `curr`, each of size `m + 1`, where `m` is the length of `str2`. These arrays will store the lengths of the longest common suffixes of substrings ending at different positions in `str1` and `str2`.
 
 2. **Iterative Computation:**
+
    - Iterate through each character of `str1` and `str2`. If characters match, update the corresponding cell in the `curr` array to be `1 + prev[j - 1]`, where `j` is the current index in `str2`.
    - If characters do not match, set the current cell to `0` as no common substring ends here.
    - Track the maximum value in `curr` during the iterations, which represents the length of the longest common substring found so far.
@@ -41,7 +43,7 @@ Given two strings, `str1` and `str2`, your task is to find the length of the lon
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), where `n` and `m` are the lengths of `str1` and `str2` respectively. This is because we need to iterate through all pairs of characters from the two strings.
+- **Expected Time Complexity:** O(n \* m), where `n` and `m` are the lengths of `str1` and `str2` respectively. This is because we need to iterate through all pairs of characters from the two strings.
 - **Expected Auxiliary Space Complexity:** O(m), where `m` is the length of `str2`. We use two 1D arrays of size `m + 1` to store the lengths of the common suffixes.
 
 ### Code (C++)
@@ -91,7 +93,7 @@ class Solution {
                     curr[j] = 0;
                 }
             }
-            prev = curr.clone(); 
+            prev = curr.clone();
         }
         return res;
     }
@@ -117,13 +119,13 @@ class Solution:
                 else:
                     curr[j] = 0
             prev = curr[:]
-        
+
         return res
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

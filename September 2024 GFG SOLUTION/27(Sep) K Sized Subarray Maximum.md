@@ -1,4 +1,4 @@
-# *27. K Sized Subarray Maximum*
+# _27. K Sized Subarray Maximum_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)
 
@@ -16,14 +16,15 @@ Input:
 Output:  
 `[3, 3, 4, 5, 5, 5, 6]`
 
-Explanation:  
-1. 1st contiguous subarray = [1, 2, 3], max = 3  
-2. 2nd contiguous subarray = [2, 3, 1], max = 3  
-3. 3rd contiguous subarray = [3, 1, 4], max = 4  
-4. 4th contiguous subarray = [1, 4, 5], max = 5  
-5. 5th contiguous subarray = [4, 5, 2], max = 5  
-6. 6th contiguous subarray = [5, 2, 3], max = 5  
-7. 7th contiguous subarray = [2, 3, 6], max = 6  
+Explanation:
+
+1. 1st contiguous subarray = [1, 2, 3], max = 3
+2. 2nd contiguous subarray = [2, 3, 1], max = 3
+3. 3rd contiguous subarray = [3, 1, 4], max = 4
+4. 4th contiguous subarray = [1, 4, 5], max = 5
+5. 5th contiguous subarray = [4, 5, 2], max = 5
+6. 6th contiguous subarray = [5, 2, 3], max = 5
+7. 7th contiguous subarray = [2, 3, 6], max = 6
 
 ### My Approach
 
@@ -31,13 +32,12 @@ Explanation:
    - We use a max heap to keep track of the maximum elements in the current window of size `k`.
    - For every element in the array, we push it into the heap along with its index. If the maximum element’s index is outside the current window, we remove it from the heap.
    - After the window reaches size `k`, we store the maximum element for that window.
-   
 2. **Efficiency**:
    - The sliding window moves from left to right over the array, ensuring we keep track of the maximum elements efficiently without recomputing the maximum for each new subarray.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * log k), where `n` is the length of the array and `k` is the window size. We insert and remove elements from the heap in logarithmic time.
+- **Expected Time Complexity:** O(n \* log k), where `n` is the length of the array and `k` is the window size. We insert and remove elements from the heap in logarithmic time.
 - **Expected Auxiliary Space Complexity:** O(k), since we use a heap of size `k` to store elements from the current window.
 
 ### Code (C++)
@@ -72,7 +72,7 @@ class Solution {
         ArrayList<Integer> res = new ArrayList<>();
         PriorityQueue<int[]> maxHeap = new PriorityQueue<>(new Comparator<int[]>() {
             public int compare(int[] a, int[] b) {
-                return b[0] - a[0]; 
+                return b[0] - a[0];
             }
         });
 
@@ -113,7 +113,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

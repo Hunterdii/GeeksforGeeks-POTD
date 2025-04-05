@@ -1,10 +1,10 @@
-# *31. Solve the Sudoku*
+# _31. Solve the Sudoku_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1)
 
 ## Problem Description
 
-Given an incomplete Sudoku configuration in terms of a 9x9  2-D interger square matrix, mat[][], the task is to solve the Sudoku. It is guaranteed that the input Sudoku will have exactly one solution.
+Given an incomplete Sudoku configuration in terms of a 9x9 2-D interger square matrix, mat[][], the task is to solve the Sudoku. It is guaranteed that the input Sudoku will have exactly one solution.
 
 A sudoku solution must satisfy all of the following rules:
 
@@ -24,22 +24,20 @@ Note: Zeros represent blanks to be filled with numbers 1-9, while non-zero cells
 
 <img src="https://github.com/user-attachments/assets/85db2375-479d-42c9-b00c-cad83d827f43" width="40%">
 
-
 **Explanation:** Each row, column and 3 x 3 box of the output matrix contains unique numbers.
 
 **Input:** `mat[][] =`
 
 <img src="https://github.com/user-attachments/assets/370558ae-aeb0-4121-82c2-d815d30a47d7" width="40%">
 
-
 **Output:**
 
 <img src="https://github.com/user-attachments/assets/f4c0d26e-b082-4454-974a-fbd44f2d7540" width="40%">
 
-
 **Explanation:** Each row, column and 3 x 3 box of the output matrix contains unique numbers.
 
 ### Constraints:
+
 - `mat.size() = 9`
 - `mat[i].size() = 9`
 - `0 ≤ mat[i][j] ≤ 9`
@@ -50,6 +48,7 @@ Note: Zeros represent blanks to be filled with numbers 1-9, while non-zero cells
 
 1. **Backtracking Algorithm**:  
    The problem can be efficiently solved using a backtracking approach:
+
    - Identify an empty cell.
    - Try placing numbers from 1 to 9 in that cell.
    - Check if the placement is valid (no duplicates in the row, column, or 3×3 sub-grid).
@@ -140,7 +139,7 @@ class Solution:
                     m = 1 << b[i][j]
                     r[i] |= m; c[j] |= m; box[i // 3 * 3 + j // 3] |= m
         self.solve(b, r, c, box, 0, 0)
-    
+
     def solve(self, b, r, c, box, i, j):
         if i == 9: return True
         if j == 9: return self.solve(b, r, c, box, i + 1, 0)
@@ -157,11 +156,11 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
- ---
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

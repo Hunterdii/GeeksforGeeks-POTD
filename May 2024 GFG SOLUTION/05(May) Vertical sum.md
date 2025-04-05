@@ -9,6 +9,7 @@ Given a binary tree with \( n \) nodes, find the vertical sum of the nodes that 
 **Example:**
 
 Input:
+
 ```
        1
     /    \
@@ -16,12 +17,16 @@ Input:
  /  \    /  \
 4   5  6   7
 ```
-Output: 
+
+Output:
+
 ```
 4 2 12 3 7
 ```
+
 Explanation:
 The tree has 5 vertical lines:
+
 - Line 1 has only one node 4 => vertical sum is 4.
 - Line 2 has only one node 2 => vertical sum is 2.
 - Line 3 has three nodes: 1, 5, 6 => vertical sum is \( 1 + 5 + 6 = 12 \).
@@ -31,16 +36,20 @@ The tree has 5 vertical lines:
 ### My Approach
 
 1. **Traversal:**
+
 - Traverse the binary tree in level order using a queue.
 - Maintain a map to store the vertical sums, where the keys represent the vertical positions and the values represent the sum of nodes at that position.
 
 2. **Sum Calculation:**
+
 - For each node encountered during traversal, update the sum in the map corresponding to its vertical position.
 
 3. **Extract Sums:**
+
 - After traversal, extract the sums from the map in order and store them in a vector.
 
 4. **Return:**
+
 - Return the vector containing the vertical sums.
 
 ### Time and Auxiliary Space Complexity
@@ -91,7 +100,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

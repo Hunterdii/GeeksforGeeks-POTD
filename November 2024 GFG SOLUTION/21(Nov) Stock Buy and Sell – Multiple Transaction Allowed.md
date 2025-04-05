@@ -1,13 +1,14 @@
-# *21. Stock Buy and Sell – Multiple Transaction Allowed*  
+# _21. Stock Buy and Sell – Multiple Transaction Allowed_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/stock-buy-and-sell2615/1)
 
 <div align="center">
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- As promised in the poll, I’ve continued solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- As promised in the poll, I’ve continued solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - My **November 21** solution is now live:  
-  **[2257. Count Unguarded Cells in the Grid](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2257.Count%20Unguarded%20Cells%20in%20the%20Grid.md)**  
+  **[2257. Count Unguarded Cells in the Grid](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2257.Count%20Unguarded%20Cells%20in%20the%20Grid.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/2257.Count%20Unguarded%20Cells%20in%20the%20Grid.md">
@@ -47,6 +48,7 @@ Buy the stock on day 3 and sell it on day 4 => 4 – 2 = 2.
 Maximum Profit = 2.
 
 ### Constraints:
+
 - `1 <= prices.size() <= 10^5`
 - `0 <= prices[i] <= 10^4`
 
@@ -55,9 +57,9 @@ Maximum Profit = 2.
 1. **Greedy Approach:**  
    The problem can be solved optimally by iterating through the array and accumulating profit whenever the price on the next day is greater than the price on the current day. This guarantees that we are maximizing profit by buying at the local minima and selling at the local maxima.
 
-2. **Steps:**  
-   - Traverse the array starting from the second day.  
-   - If the price on the next day is higher than the current day, we calculate the profit and add it to the total.  
+2. **Steps:**
+   - Traverse the array starting from the second day.
+   - If the price on the next day is higher than the current day, we calculate the profit and add it to the total.
    - Continue until the end of the array.
 
 ## Time and Auxiliary Space Complexity
@@ -133,7 +135,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

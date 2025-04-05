@@ -9,24 +9,30 @@ Given a string `str`, the task is to find the bracket numbers, i.e., for each br
 **Examples:**
 
 Input:
+
 ```
 str = "(aa(bdc))p(dee)"
 ```
+
 Output:
+
 ```
 1 2 2 1 3 3
 ```
+
 Explanation:
 The highlighted brackets in the given string (aa(bdc))p(dee) are assigned the numbers as: 1 2 2 1 3 3.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Use a counter `op` to keep track of the number of opening brackets encountered.
    - Use a vector `v` (or list in Python) to store the bracket numbers.
    - Use a stack `st` to maintain the sequence of opening brackets.
 
 2. **Bracket Number Calculation:**
+
    - Iterate through each character in the string `str`.
    - If the character is an opening bracket `(`:
      - Increment the `op` counter.
@@ -53,7 +59,7 @@ public:
         int op = 0;
         vector<int> v;
         vector<int> st;
-        
+
         for (auto& c : str) {
             if (c == '(') {
                 op++;
@@ -114,7 +120,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

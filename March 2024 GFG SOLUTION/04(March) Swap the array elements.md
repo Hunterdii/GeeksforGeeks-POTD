@@ -1,4 +1,5 @@
 ## 04. Swap the array elements
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/need-some-change/1)
 
 ### My Approach
@@ -15,6 +16,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Auxiliary Space Complexity**: `O(1)`, as no extra space is used.
 
 ### Code (C++)
+
 ```cpp
 class Solution{
 public:
@@ -28,7 +30,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

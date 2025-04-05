@@ -1,8 +1,6 @@
-
-# *04. Find All Triplets with Zero Sum*
+# _04. Find All Triplets with Zero Sum_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/find-all-triplets-with-zero-sum/1)
-
 
 ## Problem Description
 
@@ -34,10 +32,12 @@ Given an array `arr[]`, find all possible indices `[i, j, k]` of triplets `[arr[
 ## My Approach
 
 1. **Using Hash Map for Index Storage:**
+
    - Create a hash map to store the indices of elements in the array.
    - Traverse the array and populate the map with indices of each element.
 
 2. **Finding Triplets:**
+
    - Use two nested loops to select pairs of elements. For each pair, calculate the negation of their sum.
    - Check if this value exists in the hash map and ensure that the index of this element is greater than the current indices to maintain the condition `i < j < k`.
 
@@ -135,7 +135,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
@@ -148,4 +148,3 @@ For discussions, questions, or doubts related to this solution, please visit my 
 <p align="center">   
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
 </p>
-

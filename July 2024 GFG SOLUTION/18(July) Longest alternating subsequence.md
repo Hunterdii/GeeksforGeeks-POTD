@@ -12,23 +12,29 @@ You are given an array `arr`. Your task is to find the longest length of a good 
 **Examples:**
 
 Input:
+
 ```
 arr = [1, 5, 4]
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation:
 The entire sequence is a good sequence.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Check if the size of the array `arr` is less than 2. If true, return the size of the array as the longest length.
    - Initialize two variables `up` and `down` to 1, representing the length of the longest alternating subsequence ending with an increasing or decreasing element respectively.
 
 2. **Alternating Subsequence Calculation:**
+
    - Iterate through the array starting from the second element.
    - For each element, check if it is greater than the previous element. If true, update `up` as `down + 1`.
    - Otherwise, if it is smaller than the previous element, update `down` as `up + 1`.
@@ -49,9 +55,9 @@ public:
     int alternatingMaxLength(vector<int>& arr) {
         if (arr.size() < 2)
             return arr.size();
-        
+
         int up = 1, down = 1;
-        
+
         for (int i = 1; i < arr.size(); i++) {
             if (arr[i] > arr[i - 1])
                 up = down + 1;
@@ -107,7 +113,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

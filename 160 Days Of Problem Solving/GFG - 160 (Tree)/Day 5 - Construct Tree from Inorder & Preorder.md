@@ -1,106 +1,111 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Tree
 ---
 
 # 🚀 _Day 5. Construct Tree from Inorder & Preorder_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/construct-tree-1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/construct-tree-1)
 
 ## 💡 **Problem Description:**
 
 Given two arrays representing the inorder and preorder traversals of a binary tree, construct the tree and return the root node of the constructed tree.  
-**Note:** The output is written in postorder traversal.  
+**Note:** The output is written in postorder traversal.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 inorder[]  = [1, 6, 8, 7]
 preorder[] = [1, 6, 7, 8]
-```  
-#### **Output:**  
+```
+
+#### **Output:**
+
 ```
 [8, 7, 6, 1]
-```  
-#### **Explanation:**  
-The constructed binary tree’s postorder traversal is `[8, 7, 6, 1]`.  
+```
+
+#### **Explanation:**
+
+The constructed binary tree’s postorder traversal is `[8, 7, 6, 1]`.
 
 <img src="https://github.com/user-attachments/assets/f4ac9162-3e2e-45f4-88e5-bde4219b38aa" width="30%">
 
+### **Example 2:**
 
+#### **Input:**
 
-### **Example 2:**  
-
-#### **Input:**  
 ```
 inorder[]  = [3, 1, 4, 0, 2, 5]
 preorder[] = [0, 1, 3, 4, 2, 5]
-```  
-#### **Output:**  
+```
+
+#### **Output:**
+
 ```
 [3, 4, 1, 5, 2, 0]
-```  
-#### **Explanation:**  
-The constructed binary tree’s postorder traversal is `[3, 4, 1, 5, 2, 0]`.  
+```
+
+#### **Explanation:**
+
+The constructed binary tree’s postorder traversal is `[3, 4, 1, 5, 2, 0]`.
 
 <img src="https://github.com/user-attachments/assets/248efb33-8c80-4b61-ac8b-8e0f5c9cabce" width="30%">
 
+### **Example 3:**
 
+#### **Input:**
 
-### **Example 3:**  
-
-#### **Input:**  
 ```
 inorder[]  = [2, 5, 4, 1, 3]
 preorder[] = [1, 4, 5, 2, 3]
-```  
-#### **Output:**  
+```
+
+#### **Output:**
+
 ```
 [2, 5, 4, 3, 1]
-```  
-#### **Explanation:**  
-The constructed binary tree’s postorder traversal is `[2, 5, 4, 3, 1]`.  
+```
+
+#### **Explanation:**
+
+The constructed binary tree’s postorder traversal is `[2, 5, 4, 3, 1]`.
 
 <img src="https://github.com/user-attachments/assets/c65c7024-e460-45d8-bcf5-8f42d2ec4013" width="30%">
 
+### **Constraints:**
 
-
-### **Constraints:**  
-- 1 ≤ number of nodes ≤ $10^3$  
+- 1 ≤ number of nodes ≤ $10^3$
 - 0 ≤ node->data ≤ $10^3$
 - Both inorder and preorder arrays contain unique values.
 
-
-
 ## 🎯 **My Approach:**
 
-### **Recursive Construction with Hash Map**  
-1. **Identify the Root:**  
-   - The first element in the `preorder` array is always the root of the tree.  
-2. **Index Lookup Using Hash Map:**  
-   - Build a hash map that stores the index of each element in the `inorder` array for O(1) lookups.  
-3. **Recursive Tree Construction:**  
-   - Using the current root from `preorder`, find its index in `inorder`.  
-   - Recursively construct the left subtree with the elements to the left of the root in `inorder`.  
-   - Recursively construct the right subtree with the elements to the right of the root in `inorder`.  
-4. **Output Generation:**  
+### **Recursive Construction with Hash Map**
+
+1. **Identify the Root:**
+   - The first element in the `preorder` array is always the root of the tree.
+2. **Index Lookup Using Hash Map:**
+   - Build a hash map that stores the index of each element in the `inorder` array for O(1) lookups.
+3. **Recursive Tree Construction:**
+   - Using the current root from `preorder`, find its index in `inorder`.
+   - Recursively construct the left subtree with the elements to the left of the root in `inorder`.
+   - Recursively construct the right subtree with the elements to the right of the root in `inorder`.
+4. **Output Generation:**
    - Once the tree is constructed, its postorder traversal represents the expected output.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** `O(N)`, as every node is processed exactly once.  
+- **Expected Time Complexity:** `O(N)`, as every node is processed exactly once.
 - **Expected Auxiliary Space Complexity:** `O(N)`, mainly due to the recursion stack (in the worst-case scenario for a skewed tree) and the hash map used for index storage.
 
 ## 📝 **Solution Code**
-
 
 ## **Code (C++)**
 
@@ -182,19 +187,19 @@ public:
 
 ## **Comparison of Approaches**
 
-| Approach                      | Time Complexity | Space Complexity | Method             | Pros                                          | Cons                                              |
-|-------------------------------|-----------------|------------------|--------------------|-----------------------------------------------|---------------------------------------------------|
-| **Recursive (Lambda)**        | 🟢 **O(N)**    | 🟡 **O(N)**      | Recursion (Lambda) | Clean, concise, minimal code footprint        | May hit recursion limits on very deep trees       |
-| **Iterative (Stack)**         | 🟢 **O(N)**    | 🟡 **O(N)**      | Stack-based        | Avoids recursion depth issues; explicit control | Slightly more complex to implement                |
-| **Recursive (Traditional)**   | 🟢 **O(N)**    | 🟡 **O(N)**      | Recursion          | Straightforward and familiar recursive pattern | Recursion stack may overflow in worst-case scenarios |
+| Approach                    | Time Complexity | Space Complexity | Method             | Pros                                            | Cons                                                 |
+| --------------------------- | --------------- | ---------------- | ------------------ | ----------------------------------------------- | ---------------------------------------------------- |
+| **Recursive (Lambda)**      | 🟢 **O(N)**     | 🟡 **O(N)**      | Recursion (Lambda) | Clean, concise, minimal code footprint          | May hit recursion limits on very deep trees          |
+| **Iterative (Stack)**       | 🟢 **O(N)**     | 🟡 **O(N)**      | Stack-based        | Avoids recursion depth issues; explicit control | Slightly more complex to implement                   |
+| **Recursive (Traditional)** | 🟢 **O(N)**     | 🟡 **O(N)**      | Recursion          | Straightforward and familiar recursive pattern  | Recursion stack may overflow in worst-case scenarios |
 
 ### **Best Choice?**
+
 - **For balanced trees**, the **Recursive (Lambda)** approach is ideal.
 - **For deep or skewed trees**, the **Iterative (Stack)** approach is recommended.
 - **For general usage with simplicity**, the **Recursive (Traditional)** approach works well.
-  
-</details>
 
+</details>
 
 ## Code (Java)
 
@@ -216,8 +221,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -237,11 +240,9 @@ class Solution:
         return f(0, len(inorder) - 1)
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

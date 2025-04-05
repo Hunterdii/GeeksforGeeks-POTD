@@ -11,29 +11,35 @@ Note: A valid string should contain at least three digits to make one additive s
 **Example:**
 
 Input:
+
 ```
 n = "1235813"
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
-The given string can be split into a series of numbers where each number is the sum of the previous two numbers: 
+The given string can be split into a series of numbers where each number is the sum of the previous two numbers:
 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8, and 5 + 8 = 13. Hence, the output would be 1 (true).
 
-
-### My Approach 
+### My Approach
 
 1. **Validation:**
+
    - Start by validating if the given string `n` contains at least three digits. If not, return false.
 
 2. **Iteration:**
+
    - Iterate over all possible combinations of two numbers that can form the additive sequence.
    - Calculate the sum of the first two numbers and check if it matches the next number in the sequence.
    - If it matches, continue the sequence by considering the next number.
 
 3. **Validation Check:**
+
    - If the sequence can continue till the end of the string without any discrepancies, return true.
 
 4. **Return False:**
@@ -94,7 +100,7 @@ private:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -9,24 +9,30 @@ Given an integer array `a[]` of size `n`, find the length of the longest subsequ
 **Example:**
 
 Input:
+
 ```
 n = 7
 a[] = {10, 9, 4, 5, 4, 8, 6}
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation:
 The three possible subsequences of length 3 are {10, 9, 8}, {4, 5, 4}, and {4, 5, 6}, where adjacent elements have an absolute difference of 1. No valid subsequence of greater length could be formed.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a dictionary `dp` to store the length of the longest subsequence ending at each element.
    - Initialize a variable `ans` to keep track of the maximum subsequence length found.
 
 2. **Dynamic Programming Calculation:**
+
    - Iterate through the array `a`.
    - For each element `x` in `a`:
      - Calculate the lengths of the subsequences ending at `x - 1` and `x + 1`.
@@ -107,7 +113,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

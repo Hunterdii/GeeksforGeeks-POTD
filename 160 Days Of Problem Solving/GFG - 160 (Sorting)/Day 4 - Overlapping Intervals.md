@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Arrays
   - Hash
@@ -13,7 +13,7 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 ## 💡 **Problem Description:**
 
-Given an array of intervals `arr[][]`, where each interval `arr[i] = [starti, endi]` represents a range of integers, merge all overlapping intervals.  
+Given an array of intervals `arr[][]`, where each interval `arr[i] = [starti, endi]` represents a range of integers, merge all overlapping intervals.
 
 The output should return an array of the merged intervals sorted by their starting points.
 
@@ -24,44 +24,44 @@ The output should return an array of the merged intervals sorted by their starti
 **Output:**  
 `[[1,4],[6,8],[9,10]]`
 
-**Explanation:**  
-- `[1,3]` and `[2,4]` overlap, so they merge into `[1,4]`.  
+**Explanation:**
+
+- `[1,3]` and `[2,4]` overlap, so they merge into `[1,4]`.
 
 **Input:**  
 `arr = [[6,8],[1,9],[2,4],[4,7]]`  
 **Output:**  
 `[[1,9]]`
 
-**Explanation:**  
-- All intervals overlap with `[1,9]`, so they merge into `[1,9]`.  
+**Explanation:**
+
+- All intervals overlap with `[1,9]`, so they merge into `[1,9]`.
 
 ### Constraints:
 
-- $`1 ≤ arr.size() ≤ 10^5`$  
-- $`0 ≤ starti ≤ endi ≤ 10^5`$  
-
-
+- $`1 ≤ arr.size() ≤ 10^5`$
+- $`0 ≤ starti ≤ endi ≤ 10^5`$
 
 ## 🎯 **My Approach:**
 
-1. **Sorting Intervals**:  
-   - The first step is to sort the intervals by their starting points.  
+1. **Sorting Intervals**:
+
+   - The first step is to sort the intervals by their starting points.
    - This ensures that we can linearly process intervals and merge overlapping ones efficiently.
 
-2. **Merging Logic**:  
-   - Maintain a result list and iterate through the sorted intervals.  
+2. **Merging Logic**:
+
+   - Maintain a result list and iterate through the sorted intervals.
    - For each interval:
      - If it overlaps with the last interval in the result, merge them by updating the end point.
-     - Otherwise, add the interval to the result as it doesn't overlap with any previous intervals.  
+     - Otherwise, add the interval to the result as it doesn't overlap with any previous intervals.
 
-3. **Final Output**:  
+3. **Final Output**:
    - The resulting intervals are guaranteed to be sorted and non-overlapping.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** O(n log n), where `n` is the size of the array. The sorting step dominates the time complexity.  
+- **Expected Time Complexity:** O(n log n), where `n` is the size of the array. The sorting step dominates the time complexity.
 - **Expected Auxiliary Space Complexity:** O(n), as we use additional space for storing the merged intervals.
 
 ## 📝 **Solution Code**
@@ -93,8 +93,6 @@ int mergeOverlap(Interval arr[], int n, Interval result[]) {
 }
 ```
 
-
-
 ## Code (Cpp)
 
 ```cpp
@@ -124,8 +122,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -153,8 +149,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -176,11 +170,9 @@ class Solution:
         return merged
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

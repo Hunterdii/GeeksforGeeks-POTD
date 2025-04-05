@@ -9,20 +9,25 @@ Given two sorted integer arrays `arr1` and `arr2`, find the sum of the middle el
 **Example:**
 
 Input:
+
 ```
 arr1 = [1, 2, 4, 6, 10]
 arr2 = [4, 5, 6, 9, 12]
 ```
+
 Output:
+
 ```
 11
 ```
+
 Explanation:
 The merged array looks like `[1, 2, 4, 4, 5, 6, 6, 9, 10, 12]`. The sum of the middle elements is `11` (5 + 6).
 
 ### My Approach
 
 1. **Binary Search Method:**
+
    - The problem can be approached using binary search to find the correct partition in the two arrays such that the left half and right half of the merged array are balanced.
    - Initialize two pointers `low` and `high` to perform the binary search on `arr1`.
    - For each middle point in `arr1`, find the corresponding partition in `arr2` such that the elements on the left side of the partition are less than or equal to the elements on the right side.
@@ -37,7 +42,6 @@ The merged array looks like `[1, 2, 4, 4, 5, 6, 6, 9, 10, 12]`. The sum of the m
 
 - **Expected Time Complexity:** O(log n), as we perform a binary search on one of the arrays to find the median elements.
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space.
-
 
 ### Code (C++)
 
@@ -72,8 +76,8 @@ public:
 ```
 
 ### Code (Java) - **Note: Not Working Code is Running in Normal Compiler**
-## <i>⚠️ Issue with the Provided Code Some Problem From GFG Side. </i>
 
+## <i>⚠️ Issue with the Provided Code Some Problem From GFG Side. </i>
 
 ```java
 class Solution {
@@ -128,13 +132,12 @@ class Solution:
             else:
                 low = cut1 + 1
 
-        return 0  
+        return 0
 ```
-
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

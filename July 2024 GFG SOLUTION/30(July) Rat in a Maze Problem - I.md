@@ -11,26 +11,32 @@ Note: In a path, no cell can be visited more than one time. If the source cell i
 **Example:**
 
 Input:
+
 ```
 mat[][] = [[1, 0, 0, 0],
-           [1, 1, 0, 1], 
+           [1, 1, 0, 1],
            [1, 1, 0, 0],
            [0, 1, 1, 1]]
 ```
+
 Output:
+
 ```
 DDRDRR DRDDRR
 ```
+
 Explanation:
 The rat can reach the destination at (3, 3) from (0, 0) by two paths - `DRDDRR` and `DDRDRR`. When printed in sorted order, we get `DDRDRR DRDDRR`.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create a vector `visited` to keep track of visited cells in the matrix.
    - Initialize an empty list `result` to store all the valid paths.
 
 2. **Path Finding:**
+
    - Use a recursive function `path` to explore all possible paths from the current cell `(x, y)` to the destination cell `(n-1, n-1)`.
    - For each move, check if it is valid (i.e., within matrix bounds, not blocked, and not visited).
    - If a valid path to the destination is found, add it to the `result` list.
@@ -41,7 +47,7 @@ The rat can reach the destination at (3, 3) from (0, 0) by two paths - `DRDDRR` 
 ### Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(3^(n^2)), as each cell can be visited in three possible directions except the one it came from, leading to exponential growth with respect to the size of the matrix.
-- **Expected Auxiliary Space Complexity:** O(l * x), where `l` is the length of a path and `x` is the number of paths, due to the recursive stack and the storage of paths.
+- **Expected Auxiliary Space Complexity:** O(l \* x), where `l` is the length of a path and `x` is the number of paths, due to the recursive stack and the storage of paths.
 
 ### Code (C++)
 
@@ -137,7 +143,7 @@ class Solution:
             return
         if m[x][y] == 0 or self.visited[x][y]:
             return
-        
+
         self.visited[x][y] = True
         if x > 0:
             self.path(m, x - 1, y, dir + 'U', n)
@@ -164,7 +170,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -8,13 +8,13 @@ Given the number of vertices `v` and an adjacency list `adj` denoting a directed
 
 **Example:**
 
-
 Input:
+
 ```
-v = 4 
-edges[] = {{0, 1}, 
-           {0, 2}, 
-           {1, 3}, 
+v = 4
+edges[] = {{0, 1},
+           {0, 2},
+           {1, 3},
            {2, 3}}
 ```
 
@@ -22,18 +22,20 @@ edges[] = {{0, 1},
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/2028909c-f65e-4c45-92a8-13a2fdcb7a22" alt="Image" />
 </p>
 
-
 Output:
+
 ```
 1
 ```
-Explanation: 
+
+Explanation:
 One of the Eulerian circuits starting from vertex 0 is as follows:
 0 -> 1 -> 3 -> 2 -> 0
 
 ### My Approach
 
 1. **Checking for Eulerian Circuit Existence:**
+
    - Iterate through each vertex in the graph.
    - Check if the degree of each vertex is even. If any vertex has an odd degree, return false indicating that there is no Eulerian circuit.
 
@@ -63,7 +65,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

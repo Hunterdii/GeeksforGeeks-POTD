@@ -1,4 +1,4 @@
-# *20. Merge Two Sorted Linked Lists*
+# _20. Merge Two Sorted Linked Lists_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1)
 
@@ -9,9 +9,10 @@ Given the heads of two sorted linked lists, the task is to merge the two lists i
 ### **Examples**
 
 #### Example 1:
+
 **Input:**  
 `head1 = 5 -> 10 -> 15 -> 40`  
-`head2 = 2 -> 3 -> 20`  
+`head2 = 2 -> 3 -> 20`
 
 **Output:**  
 `2 -> 3 -> 5 -> 10 -> 15 -> 20 -> 40`  
@@ -20,20 +21,18 @@ Given the heads of two sorted linked lists, the task is to merge the two lists i
 <img src="https://github.com/user-attachments/assets/d1735740-3fe4-4432-9329-b377c5b6b25e" width="50%">
 
 #### Example 2:
+
 **Input:**  
 `head1 = 1 -> 1`  
-`head2 = 2 -> 4`  
+`head2 = 2 -> 4`
 
 **Output:**  
-`1 -> 1 -> 2 -> 4`  
-
-
+`1 -> 1 -> 2 -> 4`
 
 ### **Constraints:**
+
 - 1 <= no. of nodes<= $10^3$
 - $`0 <= node->data <= 10^5`$
-
-
 
 ## **My Approach**
 
@@ -46,17 +45,12 @@ Given the heads of two sorted linked lists, the task is to merge the two lists i
 3. Once one of the lists is completely traversed, attach the remaining nodes of the other list to `tail`.
 4. Return the merged list starting from `dummy.next`.
 
-
-
 ### **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:**  
   O(n + m), where `n` and `m` are the lengths of the two linked lists. Each node is visited exactly once.
-  
 - **Expected Auxiliary Space Complexity:**  
   O(1), as no additional space is used except for a few variables.
-
-
 
 ## **Code (C)**
 
@@ -77,8 +71,6 @@ struct Node* sortedMerge(struct Node* head1, struct Node* head2) {
     return dummy.next;
 }
 ```
-
-
 
 ## **Code (C++)**
 
@@ -128,7 +120,6 @@ public:
 };
 ```
 
-
 ### **Iterative Merge with Two Pointers**
 
 This approach is the same as described above but focuses on using a pointer swapping technique.
@@ -148,7 +139,6 @@ public:
 
 </details>
 
-
 ## **Code (Java)**
 
 ```java
@@ -166,8 +156,6 @@ class Solution {
     }
 }
 ```
-
-
 
 ## **Code (Python)**
 
@@ -188,14 +176,9 @@ class Solution:
         return dummy.next
 ```
 
-
-
-
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -11,42 +11,50 @@ You are given a square binary grid. A grid is considered binary if every value i
 **Example 1:**
 
 Input:
+
 ```
 grid = [
     [1, 1],
     [0, 1]
 ]
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation:
 By changing cell (2, 1), we can obtain a connected group of 4 1's:
-```
-[1, 1]
-[1, 1]
-```
 
+```
+[1, 1]
+[1, 1]
+```
 
 ### My Approach
 
 1. **Initialization:**
+
 - Define direction vectors `dx` and `dy` for exploring the four possible adjacent cells.
 - Initialize a counter `k` to label connected components in the grid.
 - Use a map `mp` to store the size of each connected component.
 
 2. **DFS to Find Connected Components:**
+
 - Iterate through each cell of the grid.
 - If a cell contains a 1, perform a DFS to find all connected 1's and label them with the counter `k`.
 - Store the size of each connected component in the map `mp`.
 
 3. **Calculate Potential Group Sizes:**
+
 - Iterate through each cell of the grid.
 - If a cell contains a 0, calculate the potential size of the connected group by changing this cell to 1 and considering the sizes of its neighboring components.
 - Use a set to avoid counting the same component multiple times.
 
 4. **Find the Maximum Group Size:**
+
 - Track the maximum size of connected groups formed either by original or potential connections.
 
 ### Time and Auxiliary Space Complexity
@@ -238,7 +246,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

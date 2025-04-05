@@ -1,4 +1,4 @@
-# *02. Rotate and Delete*
+# _02. Rotate and Delete_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/rotate-and-delete-1587115621/1)
 
@@ -15,11 +15,14 @@ Return the last remaining element in the array.
 
 **Example:**
 
-Input: 
+Input:
+
 ```
 arr = [1, 2, 3, 4, 5, 6]
 ```
-Output: 
+
+Output:
+
 ```
 3
 ```
@@ -29,10 +32,12 @@ Output:
 ### My Approach
 
 1. **Rotation and Deletion:**
+
    - For each operation, rotate the array clockwise, effectively moving the last element to the front.
    - Calculate the index of the element to delete based on the current size of the array and the current operation count.
 
 2. **Loop Until One Element Remains:**
+
    - Continue this process until only one element remains in the array.
 
 3. **Return the Result:**
@@ -95,17 +100,18 @@ class Solution:
             arr.pop(id)
             k += 1
             n -= 1
-        
+
         return arr[0]
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

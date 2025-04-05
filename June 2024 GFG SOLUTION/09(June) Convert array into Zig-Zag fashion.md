@@ -5,30 +5,39 @@ The problem can be found at the following link: [Question Link](https://www.geek
 ### Problem Description
 
 Given an array `arr` of distinct elements of size `n`, the task is to rearrange the elements of the array in a zig-zag fashion so that the converted array should be in the form:
+
 ```
 arr[0] < arr[1] > arr[2] < arr[3] > arr[4] < ... < arr[n-2] > arr[n-1]
 ```
+
 Note: Modify the given array `arr[]` only. If your transformation is correct, the output will be 1, else the output will be 0.
 
 **Example:**
 
 Input:
+
 ```
 n = 7
 arr = [4, 3, 7, 8, 6, 2, 1]
 ```
+
 Output:
+
 ```
 3 7 4 8 2 6 1
 ```
+
 Explanation:
 3 < 7 > 4 < 8 > 2 < 6 > 1
+
 ### My Approach
 
 1. **Initialization:**
+
    - Iterate through the array using a loop from `0` to `n-2`.
 
 2. **Condition Check and Swap:**
+
    - For each index `i`, check:
      - If `i` is even, ensure `arr[i] < arr[i + 1]`. If not, swap `arr[i]` and `arr[i + 1]`.
      - If `i` is odd, ensure `arr[i] > arr[i + 1]`. If not, swap `arr[i]` and `arr[i + 1]`.
@@ -88,7 +97,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

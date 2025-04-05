@@ -11,27 +11,34 @@ Given two strings, `str1` and `str2`, the task is to find the minimum number of 
 **Example:**
 
 Input:
+
 ```
 str1 = "heap"
 str2 = "pea"
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation: Delete `'h'` and `'a'` from "heap", then insert `'p'` at the beginning.
 
 ### My Approach
 
 1. **Dynamic Programming (DP) Setup:**
-   - The problem can be reduced to finding the length of the longest common subsequence (LCS) between `str1` and `str2`. 
+
+   - The problem can be reduced to finding the length of the longest common subsequence (LCS) between `str1` and `str2`.
    - The minimum number of deletions required to transform `str1` into `str2` will be the difference between the length of `str1` and the LCS.
    - The minimum number of insertions will be the difference between the length of `str2` and the LCS.
 
 2. **Initialization:**
+
    - Create two arrays, `prev` and `curr`, of size `n + 1`, where `n` is the length of `str2`. These arrays will be used to store the LCS lengths for substrings of `str1` and `str2`.
 
 3. **DP Array Population:**
+
    - Iterate through each character of `str1` and `str2`. If the characters match, update `curr[j]` to be `prev[j-1] + 1`.
    - If they don't match, update `curr[j]` to be the maximum of `prev[j]` and `curr[j-1]`.
 
@@ -40,7 +47,7 @@ Explanation: Delete `'h'` and `'a'` from "heap", then insert `'p'` at the beginn
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(|str1|*|str2|), as we iterate over all possible pairs of characters.
+- **Expected Time Complexity:** O(|str1|\*|str2|), as we iterate over all possible pairs of characters.
 - **Expected Auxiliary Space Complexity:** O(|str2|), as we only use a constant amount of additional space apart from the two arrays used for DP.
 
 ### Code (C++)
@@ -122,11 +129,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -10,6 +10,7 @@ Given a square matrix `mat[][]` of size `n*n`, the task is to determine the diag
 ![matrix-6](https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/711ce360-6e07-4bfb-9ad3-d97ecba15427)
 
 **Example:**
+
 ```
 Input:
 n = 3
@@ -20,6 +21,7 @@ Output: {1, 2, 4, 7, 5, 3, 6, 8, 9}
 ```
 
 **Explaination:**
+
 - Starting from (0, 0): 1,
 - Move to the right to (0, 1): 2,
 - Move diagonally down to (1, 0): 4,
@@ -34,10 +36,11 @@ Output: {1, 2, 4, 7, 5, 3, 6, 8, 9}
 
 You only need to implement the given function `matrixDiagonally()` which takes a matrix `mat[][]` of size `n*n` as an input and returns a list of integers containing the matrix diagonally. Do not read input, instead use the arguments given in the function.
 
-**Expected Time Complexity:** O(n*n).
+**Expected Time Complexity:** O(n\*n).
 **Expected Auxiliary Space:** O(1).
 
 **Constraints:**
+
 - 1 <= n <= 100
 - -100 <= elements of matrix <= 100
 
@@ -58,11 +61,11 @@ public:
         }
         return a.first.first < b.first.first;
     }
-    
+
     vector<int> matrixDiagonally(vector<vector<int>>& mat) {
         vector<pair<pair<int, int>, int>> res;
         int n = mat.size();
-        
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if ((i + j) % 2 == 0) {
@@ -72,14 +75,14 @@ public:
                 }
             }
         }
-        
+
         sort(res.begin(), res.end(), compare);
-        
+
         vector<int> diagonalOrder;
         for (auto& elem : res) {
             diagonalOrder.push_back(elem.second);
         }
-        
+
         return diagonalOrder;
     }
 };
@@ -87,7 +90,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

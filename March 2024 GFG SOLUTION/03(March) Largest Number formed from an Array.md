@@ -1,7 +1,8 @@
 ## 03. Largest Number formed from an Array
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/largest-number-formed-from-an-array1117/1)
 
-### My Approach 
+### My Approach
 
 To achieve our objective of forming the largest possible number by concatenating strings from an array, we follow these steps:
 
@@ -19,20 +20,21 @@ To achieve our objective of forming the largest possible number by concatenating
 - **Auxiliary Space Complexity**: `O(N)`, where N is the number of strings in the array.
 
 ### Code (C++)
+
 ```cpp
 class Solution {
 public:
  static bool comp(string a, string b){
      return a + b > b + a;
  }
- 
+
  string printLargest(int n, vector<string> &arr) {
      sort(arr.begin(), arr.end(), comp);
-     
+
      string ans;
      for(string i : arr)
          ans += i;
-     
+
      return ans;
  }
 };
@@ -40,7 +42,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

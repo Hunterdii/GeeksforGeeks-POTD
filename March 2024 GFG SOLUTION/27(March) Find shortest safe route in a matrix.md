@@ -9,6 +9,7 @@ Given a matrix `mat[][]` with \(r\) rows and \(c\) columns, where some cells are
 **Example:**
 
 Input:
+
 ```
 mat = [1, 0, 1, 1, 1],
       [1, 1, 1, 1, 1],
@@ -16,33 +17,32 @@ mat = [1, 0, 1, 1, 1],
       [1, 1, 1, 0, 1],
       [1, 1, 1, 1, 0]
 ```
-Output: 
+
+Output:
+
 ```
 6
 ```
-Explanation: 
+
+Explanation:
 We can see that the length of the shortest safe route is 6.
 
-### My Approach 
+### My Approach
 
 1. **Initialization:**
    - Initialize variables `n` and `m` to store the number of rows and columns in the matrix `mat`.
    - Define an array `d` to represent the four possible directions: right, left, down, and up.
-   
 2. **Marking Obstacles and Starting Points:**
    - Iterate through each cell in the matrix.
    - If a cell contains a landmine (0), mark all adjacent cells as unsafe by setting their value to 2.
-   
 3. **BFS Traversal:**
    - Start BFS traversal from the leftmost column.
    - Enqueue all cells in the leftmost column that contain a safe path (1) into a queue and mark them as visited.
-   
 4. **Performing BFS:**
    - While the queue is not empty, perform the following steps:
      - Dequeue a cell from the queue.
      - If the current cell is in the rightmost column, return the length of the shortest path found.
      - Otherwise, enqueue all adjacent safe cells into the queue and mark them as visited.
-   
 5. **Return Result:**
    - If no path is found, return -1.
 
@@ -103,7 +103,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

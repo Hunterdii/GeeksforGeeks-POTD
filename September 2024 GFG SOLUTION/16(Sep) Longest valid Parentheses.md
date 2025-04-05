@@ -14,6 +14,7 @@ A valid parentheses substring is defined as:
 **Examples:**
 
 - Input: `str = "((()"`
+
   - Output: `2`
   - Explanation: The longest valid parenthesis substring is `"()"`.
 
@@ -26,21 +27,24 @@ A valid parentheses substring is defined as:
 The problem can be solved by traversing the string twice—once from left to right and once from right to left—counting the number of opening and closing parentheses.
 
 1. **Two-pass traversal:**
-   - *First pass (Left to Right)*:
+
+   - _First pass (Left to Right)_:
+
      - Traverse the string from left to right.
      - Count `left` for opening parentheses `'('` and `right` for closing parentheses `')'`.
      - If `left == right`, we have a valid substring, and we update the maximum length.
      - If `right > left`, reset the counters to zero because an excess of closing parentheses breaks the balance.
-  
-   - *Second pass (Right to Left)*:
+
+   - _Second pass (Right to Left)_:
      - Traverse the string from right to left, applying the same logic but reversing the roles of `left` and `right` counters. This helps catch cases where there are unmatched opening parentheses at the end of the string.
 
-2. **Reset and Compare:** 
+2. **Reset and Compare:**
+
    - Whenever we encounter an imbalance (`right > left` or `left > right`), we reset the counters and move on. This ensures we only count balanced subsequences of parentheses.
 
 3. **Final Answer:**
    - The maximum length encountered during both passes is the length of the longest valid parentheses substring.
-     
+
 ### Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(|str|), since we traverse the string twice (left to right and right to left).
@@ -100,7 +104,7 @@ class Solution{
             else if (right > left)
                 left = right = 0;
         }
-        left = right = 0; 
+        left = right = 0;
         for (int i = S.length() - 1; i >= 0; i--) {
             if (S.charAt(i) == '(')
                 left++;
@@ -129,18 +133,18 @@ class Solution:
                 left += 1
             else:
                 right += 1
-            
+
             if left == right:
                 maxi = max(maxi, 2 * right)
             elif right > left:
                 left = right = 0
-        left = right = 0 
+        left = right = 0
         for char in reversed(s):
             if char == '(':
                 left += 1
             else:
                 right += 1
-            
+
             if left == right:
                 maxi = max(maxi, 2 * left)
             elif left > right:
@@ -149,11 +153,9 @@ class Solution:
         return maxi
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

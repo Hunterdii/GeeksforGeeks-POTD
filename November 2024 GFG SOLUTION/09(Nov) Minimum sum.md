@@ -1,4 +1,4 @@
-# *09. Minimum Sum*
+# _09. Minimum Sum_
 
 The problem can be found at the following link: [Problem Link](https://geeksforgeeks.org/problems/minimum-sum4058/1)
 
@@ -8,12 +8,14 @@ Given an array `arr[]` where each element is a digit in the range `[0 - 9]`, fin
 
 ### Examples:
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [6, 8, 4, 5, 2, 3]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 604
 ```
@@ -21,12 +23,14 @@ arr[] = [6, 8, 4, 5, 2, 3]
 **Explanation:**  
 The minimum sum is formed by numbers 358 and 246, giving a sum of 604.
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [5, 3, 0, 7, 4]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 82
 ```
@@ -34,12 +38,14 @@ arr[] = [5, 3, 0, 7, 4]
 **Explanation:**  
 The minimum sum is formed by numbers 35 and 47, giving a sum of 82.
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [9, 4]
 ```
 
-**Output:**  
+**Output:**
+
 ```
 13
 ```
@@ -48,12 +54,14 @@ arr[] = [9, 4]
 The minimum sum is formed by numbers 9 and 4, giving a sum of 13.
 
 ### Constraints:
+
 - 1 ≤ arr.size() ≤ 10^6
 - 0 ≤ arr[i] ≤ 9
 
 ## My Approach
 
 1. **Sorting and Partitioning**:
+
    - Sort the array in ascending order to minimize the values formed by the two numbers.
    - Alternate the sorted digits between two numbers, `num1` and `num2`, to keep both as balanced as possible in terms of value.
    - Skip any leading zeros in `num1` or `num2` to avoid unnecessary padding.
@@ -76,13 +84,13 @@ public:
         sort(arr.begin(), arr.end());
         string num1, num2;
         bool toggle = true;
-        
+
         for (int i = 0; i < n; i++) {
             if (toggle) {
-                if (!(arr[i] == 0 && num1.empty())) 
+                if (!(arr[i] == 0 && num1.empty()))
                     num1 += to_string(arr[i]);
             } else {
-                if (!(arr[i] == 0 && num2.empty())) 
+                if (!(arr[i] == 0 && num2.empty()))
                     num2 += to_string(arr[i]);
             }
             toggle = !toggle;
@@ -98,7 +106,7 @@ private:
         int n1 = str1.size(), n2 = str2.size();
         int carry = 0;
         string result;
-        
+
         for (int i = 0; i < max(n1, n2) || carry; i++) {
             int digit1 = i < n1 ? str1[n1 - i - 1] - '0' : 0;
             int digit2 = i < n2 ? str2[n2 - i - 1] - '0' : 0;
@@ -106,7 +114,7 @@ private:
             result.push_back((sum % 10) + '0');
             carry = sum / 10;
         }
-        
+
         reverse(result.begin(), result.end());
         return result;
     }
@@ -205,7 +213,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

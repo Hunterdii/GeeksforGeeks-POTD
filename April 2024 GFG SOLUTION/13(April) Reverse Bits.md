@@ -9,22 +9,30 @@ Given a number \( x \), reverse its binary form and return the answer in decimal
 **Example 1:**
 
 Input:
+
 ```
 x = 1
 ```
+
 Output:
+
 ```
-2147483648 
+2147483648
 ```
+
 Explanation:
 Binary of 1 in 32 bits representation-
+
 ```
 00000000000000000000000000000001
 ```
-Reversing the binary form we get, 
+
+Reversing the binary form we get,
+
 ```
 10000000000000000000000000000000
 ```
+
 whose decimal value is 2147483648.
 
 ### My Approach
@@ -32,9 +40,11 @@ whose decimal value is 2147483648.
 To reverse the bits of a number, we can iterate through each bit of the number from right to left (least significant bit to most significant bit) and build the reversed number bit by bit.
 
 1. **Initialization:**
+
 - Initialize a variable `ans` to store the reversed bits. Initially, set it to 0.
 
 2. **Bit Reversal:**
+
 - Iterate from `i = 0` to `31` (assuming a 32-bit integer).
 - In each iteration:
   - Shift the `ans` left by 1 (multiply by 2) to make space for the next bit.
@@ -42,6 +52,7 @@ To reverse the bits of a number, we can iterate through each bit of the number f
   - Shift `x` right by 1 to process the next bit.
 
 3. **Return:**
+
 - Return the `ans` as the reversed binary form of `x` in decimal.
 
 ### Time and Auxiliary Space Complexity
@@ -67,7 +78,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

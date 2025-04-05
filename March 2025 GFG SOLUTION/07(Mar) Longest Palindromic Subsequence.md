@@ -1,8 +1,8 @@
-# *7. Longest Palindromic Subsequence*  
+# _7. Longest Palindromic Subsequence_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1)
 
-## **Problem Description**  
+## **Problem Description**
 
 Given a string `s`, return the length of the **longest palindromic subsequence**.
 
@@ -11,49 +11,59 @@ A **palindromic subsequence** reads the same forwards and backwards.
 
 ## **Examples**
 
-### **Example 1:**  
-#### **Input:**  
+### **Example 1:**
+
+#### **Input:**
+
 `s = "bbabcbcab"`
 
-#### **Output:**  
+#### **Output:**
+
 `7`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The longest palindromic subsequence is `"babcbab"`, which has a length of **7**.
 
+### **Example 2:**
 
-### **Example 2:**  
-#### **Input:**  
+#### **Input:**
+
 `s = "abcd"`
 
-#### **Output:**  
+#### **Output:**
+
 `1`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The longest palindromic subsequence is any single character, which has a length of **1**.
 
+### **Example 3:**
 
-### **Example 3:**  
-#### **Input:**  
+#### **Input:**
+
 `s = "agbdba"`
 
-#### **Output:**  
+#### **Output:**
+
 `5`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The longest palindromic subsequence is `"abdba"`, which has a length of **5**.
 
+### **Constraints:**
 
-### **Constraints:**  
 - $1 \leq s.size() \leq 1000$
 - The string contains only lowercase letters.
-
 
 ## **My Approach**
 
 ### **DP - Bottom-Up 2D Table**
 
 ### **Algorithm Steps:**
+
 1. Create a **2D DP table**, where `dp[i][j]` stores the **length of the longest palindromic subsequence** in substring `s[i...j]`.
 2. Initialize **diagonal elements (`dp[i][i]`) to 1**, since a single character is always a palindrome of length 1.
 3. Iterate over substrings of increasing lengths.
@@ -62,13 +72,11 @@ The longest palindromic subsequence is `"abdba"`, which has a length of **5**.
    - Otherwise, take the maximum palindromic subsequence length by either excluding `s[i]` or excluding `s[j]`.
 5. Final answer is stored in `dp[0][n-1]` — the longest palindromic subsequence in the entire string.
 
-
 ## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** $O(N^2)$, as we fill a 2D DP table for all substrings, and each cell is filled in constant time.
 
 - **Expected Auxiliary Space Complexity:** $O(N^2)$, for storing the DP table, which tracks the longest palindromic subsequence length for each substring.
-
 
 ## **Code (C++)**
 
@@ -81,9 +89,9 @@ public:
         for (int i = n - 1; i >= 0; i--) {
             dp[i][i] = 1;
             for (int j = i + 1; j < n; j++) {
-                if (s[i] == s[j]) 
+                if (s[i] == s[j])
                     dp[i][j] = 2 + dp[i + 1][j - 1];
-                else 
+                else
                     dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]);
             }
         }
@@ -92,13 +100,13 @@ public:
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
 ## **2️⃣ Space Optimized Dynamic Programming (O(N²) Time, O(N) Space)**
 
-### **Algorithm Steps:**  
+### **Algorithm Steps:**
+
 - We only need the **current and previous rows**, so the 2D table can be reduced to **two 1D arrays**.
 - Iterate over `i` (backwards) and `j` (forwards), and fill only the current row using the previous row.
 - This reduces space from **O(N²)** to **O(N)**.
@@ -111,9 +119,9 @@ public:
         vector<int> prev(n + 1, 0), curr(n + 1, 0);
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= n; ++j) {
-                if (s[i - 1] == s[n - j]) 
+                if (s[i - 1] == s[n - j])
                     curr[j] = 1 + prev[j - 1];
-                else 
+                else
                     curr[j] = max(prev[j], curr[j - 1]);
             }
             swap(prev, curr);
@@ -123,10 +131,10 @@ public:
 };
 ```
 
-
 ## **3️⃣ Recursive + Memoization (O(N²) Time, O(N²) Space)**
 
-### **Algorithm Steps:**  
+### **Algorithm Steps:**
+
 - Use **recursive DFS with memoization**.
 - If characters match, extend the palindrome.
 - Otherwise, check both possibilities (exclude either character).
@@ -139,7 +147,7 @@ public:
         if (i > j) return 0;
         if (i == j) return 1;
         if (dp[i][j] != -1) return dp[i][j];
-        if (s[i] == s[j]) 
+        if (s[i] == s[j])
             return dp[i][j] = 2 + helper(s, i + 1, j - 1, dp);
         return dp[i][j] = max(helper(s, i + 1, j, dp), helper(s, i, j - 1, dp));
     }
@@ -152,15 +160,13 @@ public:
 };
 ```
 
-
 ## 📊 **Comparison of Approaches**
 
-| **Approach**                        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                         | ⚠️ **Cons**                        |
-|-------------------------------------|----------------------|-------------------|------------------------------|------------------------------|
-| **2D DP Table**                     | 🟡 O(N²)              | 🔴 O(N²)            | Simple & intuitive             | High space usage              |
-| **Space Optimized 1D DP**           | 🟡 O(N²)              | 🟢 O(N)              | Lower space                    | Slightly trickier to implement |
-| **Recursive + Memoization**         | 🟡 O(N²)              | 🔴 O(N²)            | Natural recursive logic        | Recursion overhead             |
-
+| **Approach**                | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**             | ⚠️ **Cons**                    |
+| --------------------------- | ---------------------- | ----------------------- | ----------------------- | ------------------------------ |
+| **2D DP Table**             | 🟡 O(N²)               | 🔴 O(N²)                | Simple & intuitive      | High space usage               |
+| **Space Optimized 1D DP**   | 🟡 O(N²)               | 🟢 O(N)                 | Lower space             | Slightly trickier to implement |
+| **Recursive + Memoization** | 🟡 O(N²)               | 🔴 O(N²)                | Natural recursive logic | Recursion overhead             |
 
 ## 💡 **Best Choice?**
 
@@ -169,7 +175,6 @@ public:
 - ✅ **For recursive enthusiasts:** Use **Recursive + Memoization**.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -181,9 +186,9 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             dp[i][i] = 1;
             for (int j = i + 1; j < n; j++) {
-                if (s.charAt(i) == s.charAt(j)) 
+                if (s.charAt(i) == s.charAt(j))
                     dp[i][j] = 2 + dp[i + 1][j - 1];
-                else 
+                else
                     dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
             }
         }
@@ -191,7 +196,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **Code (Python)**
 
@@ -212,11 +216,11 @@ class Solution:
 
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

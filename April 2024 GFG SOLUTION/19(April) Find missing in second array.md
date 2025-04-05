@@ -9,28 +9,35 @@ Given two arrays `a` of size `n` and `b` of size `m`, the task is to find number
 **Example:**
 
 Input:
+
 ```
 n = 6, m = 5
 a[] = {1, 2, 3, 4, 5, 10}
 b[] = {2, 3, 1, 0, 5}
 ```
+
 Output:
+
 ```
 4 10
 ```
-Explanation: 
+
+Explanation:
 4 and 10 are present in the first array but not in the second array.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create an unordered set `s` from the elements of array `b`.
 
 2. **Finding Missing Elements:**
+
 - Iterate through array `a`.
 - For each element `a[i]`, check if it exists in set `s`. If not, add it to the `ans` vector.
 
 3. **Return:**
+
 - Return the `ans` vector containing the missing elements.
 
 ### Time and Auxiliary Space Complexity
@@ -46,13 +53,13 @@ public:
     std::vector<int> findMissing(int a[], int b[], int n, int m) {
         std::unordered_set<int> s(b, b + m);
         std::vector<int> ans;
-        
+
         for (int i = 0; i < n; ++i) {
             if (s.find(a[i]) == s.end()) {
                 ans.push_back(a[i]);
             }
         }
-        
+
         return ans;
     }
 };
@@ -60,7 +67,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

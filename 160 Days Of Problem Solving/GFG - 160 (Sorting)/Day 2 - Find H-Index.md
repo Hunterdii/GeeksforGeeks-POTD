@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Sorting
   - Arrays
@@ -8,11 +8,11 @@ Tags:
 
 # 🚀 _Day 2. Find H-Index_ 🧠
 
-The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/find-h-index--165609)  
+The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/find-h-index--165609)
 
 ## 💡 **Problem Description:**
 
-You are given an array of integers `citations[]`, where `citations[i]` is the number of citations a researcher received for the `i-th` paper. Your task is to find the H-Index of the researcher.  
+You are given an array of integers `citations[]`, where `citations[i]` is the number of citations a researcher received for the `i-th` paper. Your task is to find the H-Index of the researcher.
 
 H-Index is the largest value `H` such that the researcher has at least `H` papers that have been cited at least `H` times.
 
@@ -21,61 +21,51 @@ H-Index is the largest value `H` such that the researcher has at least `H` paper
 **Input:**  
 `citations[] = [3, 0, 5, 3, 0]`  
 **Output:**  
-`3`  
+`3`
 
 **Explanation:**  
-There are at least 3 papers (with 3, 5, and 3 citations) that have been cited at least 3 times.  
-
-
+There are at least 3 papers (with 3, 5, and 3 citations) that have been cited at least 3 times.
 
 **Input:**  
 `citations[] = [5, 1, 2, 4, 1]`  
 **Output:**  
-`2`  
+`2`
 
 **Explanation:**  
-There are at least 2 papers (with 5 and 4 citations) that have been cited at least 2 times.  
-
-
+There are at least 2 papers (with 5 and 4 citations) that have been cited at least 2 times.
 
 **Input:**  
 `citations[] = [0, 0]`  
 **Output:**  
-`0`  
+`0`
 
 **Explanation:**  
 No paper has been cited at least once.
 
-
-
 ### Constraints:
+
 - $`1 ≤ citations.size() ≤ 10^6`$
 - $`0 ≤ citations[i] ≤ 10^6`$
 
-
-
 ## 🎯 **My Approach:**
 
-1. **Bucket Sort Method:**  
+1. **Bucket Sort Method:**
+
    - We create an array `buckets[]` where `buckets[i]` stores the count of papers with exactly `i` citations.
    - If a paper has citations greater than or equal to the number of papers, it is counted in a special `buckets[n]`.
    - After building the bucket, we compute the cumulative count of papers with at least `i` citations to determine the H-Index.
 
-2. **Steps:**  
-   - Traverse the `citations[]` array to populate the `buckets[]`.  
-   - Traverse the `buckets[]` array from the back to compute the cumulative counts and find the H-Index.  
-   - This approach ensures a linear time complexity.  
+2. **Steps:**
+   - Traverse the `citations[]` array to populate the `buckets[]`.
+   - Traverse the `buckets[]` array from the back to compute the cumulative counts and find the H-Index.
+   - This approach ensures a linear time complexity.
 
-
-
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n), where `n` is the size of the `citations` array. We perform one traversal to populate the `buckets[]` and another traversal to compute the H-Index.
 - **Expected Auxiliary Space Complexity:** O(n), as we use an array of size `n+1` for the bucket sort.
 
-
 ## 📝 **Solution Code**
-
 
 ## Code (C)
 
@@ -101,8 +91,6 @@ int hIndex(int citations[], int citationsSize) {
 }
 ```
 
-
-
 ## Code (Cpp)
 
 ```cpp
@@ -113,9 +101,9 @@ public:
         vector<int> buckets(n + 1, 0);
 
         for (int c : citations) {
-            if (c >= n) 
+            if (c >= n)
                 buckets[n]++;
-            else 
+            else
                 buckets[c]++;
         }
 
@@ -129,8 +117,6 @@ public:
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -158,8 +144,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -182,11 +166,9 @@ class Solution:
         return 0
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -198,4 +180,4 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
-</p>  
+</p>

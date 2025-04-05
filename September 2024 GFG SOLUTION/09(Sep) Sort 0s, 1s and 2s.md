@@ -11,34 +11,45 @@ Given an array `arr` containing only `0`s, `1`s, and `2`s, sort the array in asc
 **Example:**
 
 Input:
+
 ```
 arr = [0, 2, 1, 2, 0]
 ```
+
 Output:
+
 ```
 0 0 1 2 2
 ```
+
 Explanation: `0`s, `1`s, and `2`s are segregated into ascending order.
 
 Input:
+
 ```
 arr = [0, 1, 0]
 ```
+
 Output:
+
 ```
 0 0 1
 ```
+
 Explanation: `0`s, `1`s, and `2`s are segregated into ascending order.
 
 ### My Approach
 
 1. **Three-Pointer Approach:**
+
    - Use three pointers `low`, `mid`, and `high` to partition the array into three segments: 0s, 1s, and 2s.
 
 2. **Initialization:**
+
    - `low` and `mid` pointers start at the beginning of the array, while the `high` pointer starts at the end of the array.
 
 3. **Partitioning:**
+
    - Iterate through the array using the `mid` pointer:
      - If `arr[mid]` is `0`, swap `arr[mid]` with `arr[low]`, increment both `low` and `mid`.
      - If `arr[mid]` is `1`, simply move the `mid` pointer forward.
@@ -65,11 +76,11 @@ public:
                 swap(arr[low], arr[mid]);
                 low++;
                 mid++;
-            } 
+            }
             else if (arr[mid] == 1) {
                 mid++;
-            } 
-            else {  
+            }
+            else {
                 swap(arr[mid], arr[high]);
                 high--;
             }
@@ -122,11 +133,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

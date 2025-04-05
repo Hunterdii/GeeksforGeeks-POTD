@@ -9,25 +9,30 @@ Given a sentence containing several words and numbers, find the largest number a
 **Examples:**
 
 Input:
+
 ```
 sentence = "This is alpha 5057 and 97"
 ```
+
 Output:
+
 ```
 5057
 ```
+
 Explanation:
 5057 is the only number that does not contain a 9.
-
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize `num` to -1 to keep track of the largest valid number.
    - Initialize `currentNum` to 0 for constructing numbers from the string.
    - Use boolean flags `validNum` and `hasDigit` to track if the current number is valid and if there are digits being processed.
 
 2. **Parsing the String:**
+
    - Iterate through each character in the sentence.
    - If the character is a digit:
      - Set `hasDigit` to true.
@@ -38,6 +43,7 @@ Explanation:
      - Reset `currentNum`, `validNum`, and `hasDigit` for the next potential number.
 
 3. **Final Check:**
+
    - After the loop, perform a final check to consider the last constructed number.
 
 4. **Return:**
@@ -128,22 +134,22 @@ import re
 class Solution:
     def ExtractNumber(self, sentence):
         numbers = re.findall(r'\d+', sentence)
-        
+
         answer = -1
         max_value = -1
-        
+
         for number in numbers:
             num_value = int(number)
             if '9' not in number and num_value > max_value:
                 answer = number
                 max_value = num_value
-        
+
         return answer
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

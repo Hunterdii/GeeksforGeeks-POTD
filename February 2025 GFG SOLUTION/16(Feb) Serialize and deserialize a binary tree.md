@@ -1,29 +1,31 @@
-# *16. Serialize and Deserialize a Binary Tree*  
+# _16. Serialize and Deserialize a Binary Tree_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1)
 
-## **Problem Description**  
+## **Problem Description**
 
 Serialization is the process of converting a **binary tree** into an **array** so it can be stored or transmitted efficiently.  
-Deserialization is the process of **reconstructing the tree** back from the serialized array.  
+Deserialization is the process of **reconstructing the tree** back from the serialized array.
 
-Your task is to **implement** the following functions:  
+Your task is to **implement** the following functions:
 
-1. **serialize()**: Stores the tree into an array and returns the array.  
-2. **deSerialize()**: Restores the tree from the array and returns the root.  
+1. **serialize()**: Stores the tree into an array and returns the array.
+2. **deSerialize()**: Restores the tree from the array and returns the root.
 
-**Note:**  
-- Multiple nodes can have the **same data values**.  
-- Node values are **always positive integers**.  
-- The **in-order traversal** of the tree returned by `deSerialize(serialize(root))` should match the in-order traversal of the input tree.  
+**Note:**
 
+- Multiple nodes can have the **same data values**.
+- Node values are **always positive integers**.
+- The **in-order traversal** of the tree returned by `deSerialize(serialize(root))` should match the in-order traversal of the input tree.
 
 ## **Examples**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
-Binary Tree:  
+#### **Input:**
+
+Binary Tree:
+
 ```
     1
    / \
@@ -32,67 +34,69 @@ Binary Tree:
 
 <img src="https://github.com/user-attachments/assets/595020dc-c2c6-491d-a6b6-c4aef40b2419" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
-Inorder Traversal of Deserialized Tree: `[2, 1, 3]`  
+Inorder Traversal of Deserialized Tree: `[2, 1, 3]`
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
-Binary Tree:  
+Binary Tree:
+
 ```
         10
        /  \
       20   30
-     /  \    
-    40  60   
+     /  \
+    40  60
 ```
 
 <img src="https://github.com/user-attachments/assets/266a65d7-34bb-4f49-a50c-d60ce22e5bf2" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
-Inorder Traversal of Deserialized Tree: `[40, 20, 60, 10, 30]`  
+Inorder Traversal of Deserialized Tree: `[40, 20, 60, 10, 30]`
 
+### **Constraints:**
 
-### **Constraints:**  
-- $\(1 \leq \text{Number of Nodes} \leq 10^4\)$  
-- $\(1 \leq \text{Data of a Node} \leq 10^9\)$  
+- $\(1 \leq \text{Number of Nodes} \leq 10^4\)$
+- $\(1 \leq \text{Data of a Node} \leq 10^9\)$
 
-
-## **My Approach**  
+## **My Approach**
 
 ### **Recursive Preorder Traversal**
-1. **Serialize:**  
-   - Perform **preorder traversal**.  
-   - Store each node’s value.  
-   - If a node is `NULL`, store `-1` to indicate missing nodes.  
 
-2. **Deserialize:**  
-   - Read values from the serialized list.  
-   - Construct nodes recursively.  
-   - When `-1` is encountered, return `NULL`.  
+1. **Serialize:**
 
-### **Algorithm Steps:**  
-1. **Serialization:**  
-   - Traverse the tree using **preorder** (Root → Left → Right).  
-   - Store `-1` for **NULL** nodes.  
-   - Append each node’s value to a list.  
+   - Perform **preorder traversal**.
+   - Store each node’s value.
+   - If a node is `NULL`, store `-1` to indicate missing nodes.
 
-2. **Deserialization:**  
-   - Read values one by one.  
-   - If a value is `-1`, return `NULL`.  
-   - Otherwise, create a new node and recursively set left and right children.  
+2. **Deserialize:**
+   - Read values from the serialized list.
+   - Construct nodes recursively.
+   - When `-1` is encountered, return `NULL`.
 
+### **Algorithm Steps:**
 
-## **Time and Auxiliary Space Complexity**  
+1. **Serialization:**
 
-- **Expected Time Complexity:** O(N), since we traverse each node once.  
-- **Expected Auxiliary Space Complexity:** O(N), due to storing the entire tree structure in a list.  
+   - Traverse the tree using **preorder** (Root → Left → Right).
+   - Store `-1` for **NULL** nodes.
+   - Append each node’s value to a list.
 
+2. **Deserialization:**
+   - Read values one by one.
+   - If a value is `-1`, return `NULL`.
+   - Otherwise, create a new node and recursively set left and right children.
 
-## **Code (C++)**  
+## **Time and Auxiliary Space Complexity**
+
+- **Expected Time Complexity:** O(N), since we traverse each node once.
+- **Expected Auxiliary Space Complexity:** O(N), due to storing the entire tree structure in a list.
+
+## **Code (C++)**
 
 ```cpp
 class Solution {
@@ -125,14 +129,14 @@ class Solution {
 };
 ```
 
-
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ## **2️⃣ Level Order Traversal (O(N) Time, O(N) Space)**
-1. Use **queue-based level order traversal** to **serialize** the tree.  
-2. Insert `-1` for `NULL` nodes.  
-3. For **deserialization**, reconstruct nodes **level by level** using a queue.  
+
+1. Use **queue-based level order traversal** to **serialize** the tree.
+2. Insert `-1` for `NULL` nodes.
+3. For **deserialization**, reconstruct nodes **level by level** using a queue.
 
 ```cpp
 class Solution {
@@ -180,25 +184,23 @@ public:
 
 🔹 **Uses level order traversal** instead of recursion.  
 🔹 **Handles large trees efficiently**.  
-🔹 **Better suited for balanced trees**.  
+🔹 **Better suited for balanced trees**.
 
+## **Comparison of Approaches**
 
-## **Comparison of Approaches**  
-
-| **Approach**            | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method**       | ✅ **Pros**                         | ⚠️ **Cons**                     |
-|-------------------------|----------------------|------------------------|-----------------|--------------------------------|-----------------------------|
-| **Recursive Preorder**  | 🟢 O(N)             | 🟡 O(N)                | Recursion       | Simple and easy to implement | High stack memory usage   |
-| **Level Order Queue**   | 🟢 O(N)             | 🟡 O(N)                | Queue-Based     | Efficient for large trees    | Requires extra queue space |
-
+| **Approach**           | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ⚡ **Method** | ✅ **Pros**                  | ⚠️ **Cons**                |
+| ---------------------- | ---------------------- | ----------------------- | ------------- | ---------------------------- | -------------------------- |
+| **Recursive Preorder** | 🟢 O(N)                | 🟡 O(N)                 | Recursion     | Simple and easy to implement | High stack memory usage    |
+| **Level Order Queue**  | 🟢 O(N)                | 🟡 O(N)                 | Queue-Based   | Efficient for large trees    | Requires extra queue space |
 
 ## 💡 **Best Choice?**
-- ✅ **For simplicity:** **Recursive Preorder**.  
-- ✅ **For large trees:** **Level Order Traversal (Queue-based)** avoids stack overflow.  
+
+- ✅ **For simplicity:** **Recursive Preorder**.
+- ✅ **For large trees:** **Level Order Traversal (Queue-based)** avoids stack overflow.
 
 </details>
 
-
-## **Code (Java)**  
+## **Code (Java)**
 
 ```java
 class Tree {
@@ -227,8 +229,7 @@ class Tree {
 }
 ```
 
-
-## **Code (Python)**  
+## **Code (Python)**
 
 ```python
 class Solution:
@@ -260,7 +261,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -9,32 +9,41 @@ Given a sorted dictionary of an alien language containing `N` words and `K` star
 **Example 1:**
 
 Input:
+
 ```
 n = 5, k = 4
 dict = {"baa","abcd","abca","cab","cad"}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: The order of characters is 'b', 'd', 'a', 'c'. Words are sorted, so "baa" comes before "abcd", indicating 'b' before 'a'.
 
 **Example 2:**
 
 Input:
+
 ```
 n = 3, k = 3
 dict = {"caa","aaa","aab"}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: The order of characters is 'c', 'a', 'b'. Words are sorted, so "caa" comes before "aaa", indicating 'c' before 'a'.
 
 ### My Approach
 
 1. **Graph Construction:**
+
    - Compare adjacent words in the dictionary to determine the first mismatched character, which indicates the order.
    - Build a directed graph where each character points to the character that comes after it.
 
@@ -44,7 +53,7 @@ Explanation: The order of characters is 'c', 'a', 'b'. Words are sorted, so "caa
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * |s| + k), where `n` is the number of words, `|s|` is the average length of the words, and `k` is the number of unique characters.
+- **Expected Time Complexity:** O(n \* |s| + k), where `n` is the number of words, `|s|` is the average length of the words, and `k` is the number of unique characters.
 - **Expected Auxiliary Space Complexity:** O(k), as we are storing a graph with `k` nodes and additional space for recursion stack during DFS.
 
 ### Code (C++)
@@ -155,18 +164,18 @@ class Solution:
         adj = [[] for _ in range(k)]
         for i in range(1, n):
             self.buildGraph(adj, dict[i - 1], dict[i])
-        
+
         visited = [False] * k
         st = []
         for i in range(k):
             if not visited[i]:
                 self.topologicalSort(i, adj, visited, st)
-        
+
         order = ""
         while st:
             order += chr(st.pop() + ord('a'))
         return order
-    
+
     def buildGraph(self, adj: List[List[int]], str1: str, str2: str) -> None:
         len_ = min(len(str1), len(str2))
         for i in range(len_):
@@ -184,7 +193,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

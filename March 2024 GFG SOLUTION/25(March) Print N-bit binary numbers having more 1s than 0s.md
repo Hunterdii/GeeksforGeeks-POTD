@@ -9,22 +9,28 @@ Given a positive integer \( n \), generate a list of all \( n \)-bit binary numb
 **Example:**
 
 Input:
+
 ```
 n = 2
 ```
+
 Output:
+
 ```
 "11, 10"
 ```
+
 Explanation:
 Valid numbers are those where each prefix has more 1s than 0s:
+
 - 11: all its prefixes (1 and 11) have more 1s than 0s.
 - 10: all its prefixes (1 and 10) have more 1s than 0s.
-So, the output is "11, 10".
+  So, the output is "11, 10".
 
-### My Approach 
+### My Approach
 
 1. **Initialization:**
+
    - Initialize an empty vector `result` to store the generated binary numbers.
 
 2. **Backtracking:**
@@ -33,7 +39,6 @@ So, the output is "11, 10".
    - If `n` becomes 0, push the current output string to the `result`.
    - If `on` equals `ze`, then it's mandatory to append '1' to the output string and recursively call `util` with `on + 1`, `ze`, and `n - 1`.
    - If `on` is greater than `ze`, then we have two choices: either append '1' or '0' to the output string.
-   
 3. **Return:**
    - Return the vector `result` containing the \( n \)-bit binary numbers.
 
@@ -46,13 +51,13 @@ So, the output is "11, 10".
 
 ```cpp
 class Solution{
-public:	
+public:
     vector<string> NBitBinary(int n)
     {
         vector<string> result;
         string out = "";
         int on = 0, ze = 0;
-        
+
         function<void(string,int,int,int)> util = [&](string out, int on, int ze, int n) {
             if (n == 0) {
                 result.push_back(out);
@@ -66,7 +71,7 @@ public:
                 util(out + "0", on, ze + 1, n - 1);
             }
         };
-        
+
         util(out, on, ze, n);
         return result;
     }
@@ -75,7 +80,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

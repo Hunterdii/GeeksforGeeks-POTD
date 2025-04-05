@@ -4,31 +4,36 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ### Problem Description
 
-You are given a binary tree, and you need to remove all the half nodes (nodes with only one child). Return the root node of the modified tree after removing all the half nodes. 
+You are given a binary tree, and you need to remove all the half nodes (nodes with only one child). Return the root node of the modified tree after removing all the half nodes.
 
 **Example:**
 
 Input:
+
 ```
 tree = 5
        / \
       7   8
-     / 
+     /
     2
 ```
+
 Output:
+
 ```
 2 5 8
 ```
-Explanation: In the above tree, the node 7 has only a single child. After removing the node, the tree becomes 2<-5->8. Hence, the answer is 2 5 8 in inorder traversal.
 
+Explanation: In the above tree, the node 7 has only a single child. After removing the node, the tree becomes 2<-5->8. Hence, the answer is 2 5 8 in inorder traversal.
 
 ### My Approach
 
 1. **Base Case:**
+
    - If the current node is `nullptr`, return `nullptr`.
 
 2. **Recursive Case:**
+
    - Recursively call `RemoveHalfNodes` on the left and right children.
    - Update the left and right children of the current node with the results from the recursive calls.
 
@@ -58,12 +63,12 @@ public:
 
         if (root->left == nullptr) {
             Node* new_root = root->right;
-            delete root; 
+            delete root;
             return new_root;
         }
         if (root->right == nullptr) {
             Node* new_root = root->left;
-            delete root; 
+            delete root;
             return new_root;
         }
 
@@ -132,7 +137,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

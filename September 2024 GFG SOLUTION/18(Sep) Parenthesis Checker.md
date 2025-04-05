@@ -21,9 +21,11 @@ Explanation: The square bracket is opened but closed in the wrong order, making 
 ### My Approach
 
 1. **Stack Data Structure:**
+
    - Utilize a stack to keep track of opening brackets. Whenever we encounter a closing bracket, we check the stack to ensure that it matches the latest opening bracket.
 
 2. **Bracket Matching Logic:**
+
    - For each character in the string:
      - If it’s an opening bracket (`{`, `(`, `[`), push it onto the stack.
      - If it’s a closing bracket (`}`, `)`, `]`), check if the stack is empty. If it is, return `false` because there’s no corresponding opening bracket.
@@ -76,7 +78,7 @@ public:
 class Solution {
     static boolean ispar(String x) {
         Stack<Character> s = new Stack<>();
-        
+
         for (char c : x.toCharArray()) {
             switch(c) {
                 case '(': case '{': case '[':
@@ -104,7 +106,7 @@ class Solution {
 class Solution:
     def ispar(self, x):
         stack = []
-        
+
         for c in x:
             if c in "({[":
                 stack.append(c)
@@ -123,7 +125,7 @@ class Solution:
 
 ### Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

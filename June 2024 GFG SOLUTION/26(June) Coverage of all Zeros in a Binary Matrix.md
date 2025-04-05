@@ -9,12 +9,15 @@ Given a binary matrix having `n` rows and `m` columns, your task is to find the 
 **Examples:**
 
 Input:
+
 ```
 matrix = [[0, 1, 0],
-          [0, 1, 1], 
+          [0, 1, 1],
           [0, 0, 0]]
 ```
+
 Output:
+
 ```
 6
 ```
@@ -22,21 +25,25 @@ Output:
 ### My Approach
 
 1. **Initialization:**
+
 - Initialize a variable `cnt` to 0 to keep track of the sum of the coverage of all zeros.
 
 2. **Checking Coverage:**
+
 - Define a helper function `checkAndCount(i, j)` to check the presence of 1s around the cell at position `(i, j)`. The function will increment `cnt` for each 1 found to the left, right, above, or below the zero.
 
 3. **Iterating Over the Matrix:**
+
 - Iterate over each element in the matrix using nested loops.
 - If the current element is 0, call the helper function to check its coverage.
 
 4. **Return:**
+
 - Return the final count `cnt` which represents the total coverage of all zeros in the matrix.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), as we iterate through each element of the matrix.
+- **Expected Time Complexity:** O(n \* m), as we iterate through each element of the matrix.
 - **Expected Auxiliary Space Complexity:** O(1), as we use only a constant amount of additional space.
 
 ### Code (C++)
@@ -47,7 +54,7 @@ public:
     int FindCoverage(vector<vector<int>>& mat) {
         int cnt = 0;
         int m = mat.size(), n = mat[0].size();
-        
+
         auto checkAndCount = [&](int i, int j) {
             if (j < n - 1 && mat[i][j + 1] == 1) ++cnt; // Right
             if (j > 0 && mat[i][j - 1] == 1) ++cnt; // Left
@@ -75,7 +82,7 @@ class Solution {
     public int FindCoverage(int[][] matrix) {
         int cnt = 0;
         int m = matrix.length, n = matrix[0].length;
-        
+
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (matrix[i][j] == 0) {
@@ -98,7 +105,7 @@ class Solution:
     def FindCoverage(self, matrix):
         cnt = 0
         m, n = len(matrix), len(matrix[0])
-        
+
         for i in range(m):
             for j in range(n):
                 if matrix[i][j] == 0:
@@ -110,13 +117,13 @@ class Solution:
                         cnt += 1  # Down
                     if i > 0 and matrix[i - 1][j] == 1:
                         cnt += 1  # Up
-        
+
         return cnt
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

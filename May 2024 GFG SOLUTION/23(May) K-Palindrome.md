@@ -9,6 +9,7 @@ Given a string `str` of length `n`, determine if the string is a K-Palindrome. A
 **Examples:**
 
 Example 1:
+
 ```
 Input:
 str = "abcdecba"
@@ -18,6 +19,7 @@ Explanation: By removing 'd' or 'e' we can make it a palindrome.
 ```
 
 Example 2:
+
 ```
 Input:
 str = "abcdefcba"
@@ -29,9 +31,11 @@ Explanation: By removing a single character we cannot make it a palindrome.
 ### My Approach
 
 1. **Initialization:**
+
    - Create two vectors `prev` and `curr` of size `n+1` initialized to 0, which will help store the length of the longest palindromic subsequence (LPS) dynamically.
 
 2. **Dynamic Programming Table Calculation:**
+
    - Iterate through the string with two nested loops to fill the `curr` vector based on the previous results stored in `prev`.
    - If characters `str[i-1]` and `str[n-j]` are the same, update `curr[j]` to `prev[j-1] + 1`.
    - Otherwise, set `curr[j]` to the maximum of `prev[j]` and `curr[j-1]`.
@@ -44,8 +48,9 @@ Explanation: By removing a single character we cannot make it a palindrome.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n*n), as we iterate through the string with two nested loops up to length `n`.
+- **Expected Time Complexity:** O(n\*n), as we iterate through the string with two nested loops up to length `n`.
 - **Expected Auxiliary Space Complexity:** O(n), as we use two vectors of size `n+1` for storing intermediate results.
+
 ## Code
 
 #### C++
@@ -55,7 +60,7 @@ class Solution {
 public:
     int kPalindrome(string str, int n, int k) {
         vector<int> prev(n + 1, 0), curr(n + 1, 0);
-        
+
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= n; ++j) {
                 if (str[i - 1] == str[n - j]) {
@@ -66,7 +71,7 @@ public:
             }
             swap(prev, curr);
         }
-        
+
         int lps = prev[n];
         int minDeletions = n - lps;
         return minDeletions <= k ? 1 : 0;
@@ -81,7 +86,7 @@ class Solution {
     public int kPalindrome(String str, int n, int k) {
         int[] prev = new int[n + 1];
         int[] curr = new int[n + 1];
-        
+
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= n; ++j) {
                 if (str.charAt(i - 1) == str.charAt(n - j)) {
@@ -94,7 +99,7 @@ class Solution {
             prev = curr;
             curr = temp;
         }
-        
+
         int lps = prev[n];
         int minDeletions = n - lps;
         return minDeletions <= k ? 1 : 0;
@@ -109,7 +114,7 @@ class Solution:
     def kPalindrome(self, str, n, k):
         prev = [0] * (n + 1)
         curr = [0] * (n + 1)
-        
+
         for i in range(1, n + 1):
             for j in range(1, n + 1):
                 if str[i - 1] == str[n - j]:
@@ -117,7 +122,7 @@ class Solution:
                 else:
                     curr[j] = max(prev[j], curr[j - 1])
             prev, curr = curr, prev
-        
+
         lps = prev[n]
         minDeletions = n - lps
         return 1 if minDeletions <= k else 0
@@ -125,7 +130,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

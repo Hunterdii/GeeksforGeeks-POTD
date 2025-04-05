@@ -1,5 +1,4 @@
-
-# *30. Pairs with Difference k*
+# _30. Pairs with Difference k_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/pairs-with-difference-k1713/1)
 
@@ -10,41 +9,50 @@ Given an array `arr[]` of positive integers, find the number of pairs of integer
 **Example:**
 
 Input:
+
 ```plaintext
 arr = [1, 5, 3, 4, 2]
 k = 3
 ```
+
 Output:
+
 ```plaintext
 2
 ```
+
 Explanation: There are 2 pairs with difference 3, namely {1, 4} and {5, 2}.
 
-
 Input:
+
 ```plaintext
 arr = [8, 12, 16, 4, 0, 20]
 k = 4
 ```
+
 Output:
+
 ```plaintext
 5
 ```
+
 Explanation: There are 5 pairs with difference 4: {0, 4}, {4, 8}, {8, 12}, {12, 16}, and {16, 20}.
 
 ## Constraint
 
 - (1 leq text{arr.size()} leq 10^6)
 - (1 leq k leq 10^6)
-- (1 leq text{arr[i]} leq 10^6) 
+- (1 leq text{arr[i]} leq 10^6)
 
 ## My Approach
 
 1. **Hashing for Efficient Lookup:**
+
    - Use an unordered set (or hash set) to store unique elements of `arr`.
    - This allows \(O(1)\) time complexity for searching whether an element plus the difference `k` exists in the set.
 
 2. **Counting Pairs with Difference `k`:**
+
    - Iterate through each unique element in the set.
    - For each element `x`, check if `x + k` exists in the set.
    - If `x + k` exists, calculate the occurrences of `x` and `x + k` in `arr`, and add their product to the total count.
@@ -63,12 +71,12 @@ Explanation: There are 5 pairs with difference 4: {0, 4}, {4, 8}, {8, 12}, {12, 
 class Solution {
 public:
     int countPairsWithDiffK(vector<int>& arr, int k) {
-        unordered_set<int> numSet(arr.begin(), arr.end()); 
+        unordered_set<int> numSet(arr.begin(), arr.end());
         int count = 0;
 
         for (int x : numSet) {
             if (numSet.find(x + k) != numSet.end()) {
-                count += count_if(arr.begin(), arr.end(), [x](int n){ return n == x; }) * 
+                count += count_if(arr.begin(), arr.end(), [x](int n){ return n == x; }) *
                          count_if(arr.begin(), arr.end(), [x, k](int n){ return n == x + k; });
             }
         }
@@ -117,20 +125,17 @@ class Solution:
         for x in num_set:
             if (x + k) in num_set:
                 count += arr.count(x) * arr.count(x + k)
-                
+
         return count
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
-
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

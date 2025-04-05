@@ -1,4 +1,4 @@
-# *08. Minimum Repeats to Make Substring*
+# _08. Minimum Repeats to Make Substring_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/minimum-times-a-has-to-be-repeated-such-that-b-is-a-substring-of-it--170645/1)
 
@@ -9,36 +9,49 @@ Given two strings `s1` and `s2`, return the minimum number of times `s1` has to 
 ### Examples:
 
 **Input:**
+
 ```
 s1 = "ww", s2 = "www"
 ```
+
 **Output:**
+
 ```
 2
 ```
+
 **Explanation:** Repeating `s1` two times ("wwww"), `s2` is a substring of it.
 
 **Input:**
+
 ```
 s1 = "abcd", s2 = "cdabcdab"
 ```
+
 **Output:**
+
 ```
 3
 ```
+
 **Explanation:** Repeating `s1` three times ("abcdabcdabcd"), `s2` is a substring. Less than 3 repeats would not contain `s2`.
 
 **Input:**
+
 ```
 s1 = "ab", s2 = "cab"
 ```
+
 **Output:**
+
 ```
 -1
 ```
+
 **Explanation:** No matter how many times `s1` is repeated, `s2` can’t be a substring.
 
 ### Constraints:
+
 1 ≤ |s1|, |s2| ≤ 10^5
 
 ## My Approach
@@ -47,8 +60,8 @@ s1 = "ab", s2 = "cab"
    - Initialize a repeated version of `s1` and keep appending `s1` to it until its length meets or exceeds `s2`’s length.
    - After each append, check if `s2` becomes a substring of this extended `s1`.
    - If it does, return the number of repetitions used.
-   
 2. **Pattern Matching with KMP Algorithm:**
+
    - Use the KMP (Knuth-Morris-Pratt) algorithm to efficiently search for `s2` within the extended repeated string of `s1`.
    - The `LPS` (Longest Prefix Suffix) array is computed for `s2` to enable efficient substring search.
 
@@ -88,7 +101,6 @@ public:
     }
 };
 ```
-
 
 ## Code (Java)
 
@@ -197,10 +209,9 @@ class Solution:
         return -1
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -213,4 +224,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-

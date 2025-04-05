@@ -11,6 +11,7 @@ Given a Binary Tree, complete the function to populate the next pointer for all 
 **Examples:**
 
 Input:
+
 ```
        10
        /  \
@@ -18,18 +19,23 @@ Input:
      /
     3
 ```
+
 Output:
+
 ```
 3->8 8->10 10->12 12->-1
 ```
+
 Explanation: The inorder of the above tree is: 3 8 10 12. So the next pointer of node 3 is pointing to 8, next pointer of 8 is pointing to 10, and so on. And next pointer of 12 is pointing to -1 as there is no inorder successor of 12.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize a pointer `prev` as `None`. This pointer will keep track of the previous node visited during the in-order traversal.
 
 2. **Inorder Traversal:**
+
    - Perform an in-order traversal of the tree.
    - During the traversal, update the `next` pointer of the `prev` node to point to the current node.
    - Update `prev` to the current node.
@@ -110,7 +116,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

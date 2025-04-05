@@ -1,4 +1,4 @@
-# *21. Clone a Linked List with Next and Random Pointer*
+# _21. Clone a Linked List with Next and Random Pointer_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1)
 
@@ -20,9 +20,11 @@ Explanation: The copied list will have the same random pointers as the original 
 ### My Approach
 
 1. **Step 1: Clone Nodes:**
+
    - Traverse the original list, and for each node, create a clone of it. Insert each clone between the original node and its next node.
 
 2. **Step 2: Assign Random Pointers:**
+
    - Traverse the list again and assign the correct `random` pointers for each clone node. The random pointer for a cloned node will be the original node's `random.next` node.
 
 3. **Step 3: Separate the Cloned List:**
@@ -43,34 +45,34 @@ public:
 
         Node *t = head;
         while (t != NULL) {
-            Node *clone = new Node(t->data);  
-            clone->next = t->next;  
-            t->next = clone;        
-            t = clone->next;        
+            Node *clone = new Node(t->data);
+            clone->next = t->next;
+            t->next = clone;
+            t = clone->next;
         }
 
         t = head;
         while (t != NULL) {
             if (t->random != NULL) {
-                t->next->random = t->random->next; 
+                t->next->random = t->random->next;
             }
-            t = t->next->next; 
+            t = t->next->next;
         }
 
         t = head;
-        Node *head2 = head->next; 
+        Node *head2 = head->next;
         Node *clone = head2;
 
         while (t != NULL) {
-            t->next = t->next->next;    
+            t->next = t->next->next;
             if (clone->next != NULL) {
-                clone->next = clone->next->next;  
+                clone->next = clone->next->next;
             }
-            t = t->next;        
-            clone = clone->next; 
+            t = t->next;
+            clone = clone->next;
         }
 
-        return head2;  
+        return head2;
     }
 };
 ```
@@ -86,34 +88,34 @@ class Solution {
 
         Node t = head;
         while (t != null) {
-            Node clone = new Node(t.data);  
-            clone.next = t.next;  
-            t.next = clone;       
-            t = clone.next;       
+            Node clone = new Node(t.data);
+            clone.next = t.next;
+            t.next = clone;
+            t = clone.next;
         }
 
         t = head;
         while (t != null) {
             if (t.random != null) {
-                t.next.random = t.random.next; 
+                t.next.random = t.random.next;
             }
-            t = t.next.next; 
+            t = t.next.next;
         }
 
         t = head;
-        Node head2 = head.next; 
+        Node head2 = head.next;
         Node clone = head2;
 
         while (t != null) {
-            t.next = t.next.next;    
+            t.next = t.next.next;
             if (clone.next != null) {
-                clone.next = clone.next.next;  
+                clone.next = clone.next.next;
             }
-            t = t.next;        
-            clone = clone.next; 
+            t = t.next;
+            clone = clone.next;
         }
 
-        return head2;  
+        return head2;
     }
 }
 ```
@@ -128,38 +130,39 @@ class Solution:
 
         t = head
         while t is not None:
-            clone = Node(t.data)  
-            clone.next = t.next   
-            t.next = clone        
-            t = clone.next        
+            clone = Node(t.data)
+            clone.next = t.next
+            t.next = clone
+            t = clone.next
 
         t = head
         while t is not None:
             if t.random is not None:
-                t.next.random = t.random.next  
-            t = t.next.next  
+                t.next.random = t.random.next
+            t = t.next.next
 
         t = head
-        head2 = head.next  
+        head2 = head.next
         clone = head2
 
         while t is not None:
-            t.next = t.next.next  
+            t.next = t.next.next
             if clone.next is not None:
-                clone.next = clone.next.next  
-            t = t.next  
-            clone = clone.next  
+                clone.next = clone.next.next
+            t = t.next
+            clone = clone.next
 
-        return head2      
+        return head2
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Your input is valuable for improving the content, and together we can foster a community of learning.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Your input is valuable for improving the content, and together we can foster a community of learning.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

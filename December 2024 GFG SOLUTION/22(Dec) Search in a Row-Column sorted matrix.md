@@ -1,4 +1,5 @@
-# *22. Search in a Row-Column Sorted Matrix*  
+# _22. Search in a Row-Column Sorted Matrix_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/search-in-a-matrix17201720/1)
 
 ## Problem Description
@@ -32,13 +33,15 @@ Given a 2D integer matrix `mat[][]` of size `n x m`, where every row and column 
 3 is present in the matrix.
 
 ### Constraints:
+
 - `1 <= n, m <= 1000`
 - $`1 <= mat[i][j] <= 10^9`$
 - $`1<= x <= 10^9`$
 
 ## My Approach
 
-1. **Search in Sorted Matrix**:  
+1. **Search in Sorted Matrix**:
+
    - The matrix is sorted both row-wise and column-wise, meaning the smallest element is at the top-left and the largest is at the bottom-right.
    - The key observation is that you can eliminate either a row or a column at each step depending on the value of `x`.
    - Start from the top-right corner of the matrix:
@@ -47,7 +50,7 @@ Given a 2D integer matrix `mat[][]` of size `n x m`, where every row and column 
      - If the current element is less than `x`, move down (increase the row index).
    - This approach takes advantage of the sorted property to reduce the search space efficiently.
 
-2. **Steps:**  
+2. **Steps:**
    - Initialize a pointer at the top-right corner of the matrix.
    - Traverse the matrix by comparing the current element with `x` and adjust the row or column pointer based on the comparison.
    - If you find `x`, return `true`; otherwise, continue until you exhaust the matrix.
@@ -56,7 +59,6 @@ Given a 2D integer matrix `mat[][]` of size `n x m`, where every row and column 
 
 - **Expected Time Complexity:** O(n + m), where `n` is the number of rows and `m` is the number of columns in the matrix. We make at most `n + m` steps (moving either left or down).
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of extra space for the row and column pointers.
-
 
 ## Code (Cpp)
 
@@ -106,7 +108,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

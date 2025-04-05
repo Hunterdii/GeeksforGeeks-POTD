@@ -1,4 +1,4 @@
-# *19. Reverse Words*
+# _19. Reverse Words_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1)
 
@@ -8,7 +8,7 @@ Given a string `str`, reverse the string without reversing its individual words.
 
 **Note:** The last character is not a dot.
 
-*Examples:*
+_Examples:_
 
 Input:  
 `str = "i.like.this.program.very.much"`  
@@ -27,6 +27,7 @@ Explanation: After reversing the whole string, the input string becomes `"mno.pq
 ### My Approach
 
 1. **Iterate Backwards:**
+
    - Traverse the string from the last character to the first.
    - Every time a dot (`.`) is encountered, extract the word from the position after the dot to the current position and append it to the result string.
    - Continue this process until all words are appended in reverse order.
@@ -52,7 +53,7 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             if (str[i] == '.') {
                 result.append(str.substr(i + 1, end - i)).append(".");
-                end = i - 1; 
+                end = i - 1;
             }
         }
         result.append(str.substr(0, end + 1));
@@ -74,7 +75,7 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             if (str.charAt(i) == '.') {
                 result.append(str.substring(i + 1, end + 1)).append(".");
-                end = i - 1; 
+                end = i - 1;
             }
         }
         result.append(str.substring(0, end + 1));
@@ -105,11 +106,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

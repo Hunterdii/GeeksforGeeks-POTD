@@ -9,43 +9,53 @@ A Toeplitz (or diagonal-constant) matrix is a matrix in which each descending di
 **Example:**
 
 Input:
+
 ```
 mat = [[6, 7, 8],
        [4, 6, 7],
        [1, 4, 6]]
 ```
+
 Output: 1
 
 Explanation:
 The test case represents a 3x3 matrix:
+
 ```
-6 7 8 
-4 6 7 
+6 7 8
+4 6 7
 1 4 6
 ```
+
 Output: 1 (True) as values in all downward diagonals from left to right contain the same elements.
 
 Input:
+
 ```
 mat = [[1, 2, 3],
        [4, 5, 6]]
 ```
+
 Output: 0
 
 Explanation:
 Matrix of order 2x3:
+
 ```
-1 2 3 
+1 2 3
 4 5 6
 ```
+
 Output: 0 (False) as values in all diagonals are different.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create a map to store the first element of each diagonal. The key will be the difference between the row and column indices (`i - j`).
 
 2. **Matrix Traversal:**
+
 - Iterate through each element in the matrix.
 - Calculate the diagonal key as `i - j`.
 - Check if the key already exists in the map.
@@ -53,11 +63,12 @@ Output: 0 (False) as values in all diagonals are different.
   - If it doesn't exist, store the current element in the map with the diagonal key.
 
 3. **Return:**
+
 - Return 1 if all diagonals have constant values, otherwise return 0.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), as we iterate through each matrix element.
+- **Expected Time Complexity:** O(n \* m), as we iterate through each matrix element.
 - **Expected Auxiliary Space Complexity:** O(n + m), where `n` is the number of rows and `m` is the number of columns, for storing the diagonals in the map.
 
 ### Code
@@ -68,7 +79,7 @@ Output: 0 (False) as values in all diagonals are different.
 bool isToeplitz(vector<vector<int>>& mat) {
         unordered_map<int, int> mp;
         int m = mat.size(), n = mat[0].size();
-        
+
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 int diff = i - j;
@@ -80,7 +91,7 @@ bool isToeplitz(vector<vector<int>>& mat) {
                 }
             }
         }
-        
+
         return true;
 }
 ```
@@ -92,7 +103,7 @@ class GfG {
     boolean isToeplitz(int mat[][]) {
         Map<Integer, Integer> map = new HashMap<>();
         int m = mat.length, n = mat[0].length;
-        
+
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 int diff = i - j;
@@ -104,7 +115,7 @@ class GfG {
                 }
             }
         }
-        
+
         return true;
     }
 }
@@ -116,7 +127,7 @@ class GfG {
 def isToeplitz(mat):
     mp = {}
     m, n = len(mat), len(mat[0])
-    
+
     for i in range(m):
         for j in range(n):
             diff = i - j
@@ -125,13 +136,13 @@ def isToeplitz(mat):
                     return False
             else:
                 mp[diff] = mat[i][j]
-    
+
     return True
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

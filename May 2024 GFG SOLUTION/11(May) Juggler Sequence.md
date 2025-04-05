@@ -8,30 +8,37 @@ Given a number \(n\), find the Juggler Sequence for this number as the first ter
 
 **Example:**
 Input:
+
 ```
 n = 9
 ```
+
 Output:
+
 ```
 9 27 140 11 36 6 2 1
 ```
+
 Explanation:
 We start with 9 and use the Juggler Formula to generate the next terms until the sequence becomes 1.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create a vector `ans` to store the Juggler Sequence.
 - Push the initial term \(n\) into the vector.
 
 2. **Sequence Generation:**
+
 - Iterate until the last term of the sequence becomes 1.
-- Calculate the next term of the sequence using the Juggler Formula: 
+- Calculate the next term of the sequence using the Juggler Formula:
   - If the current term is even, the next term is \(\sqrt{\text{current term}}\).
   - If the current term is odd, the next term is \(\sqrt{\text{current term}}^3\).
 - Push the next term into the vector.
 
 3. **Return:**
+
 - Return the vector `ans` containing the Juggler Sequence.
 
 ### Time and Auxiliary Space Complexity
@@ -64,7 +71,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

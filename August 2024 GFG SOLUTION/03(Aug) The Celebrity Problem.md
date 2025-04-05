@@ -11,29 +11,36 @@ Note: Follow 0-based indexing.
 **Example:**
 
 Input:
+
 ```
 mat = [[0, 1, 0],
-       [0, 0, 0], 
+       [0, 0, 0],
        [0, 1, 0]]
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 0th and 2nd person both know 1. Therefore, 1 is the celebrity.
 
 ### My Approach
 
 1. **Finding the Potential Celebrity:**
+
 - Initialize the `potential_celebrity` to 0.
 - Iterate through the matrix. If `mat[potential_celebrity][i]` is 1, it means the current `potential_celebrity` knows `i`, so update `potential_celebrity` to `i`.
 
 2. **Validating the Potential Celebrity:**
+
 - Iterate through the matrix again to confirm that the `potential_celebrity` doesn't know anyone and everyone knows the `potential_celebrity`.
 - If any person doesn't know the `potential_celebrity` or the `potential_celebrity` knows someone, return -1.
 
 3. **Return:**
+
 - Return the `potential_celebrity` if they are confirmed as the celebrity; otherwise, return -1.
 
 ### Time and Auxiliary Space Complexity
@@ -110,7 +117,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

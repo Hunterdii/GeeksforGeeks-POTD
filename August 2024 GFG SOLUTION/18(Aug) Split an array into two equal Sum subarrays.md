@@ -9,28 +9,37 @@ Given an array of integers `arr`, determine if it is possible to split the array
 **Examples:**
 
 Input:
+
 ```
 arr = [1, 2, 3, 4, 5, 5]
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation: The array can be split into two subarrays `[1, 2, 3, 4]` and `[5, 5]` both with a sum of 10.
 
 Input:
+
 ```
 arr = [4, 3, 2, 1]
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation: The array cannot be split into two subarrays with equal sum.
 
 ### My Approach
 
 1. **Initial Sum Calculation:**
+
    - Calculate the total sum of the array. This will be used to determine if a valid split is possible.
 
 2. **Iterating from the End:**
@@ -108,7 +117,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

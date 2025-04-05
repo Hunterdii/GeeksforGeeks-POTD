@@ -1,35 +1,32 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Linked-List
 ---
 
 # 🚀 _Day 5. Add Number Linked Lists_ 🧠
 
-
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/linked-list-gfg-160/problem/add-two-numbers-represented-by-linked-lists)
-
-
 
 ## 💡 **Problem Description:**
 
 You are given the head of two singly linked lists `num1` and `num2`, which represent two non-negative integers. The digits are stored in reverse order, and each node contains a single digit. Return the head of the linked list representing the sum of these two numbers.
 
 ### **Note:**
+
 - There can be leading zeros in the input lists.
 - The output list should not contain leading zeros.
-
-
 
 ## 🔍 **Example Walkthrough:**
 
 #### **Example 1:**
+
 Input:  
 `num1 = 4 -> 5`,  
 `num2 = 3 -> 4 -> 5`  
 Output:  
-`3 -> 9 -> 0` 
+`3 -> 9 -> 0`
 
 ![image](https://github.com/user-attachments/assets/cda1862f-a116-4e5e-bbe0-1a4826b5c9ab)
 
@@ -37,11 +34,12 @@ Output:
 The given numbers are `45` and `345`. Their sum is `390`.
 
 #### **Example 2:**
+
 Input:  
 `num1 = 0 -> 0 -> 6 -> 3`,  
 `num2 = 0 -> 7`  
 Output:  
-`7 -> 0`  
+`7 -> 0`
 
 ![image](https://github.com/user-attachments/assets/192b5c6c-1a45-40d7-8387-bc771a9a04a4)
 
@@ -49,40 +47,40 @@ Output:
 The given numbers are `63` and `7`. Their sum is `70`.
 
 ### Constraints:
+
 - 1 <= size of both linked lists <= $10^6$
 - 0 <= elements of both linked lists <= 9
-
 
 ## 🎯 **My Approach:**
 
 To solve this problem, we use the following steps:
 
 1. **Reverse the Input Lists:**
+
    - Since the input numbers are stored in reverse order, reverse both linked lists to process them in their natural order.
    - Use a helper function `reverse()` for this purpose.
 
 2. **Iterative Addition:**
+
    - Traverse both linked lists simultaneously, summing their values along with a `carry`.
    - Create new nodes for the resultant linked list using the modulus of the sum (`sum % 10`), and update the carry as `sum // 10`.
 
 3. **Reverse the Resultant List:**
+
    - After adding, reverse the resultant linked list to return the result in the required format.
 
 4. **Remove Leading Zeros:**
    - If there are any leading zeros in the resultant list (other than a single zero), remove them for a clean output.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** O(max(n, m)), where `n` and `m` are the lengths of the input linked lists. Each list is traversed multiple times: once for reversing and once for summing.  
+- **Expected Time Complexity:** O(max(n, m)), where `n` and `m` are the lengths of the input linked lists. Each list is traversed multiple times: once for reversing and once for summing.
 - **Expected Auxiliary Space Complexity:** O(1), as no extra space proportional to the size of the input is used; only a constant amount of additional space is required.
-
 
 ## 📝 **Solution Code**
 
-
 ## Code (C++)
+
 ```cpp
 class Solution {
 public:
@@ -127,6 +125,7 @@ public:
 ```
 
 ## Code (Java)
+
 ```java
 class Solution {
     Node reverse(Node head) {
@@ -172,6 +171,7 @@ class Solution {
 ```
 
 ## Code (Python)
+
 ```python
 class Solution:
     def reverse(self, head):
@@ -208,11 +208,9 @@ class Solution:
         return res
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

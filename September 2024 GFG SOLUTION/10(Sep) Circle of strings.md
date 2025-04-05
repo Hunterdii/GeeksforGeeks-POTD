@@ -11,34 +11,45 @@ Given an array `arr[]` of lowercase strings, determine if the strings can be cha
 #### Example:
 
 Input:
+
 ```
 arr[] = {"abc", "bcd", "cdf"}
 ```
+
 Output:
+
 ```
 0
 ```
+
 Explanation: These strings can't form a circle because no string starts with 'd'.
 
 Input:
+
 ```
 arr[] = {"ab", "bc", "cd", "da"}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: These strings can form a circle: "ab" -> "bc" -> "cd" -> "da".
 
 ### My Approach
 
 1. **Graph Representation:**
+
    - Represent each string as an edge between two nodes in a directed graph. The first character of the string is the starting node, and the last character is the ending node.
 
 2. **Degree Condition:**
+
    - For the strings to form a circle, the in-degree and out-degree of every node (character) must be equal. This ensures that for every character in the set, there is an equal number of incoming and outgoing edges.
 
 3. **Connectedness Condition:**
+
    - All nodes with a non-zero degree must belong to the same strongly connected component. This ensures that every string can eventually connect to every other string.
 
 4. **DFS (Depth First Search):**
@@ -73,7 +84,7 @@ public:
             }
         }
 
-        if (start == -1) return true; 
+        if (start == -1) return true;
 
         dfs(start, adj, visited);
         for (int i = 0; i < 26; ++i) {
@@ -126,7 +137,7 @@ class Solution {
     public boolean isConnected(ArrayList<Integer>[] adj, int[] indegree) {
         boolean[] visited = new boolean[26];
         int start = -1;
-        
+
         for (int i = 0; i < 26; i++) {
             if (indegree[i] > 0) {
                 start = i;
@@ -195,21 +206,21 @@ class Solution:
     def isConnected(self, adj, indegree):
         visited = [False] * 26
         start = -1
-        
+
         for i in range(26):
             if indegree[i] > 0:
                 start = i
                 break
-        
+
         if start == -1:
             return True
-        
+
         self.dfs(start, adj, visited)
-        
+
         for i in range(26):
             if indegree[i] > 0 and not visited[i]:
                 return False
-        
+
         return True
 
     def isCircle(self, arr):
@@ -218,7 +229,7 @@ class Solution:
         adjr = [[] for _ in range(26)]
         indegree = [0] * 26
         outdegree = [0] * 26
-        
+
         for word in arr:
             u = ord(word[0]) - ord('a')
             v = ord(word[-1]) - ord('a')
@@ -236,17 +247,18 @@ class Solution:
 
         if not self.isConnected(adjr, outdegree):
             return 0
-        
+
         return 1
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

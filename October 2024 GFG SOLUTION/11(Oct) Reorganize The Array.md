@@ -1,4 +1,4 @@
-# *11. Reorganize The Array*
+# _11. Reorganize The Array_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/reorganize-the-array4810/1)
 
@@ -29,7 +29,6 @@ arr[] = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]
 
 1. **Iterate Through the Array:**  
    We will traverse the array and check if each element is in the correct position. If not, we will rearrange the elements by placing them in the correct index.
-   
 2. **Handling Missing Elements:**  
    If an element is not found in the array or if it's a negative value, we place `-1` at the corresponding index.
 
@@ -42,7 +41,6 @@ arr[] = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]
 
 - **Expected Time Complexity:**  
   O(n), where `n` is the size of the array, as we only traverse the array once and perform constant time operations on each element.
-  
 - **Expected Auxiliary Space Complexity:**  
   O(1), as we are performing the rearrangement in-place and using only a constant amount of additional space.
 
@@ -57,7 +55,7 @@ class Solution {
   public:
     vector<int> rearrange(const vector<int>& arr) {
         int n = arr.size();
-        vector<int> result(n, -1); 
+        vector<int> result(n, -1);
         for (int i = 0; i < n; ++i) {
             if (arr[i] >= 0 && arr[i] < n) {
                 result[arr[i]] = arr[i];
@@ -87,7 +85,7 @@ class Solution {
                 result.set(value, value);
             }
         }
-        
+
         return result;
     }
 }
@@ -101,11 +99,11 @@ class Solution {
 class Solution:
     def rearrange(self, arr):
         n = len(arr)
-        result = [-1] * n  
+        result = [-1] * n
         for i in range(n):
             if 0 <= arr[i] < n:
                 result[arr[i]] = arr[i]
-        
+
         return result
 ```
 
@@ -113,7 +111,7 @@ class Solution:
 
 ### **Contribution and Support**
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

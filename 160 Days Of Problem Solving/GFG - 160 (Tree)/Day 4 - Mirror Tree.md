@@ -1,32 +1,34 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - Tree
 ---
 
 # 🚀 _Day 4. Mirror Tree_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/mirror-tree)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/mirror-tree)
 
 ## 💡 **Problem Description:**
 
-Given a binary tree, convert it into its **Mirror Tree** by swapping the left and right children of all non-leaf nodes.  
+Given a binary tree, convert it into its **Mirror Tree** by swapping the left and right children of all non-leaf nodes.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
         1
        / \
       2   3
          /
-        4  
+        4
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
         1
        / \
@@ -37,14 +39,14 @@ Given a binary tree, convert it into its **Mirror Tree** by swapping the left an
 
 <img src="https://github.com/user-attachments/assets/16c6b8d7-160f-4260-b6e5-629d51b3d248" width="40%">
 
+#### **Explanation:**
 
+Every non-leaf node has its left and right children interchanged.
 
-#### **Explanation:**  
-Every non-leaf node has its left and right children interchanged.  
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 ```
         1
        / \
@@ -52,7 +54,9 @@ Every non-leaf node has its left and right children interchanged.
      / \
     4   5
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
         1
        / \
@@ -63,30 +67,27 @@ Every non-leaf node has its left and right children interchanged.
 
 <img src="https://github.com/user-attachments/assets/f4d620f5-19e1-4c84-94a5-a543cb89f9d1" width="40%">
 
-#### **Explanation:**  
-Every non-leaf node has its left and right children interchanged.  
+#### **Explanation:**
 
+Every non-leaf node has its left and right children interchanged.
 
-### **Constraints:**  
-- 1 ≤ number of nodes ≤ $10^5$  
-- 1 ≤ node->data ≤ $10^5$  
+### **Constraints:**
 
-
+- 1 ≤ number of nodes ≤ $10^5$
+- 1 ≤ node->data ≤ $10^5$
 
 ## 🎯 **My Approach:**
 
 ### **Recursive DFS (Top-Down)**
-1. **Base Case:** If the node is `NULL`, return.  
-2. **Recursively traverse** the left and right subtrees.  
-3. **Swap** the left and right children of the current node.  
 
+1. **Base Case:** If the node is `NULL`, return.
+2. **Recursively traverse** the left and right subtrees.
+3. **Swap** the left and right children of the current node.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** `O(N)`, since every node is visited once.  
-- **Expected Auxiliary Space Complexity:** `O(1)` OR `O(H)` for recursive DFS (`H = height of the tree`).  
+- **Expected Time Complexity:** `O(N)`, since every node is visited once.
+- **Expected Auxiliary Space Complexity:** `O(1)` OR `O(H)` for recursive DFS (`H = height of the tree`).
 
 ## 📝 **Solution Code**
 
@@ -103,22 +104,27 @@ void mirror(Node *n) {
 }
 ```
 
-**Note:** The C code may show an error when compiled and run, but if you proceed with submission, it still passes all test cases.  
+**Note:** The C code may show an error when compiled and run, but if you proceed with submission, it still passes all test cases.
 
-For example, consider the input:  
+For example, consider the input:
+
 ```
 1 2 3 N N 4
 ```
-The output after compilation and running:  
+
+The output after compilation and running:
+
 ```
 1 3 2
 ```
-Expected output:  
+
+Expected output:
+
 ```
 1 3 2 N 4
 ```
-Although there is a difference in output format during execution, submitting the code results in a **successful pass for all test cases**.
 
+Although there is a difference in output format during execution, submitting the code results in a **successful pass for all test cases**.
 
 ## Code (C++)
 
@@ -138,6 +144,7 @@ public:
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ### **2️⃣ Iterative BFS (Level Order)**
+
 ```cpp
 class Solution {
 public:
@@ -156,6 +163,7 @@ public:
 ```
 
 ### **3️⃣ Iterative DFS (Using Stack)**
+
 ```cpp
 class Solution {
 public:
@@ -173,16 +181,16 @@ public:
 };
 ```
 
-
 ## **Comparison of Approaches**
 
-| Approach                      | Time Complexity | Space Complexity | Method        | Pros                                     | Cons                             |
-|-------------------------------|-----------------|------------------|---------------|------------------------------------------|----------------------------------|
-| **Recursive DFS (Top-Down)**  | 🟢 **O(N)**    | 🟡 **O(H)**      | Recursion   | Simple and concise                       | May cause stack overflow for deep trees |
-| **Iterative BFS (Level Order)** | 🟢 **O(N)**  | 🔴 **O(W)**      | Queue-based | Avoids recursion depth issues            | Uses more memory for wide trees  |
-| **Iterative DFS (Stack)**     | 🟢 **O(N)**    | 🟡 **O(H)**      | Stack-based | Explicit control over traversal order    | Still uses extra space for the stack |
+| Approach                        | Time Complexity | Space Complexity | Method      | Pros                                  | Cons                                    |
+| ------------------------------- | --------------- | ---------------- | ----------- | ------------------------------------- | --------------------------------------- |
+| **Recursive DFS (Top-Down)**    | 🟢 **O(N)**     | 🟡 **O(H)**      | Recursion   | Simple and concise                    | May cause stack overflow for deep trees |
+| **Iterative BFS (Level Order)** | 🟢 **O(N)**     | 🔴 **O(W)**      | Queue-based | Avoids recursion depth issues         | Uses more memory for wide trees         |
+| **Iterative DFS (Stack)**       | 🟢 **O(N)**     | 🟡 **O(H)**      | Stack-based | Explicit control over traversal order | Still uses extra space for the stack    |
 
 ### **Best Choice?**
+
 - **For balanced trees**, the **Recursive DFS** approach is fine.
 - **For deep trees**, the **Iterative BFS** approach is preferable to avoid recursion depth issues.
 - **For explicit control and iterative processing**, the **Iterative DFS (Stack)** approach is a solid option.
@@ -204,8 +212,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -218,11 +224,9 @@ class Solution:
         root.left, root.right = root.right, root.left
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

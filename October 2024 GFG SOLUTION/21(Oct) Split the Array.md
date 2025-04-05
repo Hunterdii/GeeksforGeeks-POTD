@@ -1,4 +1,4 @@
-# *21. Split the Array*
+# _21. Split the Array_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/split-the-array0238/1)
 
@@ -7,6 +7,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given an array `arr[]` of integers, the task is to count the number of ways to split the array elements into two non-empty subsets such that the XOR of elements in each group is equal. Each element should belong to exactly one subset.
 
 **Note:**
+
 - The answer could be very large, so print it modulo \(10^9 + 7\).
 - Subsets with the same elements but derived from different indices are different.
 
@@ -22,19 +23,19 @@ Given an array `arr[]` of integers, the task is to count the number of ways to s
 
 **Explanation:**
 The three ways to split the array are:
+
 - (1), (2, 3)
 - (2), (1, 3)
 - (3), (1, 2)
 
-
 ### **My Approach**
 
 1. **Understanding XOR and Subset Splitting:**
+
    - XOR operation exhibits a unique property: \( a \oplus a = 0 \), which means that to split the array into two subsets with equal XOR, the total XOR of the entire array must be 0. This is because we need the XORs of both subsets to be equal, and if the total XOR of the array is non-zero, it will be impossible to partition it into equal XOR subsets.
 
 2. **Total XOR Check:**
    - Compute the XOR of all elements in the array. If the XOR of the entire array is not zero, return 0 immediately as it is impossible to split the array into two groups with equal XOR.
-   
 3. **Counting Ways to Split:**
    - If the XOR of the entire array is 0, then there are valid ways to split the array.
    - The number of ways to split the array can be computed as \(2^{n-1} - 1\) because every non-empty subset can potentially participate in the split, but we need to exclude cases where one subset is empty.
@@ -124,7 +125,7 @@ class Solution:
             x = (x * x) % p
         return result
 
-    def countgroup(self, arr): 
+    def countgroup(self, arr):
         mod = 1000000007
         n = len(arr)
         xs = 0
@@ -137,7 +138,7 @@ class Solution:
 
 ### **Contribution and Support**
 
-For discussions, questions, or doubts related to this solution, feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input and support.
+For discussions, questions, or doubts related to this solution, feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input and support.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

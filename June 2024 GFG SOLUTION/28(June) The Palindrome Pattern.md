@@ -9,30 +9,37 @@ Given a two-dimensional integer array `arr` of dimensions `n x n`, consisting so
 **Example:**
 
 Input:
+
 ```
-arr[][] =  [[1, 0, 0], 
+arr[][] =  [[1, 0, 0],
            [0, 1, 0],
            [1, 1, 0]]
 ```
+
 Output:
+
 ```
 1 R
 ```
+
 Explanation:
 In the first test case, 0-1-0 is a palindrome occurring in a row having index 1.
 
 ### My Approach
 
 1. **Palindrome Check:**
+
    - Create a helper function `isPalindrome` that checks if a given vector is a palindrome.
    - Iterate through the vector from the start to the middle and check if the elements are the same when compared from the end to the middle.
 
 2. **Row Check:**
+
    - Iterate through each row in the array.
    - Use the `isPalindrome` function to check if the current row is a palindrome.
    - If a palindrome is found, return the row index followed by 'R'.
 
 3. **Column Check:**
+
    - Iterate through each column in the array.
    - Construct a vector for the current column and use the `isPalindrome` function to check if the column is a palindrome.
    - If a palindrome is found, return the column index followed by 'C'.
@@ -150,7 +157,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

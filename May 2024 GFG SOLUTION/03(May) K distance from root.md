@@ -9,28 +9,34 @@ Given a binary tree with \(n\) nodes and an integer \(k\), print all nodes that 
 **Example 1:**
 
 Input:
+
 ```
 k = 0
       1
     /   \
    3     2
 ```
+
 Output:
+
 ```
 1
 ```
-Explanation: 
+
+Explanation:
 1 is the only node which is 0 distance from the root 1.
 
 ### Approach
 
 1. **Depth-First Search (DFS):**
+
 - Start DFS traversal from the root node.
 - Maintain a variable `distance` to keep track of the distance of each node from the root.
 - If the `distance` becomes equal to `k`, add the node's value to the result vector.
 - Recursively traverse the left and right subtrees while incrementing the `distance` by 1.
 
 2. **Return:**
+
 - Return the vector containing nodes at distance \(k\) from the root.
 
 ### Time and Auxiliary Space Complexity
@@ -64,7 +70,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

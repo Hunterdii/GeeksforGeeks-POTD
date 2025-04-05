@@ -9,6 +9,7 @@ Given two arrays `a` and `b`, both of size `n`. Given `q` queries in an array `q
 **Example:**
 
 Input:
+
 ```
 n = 3
 a[] = {4,1,2}
@@ -16,12 +17,16 @@ b[] = {1,7,3}
 q = 2
 query[] = {0,1}
 ```
+
 Output:
+
 ```
 2
 1
 ```
-Explanation: 
+
+Explanation:
+
 - For the 1st query, the given index is 0, `a[0] = 4`. There are 2 elements (1 and 3) which are less than or equal to 4.
 - For the 2nd query, the given index is 1, `a[1] = 1`. There exists only 1 element (1) which is less than or equal to 1.
 
@@ -45,7 +50,7 @@ public:
         sort(b.begin(), b.end());
         vector<int> ans;
         ans.reserve(q); // Reserve memory for the result vector to avoid dynamic resizing
-        
+
         for (int i = 0; i < q; ++i) {
             int count = upper_bound(b.begin(), b.end(), a[query[i]]) - b.begin();
             ans.push_back(count);
@@ -57,7 +62,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *31. Longest Consecutive Subsequence*
+# _31. Longest Consecutive Subsequence_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1)
 
@@ -15,16 +15,12 @@ Given an array `arr[]` of non-negative integers, find the length of the longest 
 **Explanation:**  
 The consecutive numbers are `[1, 2, 3, 4, 5, 6]`. These 6 numbers form the longest consecutive subsequence.
 
-
-
 **Input:**  
 `arr[] = [1, 9, 3, 10, 4, 20, 2]`  
 **Output:**  
 `4`  
 **Explanation:**  
 The consecutive numbers are `[1, 2, 3, 4]`. These 4 numbers form the longest consecutive subsequence.
-
-
 
 **Input:**  
 `arr[] = [15, 13, 12, 14, 11, 10, 9]`  
@@ -33,18 +29,16 @@ The consecutive numbers are `[1, 2, 3, 4]`. These 4 numbers form the longest con
 **Explanation:**  
 The consecutive numbers are `[9, 10, 11, 12, 13, 14, 15]`. These 7 numbers form the longest consecutive subsequence.
 
-
-
 ### Constraints:
+
 - $`1 <= arr.size() <= 10^5`$
 - $`0 <= arr[i] <= 10^5`$
-
-
 
 ## My Approach
 
 1. **Set-based Consecutive Detection**:  
-   The core idea is to leverage a hash set for fast lookups.  
+   The core idea is to leverage a hash set for fast lookups.
+
    - Insert all elements of the array into a set.
    - For each number in the set, check if it is the starting number of a sequence (i.e., `num - 1` is not in the set).
    - If it is a starting number, count how many consecutive numbers exist in the sequence.
@@ -56,14 +50,10 @@ The consecutive numbers are `[9, 10, 11, 12, 13, 14, 15]`. These 7 numbers form 
    - If a number is the start of a sequence, calculate the length of the sequence.
    - Update the maximum sequence length as required.
 
-
-
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(n), as we traverse the array and perform O(1) operations for each element using a hash set.
 - **Expected Auxiliary Space Complexity:** O(n), as the hash set requires additional space to store all elements of the array.
-
-
 
 ## Code (C++)
 
@@ -103,12 +93,12 @@ public:
     int longestConsecutive(vector<int>& nums) {
         if (nums.empty()) return 0;
         sort(nums.begin(), nums.end());
-        int longest = 1; 
-        int count = 1;   
+        int longest = 1;
+        int count = 1;
         for (int i = 1; i < nums.size(); i++) {
             if (nums[i] == nums[i - 1]) continue;
             if (nums[i] == nums[i - 1] + 1) {
-                count++; 
+                count++;
             } else {
                 longest = max(longest, count);
                 count = 1;
@@ -118,8 +108,8 @@ public:
     }
 };
 ```
-</details>
 
+</details>
 
 ## Code (Java)
 
@@ -140,8 +130,6 @@ class Solution {
     }
 }
 ```
-
-
 
 ## Code (Python)
 
@@ -164,7 +152,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

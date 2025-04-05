@@ -1,4 +1,4 @@
-# *06. Root to Leaf Paths Sum*
+# _06. Root to Leaf Paths Sum_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1)
 
@@ -6,11 +6,11 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 Given a binary tree where each node value is a number, find the sum of all the numbers formed from root to leaf paths. The formation of these numbers follows the pattern `10 * parent + current`. The aim is to accumulate the values for each leaf path and return the total sum.
 
-
 #### Examples:
 
 **Input:**  
-Tree Structure:  
+Tree Structure:
+
 ```
        6
       / \
@@ -20,12 +20,14 @@ Tree Structure:
       / \
      7   4
 ```
+
 **Output:**  
 13997  
 **Explanation:** The numbers formed are 632, 6357, 6354, and 654. Their sum is 13997.
 
 **Input:**  
-Tree Structure:  
+Tree Structure:
+
 ```
     1
    / \
@@ -33,17 +35,20 @@ Tree Structure:
  / \
 4   5
 ```
+
 **Output:**  
 2630  
 **Explanation:** The numbers formed are 1240, 1260, and 130. Their sum is 2630.
 
 **Input:**  
-Tree Structure:  
+Tree Structure:
+
 ```
    1
   /
  2
 ```
+
 **Output:**  
 12  
 **Explanation:** The number formed is 12.
@@ -51,6 +56,7 @@ Tree Structure:
 ## My Approach
 
 1. **Recursive Calculation:**
+
    - Use a helper function to perform a depth-first traversal of the binary tree.
    - For each node, maintain a running value that represents the number formed so far. Update this value using the formula `currentValue = currentValue * 10 + node->data`.
    - When a leaf node is reached, add the current value to the total sum.
@@ -64,7 +70,6 @@ Tree Structure:
 
 - **Expected Time Complexity:** O(n), where `n` is the number of nodes in the binary tree, as we visit each node exactly once.
 - **Expected Auxiliary Space Complexity:** O(h), where `h` is the height of the binary tree. This space is used for the recursion call stack.
-
 
 ## Code (C++)
 
@@ -133,7 +138,6 @@ public:
 
 </details>
 
-
 ## Code (Java)
 
 ```java
@@ -153,7 +157,6 @@ class Solution {
 }
 ```
 
-
 ## Code (Python)
 
 ```python
@@ -171,10 +174,9 @@ class Solution:
                 self.calculateSum(node.right, currentValue))
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

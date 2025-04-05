@@ -13,24 +13,31 @@ There are `n` stairs, and a person standing at the bottom wants to reach the top
 **Example:**
 
 Input:
+
 ```
 n = 5
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation: Three ways to reach the 5th stair. They are `{1, 1, 1, 1, 1}`, `{1, 1, 2, 1}` and `{1, 2, 2}`.
 
 ### My Approach
 
 1. **Identifying the Unique Stair Combinations:**
+
    - Given that the order does not matter, the problem can be reduced to counting the number of unique sets of 1s and 2s that sum to `n`. Essentially, we need to find out how many different combinations of `1` and `2` can be used to form `n`.
 
 2. **Mathematical Insight:**
+
    - For any number of `n`, the maximum possible number of `2`s that can be used is `n // 2`. The rest of the steps must be `1`s. Each combination of `1`s and `2`s will be unique.
 
 3. **Dynamic Programming Approach:**
+
    - Since the number of ways to reach the `n`th stair depends on the number of ways to reach the previous stairs, we use dynamic programming to count these combinations.
    - We iterate from `2` to `n`, calculating the possible ways to reach each stair by combining the results from previous stairs.
 
@@ -51,7 +58,7 @@ public:
         if (n == 0) return 1;
         if (n == 1) return 1;
         int prev2 = 1;
-        int prev1 = 1; 
+        int prev1 = 1;
         int current = 1;
         for (int i = 2; i <= n; i++) {
             current = prev2 + 1;
@@ -73,13 +80,13 @@ class Solution {
         long prev2 = 1;
         long prev1 = 1;
         long current = 1;
-        
+
         for (int i = 2; i <= n; i++) {
             current = prev2 + 1;
             prev2 = prev1;
             prev1 = current;
         }
-        
+
         return current;
     }
 }
@@ -94,26 +101,27 @@ class Solution:
             return 1
         if n == 1:
             return 1
-        
+
         prev2 = 1
         prev1 = 1
         current = 1
-        
+
         for i in range(2, n + 1):
             current = prev2 + 1
             prev2 = prev1
             prev1 = current
-        
+
         return current
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

@@ -15,30 +15,39 @@ Return `true` if and only if Alice wins the game, assuming both players play opt
 **Example:**
 
 Input:
+
 ```
 n = 2
 ```
+
 Output:
+
 ```
 True
 ```
+
 Explanation:
 Alice chooses 1, and Bob has no more moves.
 
 Input:
+
 ```
 n = 3
 ```
+
 Output:
+
 ```
 False
 ```
+
 Explanation:
 Alice chooses 1, Bob chooses 1, and Alice has no more moves.
 
 ### Approach
 
 To solve this problem, we can observe that:
+
 - If \( n \) is even, Alice can always choose \( x = 1 \) in her turn, which will make Bob left with \( n - 1 \), an odd number.
 - If \( n \) is odd, there's no such \( x \) satisfying \( 0 < x < n \) and \( n \% x == 0 \), hence Alice will lose.
 
@@ -62,7 +71,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

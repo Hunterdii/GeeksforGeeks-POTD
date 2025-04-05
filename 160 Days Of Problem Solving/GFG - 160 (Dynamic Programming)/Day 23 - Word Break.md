@@ -1,88 +1,101 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Dynamic Programming
 ---
 
 # 🚀 _Day 23. Word Break_ 🧠
 
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/word-break1352)
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/word-break1352)  
+## 💡 **Problem Description:**
 
-## 💡 **Problem Description:** 
+You are given a string `s` and a list `dictionary[]` of words. Your task is to determine whether the string `s` can be formed by concatenating one or more words from the `dictionary[]`.
 
-You are given a string `s` and a list `dictionary[]` of words. Your task is to determine whether the string `s` can be formed by concatenating one or more words from the `dictionary[]`.  
-
-**Note:** From `dictionary[]`, any word can be taken any number of times and in any order.  
+**Note:** From `dictionary[]`, any word can be taken any number of times and in any order.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```plaintext
 s = "ilike"
 dictionary[] = ["i", "like", "gfg"]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 true
 ```
-#### **Explanation:**  
-The given string `s` can be broken down as `"i like"` using words from the dictionary.  
 
+#### **Explanation:**
 
-### **Example 2:**  
+The given string `s` can be broken down as `"i like"` using words from the dictionary.
 
-#### **Input:**  
+### **Example 2:**
+
+#### **Input:**
+
 ```plaintext
 s = "ilikegfg"
 dictionary[] = ["i", "like", "man", "india", "gfg"]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 true
 ```
-#### **Explanation:**  
-The given string `s` can be broken down as `"i like gfg"` using words from the dictionary.  
 
+#### **Explanation:**
 
-### **Example 3:**  
+The given string `s` can be broken down as `"i like gfg"` using words from the dictionary.
 
-#### **Input:**  
+### **Example 3:**
+
+#### **Input:**
+
 ```plaintext
 s = "ilikemangoes"
 dictionary[] = ["i", "like", "man", "india", "gfg"]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```plaintext
 false
 ```
-#### **Explanation:**  
-The given string `s` **cannot** be formed using the dictionary words.  
 
+#### **Explanation:**
 
-### **Constraints:**  
-- $\( 1 \leq |s| \leq 3000 \)$  
-- $\( 1 \leq |dictionary| \leq 1000 \)$  
-- $\( 1 \leq |dictionary[i]| \leq 100 \)$  
+The given string `s` **cannot** be formed using the dictionary words.
 
+### **Constraints:**
+
+- $\( 1 \leq |s| \leq 3000 \)$
+- $\( 1 \leq |dictionary| \leq 1000 \)$
+- $\( 1 \leq |dictionary[i]| \leq 100 \)$
 
 ## 🎯 **My Approach:**
 
 ### **Dynamic Programming**
+
 #### **Algorithm Steps:**
-1. Use a boolean DP vector `dp` of size *n+1* where `dp[i]` indicates if the substring `s[0...i-1]` can be segmented.
+
+1. Use a boolean DP vector `dp` of size _n+1_ where `dp[i]` indicates if the substring `s[0...i-1]` can be segmented.
 2. Insert dictionary words into an unordered set for O(1) lookups.
 3. Iterate through the string and check all possible substrings using the dictionary.
 4. If a valid word is found and its prefix was segmentable, mark `dp[i+j]` as true.
 5. Return `dp[n]`.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-## 🕒 **Time and Auxiliary Space Complexity** 
-- **Expected Time Complexity:** $\( O(n \times m) \)$, as each substring is checked in the dictionary.  
-- **Expected Auxiliary Space Complexity:** $\( O(n) \)$, as we use a DP array of size `n+1`.  
+- **Expected Time Complexity:** $\( O(n \times m) \)$, as each substring is checked in the dictionary.
+- **Expected Auxiliary Space Complexity:** $\( O(n) \)$, as we use a DP array of size `n+1`.
 
 ## 📝 **Solution Code**
 
@@ -111,8 +124,10 @@ public:
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
 ### **1️⃣ Dynamic Programming (Optimized Iterative DP)**
+
 #### **Algorithm Steps:**
-1. Use a boolean DP vector `dp` of size *n+1* where `dp[i]` indicates if the substring `s[0...i-1]` can be segmented.
+
+1. Use a boolean DP vector `dp` of size _n+1_ where `dp[i]` indicates if the substring `s[0...i-1]` can be segmented.
 2. Insert dictionary words into an unordered set for O(1) lookups.
 3. Iterate through the string and check all possible substrings using the dictionary.
 4. If a valid word is found and its prefix was segmentable, mark `dp[i+j]` as true.
@@ -125,10 +140,10 @@ public:
         unordered_set<string> dict(wordDict.begin(), wordDict.end());
         int n = s.size(), maxLen = 0;
         for (auto &w : wordDict) maxLen = max(maxLen, (int)w.size());
-        
+
         vector<bool> dp(n + 1, false);
         dp[0] = true;
-        
+
         for (int i = 0; i < n; i++) {
             if (!dp[i]) continue;
             for (int j = 1; j <= maxLen && i + j <= n; j++) {
@@ -144,7 +159,9 @@ public:
 ✅ **Space Complexity:** O(n)
 
 ### **2️⃣ Trie-Based Approach with DFS and DP**
+
 #### **Algorithm Steps:**
+
 1. Build a Trie from the dictionary words.
 2. Use a DP vector where `dp[i]` is true if `s[i...n-1]` can be segmented.
 3. Start from the end of the string, traverse the Trie, and mark segmentable indexes.
@@ -197,19 +214,20 @@ public:
 };
 ```
 
-✅ **Time Complexity:** O(n × m), where *m* is the maximum word length  
+✅ **Time Complexity:** O(n × m), where _m_ is the maximum word length  
 ✅ **Space Complexity:** O(n + total characters in dictionary)
 
 ## **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                     |
-|----------------------------------|------------------------|-------------------------|----------------------------------|---------------------------------|
-| **Dynamic Programming (Optimized)** | 🟢 O(n × m)            | 🟢 O(n)                 | Efficient and easy to implement | Still requires full DP array    |
-| **Trie-Based Approach**           | 🟢 O(n × m)            | 🟡 O(n + dictionary)     | Faster lookups, avoids substrings | More complex implementation    |
+| **Approach**                        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                  |
+| ----------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ---------------------------- |
+| **Dynamic Programming (Optimized)** | 🟢 O(n × m)            | 🟢 O(n)                 | Efficient and easy to implement   | Still requires full DP array |
+| **Trie-Based Approach**             | 🟢 O(n × m)            | 🟡 O(n + dictionary)    | Faster lookups, avoids substrings | More complex implementation  |
 
-✅ **Best Choice?**  
-- If you want **best efficiency**: Use **DP Optimized** approach.  
-- If you prefer **Trie-based lookup**: Use **Trie + DP**.  
+✅ **Best Choice?**
+
+- If you want **best efficiency**: Use **DP Optimized** approach.
+- If you prefer **Trie-based lookup**: Use **Trie + DP**.
 
 </details>
 
@@ -233,7 +251,6 @@ class Solution {
 }
 ```
 
-
 ## **Code (Python)**
 
 ```python
@@ -255,7 +272,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -268,4 +285,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-

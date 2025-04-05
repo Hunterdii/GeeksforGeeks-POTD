@@ -9,6 +9,7 @@ Given a binary tree, find the size of its largest subtree that is a Binary Searc
 **Examples:**
 
 Input:
+
 ```
     1
    / \
@@ -16,30 +17,38 @@ Input:
  / \
 6   8
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 There's no subtree with size greater than 1 that forms a BST. All the leaf nodes are BSTs with size equal to 1.
 
 ### My Approach
 
 1. **Helper Function:**
+
 - Define a helper function `largestBSTHelper` that returns information about whether the subtree is a BST, its size, and the minimum and maximum values in the subtree.
 
 2. **Base Case:**
+
 - If the current node is `None`, return `Info(True, 0, float('inf'), float('-inf'))`.
 
 3. **Recursive Calculation:**
+
 - Recursively calculate the information for the left and right subtrees.
 - If both subtrees are BSTs and the current node's value is greater than the maximum value in the left subtree and less than the minimum value in the right subtree, the current subtree is a BST.
 
 4. **Update Information:**
+
 - If the current subtree is a BST, update its size and the minimum and maximum values.
 - Otherwise, the size is the maximum size of the left or right subtree.
 
 5. **Return the Result:**
+
 - The `largestBst` function returns the size of the largest BST in the tree by calling `largestBSTHelper`.
 
 ### Time and Auxiliary Space Complexity
@@ -142,22 +151,22 @@ class Solution:
     def largestBSTHelper(self, root):
         if root is None:
             return Info(True, 0, float('inf'), float('-inf'))
-        
+
         left_info = self.largestBSTHelper(root.left)
         right_info = self.largestBSTHelper(root.right)
-        
+
         if left_info.is_bst and right_info.is_bst and root.data > left_info.max_val and root.data < right_info.min_val:
             return Info(True, 1 + left_info.size + right_info.size, min(root.data, left_info.min_val), max(root.data, right_info.max_val))
         else:
             return Info(False, max(left_info.size, right_info.size), float('inf'), float('-inf'))
-    
+
     def largestBst(self, root):
         return self.largestBSTHelper(root).size
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

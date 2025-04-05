@@ -9,29 +9,37 @@ Given a string `s` of lowercase English characters, determine whether the summat
 **Example 1:**
 
 Input:
+
 ```
 s = "abbbcc"
 ```
+
 Output:
+
 ```
 ODD
 ```
+
 Explanation:
+
 - `a` occupies 1st place (odd) in the English alphabet and its frequency is odd (1).
 - `b` occupies 2nd place (even) but its frequency is odd (3), so it doesn't get counted.
 - `c` occupies 3rd place (odd) but its frequency is even (2), so it also doesn't get counted.
-Thus, `x = 0` and `y = 1`, so the summation of `x` and `y` is `ODD`.
+  Thus, `x = 0` and `y = 1`, so the summation of `x` and `y` is `ODD`.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize two counters `x` and `y` to zero.
    - Create a frequency array `count` of size 26 to store the frequency of each character in the string.
 
 2. **Frequency Calculation:**
+
    - Iterate through the string and update the frequency array `count` for each character.
 
 3. **Count Calculation:**
+
    - Iterate through the frequency array.
    - For each character frequency:
      - If the frequency is greater than zero:
@@ -82,11 +90,11 @@ class Solution {
     public String oddEven(String s) {
         int x = 0, y = 0;
         int[] count = new int[26];
-        
+
         for (char c : s.toCharArray()) {
             count[c - 'a']++;
         }
-        
+
         for (int i = 0; i < 26; i++) {
             if (count[i] > 0) {
                 if (count[i] % 2 == 0 && (i + 1) % 2 == 0) {
@@ -96,7 +104,7 @@ class Solution {
                 }
             }
         }
-        
+
         int sum = x + y;
         return (sum % 2 == 1) ? "ODD" : "EVEN";
     }
@@ -119,14 +127,14 @@ class Solution:
                     x += 1
                 elif count[i] % 2 == 1 and (i + 1) % 2 == 1:
                     y += 1
-        
+
         sum_value = x + y
         return "ODD" if sum_value % 2 == 1 else "EVEN"
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

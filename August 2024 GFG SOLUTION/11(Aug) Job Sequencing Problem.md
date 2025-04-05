@@ -13,34 +13,45 @@ Find the number of jobs done and the maximum profit.
 **Examples:**
 
 Input:
+
 ```
 Jobs = [[1,4,20],[2,1,1],[3,1,40],[4,1,30]]
 ```
+
 Output:
+
 ```
 2 60
 ```
+
 Explanation: Job1 and Job3 can be done with a maximum profit of 60 (20+40).
 
 Input:
+
 ```
 Jobs = [[1,2,100],[2,1,19],[3,2,27],[4,1,25],[5,1,15]]
 ```
+
 Output:
+
 ```
 2 127
 ```
+
 Explanation: 2 jobs can be done with a maximum profit of 127 (100+27).
 
 ### Approach
 
 1. **Sorting the Jobs:**
+
    - Sort the jobs in descending order of profit. This ensures that we try to complete jobs with higher profit first.
 
 2. **Finding Maximum Deadline:**
+
    - Identify the maximum deadline among all jobs. This helps in determining the size of the scheduling slot array.
 
 3. **Job Scheduling:**
+
    - Create a slot array initialized with `-1`, indicating empty slots.
    - Iterate through each job and try to schedule it in the latest possible time slot before its deadline.
    - If a slot is found, mark it as filled, count the job, and add the profit.
@@ -96,7 +107,7 @@ class Solution {
         return a.profit > b.profit;
     }
     int[] JobScheduling(Job[] arr, int n) {
-        Arrays.sort(arr, (a, b) -> b.profit - a.profit); 
+        Arrays.sort(arr, (a, b) -> b.profit - a.profit);
         int maxDeadline = 0;
         for (Job job : arr) {
             maxDeadline = Math.max(maxDeadline, job.deadline);
@@ -145,7 +156,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

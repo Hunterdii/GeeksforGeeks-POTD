@@ -1,35 +1,39 @@
-# *10. K Sum Paths*  
+# _10. K Sum Paths_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/k-sum-paths/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/k-sum-paths/1)
 
-## **Problem Description**  
+## **Problem Description**
 
 Given a binary tree and an integer **k**, determine the number of downward-only paths where the sum of the node values in the path equals **k**.  
 A path can start and end at any node within the tree but must always move downward (from parent to child).
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
        1
       / \
      2   3
 ```
-k = 3  
 
-#### **Output:**  
+k = 3
+
+#### **Output:**
+
 ```
 2
-```  
+```
 
-#### **Explanation:**  
-- **Path 1:** 1 → 2 (Sum = 3)  
+#### **Explanation:**
+
+- **Path 1:** 1 → 2 (Sum = 3)
 - **Path 2:** 3 (Sum = 3)
 
-### **Example 2:**  
+### **Example 2:**
 
-#### **Input:**  k = 7  
- 
+#### **Input:** k = 7
+
 ```
          8
        /   \
@@ -42,21 +46,23 @@ k = 3
 
 <img src="https://github.com/user-attachments/assets/47109f3a-0212-4ed5-8693-239a8c6efec8" width="30%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 3
-```  
+```
 
-#### **Explanation:**  
-The following paths sum to k 
+#### **Explanation:**
+
+The following paths sum to k
 
 <img src="https://github.com/user-attachments/assets/9d9c9ba5-174e-4b59-aa90-10df02e3ff33" width="30%">
 
 ### Constraints
+
 - 1 ≤ number of nodes ≤ $10^4$
 - -100 ≤ node value ≤ 100
 - -109 ≤ k ≤ $10^9$
-
 
 ## **My Approach**
 
@@ -66,20 +72,22 @@ The following paths sum to k
    Use depth-first search (DFS) to traverse the binary tree. As we move from the root to each node, maintain a running sum of node values.
 
 2. **Maintain Prefix Sum Frequencies:**  
-   Use a hash map (or dictionary) to store the frequency of each prefix sum encountered along the current path.  
-   - **Key:** The prefix sum value.  
+   Use a hash map (or dictionary) to store the frequency of each prefix sum encountered along the current path.
+
+   - **Key:** The prefix sum value.
    - **Value:** The number of times this prefix sum has occurred.
 
 3. **Check for Valid Paths:**  
-   For each node visited, compute the current running sum. Then check if `(current sum - k)` exists in the hash map.  
+   For each node visited, compute the current running sum. Then check if `(current sum - k)` exists in the hash map.
+
    - If it does, it indicates that there is a valid subpath ending at the current node whose sum equals **k**.
    - Increase the count by the frequency of `(current sum - k)`.
 
-4. **Recurse and Backtrack:**  
-   - Recursively process the left and right children with the updated running sum.  
+4. **Recurse and Backtrack:**
+   - Recursively process the left and right children with the updated running sum.
    - After processing both subtrees, decrement the frequency of the current prefix sum in the hash map to backtrack (ensuring that paths in other branches are not affected).
 
-## **Time and Auxiliary Space Complexity**  
+## **Time and Auxiliary Space Complexity**
 
 **Expected Time Complexity:** O(N), as each node is visited exactly once.  
 **Expected Auxiliary Space Complexity:** O(H + N), where H is the height of the tree (for recursion) and N for the hash map.
@@ -107,12 +115,13 @@ public:
         return cnt;
     }
 };
-``` 
+```
 
 <details>
   <summary><h2 align="center">🌲 Alternative Approaches</h2></summary>
 
 ### **2️⃣ Brute Force Recursive Approach**
+
 ```cpp
 class Solution {
 public:
@@ -128,18 +137,20 @@ public:
     }
 };
 ```
-*Note:* This approach recalculates many subpaths and is too slow for large trees.
-- ✅ **Optimized than brute force but slower than the prefix sum approach**  
+
+_Note:_ This approach recalculates many subpaths and is too slow for large trees.
+
+- ✅ **Optimized than brute force but slower than the prefix sum approach**
 - ⚠️ **Still has overlapping subproblems (may hit TLE in large trees).**
-> **Note**: Not Passing All Test Cases 
+  > **Note**: Not Passing All Test Cases
 - `Test Cases Passed: `
 - `1110 /1120`
 - `Time limit exceeded.`
 
-
 ---
 
 ### **3️⃣ Iterative DFS with Path Vector**
+
 ```cpp
 class Solution {
 public:
@@ -165,36 +176,33 @@ public:
     }
 };
 ```
-*Note:* This method tracks the full path from the root, which leads to high memory usage and slower runtime.
-- 🔥 **Iterative implementation avoids recursion stack overflow.**  
+
+_Note:_ This method tracks the full path from the root, which leads to high memory usage and slower runtime.
+
+- 🔥 **Iterative implementation avoids recursion stack overflow.**
 - ⚠️ **Higher space complexity due to storing entire paths.**
-
-
 
 ## 📊 **Comparison of Approaches**
 
-| Approach                                | Time Complexity | Space Complexity | Method       | Pros                                   | Cons                                |
-|--|--|--|--|--|--|
-| **1️⃣ Prefix Sum (Optimized)**          | 🟢 **O(N)**     | 🟡 **O(H + N)**  | DFS + HashMap | Fastest, avoids redundant work        | Slightly complex to implement       |
-| **2️⃣ Count from Each Node (Recursive)**| 🟡 **O(N²)**    | 🟡 **O(H)**      | Pure Recursion | Simple, intuitive                      | Overlapping subproblems, slower     |
-| **3️⃣ Iterative DFS (Path Tracking)**   | 🟡 **O(N²)**    | 🔴 **O(N·H)**    | Stack-based   | No recursion depth issues             | High memory usage for large paths   |
-
-
+| Approach                                | Time Complexity | Space Complexity | Method         | Pros                           | Cons                              |
+| --------------------------------------- | --------------- | ---------------- | -------------- | ------------------------------ | --------------------------------- |
+| **1️⃣ Prefix Sum (Optimized)**           | 🟢 **O(N)**     | 🟡 **O(H + N)**  | DFS + HashMap  | Fastest, avoids redundant work | Slightly complex to implement     |
+| **2️⃣ Count from Each Node (Recursive)** | 🟡 **O(N²)**    | 🟡 **O(H)**      | Pure Recursion | Simple, intuitive              | Overlapping subproblems, slower   |
+| **3️⃣ Iterative DFS (Path Tracking)**    | 🟡 **O(N²)**    | 🔴 **O(N·H)**    | Stack-based    | No recursion depth issues      | High memory usage for large paths |
 
 ## 💡 **Best Choice?**
 
 - **Balanced Trees / Small Input:**  
   ✅ **Approach 1 (Prefix Sum)** is the fastest.
-  For optimal performance on large trees, use the Prefix Sum DFS approach.  
+  For optimal performance on large trees, use the Prefix Sum DFS approach.
 
 - **Unbalanced / Deep Trees:**  
-  ✅ **Approach 3 (Iterative DFS)** avoids stack overflow.  
+  ✅ **Approach 3 (Iterative DFS)** avoids stack overflow.
 
 - **Simple Understanding:**  
-  ✅ **Approach 2** helps with conceptual clarity but may be slow.  
+  ✅ **Approach 2** helps with conceptual clarity but may be slow.
 
 </details>
-
 
 ## Code (Java)
 
@@ -220,8 +228,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -244,7 +250,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
@@ -257,4 +263,3 @@ For discussions, questions, or doubts related to this solution, feel free to con
 <p align="center">
   <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
 </p>
-

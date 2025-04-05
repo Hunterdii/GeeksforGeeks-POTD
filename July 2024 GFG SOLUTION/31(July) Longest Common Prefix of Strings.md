@@ -9,37 +9,46 @@ Given an array of strings `arr`, return the longest common prefix among all stri
 **Examples:**
 
 Input:
+
 ```
 arr = ["geeksforgeeks", "geeks", "geek", "geezer"]
 ```
+
 Output:
+
 ```
 gee
 ```
+
 Explanation:
 "gee" is the longest common prefix among all the given strings.
 
 ### My Approach
 
 1. **Edge Case Handling:**
+
 - Check if the input array `arr` is empty. If it is, return "-1".
 
 2. **Initialization:**
+
 - Initialize the prefix as the first string in the array: `prefix = arr[0]`.
 
 3. **Prefix Comparison:**
+
 - Iterate over each string in the array starting from the second string.
 - For each string, reduce the prefix by removing the last character until the current string starts with the prefix.
 
 4. **Check Prefix:**
+
 - If the prefix becomes empty during the comparison, return "-1".
 
 5. **Return:**
+
 - Return the final prefix if it is not empty, otherwise return "-1".
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * min(|arri|)), where `n` is the number of strings and `|arri|` is the length of the shortest string in the array. This is because for each string, we may need to check up to the length of the shortest string in the worst case.
+- **Expected Time Complexity:** O(n \* min(|arri|)), where `n` is the number of strings and `|arri|` is the length of the shortest string in the array. This is because for each string, we may need to check up to the length of the shortest string in the worst case.
 - **Expected Auxiliary Space Complexity:** O(1), as we are only using a constant amount of additional space for the prefix variable.
 
 ### Code (C++)
@@ -101,7 +110,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

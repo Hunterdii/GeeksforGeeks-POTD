@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - two-pointer-technique
   - Arrays
@@ -17,21 +17,21 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 You are given an array `arr[]` containing only non-negative integers and a target sum `target`. Your task is to find the first continuous subarray (a contiguous sequence of elements) whose sum equals the specified value `target`. If such a subarray exists, return the **1-based indices** of the leftmost and rightmost elements of this subarray. Otherwise, return `[-1]`.
 
-
 ## 🔍 **Example Walkthrough:**
 
-#### **Input:**  
+#### **Input:**
+
 `arr[] = [1, 2, 3, 7, 5]`  
 `target = 12`
 
 **Output:**  
-`[2, 4]`  
+`[2, 4]`
 
 **Explanation:**  
 The sum of elements from the 2nd to 4th positions (2, 3, and 7) is 12.
 
+#### **Input:**
 
-#### **Input:**  
 `arr[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`  
 `target = 15`
 
@@ -41,8 +41,8 @@ The sum of elements from the 2nd to 4th positions (2, 3, and 7) is 12.
 **Explanation:**  
 The sum of elements from the 1st to 5th positions (1, 2, 3, 4, and 5) is 15.
 
+#### **Input:**
 
-#### **Input:**  
 `arr[] = [5, 3, 4]`  
 `target = 2`
 
@@ -52,34 +52,32 @@ The sum of elements from the 1st to 5th positions (1, 2, 3, 4, and 5) is 15.
 **Explanation:**  
 No subarray exists with a sum equal to 2.
 
-
 ### **Constraints**
 
-- $\( 1 \leq \text{arr.size()} \leq 10^6 \)  $
-- $\( 0 \leq \text{arr}[i] \leq 10^3 \)  $
-- $\( 0 \leq \text{target} \leq 10^9 \) $ 
-
+- $\( 1 \leq \text{arr.size()} \leq 10^6 \) $
+- $\( 0 \leq \text{arr}[i] \leq 10^3 \) $
+- $\( 0 \leq \text{target} \leq 10^9 \) $
 
 ## 🎯 **My Approach:**
 
-1. **Sliding Window Technique (Two-Pointer Approach):**  
+1. **Sliding Window Technique (Two-Pointer Approach):**
+
    - Utilize a variable `curr` to keep track of the sum of elements in the current subarray.
-   - Use two pointers:  
-     - A start pointer `s` that marks the beginning of the current subarray.  
-     - A moving end pointer `e` that iterates through the array.  
-   - Expand the window by adding the current element (`arr[e]`) to `curr`.  
-   - Shrink the window from the start by incrementing `s` while `curr > target`. Subtract elements from the sum during this process.  
-   - If `curr == target`, return the indices `[s + 1, e + 1]`.  
+   - Use two pointers:
+     - A start pointer `s` that marks the beginning of the current subarray.
+     - A moving end pointer `e` that iterates through the array.
+   - Expand the window by adding the current element (`arr[e]`) to `curr`.
+   - Shrink the window from the start by incrementing `s` while `curr > target`. Subtract elements from the sum during this process.
+   - If `curr == target`, return the indices `[s + 1, e + 1]`.
    - If no subarray with the target sum exists, return `[-1]`.
 
-2. **Edge Cases:**  
+2. **Edge Cases:**
    - If the array contains only one element: check if it equals the target.
    - If `target == 0`: return `[-1]` since all elements are non-negative.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** \( O(n) \), where \( n \) is the size of the array. The algorithm traverses the array only once, using the sliding window technique.  
+- **Expected Time Complexity:** \( O(n) \), where \( n \) is the size of the array. The algorithm traverses the array only once, using the sliding window technique.
 - **Expected Auxiliary Space Complexity:** \( O(1) \), as the solution uses a constant amount of additional space.
 
 ## 📝 **Solution Code**
@@ -101,7 +99,6 @@ public:
 };
 ```
 
-
 ## Code (Java)
 
 ```java
@@ -117,7 +114,6 @@ class Solution {
     }
 }
 ```
-
 
 ## Code (Python)
 
@@ -135,11 +131,9 @@ class Solution:
         return [-1]
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

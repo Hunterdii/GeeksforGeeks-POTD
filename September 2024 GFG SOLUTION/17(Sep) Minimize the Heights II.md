@@ -1,4 +1,4 @@
-# *17. Minimize the Heights II*
+# _17. Minimize the Heights II_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/minimize-the-heights3351/1)
 
@@ -11,7 +11,7 @@ Given an array `arr[]` denoting the heights of `N` towers and a positive integer
 
 The goal is to find out the minimum possible difference between the height of the shortest and tallest towers after modifying each tower. The resultant array should not contain any negative integers.
 
-*Example:*
+_Example:_
 
 - **Input:** `k = 2, arr[] = {1, 5, 8, 10}`
 - **Output:** `5`
@@ -26,10 +26,12 @@ The goal is to find out the minimum possible difference between the height of th
 ### My Approach
 
 1. **Sorting and Initialization:**
+
    - Start by sorting the array. This helps in efficiently calculating the minimum and maximum values after modifications.
    - Initialize the smallest and largest values after applying the increase and decrease operations.
 
 2. **Calculating Minimum Difference:**
+
    - After sorting, iterate through the array to calculate the potential smallest and largest values after modifying each element.
    - For each tower, calculate:
      - The minimum value considering the increase operation on the first elements and decrease operation on the rest.
@@ -115,11 +117,12 @@ class Solution:
 
 ### Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

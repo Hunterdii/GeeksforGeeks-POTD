@@ -11,15 +11,20 @@ Note: If two elements have the same parent, the one that appears first in the ar
 **Example:**
 
 Input:
+
 ```
 parent = [-1, 0, 0, 1, 1, 3, 5]
 ```
+
 Output:
+
 ```
 0 1 2 3 4 5 6
 ```
+
 Explanation:
 The tree generated will have a structure like:
+
 ```
         0
       /   \
@@ -35,16 +40,19 @@ The tree generated will have a structure like:
 ### My Approach
 
 1. **Initialization:**
+
 - Create an array `created` of size `n` to store the created nodes.
 - Initialize the `root` node as `NULL`.
 
 2. **Node Creation:**
+
 - Iterate through the `parent` array.
 - For each index `i`, create a node if it has not been created.
 - If the `parent[i]` is `-1`, set the `root` as the created node.
 - Otherwise, recursively ensure the parent node is created, then attach the current node as the left or right child of the parent node.
 
 3. **Return:**
+
 - Return the `root` node of the constructed tree.
 
 ### Time and Auxiliary Space Complexity
@@ -198,7 +206,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

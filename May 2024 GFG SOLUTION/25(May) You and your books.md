@@ -11,23 +11,29 @@ What is the maximum number of books that you can collect this way?
 **Example:**
 
 Input:
+
 ```
 8 1
 3 2 2 3 1 1 1 3
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation:
 We can collect the maximum books from consecutive stacks numbered 5, 6, and 7 having a height less than or equal to `k`.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize two variables: `max_sum` to keep track of the maximum number of books that can be collected, and `current_sum` to store the number of books in the current valid sequence.
 
 2. **Iterate Through the Array:**
+
    - Iterate through each stack of books in the array `arr`.
    - If the height of the current stack `arr[i]` is less than or equal to `k`, add the height of the current stack to `current_sum` and update `max_sum` if `current_sum` is greater than `max_sum`.
    - If the height of the current stack is greater than `k`, reset `current_sum` to 0, as the current stack cannot be included in a valid sequence.
@@ -102,7 +108,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

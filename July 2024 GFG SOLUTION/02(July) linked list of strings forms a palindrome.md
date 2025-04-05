@@ -9,9 +9,11 @@ Given a linked list with string data, check whether the combined string formed i
 **Example:**
 
 Input:
+
 ```
 List: a -> bc -> d -> dcb -> a
 ```
+
 <p align="center">
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/8cb72c70-4ba5-4a0c-a4be-2e6d747df382" alt="Image" width="270" />
 </p>
@@ -25,10 +27,12 @@ The combined string "abcddcba" is a palindrome, so the function returns true.
 ### My Approach
 
 1. **Initialization:**
+
    - Create a string `ans` to store the combined string formed from the linked list.
    - Initialize a pointer `t` to traverse the linked list.
 
 2. **String Construction:**
+
    - Traverse the linked list from head to end.
    - Append the data from each node to the string `ans`.
 
@@ -111,7 +115,7 @@ def compute(head):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *06. Sum Pair Closest to Target*
+# _06. Sum Pair Closest to Target_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/pair-in-array-whose-sum-is-closest-to-x1124/1)
 
@@ -26,13 +26,14 @@ Explanation: As both `(4, 7)` and `(2, 7)` are closest to the target 10, the abs
 Explanation: The array contains only one element, so no valid pair can be formed.
 
 ### Constraints:
+
 - $`1 <= arr.size() <= 2*10^5`$
 - $`0 <= target <= 2*10^5`$
 - $`0 <= arr[i] <= 10^5`$
 
 ## My Approach
 
-1. **Sorting and Two-pointer Approach**:  
+1. **Sorting and Two-pointer Approach**:
    - First, sort the array.
    - Use two pointers, `l` (left) and `r` (right), to traverse the array. Start by initializing `l` at the beginning and `r` at the end.
    - Calculate the sum of `arr[l]` and `arr[r]` and check how close it is to the target. Track the pair that gives the smallest difference.
@@ -103,7 +104,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

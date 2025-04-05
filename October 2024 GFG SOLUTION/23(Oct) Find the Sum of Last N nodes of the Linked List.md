@@ -1,4 +1,4 @@
-# *23. Sum of Last N Nodes of Linked List*
+# _23. Sum of Last N Nodes of Linked List_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-the-sum-of-last-n-nodes-of-the-linked-list/1)
 
@@ -10,19 +10,21 @@ Given a singly linked list, calculate the sum of the last `n` nodes. It is guara
 - The task is to calculate the sum of the last `n` nodes in the list.
 
 #### Example 1:
-Input: 
+
+Input:
 Linked List: `5->9->6->3->4->10`, `n = 3`
 
-Output: 
+Output:
 `17`
 
 Explanation: The sum of the last three nodes in the linked list is `3 + 4 + 10 = 17`.
 
 #### Example 2:
-Input: 
+
+Input:
 Linked List: `1->2`, `n = 2`
 
-Output: 
+Output:
 `3`
 
 Explanation: The sum of the last two nodes in the linked list is `2 + 1 = 3`.
@@ -30,6 +32,7 @@ Explanation: The sum of the last two nodes in the linked list is `2 + 1 = 3`.
 ### My Approach
 
 1. **Two-Pointer Technique**:
+
    - We use two pointers: `fast` and `slow`. The `fast` pointer is moved `n` nodes ahead from the start.
    - After positioning the `fast` pointer, we move both `fast` and `slow` pointers simultaneously until the `fast` pointer reaches the end of the list. At this point, the `slow` pointer will be positioned at the beginning of the last `n` nodes.
    - Finally, traverse the remaining `n` nodes from the `slow` pointer and calculate their sum.
@@ -55,7 +58,7 @@ public:
         Node* slow = head;
 
         for (int i = 0; i < n; i++) {
-            if (fast == NULL) return 0; 
+            if (fast == NULL) return 0;
             fast = fast->next;
         }
 
@@ -138,11 +141,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

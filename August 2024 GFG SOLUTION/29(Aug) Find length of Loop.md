@@ -11,39 +11,48 @@ Given the head of a linked list, determine whether the list contains a loop. If 
 - **Input:**
   - A linked list represented by its head node.
   - An integer `c` representing the position of the node (1-based indexing) which is connected to the last node to form the loop. If `c` is `0`, there is no loop.
-  
 - **Output:**
   - The length of the loop if it exists, otherwise return `0`.
 
 **Examples:**
 
 Input:
+
 ```
 LinkedList: 25->14->19->33->10->21->39->90->58->45, c = 4
 ```
+
 Output:
+
 ```
 7
 ```
+
 Explanation: The loop is from 33 to 45. So the length of the loop is `33->10->21->39->90->58->45 = 7`.
 
 Input:
+
 ```
 LinkedList: 5->4, c = 0
 ```
+
 Output:
+
 ```
 0
 ```
+
 Explanation: There is no loop.
 
 ### My Approach
 
 1. **Two Pointers (Floyd's Cycle Detection):**
+
    - Use two pointers, `slow` and `fast`. Both start at the head of the linked list.
    - Move `slow` one step and `fast` two steps at a time. If there is a loop, `slow` and `fast` will meet at some point inside the loop.
 
 2. **Detecting Loop Size:**
+
    - Once `slow` and `fast` meet, initialize a counter `loopSize` and start a new pointer from the meeting point.
    - Move this new pointer around the loop until it meets `slow` again, counting the number of steps taken. This gives the length of the loop.
 
@@ -70,7 +79,7 @@ public:
             slow = slow->next;
             fast = fast->next->next;
 
-            if (slow == fast) { 
+            if (slow == fast) {
                 int loopSize = 1;
                 Node* current = slow;
                 while (current->next != slow) {
@@ -81,7 +90,7 @@ public:
             }
         }
 
-        return 0; 
+        return 0;
     }
 };
 ```
@@ -100,7 +109,7 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
 
-            if (slow == fast) { 
+            if (slow == fast) {
                 int loopSize = 1;
                 Node current = slow;
                 while (current.next != slow) {
@@ -111,7 +120,7 @@ class Solution {
             }
         }
 
-        return 0; 
+        return 0;
     }
 }
 ```
@@ -123,32 +132,33 @@ class Solution:
     def countNodesInLoop(self, head):
         if not head or not head.next:
             return 0
-        
+
         slow = head
         fast = head
-        
+
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-            
-            if slow == fast:  
+
+            if slow == fast:
                 loop_size = 1
                 current = slow
                 while current.next != slow:
                     current = current.next
                     loop_size += 1
                 return loop_size
-        
-        return 0  
+
+        return 0
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

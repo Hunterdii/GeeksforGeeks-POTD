@@ -9,17 +9,21 @@ Given a Binary Tree of nodes, find all possible paths from the root node to all 
 **Example 1:**
 
 Input:
+
 ```
        1
     /     \
    2       3
 ```
-Output: 
+
+Output:
+
 ```
-1 2 
-1 3 
+1 2
+1 3
 ```
-Explanation: 
+
+Explanation:
 All possible paths:
 1->2
 1->3
@@ -27,6 +31,7 @@ All possible paths:
 **Example 2:**
 
 Input:
+
 ```
          10
        /    \
@@ -34,24 +39,29 @@ Input:
      /  \
     40   60
 ```
-Output: 
+
+Output:
+
 ```
-10 20 40 
-10 20 60 
-10 30 
+10 20 40
+10 20 60
+10 30
 ```
 
 ### My Approach
 
 1. **Depth-First Search (DFS):**
+
 - Implement a recursive DFS function to traverse the binary tree.
 - At each node, append the node's value to the current path.
 - When reaching a leaf node, add the current path to the list of paths.
 
 2. **Path Collection:**
+
 - Use a vector of vectors to store all the paths found during the DFS traversal.
 
 3. **Return:**
+
 - Return the vector containing all the root to leaf paths.
 
 ### Time and Auxiliary Space Complexity
@@ -66,25 +76,25 @@ class Solution {
 public:
     void solve(Node* root, vector<vector<int>>& ans, vector<int>& ds) {
         if(root == NULL) return;
-        
+
         ds.push_back(root->data);
-        
+
         if(root->left == NULL && root->right == NULL) {
             ans.push_back(ds);
             return;
         }
-        
+
         if(root->left) {
             solve(root->left, ans, ds);
             ds.pop_back(); // Backtrack after exploring left subtree
         }
-        
+
         if(root->right) {
             solve(root->right, ans, ds);
             ds.pop_back(); // Backtrack after exploring right subtree
         }
     }
-    
+
     vector<vector<int>> Paths(Node* root) {
         vector<vector<int>> ans;
         vector<int> ds;
@@ -96,7 +106,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

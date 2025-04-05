@@ -11,15 +11,19 @@ Note: A valid pair would be in the form `(x, y)` where `x` is from the first lin
 **Example 1:**
 
 Input:
+
 ```
 head1 = 1->2->3->4->5->6
 head2 = 11->12->13
 x = 15
 ```
+
 Output:
+
 ```
 3
 ```
+
 Explanation: There are a total of 3 pairs whose sum is 15: (4,11), (3,12), and (2,13)
 
 **Your Task:**
@@ -31,18 +35,20 @@ You only need to implement the given function `countPairs()` that takes two link
 - **Expected Time Complexity:** O(length(head1) + length(head2)), as we traverse both linked lists once.
 - **Expected Auxiliary Space Complexity:** O(length(head1)) or O(length(head2)), depending on which linked list is larger, for storing elements in the set.
 
-
 ### My Approach
 
 1. **Initialization:**
+
    - Create two sets `set1` and `set2` to store the elements of the first and second linked lists, respectively.
    - Initialize a variable `count` to 0 to keep track of the count of pairs whose sum is equal to `x`.
 
 2. **Populate Sets:**
+
    - Traverse the first linked list `head1` and insert its elements into `set1`.
    - Traverse the second linked list `head2` and insert its elements into `set2`.
 
 3. **Count Pairs:**
+
    - Traverse the second linked list `head2`.
    - For each element `y` in `head2`, calculate the complement `x - y`.
    - If the complement exists in `set1`, increment the `count`.
@@ -56,19 +62,20 @@ You only need to implement the given function `countPairs()` that takes two link
 - **Auxiliary Space Complexity:** O(length(head1)) or O(length(head2)), depending on which set is larger.
 
 ### Code (C++)
+
 ```cpp
 class Solution{
 public:
     int countPairs(struct Node* head1, struct Node* head2, int x) {
         unordered_set<int> set1, set2;
         int count = 0;
-        
+
         // Populate set1 with the elements of the first linked list
         while (head1 != NULL) {
             set1.insert(head1->data);
             head1 = head1->next;
         }
-        
+
         // Traverse the second linked list and check for complements
         while (head2 != NULL) {
             int complement = x - head2->data;
@@ -77,7 +84,7 @@ public:
             }
             head2 = head2->next;
         }
-        
+
         return count;
     }
 };
@@ -85,7 +92,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *19. Rotate a Linked List*
+# _19. Rotate a Linked List_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/rotate-a-linked-list/1)
 
@@ -27,21 +27,20 @@ Rotate 4: `50 -> 10 -> 20 -> 30 -> 40`
 **Explanation:** <br/>
 Since `k = 6` exceeds the length of the list (`4`), `k` is reduced to `k % length = 2`. After two left rotations:  
 `10 -> 20 -> 30 -> 40` → `20 -> 30 -> 40 -> 10` → `30 -> 40 -> 10 -> 20`.
-<br/> 
+<br/>
 
 <img src="https://github.com/user-attachments/assets/1759b1e9-f5a5-4c2b-9da9-17aba6ea7ab1" width="50%">
 
-
 ### Constraints:
+
 - $`1 <= number of nodes <= 10^5`$
 - $`0 <= k <= 10^9`$
 - $`0 <= data of node <= 10^9`$
 
-
-
 ## My Approach
 
 1. **Key Observations:**
+
    - If `k` is greater than the length of the list, we only need to perform `k % length` rotations, as rotating the list `length` times results in the same list.
    - Breaking the linked list into two parts and re-linking the tail to the head helps achieve the rotation efficiently.
 
@@ -54,14 +53,10 @@ Since `k = 6` exceeds the length of the list (`4`), `k` is reduced to `k % lengt
    - Re-link the old tail to the original head.
    - Return the new head.
 
-
-
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(n), where `n` is the length of the linked list. This is because we traverse the list twice: once to calculate its length and once to locate the new head and tail.
 - **Expected Auxiliary Space Complexity:** O(1), as no additional space is used apart from a few pointers.
-
-
 
 ## Code (C++)
 
@@ -84,8 +79,6 @@ class Solution {
   }
 };
 ```
-
-
 
 <details>
   <summary><h2 align='center'>👨‍💻 Alternative Approach</h2></summary>
@@ -151,8 +144,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -178,11 +169,9 @@ class Solution:
         return newHead
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

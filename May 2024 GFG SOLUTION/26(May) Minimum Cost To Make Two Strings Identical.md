@@ -9,30 +9,39 @@ Given two strings `x` and `y`, and two values `costX` and `costY`, the task is t
 **Example:**
 
 Input:
+
 ```
 x = "abcd", y = "acdb", costX = 10, costY = 20
 ```
+
 Output:
+
 ```
 30
 ```
+
 Explanation:
 For making both strings identical, we have to delete the character 'b' from both strings, hence the cost will be = 10 + 20 = 30.
 
 Input:
+
 ```
 x = "ef", y = "gh", costX = 10, costY = 20
 ```
+
 Output:
+
 ```
 60
 ```
+
 Explanation:
 For making both strings identical, we have to delete 2 characters from both strings, hence the cost will be = 10 + 10 + 20 + 20 = 60.
 
 ### Approach
 
 1. **Longest Common Subsequence (LCS):**
+
    - Calculate the longest common subsequence (LCS) between the two strings `x` and `y`.
    - The LCS helps in identifying the characters that need to be retained in both strings.
 
@@ -44,7 +53,7 @@ For making both strings identical, we have to delete 2 characters from both stri
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(|x| * |y|), as we need to compute the LCS which involves filling a table of size `|x|` by `|y|`.
+- **Expected Time Complexity:** O(|x| \* |y|), as we need to compute the LCS which involves filling a table of size `|x|` by `|y|`.
 - **Expected Auxiliary Space Complexity:** O(min(|x|, |y|)), since we use two arrays to store the current and previous row during the LCS computation.
 
 ### Code
@@ -66,9 +75,9 @@ public:
                     curr[j] = max(prev[j], curr[j - 1]);
                 }
             }
-            swap(prev, curr);  
+            swap(prev, curr);
         }
-        return prev[m]; 
+        return prev[m];
     }
 
     int findMinCost(string x, string y, int costX, int costY) {
@@ -134,7 +143,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

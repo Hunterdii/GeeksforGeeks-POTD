@@ -9,27 +9,34 @@ You are given the perimeter and the area of a cuboid. Your task is to return the
 **Examples:**
 
 Input:
+
 ```
 perimeter = 22, area = 15
 ```
+
 Output:
+
 ```
 3.02
 ```
+
 Explanation:
 The maximum attainable volume of the cuboid is 3.02.
 
 ### My Approach
 
 1. **Extracting Parameters:**
+
 - Calculate the intermediate terms required to derive the dimensions of the cuboid using the provided formulas.
 - Part 1: \((\text{{perimeter}} - \sqrt{\text{{perimeter}}^2 - 24 \times \text{{area}}}) / 12\)
 - Part 2: \((\text{{perimeter}} / 4) - (2 \times \text{{part1}})\)
 
 2. **Volume Calculation:**
+
 - Compute the volume using the formula: \(\text{{part1}}^2 \times \text{{part2}}\).
 
 3. **Return the Result:**
+
 - Return the volume rounded to 2 decimal places.
 
 ### Time and Auxiliary Space Complexity
@@ -79,7 +86,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,5 @@
 ## 08. Check if frequencies can be equal
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/check-frequencies4211/1)
 
 ### My Approach:
@@ -19,6 +20,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Auxiliary Space Complexity** : At most, 26 unique characters can be used, resulting in a time complexity of `O(26)`
 
 ### Code (C++)
+
 ```cpp
 class Solution{
 public:
@@ -29,7 +31,7 @@ public:
   bool allSame(int freq[], int N)
   {
       int same;
-   
+
       int i;
       for (i = 0; i < N; i++)
       {
@@ -39,34 +41,34 @@ public:
               break;
           }
       }
-   
+
       for (int j = i+1; j < N; j++)
           if (freq[j] > 0 && freq[j] != same)
               return false;
-   
+
       return true;
   }
-   
+
   bool sameFreq(string str)
   {
-      int M = 26; 
+      int M = 26;
       int l = str.length();
-   
+
       int freq[M] = {0};
       for (int i = 0; i < l; i++)
           freq[getIdx(str[i])]++;
-   
+
       if (allSame(freq, M))
           return true;
-   
+
       for (char c = 'a'; c <= 'z'; c++)
       {
           int i = getIdx(c);
-   
+
           if (freq[i] > 0)
           {
               freq[i]--;
-   
+
               if (allSame(freq, M))
                   return true;
               freq[i]++;
@@ -79,7 +81,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

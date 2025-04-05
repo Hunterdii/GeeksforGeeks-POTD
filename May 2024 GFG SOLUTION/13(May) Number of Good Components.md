@@ -9,6 +9,7 @@ Given an undirected graph with \(v\) vertices (numbered from 1 to \(v\)) and \(e
 **Example:**
 
 Input:
+
 <p align="center">
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/7b9e1b90-3a0b-4dbf-a343-54dbdf59bdd3" alt="Image" width="350" />
 </p>
@@ -18,24 +19,30 @@ e = 3
 v = 3
 edges = {{1, 2}, {1, 3}, {3, 2}}
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 There is only one component in the graph, and in this component, there is an edge between any two vertices.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Initialize a variable `ans` to store the number of good components, initially set to 0.
    - Create a vector `visited` to mark visited vertices, initialized with 0.
    - Create an adjacency list `adj` to represent the graph.
 
 2. **Building Graph:**
+
    - Populate the adjacency list `adj` using the provided edges.
 
 3. **DFS Traversal:**
+
    - Perform Depth-First Search (DFS) traversal starting from each unvisited vertex.
    - While traversing, count the number of vertices and edges in the connected component.
    - Check if the number of edges in the component is equal to \(\frac{{\text{vertices} \times (\text{vertices} - 1)}}{2}\), indicating a fully connected component.
@@ -100,7 +107,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

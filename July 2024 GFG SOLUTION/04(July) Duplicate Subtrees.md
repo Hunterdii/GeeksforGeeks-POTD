@@ -13,6 +13,7 @@ Given a binary tree, your task is to find all duplicate subtrees from the given 
 **Examples:**
 
 Input:
+
 ```
         5
        / \
@@ -22,26 +23,30 @@ Input:
        / \
       3   6
 ```
+
 Output:
+
 ```
 3
 6
 ```
+
 Explanation: In the above tree, there are two duplicate subtrees: 3 and 6.
 
 ### My Approach
 
 1. **Helper Function:**
+
    - Define a helper function that serializes each subtree into a string format.
    - Use a map to count the occurrences of each serialized subtree.
 
 2. **Traversal and Serialization:**
+
    - Traverse the tree using post-order traversal to serialize each subtree.
    - If a serialized subtree has been seen exactly once before, add the root of this subtree to the result list.
 
 3. **Return:**
    - Return the list of roots of all duplicate subtrees.
-
 
 ### Time and Auxiliary Space Complexity
 
@@ -133,7 +138,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

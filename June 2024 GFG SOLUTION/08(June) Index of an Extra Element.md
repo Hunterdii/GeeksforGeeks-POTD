@@ -11,24 +11,30 @@ Note: 0-based indexing is followed.
 **Example:**
 
 Input:
+
 ```
 n = 7
 arr1 = [2, 4, 6, 8, 9, 10, 12]
 arr2 = [2, 4, 6, 8, 10, 12]
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation:
 In the first array, 9 is extra added and its index is 4.
 
 ### My Approach
 
 1. **Initialization:**
+
    - Set two pointers, `low` to 0 and `high` to `n - 1`.
 
 2. **Binary Search:**
+
    - Use a binary search approach to find the index of the extra element.
    - Calculate the middle index `mid`.
    - Compare elements at index `mid` in both arrays:
@@ -101,7 +107,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

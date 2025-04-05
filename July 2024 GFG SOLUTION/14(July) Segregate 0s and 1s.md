@@ -9,23 +9,29 @@ Given an array `arr` consisting of only 0's and 1's in random order, modify the 
 **Examples:**
 
 Input:
+
 ```
 arr[] = [0, 0, 1, 1, 0]
 ```
+
 Output:
+
 ```
 [0, 0, 0, 1, 1]
 ```
+
 Explanation:
 After segregation, all the 0's are on the left and 1's are on the right. The modified array will be [0, 0, 0, 1, 1].
 
 ### My Approach
 
 1. **Initialization:**
+
    - Create two pointers, `left` and `right`, both initialized to 0.
    - `left` will track the position to place the next 0, and `right` will traverse the array.
 
 2. **Segregation Process:**
+
    - Traverse the array using the `right` pointer.
    - If `arr[right]` is 0, swap it with `arr[left]` and increment `left`.
    - Always increment `right` to continue traversing the array.
@@ -96,7 +102,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,4 +1,4 @@
-# *05. Not a subset sum*
+# _05. Not a subset sum_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/smallest-number-subset1220/1)
 
@@ -6,28 +6,32 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 Given a sorted array `arr[]` of positive integers, find the smallest positive integer that **cannot** be represented as the sum of elements of any subset of the given array.
 
-*Example 1:*
+_Example 1:_
 
 Input:
+
 ```
 arr = [1, 2, 3]
 ```
 
 Output:
+
 ```
 7
 ```
 
 Explanation: 7 is the smallest positive number for which no subset exists with sum 7.
 
-*Example 2:*
+_Example 2:_
 
 Input:
+
 ```
 arr = [3, 6, 9, 10, 20, 28]
 ```
 
 Output:
+
 ```
 1
 ```
@@ -46,7 +50,6 @@ Explanation: 1 is the smallest positive number for which no subset exists with s
    - Start with `res = 1`, which is the smallest possible answer. Iterate through the array:
      - For every element `arr[i]` in the array, if `arr[i]` is greater than `res`, we found a gap, and `res` cannot be represented as the sum of any subset.
      - Otherwise, add `arr[i]` to `res` to increment the range of sums that can be represented.
-   
 2. **Example Walkthrough:**
    - Suppose `arr = [1, 2, 3]`:
      - Initially, `res = 1`. We can represent 1 because `arr[0] = 1`. Now, update `res = 1 + 1 = 2`.
@@ -104,7 +107,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

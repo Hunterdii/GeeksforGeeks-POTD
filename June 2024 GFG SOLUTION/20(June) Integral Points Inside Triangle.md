@@ -9,16 +9,19 @@ Given three non-collinear points whose coordinates are \( p(p1, p2) \), \( q(q1,
 **Examples:**
 
 Input:
+
 ```
 p = (0,0), q = (0,5), r = (5,0)
 ```
+
 Output:
+
 ```
 6
 ```
+
 Explanation:
 Points (1,1), (1,2), (1,3), (2,1), (2,2), and (3,1) are the integral points inside the triangle. So, there are 6 in total.
-
 
 <p align="center">
   <img src="https://github.com/Hunterdii/GeeksforGeeks-POTD/assets/124852522/17f9ccf0-6c86-4eda-bf5e-4160acd11672" alt="Image" width="270" />
@@ -27,17 +30,21 @@ Points (1,1), (1,2), (1,3), (2,1), (2,2), and (3,1) are the integral points insi
 ### My Approach
 
 1. **GCD Calculation:**
+
 - Create a function `gcd` to compute the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.
 
 2. **Boundary Points Calculation:**
+
 - Create a function `boundaryPoints` to calculate the number of lattice points on the line segment between two points. The formula used is `gcd(abs(x2 - x1), abs(y2 - y1)) + 1`.
 
 3. **Internal Points Calculation:**
+
 - Calculate the area of the triangle using the formula \( \text{area} = |p1(q2 - r2) + q1(r2 - p2) + r1(p2 - q2)| \).
 - Calculate the number of boundary points on the triangle using the `boundaryPoints` function for each side and summing them up, then subtracting 3 to avoid double-counting the vertices.
 - Use Pick's Theorem to find the number of internal lattice points: \( I = \frac{\text{area} - B + 2}{2} \), where \( I \) is the number of internal lattice points, \( \text{area} \) is the area of the triangle, and \( B \) is the number of boundary points.
 
 4. **Return:**
+
 - Return the number of internal lattice points.
 
 ### Time and Auxiliary Space Complexity
@@ -133,7 +140,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

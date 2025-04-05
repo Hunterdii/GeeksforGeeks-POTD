@@ -1,9 +1,9 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
-  - Arrays  
-  - Greedy  
+  - Arrays
+  - Greedy
 ---
 
 # 🚀 _Day 9. Minimize the Heights II_ 🧠
@@ -20,6 +20,7 @@ Given an array `arr[]` denoting the heights of N towers and a positive integer `
 Your task is to find out the minimum possible difference between the height of the tallest and shortest towers after performing the operations on each tower.
 
 **Note:**
+
 - It is compulsory to either increase or decrease the height of the tower by `K` for each tower.
 - After the operation, the resultant array should not contain any negative integers.
 
@@ -28,7 +29,7 @@ Your task is to find out the minimum possible difference between the height of t
 **Input:**  
 `k = 2, arr[] = {1, 5, 8, 10}`  
 **Output:**  
-`5`  
+`5`
 
 **Explanation:**  
 After performing the operations, the modified heights will be `{3, 3, 6, 8}`. The difference between the largest and smallest heights is `8 - 3 = 5`.
@@ -36,12 +37,13 @@ After performing the operations, the modified heights will be `{3, 3, 6, 8}`. Th
 **Input:**  
 `k = 3, arr[] = {3, 9, 12, 16, 20}`  
 **Output:**  
-`11`  
+`11`
 
 **Explanation:**  
 After performing the operations, the modified heights will be `{6, 12, 9, 13, 17}`. The difference between the largest and smallest heights is `17 - 6 = 11`.
 
 ### Constraints:
+
 - `1 ≤ k ≤ 10^7`
 - `1 ≤ n ≤ 10^5`
 - `1 ≤ arr[i] ≤ 10^7`
@@ -49,6 +51,7 @@ After performing the operations, the modified heights will be `{6, 12, 9, 13, 17
 ## 🎯 **My Approach:**
 
 1. **Greedy Approach**:
+
    - Sort the array of heights.
    - The goal is to minimize the difference between the tallest and shortest towers after performing the operations.
    - For each tower, choose whether to increase or decrease the height in such a way that the difference is minimized.
@@ -155,7 +158,7 @@ class Solution {
 class Solution:
     def getMinDiff(self, arr, k):
         n = len(arr)
-        if n == 1: 
+        if n == 1:
             return 0
         arr.sort()
 
@@ -174,9 +177,9 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ If you find this helpful, please give this repository a star! ⭐  
+⭐ If you find this helpful, please give this repository a star! ⭐
 
 ---
 

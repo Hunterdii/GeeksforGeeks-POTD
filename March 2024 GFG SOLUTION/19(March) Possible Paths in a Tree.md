@@ -10,18 +10,23 @@ Given a weighted tree with n nodes and (n-1) edges. You are given q queries. Eac
 
 **Example 1:**
 
-Input: 
+Input:
+
 ```
 n = 7
 edges {start, end, weight} = {{1, 2, 3}, {2, 3, 1}, {2, 4, 9}, {3, 6, 7}, {3, 5, 8}, {5, 7, 4}}
 q = 3
 queries[] = {1, 3, 5}
 ```
-Output: 
+
+Output:
+
 ```
 1 3 4
 ```
-Explanation: 
+
+Explanation:
+
 - Query 1: Path from 2 to 3
 - Query 2: Path from 1 to 2, 1 to 3, and 2 to 3
 - Query 3: Path from 1 to 2, 1 to 3, 2 to 3, and 5 to 7
@@ -53,13 +58,13 @@ public:
             parent[i] = i;
             sz[i] = 1;
         }
-        
+
         vector<pair<int, pair<int, int>>> wt;
         for (auto& edge : edges)
             wt.push_back({edge[2], {edge[0], edge[1]}});
-        
+
         sort(wt.begin(), wt.end());
-        
+
         map<int, int> mp;
         for (auto& edge : wt) {
             int a = edge.first;
@@ -67,7 +72,7 @@ public:
             int c = edge.second.second;
             mp[a] = Union(b, c, parent, sz, ans);
         }
-        
+
         for (int i = 0; i < q; i++) {
             auto val = mp.upper_bound(queries[i]);
             if (val == mp.begin())
@@ -79,7 +84,7 @@ public:
         }
         return res;
     }
-    
+
 private:
     int root(int i, vector<int>& parent) {
         while (parent[i] != i) {
@@ -108,7 +113,7 @@ private:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

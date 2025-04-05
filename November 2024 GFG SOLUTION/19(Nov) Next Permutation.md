@@ -1,4 +1,5 @@
-# *19. Next Permutation*
+# _19. Next Permutation_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/next-permutation5226/1)
 
 <div align="center">
@@ -11,7 +12,6 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 <br/>
 
-
 ## Problem Description
 
 Given an array of integers `arr[]` representing a permutation, implement the next permutation that rearranges the numbers into the lexicographically next greater permutation. If no such permutation exists, rearrange the numbers into the lowest possible order (i.e., sorted in ascending order).
@@ -23,7 +23,7 @@ Given an array of integers `arr[]` representing a permutation, implement the nex
 **Input:**  
 `arr = [2, 4, 1, 7, 5, 0]`  
 **Output:**  
-`[2, 4, 5, 0, 1, 7]`  
+`[2, 4, 5, 0, 1, 7]`
 
 **Explanation:**  
 The next permutation of the given array is `[2, 4, 5, 0, 1, 7]`.
@@ -31,7 +31,7 @@ The next permutation of the given array is `[2, 4, 5, 0, 1, 7]`.
 **Input:**  
 `arr = [3, 2, 1]`  
 **Output:**  
-`[1, 2, 3]`  
+`[1, 2, 3]`
 
 **Explanation:**  
 As `arr[]` is the last permutation, the next permutation is the lowest one.
@@ -39,35 +39,34 @@ As `arr[]` is the last permutation, the next permutation is the lowest one.
 **Input:**  
 `arr = [3, 4, 2, 5, 1]`  
 **Output:**  
-`[3, 4, 5, 1, 2]`  
+`[3, 4, 5, 1, 2]`
 
 **Explanation:**  
 The next permutation of the given array is `[3, 4, 5, 1, 2]`.
 
 ### Constraints:
+
 - `1 ≤ arr.size() ≤ 10^5`
 - `1 ≤ arr[i] ≤ 10^5`
-
 
 ## My Approach
 
 1. **Identify the Pivot:**
+
    - Start from the rightmost side of the array and find the first index `i` such that `arr[i] < arr[i+1]`.
    - This index `i` is the pivot where the next permutation needs to be modified.
 
 2. **Swap with Successor:**
+
    - Find the smallest element on the right of `i` that is greater than `arr[i]` and swap them. This ensures the permutation becomes lexicographically larger.
 
 3. **Reverse the Suffix:**
    - Reverse the elements from `i+1` to the end of the array to get the next smallest permutation.
 
-
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), as we traverse the array multiple times to find the pivot, the successor, and reverse the suffix.  
+- **Expected Time Complexity:** O(n), as we traverse the array multiple times to find the pivot, the successor, and reverse the suffix.
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for temporary variables.
-
-
 
 ## Code (C)
 
@@ -98,7 +97,6 @@ void nextPermutation(int arr[], int n) {
 }
 ```
 
-
 ## Code (C++)
 
 ```cpp
@@ -107,11 +105,11 @@ class Solution {
     void nextPermutation(vector<int>& arr) {
         int n = arr.size(), i = n - 2, j = n - 1;
 
-        while (i >= 0 && arr[i] >= arr[i + 1]) 
+        while (i >= 0 && arr[i] >= arr[i + 1])
             i--;
 
         if (i >= 0) {
-            while (arr[j] <= arr[i]) 
+            while (arr[j] <= arr[i])
                 j--;
             swap(arr[i], arr[j]);
         }
@@ -120,7 +118,6 @@ class Solution {
     }
 };
 ```
-
 
 ## Code (Java)
 
@@ -157,7 +154,6 @@ class Solution {
 }
 ```
 
-
 ## Code (Python)
 
 ```python
@@ -180,10 +176,9 @@ class Solution:
         arr[i + 1:] = reversed(arr[i + 1:])
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

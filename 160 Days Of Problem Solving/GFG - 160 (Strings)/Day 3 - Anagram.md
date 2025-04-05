@@ -1,12 +1,13 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - Strings
-  - Sorting  
+  - Sorting
 ---
 
 # 🚀 _Day 3. Anagram_ 🧠
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/anagram-1587115620)
 
 ## 💡 **Problem Description:**
@@ -40,21 +41,23 @@ The characters in both strings are not the same, so they are not anagrams.
 Both strings contain the same character, so they are anagrams.
 
 ### Constraints:
+
 - $`1 ≤ s1.size(), s2.size() ≤ 10^5`$
 
 ## 🎯 **My Approach:**
 
-1. **Character Counting**:  
-   - Since anagrams contain the same characters with the same frequency, we can compare the frequency of characters in both strings.  
-   - To do this efficiently, we use an array of size 26 (for the 26 lowercase letters) to count the frequency of characters in both strings.  
+1. **Character Counting**:
+
+   - Since anagrams contain the same characters with the same frequency, we can compare the frequency of characters in both strings.
+   - To do this efficiently, we use an array of size 26 (for the 26 lowercase letters) to count the frequency of characters in both strings.
    - The idea is to increment the count for characters in `s1` and decrement the count for characters in `s2`. If the counts match after processing both strings, the strings are anagrams.
 
-2. **Steps:**  
-   - Check if both strings have the same length. If not, they cannot be anagrams.  
-   - Iterate through the strings and update the frequency count for each character.  
+2. **Steps:**
+   - Check if both strings have the same length. If not, they cannot be anagrams.
+   - Iterate through the strings and update the frequency count for each character.
    - After processing both strings, check if all the counts are zero. If they are, return `true`; otherwise, return `false`.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n), where `n` is the length of the strings. We traverse both strings once, performing constant-time operations for each character.
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for the frequency count array (size 26).
@@ -88,10 +91,10 @@ class Solution {
 public:
     bool areAnagrams(string& s1, string& s2) {
         if (s1.length() != s2.length()) return false;
-        int counts[26] = {0}; 
+        int counts[26] = {0};
         for (int i = 0; i < s1.length(); i++) {
-            counts[s1[i] - 'a']++;  
-            counts[s2[i] - 'a']--;  
+            counts[s1[i] - 'a']++;
+            counts[s2[i] - 'a']--;
         }
         for (int count : counts) {
             if (count != 0) return false;
@@ -145,7 +148,7 @@ class Solution:
 
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

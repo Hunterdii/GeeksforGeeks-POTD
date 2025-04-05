@@ -9,35 +9,41 @@ You are given a weighted undirected graph having `n` vertices numbered from `1` 
 **Examples:**
 
 Input:
+
 ```
 n = 5, m = 6
 edges = [[1, 2, 2], [2, 5, 5], [2, 3, 4], [1, 4, 1], [4, 3, 3], [3, 5, 1]]
 ```
+
 Output:
+
 ```
 5
 ```
+
 Explanation:
 The shortest path from 1 to 5 is by the path 1 -> 4 -> 3 -> 5 whose weight is 5.
-
 
 ### My Approach
 
 1. **Graph Representation:**
+
 - Create a graph using an adjacency list to store the vertices and their respective weights.
 
 2. **Dijkstra's Algorithm:**
+
 - Use Dijkstra's algorithm to find the shortest path from vertex `1` to vertex `n`.
 - Initialize the distance for the starting vertex `1` as `0` and all other vertices as `infinity`.
 - Use a priority queue to explore the vertices based on the minimum distance.
 
 3. **Path Reconstruction:**
+
 - Keep track of the parent of each vertex to reconstruct the path once the shortest path to vertex `n` is found.
 - If the distance to vertex `n` remains `infinity`, return `[-1]` indicating no path exists.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(m * log(n)), as Dijkstra's algorithm explores each edge in logarithmic time.
+- **Expected Time Complexity:** O(m \* log(n)), as Dijkstra's algorithm explores each edge in logarithmic time.
 - **Expected Auxiliary Space Complexity:** O(n + m), as we store the graph representation and additional data structures for Dijkstra's algorithm.
 
 ### Code
@@ -201,7 +207,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

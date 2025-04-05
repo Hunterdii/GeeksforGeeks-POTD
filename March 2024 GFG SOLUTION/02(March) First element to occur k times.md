@@ -1,7 +1,9 @@
 ## 02. First element to occur k times
+
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/first-element-to-occur-k-times5150/1)
 
 ### My Approach
+
 1. We'll utilize an unordered map to keep track of how many times each element appears in the array.
 2. While traversing through the array:
    - If the frequency of the current element reaches k, we'll immediately return that element.
@@ -13,6 +15,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Auxiliary Space Complexity**: O(n) - We use an unordered map to store the frequency of elements.
 
 ### Code (C++)
+
 ```cpp
 class Solution{
     public:
@@ -31,7 +34,7 @@ class Solution{
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

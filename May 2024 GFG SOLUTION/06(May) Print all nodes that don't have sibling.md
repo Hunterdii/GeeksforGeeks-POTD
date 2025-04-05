@@ -11,38 +11,47 @@ Two nodes are said to be siblings if they are present at the same level, and the
 **Example 1:**
 
 Input:
+
 ```
        37
-      /   
+      /
     20
-    /     
-  113 
+    /
+  113
 ```
-Output: 
+
+Output:
+
 ```
 20 113
 ```
-Explanation: 
+
+Explanation:
 Nodes 20 and 113 don't have any siblings.
 
 **Example 2:**
 
 Input:
+
 ```
        1
       / \
-     2   3 
+     2   3
 ```
-Output: 
+
+Output:
+
 ```
 -1
 ```
-Explanation: 
+
+Explanation:
 Every node has a sibling.
 
 ### Approach
 
 1. **Traversal:**
+
    - Implement a depth-first traversal of the binary tree.
    - During the traversal, keep track of nodes that don't have siblings.
 
@@ -63,7 +72,7 @@ void findNoSibling(Node* node, vector<int> &ans) {
         return;
 
     findNoSibling(node->left, ans);
-    
+
     if ((node->left && !node->right) || (!node->left && node->right))
         ans.push_back(node->left ? node->left->data : node->right->data);
 
@@ -73,7 +82,7 @@ void findNoSibling(Node* node, vector<int> &ans) {
 vector<int> noSibling(Node* node) {
     vector<int> ans;
     findNoSibling(node, ans);
-    
+
     if (ans.empty())
         ans.push_back(-1);
 
@@ -85,7 +94,7 @@ vector<int> noSibling(Node* node) {
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

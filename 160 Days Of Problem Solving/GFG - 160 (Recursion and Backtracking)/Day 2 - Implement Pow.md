@@ -1,13 +1,12 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Recursion
   - Backtracking
 ---
 
 # 🚀 _Day 2. Implement Pow_ 🧠
-
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/recursion-and-backtracking-gfg-160/problem/powx-n)
 
@@ -45,15 +44,16 @@ You are given a floating point number `b` and an integer `e`, and your task is t
    The problem can be efficiently solved using the binary exponentiation approach (also known as exponentiation by squaring). This method reduces the number of multiplications required to compute \( b^e \) by breaking the problem down recursively.
 
 2. **Steps:**
+
    - If `e == 0`, return 1, as any number raised to the power of 0 is 1.
    - If `e` is negative, calculate the result using $\( \frac{1}{b^e} \)$.
    - For positive `e`, repeatedly divide `e` by 2, multiplying `b` by itself for each halving of `e`.
    - The result is obtained by squaring the value of `b` for each step and multiplying it with the current result when necessary.
 
 3. **Optimization:**  
-   Using a while loop or recursion, the approach reduces the time complexity from  O(e) (in the naive approach) to O(log e) , which is significantly faster for large values of `e`.
+   Using a while loop or recursion, the approach reduces the time complexity from O(e) (in the naive approach) to O(log e) , which is significantly faster for large values of `e`.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** $O(log |e|)$, where $(e)$ is the exponent. The exponent is reduced by half in each iteration.
 - **Expected Auxiliary Space Complexity:** $O(1)$, as we only use a constant amount of additional space.
@@ -98,8 +98,6 @@ public:
 - **Time Complexity:** $\( O(\log e) \)$
 - **Space Complexity:** $\( O(1) \)$
 
-
-
 ## **2. Tail-Recursive Method**
 
 ```cpp
@@ -117,12 +115,10 @@ public:
 - **Time Complexity:** $\( O(\log e) \)$
 - **Space Complexity:** $\( O(\log e) \)$ (if no tail-call optimization)
 
-
-
 ## **3. Using Built-in Function**
 
 ```cpp
-// #include <cmath> 
+// #include <cmath>
 class Solution {
 public:
     double power(double b, int e) {
@@ -134,8 +130,6 @@ public:
 - **Optimization:** Leverages highly optimized library implementation.
 - **Time Complexity:** $\( O(1) \)$ (Library-optimized)
 - **Space Complexity:** $\( O(1) \)$
-
-
 
 ## **4. Modified Iterative Approach (Handling Edge Cases)**
 
@@ -160,17 +154,15 @@ public:
 - **Time Complexity:** $\( O(\log e) \)$
 - **Space Complexity:** $\( O(1) \)$
 
-
-
 ### Summary of Approaches:
 
-| Approaches                  | Time Complexity  | Space Complexity  | Notes                        |
-|-----------------------------|-----------------|-------------------|------------------------------|
-| Recursive                   | $O(\log e)$ | $O(\log e)$   | Simple, uses recursion.      |
-| Iterative (Binary Exp.)     | $O(\log e) $ | $O(1)$        | Most efficient approach.     |
-| Tail-Recursive             | $O(\log e) $ | $O(\log e)$   | Requires tail-call opt.      |
-| Built-in `std::pow`        | $O(1) $      | $O(1)$        | Leveraging library power.    |
-| Modified Iterative         | $O(\log e) $ | $O(1)$        | Handles edge cases well.     |
+| Approaches              | Time Complexity | Space Complexity | Notes                     |
+| ----------------------- | --------------- | ---------------- | ------------------------- |
+| Recursive               | $O(\log e)$     | $O(\log e)$      | Simple, uses recursion.   |
+| Iterative (Binary Exp.) | $O(\log e) $    | $O(1)$           | Most efficient approach.  |
+| Tail-Recursive          | $O(\log e) $    | $O(\log e)$      | Requires tail-call opt.   |
+| Built-in `std::pow`     | $O(1) $         | $O(1)$           | Leveraging library power. |
+| Modified Iterative      | $O(\log e) $    | $O(1)$           | Handles edge cases well.  |
 
 The **iterative binary exponentiation** is typically the best choice for performance-critical scenarios.
 
@@ -203,11 +195,9 @@ class Solution:
         return result if e >= 0 else 1.0 / result
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

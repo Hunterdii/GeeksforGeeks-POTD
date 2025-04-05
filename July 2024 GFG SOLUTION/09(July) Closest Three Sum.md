@@ -11,31 +11,39 @@ Note: If there are multiple solutions, return the maximum one.
 **Example:**
 
 Input:
+
 ```
 arr = [-7, 9, 8, 3, 1, 1]
 target = 2
 ```
+
 Output:
+
 ```
 2
 ```
+
 Explanation:
 There is only one triplet present in the array where elements are -7, 8, 1 whose sum is 2.
 
 ### My Approach
 
 1. **Sorting:**
+
    - First, sort the array `arr`.
 
 2. **Initialization:**
+
    - Initialize `closest_sum` to a very large value to store the closest sum to the target.
    - Get the size of the array `n`.
 
 3. **Three Pointers Technique:**
+
    - Iterate through the array with the first pointer `i` from 0 to `n-3`.
    - For each element `arr[i]`, use two pointers `left` (starting from `i+1`) and `right` (starting from `n-1`) to find the triplet sum closest to the target.
 
 4. **Finding the Closest Sum:**
+
    - Calculate the current sum as `arr[i] + arr[left] + arr[right]`.
    - If the current sum equals the target, return the current sum.
    - Update `closest_sum` if the current sum is closer to the target than the previous closest sum.
@@ -70,7 +78,7 @@ public:
                     return current_sum;
                 }
 
-                if (abs(current_sum - target) < abs(closest_sum - target) || 
+                if (abs(current_sum - target) < abs(closest_sum - target) ||
                    (abs(current_sum - target) == abs(closest_sum - target) && current_sum > closest_sum)) {
                     closest_sum = current_sum;
                 }
@@ -106,7 +114,7 @@ class Solution {
                     return current_sum;
                 }
 
-                if (Math.abs(current_sum - target) < Math.abs(closest_sum - target) || 
+                if (Math.abs(current_sum - target) < Math.abs(closest_sum - target) ||
                    (Math.abs(current_sum - target) == Math.abs(closest_sum - target) && current_sum > closest_sum)) {
                     closest_sum = current_sum;
                 }
@@ -155,7 +163,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/).
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/).
 Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐

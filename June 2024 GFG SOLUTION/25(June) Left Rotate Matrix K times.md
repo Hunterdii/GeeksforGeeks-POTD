@@ -9,6 +9,7 @@ You are given an integer `k` and a matrix `mat`. Return a matrix where it is rot
 **Example:**
 
 Input:
+
 ```
 k = 1
 mat = [
@@ -17,14 +18,18 @@ mat = [
   [7, 8, 9]
 ]
 ```
+
 Output:
+
 ```
 2 3 1
 5 6 4
 8 9 7
 ```
+
 Explanation:
 After rotating the matrix by one position to the left, it becomes:
+
 ```
 2 3 1
 5 6 4
@@ -34,20 +39,23 @@ After rotating the matrix by one position to the left, it becomes:
 ### My Approach
 
 1. **Initialization:**
+
 - Determine the number of rows (`n`) and columns (`m`) in the matrix `mat`.
 - Create a new matrix `ans` of the same dimensions to store the result after rotation.
 
 2. **Rotation Calculation:**
+
 - Calculate the effective number of rotations needed using `k % m` to handle cases where `k` is larger than `m`.
 - Iterate over each element in the original matrix `mat`, and determine its new position in the matrix `ans` after rotation.
 
 3. **Return:**
+
 - Return the matrix `ans` containing the elements after `k` left rotations.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * m), as we iterate over all elements in the matrix once.
-- **Expected Auxiliary Space Complexity:** O(n * m), as we use an additional matrix of the same size to store the rotated elements.
+- **Expected Time Complexity:** O(n \* m), as we iterate over all elements in the matrix once.
+- **Expected Auxiliary Space Complexity:** O(n \* m), as we use an additional matrix of the same size to store the rotated elements.
 
 ### Code (C++)
 
@@ -109,13 +117,13 @@ class Solution:
             for j in range(m):
                 new_col = (j - k + m) % m
                 ans[i][new_col] = mat[i][j]
-        
+
         return ans
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,6 +1,6 @@
 ---
-Difficulty: Easy  
-Source: 160 Days of Problem Solving  
+Difficulty: Easy
+Source: 160 Days of Problem Solving
 Tags:
   - prefix-sum
   - sliding-window
@@ -8,7 +8,6 @@ Tags:
 ---
 
 # 🚀 _Day 3. Largest Subarray of 0s and 1s_ 🧠
-
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/prefix-sum-gfg-160/problem/largest-subarray-of-0s-and-1s)
 
@@ -25,16 +24,12 @@ You are given a binary array `arr[]` consisting of `0s` and `1s`. Your task is t
 
 **Explanation:** The subarray `[0, 1, 1, 1, 0, 0]` has an equal number of 0s and 1s (three 0s and three 1s).
 
-
-
 **Input:**  
 `arr[] = [0, 0, 1, 1, 0]`  
 **Output:**  
 `4`
 
 **Explanation:** Both `[0, 0, 1, 1]` and `[0, 1, 1, 0]` are valid subarrays with an equal number of 0s and 1s.
-
-
 
 **Input:**  
 `arr[] = [0]`  
@@ -44,14 +39,14 @@ You are given a binary array `arr[]` consisting of `0s` and `1s`. Your task is t
 **Explanation:** No subarray has an equal number of 0s and 1s.
 
 ### Constraints:
+
 - $`1 <= arr.size() <= 10^5`$
 - `arr[i]` is either `0` or `1`.
-
-
 
 ## 🎯 **My Approach:**
 
 ### HashMap and Prefix Sum Technique
+
 To solve this problem efficiently, we use a hashmap to store the first occurrence of prefix sums. This helps us determine the length of subarrays with equal numbers of 0s and 1s:
 
 1. Treat `0` as `-1` to convert the problem into finding a subarray with sum `0`.
@@ -60,9 +55,8 @@ To solve this problem efficiently, we use a hashmap to store the first occurrenc
 4. If the same prefix sum is encountered again, the subarray between these two indices has a sum of `0` (indicating equal numbers of `0s` and `1s`).
 5. Update the maximum length for each valid subarray.
 
-
-
 ### Steps:
+
 1. Initialize a hashmap to store prefix sums and their first occurrence index.
 2. Replace all `0s` with `-1` in the array.
 3. Traverse the array while maintaining a prefix sum:
@@ -71,9 +65,7 @@ To solve this problem efficiently, we use a hashmap to store the first occurrenc
    - Otherwise, store the prefix sum with its index.
 4. Return the maximum length.
 
-
-
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n), where `n` is the size of the array. Each element is processed once, and hashmap operations (insert and lookup) are O(1) on average.
 - **Expected Auxiliary Space Complexity:** O(n), as the hashmap stores at most `n` unique prefix sums.
@@ -99,8 +91,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -118,8 +108,6 @@ class Solution {
     }
 }
 ```
-
-
 
 ## Code (Python)
 
@@ -139,11 +127,9 @@ class Solution:
         return max_len
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

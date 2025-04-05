@@ -9,20 +9,25 @@ Given an array `nums` of \(n\) positive integers, find the minimum number of ope
 **Example:**
 
 Input:
+
 ```
 n = 6
 nums = [1, 2, 3, 6, 5, 4]
 ```
+
 Output:
+
 ```
 2
 ```
-Explanation: 
+
+Explanation:
 By decreasing 6 by 2 and increasing 4 by 2, nums will be like [1, 2, 3, 4, 5, 6], which is strictly increasing.
 
 ### My Approach
 
 1. **Dynamic Programming:**
+
 - Initialize a dynamic programming array `dp` of size \(n\) with all elements set to 1.
 - Iterate through the array `nums` and for each element `nums[i]`, compare it with all previous elements `nums[j]` (where \(j < i\)).
 - If `nums[i] - nums[j] >= i - j`, update `dp[i]` as `max(dp[i], dp[j] + 1)` and update `maxi` as `max(maxi, dp[i])`.
@@ -59,7 +64,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

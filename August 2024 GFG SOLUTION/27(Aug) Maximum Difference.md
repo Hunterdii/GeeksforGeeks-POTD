@@ -11,34 +11,45 @@ Given an integer array `arr`, the task is to find the maximum absolute differenc
 **Example:**
 
 Input:
+
 ```
 arr = [2, 1, 8]
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation: The left smaller array `ls` is `[0, 0, 1]`, and the right smaller array `rs` is `[1, 0, 0]`. The maximum difference of `abs(ls[i] - rs[i])` is `1`.
 
 Input:
+
 ```
 arr = [2, 4, 8, 7, 7, 9, 3]
 ```
+
 Output:
+
 ```
 4
 ```
+
 Explanation: The left smaller array `ls` is `[0, 2, 4, 4, 4, 7, 2]`, and the right smaller array `rs` is `[0, 3, 7, 3, 3, 3, 0]`. The maximum difference of `abs(ls[i] - rs[i])` is `abs(7 - 3) = 4`.
 
 ### My Approach
 
 1. **Use of Stacks:**
+
    - Create two stacks to store the indices of elements for left and right smaller elements.
 
 2. **Left Smaller Array Calculation:**
+
    - Traverse the array from left to right and fill the `ls` array by popping elements from the stack until the top of the stack is smaller than the current element.
 
 3. **Right Smaller Array Calculation:**
+
    - Traverse the array from right to left and fill the `rs` array similarly by using a stack to track the nearest smaller elements on the right.
 
 4. **Calculate Maximum Difference:**
@@ -149,11 +160,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

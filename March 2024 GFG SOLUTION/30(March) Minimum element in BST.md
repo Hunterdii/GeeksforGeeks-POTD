@@ -11,6 +11,7 @@ Given the root of a Binary Search Tree, the task is to find the minimum valued e
 Example 1:
 
 Input:
+
 ```
            5
          /    \
@@ -20,11 +21,14 @@ Input:
      /
     1
 ```
-Output: 
+
+Output:
+
 ```
 1
 ```
-Explanation: 
+
+Explanation:
 The minimum value in the given BST is 1.
 
 **Expected Time Complexity:** O(Height of the BST)
@@ -36,10 +40,8 @@ The minimum value in the given BST is 1.
    - Start from the root node and traverse the BST recursively.
    - At each node, compare its value with the minimum value found so far.
    - Recur for the left subtree if it exists.
-   
 2. **Base Case:**
    - If the current node is `null`, return `INT_MAX` to indicate no minimum value found.
-   
 3. **Return Minimum:**
    - After traversing all nodes, return the minimum value found.
 
@@ -51,10 +53,10 @@ public:
     int minValue(Node* root) {
         if (root == nullptr)
             return INT_MAX;
-        
+
         int leftMin = minValue(root->left);
         int rightMin = minValue(root->right);
-        
+
         return std::min(root->data, std::min(leftMin, rightMin));
     }
 };
@@ -68,14 +70,13 @@ public:
 ### Approach 2: Recursive Approach with Global Variable
 
 1. **Recursive Traversal:**
+
    - Similar to the first approach, but instead of returning the minimum value found so far from each recursion, we update a global variable `min` to store the minimum value.
 
 2. **Base Case:**
    - If the current node is `null`, return `INT_MAX` to indicate no minimum value found.
-   
 3. **Update Minimum:**
    - At each node, update the `min` variable with the minimum of its value and the value stored in `min`.
-   
 4. **Return Minimum:**
    - After traversing all nodes, return the value stored in `min`.
 
@@ -85,22 +86,23 @@ public:
 class Solution {
 public:
     int min = INT_MAX;
-    
+
     int minValue(Node* root) {
         if (root == nullptr)
             return INT_MAX;
-        
+
         if (root->data < min) {
             min = root->data;
         }
-        
+
         minValue(root->left);
         minValue(root->right);
-        
+
         return min;
     }
 };
 ```
+
 ### Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(Height of the BST), as we traverse the tree until we reach the leftmost node.
@@ -109,9 +111,11 @@ public:
 ### Approach 3: Iterative Approach with Improved Space Complexity
 
 1. **Iterative Traversal:**
+
    - Start from the root node and traverse the left subtree iteratively until we reach the leftmost node.
 
 2. **Update Minimum:**
+
    - At each node, update the minimum value found so far.
 
 3. **Return Minimum:**
@@ -125,12 +129,12 @@ public:
     int minValue(Node* root) {
         if (root == nullptr)
             return INT_MAX;
-        
+
         int leftMin = minValue(root->left);
         int rightMin = minValue(root->right);
-        
+
         int minVal = std::min(root->data, std::min(leftMin, rightMin));
-        
+
         // Only traverse the subtree with the smaller minimum value.
         if (leftMin < minVal)
             return leftMin;
@@ -149,7 +153,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

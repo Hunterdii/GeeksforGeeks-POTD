@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Stack
   - Recursion
@@ -9,8 +9,7 @@ Tags:
 
 # 🚀 _Day 9. Decode the string_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/stack-gfg-160/problem/decode-the-string2444)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/stack-gfg-160/problem/decode-the-string2444)
 
 ## 💡 **Problem Description:**
 
@@ -22,41 +21,47 @@ The encoding rule is:
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 s = "1[b]"
 
-#### **Output:**  
+#### **Output:**
+
 b
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The string "b" is present only once.
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 s = "3[b2[ca]]"
 
-#### **Output:**  
+#### **Output:**
+
 bcacabcacabcaca
 
-#### **Explanation:**  
+#### **Explanation:**
+
 - First, `2[ca]` expands to `caca`
 - Then, `3[bcaca]` expands to `bcacabcacabcaca` which is the final output.
 
+### **Constraints:**
 
-### **Constraints:**  
-- $\(1 \leq |s| \leq 10^5\)$  
-
+- $\(1 \leq |s| \leq 10^5\)$
 
 ## 🎯 **My Approach:**
 
-### **Stack-Based Iterative Approach (O(N) Time, O(N) Space)**  
+### **Stack-Based Iterative Approach (O(N) Time, O(N) Space)**
+
 The goal is to parse and decode nested patterns like `k[encoded_string]` using a **stack-based simulation**.
 
-### **Algorithm Steps:**  
+### **Algorithm Steps:**
+
 1. **Use two stacks**:
    - One for tracking the string built so far.
    - One for tracking the repetition counts (`k`).
@@ -67,11 +72,10 @@ The goal is to parse and decode nested patterns like `k[encoded_string]` using a
    - Otherwise, append the character to the current string.
 3. The final decoded string will be the result.
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-## 🕒 **Time and Auxiliary Space Complexity** 
-
-- **Expected Time Complexity:** O(N), since each character is processed at most twice (once when pushed, once when popped).  
-- **Expected Auxiliary Space Complexity:** O(N), as the worst case (deeply nested or large repeated sections) can push every character onto the stack.  
+- **Expected Time Complexity:** O(N), since each character is processed at most twice (once when pushed, once when popped).
+- **Expected Auxiliary Space Complexity:** O(N), as the worst case (deeply nested or large repeated sections) can push every character onto the stack.
 
 ## 📝 **Solution Code**
 
@@ -101,11 +105,11 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
 ## **2️⃣ Using `deque` Instead of `Stack` (O(N) Time, O(N) Space)**
+
 This approach uses `deque` instead of `stack` for better performance on larger inputs.
 
 ```cpp
@@ -131,10 +135,12 @@ public:
     }
 };
 ```
+
 🔹 **Pros:** Faster due to `deque`'s optimized access.  
 🔹 **Cons:** Similar complexity but slight memory overhead.
 
 ## **3️⃣ Recursive Approach (O(N) Time, O(N) Space)**
+
 This recursive solution simulates decoding via DFS.
 
 ```cpp
@@ -167,27 +173,28 @@ public:
     }
 };
 ```
+
 🔹 **Pros:** Uses recursion to break down the problem naturally.  
 🔹 **Cons:** Higher memory usage due to recursive stack frames.
 
 ## **📊 Comparison of Approaches**
 
-| **Approach**                  | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                 | ⚠️ **Cons**                  |
-|-------------------------------|---------------------|------------------|----------------------|-------------------|
-| **Stack-Based Iterative**       | 🟢 O(N)             | 🟢 O(N)        | Simple and fast      | None               |
-| **Deque-Based Iterative**       | 🟢 O(N)             | 🟡 O(N)        | Slightly faster for large data | Slightly more complex |
-| **Recursive DFS**               | 🟢 O(N)             | 🔴 O(N)        | Elegant for nested parsing | Stack overflow risk |
+| **Approach**              | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**           |
+| ------------------------- | ---------------------- | ----------------------- | ------------------------------ | --------------------- |
+| **Stack-Based Iterative** | 🟢 O(N)                | 🟢 O(N)                 | Simple and fast                | None                  |
+| **Deque-Based Iterative** | 🟢 O(N)                | 🟡 O(N)                 | Slightly faster for large data | Slightly more complex |
+| **Recursive DFS**         | 🟢 O(N)                | 🔴 O(N)                 | Elegant for nested parsing     | Stack overflow risk   |
 
+## 💡 **Best Choice?**
 
-## 💡 **Best Choice?**  
-- ✅ **For practical use:** Stack-based iterative (O(N) time, O(N) space) is the best balance.  
-- ✅ **For highly nested strings:** Recursive DFS can be more intuitive.  
+- ✅ **For practical use:** Stack-based iterative (O(N) time, O(N) space) is the best balance.
+- ✅ **For highly nested strings:** Recursive DFS can be more intuitive.
 - ✅ **For micro-optimizations:** Deque-based version is worth considering.
 
 </details>
 
-
 ## **Code (Java)**
+
 ```java
 class Solution {
     static String decodeString(String s) {
@@ -211,6 +218,7 @@ class Solution {
 ```
 
 ## **Code (Python)**
+
 ```python
 class Solution:
     def decodedString(self, s: str) -> str:
@@ -230,14 +238,13 @@ class Solution:
         return cur
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

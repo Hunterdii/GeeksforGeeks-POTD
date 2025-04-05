@@ -1,4 +1,4 @@
-# *23. Missing and Repeating*
+# _23. Missing and Repeating_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1)
 
@@ -44,10 +44,8 @@ Given an unsorted array `arr` of positive integers where one number 'A' from the
 1. **XOR Logic:**
    - We XOR all the elements of the array and all numbers from 1 to n. The result will be `xor_all`, which is the XOR of the repeating and the missing numbers.
    - Find the rightmost set bit in `xor_all`. This will help separate the missing and repeating numbers into two different sets based on whether they have the bit set or not.
-   
 2. **Separate Sets:**
    - Traverse the array again and XOR the elements that belong to the same set, resulting in two XOR results (`xor1` and `xor2`). These will represent the missing and repeating numbers.
-   
 3. **Final Step:**
    - Determine which of `xor1` or `xor2` is the repeating number by checking the input array, and deduce the missing number.
 
@@ -67,19 +65,19 @@ public:
         int n = arr.size();
         int xor_all = 0, xor1 = 0, xor2 = 0;
         for (int i = 0; i < n; i++) {
-            xor_all ^= arr[i];   
-            xor_all ^= (i + 1);  
+            xor_all ^= arr[i];
+            xor_all ^= (i + 1);
         }
         int set_bit = xor_all & ~(xor_all - 1);
         for (int i = 0; i < n; i++) {
-            if (arr[i] & set_bit)  
+            if (arr[i] & set_bit)
                 xor1 ^= arr[i];
-            else                    
+            else
                 xor2 ^= arr[i];
 
             if ((i + 1) & set_bit)
                 xor1 ^= (i + 1);
-            else                
+            else
                 xor2 ^= (i + 1);
         }
         int repeating, missing;
@@ -111,21 +109,21 @@ class Solve {
         int xor_all = 0, xor1 = 0, xor2 = 0;
 
         for (int i = 0; i < n; i++) {
-            xor_all ^= arr[i];     
-            xor_all ^= (i + 1);    
+            xor_all ^= arr[i];
+            xor_all ^= (i + 1);
         }
 
         int set_bit = xor_all & ~(xor_all - 1);
 
         for (int i = 0; i < n; i++) {
-            if ((arr[i] & set_bit) != 0)  
+            if ((arr[i] & set_bit) != 0)
                 xor1 ^= arr[i];
-            else                          
+            else
                 xor2 ^= arr[i];
 
-            if (((i + 1) & set_bit) != 0)  
+            if (((i + 1) & set_bit) != 0)
                 xor1 ^= (i + 1);
-            else                           
+            else
                 xor2 ^= (i + 1);
         }
 
@@ -153,27 +151,27 @@ class Solve {
 
 ```python
 class Solution:
-    def findTwoElement(self, arr): 
+    def findTwoElement(self, arr):
         n = len(arr)
         xor_all = 0
         xor1 = 0
         xor2 = 0
 
         for i in range(n):
-            xor_all ^= arr[i]     
-            xor_all ^= (i + 1)    
+            xor_all ^= arr[i]
+            xor_all ^= (i + 1)
 
         set_bit = xor_all & ~(xor_all - 1)
 
         for i in range(n):
-            if (arr[i] & set_bit) != 0:  
+            if (arr[i] & set_bit) != 0:
                 xor1 ^= arr[i]
-            else:                        
+            else:
                 xor2 ^= arr[i]
 
-            if ((i + 1) & set_bit) != 0:  
+            if ((i + 1) & set_bit) != 0:
                 xor1 ^= (i + 1)
-            else:                         
+            else:
                 xor2 ^= (i + 1)
 
         repeating, missing = 0, 0
@@ -194,7 +192,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

@@ -9,19 +9,24 @@ Given two integers `x` and `y`, representing the coordinates of a point, find th
 **Example:**
 
 Input:
+
 ```
 x = 3, y = 6
 ```
+
 Output:
+
 ```
 84
 ```
+
 Explanation:
 There are a total of 84 possible paths from point `(3,6)` to the origin `(0,0)`.
 
 ### My Approach
 
 1. **Dynamic Programming:**
+
    - We'll use a 2D array `dp` to store the number of paths from each point to the origin.
    - Initialize the base cases: `dp[0][j] = 1` and `dp[i][0] = 1` for all `i` and `j`.
    - Then, iterate through the array and calculate the number of paths to each point based on the number of paths to its left and up.
@@ -32,7 +37,7 @@ There are a total of 84 possible paths from point `(3,6)` to the origin `(0,0)`.
 ### Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(x*y), as we iterate through the 2D array of size `x*y`.
-- **Expected Auxiliary Space Complexity:** O(x*y), as we use a 2D array of the same size to store the number of paths.
+- **Expected Auxiliary Space Complexity:** O(x\*y), as we use a 2D array of the same size to store the number of paths.
 
 ### Code (C++)
 
@@ -61,7 +66,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -9,22 +9,28 @@ Given three integers `x`, `n`, and `M`, implement a function `PowMod` to compute
 **Example 1:**
 
 Input:
+
 ```
 x = 3, n = 2, m = 4
 ```
+
 Output:
+
 ```
 1
 ```
+
 Explanation:
 \( 3^2 = 9 \). \( 9 \% 4 = 1 \).
 
 ### My Approach
 
 1. **Base Case:**
+
    - If \( n = 0 \), return 1 because any number raised to the power of 0 is 1.
 
 2. **Recursive Calculation:**
+
    - Reduce the problem by dividing \( n \) by 2, and recursively calculate the result for half the exponent.
    - If \( n \) is even, the result is the square of the half result modulo \( M \).
    - If \( n \) is odd, multiply the base \( x \) with the square of the half result modulo \( M \).
@@ -35,8 +41,7 @@ Explanation:
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** \(O(\log n)\), as the problem size is halved in each recursive step.
-- **Expected Auxiliary Space Complexity:** \(O(1)\), as the space used is constant and independent of the input size. 
-
+- **Expected Auxiliary Space Complexity:** \(O(1)\), as the space used is constant and independent of the input size.
 
 ### Code
 
@@ -96,10 +101,9 @@ class Solution:
             return (((half * half) % m) * x) % m
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

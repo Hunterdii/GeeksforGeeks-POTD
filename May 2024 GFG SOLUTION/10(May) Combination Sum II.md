@@ -9,14 +9,18 @@ Given an array of integers `arr`, the length of the array `n`, and an integer `k
 **Example 1:**
 
 Input:
+
 ```
 n = 5, k = 7
 arr[] = {1, 2, 3, 3, 5}
 ```
+
 Output:
+
 ```
 {{1, 3, 3}, {2, 5}}
 ```
+
 Explanation:
 1 + 3 + 3 = 7
 2 + 5 = 7
@@ -24,14 +28,18 @@ Explanation:
 **Example 2:**
 
 Input:
+
 ```
 n = 6, k = 35
 arr[] = {5, 10, 15, 20, 25, 30}
 ```
+
 Output:
+
 ```
 {{5, 10, 20}, {5, 30}, {10, 25}, {15, 20}}
 ```
+
 Explanation:
 5 + 10 + 20 = 35
 5 + 30 = 35
@@ -41,9 +49,11 @@ Explanation:
 ### My Approach
 
 1. **Sorting:**
+
 - Sort the input array `arr` to easily handle duplicates and optimize the search.
 
 2. **Backtracking:**
+
 - Implement a backtracking algorithm to find all combinations whose sum equals `k`.
 - Start iterating through the array, trying each element as a potential starting point for a combination.
 - Recursively explore all possible combinations by adding elements to the current combination and adjusting the target sum accordingly.
@@ -51,6 +61,7 @@ Explanation:
 - When the target sum becomes zero, add the current combination to the result.
 
 3. **Return:**
+
 - Return the vector containing all unique combinations.
 
 ### Time and Auxiliary Space Complexity
@@ -94,7 +105,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

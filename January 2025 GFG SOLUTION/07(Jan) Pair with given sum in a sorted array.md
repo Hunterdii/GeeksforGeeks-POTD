@@ -1,4 +1,4 @@
-# *07. Pair with Given Sum in a Sorted Array*
+# _07. Pair with Given Sum in a Sorted Array_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/pair-with-given-sum-in-a-sorted-array4940/1)
 
@@ -15,16 +15,12 @@ You are given a sorted array `arr[]` of size `n` and an integer `target`. Your t
 **Explanation:**  
 The pairs `(1, 5)`, `(1, 5)`, and `(-1, 7)` sum up to `6`.
 
-
-
 **Input:**  
 `arr[] = [1, 1, 1, 1], target = 2`  
 **Output:**  
 `6`  
 **Explanation:**  
 There are 6 pairs: `(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)`.
-
-
 
 **Input:**  
 `arr[] = [-1, 10, 10, 12, 15], target = 125`  
@@ -33,18 +29,16 @@ There are 6 pairs: `(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)`.
 **Explanation:**  
 No such pairs exist.
 
-
-
 ### Constraints:
+
 - $`2 <= arr.size() <= 10^5`$
 - $`-10^5 <= arr[i] <= 10^5`$
 - $`-10^5 <= target <= 10^5`$
 
-
-
 ## My Approach
 
-1. **Efficient Pair Counting Using a Hash Map**:  
+1. **Efficient Pair Counting Using a Hash Map**:
+
    - This approach leverages a hash map to store the frequency of elements as we traverse the array.
    - For each element `x` in the array, the complement required to form a pair is `target - x`.
    - We check if the complement exists in the hash map. If yes, the frequency of the complement contributes to the count of valid pairs.
@@ -58,14 +52,10 @@ No such pairs exist.
      - Update the frequency of the current element in the hash map.
    - Return the total count of pairs.
 
-
-
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(n), where `n` is the size of the array. Each element is processed once, and hash map operations (insertions and lookups) take O(1) on average.
 - **Expected Auxiliary Space Complexity:** O(n), as we store the frequency of up to `n` elements in the hash map.
-
-
 
 ## Code (C++)
 
@@ -78,9 +68,9 @@ public:
 
         for (int num : arr) {
             int complement = target - num;
-            if (freq.count(complement)) 
+            if (freq.count(complement))
                 res += freq[complement];
-            
+
             freq[num]++;
         }
 
@@ -88,8 +78,6 @@ public:
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -109,8 +97,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -126,11 +112,9 @@ class Solution:
         return res
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

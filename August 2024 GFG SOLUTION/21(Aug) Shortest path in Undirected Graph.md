@@ -11,23 +11,29 @@ You are given an undirected graph with `n` nodes and `m` edges, all edges having
 **Example:**
 
 **Input:**
+
 ```
 n = 9, m = 10
-edges = [[0,1],[0,3],[3,4],[4,5],[5,6],[1,2],[2,6],[6,7],[7,8],[6,8]] 
+edges = [[0,1],[0,3],[3,4],[4,5],[5,6],[1,2],[2,6],[6,7],[7,8],[6,8]]
 src = 0
 ```
+
 **Output:**
+
 ```
 0 1 2 1 2 3 3 4 4
 ```
 
 **Input:**
+
 ```
 n = 4, m = 2
-edges = [[1,3],[3,0]] 
+edges = [[1,3],[3,0]]
 src = 3
 ```
+
 **Output:**
+
 ```
 1 1 -1 0
 ```
@@ -40,6 +46,7 @@ src = 3
 ### My Approach
 
 1. **Graph Representation:**
+
    - First, represent the graph using an adjacency list, where each vertex points to a list of its neighboring vertices.
 
 2. **Breadth-First Search (BFS):**
@@ -155,7 +162,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

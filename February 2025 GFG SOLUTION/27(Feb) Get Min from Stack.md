@@ -1,86 +1,96 @@
-# *27. Get Min from Stack*  
+# _27. Get Min from Stack_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/)
 
-## **Problem Description**  
+## **Problem Description**
 
-Implement a stack that supports the following operations in **O(1) time**:  
+Implement a stack that supports the following operations in **O(1) time**:
 
-- `push(x)`: Push an integer **x** onto the stack.  
-- `pop()`: Remove the top element from the stack.  
-- `peek()`: Return the top element of the stack. If empty, return `-1`.  
-- `getMin()`: Retrieve the **minimum element** in the stack. If empty, return `-1`.  
+- `push(x)`: Push an integer **x** onto the stack.
+- `pop()`: Remove the top element from the stack.
+- `peek()`: Return the top element of the stack. If empty, return `-1`.
+- `getMin()`: Retrieve the **minimum element** in the stack. If empty, return `-1`.
 
-### **Examples**  
+### **Examples**
 
-#### **Example 1**  
-**Input:**  
+#### **Example 1**
+
+**Input:**
+
 ```
 q = 7
 queries = [[1, 2], [1, 3], [3], [2], [4], [1, 1], [4]]
 ```
-**Output:**  
+
+**Output:**
+
 ```
 [3, 2, 1]
 ```
-**Explanation:**  
+
+**Explanation:**
+
 ```
-push(2) -> Stack: [2]  
-push(3) -> Stack: [2, 3]  
-peek() -> 3  
-pop() -> Stack: [2]  
-getMin() -> 2  
-push(1) -> Stack: [2, 1]  
-getMin() -> 1  
+push(2) -> Stack: [2]
+push(3) -> Stack: [2, 3]
+peek() -> 3
+pop() -> Stack: [2]
+getMin() -> 2
+push(1) -> Stack: [2, 1]
+getMin() -> 1
 ```
 
-#### **Example 2**  
-**Input:**  
+#### **Example 2**
+
+**Input:**
+
 ```
 q = 4
 queries = [[1, 4], [1, 2], [4], [3]]
 ```
-**Output:**  
+
+**Output:**
+
 ```
 [2, 2]
 ```
-**Explanation:**  
+
+**Explanation:**
+
 ```
-push(4) -> Stack: [4]  
-push(2) -> Stack: [4, 2]  
-getMin() -> 2  
-peek() -> 2  
+push(4) -> Stack: [4]
+push(2) -> Stack: [4, 2]
+getMin() -> 2
+peek() -> 2
 ```
 
-### **Constraints**  
-- $\(1 \leq q \leq 10^5\)$ (Number of queries)  
-- $\(1 \leq x \leq 10^9\)$ (Stack elements are within this range)  
+### **Constraints**
 
+- $\(1 \leq q \leq 10^5\)$ (Number of queries)
+- $\(1 \leq x \leq 10^9\)$ (Stack elements are within this range)
 
-## **My Approach**  
+## **My Approach**
 
-### **Using Two Stacks (O(1) Time, O(N) Space)**  
+### **Using Two Stacks (O(1) Time, O(N) Space)**
 
-1. Use **two stacks**:  
-   - `s` → **Normal stack** for elements.  
-   - `minStack` → **Keeps track of minimum values**.  
-2. When pushing an element `x`, check:  
-   - If `minStack` is empty or `x <= minStack.top()`, push `x` into `minStack`.  
-3. While popping, if the popped element is the **current min**, pop from `minStack`.  
-4. `getMin()` always returns `minStack.top()`.  
+1. Use **two stacks**:
+   - `s` → **Normal stack** for elements.
+   - `minStack` → **Keeps track of minimum values**.
+2. When pushing an element `x`, check:
+   - If `minStack` is empty or `x <= minStack.top()`, push `x` into `minStack`.
+3. While popping, if the popped element is the **current min**, pop from `minStack`.
+4. `getMin()` always returns `minStack.top()`.
 
-
-## **Time and Auxiliary Space Complexity**  
+## **Time and Auxiliary Space Complexity**
 
 | **Operation** | **Time Complexity** | **Space Complexity** |
-|--------------|----------------|------------------|
-| `push(x)`   | O(1)           | O(N) (extra stack) |
-| `pop()`     | O(1)           | O(N) (extra stack) |
-| `peek()`    | O(1)           | O(1) |
-| `getMin()`  | O(1)           | O(1) |
+| ------------- | ------------------- | -------------------- |
+| `push(x)`     | O(1)                | O(N) (extra stack)   |
+| `pop()`       | O(1)                | O(N) (extra stack)   |
+| `peek()`      | O(1)                | O(1)                 |
+| `getMin()`    | O(1)                | O(1)                 |
 
-
-## **Code (C++)**  
+## **Code (C++)**
 
 ```cpp
 class Solution {
@@ -107,12 +117,13 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">📌 Alternative Approaches</h2></summary>
 
 ### **2️⃣ Using Single Stack with Pair (`O(1)` Space Overhead)**
+
 #### **Approach**
+
 - Instead of maintaining two stacks, store **(value, min_so_far)** as a pair in one stack.
 - This ensures `getMin()` always retrieves the min value in **O(1)** time.
 
@@ -126,13 +137,15 @@ public:
     int getMin() { return s.empty() ? -1 : s.top().second; }
 };
 ```
-🔹 **Reduces extra space needed for `minStack`!**  
 
+🔹 **Reduces extra space needed for `minStack`!**
 
 ### **3️⃣ Using Single Stack with Variable (`O(1)` Extra Space)**
+
 #### **Approach**
+
 - Store the **minimum value separately** instead of using an extra stack.
-- If `x` is **less than the current minimum**, **push a modified value** (2*x - min).
+- If `x` is **less than the current minimum**, **push a modified value** (2\*x - min).
 - While popping, **restore the previous minimum**.
 
 ```cpp
@@ -156,27 +169,26 @@ public:
     int getMin() { return s.empty() ? -1 : minVal; }
 };
 ```
-🔹 **Uses `O(1)` extra space while maintaining `O(1)` operations!**  
 
+🔹 **Uses `O(1)` extra space while maintaining `O(1)` operations!**
 
-## **Comparison of Approaches**  
+## **Comparison of Approaches**
 
-| **Approach**               | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                          | ⚠️ **Cons**                     |
-|----------------------------|-----------------|------------------|--------------------------------|-------------------------------|
-| **Two Stacks (`s` & `minStack`)** | 🟢 `O(1)`       | 🟡 `O(N)`        | Simple & direct implementation | Extra stack memory required  |
-| **Single Stack with Pair** | 🟢 `O(1)`       | 🟡 `O(N)`        | Stores min directly in one stack | Uses `pair<int, int>` overhead |
-| **Single Stack with Variable** | 🟢 `O(1)` | 🟢 `O(1)`        | Space-efficient, no extra stack | Requires special encoding logic |
-
+| **Approach**                      | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                     |
+| --------------------------------- | ---------------------- | ----------------------- | -------------------------------- | ------------------------------- |
+| **Two Stacks (`s` & `minStack`)** | 🟢 `O(1)`              | 🟡 `O(N)`               | Simple & direct implementation   | Extra stack memory required     |
+| **Single Stack with Pair**        | 🟢 `O(1)`              | 🟡 `O(N)`               | Stores min directly in one stack | Uses `pair<int, int>` overhead  |
+| **Single Stack with Variable**    | 🟢 `O(1)`              | 🟢 `O(1)`               | Space-efficient, no extra stack  | Requires special encoding logic |
 
 ## **💡 Best Choice?**
-- ✅ **For space efficiency:** Single stack with min encoding (`O(1)` space).  
-- ✅ **For clarity:** Two stacks (`s` & `minStack`).  
-- ✅ **For best of both worlds:** Single stack with pairs (`O(1)` operations).  
+
+- ✅ **For space efficiency:** Single stack with min encoding (`O(1)` space).
+- ✅ **For clarity:** Two stacks (`s` & `minStack`).
+- ✅ **For best of both worlds:** Single stack with pairs (`O(1)` operations).
 
 </details>
 
-
-## **Code (Java)**  
+## **Code (Java)**
 
 ```java
 class Solution {
@@ -205,8 +217,7 @@ class Solution {
 }
 ```
 
-
-## **Code (Python)**  
+## **Code (Python)**
 
 ```python
 class Solution:
@@ -229,7 +240,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

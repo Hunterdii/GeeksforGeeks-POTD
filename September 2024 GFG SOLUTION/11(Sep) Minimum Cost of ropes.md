@@ -9,16 +9,19 @@ Given an array `arr` containing the lengths of different ropes, we need to conne
 ### Example:
 
 Input:
+
 ```
 arr[] = [4, 3, 2, 6]
 ```
 
 Output:
+
 ```
 29
 ```
 
 Explanation:
+
 - First, connect ropes of lengths 2 and 3, resulting in [4, 5, 6]. The cost of this operation is `2 + 3 = 5`.
 - Then, connect ropes of lengths 4 and 5, resulting in [9, 6]. The cost of this operation is `4 + 5 = 9`.
 - Finally, connect the last two ropes. The cost is `9 + 6 = 15`.
@@ -28,11 +31,13 @@ The total cost for connecting all ropes is `5 + 9 + 15 = 29`.
 ### My Approach
 
 1. **Using a Min-Heap:**
+
    - The key idea is to use a **min-heap** to always connect the two smallest ropes at each step to minimize the overall cost.
    - Convert the array `arr` into a min-heap.
    - Repeatedly pop the two smallest elements, calculate their sum, add this sum to the total cost, and push the sum back into the heap.
 
 2. **Procedure:**
+
    - Initialize a min-heap with the array elements.
    - While there are more than one rope in the heap:
      - Extract the two smallest ropes.
@@ -112,11 +117,12 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn:- [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

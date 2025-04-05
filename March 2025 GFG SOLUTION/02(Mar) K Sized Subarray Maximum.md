@@ -1,25 +1,26 @@
-# *2. K Sized Subarray Maximum*
+# _2. K Sized Subarray Maximum_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)
-
 
 ## **Problem Description**
 
 Given an **array arr[]** of integers and an integer **k**, your task is to find the **maximum value for each contiguous subarray of size k**. The output should be an array of maximum values corresponding to each contiguous subarray.
 
-
 ## **Examples**
 
 ### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 `arr[] = [1, 2, 3, 1, 4, 5, 2, 3, 6]`  
 `k = 3`
 
-#### **Output:**  
+#### **Output:**
+
 `[3, 3, 4, 5, 5, 5, 6]`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 1st window: [1, 2, 3], max = 3  
 2nd window: [2, 3, 1], max = 3  
 3rd window: [3, 1, 4], max = 4  
@@ -28,17 +29,19 @@ Given an **array arr[]** of integers and an integer **k**, your task is to find 
 6th window: [5, 2, 3], max = 5  
 7th window: [2, 3, 6], max = 6
 
-
 ### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
+
 `arr[] = [8, 5, 10, 7, 9, 4, 15, 12, 90, 13]`  
 `k = 4`
 
-#### **Output:**  
+#### **Output:**
+
 `[10, 10, 10, 15, 15, 90, 90]`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 1st window: [8, 5, 10, 7], max = 10  
 2nd window: [5, 10, 7, 9], max = 10  
 3rd window: [10, 7, 9, 4], max = 10  
@@ -47,12 +50,11 @@ Given an **array arr[]** of integers and an integer **k**, your task is to find 
 6th window: [4, 15, 12, 90], max = 90  
 7th window: [15, 12, 90, 13], max = 90
 
+### **Constraints**
 
-### **Constraints**  
-- $\(1 \leq \text{arr.size()} \leq 10^6\)$  
-- $\(1 \leq k \leq \text{arr.size()}\)$  
-- $\(0 \leq arr[i] \leq 10^9\)$  
-
+- $\(1 \leq \text{arr.size()} \leq 10^6\)$
+- $\(1 \leq k \leq \text{arr.size()}\)$
+- $\(0 \leq arr[i] \leq 10^9\)$
 
 ## **My Approach**
 
@@ -73,14 +75,12 @@ Given an **array arr[]** of integers and an integer **k**, your task is to find 
 6. Once the first window is complete, **append the front element (maximum)** to the result.
 7. Continue until all windows are processed.
 
-
 ## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** `O(N)`, because each element is added and removed from the deque at most once.
 - **Expected Auxiliary Space Complexity:** `O(K)`, the size of the deque.
 
-
-## **Code (C++)**  
+## **Code (C++)**
 
 ```cpp
 class Solution {
@@ -100,10 +100,11 @@ public:
 ```
 
 <details>  
-  <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>  
+  <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## **2️⃣ Using Priority Queue (O(N log K) Time, O(K) Space)**  
-This approach uses a max-heap to maintain the maximum in each window.  
+## **2️⃣ Using Priority Queue (O(N log K) Time, O(K) Space)**
+
+This approach uses a max-heap to maintain the maximum in each window.
 
 ```cpp
 class Solution {
@@ -122,11 +123,13 @@ public:
     }
 };
 ```
-🔹 **Pros:** Simpler logic using a priority queue.  
-🔹 **Cons:** Slightly slower due to O(log K) insertion/deletion operations.  
 
-## **3️⃣ Using Multiset (O(N log K) Time, O(K) Space)**  
-This approach leverages `multiset` for ordered window maximum.  
+🔹 **Pros:** Simpler logic using a priority queue.  
+🔹 **Cons:** Slightly slower due to O(log K) insertion/deletion operations.
+
+## **3️⃣ Using Multiset (O(N log K) Time, O(K) Space)**
+
+This approach leverages `multiset` for ordered window maximum.
 
 ```cpp
 class Solution {
@@ -145,26 +148,27 @@ public:
     }
 };
 ```
+
 🔹 **Pros:** Provides ordered elements inside the window.  
-🔹 **Cons:** O(log K) insertion and deletion cause performance overhead.  
+🔹 **Cons:** O(log K) insertion and deletion cause performance overhead.
 
-## **📊 Comparison of Approaches**  
+## **📊 Comparison of Approaches**
 
-| **Approach**              | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**              | ⚠️ **Cons**                |
-|--------------------------|---------------------|------------------|--------------------|------------------|
-| **Deque (Optimal)**       | 🟢 O(N)             | 🟢 O(K)          | Fastest, minimal memory | None              |
-| **Priority Queue**        | 🟡 O(N log K)       | 🟡 O(K)          | Simple to implement | Slower than deque |
-| **Multiset**              | 🟡 O(N log K)       | 🟡 O(K)          | Maintains order    | Slower than deque |
+| **Approach**        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**             | ⚠️ **Cons**       |
+| ------------------- | ---------------------- | ----------------------- | ----------------------- | ----------------- |
+| **Deque (Optimal)** | 🟢 O(N)                | 🟢 O(K)                 | Fastest, minimal memory | None              |
+| **Priority Queue**  | 🟡 O(N log K)          | 🟡 O(K)                 | Simple to implement     | Slower than deque |
+| **Multiset**        | 🟡 O(N log K)          | 🟡 O(K)                 | Maintains order         | Slower than deque |
 
-## 💡 **Best Choice?**  
-- ✅ **For optimal performance:** Deque-based approach (O(N) time, O(K) space).  
-- ✅ **For priority order requirement:** Multiset-based approach.  
-- ✅ **For easier implementation:** Priority queue approach.  
+## 💡 **Best Choice?**
 
-</details>  
+- ✅ **For optimal performance:** Deque-based approach (O(N) time, O(K) space).
+- ✅ **For priority order requirement:** Multiset-based approach.
+- ✅ **For easier implementation:** Priority queue approach.
 
+</details>
 
-## **Code (Java)** 
+## **Code (Java)**
 
 ```java
 class Solution {
@@ -182,8 +186,7 @@ class Solution {
 }
 ```
 
-
-## **Code (Python)** 
+## **Code (Python)**
 
 ```python
 class Solution:
@@ -200,14 +203,13 @@ class Solution:
         return res
 ```
 
-
 ## **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

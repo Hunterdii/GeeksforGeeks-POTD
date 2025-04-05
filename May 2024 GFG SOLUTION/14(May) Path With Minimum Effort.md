@@ -9,38 +9,45 @@ You are a hiker preparing for an upcoming hike. You are given `heights[][]`, a 2
 **Example:**
 
 Input:
+
 ```
 rows = 3
-columns = 3 
+columns = 3
 heights = [[1,2,2],[3,8,2],[5,3,5]]
 ```
+
 Output:
+
 ```
 2
 ```
+
 Explanation:
 The route 1->3->5->3->5 has a maximum absolute difference of 2 in consecutive cells. This is better than the route 1->2->2->2->5, where the maximum absolute difference is 3.
 
 ### My Approach
 
 1. **Priority Queue for Dijkstra's Algorithm:**
+
 - Use a priority queue to implement Dijkstra's algorithm for finding the shortest path.
 - Each element in the priority queue represents a cell `(row, col)` along with the effort required to reach that cell.
 - Initialize a 2D array `dist` to store the minimum effort required to reach each cell. Initialize all values to `INT_MAX`, except for the starting cell `(0, 0)` with value 0.
 - Push the starting cell `(0, 0)` into the priority queue with an effort of 0.
 
 2. **Dijkstra's Algorithm:**
+
 - While the priority queue is not empty, pop the cell with the minimum effort.
 - Iterate through the adjacent cells (up, down, left, right) and calculate the new effort required to reach each cell.
 - If the new effort is less than the current minimum effort for that cell, update the minimum effort and push the cell into the priority queue.
 
 3. **Return Minimum Effort:**
+
 - Once the bottom-right cell is reached, return the minimum effort required to reach that cell.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(rows * columns), as we visit each cell at most once in the worst case.
-- **Expected Auxiliary Space Complexity:** O(rows * columns), as we use a priority queue and a 2D array to store cell efforts.
+- **Expected Time Complexity:** O(rows \* columns), as we visit each cell at most once in the worst case.
+- **Expected Auxiliary Space Complexity:** O(rows \* columns), as we use a priority queue and a 2D array to store cell efforts.
 
 ### Code (C++)
 
@@ -89,7 +96,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

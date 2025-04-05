@@ -1,13 +1,14 @@
-# *25. Maximum Product Subarray*  
+# _25. Maximum Product Subarray_
+
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/maximum-product-subarray3604/1)
 
 <div align="center">
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - My latest solution is now live:  
-  **[773. Sliding Puzzle](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/773.Sliding%20Puzzle.md)**  
+  **[773. Sliding Puzzle](https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/773.Sliding%20Puzzle.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/November%202024%20Leetcode%20Solution/773.Sliding%20Puzzle.md">
@@ -33,7 +34,7 @@ Given an array `arr[]` that contains both positive and negative integers (and po
 `180`
 
 **Explanation:**  
-The subarray with the maximum product is {6, -3, -10} with product = 6 * (-3) * (-10) = 180.
+The subarray with the maximum product is {6, -3, -10} with product = 6 _ (-3) _ (-10) = 180.
 
 **Input:**  
 `arr[] = [-1, -3, -10, 0, 60]`  
@@ -52,6 +53,7 @@ The subarray with the maximum product is {60}.
 For an array with all positive elements, the result is the product of all elements.
 
 ### Constraints:
+
 - `1 ≤ arr.size() ≤ 10^6`
 - `-10 ≤ arr[i] ≤ 10`
 
@@ -60,14 +62,14 @@ For an array with all positive elements, the result is the product of all elemen
 1. **Dynamic Programming with Two Variables (maxVal, minVal):**  
    The idea is to track the maximum and minimum product subarrays up to the current index. The minimum product may become the maximum product if multiplied by a negative number.
 
-2. **Steps:**  
+2. **Steps:**
    - Traverse the array, updating the `maxVal` and `minVal` at each step based on the current number.
    - If the current number is negative, we swap `maxVal` and `minVal`.
    - Update `maxProduct` after processing each element to keep track of the overall maximum product encountered.
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires a single pass through the array, making it efficient.  
+- **Expected Time Complexity:** O(n), where `n` is the size of the array. The algorithm requires a single pass through the array, making it efficient.
 - **Expected Auxiliary Space Complexity:** O(1), as we use a constant amount of extra space.
 
 ## Code (C)
@@ -122,7 +124,8 @@ public:
 <details>
   <summary><h2 align='center'>👨‍💻 Alternative Approaches </h2></summary>
 
-1)
+1.
+
 ```cpp
 class Solution {
 public:
@@ -146,7 +149,8 @@ public:
 };
 ```
 
-2)
+2.
+
 ```cpp
 class Solution {
 public:
@@ -231,7 +235,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

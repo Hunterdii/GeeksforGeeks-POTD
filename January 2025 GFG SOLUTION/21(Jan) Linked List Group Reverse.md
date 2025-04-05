@@ -1,4 +1,4 @@
-# *21. Linked List Group Reverse*
+# _21. Linked List Group Reverse_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1)
 
@@ -11,7 +11,7 @@ Given the head of a linked list, the task is to reverse every `k` nodes in the l
 **Input:**  
 `head = 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8, k = 4`  
 **Output:**  
-`4 -> 3 -> 2 -> 1 -> 8 -> 7 -> 6 -> 5`  
+`4 -> 3 -> 2 -> 1 -> 8 -> 7 -> 6 -> 5`
 
 ![image](https://github.com/user-attachments/assets/388056dd-b4a9-461f-87cf-02fa693672fd)
 
@@ -20,12 +20,10 @@ The first 4 nodes (1, 2, 3, 4) are reversed to become 4, 3, 2, 1.
 The next 4 nodes (5, 6, 7, 8) are reversed to become 8, 7, 6, 5.  
 Hence, the resultant linked list is `4 -> 3 -> 2 -> 1 -> 8 -> 7 -> 6 -> 5`.
 
-
-
 **Input:**  
 `head = 1 -> 2 -> 3 -> 4 -> 5, k = 3`  
 **Output:**  
-`3 -> 2 -> 1 -> 5 -> 4`  
+`3 -> 2 -> 1 -> 5 -> 4`
 
 ![image](https://github.com/user-attachments/assets/06bf17ba-f494-4b56-9fae-8d69e4b800a1)
 
@@ -34,25 +32,24 @@ The first 3 nodes (1, 2, 3) are reversed to become 3, 2, 1.
 The last 2 nodes (4, 5) are reversed to become 5, 4.  
 Hence, the resultant linked list is `3 -> 2 -> 1 -> 5 -> 4`.
 
-
-
 ### Constraints:
+
 - 1 <= size of linked list <= $10^5$
 - 1 <= data of nodes <= $10^6$
 - $1 <= k <=$ size of linked list
 
-
-
 ## My Approach
 
-1. **Reverse Nodes in Groups of Size `k`:**  
-   - Reverse the first `k` nodes of the list iteratively.  
-   - Keep track of the current group's head and tail to link the groups appropriately.  
-   - Repeat the process until all nodes are traversed.  
+1. **Reverse Nodes in Groups of Size `k`:**
+
+   - Reverse the first `k` nodes of the list iteratively.
+   - Keep track of the current group's head and tail to link the groups appropriately.
+   - Repeat the process until all nodes are traversed.
 
 2. **Handling Edge Cases:**
+
    - If `k = 1`, the list remains unchanged.
-   - If the number of remaining nodes is less than `k`, treat them as a single group and reverse them.  
+   - If the number of remaining nodes is less than `k`, treat them as a single group and reverse them.
 
 3. **Steps:**
    - Start with the head of the linked list and reverse the first `k` nodes.
@@ -60,13 +57,10 @@ Hence, the resultant linked list is `3 -> 2 -> 1 -> 5 -> 4`.
    - Update the `next` pointer of the previous group's tail to point to the reversed group's head.
    - Repeat the process until all nodes are processed.
 
-
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), where `n` is the number of nodes in the linked list. Each node is visited exactly once during the reversal process.  
-- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for pointer manipulation.  
-
-
+- **Expected Time Complexity:** O(n), where `n` is the number of nodes in the linked list. Each node is visited exactly once during the reversal process.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for pointer manipulation.
 
 ## Code (C++)
 
@@ -103,8 +97,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -136,8 +128,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -166,11 +156,9 @@ class Solution:
         return new_head
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

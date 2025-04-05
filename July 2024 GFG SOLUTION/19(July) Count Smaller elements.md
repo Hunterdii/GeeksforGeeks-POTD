@@ -9,48 +9,60 @@ Given an array `arr` containing positive integers, count and return an array `an
 **Example:**
 
 Input:
+
 ```
 arr = [12, 1, 2, 3, 0, 11, 4]
 ```
+
 Output:
+
 ```
 6 1 1 1 0 1 0
 ```
+
 Explanation:
 There are 6 smaller elements right after 12. There is 1 smaller element right after 1. And so on.
 
 Input:
+
 ```
 arr = [1, 2, 3, 4, 5]
 ```
+
 Output:
+
 ```
 0 0 0 0 0
 ```
+
 Explanation:
 There are 0 smaller elements right after 1. There are 0 smaller elements right after 2. And so on.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create a vector `ans` to store the count of smaller elements to the right for each element in the array.
 - Create a Binary Indexed Tree (BIT) `bit` to help in efficiently querying and updating the frequency of elements.
 
 2. **Rank Compression:**
+
 - Sort the elements with their original indices.
 - Assign ranks to the elements based on their sorted order to handle the large range of values.
 
 3. **BIT Update and Query:**
+
 - Traverse the array from right to left.
 - For each element, get the count of elements smaller than the current element using the BIT.
 - Update the BIT with the current element's rank to maintain the frequency of seen elements.
 
 4. **Return:**
+
 - Return the vector `ans` containing the count of smaller elements to the right for each element in the array.
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n * log n), as we perform log n operations for each of the n elements.
+- **Expected Time Complexity:** O(n \* log n), as we perform log n operations for each of the n elements.
 - **Expected Auxiliary Space Complexity:** O(n), as we use additional space for the BIT and other auxiliary structures.
 
 ### Code (C++)
@@ -184,7 +196,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

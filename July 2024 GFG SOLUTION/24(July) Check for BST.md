@@ -13,6 +13,7 @@ Given the root of a binary tree, check whether it is a Binary Search Tree (BST) 
 **Examples:**
 
 Input:
+
 ```
    2
  /   \
@@ -20,23 +21,28 @@ Input:
       \
        5
 ```
-Output: 
+
+Output:
+
 ```
 true
 ```
-Explanation: 
-The left subtree of every node contains smaller keys and the right subtree of every node contains greater keys. Hence, the tree is a BST.
 
+Explanation:
+The left subtree of every node contains smaller keys and the right subtree of every node contains greater keys. Hence, the tree is a BST.
 
 ### My Approach
 
 1. **Base Case:**
+
    - If the node is `nullptr`, return `true`.
 
 2. **Boundary Check:**
+
    - If the node's value is less than or equal to the minimum allowed value or greater than or equal to the maximum allowed value, return `false`.
 
 3. **Recursive Check:**
+
    - Recursively check the left subtree ensuring all nodes are less than the current node's value.
    - Recursively check the right subtree ensuring all nodes are greater than the current node's value.
 
@@ -113,7 +119,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -13,30 +13,37 @@ Note: The driver code will check if the BST is height-balanced. If it is, the ou
 **Example:**
 
 Input:
+
 ```
 nums = [1, 2, 3, 4]
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation:
 The preorder traversal of the following BST formed is [2, 1, 3, 4]:
-
 
 ### My Approach
 
 1. **Recursive Helper Function:**
+
    - Create a helper function `sortedArrayToBSTUtil` that takes the array and the current bounds (`left` and `right`) as arguments.
    - If `left` is greater than `right`, return `nullptr` (base case for recursion).
 
 2. **Mid Calculation:**
+
    - Calculate the middle index of the current segment: `mid = left + (right - left) / 2`.
 
 3. **Node Creation:**
+
    - Create a new node with the value at the middle index: `node = new Node(nums[mid])`.
 
 4. **Recursive Calls:**
+
    - Recursively create the left and right subtrees using the helper function:
      - `node->left = sortedArrayToBSTUtil(nums, left, mid - 1)`
      - `node->right = sortedArrayToBSTUtil(nums, mid + 1, right)`
@@ -121,7 +128,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

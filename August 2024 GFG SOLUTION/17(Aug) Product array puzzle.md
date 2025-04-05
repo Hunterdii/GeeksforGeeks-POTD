@@ -9,39 +9,46 @@ Given an array `nums[]`, construct a Product Array `P[]` such that `P[i]` is equ
 **Example 1:**
 
 Input:
+
 ```
 nums[] = [10, 3, 5, 6, 2]
 ```
+
 Output:
+
 ```
 [180, 600, 360, 300, 900]
 ```
-Explanation: 
+
+Explanation:
+
 - For `i=0`, `P[0] = 3*5*6*2 = 180`.
 - For `i=1`, `P[1] = 10*5*6*2 = 600`.
 - For `i=2`, `P[2] = 10*3*6*2 = 360`.
 - For `i=3`, `P[3] = 10*3*5*2 = 300`.
 - For `i=4`, `P[4] = 10*3*5*6 = 900`.
 
-
 ### My Approach
 
 1. **Initialization:**
+
    - Create two arrays, `leftProduct` and `rightProduct`, both initialized to `1`. These will store the cumulative product of elements to the left and right of each index, respectively.
 
 2. **Left Product Calculation:**
+
    - Traverse the array from left to right to fill the `leftProduct` array. For each element, multiply the previous element in `leftProduct` by the previous element in `nums`.
 
 3. **Right Product Calculation:**
+
    - Traverse the array from right to left to fill the `result` array. For each element, multiply the corresponding element in `leftProduct` by a running product accumulator from the right side.
 
 4. **Return Result:**
    - The final `result` array will contain the desired product values for each index.
-  
+
 ### Time and Auxiliary Space Complexity
+
 **Expected Time Complexity:** O(n), as we are traversing the array twice, once for computing left products and once for computing right products.
 **Expected Auxiliary Space Complexity:** O(n), due to the storage of the `leftProduct` and `result` arrays, which each require `O(n)` space.
-
 
 ### Code (C++)
 
@@ -73,7 +80,7 @@ class Solution {
         int n = nums.length;
         long[] leftProduct = new long[n];
         long[] result = new long[n];
-        
+
         leftProduct[0] = 1;
         for (int i = 1; i < n; i++) {
             leftProduct[i] = leftProduct[i - 1] * nums[i - 1];
@@ -108,10 +115,9 @@ class Solution:
         return result
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

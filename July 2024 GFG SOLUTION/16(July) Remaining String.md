@@ -9,22 +9,28 @@ Given a string `s` without spaces, a character `ch`, and an integer `count`, ret
 **Example:**
 
 Input:
+
 ```
 s = "Thisisdemostring", ch = 'i', count = 3
 ```
+
 Output:
+
 ```
 ng
 ```
+
 Explanation:
 The remaining substring of `s` after the 3rd occurrence of 'i' is "ng", hence the output is "ng".
 
 ### My Approach
 
 1. **Initialization:**
+
 - Initialize a variable `occ` to count the occurrences of the character `ch` in the string `s`.
 
 2. **Iteration through the string:**
+
 - Iterate through each character in the string `s`.
 - For each character, check if it matches `ch`.
 - If it matches, increment the `occ` counter.
@@ -33,6 +39,7 @@ The remaining substring of `s` after the 3rd occurrence of 'i' is "ng", hence th
   - If it does not exist, return an empty string.
 
 3. **Return:**
+
 - If the loop completes and `occ` is less than `count`, return an empty string.
 
 ### Time and Auxiliary Space Complexity
@@ -108,7 +115,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

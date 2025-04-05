@@ -1,4 +1,4 @@
-# *15. Longest Subarray with Sum K*
+# _15. Longest Subarray with Sum K_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1)
 
@@ -6,11 +6,10 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
 
 Given an array `arr[]` containing integers and an integer `k`, your task is to find the length of the longest subarray where the sum of its elements is equal to the given value `k`. If there is no subarray with sum equal to `k`, return `0`.
 
-
-
 ## Examples:
 
-### **Example 1**  
+### **Example 1**
+
 **Input:**  
 `arr[] = [10, 5, 2, 7, 1, -10], k = 15`  
 **Output:**  
@@ -18,9 +17,8 @@ Given an array `arr[]` containing integers and an integer `k`, your task is to f
 **Explanation:**  
 Subarrays with sum `15` are `[5, 2, 7, 1]`, `[10, 5]`, and `[10, 5, 2, 7, 1, -10]`. The longest subarray has length `6`.
 
+### **Example 2**
 
-
-### **Example 2**  
 **Input:**  
 `arr[] = [-5, 8, -14, 2, 4, 12], k = -5`  
 **Output:**  
@@ -28,9 +26,8 @@ Subarrays with sum `15` are `[5, 2, 7, 1]`, `[10, 5]`, and `[10, 5, 2, 7, 1, -10
 **Explanation:**  
 Only subarray with sum `-5` is `[-5, 8, -14, 2, 4]` of length `5`.
 
+### **Example 3**
 
-
-### **Example 3**  
 **Input:**  
 `arr[] = [10, -10, 20, 30], k = 5`  
 **Output:**  
@@ -38,20 +35,18 @@ Only subarray with sum `-5` is `[-5, 8, -14, 2, 4]` of length `5`.
 **Explanation:**  
 No subarray with sum equal to `5` exists in `arr[]`.
 
-
-
 ## Constraints:
+
 - $`1 ≤ arr.size() ≤ 10^5`$
 - $`-10^4 ≤ arr[i] ≤ 10^4`$
 - $`-10^9 ≤ k ≤ 10^9`$
 
-
-
 ## My Approach
 
-1. **Hashmap-Based Sliding Window Algorithm**:  
+1. **Hashmap-Based Sliding Window Algorithm**:
+
    - Use a hashmap (`mp`) to store the prefix sum and the earliest index at which it occurs.
-   - Traverse the array, maintaining a running sum (`sum`) of the elements.  
+   - Traverse the array, maintaining a running sum (`sum`) of the elements.
    - At each step, check:
      - If `sum == k`, the subarray starts from the beginning, so update the result as the current index + 1.
      - If `sum - k` exists in the hashmap, calculate the length of the subarray ending at the current index and update the result if it is longer than the previous maximum.
@@ -63,14 +58,10 @@ No subarray with sum equal to `5` exists in `arr[]`.
    - Use conditions to determine if a subarray with the required sum exists and update the result accordingly.
    - Return the maximum length.
 
-
-
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), where `n` is the size of the array. Each element is visited once, and hashmap operations are O(1).  
+- **Expected Time Complexity:** O(n), where `n` is the size of the array. Each element is visited once, and hashmap operations are O(1).
 - **Expected Auxiliary Space Complexity:** O(n), as we use a hashmap to store the prefix sums.
-
-
 
 ## Code (C++)
 
@@ -91,8 +82,6 @@ public:
 };
 ```
 
-
-
 ## Code (Java)
 
 ```java
@@ -110,8 +99,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -128,11 +115,9 @@ class Solution:
         return res
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

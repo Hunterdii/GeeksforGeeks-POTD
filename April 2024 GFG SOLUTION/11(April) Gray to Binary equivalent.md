@@ -9,15 +9,19 @@ Given an integer number \( n \), which is a decimal representation of Gray Code.
 **Example:**
 
 Input:
+
 ```
 n = 4
 ```
+
 Output:
+
 ```
 7
 ```
+
 Explanation:
-Given \( 4 \), its gray code =  \( 110 \).
+Given \( 4 \), its gray code = \( 110 \).
 Binary equivalent of the gray code \( 110 \) is \( 100 \).
 Return \( 7 \) representing gray code \( 100 \).
 
@@ -54,7 +58,7 @@ class Solution{
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

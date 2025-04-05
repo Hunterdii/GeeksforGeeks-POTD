@@ -9,27 +9,33 @@ Given a binary tree and an integer `target`, check whether there is a root-to-le
 **Examples:**
 
 Input:
+
 ```
 tree = [1, 2, 3]
 target = 2
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation:
 There is no root to leaf path with sum 2.
-
 
 ### My Approach
 
 1. **Base Case:**
+
    - If the `node` is `None`, return `false`.
 
 2. **Target Adjustment:**
+
    - Subtract the value of the current `node` from the `target`.
 
 3. **Leaf Node Check:**
+
    - If the current `node` is a leaf (i.e., it has no left or right child), check if the adjusted `target` is zero.
 
 4. **Recursive Call:**
@@ -46,7 +52,7 @@ There is no root to leaf path with sum 2.
 class Solution {
 public:
     bool hasPathSum(Node *node, int target) {
-        if (!node) return false; 
+        if (!node) return false;
         target -= node->data;
         if (!node->left && !node->right) return target == 0;
         return hasPathSum(node->left, target) || hasPathSum(node->right, target);
@@ -82,7 +88,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

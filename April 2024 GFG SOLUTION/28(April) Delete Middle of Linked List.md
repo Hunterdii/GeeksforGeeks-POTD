@@ -9,13 +9,17 @@ Given a singly linked list, delete the middle of the linked list. If there are e
 **Example:**
 
 Input:
+
 ```
 LinkedList: 1->2->3->4->5
 ```
-Output: 
+
+Output:
+
 ```
 1 2 4 5
 ```
+
 Explanation:
 After deleting the middle element (3), the modified linked list becomes 1->2->4->5.
 
@@ -29,13 +33,16 @@ The task is to complete the function `deleteMid()` which takes the head of the l
 ### My Approach
 
 1. **Corner Cases:**
+
    - If the linked list is empty or contains a single node, return NULL.
 
 2. **Traversal:**
+
    - Initialize two pointers, `slow` and `fast`, both pointing to the head of the linked list.
    - Move `slow` one step at a time and `fast` two steps at a time until `fast` reaches the end of the list or the node just before the last node.
 
 3. **Delete Middle Node:**
+
    - When `fast` reaches the middle (or just before the middle), `slow` will be at the node just before the middle node.
    - Delete the middle node by adjusting the next pointer of `slow` to skip the middle node.
 
@@ -72,7 +79,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

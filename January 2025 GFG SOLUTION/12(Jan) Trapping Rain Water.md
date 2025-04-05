@@ -1,4 +1,4 @@
-# *12. Trapping Rain Water*
+# _12. Trapping Rain Water_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1)
 
@@ -38,19 +38,17 @@ Water trapped = 0 + 1 + 0 + 1 + 3 + 4 + 0 = **9 units**
 **Explanation:**  
 No water can be trapped as there are no height bounds on both sides.
 
-
-
 ### Constraints:
+
 - $`1 < arr.size() < 10^5`$
 - $`0 < arr[i] < 10^3`$
-
-
 
 ## My Approach
 
 The problem can be solved efficiently using the **two-pointer technique**. This avoids the need for additional arrays to store left and right maximum heights, making the solution both time and space efficient. The key idea is to calculate the water trapped at each index by determining the minimum of the maximum heights on the left and right sides.
 
 ### Algorithm:
+
 1. Initialize two pointers: `l` (left) starting at index 0 and `r` (right) starting at the last index.
 2. Maintain two variables, `lMax` and `rMax`, to track the maximum heights seen so far from the left and right sides, respectively.
 3. Use the following rules:
@@ -63,7 +61,6 @@ The problem can be solved efficiently using the **two-pointer technique**. This 
 
 - **Expected Time Complexity:** O(n), as each element in the array is processed exactly once using the two-pointer approach.
 - **Expected Auxiliary Space Complexity:** O(1), as no additional arrays or data structures are used, and only a constant amount of extra space is required for the pointers and variables.
-
 
 ## Code (C++)
 
@@ -79,8 +76,6 @@ public:
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -102,8 +97,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -116,10 +109,9 @@ class Solution:
         return res
 ```
 
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -9,33 +9,41 @@ Given a number \( n \), find out if \( n \) can be expressed as \( a + b \), whe
 **Examples:**
 
 Input:
+
 ```
 n = 10
 ```
+
 Output:
+
 ```
 3 7
 ```
+
 Explanation:
 There are two possibilities: 3 + 7 and 5 + 5 are both prime pairs that sum to 10. We choose 3 and 7 because 3 < 5.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Create a boolean array `isPrime` of size \( n+1 \) to mark the primality of numbers up to \( n \). Initialize all entries as true except for indices 0 and 1, which are false.
 
 2. **Sieve of Eratosthenes:**
+
 - Use the Sieve of Eratosthenes algorithm to find all prime numbers up to \( n \). For each prime number \( i \), mark all its multiples as non-prime.
 
 3. **Find Prime Pair:**
+
 - Iterate through the first half of the `isPrime` array. For each prime number \( i \), check if \( n - i \) is also prime. If such a pair \( (i, n-i) \) is found, return it.
 
 4. **Return Default:**
+
 - If no prime pair is found, return \([-1, -1]\).
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n*loglog(n)), as the Sieve of Eratosthenes runs in this time complexity.
+- **Expected Time Complexity:** O(n\*loglog(n)), as the Sieve of Eratosthenes runs in this time complexity.
 - **Expected Auxiliary Space Complexity:** O(n), as we use a boolean array of size \( n+1 \) to mark prime numbers.
 
 ### Code
@@ -110,27 +118,27 @@ from typing import List
 class Solution:
     def getPrimes(self, n: int) -> List[int]:
         if n <= 2:
-            return [-1, -1] 
+            return [-1, -1]
         isPrime = [True] * (n + 1)
         isPrime[0] = isPrime[1] = False
         for i in range(2, int(n**0.5) + 1):
             if isPrime[i]:
                 for j in range(i * i, n + 1, i):
                     isPrime[j] = False
-        
+
         result = [-1, -1]
         for i in range(2, n // 2 + 1):
             if isPrime[i] and isPrime[n - i]:
                 result[0] = i
                 result[1] = n - i
                 break
-        
-        return result       
+
+        return result
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

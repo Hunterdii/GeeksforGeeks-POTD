@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Sorting
   - two-pointer-algorithm
@@ -8,7 +8,6 @@ Tags:
 ---
 
 # 🚀 _Day 2. Count Pairs whose sum is less than target_ 🧠
-
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/two-pointer-technique-gfg-160/problem/count-pairs-whose-sum-is-less-than-target)
 
@@ -40,6 +39,7 @@ There are 4 pairs whose sum is less than 5: `(2, 2)`, `(2, 1)`, `(3, 1)`, and `(
 There are 6 pairs whose sum is less than 7: `(2, 1)`, `(2, 3)`, `(2, 4)`, `(1, 3)`, `(1, 4)`, and `(1, 5)`.
 
 ### Constraints:
+
 - $`1 <= arr.size() <= 10^5`$
 - $`0 <= arr[i] <= 10^4`$
 - $`1 <= target <= 10^4`$
@@ -48,7 +48,7 @@ There are 6 pairs whose sum is less than 7: `(2, 1)`, `(2, 3)`, `(2, 4)`, `(1, 3
 
 1. **Sorting and Two Pointers Technique**:  
    We can efficiently solve this problem using a two-pointer approach. By sorting the array first, we can use two pointers: one at the start of the array (`l`) and one at the end (`r`). We then check if the sum of the elements at these pointers is less than the target.
-   
+
    - If the sum of `arr[l]` and `arr[r]` is less than the target, all pairs formed by `arr[l]` with any element between `l` and `r` will also be valid. Hence, we can add `(r - l)` to our result and move the left pointer (`l`) to the right.
    - If the sum is greater than or equal to the target, we move the right pointer (`r`) to the left.
 
@@ -58,10 +58,9 @@ There are 6 pairs whose sum is less than 7: `(2, 1)`, `(2, 3)`, `(2, 4)`, `(1, 3
    - Traverse the array while `l < r` and check if `arr[l] + arr[r] < target`.
    - Adjust the pointers accordingly and count the pairs.
 
-## 🕒 **Time and Auxiliary Space Complexity** 
+## 🕒 **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n log n), where `n` is the number of elements in the array. This comes from the sorting step, and the two-pointer traversal takes O(n) time.
-  
 - **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of extra space (for the two pointers and the result variable).
 
 ## 📝 **Solution Code**
@@ -107,15 +106,13 @@ class Solution:
         return ans
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
- ---
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

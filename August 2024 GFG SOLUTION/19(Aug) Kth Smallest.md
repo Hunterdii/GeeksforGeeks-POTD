@@ -1,4 +1,3 @@
-
 # **19. Kth Smallest Element**
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1)
@@ -9,33 +8,43 @@ Given an array `arr[]` and an integer `k` where `k` is smaller than the size of 
 
 **Examples:**
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [7, 10, 4, 3, 20, 15], k = 3
 ```
-**Output:**  
+
+**Output:**
+
 ```
 7
 ```
+
 **Explanation:** The 3rd smallest element in the given array is 7.
 
-**Input:**  
+**Input:**
+
 ```
 arr[] = [7, 10, 4, 20, 15], k = 4
 ```
-**Output:**  
+
+**Output:**
+
 ```
 15
 ```
+
 **Explanation:** The 4th smallest element in the given array is 15.
 
 ### **Approach**
 
 1. **Initial Setup:**
+
    - Determine the minimum and maximum elements in the array. These values help define the range of the array elements.
    - Calculate the `range` of elements in the array as `max_element - min_element + 1`.
 
 2. **Frequency Array:**
+
    - Create a frequency array of size `range` to store the count of each element in the array.
    - Populate this frequency array by iterating through the input array and incrementing the count at the index corresponding to each element.
 
@@ -57,12 +66,12 @@ public:
         int min_element = *std::min_element(arr.begin(), arr.end());
         int max_element = *std::max_element(arr.begin(), arr.end());
         int range = max_element - min_element + 1;
-        
+
         std::vector<int> freq(range, 0);
         for (int i = 0; i < arr.size(); i++) {
             freq[arr[i] - min_element]++;
         }
-        
+
         int count = 0;
         for (int i = 0; i < range; i++) {
             count += freq[i];
@@ -70,7 +79,7 @@ public:
                 return i + min_element;
             }
         }
-        
+
         return -1;
     }
 };
@@ -122,24 +131,24 @@ class Solution:
         min_element = min(arr)
         max_element = max(arr)
         range_size = max_element - min_element + 1
-        
+
         freq = [0] * range_size
-        
+
         for num in arr:
             freq[num - min_element] += 1
-        
+
         count = 0
         for i in range(range_size):
             count += freq[i]
             if count >= k:
                 return i + min_element
-        
+
         return -1
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -1,40 +1,40 @@
-# *30. N-Queen Problem*
+# _30. N-Queen Problem_
 
 The problem can be found at the following link: [Problem Link](https://practice.geeksforgeeks.org/problems/n-queen-problem/1)
-
-
 
 ## **Problem Description**
 
 The N-Queen problem is a classic combinatorial problem where you are tasked with placing `N` queens on an `N x N` chessboard such that no two queens threaten each other. This means:
+
 - No two queens share the same row.
 - No two queens share the same column.
 - No two queens share the same diagonal.
 
 Your task is to return a list of all possible solutions, where each solution represents the board configuration as a list of integers. Each integer in the list represents the column index (1-based) of the queen for each row.
 
-
 ![image](https://github.com/user-attachments/assets/ec8facf8-b951-4455-8a96-4e6dbdab1936)
 
 ## **Examples**
 
 ### Example 1
+
 **Input:**  
-`N = 4`  
+`N = 4`
 
 **Output:**  
 `[[2, 4, 1, 3], [3, 1, 4, 2]]`
 
 **Explanation:**  
-For `N = 4`, two solutions exist:  
-- Solution 1:  
+For `N = 4`, two solutions exist:
+
+- Solution 1:
   ```
   . Q . .
   . . . Q
   Q . . .
   . . Q .
   ```
-- Solution 2:  
+- Solution 2:
   ```
   . . Q .
   Q . . .
@@ -43,30 +43,29 @@ For `N = 4`, two solutions exist:
   ```
 
 ### Example 2
+
 **Input:**  
-`N = 1`  
+`N = 1`
 
 **Output:**  
 `[[1]]`
 
 **Explanation:**  
-For `N = 1`, only one solution exists:  
-- Solution 1:  
+For `N = 1`, only one solution exists:
+
+- Solution 1:
   ```
   Q
   ```
-
-
 
 ## **Constraints**
 
 - `1 <= N <= 10`
 
-
-
 ## **My Approach**
 
 The N-Queen problem can be efficiently solved using **bitwise operations** to track occupied columns and diagonals:
+
 1. Use three bitmasks:
    - `cols`: Tracks occupied columns.
    - `d1`: Tracks occupied left diagonals (sum of row and column indices is constant).
@@ -80,23 +79,18 @@ The N-Queen problem can be efficiently solved using **bitwise operations** to tr
 
 This method reduces unnecessary checks and speeds up the solution.
 
-
-
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:**
--  **O(N!)**, where **N** is the number of queens.  
-  Each row has **N** possibilities initially, and this reduces with each row.  
-  - **Worst-Case Time Complexity:** **O(N!)**  
-    - For the first queen, there are `N` choices.  
-    - For the second queen, there are `N-1` choices, and so on.  
-    - Thus, the total complexity is `O(N * (N-1) * (N-2) * ... * 1) = O(N!)`.
+- **O(N!)**, where **N** is the number of queens.  
+  Each row has **N** possibilities initially, and this reduces with each row.
+- **Worst-Case Time Complexity:** **O(N!)**
 
+  - For the first queen, there are `N` choices.
+  - For the second queen, there are `N-1` choices, and so on.
+  - Thus, the total complexity is `O(N * (N-1) * (N-2) * ... * 1) = O(N!)`.
 
-- **Expected Auxiliary Space Complexity:** **O(N)**, where **N** is the space used for recursive calls and the row configuration array.  
-
-
-
+- **Expected Auxiliary Space Complexity:** **O(N)**, where **N** is the space used for recursive calls and the row configuration array.
 
 ## Code (C++)
 
@@ -110,8 +104,8 @@ public:
 
         auto solve = [&](auto&& self, int c, int cols, int d1, int d2) -> void {
             if (c == n) { res.push_back(row); return; }
-            for (int r = 0, pos = 1; r < n; ++r, pos <<= 1) 
-                if (!(cols & pos || d1 & (pos << c) || d2 & (pos << (n - 1 - c)))) 
+            for (int r = 0, pos = 1; r < n; ++r, pos <<= 1)
+                if (!(cols & pos || d1 & (pos << c) || d2 & (pos << (n - 1 - c))))
                     row[c] = r + 1, self(self, c + 1, cols | pos, d1 | (pos << c), d2 | (pos << (n - 1 - c)));
         };
 
@@ -125,6 +119,7 @@ public:
   <summary><h2 align='center'>👨‍💻 Alternative Approaches</h2></summary>
 
 ## **1️⃣ Bitmasking + Backtracking (Most Optimized)**
+
 This approach uses **bitwise operations** to efficiently track columns and diagonals.
 
 ```cpp
@@ -151,13 +146,13 @@ public:
 ```
 
 ### **Key Optimizations**
+
 ✅ **Bitwise tracking** of column, left-diagonal, and right-diagonal.  
 ✅ **Eliminates extra loops** for checking conflicts.  
-✅ **Fastest pruning** using `__builtin_ctz(pos)` (extracts least significant set bit).  
-
-
+✅ **Fastest pruning** using `__builtin_ctz(pos)` (extracts least significant set bit).
 
 ## **2️⃣ One-Dimensional Array + Backtracking**
+
 This approach eliminates the need for extra space for diagonal checks.
 
 ```cpp
@@ -187,22 +182,20 @@ public:
 ```
 
 ### **Key Optimizations**
+
 ✅ Uses **three boolean arrays** instead of nested loops.  
 ✅ Reduces **O(n) conflict checks** per column to **O(1) using precomputed indices**.  
-✅ **Backtracks efficiently** without unnecessary calculations.  
-
- 
+✅ **Backtracks efficiently** without unnecessary calculations.
 
 ### **Comparison of Approaches**
 
-| Approaches                       | Time Complexity | Space Complexity | Best For             |
-|--------------------------------|-----------------|------------------|----------------------|
-| **Bitmasking + Recursion (1️⃣)** | **O(n!)**        | **O(n)**         | Large `n` (Fastest) |
-| **Boolean Arrays (Backtracking) (2️⃣)** | **O(n!)**        | **O(n)**         | Simplicity           | 
-
-
+| Approaches                             | Time Complexity | Space Complexity | Best For            |
+| -------------------------------------- | --------------- | ---------------- | ------------------- |
+| **Bitmasking + Recursion (1️⃣)**        | **O(n!)**       | **O(n)**         | Large `n` (Fastest) |
+| **Boolean Arrays (Backtracking) (2️⃣)** | **O(n!)**       | **O(n)**         | Simplicity          |
 
 ### **Final Recommendation**
+
 - **For Competitive Coding** → Use **Bitmasking (1️⃣)**
 - **For Readability + Optimization** → Use **Boolean Arrays (2️⃣)**
 
@@ -229,7 +222,7 @@ class Solution {
             res.add(temp);
             return;
         }
-        for (int r = 0, pos = 1; r < n; ++r, pos <<= 1) 
+        for (int r = 0, pos = 1; r < n; ++r, pos <<= 1)
             if ((cols & pos) == 0 && (d1 & (pos << c)) == 0 && (d2 & (pos << (n - 1 - c))) == 0) {
                 row[c] = r;
                 solve(c + 1, cols | pos, d1 | (pos << c), d2 | (pos << (n - 1 - c)), n, row, res);
@@ -237,8 +230,6 @@ class Solution {
     }
 }
 ```
-
-
 
 ## Code (Python)
 
@@ -266,7 +257,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

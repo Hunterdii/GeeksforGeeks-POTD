@@ -9,23 +9,29 @@ Given an array `arr`, the task is to find and return the maximum product possibl
 **Examples:**
 
 Input:
+
 ```
 arr = [-1, 0, -2, 4, 3]
 ```
+
 Output:
+
 ```
 24
 ```
+
 Explanation:
 The maximum product is \((-1) \times (-2) \times 4 \times 3 = 24\).
 
 ### My Approach
 
 1. **Initialization:**
+
    - Define variables to count negative numbers (`negCount`), track the maximum negative number (`maxNeg`), and compute the product of positive numbers (`posProduct`) and the product of negative numbers (`negProduct`). Initialize `posProduct` and `negProduct` to 1.
    - A boolean variable `hasNonZero` is used to check if there is any non-zero positive number.
 
 2. **Counting Negatives and Finding Maximum Negative:**
+
    - Iterate through the array to count the number of negative numbers and find the maximum negative number.
 
 3. **Calculating the Maximum Product:**
@@ -155,7 +161,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

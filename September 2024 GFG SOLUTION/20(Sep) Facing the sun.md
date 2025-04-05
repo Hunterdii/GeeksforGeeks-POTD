@@ -1,4 +1,4 @@
-# *20. Facing the Sun*
+# _20. Facing the Sun_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/facing-the-sun2126/1)
 
@@ -16,11 +16,12 @@ Input:
 `height = [7, 4, 8, 2, 9]`  
 Output:  
 `3`  
-Explanation:  
-- Building 7 can see the sunrise.  
-- Building 4 cannot see the sunrise because building 7 blocks it.  
-- Building 8 can see the sunrise.  
-- Building 2 cannot see the sunrise because building 8 blocks it.  
+Explanation:
+
+- Building 7 can see the sunrise.
+- Building 4 cannot see the sunrise because building 7 blocks it.
+- Building 8 can see the sunrise.
+- Building 2 cannot see the sunrise because building 8 blocks it.
 - Building 9 can see the sunrise.
 
 ### My Approach
@@ -48,7 +49,7 @@ class Solution {
         for (int h : height) {
             if (h > max_height) {
                 count++;
-                max_height = h; 
+                max_height = h;
             }
         }
         return count;
@@ -67,7 +68,7 @@ class Solution {
         for (int h : height) {
             if (h > max_height) {
                 count++;
-                max_height = h; 
+                max_height = h;
             }
         }
         return count;
@@ -86,14 +87,14 @@ class Solution:
         for h in height:
             if h > max_height:
                 count += 1
-                max_height = h 
-        
+                max_height = h
+
         return count
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Your input is valuable for improving the content, and together we can foster a community of learning.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Your input is valuable for improving the content, and together we can foster a community of learning.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 

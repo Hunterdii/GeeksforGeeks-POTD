@@ -9,20 +9,25 @@ Given two singly linked lists, determine if they are identical. Two linked lists
 **Example:**
 
 Input:
+
 ```
 LinkedList1: 1->2->3->4->5->6
 LinkedList2: 99->59->42->20
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation:
 Both linked lists contain the same elements in the same order.
 
 ### My Approach
 
 1. **Traversal and Comparison:**
+
    - Traverse both linked lists simultaneously.
    - Compare data elements of corresponding nodes.
    - If at any point, data elements differ, return `false`.
@@ -30,6 +35,7 @@ Both linked lists contain the same elements in the same order.
    - If both lists are traversed completely without differences, return `true`.
 
 2. **Edge Cases:**
+
    - Handle cases where one or both lists are empty.
 
 3. **Time and Space Complexity:**
@@ -39,6 +45,7 @@ Both linked lists contain the same elements in the same order.
 ### Code Snippets
 
 ### C++
+
 ```cpp
 bool areIdentical(Node *head1, Node *head2) {
     while (head1 != nullptr && head2 != nullptr) {
@@ -52,6 +59,7 @@ bool areIdentical(Node *head1, Node *head2) {
 ```
 
 ### Java
+
 ```java
 public class Solution {
     public boolean areIdentical(Node head1, Node head2) {
@@ -67,6 +75,7 @@ public class Solution {
 ```
 
 ### Python
+
 ```python
 def areIdentical(head1, head2):
     while head1 is not None and head2 is not None:
@@ -79,7 +88,7 @@ def areIdentical(head1, head2):
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

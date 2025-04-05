@@ -1,6 +1,6 @@
 ---
-Difficulty: Medium  
-Source: 160 Days of Problem Solving  
+Difficulty: Medium
+Source: 160 Days of Problem Solving
 Tags:
   - Graph
   - Matrix
@@ -9,12 +9,12 @@ Tags:
 
 # 🚀 _Day 3. Rotten Oranges_ 🧠
 
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/rotten-oranges2536)
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/rotten-oranges2536)  
-
-## 💡 **Problem Description:** 
+## 💡 **Problem Description:**
 
 Given a **matrix** `mat[][]` of size **n × m**, where each cell in the matrix can contain:
+
 - **0** → Empty cell
 - **1** → Fresh orange
 - **2** → Rotten orange
@@ -24,7 +24,9 @@ A **rotten orange** at position `(i, j)` can rot adjacent fresh oranges **(up, d
 ## 🔍 **Example Walkthrough:**
 
 ### **Example 1:**
-#### **Input:**  
+
+#### **Input:**
+
 ```
 mat[][] = [
   [0, 1, 2],
@@ -32,41 +34,58 @@ mat[][] = [
   [2, 1, 1]
 ]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 1
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 Oranges at positions `(0,2)`, `(1,2)`, and `(2,0)` will rot adjacent oranges in **one unit of time**.
 
 ### **Example 2:**
-#### **Input:**  
+
+#### **Input:**
+
 ```
 mat[][] = [[2, 2, 0, 1]]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 -1
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 Oranges at `(0,0)` and `(0,1)` **cannot** rot the orange at `(0,3)`, so it's **impossible**.
 
 ### **Example 3:**
-#### **Input:**  
+
+#### **Input:**
+
 ```
 mat[][] = [
   [2, 2, 2],
   [0, 2, 0]
 ]
 ```
-#### **Output:**  
+
+#### **Output:**
+
 ```
 0
 ```
-#### **Explanation:**  
+
+#### **Explanation:**
+
 There are **no fresh oranges**, so the answer is **0**.
 
 ## **Constraints**
+
 - $1 \leq n, m \leq 500$
 - $1 ≤ mat[0].size() ≤ 500$
 - `mat[i][j]` ∈ {0, 1, 2}
@@ -74,25 +93,26 @@ There are **no fresh oranges**, so the answer is **0**.
 ## 🎯 **My Approach:**
 
 ### **Single Queue (BFS)**
+
 ### **Algorithm Steps:**
 
-1. **Multi-source BFS:**  
-   - Traverse the matrix to push all rotten orange coordinates into a queue.  
+1. **Multi-source BFS:**
+   - Traverse the matrix to push all rotten orange coordinates into a queue.
    - Also, count the number of fresh oranges.
-2. **Level-by-Level Processing:**  
-   - For each time unit, process all the oranges in the queue.  
-   - For each rotten orange, try to rot its adjacent fresh oranges (up, down, left, right).  
+2. **Level-by-Level Processing:**
+   - For each time unit, process all the oranges in the queue.
+   - For each rotten orange, try to rot its adjacent fresh oranges (up, down, left, right).
    - If at least one orange is rotted during that level, increment the time counter.
-3. **Termination:**  
-   - If after the BFS there are still fresh oranges left, return **-1**.  
+3. **Termination:**
+   - If after the BFS there are still fresh oranges left, return **-1**.
    - Otherwise, return the total time elapsed.
 
 ### **Rotten Oranges: Minimum Time to Rot All Oranges**
 
+## 🕒 **Time and Auxiliary Space Complexity**
 
-## 🕒 **Time and Auxiliary Space Complexity** 
-- **Expected Time Complexity:** $\(O(n \times m)\)$, since each cell (orange) in the mat is processed at most once during the BFS traversal.  
-- **Expected Auxiliary Space Complexity:** $\(O(n \times m)\)$, as in the worst case, the queue may contain all the cells simultaneously.  
+- **Expected Time Complexity:** $\(O(n \times m)\)$, since each cell (orange) in the mat is processed at most once during the BFS traversal.
+- **Expected Auxiliary Space Complexity:** $\(O(n \times m)\)$, as in the worst case, the queue may contain all the cells simultaneously.
 
 ## **Code (C++)**
 
@@ -131,10 +151,12 @@ public:
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-## 📊 **2️⃣ BFS Using Two Queues (Level Separation) Approach**  
-#### **Algorithm Steps:**  
-1. Use **two queues**: one for the current level and one for the next level.  
-2. Process all rotten oranges from the current level, adding newly rotten oranges to the next level.  
+## 📊 **2️⃣ BFS Using Two Queues (Level Separation) Approach**
+
+#### **Algorithm Steps:**
+
+1. Use **two queues**: one for the current level and one for the next level.
+2. Process all rotten oranges from the current level, adding newly rotten oranges to the next level.
 3. Swap the queues and increment the time until no fresh oranges remain.
 
 ```cpp
@@ -169,17 +191,20 @@ public:
 };
 ```
 
-#### 📝 **Complexity Analysis:**  
-- **Time Complexity:** `O(n * m)`  
+#### 📝 **Complexity Analysis:**
+
+- **Time Complexity:** `O(n * m)`
 - **Space Complexity:** `O(n * m)`
 
-#### ✅ **Why This Approach?**  
+#### ✅ **Why This Approach?**
+
 It clearly separates levels by using two queues, making the progression of time explicit.
 
+## 🔄 **3️⃣ BFS In-Place Level Tracking Approach**
 
-## 🔄 **3️⃣ BFS In-Place Level Tracking Approach**  
-#### **Algorithm Steps:**  
-1. Use a single queue with a marker (e.g., `{-1, -1}`) to denote the end of a level.  
+#### **Algorithm Steps:**
+
+1. Use a single queue with a marker (e.g., `{-1, -1}`) to denote the end of a level.
 2. Process elements until the marker is reached, then increment the time and add a new marker if the queue isn’t empty.
 
 ```cpp
@@ -216,18 +241,21 @@ public:
 };
 ```
 
-#### 📝 **Complexity Analysis:**  
-- **Time Complexity:** `O(n * m)`  
+#### 📝 **Complexity Analysis:**
+
+- **Time Complexity:** `O(n * m)`
 - **Space Complexity:** `O(n * m)`
 
-#### ✅ **Why This Approach?**  
+#### ✅ **Why This Approach?**
+
 It avoids extra queues by using a marker to track levels, keeping the implementation concise while still tracking time accurately.
 
+## 🚀 **4️⃣ BFS with Time Matrix Approach**
 
-## 🚀 **4️⃣ BFS with Time Matrix Approach**  
-#### **Algorithm Steps:**  
-1. Use multi-source BFS from all rotten oranges simultaneously.  
-2. Maintain a separate **time matrix** that records the time at which each fresh orange becomes rotten.  
+#### **Algorithm Steps:**
+
+1. Use multi-source BFS from all rotten oranges simultaneously.
+2. Maintain a separate **time matrix** that records the time at which each fresh orange becomes rotten.
 3. Update the time matrix as you process each cell and track the maximum time required.
 
 ```cpp
@@ -265,30 +293,31 @@ public:
 };
 ```
 
-#### 📝 **Complexity Analysis:**  
-- **Time Complexity:** `O(n * m)`  
+#### 📝 **Complexity Analysis:**
+
+- **Time Complexity:** `O(n * m)`
 - **Space Complexity:** `O(n * m)`
 
-#### ✅ **Why This Approach?**  
-It records the exact time at which each orange becomes rotten, which can be beneficial for debugging or extended analysis.
+#### ✅ **Why This Approach?**
 
+It records the exact time at which each orange becomes rotten, which can be beneficial for debugging or extended analysis.
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                                                                          | ⚠️ **Cons**                                                      |
-|-------------------------------------|------------------------|-------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Main Approach (Single Queue BFS)**| 🟢 O(n * m)            | 🟡 O(n * m)             | Simple, optimal runtime; processes all rotten oranges simultaneously.                               | Level tracking is less explicit compared to some alternatives.    |
-| **BFS Using Two Queues**            | 🟢 O(n * m)            | 🟡 O(n * m)             | Clear separation of levels; intuitive time progression.                                             | Requires managing two separate queues.                           |
-| **BFS In-Place Level Tracking**     | 🟢 O(n * m)            | 🟡 O(n * m)             | Uses a single queue with a marker; concise and space-efficient.                                     | Marker-based approach might be less intuitive for beginners.       |
-| **BFS with Time Matrix**            | 🟢 O(n * m)            | 🟡 O(n * m)             | Provides explicit time records for each cell; useful for detailed analysis and debugging.             | Additional space is required for the time matrix.                   |
+| **Approach**                         | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                                                               | ⚠️ **Cons**                                                    |
+| ------------------------------------ | ---------------------- | ----------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Main Approach (Single Queue BFS)** | 🟢 O(n \* m)           | 🟡 O(n \* m)            | Simple, optimal runtime; processes all rotten oranges simultaneously.                     | Level tracking is less explicit compared to some alternatives. |
+| **BFS Using Two Queues**             | 🟢 O(n \* m)           | 🟡 O(n \* m)            | Clear separation of levels; intuitive time progression.                                   | Requires managing two separate queues.                         |
+| **BFS In-Place Level Tracking**      | 🟢 O(n \* m)           | 🟡 O(n \* m)            | Uses a single queue with a marker; concise and space-efficient.                           | Marker-based approach might be less intuitive for beginners.   |
+| **BFS with Time Matrix**             | 🟢 O(n \* m)           | 🟡 O(n \* m)            | Provides explicit time records for each cell; useful for detailed analysis and debugging. | Additional space is required for the time matrix.              |
 
-✅ **Best Choice?**  
-- The **Main Approach (Single Queue BFS)** is optimal in runtime and is widely used due to its simplicity and efficiency.  
-- **BFS Using Two Queues** and **BFS In-Place Level Tracking** are both excellent alternatives that provide clear level separation and concise implementations, respectively.  
+✅ **Best Choice?**
+
+- The **Main Approach (Single Queue BFS)** is optimal in runtime and is widely used due to its simplicity and efficiency.
+- **BFS Using Two Queues** and **BFS In-Place Level Tracking** are both excellent alternatives that provide clear level separation and concise implementations, respectively.
 - **BFS with Time Matrix** is ideal when detailed timing information per cell is required.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -361,14 +390,13 @@ class Solution:
         return t if f == 0 else -1
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!  
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
-⭐ **If you find this helpful, please give this repository a star!** ⭐  
+⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>

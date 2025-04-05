@@ -1,4 +1,4 @@
-# *04. Deletion and Reverse in Circular Linked List*
+# _04. Deletion and Reverse in Circular Linked List_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/deletion-and-reverse-in-linked-list/1)
 
@@ -7,6 +7,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given a Circular Linked List, the task is to delete a given node (key) from the circular linked list and then reverse the circular linked list. The key may or may not be present in the list.
 
 **Note:**
+
 - You don't have to print anything, just return the head of the modified list in each function.
 - Nodes may consist of duplicate values.
 
@@ -27,9 +28,11 @@ Explanation: Since there is no key present in the list, simply reverse the list 
 ### My Approach
 
 1. **Reverse the Circular Linked List:**
+
    - Use three pointers: `prev`, `current`, and `nextNode` to reverse the links in the circular linked list until `current` returns to the head.
 
 2. **Delete the Node:**
+
    - Traverse the circular linked list using a pointer, comparing each node's data with the key.
    - If the key is found, adjust the pointers to remove the node. Handle special cases for the head and for when the list becomes empty.
 
@@ -48,7 +51,7 @@ class Solution {
 public:
     Node* reverse(Node* head) {
         if (head == NULL || head->next == head) {
-            return head; 
+            return head;
         }
 
         Node* prev = head;
@@ -62,13 +65,13 @@ public:
             current = nextNode;
         }
 
-        head->next = prev; 
-        return prev; 
+        head->next = prev;
+        return prev;
     }
 
     Node* deleteNode(Node* head, int key) {
         if (head == NULL) {
-            return head; 
+            return head;
         }
 
         Node *current = head, *prev = NULL;
@@ -76,26 +79,26 @@ public:
         do {
             if (current->data == key) {
                 if (current == head && current->next == head) {
-                    return NULL; 
+                    return NULL;
                 }
 
                 if (current == head) {
                     Node* tail = head;
-                    while (tail->next != head) { 
+                    while (tail->next != head) {
                         tail = tail->next;
                     }
-                    head = current->next; 
-                    tail->next = head; 
+                    head = current->next;
+                    tail->next = head;
                 } else {
-                    prev->next = current->next; 
+                    prev->next = current->next;
                 }
-                return head; 
+                return head;
             }
-            prev = current; 
-            current = current->next; 
+            prev = current;
+            current = current->next;
         } while (current != head);
 
-        return head; 
+        return head;
     }
 };
 ```
@@ -106,7 +109,7 @@ public:
 class Solution {
     Node reverse(Node head) {
         if (head == null || head.next == head) {
-            return head; 
+            return head;
         }
 
         Node prev = head;
@@ -120,13 +123,13 @@ class Solution {
             current = nextNode;
         }
 
-        head.next = prev; 
-        return prev; 
+        head.next = prev;
+        return prev;
     }
 
     Node deleteNode(Node head, int key) {
         if (head == null) {
-            return head; 
+            return head;
         }
 
         Node current = head, prev = null;
@@ -134,26 +137,26 @@ class Solution {
         do {
             if (current.data == key) {
                 if (current == head && current.next == head) {
-                    return null; 
+                    return null;
                 }
 
                 if (current == head) {
                     Node tail = head;
-                    while (tail.next != head) { 
+                    while (tail.next != head) {
                         tail = tail.next;
                     }
-                    head = current.next; 
-                    tail.next = head; 
+                    head = current.next;
+                    tail.next = head;
                 } else {
-                    prev.next = current.next; 
+                    prev.next = current.next;
                 }
-                return head; 
+                return head;
             }
-            prev = current; 
-            current = current.next; 
+            prev = current;
+            current = current.next;
         } while (current != head);
 
-        return head; 
+        return head;
     }
 }
 ```
@@ -176,8 +179,8 @@ class Solution:
             prev = current
             current = nextNode
 
-        head.next = prev  
-        return prev  
+        head.next = prev
+        return prev
 
     def deleteNode(self, head, key):
         if head is None:
@@ -189,34 +192,35 @@ class Solution:
         while True:
             if current.data == key:
                 if current == head and current.next == head:
-                    return None  
+                    return None
 
                 if current == head:
                     tail = head
                     while tail.next != head:
                         tail = tail.next
-                    head = current.next  
-                    tail.next = head  
+                    head = current.next
+                    tail.next = head
                 else:
-                    prev.next = current.next  
+                    prev.next = current.next
                 return head
 
             prev = current
             current = current.next
 
             if current == head:
-                break  
+                break
 
-        return head  
+        return head
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input; together, we strive to create a space where learning is a collaborative endeavor.
 
 ⭐ Star this repository if you find it helpful or intriguing! ⭐
 
 ---
+
 <div align=center>
   <h3><b>📍Visitor Count</b></h3>
 </div>

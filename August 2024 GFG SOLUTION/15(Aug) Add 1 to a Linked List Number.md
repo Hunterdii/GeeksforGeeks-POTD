@@ -21,11 +21,13 @@ Explanation: `1 -> 2 -> 3` represents 123, and when 1 is added, it becomes 124.
 ### Approach
 
 1. **Reverse the Linked List:**
+
    - Reverse the given linked list to facilitate the addition from the least significant digit.
    - Initialize pointers `prev` as `nullptr`, `curr` as `head`, and `next` as `nullptr`.
    - Traverse the list, updating pointers to reverse the links between nodes.
 
 2. **Add One to the Number:**
+
    - Start from the head of the reversed list and initialize `carry` as 1 (since we need to add 1).
    - Traverse the reversed list, adding the `carry` to each node's data.
    - Update `carry` to the value of `sum / 10` and set the node's data to `sum % 10`.
@@ -101,7 +103,7 @@ class Solution {
 
         return prev;
     }
-    
+
     public Node addOne(Node head) {
         head = reverse(head);
 
@@ -163,7 +165,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -7,19 +7,24 @@ Given the root of a binary search tree and a number \( N \), find the greatest n
 **Example:**
 
 Input:
+
 ```
 N = 24
 ```
+
 Output:
+
 ```
 21
 ```
-Explanation: 
+
+Explanation:
 The greatest element in the tree which is less than or equal to 24 is 21. Searching will be like 5 -> 12 -> 21.
 
 ### Approach 1 (Iterative Inorder Traversal):
 
 1. **Traversal:**
+
    - Start traversing the BST from the root.
    - At each node, if the node's value is less than or equal to \( n \), update the maximum value found so far and move to the right subtree.
    - If the node's value is greater than \( n \), move to the left subtree.
@@ -55,6 +60,7 @@ public:
 ### Approach 2 (Recursive Inorder Traversal):
 
 1. **Recursion:**
+
    - Perform an inorder traversal of the BST.
    - While traversing, keep track of the maximum value found so far less than or equal to \( n \).
 
@@ -91,6 +97,7 @@ public:
 ### Approach 3 (Recursive Single Traversal):
 
 1. **Recursion with Optimization:**
+
    - Recursively traverse the BST.
    - At each node, if the node's value is less than or equal to \( n \), move to the right subtree and update the maximum value found so far.
    - If the node's value is greater than \( n \), move to the left subtree.
@@ -123,7 +130,7 @@ public:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

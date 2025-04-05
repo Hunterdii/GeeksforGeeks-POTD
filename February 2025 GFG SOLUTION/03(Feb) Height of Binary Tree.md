@@ -1,4 +1,4 @@
-# *3. Height of Binary Tree*
+# _3. Height of Binary Tree_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/height-of-binary-tree/1)
 
@@ -23,7 +23,7 @@ One of the longest paths from the root (node 12) goes through node 8 to node 5, 
 
 **Example 2:**  
 **Input:**  
-`root[] = [1, 2, 3, 4, N, N, 5, N, N, 6, 7]`  
+`root[] = [1, 2, 3, 4, N, N, 5, N, N, 6, 7]`
 
 <img src="https://github.com/user-attachments/assets/9f828753-bfae-4306-9d86-6d129cb37ef4" width="30%">
 
@@ -32,31 +32,29 @@ One of the longest paths from the root (node 12) goes through node 8 to node 5, 
 **Explanation:**  
 The longest path from the root (node 1) to a leaf node (node 6) contains 3 edges.
 
-**Constraints:**  
-- 1 <= number of nodes <= $10^5$  
+**Constraints:**
+
+- 1 <= number of nodes <= $10^5$
 - 0 <= node->data <= $10^5$
-
-
-
 
 ## My Approach
 
-We can solve the problem using recursion by computing the height of the left and right subtrees and taking the maximum of the two.  
+We can solve the problem using recursion by computing the height of the left and right subtrees and taking the maximum of the two.
+
 - **Recursive DFS (Top-Down):**  
-  Traverse the tree and for each node, return `1 + max(height(left), height(right))`.  
+  Traverse the tree and for each node, return `1 + max(height(left), height(right))`.
 - **Iterative BFS (Level Order):**  
-  Use a queue to perform level order traversal and count the number of levels.  
-
-
+  Use a queue to perform level order traversal and count the number of levels.
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(N), as each node is visited exactly once.  
+- **Expected Time Complexity:** O(N), as each node is visited exactly once.
 - **Expected Auxiliary Space Complexity:** O(H), where H is the height of the tree (space used in the recursion stack).
 
 ## **1️⃣ Recursive DFS (Top-Down)**
 
 ## Code (C)
+
 ```c
 int max(int a,int b){return a>b?a:b;}
 int height(struct Node* node){return node?1+max(height(node->left),height(node->right)):-1;}
@@ -75,7 +73,6 @@ public:
 
 <details>
   <summary><h2 align='center'>🌲 Alternative Approaches</h2></summary>
-
 
 ## **2️⃣ Iterative BFS (Level Order)**
 
@@ -100,6 +97,7 @@ public:
 ```
 
 ## **3️⃣ Recursive DFS (Bottom-Up)**
+
 ```cpp
 class Solution {
 public:
@@ -111,25 +109,21 @@ public:
 };
 ```
 
-
-
 **Comparison of Approaches**
 
-| Approach                          | Time Complexity | Space Complexity | Method      | Pros                                      | Cons                              |
-|-----------------------------------|-----------------|------------------|-------------|-------------------------------------------|-----------------------------------|
-| **Recursive DFS (Top-Down)**      | 🟢 **O(N)**            | 🟡 **O(H)**             | Recursion   | Simple and concise                        | May cause stack overflow for deep trees  |
-| **Iterative BFS (Level Order)**   | 🟢 **O(N)**            | 🔴 **O(W)**             | Queue-based | Avoids deep recursion issues              | Higher memory usage for wide trees       |
-| **Recursive DFS (Bottom-Up)**     | 🟢 **O(N)**            | 🟡 **O(H)**             | Recursion   | Explicit computation, similar to Top-Down | Recursion stack usage remains     |
-
+| Approach                        | Time Complexity | Space Complexity | Method      | Pros                                      | Cons                                    |
+| ------------------------------- | --------------- | ---------------- | ----------- | ----------------------------------------- | --------------------------------------- |
+| **Recursive DFS (Top-Down)**    | 🟢 **O(N)**     | 🟡 **O(H)**      | Recursion   | Simple and concise                        | May cause stack overflow for deep trees |
+| **Iterative BFS (Level Order)** | 🟢 **O(N)**     | 🔴 **O(W)**      | Queue-based | Avoids deep recursion issues              | Higher memory usage for wide trees      |
+| **Recursive DFS (Bottom-Up)**   | 🟢 **O(N)**     | 🟡 **O(H)**      | Recursion   | Explicit computation, similar to Top-Down | Recursion stack usage remains           |
 
 ### **Best Choice?**
-- **For balanced trees**, Top-Down DFS is fine.  
-- **For deep trees**, BFS is better (avoids stack overflow).  
+
+- **For balanced trees**, Top-Down DFS is fine.
+- **For deep trees**, BFS is better (avoids stack overflow).
 - **For clarity**, Bottom-Up DFS is explicit and structured.
-  
+
 </details>
-
-
 
 ## Code (Java)
 
@@ -141,8 +135,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -151,11 +143,9 @@ class Solution:
         return -1 if not root else 1 + max(self.height(root.left), self.height(root.right))
 ```
 
-
-
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

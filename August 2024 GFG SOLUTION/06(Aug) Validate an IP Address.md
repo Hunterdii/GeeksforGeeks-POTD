@@ -15,33 +15,43 @@ A valid IPv4 address is of the form `x1.x2.x3.x4` where `0 <= x1, x2, x3, x4 <= 
 **Examples:**
 
 Input:
+
 ```
 str = "222.111.111.111"
 ```
+
 Output:
+
 ```
 true
 ```
+
 Explanation:
 The IPv4 address is as per the criteria mentioned, and all four decimal numbers lie in the specified range.
 
 Input:
+
 ```
 str = "5555..555"
 ```
+
 Output:
+
 ```
 false
 ```
+
 Explanation:
 "5555..555" is not a valid IPv4 address, as the middle two portions are missing.
 
 ### My Approach
 
 1. **Initialization:**
+
 - Define variables `segments`, `num`, and `length` to keep track of the number of segments, the current number, and the length of the current number, respectively.
 
 2. **Validation Loop:**
+
 - Iterate through each character in the string `str`.
 - If the character is a dot (`.`):
   - Check if the `length` is between 1 and 3 and the `num` is between 0 and 255.
@@ -53,10 +63,12 @@ Explanation:
 - If the character is neither a dot nor a digit, return `false`.
 
 3. **Final Checks:**
+
 - Ensure the last segment is valid by checking the `length` and `num`.
 - Ensure there are exactly four segments.
 
 4. **Return:**
+
 - Return `true` if the IP address is valid, otherwise `false`.
 
 ### Time and Auxiliary Space Complexity
@@ -169,7 +181,7 @@ class Solution:
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 

@@ -12,22 +12,25 @@ Given a \(m \times n\) grid with each cell consisting of positive, negative, or 
 
 **Example 1:**
 
-Input: 
-```
-m = 3, n = 3 
-points = {{-2,-3,3}, 
-          {-5,-10,1},
-          {10,30,-5}} 
-```
-Output: 
-```
-7 
-```
-Explanation: 
-7 is the minimum value to reach the destination with positive points throughout the path. Below is the path: 
-\((0,0) \rightarrow (0,1) \rightarrow (0,2) \rightarrow (1, 2) \rightarrow (2, 2)\). 
-We start from \((0, 0)\) with 7, we reach \((0, 1)\) with 5, \((0, 2)\) with 2, \((1, 2)\) with 5, \((2, 2)\) with and finally we have 1 point (we needed greater than 0 points at the end).
+Input:
 
+```
+m = 3, n = 3
+points = {{-2,-3,3},
+          {-5,-10,1},
+          {10,30,-5}}
+```
+
+Output:
+
+```
+7
+```
+
+Explanation:
+7 is the minimum value to reach the destination with positive points throughout the path. Below is the path:
+\((0,0) \rightarrow (0,1) \rightarrow (0,2) \rightarrow (1, 2) \rightarrow (2, 2)\).
+We start from \((0, 0)\) with 7, we reach \((0, 1)\) with 5, \((0, 2)\) with 2, \((1, 2)\) with 5, \((2, 2)\) with and finally we have 1 point (we needed greater than 0 points at the end).
 
 ### My Approach
 
@@ -46,7 +49,7 @@ We start from \((0, 0)\) with 7, we reach \((0, 1)\) with 5, \((0, 2)\) with 2, 
 ```cpp
 class Solution{
 public:
-    int minPoints(int M, int N, vector<vector<int>> points) { 
+    int minPoints(int M, int N, vector<vector<int>> points) {
         vector<vector<int>> dp(M, vector<int>(N, 0));
 
         for (int i = M - 1; i >= 0; --i) {
@@ -63,13 +66,13 @@ public:
         }
 
         return dp[0][0];
-    } 
+    }
 };
 ```
 
 ## Contribution and Support
 
-For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/het-patel-8b110525a/). Let’s make this learning journey more collaborative!
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ If you find this helpful, please give this repository a star! ⭐
 
