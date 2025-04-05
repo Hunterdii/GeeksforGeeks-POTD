@@ -505,7 +505,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🌐 **Graph Mastery Zone**  
 **Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
 
-✨ **Days Covered:** **138 to 141**  
+✨ **Days Covered:** **138 to 142**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
@@ -513,6 +513,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | Day 139      | BFS of Graph              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%202%20-%20BFS%20of%20graph.md) |  
 | Day 140      | Rotten Oranges              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%203%20-%20Rotten%20Oranges.md) |  
 | Day 141      | Undirected Graph Cycle              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%204%20-%20Undirected%20Graph%20Cycle.md) |  
+| Day 142      | Find the number of islands              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%205%20-%20Find%20the%20number%20of%20islands.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
