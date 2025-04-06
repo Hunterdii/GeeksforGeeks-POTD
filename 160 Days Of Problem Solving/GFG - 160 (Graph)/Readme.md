@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 142/160 Problems 🎉  
-> **In Progress**: 18 Problems ⏳  
+> **Completed**: 143/160 Problems 🎉  
+> **In Progress**: 17 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -46,6 +46,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 3**  | Rotten Oranges 🍊🦠⏳        |  | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-c) | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-java) | [Solution](Day%203%20-%20Rotten%20Oranges.md#code-python) |
 | **Day 4**  | Undirected Graph Cycle ♻️🔍💠        |  | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-c) | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-java) | [Solution](Day%204%20-%20Undirected%20Graph%20Cycle.md#code-python) |
 | **Day 5**  | Find the number of islands 🏝️🧭⛵        |  | [Solution](Day%205%20-%20Find%20the%20number%20of%20islands.md#code-c) | [Solution](Day%205%20-%20Find%20the%20number%20of%20islands.md#code-java) | [Solution](Day%205%20-%20Find%20the%20number%20of%20islands.md#code-python) |
+| **Day 6**  | Topological sort 📦🕸️🛣️       |  | [Solution](Day%206%20-%20Topological%20sort.md#code-c) | [Solution](Day%206%20-%20Topological%20sort.md#code-java) | [Solution](Day%206%20-%20Topological%20sort.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
