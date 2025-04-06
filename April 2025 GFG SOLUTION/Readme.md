@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 3: Rotten Oranges](03(Apr)%20Rotten%20Oranges.md)🍊🦠⏳
   - [Day 4: Undirected Graph Cycle](04(Apr)%20Undirected%20Graph%20Cycle.md)♻️🔍💠
   - [Day 5: Find the number of islands](05(Apr)%20Find%20the%20number%20of%20islands.md)🏝️🧭⛵
+  - [Day 6: Topological sort](06(Apr)%20Topological%20sort.md)📦🕸️🛣️
 
 
 
@@ -28,9 +29,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 5(05 APR) :* Find the number of islands
 
-<!--*Day 6(06 APR) :* 
+*Day 6(06 APR) :* Topological sort
 
-*Day 7(07 APR) :* 
+<!--*Day 7(07 APR) :* 
 
 *Day 8(08 APR) :* 
 
