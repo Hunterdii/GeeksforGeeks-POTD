@@ -505,7 +505,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🌐 **Graph Mastery Zone**  
 **Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
 
-✨ **Days Covered:** **138 to 144**  
+✨ **Days Covered:** **138 to 145**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
@@ -516,6 +516,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | Day 142      | Find the number of islands              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%205%20-%20Find%20the%20number%20of%20islands.md) |  
 | Day 143      | Topological sort              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%206%20-%20Topological%20sort.md) |  
 | Day 144      | Directed Graph Cycle              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%207%20-%20Directed%20Graph%20Cycle.md) |  
+| Day 145      | Bridge edge in a graph              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%208%20-%20Bridge%20edge%20in%20a%20graph.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
