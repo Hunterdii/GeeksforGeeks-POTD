@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 145/160 Problems 🎉  
-> **In Progress**: 15 Problems ⏳  
+> **Completed**: 146/160 Problems 🎉  
+> **In Progress**: 14 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -49,6 +49,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 6**  | Topological sort 📦🕸️🛣️       |  | [Solution](Day%206%20-%20Topological%20sort.md#code-c) | [Solution](Day%206%20-%20Topological%20sort.md#code-java) | [Solution](Day%206%20-%20Topological%20sort.md#code-python) |
 | **Day 7**  | Directed Graph Cycle 🔄🔁🚦       | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-c) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-c-1) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-java) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-python) |
 | **Day 8**  | Bridge edge in a graph 🌉🕸️🧭       |  | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-c) | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-java) | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-python) |
+| **Day 9**  | Articulation Point - II 🕸️⚙️🗺️      |  | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-c) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-java) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
