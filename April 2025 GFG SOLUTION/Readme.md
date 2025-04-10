@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 7: Directed Graph Cycle](07(Apr)%20Directed%20Graph%20Cycle.md)🔄🔁🚦
   - [Day 8: Bridge edge in a graph](08(Apr)%20Bridge%20edge%20in%20a%20graph.md)🌉🕸️🧭
   - [Day 9: Articulation Point - II](09(Apr)%20Articulation%20Point%20-%20II.md)🕸️⚙️🗺️
+  - [Day 10: Minimum cost to connect all houses in a city](10(Apr)%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md)🏘️💰🌆
 
 
 
@@ -40,9 +41,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 9(09 APR) :* Articulation Point - II
 
-<!--*Day 10(10 APR) :* 
+*Day 10(10 APR) :* Minimum cost to connect all houses in a city
 
-*Day 11(11 APR) :* 
+<!--*Day 11(11 APR) :* 
 
 *Day 12(12 APR) :* 
 
