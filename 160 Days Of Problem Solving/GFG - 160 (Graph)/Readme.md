@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 146/160 Problems 🎉  
-> **In Progress**: 14 Problems ⏳  
+> **Completed**: 147/160 Problems 🎉  
+> **In Progress**: 13 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -50,6 +50,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 7**  | Directed Graph Cycle 🔄🔁🚦       | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-c) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-c-1) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-java) | [Solution](Day%207%20-%20Directed%20Graph%20Cycle.md#code-python) |
 | **Day 8**  | Bridge edge in a graph 🌉🕸️🧭       |  | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-c) | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-java) | [Solution](Day%208%20-%20Bridge%20edge%20in%20a%20graph.md#code-python) |
 | **Day 9**  | Articulation Point - II 🕸️⚙️🗺️      |  | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-c) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-java) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-python) |
+| **Day 10**  | Minimum cost to connect all houses in a city 🏘️💰🌆      |  | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-c) | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-java) | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
