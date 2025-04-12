@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 9: Articulation Point - II](09(Apr)%20Articulation%20Point%20-%20II.md)🕸️⚙️🗺️
   - [Day 10: Minimum cost to connect all houses in a city](10(Apr)%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md)🏘️💰🌆
   - [Day 11: Dijkstra Algorithm](11(Apr)%20Dijkstra%20Algorithm.md)🚦📡🗺️
+  - [Day 12: Flood fill Algorithm](12(Apr)%20Flood%20fill%20Algorithm.md)🌊🖌️📸
 
 
 
@@ -46,9 +47,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 11(11 APR) :* Dijkstra Algorithm
 
-<!--*Day 12(12 APR) :* 
+*Day 12(12 APR) :* Flood fill Algorithm
 
-*Day 13(13 APR) :* 
+<!--*Day 13(13 APR) :* 
 
 *Day 14(14 APR) :* 
 
