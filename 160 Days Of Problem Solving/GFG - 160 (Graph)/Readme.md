@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 148/160 Problems 🎉  
-> **In Progress**: 12 Problems ⏳  
+> **Completed**: 149/160 Problems 🎉  
+> **In Progress**: 11 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -52,6 +52,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 9**  | Articulation Point - II 🕸️⚙️🗺️      |  | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-c) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-java) | [Solution](Day%209%20-%20Articulation%20Point%20-%20II.md#code-python) |
 | **Day 10**  | Minimum cost to connect all houses in a city 🏘️💰🌆      |  | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-c) | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-java) | [Solution](Day%2010%20-%20Minimum%20cost%20to%20connect%20all%20houses%20in%20a%20city.md#code-python) |
 | **Day 11**  | Dijkstra Algorithm 🚦📡🗺️     |  | [Solution](Day%2011%20-%20Dijkstra%20Algorithm.md#code-c) | [Solution](Day%2011%20-%20Dijkstra%20Algorithm.md#code-java) | [Solution](Day%2011%20-%20Dijkstra%20Algorithm.md#code-python) |
+| **Day 12**  | Flood fill Algorithm 🌊🖌️📸     |  | [Solution](Day%2012%20-%20Flood%20fill%20Algorithm.md#code-c) | [Solution](Day%2012%20-%20Flood%20fill%20Algorithm.md#code-java) | [Solution](Day%2012%20-%20Flood%20fill%20Algorithm.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
