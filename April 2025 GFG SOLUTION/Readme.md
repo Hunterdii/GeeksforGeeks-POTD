@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: Dijkstra Algorithm](11(Apr)%20Dijkstra%20Algorithm.md)🚦📡🗺️
   - [Day 12: Flood fill Algorithm](12(Apr)%20Flood%20fill%20Algorithm.md)🌊🖌️📸
   - [Day 13: Clone an Undirected Graph](13(Apr)%20Clone%20an%20Undirected%20Graph.md)📈👥🧬
+  - [Day 14: Alien Dictionary](14(Apr)%20Alien%20Dictionary.md)🪐🌐🦾
 
 
 
@@ -52,9 +53,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 13(13 APR) :* Clone an Undirected Graph
 
-<!--*Day 14(14 APR) :* 
+*Day 14(14 APR) :* Alien Dictionary
 
-*Day 15(15 APR) :* 
+<!--*Day 15(15 APR) :* 
 
 *Day 16(16 APR) :* 
 
