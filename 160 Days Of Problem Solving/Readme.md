@@ -505,7 +505,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🌐 **Graph Mastery Zone**  
 **Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
 
-✨ **Days Covered:** **138 to 149**  
+✨ **Days Covered:** **138 to 152**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
@@ -522,6 +522,8 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | Day 148      | Dijkstra Algorithm               | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2011%20-%20Dijkstra%20Algorithm.md) |  
 | Day 149      | Flood fill Algorithm               | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2012%20-%20Flood%20fill%20Algorithm.md) |  
 | Day 150      | Account Merge              | 🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2013%20-%20Account%20Merge.md) |  
+| Day 151      | Clone an Undirected Graph               | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2014%20-%20Clone%20an%20Undirected%20Graph.md) |  
+| Day 152      | Alien Dictionary              | 🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2015%20-%20Alien%20Dictionary.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
