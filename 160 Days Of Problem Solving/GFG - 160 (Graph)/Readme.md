@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 152/160 Problems 🎉  
-> **In Progress**: 08 Problems ⏳  
+> **Completed**: 153/160 Problems 🎉  
+> **In Progress**: 07 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -56,6 +56,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 13**  | Account Merge 👥💼🧾	     |  | [Solution](Day%2013%20-%20Account%20Merge.md#code-c) | [Solution](Day%2013%20-%20Account%20Merge.md#code-java) | [Solution](Day%2013%20-%20Account%20Merge.md#code-python) |
 | **Day 14**  | Clone an Undirected Graph 📈👥🧬		     |  | [Solution](Day%2014%20-%20Clone%20an%20Undirected%20Graph.md#code-c) | [Solution](Day%2014%20-%20Clone%20an%20Undirected%20Graph.md#code-java) | [Solution](Day%2014%20-%20Clone%20an%20Undirected%20Graph.md#code-python) |
 | **Day 15**  | Alien Dictionary 🪐🌐🦾		     |  | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-c) | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-java) | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-python) |
+| **Day 16**  | Bellman-Ford 📉🛣️🚦		     |  | [Solution](Day%2016%20-%20Bellman-Ford.md#code-c) | [Solution](Day%2016%20-%20Bellman-Ford.md#code-java) | [Solution](Day%2016%20-%20Bellman-Ford.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
