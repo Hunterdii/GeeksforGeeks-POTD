@@ -53,6 +53,7 @@
 | 14 Apr    | Alien Dictionary 🪐🌐🦾                   |  | [Solution](/April%202025%20GFG%20SOLUTION/14(Apr)%20Alien%20Dictionary.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/14(Apr)%20Alien%20Dictionary.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/14(Apr)%20Alien%20Dictionary.md#code-python) |
 | 15 Apr    | Bellman-Ford 📉🛣️🚦                   |  | [Solution](/April%202025%20GFG%20SOLUTION/15(Apr)%20Bellman-Ford.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/15(Apr)%20Bellman-Ford.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/15(Apr)%20Bellman-Ford.md#code-python) |
 | 16 Apr    | Floyd Warshall 🌐🔁💥                   |  | [Solution](/April%202025%20GFG%20SOLUTION/16(Apr)%20Floyd%20Warshall.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/16(Apr)%20Floyd%20Warshall.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/16(Apr)%20Floyd%20Warshall.md#code-python) |
+| 17 Apr    | Minimum Weight Cycle 🧮🌐🌀                   |  | [Solution](/April%202025%20GFG%20SOLUTION/17(Apr)%20Minimum%20Weight%20Cycle.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/17(Apr)%20Minimum%20Weight%20Cycle.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/17(Apr)%20Minimum%20Weight%20Cycle.md#code-python) |
 
 
 ## **[🌐 GFG 160 Days of Problem Solving (Graph) 🌐](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph))**  
@@ -76,6 +77,7 @@
 | **Day 15**  | Alien Dictionary 🪐🌐🦾			       |  | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2015%20-%20Alien%20Dictionary.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2015%20-%20Alien%20Dictionary.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2015%20-%20Alien%20Dictionary.md#code-python) |
 | **Day 16**  | Bellman-Ford 📉🛣️🚦			       |  | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2016%20-%20Bellman-Ford.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2016%20-%20Bellman-Ford.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2016%20-%20Bellman-Ford.md#code-python) |
 | **Day 17**  | Floyd Warshall 🌐🔁💥			       |  | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2017%20-%20Floyd%20Warshall.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2017%20-%20Floyd%20Warshall.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2017%20-%20Floyd%20Warshall.md#code-python) |
+| **Day 18**  | Minimum Weight Cycle 🧮🌐🌀		       |  | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-c) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-java) | [Solution](/160%20Days%20Of%20Problem%20Solving/GFG%20-%20160%20(Graph)/Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-python) |
 
 ---
 
