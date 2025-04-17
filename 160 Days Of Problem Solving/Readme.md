@@ -505,7 +505,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🌐 **Graph Mastery Zone**  
 **Unlock the secrets of graph traversal, optimization, and pathfinding!** ⚡🌍  
 
-✨ **Days Covered:** **138 to 153**  
+✨ **Days Covered:** **138 to 154**  
 
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
@@ -526,6 +526,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | Day 151      | Alien Dictionary              | 🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2015%20-%20Alien%20Dictionary.md) |  
 | Day 152      | Bellman-Ford               | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2016%20-%20Bellman-Ford.md) |
 | Day 153      | Floyd Warshall               | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2017%20-%20Floyd%20Warshall.md) |
+| Day 154      | Minimum Weight Cycle              | 🔴 Hard    | [Solved Check It Now!](./GFG%20-%20160%20(Graph)/Day%2018%20-%20Minimum%20Weight%20Cycle.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
