@@ -21,7 +21,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Clone an Undirected Graph](13(Apr)%20Clone%20an%20Undirected%20Graph.md)📈👥🧬
   - [Day 14: Alien Dictionary](14(Apr)%20Alien%20Dictionary.md)🪐🌐🦾
   - [Day 15: Bellman-Ford](15(Apr)%20Bellman-Ford.md)📉🛣️🚦
-  - [Day 16: Floyd Warshall](16(Apr)%20Floyd%20Warshall.md)🌐🔁💥	
+  - [Day 16: Floyd Warshall](16(Apr)%20Floyd%20Warshall.md)🌐🔁💥
+  - [Day 17: Minimum Weight Cycle](17(Apr)%20Minimum%20Weight%20Cycle.md)🧮🌐🌀
 
 
 
@@ -61,9 +62,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 16(16 APR) :* Floyd Warshall
 
-<!--*Day 17(17 APR) :* 
+*Day 17(17 APR) :* Minimum Weight Cycle
 
-*Day 18(18 APR) :* 
+<!--*Day 18(18 APR) :* 
 
 *Day 19(19 APR) :* 
 
