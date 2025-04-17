@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 153/160 Problems 🎉  
-> **In Progress**: 07 Problems ⏳  
+> **Completed**: 154/160 Problems 🎉  
+> **In Progress**: 06 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -58,6 +58,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day 15**  | Alien Dictionary 🪐🌐🦾		     |  | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-c) | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-java) | [Solution](Day%2015%20-%20Alien%20Dictionary.md#code-python) |
 | **Day 16**  | Bellman-Ford 📉🛣️🚦		     |  | [Solution](Day%2016%20-%20Bellman-Ford.md#code-c) | [Solution](Day%2016%20-%20Bellman-Ford.md#code-java) | [Solution](Day%2016%20-%20Bellman-Ford.md#code-python) |
 | **Day 17**  | Floyd Warshall 🌐🔁💥			     |  | [Solution](Day%2017%20-%20Floyd%20Warshall.md#code-c) | [Solution](Day%2017%20-%20Floyd%20Warshall.md#code-java) | [Solution](Day%2017%20-%20Floyd%20Warshall.md#code-python) |
+| **Day 17**  | Minimum Weight Cycle 🧮🌐🌀			     |  | [Solution](Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-c) | [Solution](Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-java) | [Solution](Day%2018%20-%20Minimum%20Weight%20Cycle.md#code-python) |
 
 ## **🤝 Contributing**
 Want to contribute? 🌟 Here's how:
