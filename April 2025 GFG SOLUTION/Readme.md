@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Bellman-Ford](15(Apr)%20Bellman-Ford.md)📉🛣️🚦
   - [Day 16: Floyd Warshall](16(Apr)%20Floyd%20Warshall.md)🌐🔁💥
   - [Day 17: Minimum Weight Cycle](17(Apr)%20Minimum%20Weight%20Cycle.md)🧮🌐🌀
+  - [Day 18: Implement Trie](18(Apr)%20Implement%20Trie.md)🔠📝🚀	
 
 
 
@@ -64,9 +65,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 17(17 APR) :* Minimum Weight Cycle
 
-<!--*Day 18(18 APR) :* 
+*Day 18(18 APR) :* Implement Trie
 
-*Day 19(19 APR) :* 
+<!--*Day 19(19 APR) :* 
 
 *Day 20(20 APR) :* 
 
