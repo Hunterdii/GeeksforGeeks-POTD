@@ -536,6 +536,24 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | **Find the number of islands** <br/> **OR** <br/> **Snake and Ladder Problem** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1) / [Solve Now](https://www.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1) |  
 | **Word Ladder I**  <br/> **OR** <br/> **Assignment Problem** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/word-ladder/1) / [Solve Now](https://www.geeksforgeeks.org/problems/assignment-problem3016/1) |  
 
+
+# 🏁 **Trie Mastery Zone**  
+**Power up your prefix operations and fast string lookups!** 🔠📝  
+
+| 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|-------------------------------------|----------------|-----------------|  
+| Day 155      | Implement Trie              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tries)/Day%201%20-%20Implement%20Trie.md) |  
+
+### 📌 **Additional Challenges (From my side):**  
+
+| 🧩 **Problem** | 🚀 **Level** | 🔗 **Problem Link** |  
+|----------------|--------------|---------------------|  
+| **Unique rows in boolean matrix** | 🟢 Easy | [Solve Now](https://www.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1) |  
+| **Open the gates** <br/> **OR** <br/> **Most frequent word in an array of strings** | 🟡 Medium | [Solve Now](https://www.geeksforgeeks.org/problems/word-boggle-ii--141631/1) / [Solve Now](https://www.geeksforgeeks.org/problems/most-frequent-word-in-an-array-of-strings3528/1) |  
+| **Word Break (Trie)** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/word-break-trie--141631/1) |  
+
+
+
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
 |:--:|
