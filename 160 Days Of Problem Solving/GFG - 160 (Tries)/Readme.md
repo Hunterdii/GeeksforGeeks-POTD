@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 155/160 Problems 🎉  
-> **In Progress**: 05 Problems ⏳  
+> **Completed**: 156/160 Problems 🎉  
+> **In Progress**: 04 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -42,6 +42,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Implement Trie 🔠📝🚀        |  | [Solution](Day%201%20-%20Implement%20Trie.md#code-c) | [Solution](Day%201%20-%20Implement%20Trie.md#code-java) | [Solution](Day%201%20-%20Implement%20Trie.md#code-python) |
+| **Day 2**  | Maximum XOR of two numbers in an array ➕➖❌        |  | [Solution](Day%202%20-%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md#code-c) | [Solution](Day%202%20-%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md#code-java) | [Solution](Day%202%20-%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md#code-python) |
 
 
 ## **🤝 Contributing**
