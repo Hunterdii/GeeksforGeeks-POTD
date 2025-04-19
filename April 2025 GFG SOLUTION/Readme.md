@@ -23,7 +23,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Bellman-Ford](15(Apr)%20Bellman-Ford.md)📉🛣️🚦
   - [Day 16: Floyd Warshall](16(Apr)%20Floyd%20Warshall.md)🌐🔁💥
   - [Day 17: Minimum Weight Cycle](17(Apr)%20Minimum%20Weight%20Cycle.md)🧮🌐🌀
-  - [Day 18: Implement Trie](18(Apr)%20Implement%20Trie.md)🔠📝🚀	
+  - [Day 18: Implement Trie](18(Apr)%20Implement%20Trie.md)🔠📝🚀
+  - [Day 19: Maximum XOR of two numbers in an array](19(Apr)%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md)➕➖❌
 
 
 
@@ -67,9 +68,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 APR) :* Implement Trie
 
-<!--*Day 19(19 APR) :* 
+*Day 19(19 APR) :* Maximum XOR of two numbers in an array
 
-*Day 20(20 APR) :* 
+<!--*Day 20(20 APR) :* 
 
 *Day 21(21 APR) :* 
 
