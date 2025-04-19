@@ -540,9 +540,12 @@ Master the art of **locally optimal choices leading to globally optimal solution
 # 🏁 **Trie Mastery Zone**  
 **Power up your prefix operations and fast string lookups!** 🔠📝  
 
+✨ **Days Covered:** **155 to 156**  
+
 | 🗓️ **Day** | 🔗 **Problem**                          | 🌟 **Level**   | 📂 **Solution**  |  
 |------------|-------------------------------------|----------------|-----------------|  
 | Day 155      | Implement Trie              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tries)/Day%201%20-%20Implement%20Trie.md) |  
+| Day 156      | Maximum XOR of two numbers in an array              | 🟡 Medium    | [Solved Check It Now!](./GFG%20-%20160%20(Tries)/Day%202%20-%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md) |  
 
 ### 📌 **Additional Challenges (From my side):**  
 
