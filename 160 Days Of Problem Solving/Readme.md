@@ -556,6 +556,16 @@ Master the art of **locally optimal choices leading to globally optimal solution
 | **Word Break (Trie)** | 🔴 Hard | [Solve Now](https://www.geeksforgeeks.org/problems/word-break-trie--141631/1) |  
 
 
+# 🪢 **Bit Manipulation Mastery Zone**  
+**Master the art of bits — from tricks to optimization, and efficient number operations!** 💡🧠  
+
+✨ **Days Covered:** **157 to 160**  
+
+| 🗓️ **Day** | 🔗 **Problem**                              | 🌟 **Level**   | 📂 **Solution**  |  
+|------------|-----------------------------------------|----------------|------------------|  
+| Day 157      | Find Only Repetitive Element from 1 to n-1              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Bit%20Manipulation)/Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md) |  
+
+
 
 ## 👤 Creator
 | ![Het Patel](https://avatars.githubusercontent.com/u/124852522?v=4&s=80) |
