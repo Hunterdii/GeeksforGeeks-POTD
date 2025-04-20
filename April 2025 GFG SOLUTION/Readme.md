@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 17: Minimum Weight Cycle](17(Apr)%20Minimum%20Weight%20Cycle.md)🧮🌐🌀
   - [Day 18: Implement Trie](18(Apr)%20Implement%20Trie.md)🔠📝🚀
   - [Day 19: Maximum XOR of two numbers in an array](19(Apr)%20Maximum%20XOR%20of%20two%20numbers%20in%20an%20array.md)➕➖❌
+  - [Day 20: Find Only Repetitive Element from 1 to n-1](20(Apr)%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md)➿🔢🧷	
 
 
 
@@ -70,9 +71,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 19(19 APR) :* Maximum XOR of two numbers in an array
 
-<!--*Day 20(20 APR) :* 
+*Day 20(20 APR) :* Find Only Repetitive Element from 1 to n-1
 
-*Day 21(21 APR) :* 
+<!--*Day 21(21 APR) :* 
 
 *Day 22(22 APR) :* 
 
