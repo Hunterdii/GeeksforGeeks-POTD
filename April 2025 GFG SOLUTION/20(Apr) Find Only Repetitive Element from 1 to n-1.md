@@ -1,4 +1,4 @@
-# *20. Find Repetitive Element from 1 to n-1*
+# *20. Find Only Repetitive Element from 1 to n-1*
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/find-repetitive-element-from-1-to-n-1/1)
 
