@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 156/160 Problems 🎉  
-> **In Progress**: 04 Problems ⏳  
+> **Completed**: 157/160 Problems 🎉  
+> **In Progress**: 03 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -41,7 +41,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 | **Day**  | **Problem Name**                                | **C**                                                                                                                              | **C++**                                                                                                                            | **Java**                                                                                                                           | **Python**                                                                                                                         |
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
-| **Day 1**  | Find Only Repetitive Element from 1 to n-1 ➿🔢🧷        |  | [Solution](#code-c) | [Solution](#code-java) | [Solution](#code-python) |
+| **Day 1**  | Find Only Repetitive Element from 1 to n-1 ➿🔢🧷        |  | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-c) | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-java) | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-python) |
 
 
 ## **🤝 Contributing**
