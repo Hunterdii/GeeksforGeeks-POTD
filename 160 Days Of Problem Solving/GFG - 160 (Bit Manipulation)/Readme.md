@@ -30,8 +30,8 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 
 ## **📊 Progress Overview**
 
-> **Completed**: 158/160 Problems 🎉  
-> **In Progress**: 02 Problems ⏳  
+> **Completed**: 159/160 Problems 🎉  
+> **In Progress**: 01 Problems ⏳  
 > **Target**: Solve all 160 problems! 🏆
 
 
@@ -43,6 +43,7 @@ Whether you're a beginner or looking to sharpen your skills, these solutions wil
 |:--------:|:-----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
 | **Day 1**  | Find Only Repetitive Element from 1 to n-1 ➿🔢🧷        |  | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-c) | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-java) | [Solution](Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md#code-python) |
 | **Day 2**  | Missing in Array 🔢🧩🕵️‍♂️        | [Solution](Day%202%20-%20Missing%20in%20Array.md#code-c) | [Solution](Day%202%20-%20Missing%20in%20Array.md#code-c-1) | [Solution](Day%202%20-%20Missing%20in%20Array.md#code-java) | [Solution](Day%202%20-%20Missing%20in%20Array.md#code-python) |
+| **Day 3**  | Unique Number I 🔢🧠🕵️‍♂️        |  | [Solution](Day%203%20-%20Unique%20Number%20I.md#code-c) | [Solution](Day%203%20-%20Unique%20Number%20I.md#code-java) | [Solution](Day%203%20-%20Unique%20Number%20I.md#code-python) |
 
 
 ## **🤝 Contributing**
