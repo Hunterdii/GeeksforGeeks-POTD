@@ -565,6 +565,7 @@ Master the art of **locally optimal choices leading to globally optimal solution
 |------------|-----------------------------------------|----------------|------------------|  
 | Day 157      | Find Only Repetitive Element from 1 to n-1              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Bit%20Manipulation)/Day%201%20-%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md) |  
 | Day 158      | Missing in Array              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Bit%20Manipulation)/Day%202%20-%20Missing%20in%20Array.md) |  
+| Day 159      | Unique Number I              | 🟢 Easy    | [Solved Check It Now!](./GFG%20-%20160%20(Bit%20Manipulation)/Day%203%20-%20Unique%20Number%20I.md) |  
 
 
 
