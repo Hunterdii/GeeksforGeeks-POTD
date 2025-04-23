@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Find Only Repetitive Element from 1 to n-1](20(Apr)%20Find%20Only%20Repetitive%20Element%20from%201%20to%20n-1.md)➿🔢🧷
   - [Day 21: Missing in Array](21(Apr)%20Missing%20in%20Array.md)🔢🧩🕵️‍♂️
   - [Day 22: Unique Number I](22(Apr)%20Unique%20Number%20I.md)🔢🧠🕵️‍♂
+  - [Day 23: Unique Number II](23(Apr)%20Unique%20Number%20II.md)🔢🕵️‍♂️🧾
 
 
 
@@ -79,9 +80,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 22(22 APR) :* Unique Number I
 
-<!--*Day 23(23 APR) :* 
+*Day 23(23 APR) :* Unique Number II
 
-*Day 24(24 APR) :* 
+<!--*Day 24(24 APR) :* 
 
 *Day 25(25 APR) :* 
 
