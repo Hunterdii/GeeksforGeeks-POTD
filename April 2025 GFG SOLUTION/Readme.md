@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 21: Missing in Array](21(Apr)%20Missing%20in%20Array.md)🔢🧩🕵️‍♂️
   - [Day 22: Unique Number I](22(Apr)%20Unique%20Number%20I.md)🔢🧠🕵️‍♂
   - [Day 23: Unique Number II](23(Apr)%20Unique%20Number%20II.md)🔢🕵️‍♂️🧾
+  - [Day 24: Unique Number III](24(Apr)%20Unique%20Number%20III.md)🔢🤯💥
 
 
 
@@ -82,9 +83,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 23(23 APR) :* Unique Number II
 
-<!--*Day 24(24 APR) :* 
+*Day 24(24 APR) :* Unique Number III
 
-*Day 25(25 APR) :* 
+<!--*Day 25(25 APR) :* 
 
 *Day 26(26 APR) :* 
 
