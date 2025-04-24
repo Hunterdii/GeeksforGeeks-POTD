@@ -1,5 +1,5 @@
 
-# *23. Unique Number III*
+# *24. Unique Number III*
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/find-element-occuring-once-when-all-other-are-present-thrice/1)
 
