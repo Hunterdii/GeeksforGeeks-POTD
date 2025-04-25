@@ -61,6 +61,7 @@
 | 22 Apr    | Unique Number I 🔢🧠🕵️‍♂️	                   |  | [Solution](/April%202025%20GFG%20SOLUTION/22(Apr)%20Unique%20Number%20I.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/22(Apr)%20Unique%20Number%20I.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/22(Apr)%20Unique%20Number%20I.md#code-python) |
 | 23 Apr    | Unique Number II 🔢🕵️‍♂️🧾	                   |  | [Solution](/April%202025%20GFG%20SOLUTION/23(Apr)%20Unique%20Number%20II.md#code-c) | [Solution](/April%202025%20GFG%20SOLUTION/23(Apr)%20Unique%20Number%20II.md#code-java) | [Solution](/April%202025%20GFG%20SOLUTION/23(Apr)%20Unique%20Number%20II.md#code-python) |
 | 24 Apr    | Unique Number III 🔢🤯💥	                   |  | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-python) |
+| 25 Apr    | Majority Element 🔢👑🗳️	                   | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-c-1) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-python) |
 
 
 
