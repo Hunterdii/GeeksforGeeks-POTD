@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 23: Unique Number II](23(Apr)%20Unique%20Number%20II.md)🔢🕵️‍♂️🧾
   - [Day 24: Unique Number III](24(Apr)%20Unique%20Number%20III.md)🔢🤯💥
   - [Day 25: Majority Element](25(Apr)%20Majority%20Element.md)🔢👑🗳️
+  - [Day 26: Is Binary Tree Heap](26(Apr)%20Is%20Binary%20Tree%20Heap.md)🌳❌🛠️	
 
 
 
@@ -88,9 +89,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 APR) :* Majority Element
 
-<!--*Day 26(26 APR) :* 
+*Day 26(26 APR) :* Is Binary Tree Heap
 
-*Day 27(27 APR) :* 
+<!--*Day 27(27 APR) :* 
 
 *Day 28(28 APR) :* 
 
