@@ -63,6 +63,7 @@
 | 24 Apr    | Unique Number III 🔢🤯💥	                   |  | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/24(Apr)%20Unique%20Number%20III.md#-code-python) |
 | 25 Apr    | Majority Element 🔢👑🗳️	                   | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-c-1) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/25(Apr)%20Majority%20Element.md#-code-python) |
 | 26 Apr    | Is Binary Tree Heap 🌳❌🛠️	                   | [Solution](/April%202025%20GFG%20SOLUTION/26(Apr)%20Is%20Binary%20Tree%20Heap.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/26(Apr)%20Is%20Binary%20Tree%20Heap.md#-code-c-1) | [Solution](/April%202025%20GFG%20SOLUTION/26(Apr)%20Is%20Binary%20Tree%20Heap.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/26(Apr)%20Is%20Binary%20Tree%20Heap.md#-code-python) |
+| 27 Apr    | Multiply two strings ✖️🔢🖋️                   |  | [Solution](/April%202025%20GFG%20SOLUTION/27(Apr)%20Multiply%20two%20strings.md#-code-c) | [Solution](/April%202025%20GFG%20SOLUTION/27(Apr)%20Multiply%20two%20strings.md#-code-java) | [Solution](/April%202025%20GFG%20SOLUTION/27(Apr)%20Multiply%20two%20strings.md#-code-python) |
 
 
 
