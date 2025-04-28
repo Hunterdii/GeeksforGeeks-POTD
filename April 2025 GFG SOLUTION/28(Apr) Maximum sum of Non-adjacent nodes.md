@@ -137,7 +137,7 @@ class Solution {
 </details>
 
 
-# 🧑‍💻 **Code (Java)**
+## 🧑‍💻 **Code (Java)**
 
 ```java
 class Solution {
@@ -154,7 +154,7 @@ class Solution {
 ```
 
 
-# 🐍 **Code (Python)**
+## 🐍 **Code (Python)**
 
 ```python
 class Solution:
