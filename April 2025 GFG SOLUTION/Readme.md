@@ -32,7 +32,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 24: Unique Number III](24(Apr)%20Unique%20Number%20III.md)🔢🤯💥
   - [Day 25: Majority Element](25(Apr)%20Majority%20Element.md)🔢👑🗳️
   - [Day 26: Is Binary Tree Heap](26(Apr)%20Is%20Binary%20Tree%20Heap.md)🌳❌🛠️
-  - [Day 27: Multiply two strings](27(Apr)%20Multiply%20two%20strings.md)✖️🔢🖋️	
+  - [Day 27: Multiply two strings](27(Apr)%20Multiply%20two%20strings.md)✖️🔢🖋️
+  - [Day 28: Maximum sum of Non-adjacent nodes](28(Apr)%20Maximum%20sum%20of%20Non-adjacent%20nodes.md)🌳🚫👨‍👧‍👦	
 
 
 
@@ -94,8 +95,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 27(27 APR) :* Multiply two strings	
 
-<!--*Day 28(28 APR) :* 
+*Day 28(28 APR) :* Maximum sum of Non-adjacent nodes
 
-*Day 29(29 APR) :* 
+<!--*Day 29(29 APR) :* 
 
 *Day 30(30 APR) :*--> 
