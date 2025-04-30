@@ -34,7 +34,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 26: Is Binary Tree Heap](26(Apr)%20Is%20Binary%20Tree%20Heap.md)🌳❌🛠️
   - [Day 27: Multiply two strings](27(Apr)%20Multiply%20two%20strings.md)✖️🔢🖋️
   - [Day 28: Maximum sum of Non-adjacent nodes](28(Apr)%20Maximum%20sum%20of%20Non-adjacent%20nodes.md)🌳🚫👨‍👧‍👦
-  - [Day 29: Sort a linked list of 0s, 1s and 2s](29(Apr)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md)0️⃣1️⃣2️⃣	
+  - [Day 29: Sort a linked list of 0s, 1s and 2s](29(Apr)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md)0️⃣1️⃣2️⃣
+  - [Day 30: Find length of Loop](30(Apr)%20Find%20length%20of%20Loop.md)🔗📏🧩	
 
 
 
@@ -100,4 +101,4 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 29(29 APR) :* Sort a linked list of 0s, 1s and 2s
 
-<!--*Day 30(30 APR) :*--> 
+*Day 30(30 APR) :* Find length of Loop
