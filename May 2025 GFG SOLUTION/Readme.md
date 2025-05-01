@@ -6,14 +6,14 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-  - [Day 1: Pascal Triangle]()📐➗🧠
+  - [Day 1: Pascal Triangle](01(May)%20Pascal%20Triangle.md)📐➗🧠
 
 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-*Day 1(01 MAY) :* DFS of Graph
+*Day 1(01 MAY) :* Pascal Triangle
 
 <!--*Day 2(02 MAY) :* BFS of graph
 
