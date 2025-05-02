@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
   - [Day 1: Pascal Triangle](01(May)%20Pascal%20Triangle.md)📐➗🧠
+  - [Day 2: Bitonic Point](02(May)%20Bitonic%20Point.md)⛰️🧭📍
 
 
 ## Introduction
@@ -15,9 +16,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 1(01 MAY) :* Pascal Triangle
 
-<!--*Day 2(02 MAY) :* BFS of graph
+*Day 2(02 MAY) :* Bitonic Point
 
-*Day 3(03 MAY) :* Rotten Oranges
+<!--*Day 3(03 MAY) :* Rotten Oranges
 
 *Day 4(04 MAY) :* Undirected Graph Cycle
 
