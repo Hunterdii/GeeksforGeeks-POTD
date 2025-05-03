@@ -80,3 +80,39 @@ class Solution {
         return h;
     }
 }
+
+
+// 2) Solution @itsjomon
+
+class Solution {
+    Node primeList(Node head) {
+        int max = 0;
+        for (Node cur = head; cur != null; cur = cur.next)
+            max = Math.max(max, cur.val);
+        boolean[] p = new boolean[max + 100];
+        Arrays.fill(p, true);
+        p[0] = p[1] = false;
+        for (int i = 2; i * i < p.length; i++)
+            if (p[i])
+                for (int j = i * i; j < p.length; j += i)
+                    p[j] = false;
+        for (Node cur = head; cur != null; cur = cur.next) {
+            if (!p[cur.val]) {
+                int l = cur.val - 1, r = cur.val + 1;
+                while (true) {
+                    if (l >= 2 && p[l]) {
+                        cur.val = l;
+                        break;
+                    }
+                    if (r < p.length && p[r]) {
+                        cur.val = r;
+                        break;
+                    }
+                    l--; r++;
+                }
+            }
+        }
+        return head;
+    }
+}
+
