@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
   - [Day 1: Pascal Triangle](01(May)%20Pascal%20Triangle.md)📐➗🧠
   - [Day 2: Bitonic Point](02(May)%20Bitonic%20Point.md)⛰️🧭📍
+  - [Day 3: Prime List](03(May)%20Prime%20List.md)🔢📋🔮
 
 
 ## Introduction
@@ -18,9 +19,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 2(02 MAY) :* Bitonic Point
 
-<!--*Day 3(03 MAY) :* Rotten Oranges
+*Day 3(03 MAY) :* Prime List
 
-*Day 4(04 MAY) :* Undirected Graph Cycle
+<!--*Day 4(04 MAY) :* Undirected Graph Cycle
 
 *Day 5(05 MAY) :* Find the number of islands
 
