@@ -40,6 +40,7 @@
 | 01 May    | Pascal Triangle 📐➗🧠                        |  | [Solution](/May%202025%20GFG%20SOLUTION/01(May)%20Pascal%20Triangle.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/01(May)%20Pascal%20Triangle.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/01(May)%20Pascal%20Triangle.md#-code-python) |
 | 02 May    | Bitonic Point ⛰️🧭📍                        |  | [Solution](/May%202025%20GFG%20SOLUTION/02(May)%20Bitonic%20Point.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/02(May)%20Bitonic%20Point.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/02(May)%20Bitonic%20Point.md#-code-python) |
 | 03 May    | Prime List 🔢📋🔮                        |  | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-python) |
+| 04 May    | Smallest distinct window 🔠🪟🔍                        |  | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-python) |
 
 ---
 
