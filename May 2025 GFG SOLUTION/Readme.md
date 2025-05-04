@@ -9,6 +9,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 1: Pascal Triangle](01(May)%20Pascal%20Triangle.md)📐➗🧠
   - [Day 2: Bitonic Point](02(May)%20Bitonic%20Point.md)⛰️🧭📍
   - [Day 3: Prime List](03(May)%20Prime%20List.md)🔢📋🔮
+  - [Day 4: Smallest distinct window](04(May)%20Smallest%20distinct%20window.md)🔠🪟🔍
 
 
 ## Introduction
@@ -21,9 +22,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 3(03 MAY) :* Prime List
 
-<!--*Day 4(04 MAY) :* Undirected Graph Cycle
+*Day 4(04 MAY) :* Smallest distinct window
 
-*Day 5(05 MAY) :* Find the number of islands
+<!--*Day 5(05 MAY) :* Find the number of islands
 
 *Day 6(06 MAY) :* Topological sort
 
