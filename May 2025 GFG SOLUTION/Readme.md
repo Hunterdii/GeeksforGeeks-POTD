@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 2: Bitonic Point](02(May)%20Bitonic%20Point.md)⛰️🧭📍
   - [Day 3: Prime List](03(May)%20Prime%20List.md)🔢📋🔮
   - [Day 4: Smallest distinct window](04(May)%20Smallest%20distinct%20window.md)🔠🪟🔍
+  - [Day 5: Search in an almost Sorted Array](05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md)🔍〰️📜 
 
 
 ## Introduction
@@ -24,9 +25,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 MAY) :* Smallest distinct window
 
-<!--*Day 5(05 MAY) :* Find the number of islands
+*Day 5(05 MAY) :* Search in an almost Sorted Array
 
-*Day 6(06 MAY) :* Topological sort
+<!--*Day 6(06 MAY) :* Topological sort
 
 *Day 7(07 MAY) :* Directed Graph Cycle
 
