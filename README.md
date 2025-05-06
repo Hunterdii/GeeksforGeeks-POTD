@@ -42,6 +42,7 @@
 | 03 May    | Prime List 🔢📋🔮                        |  | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/03(May)%20Prime%20List.md#-code-python) |
 | 04 May    | Smallest distinct window 🔠🪟🔍                        |  | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-python) |
 | 05 May    | Search in an almost Sorted Array 🔍〰️📜                        |  | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-python) |
+| 06 May    | Left View of Binary Tree 🌳👀🧭                        |  | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-python) |
 
 ---
 
