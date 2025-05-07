@@ -43,6 +43,7 @@
 | 04 May    | Smallest distinct window 🔠🪟🔍                        |  | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/04(May)%20Smallest%20distinct%20window.md#-code-python) |
 | 05 May    | Search in an almost Sorted Array 🔍〰️📜                        |  | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md#-code-python) |
 | 06 May    | Left View of Binary Tree 🌳👀🧭                        |  | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/06(May)%20Left%20View%20of%20Binary%20Tree.md#-code-python) |
+| 07 May    | Root to Leaf Paths 📍🍃🛤️                         |  | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-python) |
 
 ---
 
