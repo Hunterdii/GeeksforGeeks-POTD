@@ -12,7 +12,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 4: Smallest distinct window](04(May)%20Smallest%20distinct%20window.md)🔠🪟🔍
   - [Day 5: Search in an almost Sorted Array](05(May)%20Search%20in%20an%20almost%20Sorted%20Array.md)🔍〰️📜
   - [Day 6: Left View of Binary Tree](06(May)%20Left%20View%20of%20Binary%20Tree.md)🌳👀🧭
-  - [Day 7: Root to Leaf Paths](07(May)%20Root%20to%20Leaf%20Paths.md)📍🍃🛤️	
+  - [Day 7: Root to Leaf Paths](07(May)%20Root%20to%20Leaf%20Paths.md)📍🍃🛤️
+  - [Day 8: Missing element of AP](08(May)%20Missing%20element%20of%20AP.md)🔢➖❓
 
 
 ## Introduction
@@ -33,9 +34,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 7(07 MAY) :* Root to Leaf Paths
 
-<!--*Day 8(08 MAY) :* Bridge edge in a graph
+*Day 8(08 MAY) :* Missing element of AP
 
-*Day 9(09 MAY) :* Articulation Point - II
+<!--*Day 9(09 MAY) :* Articulation Point - II
 
 *Day 10(10 MAY) :* Minimum cost to connect all houses in a city
 
