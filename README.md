@@ -46,6 +46,7 @@
 | 07 May    | Root to Leaf Paths 📍🍃🛤️                         |  | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/07(May)%20Root%20to%20Leaf%20Paths.md#-code-python) |
 | 08 May    | Missing element of AP 🔢➖❓                         |  | [Solution](/May%202025%20GFG%20SOLUTION/08(May)%20Missing%20element%20of%20AP.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/08(May)%20Missing%20element%20of%20AP.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/08(May)%20Missing%20element%20of%20AP.md#-code-python) |
 | 09 May    | Largest number in K swaps 💰📲📈                         |  | [Solution](/May%202025%20GFG%20SOLUTION/09(May)%20Largest%20number%20in%20K%20swaps.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/09(May)%20Largest%20number%20in%20K%20swaps.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/09(May)%20Largest%20number%20in%20K%20swaps.md#-code-python) |
+| 10 May    | Longest Subarray with Majority Greater than K 📈🔢🚀                      |  | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-python) |
 
 ---
 
