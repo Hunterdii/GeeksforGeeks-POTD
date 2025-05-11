@@ -68,6 +68,8 @@ All sums are `[13, 12, 11, 10, 8, 6, 5, 4, 2, 1]`. The 3rd largest is `11`.
 * **Expected Time Complexity:** \$O(n^2 \log k)\$, due to the double loop over subarrays (\$O(n^2)\$) and heap operations (\$O(\log k)\$).
 * **Expected Auxiliary Space Complexity:** \$O(k)\$, for storing at most k sums in the heap.
 
+## **🧠 Code (C++)**
+
 ```cpp
 
 class Solution {
