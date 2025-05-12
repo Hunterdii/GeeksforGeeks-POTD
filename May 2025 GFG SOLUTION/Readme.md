@@ -15,7 +15,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 7: Root to Leaf Paths](07(May)%20Root%20to%20Leaf%20Paths.md)📍🍃🛤️
   - [Day 8: Missing element of AP](08(May)%20Missing%20element%20of%20AP.md)🔢➖❓
   - [Day 9: Largest number in K swaps](09(May)%20Largest%20number%20in%20K%20swaps.md)💰📲📈
-  - [Day 10: Longest Subarray with Majority Greater than K](10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md)📈🔢🚀	
+  - [Day 10: Longest Subarray with Majority Greater than K](10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md)📈🔢🚀
+  - [Day 11: K-th Largest Sum Contiguous Subarray](11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md)📊📉🧮		
 
 
 ## Introduction
@@ -42,9 +43,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 10(10 MAY) :* Longest Subarray with Majority Greater than K
 
-<!--*Day 11(11 MAY) :* Dijkstra Algorithm
+*Day 11(11 MAY) : K-th Largest Sum Contiguous Subarray
 
-*Day 12(12 MAY) :* Flood fill Algorithm
+<!--*Day 12(12 MAY) :* Flood fill Algorithm
 
 *Day 13(13 MAY) :* Clone an Undirected Graph
 
