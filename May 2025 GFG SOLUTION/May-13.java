@@ -45,3 +45,19 @@ class Solution {
         return (int)(fact[n] * inv[r] % MOD * inv[n-r] % MOD);
     }
 }
+
+
+// 2) Solution @itsjomon
+
+class Solution {
+    public int nCr(int n, int r) {
+        if (r > n) { // valid for n ≤ 100 as per problem constraints
+            return 0;
+        }
+        long sum = 1;
+        for (int i = 1; i <= r; i++) {
+            sum = sum * (n - r + i) / i;
+        }
+        return (int)sum;
+    }
+}
