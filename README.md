@@ -49,6 +49,7 @@
 | 10 May    | Longest Subarray with Majority Greater than K 📈🔢🚀                      |  | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-python) |
 | 11 May    | K-th Largest Sum Contiguous Subarray 📊📉🧮                     |  | [Solution](/May%202025%20GFG%20SOLUTION/11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md#-code-python) |
 | 12 May    | Meeting Rooms III 🏢📅💼                    |  | [Solution](/May%202025%20GFG%20SOLUTION/12(May)%20Meeting%20Rooms%20III.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/12(May)%20Meeting%20Rooms%20III.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/12(May)%20Meeting%20Rooms%20III.md#-code-python) |
+| 13 May    | nCr 🔢🧮🧩                    |  | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-python) |
 
 ---
 
