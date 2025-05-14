@@ -18,7 +18,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 10: Longest Subarray with Majority Greater than K](10(May)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md)📈🔢🚀
   - [Day 11: K-th Largest Sum Contiguous Subarray](11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md)📊📉🧮
   - [Day 12: Meeting Rooms III](12(May)%20Meeting%20Rooms%20III.md)🏢📅💼
-  - [Day 13: nCr](13(May)%20nCr.md)🔢🧮🧩		
+  - [Day 13: nCr](13(May)%20nCr.md)🔢🧮🧩
+  - [Day 14: Look and Say Pattern](14(May)%20Look%20and%20Say%20Pattern.md)🗣️🧠🔄		
 
 
 ## Introduction
@@ -45,15 +46,15 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 10(10 MAY) :* Longest Subarray with Majority Greater than K
 
-*Day 11(11 MAY) : K-th Largest Sum Contiguous Subarray
+*Day 11(11 MAY) :* K-th Largest Sum Contiguous Subarray
 
 *Day 12(12 MAY) :* Meeting Rooms III
 
 *Day 13(13 MAY) :* nCr
 
-<!--*Day 14(14 MAY) :* Alien Dictionary
+*Day 14(14 MAY) :* Look and Say Pattern
 
-*Day 15(15 MAY) :* Bellman-Ford
+<!--*Day 15(15 MAY) :* Bellman-Ford
 
 *Day 16(16 MAY) :* Floyd Warshall
 
