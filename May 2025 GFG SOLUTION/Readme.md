@@ -19,7 +19,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: K-th Largest Sum Contiguous Subarray](11(May)%20K-th%20Largest%20Sum%20Contiguous%20Subarray.md)📊📉🧮
   - [Day 12: Meeting Rooms III](12(May)%20Meeting%20Rooms%20III.md)🏢📅💼
   - [Day 13: nCr](13(May)%20nCr.md)🔢🧮🧩
-  - [Day 14: Look and Say Pattern](14(May)%20Look%20and%20Say%20Pattern.md)🗣️🧠🔄		
+  - [Day 14: Look and Say Pattern](14(May)%20Look%20and%20Say%20Pattern.md)🗣️🧠🔄
+  - [Day 15: Substrings with same first and last characters](15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md)🔠➡️🅰️		
 
 
 ## Introduction
@@ -54,9 +55,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 14(14 MAY) :* Look and Say Pattern
 
-<!--*Day 15(15 MAY) :* Bellman-Ford
+*Day 15(15 MAY) :* Substrings with same first and last characters
 
-*Day 16(16 MAY) :* Floyd Warshall
+<!--*Day 16(16 MAY) :* Floyd Warshall
 
 *Day 17(17 MAY) :* Minimum Weight Cycle
 
