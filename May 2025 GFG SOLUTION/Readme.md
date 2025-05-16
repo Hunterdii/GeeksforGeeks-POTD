@@ -20,7 +20,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 12: Meeting Rooms III](12(May)%20Meeting%20Rooms%20III.md)🏢📅💼
   - [Day 13: nCr](13(May)%20nCr.md)🔢🧮🧩
   - [Day 14: Look and Say Pattern](14(May)%20Look%20and%20Say%20Pattern.md)🗣️🧠🔄
-  - [Day 15: Substrings with same first and last characters](15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md)🔠➡️🅰️		
+  - [Day 15: Substrings with same first and last characters](15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md)🔠➡️🅰️
+  - [Day 16: Smallest range in K lists](16(May)%20Smallest%20range%20in%20K%20lists.md)🔍📦🗂️	
 
 
 ## Introduction
@@ -57,9 +58,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 15(15 MAY) :* Substrings with same first and last characters
 
-<!--*Day 16(16 MAY) :* Floyd Warshall
+*Day 16(16 MAY) :* Smallest range in K lists
 
-*Day 17(17 MAY) :* Minimum Weight Cycle
+<!--*Day 17(17 MAY) :* Minimum Weight Cycle
 
 *Day 18(18 MAY) :* Implement Trie
 
