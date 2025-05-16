@@ -52,6 +52,7 @@
 | 13 May    | nCr 🔢🧮🧩                    |  | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/13(May)%20nCr.md#-code-python) |
 | 14 May    | Look and Say Pattern 🗣️🧠🔄                    |  | [Solution](/May%202025%20GFG%20SOLUTION/14(May)%20Look%20and%20Say%20Pattern.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/14(May)%20Look%20and%20Say%20Pattern.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/14(May)%20Look%20and%20Say%20Pattern.md#-code-python) |
 | 15 May    | Substrings with same first and last characters 🔠➡️🅰️                    |  | [Solution](/May%202025%20GFG%20SOLUTION/15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/15(May)%20Substrings%20with%20same%20first%20and%20last%20characters.md#-code-python) |
+| 16 May    | Smallest range in K lists 🔍📦🗂️                   |  | [Solution](/May%202025%20GFG%20SOLUTION/16(May)%20Smallest%20range%20in%20K%20lists.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/16(May)%20Smallest%20range%20in%20K%20lists.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/16(May)%20Smallest%20range%20in%20K%20lists.md#-code-python) |
 
 ---
 
