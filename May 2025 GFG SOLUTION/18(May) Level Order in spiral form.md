@@ -129,45 +129,118 @@ class Solution {
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
+  
+## 📊 **2️⃣ Two-Stacks Method**
 
-## 📊 **2️⃣ Using Two Stacks**
+### **Algorithm Steps:**
 
-Use two stacks `s1` and `s2` to alternate directions per level:
+1. If `root` is null, return `{}`.
+2. Initialize two stacks: `s1` (for current level), `s2` (for next level).
+3. Push `root` to `s1`.
+4. While either `s1` or `s2` is non-empty:
 
-* Push nodes of one level to `s1`, children to `s2` in appropriate order, and swap.
+   * **Process `s1`** (right→left):
+
+     1. While `s1` isn’t empty:
+
+        * Pop `u` from `s1`, append `u->data`.
+        * Push `u->right` then `u->left` onto `s2`.
+   * **Process `s2`** (left→right):
+
+     1. While `s2` isn’t empty:
+
+        * Pop `u` from `s2`, append `u->data`.
+        * Push `u->left` then `u->right` onto `s1`.
+5. Return the combined result.
 
 ```cpp
 class Solution {
   public:
-    vector<int> findSpiral(Node* r) {
-        if (!r) return {};
-        vector<int> res;
+    vector<int> findSpiral(Node* root) {
+        if (!root) return {};
+        vector<int> ans;
         stack<Node*> s1, s2;
-        s1.push(r);
+        s1.push(root);
         while (!s1.empty() || !s2.empty()) {
             while (!s1.empty()) {
-                Node* t = s1.top(); s1.pop();
-                res.push_back(t->data);
-                if (t->right) s2.push(t->right);
-                if (t->left) s2.push(t->left);
+                Node* u = s1.top(); s1.pop();
+                ans.push_back(u->data);
+                if (u->right) s2.push(u->right);
+                if (u->left)  s2.push(u->left);
             }
             while (!s2.empty()) {
-                Node* t = s2.top(); s2.pop();
-                res.push_back(t->data);
-                if (t->left) s1.push(t->left);
-                if (t->right) s1.push(t->right);
+                Node* u = s2.top(); s2.pop();
+                ans.push_back(u->data);
+                if (u->left)  s1.push(u->left);
+                if (u->right) s1.push(u->right);
             }
         }
-        return res;
+        return ans;
     }
 };
 ```
 
-#### 📝 **Complexity Analysis**
+### ✅ **Why This Approach?**
 
-### **Time Complexity:** O(n)
+* Clear separation of two traversal directions via two stacks.
+* No deque operations—pure LIFO.
 
-### **Auxiliary Space Complexity:** O(n)
+#### 📝 **Complexity Analysis:**
+
+* **Time:** 🔸 O(N)
+* **Auxiliary Space:** 🔸 O(N)
+
+
+
+## 📊 **3️⃣ Level-Collection + Reverse**
+
+### **Algorithm Steps:**
+
+1. Perform a standard level-order traversal using a queue, but **collect each level** into its own vector.
+2. After collecting all levels in `levels[]`, iterate through `levels`:
+
+   * If level index is even → reverse that level.
+   * Append elements in order to final answer.
+
+```cpp
+class Solution {
+  public:
+    vector<int> findSpiral(Node* root) {
+        if (!root) return {};
+        vector<vector<int>> levels;
+        queue<Node*> q;
+        q.push(root);
+        while (!q.empty()) {
+            int sz = q.size();
+            vector<int> lvl;
+            for (int i = 0; i < sz; ++i) {
+                Node* u = q.front(); q.pop();
+                lvl.push_back(u->data);
+                if (u->left)  q.push(u->left);
+                if (u->right) q.push(u->right);
+            }
+            levels.push_back(lvl);
+        }
+        vector<int> ans;
+        for (int i = 0; i < levels.size(); ++i) {
+            if (i % 2 == 0)
+                reverse(levels[i].begin(), levels[i].end());
+            ans.insert(ans.end(), levels[i].begin(), levels[i].end());
+        }
+        return ans;
+    }
+};
+```
+
+### ✅ **Why This Approach?**
+
+* Simple to reason about by separating concerns.
+* Useful if you need per-level data later.
+
+#### 📝 **Complexity Analysis:**
+
+* **Time:** 🔸 O(N)
+* **Auxiliary Space:** 🔸 O(N) (for both queue and `levels`)
 
 
 ## 🆚 Comparison
@@ -176,6 +249,15 @@ class Solution {
 | ---------------------- | ----------- | ------------- | ----------------------- | -------------------- |
 | Deque Zigzag Traversal | 🟢 O(n)        | 🟢 O(n)          | Clean, single container | Requires deque logic |
 | Two Stack Zigzag       | 🟢 O(n)        | 🟢 O(n)          | Stack-based alternative | Slightly verbose     |
+| Level-Collect + Reverse | 🔸 O(N)     | 🔸 O(N)       | Simple to implement               | Needs extra storage for all levels |
+
+### ✅ **Best Choice by Scenario**
+
+| **Scenario**                    | **Recommended Approach**   |
+| ------------------------------- | -------------------------- |
+| 🚀 Performance & minimal passes | 🥇 Deque-Based Traversal (Optimal)   |
+| 🎓 Clarity in interview demos   | 🥈 Two-Stacks              |
+| 📊 Need per-level data retained | 🥉 Level-Collect + Reverse |
 
 </details>
 
@@ -230,3 +312,19 @@ class Solution:
             f = not f
         return a
 ```
+
+## 🧠 Contribution and Support
+
+For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
+
+⭐ **If you find this helpful, please give this repository a star!** ⭐
+
+--- 
+
+<div align="center">
+  <h3><b>📍Visitor Count</b></h3>
+</div>
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+</p>
