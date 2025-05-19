@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 16: Smallest range in K lists](16(May)%20Smallest%20range%20in%20K%20lists.md)🔍📦🗂️
   - [Day 17: Sort the given array after applying the given equation](17(May)%20Sort%20the%20given%20array%20after%20applying%20the%20given%20equation.md)🔁📈📘
   - [Day 18: Level Order in spiral form](18(May)%20Level%20Order%20in%20spiral%20form.md)🌲🌀📈
+  - [Day 19: Predecessor and Successor](19(May)%20Predecessor%20and%20Successor.md)🌳📈📍
 
 
 ## Introduction
@@ -66,9 +67,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 MAY) :* Level Order in spiral form
 
-<!--*Day 19(19 MAY) :* Maximum XOR of two numbers in an array
+*Day 19(19 MAY) :* Predecessor and Successor
 
-*Day 20(20 MAY) :* Find Only Repetitive Element from 1 to n-1
+<!--*Day 20(20 MAY) :* Find Only Repetitive Element from 1 to n-1
 
 *Day 21(21 MAY) :* Missing in Array
 
