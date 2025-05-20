@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 17: Sort the given array after applying the given equation](17(May)%20Sort%20the%20given%20array%20after%20applying%20the%20given%20equation.md)🔁📈📘
   - [Day 18: Level Order in spiral form](18(May)%20Level%20Order%20in%20spiral%20form.md)🌲🌀📈
   - [Day 19: Predecessor and Successor](19(May)%20Predecessor%20and%20Successor.md)🌳📈📍
+  - [Day 20: Burning Tree](20(May)%20Burning%20Tree.md)🔥🌳⏱️
 
 
 ## Introduction
@@ -69,9 +70,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 19(19 MAY) :* Predecessor and Successor
 
-<!--*Day 20(20 MAY) :* Find Only Repetitive Element from 1 to n-1
+*Day 20(20 MAY) :* Burning Tree
 
-*Day 21(21 MAY) :* Missing in Array
+<!--*Day 21(21 MAY) :* Missing in Array
 
 *Day 22(22 MAY) :* Unique Number I
 
