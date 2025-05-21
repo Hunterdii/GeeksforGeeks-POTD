@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 18: Level Order in spiral form](18(May)%20Level%20Order%20in%20spiral%20form.md)🌲🌀📈
   - [Day 19: Predecessor and Successor](19(May)%20Predecessor%20and%20Successor.md)🌳📈📍
   - [Day 20: Burning Tree](20(May)%20Burning%20Tree.md)🔥🌳⏱️
+  - [Day 21: Kth Smallest Number in Multiplication Table](21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md)🔢🧑‍💻🧱
 
 
 ## Introduction
@@ -72,9 +73,10 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 20(20 MAY) :* Burning Tree
 
-<!--*Day 21(21 MAY) :* Missing in Array
+*Day 21(21 MAY) :* Kth Smallest Number in Multiplication Table
 
-*Day 22(22 MAY) :* Unique Number I
+
+<!--*Day 22(22 MAY) :* Unique Number I
 
 *Day 23(23 MAY) :* Unique Number II
 
