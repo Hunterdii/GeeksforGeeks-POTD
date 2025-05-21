@@ -57,6 +57,7 @@
 | 18 May    | Level Order in spiral form 🌲🌀📈                   |  | [Solution](/May%202025%20GFG%20SOLUTION/18(May)%20Level%20Order%20in%20spiral%20form.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/18(May)%20Level%20Order%20in%20spiral%20form.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/18(May)%20Level%20Order%20in%20spiral%20form.md#-code-python) |
 | 19 May    | Predecessor and Successor 🌳📈📍                   |  | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-python) |
 | 20 May    | Burning Tree 🔥🌳⏱️                   |  | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-python) |
+| 21 May    | Kth Smallest Number in Multiplication Table 🔢🧑‍💻🧱                   |  | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-python) |
 
 ---
 
