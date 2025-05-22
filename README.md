@@ -58,6 +58,7 @@
 | 19 May    | Predecessor and Successor 🌳📈📍                   |  | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/19(May)%20Predecessor%20and%20Successor.md#-code-python) |
 | 20 May    | Burning Tree 🔥🌳⏱️                   |  | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/20(May)%20Burning%20Tree.md#-code-python) |
 | 21 May    | Kth Smallest Number in Multiplication Table 🔢🧑‍💻🧱                   |  | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-python) |
+| 22 May    | Minimum Deletions 🗑️✂️🧹                  |  | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-python) |
 
 ---
 
