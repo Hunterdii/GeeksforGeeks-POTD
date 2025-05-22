@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 19: Predecessor and Successor](19(May)%20Predecessor%20and%20Successor.md)🌳📈📍
   - [Day 20: Burning Tree](20(May)%20Burning%20Tree.md)🔥🌳⏱️
   - [Day 21: Kth Smallest Number in Multiplication Table](21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md)🔢🧑‍💻🧱
+  - [Day 22: Minimum Deletions](22(May)%20Minimum%20Deletions.md)🗑️✂️🧹
 
 
 ## Introduction
@@ -75,10 +76,10 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 21(21 MAY) :* Kth Smallest Number in Multiplication Table
 
+*Day 22(22 MAY) :* Minimum Deletions
 
-<!--*Day 22(22 MAY) :* Unique Number I
 
-*Day 23(23 MAY) :* Unique Number II
+<!--*Day 23(23 MAY) :* Unique Number II
 
 *Day 24(24 MAY) :* Unique Number III
 
