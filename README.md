@@ -60,6 +60,7 @@
 | 21 May    | Kth Smallest Number in Multiplication Table 🔢🧑‍💻🧱                   |  | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/21(May)%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.md#-code-python) |
 | 22 May    | Minimum Deletions 🗑️✂️🧹                  |  | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/22(May)%20Minimum%20Deletions.md#-code-python) |
 | 23 May    | Dice throw 🎲🧮🤔                  |  | [Solution](/May%202025%20GFG%20SOLUTION/23(May)%20Dice%20throw.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/23(May)%20Dice%20throw.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/23(May)%20Dice%20throw.md#-code-python) |
+| 24 May    | Sum of all substrings of a number 🔢📱💰                  |  | [Solution](/May%202025%20GFG%20SOLUTION/24(May)%20Sum%20of%20all%20substrings%20of%20a%20number.md#-code-c) | [Solution](/May%202025%20GFG%20SOLUTION/24(May)%20Sum%20of%20all%20substrings%20of%20a%20number.md#-code-java) | [Solution](/May%202025%20GFG%20SOLUTION/24(May)%20Sum%20of%20all%20substrings%20of%20a%20number.md#-code-python) |
 
 ---
 
