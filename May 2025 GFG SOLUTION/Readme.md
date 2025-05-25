@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 22: Minimum Deletions](22(May)%20Minimum%20Deletions.md)🗑️✂️🧹
   - [Day 23: Dice throw](23(May)%20Dice%20throw.md)🎲🧮🤔
   - [Day 24: Sum of all substrings of a number](24(May)%20Sum%20of%20all%20substrings%20of%20a%20number.md)🔢📱💰
+  - [Day 25: Pythagorean Triplet](25(May)%20Pythagorean%20Triplet.md)🟦📐🔺
 
 
 ## Introduction
@@ -84,9 +85,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 24(24 MAY) :* Sum of all substrings of a number
 
-<!--*Day 25(25 MAY) :* Majority Element
+*Day 25(25 MAY) :* Pythagorean Triplet
 
-*Day 26(26 MAY) :* Is Binary Tree Heap
+<!--*Day 26(26 MAY) :* Is Binary Tree Heap
 
 *Day 27(27 MAY) :* Multiply two strings	
 
