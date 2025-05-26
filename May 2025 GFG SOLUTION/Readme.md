@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 23: Dice throw](23(May)%20Dice%20throw.md)🎲🧮🤔
   - [Day 24: Sum of all substrings of a number](24(May)%20Sum%20of%20all%20substrings%20of%20a%20number.md)🔢📱💰
   - [Day 25: Pythagorean Triplet](25(May)%20Pythagorean%20Triplet.md)🟦📐🔺
+  - [Day 26: Insert in Sorted Circular Linked List](26(May)%20Insert%20in%20Sorted%20Circular%20Linked%20List.md)📐🔄🧵
 
 
 ## Introduction
@@ -87,9 +88,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 MAY) :* Pythagorean Triplet
 
-<!--*Day 26(26 MAY) :* Is Binary Tree Heap
+*Day 26(26 MAY) :* Insert in Sorted Circular Linked List
 
-*Day 27(27 MAY) :* Multiply two strings	
+<!--*Day 27(27 MAY) :* Multiply two strings	
 
 *Day 28(28 MAY) :* Maximum sum of Non-adjacent nodes
 
