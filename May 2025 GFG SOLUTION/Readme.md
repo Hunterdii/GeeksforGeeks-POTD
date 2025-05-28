@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 25: Pythagorean Triplet](25(May)%20Pythagorean%20Triplet.md)🟦📐🔺
   - [Day 26: Insert in Sorted Circular Linked List](26(May)%20Insert%20in%20Sorted%20Circular%20Linked%20List.md)📐🔄🧵
   - [Day 27: Print leaf nodes from preorder traversal of BST](27(May)%20Print%20leaf%20nodes%20from%20preorder%20traversal%20of%20BST.md)🌲🔢🌿
+  - [Day 28: Find rectangle with corners as 1](28(May)%20Find%20rectangle%20with%20corners%20as%201.md)🟦🔲📐
 
 
 ## Introduction
@@ -93,8 +94,8 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 27(27 MAY) :* Print leaf nodes from preorder traversal of BST
 
-<!--*Day 28(28 MAY) :* Maximum sum of Non-adjacent nodes
+*Day 28(28 MAY) :* Find rectangle with corners as 1
 
-*Day 29(29 MAY) :* Sort a linked list of 0s, 1s and 2s
+<!--*Day 29(29 MAY) :* Sort a linked list of 0s, 1s and 2s
 
 *Day 30(30 MAY) :* Find length of Loop-->
