@@ -211,11 +211,11 @@ class Solution {
 class Solution {
     public boolean ValidCorner(int[][] mat) {
         int n = mat.length, m = mat[0].length;
-        for (int i = 0; i < n; ++i)
-            for (int j = i + 1; j < n; ++j) {
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j < n; j++) {
                 int cnt = 0;
-                for (int k = 0; k < m; ++k)
-                    if ((mat[i][k] & mat[j][k]) == 1) ++cnt;
+                for (int k = 0; k < m; k++)
+                    cnt += mat[i][k] & mat[j][k];
                 if (cnt > 1) return true;
             }
         return false;
@@ -232,8 +232,7 @@ class Solution:
         n, m = len(mat), len(mat[0])
         for i in range(n):
             for j in range(i + 1, n):
-                cnt = sum(mat[i][k] & mat[j][k] for k in range(m))
-                if cnt > 1:
+                if sum(mat[i][k] & mat[j][k] for k in range(m)) > 1:
                     return True
         return False
 ```
