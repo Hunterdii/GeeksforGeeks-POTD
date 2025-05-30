@@ -24,7 +24,7 @@ class Solution {
 }
 
 // 2) Iterative version
-class SolutionIterative {
+class Solution {
     public int findMaxFork(Node root, int k) {
         int res = -1;
         while (root != null) {
