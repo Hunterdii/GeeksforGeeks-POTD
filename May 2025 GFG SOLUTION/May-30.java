@@ -7,19 +7,35 @@ class Node {
         data = x;
         left = right = null;
     }
-} */
+}
+*/
+
+// 1) Recursive version
 class Solution {
     public int findMaxFork(Node root, int k) {
-        // code here.
         if (root == null) return -1;
         if (root.data == k) return k;
-        else if (root.data < k) {
+        if (root.data < k) {
             int x = findMaxFork(root.right, k);
-            if (x == -1)
-                return root.data;
-            else
-                return x;
+            return x == -1 ? root.data : x;
         }
         return findMaxFork(root.left, k);
+    }
+}
+
+// 2) Iterative version
+class SolutionIterative {
+    public int findMaxFork(Node root, int k) {
+        int res = -1;
+        while (root != null) {
+            if (root.data == k) return k;
+            if (root.data < k) {
+                res = root.data;
+                root = root.right;
+            } else {
+                root = root.left;
+            }
+        }
+        return res;
     }
 }
