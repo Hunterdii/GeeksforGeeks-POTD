@@ -7,8 +7,10 @@ class Node {
         data = x;
         left = right = null;
     }
-} */
+}
+*/
 
+// 1) Recursive version
 class Solution {
     public int findMaxFork(Node root, int k) {
         if (root == null) return -1;
@@ -21,7 +23,7 @@ class Solution {
     }
 }
 
-2)
+// 2) Iterative version
 class Solution {
     public int findMaxFork(Node root, int k) {
         int res = -1;
