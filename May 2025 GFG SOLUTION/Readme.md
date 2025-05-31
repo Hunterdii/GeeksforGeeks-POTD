@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 28: Find rectangle with corners as 1](28(May)%20Find%20rectangle%20with%20corners%20as%201.md)🟦🔲📐
   - [Day 29: Sum of nodes on the longest path](29(May)%20Sum%20of%20nodes%20on%20the%20longest%20path.md)🌳🛤️🧗‍♂️
   - [Day 30: Closest Neighbour in BST](30(May)%20Closest%20Neighbour%20in%20BST.md)🌳🤝🧭
+  - [Day 31: Kth element in Matrix](31(May)%20Kth%20element%20in%20Matrix.md)🧮📈🏁
 
 
 
@@ -109,3 +110,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 MAY) :* Sum of nodes on the longest path
 
 *Day 30(30 MAY) :* Closest Neighbour in BST
+
+*Day 31(31 MAY) :* Kth element in Matrix
