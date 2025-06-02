@@ -7,8 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
   - [Day 1: Count pairs Sum in matrices](01(June)%20Count%20pairs%20Sum%20in%20matrices.md)🔢➕📈
-
- 
+  - [Day 2: Unique Paths in a Grid](02(June)%20Unique%20Paths%20in%20a%20Grid.md)🚶‍♂️🛤️🧭
 
 
 
@@ -24,9 +23,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 1(01 June) :* Count pairs Sum in matrices
 
-<!--*Day 2(02 June) :* Bitonic Point
+*Day 2(02 June) :* Unique Paths in a Grid
 
-*Day 3(03 June) :* Prime List
+<!--*Day 3(03 June) :* Prime List
 
 *Day 4(04 June) :* Smallest distinct window
 
