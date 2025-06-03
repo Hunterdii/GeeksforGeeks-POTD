@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
   - [Day 1: Count pairs Sum in matrices](01(June)%20Count%20pairs%20Sum%20in%20matrices.md)🔢➕📈
   - [Day 2: Unique Paths in a Grid](02(June)%20Unique%20Paths%20in%20a%20Grid.md)🚶‍♂️🛤️🧭
+  - [Day 3: Substrings with K Distinct](03(June)%20Substrings%20with%20K%20Distinct.md)🧵🔡🔍
 
 
 
@@ -25,9 +26,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 2(02 June) :* Unique Paths in a Grid
 
-<!--*Day 3(03 June) :* Prime List
+*Day 3(03 June) :* Substrings with K Distinct
 
-*Day 4(04 June) :* Smallest distinct window
+<!--*Day 4(04 June) :* Smallest distinct window
 
 *Day 5(05 June) :* Search in an almost Sorted Array
 
