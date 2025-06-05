@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 2: Unique Paths in a Grid](02(June)%20Unique%20Paths%20in%20a%20Grid.md)🚶‍♂️🛤️🧭
   - [Day 3: Substrings with K Distinct](03(June)%20Substrings%20with%20K%20Distinct.md)🧵🔡🔍
   - [Day 4: LCS of three strings](04(June)%20LCS%20of%20three%20strings.md)🔤🔁🧬
+  - [Day 5: Count the paths](05(June)%20Count%20the%20paths.md)🛤️🌳🏁
 
 
 
@@ -31,9 +32,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 June) :* LCS of three strings
 
-<!--*Day 5(05 June) :* Search in an almost Sorted Array
+*Day 5(05 June) :* Count the paths
 
-*Day 6(06 June) :* Left View of Binary Tree
+<!--*Day 6(06 June) :* Left View of Binary Tree
 
 *Day 7(07 June) :* Root to Leaf Paths
 
