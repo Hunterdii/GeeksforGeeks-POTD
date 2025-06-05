@@ -41,6 +41,7 @@
 | 02 June    | Unique Paths in a Grid 🚶‍♂️🛤️🧭                        |  | [Solution](/June%202025%20GFG%20SOLUTION/02(June)%20Unique%20Paths%20in%20a%20Grid.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/02(June)%20Unique%20Paths%20in%20a%20Grid.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/02(June)%20Unique%20Paths%20in%20a%20Grid.md#-code-python) |
 | 03 June    | Substrings with K Distinct 🧵🔡🔍                        |  | [Solution](/June%202025%20GFG%20SOLUTION/03(June)%20Substrings%20with%20K%20Distinct.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/03(June)%20Substrings%20with%20K%20Distinct.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/03(June)%20Substrings%20with%20K%20Distinct.md#-code-python) |
 | 04 June    | LCS of three strings 🔤🔁🧬                        |  | [Solution](/June%202025%20GFG%20SOLUTION/04(June)%20LCS%20of%20three%20strings.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/04(June)%20LCS%20of%20three%20strings.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/04(June)%20LCS%20of%20three%20strings.md#-code-python) |
+| 05 June    | Count the paths 🛤️🌳🏁                        |  | [Solution](/June%202025%20GFG%20SOLUTION/05(June)%20Count%20the%20paths.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/05(June)%20Count%20the%20paths.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/05(June)%20Count%20the%20paths.md#-code-python) |
 
 ---
 
