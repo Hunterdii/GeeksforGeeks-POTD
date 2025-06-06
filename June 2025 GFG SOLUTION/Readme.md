@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 3: Substrings with K Distinct](03(June)%20Substrings%20with%20K%20Distinct.md)🧵🔡🔍
   - [Day 4: LCS of three strings](04(June)%20LCS%20of%20three%20strings.md)🔤🔁🧬
   - [Day 5: Count the paths](05(June)%20Count%20the%20paths.md)🛤️🌳🏁
+  - [Day 6: Search Pattern (Rabin-Karp Algorithm)](06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md)🔍🔢🧪
 
 
 
@@ -34,9 +35,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 5(05 June) :* Count the paths
 
-<!--*Day 6(06 June) :* Left View of Binary Tree
+*Day 6(06 June) :* Search Pattern (Rabin-Karp Algorithm)
 
-*Day 7(07 June) :* Root to Leaf Paths
+<!--*Day 7(07 June) :* Root to Leaf Paths
 
 *Day 8(08 June) :* Missing element of AP
 
