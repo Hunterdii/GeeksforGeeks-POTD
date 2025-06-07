@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 4: LCS of three strings](04(June)%20LCS%20of%20three%20strings.md)🔤🔁🧬
   - [Day 5: Count the paths](05(June)%20Count%20the%20paths.md)🛤️🌳🏁
   - [Day 6: Search Pattern (Rabin-Karp Algorithm)](06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md)🔍🔢🧪
+  - [Day 7: Longest Span in two Binary Arrays](07(June)%20Longest%20Span%20in%20two%20Binary%20Arrays.md)🧮📈🕵️‍♂️	
 
 
 
@@ -37,9 +38,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 6(06 June) :* Search Pattern (Rabin-Karp Algorithm)
 
-<!--*Day 7(07 June) :* Root to Leaf Paths
+*Day 7(07 June) :* Longest Span in two Binary Arrays
 
-*Day 8(08 June) :* Missing element of AP
+<!--*Day 8(08 June) :* Missing element of AP
 
 *Day 9(09 June) :* Largest number in K swaps
 
