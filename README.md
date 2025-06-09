@@ -45,6 +45,7 @@
 | 06 June    | Search Pattern (Rabin-Karp Algorithm) 🔍🔢🧪                        |  | [Solution](/June%202025%20GFG%20SOLUTION/06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md#-code-python) |
 | 07 June    | Longest Span in two Binary Arrays 🧮📈🕵️‍♂️                        |  | [Solution](/June%202025%20GFG%20SOLUTION/07(June)%20Longest%20Span%20in%20two%20Binary%20Arrays.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/07(June)%20Longest%20Span%20in%20two%20Binary%20Arrays.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/07(June)%20Longest%20Span%20in%20two%20Binary%20Arrays.md#-code-python) |
 | 08 June    | Sum-string 🔢🧮🔁                      |  | [Solution](/June%202025%20GFG%20SOLUTION/08(June)%20Sum-string.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/08(June)%20Sum-string.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/08(June)%20Sum-string.md#-code-python) |
+| 09 June    | BST with Dead End 🌳🔚🚧                      |  | [Solution](/June%202025%20GFG%20SOLUTION/09(June)%20BST%20with%20Dead%20End.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/09(June)%20BST%20with%20Dead%20End.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/09(June)%20BST%20with%20Dead%20End.md#-code-python) |
 
 
 
