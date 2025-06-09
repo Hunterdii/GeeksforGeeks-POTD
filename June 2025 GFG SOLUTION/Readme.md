@@ -13,7 +13,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 5: Count the paths](05(June)%20Count%20the%20paths.md)🛤️🌳🏁
   - [Day 6: Search Pattern (Rabin-Karp Algorithm)](06(June)%20Search%20Pattern%20(Rabin-Karp%20Algorithm).md)🔍🔢🧪
   - [Day 7: Longest Span in two Binary Arrays](07(June)%20Longest%20Span%20in%20two%20Binary%20Arrays.md)🧮📈🕵️‍♂️
-  - [Day 8: Sum-string](08(June)%20Sum-string.md)🔢🧮🔁		
+  - [Day 8: Sum-string](08(June)%20Sum-string.md)🔢🧮🔁
+  - [Day 9: BST with Dead End](09(June)%20BST%20with%20Dead%20End.md)🌳🔚🚧
 
 
 
@@ -43,9 +44,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 8(08 June) :* Sum-string
 
-<!--*Day 9(09 June) :* Largest number in K swaps
+*Day 9(09 June) :* BST with Dead End
 
-*Day 10(10 June) :* Longest Subarray with Majority Greater than K
+<!--*Day 10(10 June) :* Longest Subarray with Majority Greater than K
 
 *Day 11(11 June) :* K-th Largest Sum Contiguous Subarray
 
