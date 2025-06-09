@@ -22,19 +22,35 @@ Your task is to determine whether the BST contains any such **dead end**.
 
 ### Example 1
 
-```
+`
 Input: root[] = [8, 5, 9, 2, 7, N, N, 1]
+`
+
+<img src="https://github.com/user-attachments/assets/15ef4c6d-28f4-422b-85da-cc783922fcef" width="30%">
+
+`
 Output: true
+`
+
+`
 Explanation: Node 1 is a dead end since 0 is not allowed and 2 already exists.
-```
+`
 
 ### Example 2
 
-```
+`
 Input: root[] = [8, 7, 10, 2, N, 9, 13]
+`
+
+<img src="https://github.com/user-attachments/assets/c5c10602-fc6e-4b1e-9f8b-67c2fe3ecdba" width="30%">
+
+`
 Output: true
+`
+
+`
 Explanation: Node 9 is a dead end as no new node can be inserted below it.
-```
+`
 
 
 ## **🔒 Constraints**
