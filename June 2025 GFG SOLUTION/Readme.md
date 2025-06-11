@@ -16,6 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 8: Sum-string](08(June)%20Sum-string.md)🔢🧮🔁
   - [Day 9: BST with Dead End](09(June)%20BST%20with%20Dead%20End.md)🌳🔚🚧
   - [Day 10: Exactly one swap](10(June)%20Exactly%20one%20swap.md)🔄📈👥
+  - [Day 11: Remove the balls](11(June)%20Remove%20the%20balls.md)🎱🧹🧊
 
 
 
@@ -49,9 +50,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 10(10 June) :* Exactly one swap
 
-<!--*Day 11(11 June) :* K-th Largest Sum Contiguous Subarray
+*Day 11(11 June) :* Remove the balls
 
-*Day 12(12 June) :* Meeting Rooms III
+<!--*Day 12(12 June) :* Meeting Rooms III
 
 *Day 13(13 June) :* nCr
 
