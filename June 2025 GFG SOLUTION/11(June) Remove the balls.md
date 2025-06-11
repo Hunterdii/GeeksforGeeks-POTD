@@ -67,7 +67,7 @@ Only one ball remains which cannot be removed.
 
 We simulate the **removal of consecutive equal balls** using **in-place stack simulation**:
 
-### 1️⃣ **Two-Pointer In-Place Simulation**
+### **Two-Pointer In-Place Simulation**
 
 #### 💡 Idea:
 
