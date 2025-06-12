@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 9: BST with Dead End](09(June)%20BST%20with%20Dead%20End.md)🌳🔚🚧
   - [Day 10: Exactly one swap](10(June)%20Exactly%20one%20swap.md)🔄📈👥
   - [Day 11: Remove the balls](11(June)%20Remove%20the%20balls.md)🎱🧹🧊
+  - [Day 12: K closest elements](12(June)%20K%20closest%20elements.md)📍🔢🧲
 
 
 
@@ -52,9 +53,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 11(11 June) :* Remove the balls
 
-<!--*Day 12(12 June) :* Meeting Rooms III
+*Day 12(12 June) :* K closest elements
 
-*Day 13(13 June) :* nCr
+<!--*Day 13(13 June) :* nCr
 
 *Day 14(14 June) :* Look and Say Pattern
 
