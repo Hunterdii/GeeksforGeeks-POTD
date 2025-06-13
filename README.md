@@ -49,6 +49,7 @@
 | 10 June    | Exactly one swap 🔄📈👥                    |  | [Solution](/June%202025%20GFG%20SOLUTION/10(June)%20Exactly%20one%20swap.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/10(June)%20Exactly%20one%20swap.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/10(June)%20Exactly%20one%20swap.md#-code-python) |
 | 11 June    | Remove the balls 🎱🧹🧊                    |  | [Solution](/June%202025%20GFG%20SOLUTION/11(June)%20Remove%20the%20balls.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/11(June)%20Remove%20the%20balls.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/11(June)%20Remove%20the%20balls.md#-code-python) |
 | 12 June    | K closest elements 📍🔢🧲                   |  | [Solution](/June%202025%20GFG%20SOLUTION/12(June)%20K%20closest%20elements.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/12(June)%20K%20closest%20elements.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/12(June)%20K%20closest%20elements.md#-code-python) |
+| 13 June    | Koko Eating Bananas 🐒🍌⏰                    |  | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-python) |
 
 
 
