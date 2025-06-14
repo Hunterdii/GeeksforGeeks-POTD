@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: Remove the balls](11(June)%20Remove%20the%20balls.md)🎱🧹🧊
   - [Day 12: K closest elements](12(June)%20K%20closest%20elements.md)📍🔢🧲
   - [Day 13: Koko Eating Bananas](13(June)%20Koko%20Eating%20Bananas.md) 🐒🍌⏰
+  - [Day 14: Symmetric Tree](14(June)%20Symmetric%20Tree.md)🌳🪞🤖
 
 
 
@@ -58,9 +59,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 13(13 June) :* Koko Eating Bananas
 
-<!--*Day 14(14 June) :* Look and Say Pattern
+*Day 14(14 June) :* Symmetric Tree
 
-*Day 15(15 June) :* Substrings with same first and last characters
+<!--*Day 15(15 June) :* Substrings with same first and last characters
 
 *Day 16(16 June) :* Smallest range in K lists
 
