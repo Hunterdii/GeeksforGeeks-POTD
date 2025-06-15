@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 12: K closest elements](12(June)%20K%20closest%20elements.md)📍🔢🧲
   - [Day 13: Koko Eating Bananas](13(June)%20Koko%20Eating%20Bananas.md) 🐒🍌⏰
   - [Day 14: Symmetric Tree](14(June)%20Symmetric%20Tree.md)🌳🪞🤖
+  - [Day 15: Smallest Divisor](15(June)%20Smallest%20Divisor.md)🔢➗⚙️
 
 
 
@@ -61,9 +62,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 14(14 June) :* Symmetric Tree
 
-<!--*Day 15(15 June) :* Substrings with same first and last characters
+*Day 15(15 June) :* Smallest Divisor
 
-*Day 16(16 June) :* Smallest range in K lists
+<!--*Day 16(16 June) :* Smallest range in K lists
 
 *Day 17(17 June) :* Sort the given array after applying the given equation
 
