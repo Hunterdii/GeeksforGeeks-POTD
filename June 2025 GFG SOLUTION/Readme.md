@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Koko Eating Bananas](13(June)%20Koko%20Eating%20Bananas.md) 🐒🍌⏰
   - [Day 14: Symmetric Tree](14(June)%20Symmetric%20Tree.md)🌳🪞🤖
   - [Day 15: Smallest Divisor](15(June)%20Smallest%20Divisor.md)🔢➗⚙️
+  - [Day 16: Equalize the Towers](16(June)%20Equalize%20the%20Towers.md)🏗️🔍💰
 
 
 
@@ -64,9 +65,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 15(15 June) :* Smallest Divisor
 
-<!--*Day 16(16 June) :* Smallest range in K lists
+*Day 16(16 June) :* Equalize the Towers 
 
-*Day 17(17 June) :* Sort the given array after applying the given equation
+<!--*Day 17(17 June) :* Sort the given array after applying the given equation
 
 *Day 18(18 June) :* Level Order in spiral form
 
