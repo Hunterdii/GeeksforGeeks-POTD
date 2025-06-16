@@ -52,6 +52,7 @@
 | 13 June    | Koko Eating Bananas 🐒🍌⏰                    |  | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/13(June)%20Koko%20Eating%20Bananas.md#-code-python) |
 | 14 June    | Symmetric Tree 🌳🪞🤖                    |  | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-python) |
 | 15 June    | Smallest Divisor 🔢➗⚙️                    |  | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-python) |
+| 16 June    | Equalize the Towers 🏗️🔍💰                    |  | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-python) |
 
 
 
