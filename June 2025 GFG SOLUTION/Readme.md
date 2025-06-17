@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 14: Symmetric Tree](14(June)%20Symmetric%20Tree.md)🌳🪞🤖
   - [Day 15: Smallest Divisor](15(June)%20Smallest%20Divisor.md)🔢➗⚙️
   - [Day 16: Equalize the Towers](16(June)%20Equalize%20the%20Towers.md)🏗️🔍💰
+  - [Day 17: Coin Piles](17(June)%20Coin%20Piles.md)💰🪙⚖️
 
 
 
@@ -67,9 +68,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 16(16 June) :* Equalize the Towers 
 
-<!--*Day 17(17 June) :* Sort the given array after applying the given equation
+*Day 17(17 June) :* Coin Piles
 
-*Day 18(18 June) :* Level Order in spiral form
+<!--*Day 18(18 June) :* Level Order in spiral form
 
 *Day 19(19 June) :* Predecessor and Successor
 
