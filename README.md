@@ -53,6 +53,7 @@
 | 14 June    | Symmetric Tree 🌳🪞🤖                    |  | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/14(June)%20Symmetric%20Tree.md#-code-python) |
 | 15 June    | Smallest Divisor 🔢➗⚙️                    |  | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/15(June)%20Smallest%20Divisor.md#-code-python) |
 | 16 June    | Equalize the Towers 🏗️🔍💰                    |  | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/16(June)%20Equalize%20the%20Towers.md#-code-python) |
+| 17 June    | Coin Piles 💰🪙⚖️                    |  | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-python) |
 
 
 
