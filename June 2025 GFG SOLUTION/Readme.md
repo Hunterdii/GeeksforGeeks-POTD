@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Smallest Divisor](15(June)%20Smallest%20Divisor.md)🔢➗⚙️
   - [Day 16: Equalize the Towers](16(June)%20Equalize%20the%20Towers.md)🏗️🔍💰
   - [Day 17: Coin Piles](17(June)%20Coin%20Piles.md)💰🪙⚖️
+  - [Day 18: All Palindromic Partitions](18(June)%20All%20Palindromic%20Partitions.md)🧵🧪🧬 
 
 
 
@@ -70,9 +71,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 17(17 June) :* Coin Piles
 
-<!--*Day 18(18 June) :* Level Order in spiral form
+*Day 18(18 June) :* All Palindromic Partitions
 
-*Day 19(19 June) :* Predecessor and Successor
+<!--*Day 19(19 June) :* Predecessor and Successor
 
 *Day 20(20 June) :* Burning Tree
 
