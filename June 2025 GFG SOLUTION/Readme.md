@@ -23,7 +23,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Smallest Divisor](15(June)%20Smallest%20Divisor.md)🔢➗⚙️
   - [Day 16: Equalize the Towers](16(June)%20Equalize%20the%20Towers.md)🏗️🔍💰
   - [Day 17: Coin Piles](17(June)%20Coin%20Piles.md)💰🪙⚖️
-  - [Day 18: All Palindromic Partitions](18(June)%20All%20Palindromic%20Partitions.md)🧵🧪🧬 
+  - [Day 18: All Palindromic Partitions](18(June)%20All%20Palindromic%20Partitions.md)🧵🧪🧬
+  - [Day 19: Case-specific Sorting of Strings](19(June)%20Case-specific%20Sorting%20of%20Strings.md)🔤🔠🛠️	
 
 
 
@@ -73,9 +74,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 June) :* All Palindromic Partitions
 
-<!--*Day 19(19 June) :* Predecessor and Successor
+*Day 19(19 June) :* Case-specific Sorting of Strings
 
-*Day 20(20 June) :* Burning Tree
+<!--*Day 20(20 June) :* Burning Tree
 
 *Day 21(21 June) :* Kth Smallest Number in Multiplication Table
 
