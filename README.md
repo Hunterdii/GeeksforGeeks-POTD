@@ -56,6 +56,7 @@
 | 17 June    | Coin Piles 💰🪙⚖️                    |  | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/17(June)%20Coin%20Piles.md#-code-python) |
 | 18 June    | All Palindromic Partitions 🧵🧪🧬                    |  | [Solution](/June%202025%20GFG%20SOLUTION/18(June)%20All%20Palindromic%20Partitions.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/18(June)%20All%20Palindromic%20Partitions.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/18(June)%20All%20Palindromic%20Partitions.md#-code-python) |
 | 19 June    | Case-specific Sorting of Strings 🔤🔠🛠️                    |  | [Solution](/June%202025%20GFG%20SOLUTION/19(June)%20Case-specific%20Sorting%20of%20Strings.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/19(June)%20Case-specific%20Sorting%20of%20Strings.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/19(June)%20Case-specific%20Sorting%20of%20Strings.md#-code-python) |
+| 20 June    | Group Balls by Sequence 🎱🏀🎲                    |  | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-python) |
 
 
 
