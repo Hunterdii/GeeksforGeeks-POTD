@@ -24,7 +24,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 16: Equalize the Towers](16(June)%20Equalize%20the%20Towers.md)🏗️🔍💰
   - [Day 17: Coin Piles](17(June)%20Coin%20Piles.md)💰🪙⚖️
   - [Day 18: All Palindromic Partitions](18(June)%20All%20Palindromic%20Partitions.md)🧵🧪🧬
-  - [Day 19: Case-specific Sorting of Strings](19(June)%20Case-specific%20Sorting%20of%20Strings.md)🔤🔠🛠️	
+  - [Day 19: Case-specific Sorting of Strings](19(June)%20Case-specific%20Sorting%20of%20Strings.md)🔤🔠🛠️
+  - [Day 20: Group Balls by Sequence](20(June)%20Group%20Balls%20by%20Sequence.md)🎱🏀🎲
 
 
 
@@ -76,9 +77,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 19(19 June) :* Case-specific Sorting of Strings
 
-<!--*Day 20(20 June) :* Burning Tree
+*Day 20(20 June) :* Group Balls by Sequence 
 
-*Day 21(21 June) :* Kth Smallest Number in Multiplication Table
+<!--*Day 21(21 June) :* Kth Smallest Number in Multiplication Table
 
 *Day 22(22 June) :* Minimum Deletions
 
