@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 18: All Palindromic Partitions](18(June)%20All%20Palindromic%20Partitions.md)🧵🧪🧬
   - [Day 19: Case-specific Sorting of Strings](19(June)%20Case-specific%20Sorting%20of%20Strings.md)🔤🔠🛠️
   - [Day 20: Group Balls by Sequence](20(June)%20Group%20Balls%20by%20Sequence.md)🎱🏀🎲
+  - [Day 21: Police and Thieves](21(June)%20Police%20and%20Thieves.md)🚔👮‍♂️🚀
 
 
 
@@ -79,9 +80,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 20(20 June) :* Group Balls by Sequence 
 
-<!--*Day 21(21 June) :* Kth Smallest Number in Multiplication Table
+*Day 21(21 June) :* Police and Thieves
 
-*Day 22(22 June) :* Minimum Deletions
+<!--*Day 22(22 June) :* Minimum Deletions
 
 *Day 23(23 June) :* Dice throw
 
