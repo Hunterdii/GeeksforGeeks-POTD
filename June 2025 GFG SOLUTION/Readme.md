@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 19: Case-specific Sorting of Strings](19(June)%20Case-specific%20Sorting%20of%20Strings.md)🔤🔠🛠️
   - [Day 20: Group Balls by Sequence](20(June)%20Group%20Balls%20by%20Sequence.md)🎱🏀🎲
   - [Day 21: Police and Thieves](21(June)%20Police%20and%20Thieves.md)🚔👮‍♂️🚀
+  - [Day 22: Largest Divisible Subset](22(June)%20Largest%20Divisible%20Subset.md)🧩⚙️➗
 
 
 
@@ -82,9 +83,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 21(21 June) :* Police and Thieves
 
-<!--*Day 22(22 June) :* Minimum Deletions
+*Day 22(22 June) :* Largest Divisible Subset
 
-*Day 23(23 June) :* Dice throw
+<!--*Day 23(23 June) :* Dice throw
 
 *Day 24(24 June) :* Sum of all substrings of a number
 
