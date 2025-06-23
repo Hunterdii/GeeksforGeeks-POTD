@@ -59,6 +59,7 @@
 | 20 June    | Group Balls by Sequence 🎱🏀🎲                    |  | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/20(June)%20Group%20Balls%20by%20Sequence.md#-code-python) |
 | 21 June    | Police and Thieves 👮‍♂️🚔🛠️           |  | [Solution](/June%202025%20GFG%20SOLUTION/21(June)%20Police%20and%20Thieves.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/21(June)%20Police%20and%20Thieves.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/21(June)%20Police%20and%20Thieves.md#-code-python) |
 | 22 June    | Largest Divisible Subset 🧩⚙️➗           |  | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-python) |
+| 23 June    | Minimum sum 💰🧮🔢           |  | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-python) |
 
 
 
