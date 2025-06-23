@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Group Balls by Sequence](20(June)%20Group%20Balls%20by%20Sequence.md)🎱🏀🎲
   - [Day 21: Police and Thieves](21(June)%20Police%20and%20Thieves.md)🚔👮‍♂️🚀
   - [Day 22: Largest Divisible Subset](22(June)%20Largest%20Divisible%20Subset.md)🧩⚙️➗
+  - [Day 23: Minimum sum](23(June)%20Minimum%20sum.md)💰🧮🔢
 
 
 
@@ -85,9 +86,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 22(22 June) :* Largest Divisible Subset
 
-<!--*Day 23(23 June) :* Dice throw
+*Day 23(23 June) :* Minimum sum
 
-*Day 24(24 June) :* Sum of all substrings of a number
+<!--*Day 24(24 June) :* Sum of all substrings of a number
 
 *Day 25(25 June) :* Pythagorean Triplet
 
