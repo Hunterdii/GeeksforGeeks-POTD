@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 21: Police and Thieves](21(June)%20Police%20and%20Thieves.md)🚔👮‍♂️🚀
   - [Day 22: Largest Divisible Subset](22(June)%20Largest%20Divisible%20Subset.md)🧩⚙️➗
   - [Day 23: Minimum sum](23(June)%20Minimum%20sum.md)💰🧮🔢
+  - [Day 24: Lexicographically Largest String After K Deletions](24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md)🦁🧹🛠️
 
 
 
@@ -88,9 +89,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 23(23 June) :* Minimum sum
 
-<!--*Day 24(24 June) :* Sum of all substrings of a number
+*Day 24(24 June) :* Lexicographically Largest String After K Deletions
 
-*Day 25(25 June) :* Pythagorean Triplet
+<!--*Day 25(25 June) :* Pythagorean Triplet
 
 *Day 26(26 June) :* Insert in Sorted Circular Linked List
 
