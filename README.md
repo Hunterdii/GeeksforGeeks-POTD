@@ -61,6 +61,7 @@
 | 22 June    | Largest Divisible Subset 🧩⚙️➗           |  | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/22(June)%20Largest%20Divisible%20Subset.md#-code-python) |
 | 23 June    | Minimum sum 💰🧮🔢           |  | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/23(June)%20Minimum%20sum.md#-code-python) |
 | 24 June    | Lexicographically Largest String After K Deletions 🦁🧹🛠️           |  | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-python) |
+| 25 June    | Check if frequencies can be equal 🧪📈🧮           |  | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-python) |
 
 
 
