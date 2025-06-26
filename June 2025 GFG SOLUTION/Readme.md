@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 23: Minimum sum](23(June)%20Minimum%20sum.md)💰🧮🔢
   - [Day 24: Lexicographically Largest String After K Deletions](24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md)🦁🧹🛠️
   - [Day 25: Check if frequencies can be equal](25(June)%20Check%20if%20frequencies%20can%20be%20equal.md)🧪📈🧮
+  - [Day 26: Game with String](26(June)%20Game%20with%20String.md)🎮🧵🧊
 
 
 
@@ -94,9 +95,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 June) :* Check if frequencies can be equal 
 
-<!--*Day 26(26 June) :* Insert in Sorted Circular Linked List
+*Day 26(26 June) :* Game with String
 
-*Day 27(27 June) :* Print leaf nodes from preorder traversal of BST
+<!--*Day 27(27 June) :* Print leaf nodes from preorder traversal of BST
 
 *Day 28(28 June) :* Find rectangle with corners as 1
 
