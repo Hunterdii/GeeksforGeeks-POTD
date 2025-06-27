@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 24: Lexicographically Largest String After K Deletions](24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md)🦁🧹🛠️
   - [Day 25: Check if frequencies can be equal](25(June)%20Check%20if%20frequencies%20can%20be%20equal.md)🧪📈🧮
   - [Day 26: Game with String](26(June)%20Game%20with%20String.md)🎮🧵🧊
+  - [Day 27: Mobile numeric keypad](27(June)%20Mobile%20numeric%20keypad.md)📱🔢📈	
 
 
 
@@ -97,9 +98,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 26(26 June) :* Game with String
 
-<!--*Day 27(27 June) :* Print leaf nodes from preorder traversal of BST
+*Day 27(27 June) :* Mobile numeric keypad
 
-*Day 28(28 June) :* Find rectangle with corners as 1
+<!--*Day 28(28 June) :* Find rectangle with corners as 1
 
 *Day 29(29 June) :* Sum of nodes on the longest path
 
