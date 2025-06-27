@@ -63,6 +63,7 @@
 | 24 June    | Lexicographically Largest String After K Deletions 🦁🧹🛠️           |  | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/24(June)%20Lexicographically%20Largest%20String%20After%20K%20Deletions.md#-code-python) |
 | 25 June    | Check if frequencies can be equal 🧪📈🧮           |  | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/25(June)%20Check%20if%20frequencies%20can%20be%20equal.md#-code-python) |
 | 26 June    | Game with String 🎮🧵🧊         |  | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-python) |
+| 27 June    | Mobile numeric keypad 📱🔢📈         |  | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-python) |
 
 
 
