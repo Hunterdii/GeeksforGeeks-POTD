@@ -65,6 +65,7 @@
 | 26 June    | Game with String 🎮🧵🧊         |  | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/26(June)%20Game%20with%20String.md#-code-python) |
 | 27 June    | Mobile numeric keypad 📱🔢📈         |  | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/27(June)%20Mobile%20numeric%20keypad.md#-code-python) |
 | 28 June    | Counting elements in two arrays 🔢📊📈         |  | [Solution](/June%202025%20GFG%20SOLUTION/28(June)%20Counting%20elements%20in%20two%20arrays.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/28(June)%20Counting%20elements%20in%20two%20arrays.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/28(June)%20Counting%20elements%20in%20two%20arrays.md#-code-python) |
+| 29 June    | Split Array Largest Sum 📏📚🔢         |  | [Solution](/June%202025%20GFG%20SOLUTION/29(June)%20Split%20Array%20Largest%20Sum.md#-code-c) | [Solution](/June%202025%20GFG%20SOLUTION/29(June)%20Split%20Array%20Largest%20Sum.md#-code-java) | [Solution](/June%202025%20GFG%20SOLUTION/29(June)%20Split%20Array%20Largest%20Sum.md#-code-python) |
 
 
 
