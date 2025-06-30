@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 27: Mobile numeric keypad](27(June)%20Mobile%20numeric%20keypad.md)📱🔢📈
   - [Day 28: Counting elements in two arrays](28(June)%20Counting%20elements%20in%20two%20arrays.md)🔢📊📈
   - [Day 29: Split Array Largest Sum](29(June)%20Split%20Array%20Largest%20Sum.md)📏📚🔢
+  - [Day 30: Max min Height](30(June)%20Max%20min%20Height.md) 🌸💧🏁
 
 
 
@@ -106,5 +107,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 29(29 June) :* Split Array Largest Sum 
 
-<!--*Day 30(30 June) :* Closest Neighbour in BST-->
+*Day 30(30 June) :* Max min Height
 
