@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-  - [Day 1: Substrings of length k with k-1 distinct elements](.md)🔠🪟🧮
+  - [Day 1: Substrings of length k with k-1 distinct elements](01(July)%20Substrings%20of%20length%20k%20with%20k-1%20distinct%20elements.md)🔠🪟🧮
 
 
 
