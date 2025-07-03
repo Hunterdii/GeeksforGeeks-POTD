@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
   - [Day 1: Substrings of length k with k-1 distinct elements](01(July)%20Substrings%20of%20length%20k%20with%20k-1%20distinct%20elements.md)🔠🪟🧮
   - [Day 2: Longest subarray with Atmost two distinct integers](02(July)%20Longest%20subarray%20with%20Atmost%20two%20distinct%20integers.md)🔢⌛🐇
+  - [Day 3: Longest Substring with K Uniques](03(July)%20Longest%20Substring%20with%20K%20Uniques.md)🔠🧩📘
 
 
 
@@ -24,9 +25,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 2(02 July) :* Longest subarray with Atmost two distinct integers
 
-<!--*Day 3(03 July) :* Substrings with K Distinct
+*Day 3(03 July) :* Longest Substring with K Uniques
 
-*Day 4(04 July) :* LCS of three strings
+<!--*Day 4(04 July) :* LCS of three strings
 
 *Day 5(05 July) :* Count the paths
 
