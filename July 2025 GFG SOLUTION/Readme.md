@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 2: Longest subarray with Atmost two distinct integers](02(July)%20Longest%20subarray%20with%20Atmost%20two%20distinct%20integers.md)🔢⌛🐇
   - [Day 3: Longest Substring with K Uniques](03(July)%20Longest%20Substring%20with%20K%20Uniques.md)🔠🧩📘
   - [Day 4: Subarrays With At Most K Distinct Integers](04(July)%20Subarrays%20With%20At%20Most%20K%20Distinct%20Integers.md)🔢📊🧵
+  - [Day 5: Max Score from Subarray Mins](05(July)%20Max%20Score%20from%20Subarray%20Mins.md)🧠💯🪜
 
 
 
@@ -30,9 +31,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 4(04 July) :* Subarrays With At Most K Distinct Integers
 
-<!--*Day 5(05 July) :* Count the paths
+*Day 5(05 July) :* Max Score from Subarray Mins
 
-*Day 6(06 July) :* Search Pattern (Rabin-Karp Algorithm)
+<!--*Day 6(06 July) :* Search Pattern (Rabin-Karp Algorithm)
 
 *Day 7(07 July) :* Longest Span in two Binary Arrays
 
