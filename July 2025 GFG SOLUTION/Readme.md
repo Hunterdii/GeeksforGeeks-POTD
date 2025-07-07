@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 4: Subarrays With At Most K Distinct Integers](04(July)%20Subarrays%20With%20At%20Most%20K%20Distinct%20Integers.md)🔢📊🧵
   - [Day 5: Max Score from Subarray Mins](05(July)%20Max%20Score%20from%20Subarray%20Mins.md)🧠💯🪜
   - [Day 6: Maximum Sum Combination](06(July)%20Maximum%20Sum%20Combination.md)➕🏆💡
+  - [Day 7: Next Greater Element in Circular Array](07(July)%20Next%20Greater%20Element%20in%20Circular%20Array.md)🔁➡️🔄
 
 
 
@@ -36,9 +37,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 6(06 July) :* Maximum Sum Combination
 
-<!--*Day 7(07 July) :* Longest Span in two Binary Arrays
+*Day 7(07 July) :* Next Greater Element in Circular Array
 
-*Day 8(08 July) :* Sum-string
+<!--*Day 8(08 July) :* Sum-string
 
 *Day 9(09 July) :* BST with Dead End
 
