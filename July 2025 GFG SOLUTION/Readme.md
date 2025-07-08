@@ -13,6 +13,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 5: Max Score from Subarray Mins](05(July)%20Max%20Score%20from%20Subarray%20Mins.md)🧠💯🪜
   - [Day 6: Maximum Sum Combination](06(July)%20Maximum%20Sum%20Combination.md)➕🏆💡
   - [Day 7: Next Greater Element in Circular Array](07(July)%20Next%20Greater%20Element%20in%20Circular%20Array.md)🔁➡️🔄
+  - [Day 8: Next element with greater frequency](08(July)%20Next%20element%20with%20greater%20frequency.md)📈🧺🧮
 
 
 
@@ -39,9 +40,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 7(07 July) :* Next Greater Element in Circular Array
 
-<!--*Day 8(08 July) :* Sum-string
+*Day 8(08 July) :* Next element with greater frequency
 
-*Day 9(09 July) :* BST with Dead End
+<!--*Day 9(09 July) :* BST with Dead End
 
 *Day 10(10 July) :* Exactly one swap
 
