@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 6: Maximum Sum Combination](06(July)%20Maximum%20Sum%20Combination.md)➕🏆💡
   - [Day 7: Next Greater Element in Circular Array](07(July)%20Next%20Greater%20Element%20in%20Circular%20Array.md)🔁➡️🔄
   - [Day 8: Next element with greater frequency](08(July)%20Next%20element%20with%20greater%20frequency.md)📈🧺🧮
+  - [Day 9: Sum of subarray minimum](09(July)%20Sum%20of%20subarray%20minimum.md)🔢➕🔄
 
 
 
@@ -42,9 +43,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 8(08 July) :* Next element with greater frequency
 
-<!--*Day 9(09 July) :* BST with Dead End
+*Day 9(09 July) :* Sum of subarray minimum
 
-*Day 10(10 July) :* Exactly one swap
+<!--*Day 10(10 July) :* Exactly one swap
 
 *Day 11(11 July) :* Remove the balls
 
