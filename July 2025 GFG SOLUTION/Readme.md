@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 7: Next Greater Element in Circular Array](07(July)%20Next%20Greater%20Element%20in%20Circular%20Array.md)🔁➡️🔄
   - [Day 8: Next element with greater frequency](08(July)%20Next%20element%20with%20greater%20frequency.md)📈🧺🧮
   - [Day 9: Sum of subarray minimum](09(July)%20Sum%20of%20subarray%20minimum.md)🔢➕🔄
+  - [Day 10: Find the longest string](10(July)%20Find%20the%20longest%20string.md)🔤🔠📝
 
 
 
@@ -45,9 +46,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 9(09 July) :* Sum of subarray minimum
 
-<!--*Day 10(10 July) :* Exactly one swap
+*Day 10(10 July) :* Find the longest string
 
-*Day 11(11 July) :* Remove the balls
+<!--*Day 11(11 July) :* Remove the balls
 
 *Day 12(12 July) :* K closest elements
 
