@@ -47,6 +47,7 @@
 | 08 July    |  Next element with greater frequency 📈🧺🧮                   |  | [Solution](/July%202025%20GFG%20SOLUTION/08(July)%20Next%20element%20with%20greater%20frequency.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/08(July)%20Next%20element%20with%20greater%20frequency.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/08(July)%20Next%20element%20with%20greater%20frequency.md#-code-python) |
 | 09 July    |  Sum of subarray minimum 🔢➕🔄                   |  | [Solution](/July%202025%20GFG%20SOLUTION/09(July)%20Sum%20of%20subarray%20minimum.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/09(July)%20Sum%20of%20subarray%20minimum.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/09(July)%20Sum%20of%20subarray%20minimum.md#-code-python) |
 | 10 July    |  Find the longest string 🔤🔠📝                   |  | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-python) |
+| 11 July    |  Trail of ones ➡️1️⃣🔥                   |  | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-python) |
 
 
 ---
