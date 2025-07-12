@@ -16,7 +16,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 8: Next element with greater frequency](08(July)%20Next%20element%20with%20greater%20frequency.md)📈🧺🧮
   - [Day 9: Sum of subarray minimum](09(July)%20Sum%20of%20subarray%20minimum.md)🔢➕🔄
   - [Day 10: Find the longest string](10(July)%20Find%20the%20longest%20string.md)🔤🔠📝
-  - [Day 11: Trail of ones](11(July)%20Trail%20of%20ones.md)➡️1️⃣🔥 
+  - [Day 11: Trail of ones](11(July)%20Trail%20of%20ones.md)➡️1️⃣🔥
+  - [Day 12: Gold Mine Problem](12(July)%20Gold%20Mine%20Problem.md)🏆💰📚
 
 
 
@@ -51,9 +52,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 11(11 July) :* Trail of ones
 
-<!--*Day 12(12 July) :* K closest elements
+*Day 12(12 July) :* Gold Mine Problem 
 
-*Day 13(13 July) :* Koko Eating Bananas
+<!--*Day 13(13 July) :* Koko Eating Bananas
 
 *Day 14(14 July) :* Symmetric Tree
 
