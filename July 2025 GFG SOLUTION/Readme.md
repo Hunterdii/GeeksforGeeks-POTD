@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 10: Find the longest string](10(July)%20Find%20the%20longest%20string.md)🔤🔠📝
   - [Day 11: Trail of ones](11(July)%20Trail%20of%20ones.md)➡️1️⃣🔥
   - [Day 12: Gold Mine Problem](12(July)%20Gold%20Mine%20Problem.md)🏆💰📚
+  - [Day 13: Maximum sum of elements not part of LIS](13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md)📉📈🔢
 
 
 
@@ -54,9 +55,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 12(12 July) :* Gold Mine Problem 
 
-<!--*Day 13(13 July) :* Koko Eating Bananas
+*Day 13(13 July) :* Maximum sum of elements not part of LIS
 
-*Day 14(14 July) :* Symmetric Tree
+<!--*Day 14(14 July) :* Symmetric Tree
 
 *Day 15(15 July) :* Smallest Divisor
 
