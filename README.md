@@ -49,6 +49,7 @@
 | 10 July    |  Find the longest string 🔤🔠📝                   |  | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/10(July)%20Find%20the%20longest%20string.md#-code-python) |
 | 11 July    |  Trail of ones ➡️1️⃣🔥                   |  | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/11(July)%20Trail%20of%20ones.md#-code-python) |
 | 12 July    |  Gold Mine Problem 🏆💰📚                  |  | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-python) |
+| 13 July    |  Maximum sum of elements not part of LIS 📉📈🔢                  |  | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-python) |
 
 
 ---
