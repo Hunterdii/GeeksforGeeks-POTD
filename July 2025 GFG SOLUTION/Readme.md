@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 11: Trail of ones](11(July)%20Trail%20of%20ones.md)➡️1️⃣🔥
   - [Day 12: Gold Mine Problem](12(July)%20Gold%20Mine%20Problem.md)🏆💰📚
   - [Day 13: Maximum sum of elements not part of LIS](13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md)📉📈🔢
+  - [Day 14: Cutting Binary String](14(July)%20Cutting%20Binary%20String.md)🎯⚡🔪
 
 
 
@@ -57,9 +58,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 13(13 July) :* Maximum sum of elements not part of LIS
 
-<!--*Day 14(14 July) :* Symmetric Tree
+*Day 14(14 July) :* Cutting Binary String
 
-*Day 15(15 July) :* Smallest Divisor
+<!--*Day 15(15 July) :* Smallest Divisor
 
 *Day 16(16 July) :* Equalize the Towers 
 
