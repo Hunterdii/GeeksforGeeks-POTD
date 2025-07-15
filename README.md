@@ -51,6 +51,7 @@
 | 12 July    |  Gold Mine Problem 🏆💰📚                  |  | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/12(July)%20Gold%20Mine%20Problem.md#-code-python) |
 | 13 July    |  Maximum sum of elements not part of LIS 📉📈🔢                  |  | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md#-code-python) |
 | 14 July    |  Cutting Binary String 🎯⚡🔪                  |  | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-python) |
+| 15 July    |  Divisible by 13 ➗🔢📍                  |  | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-python) |
 
 
 ---
