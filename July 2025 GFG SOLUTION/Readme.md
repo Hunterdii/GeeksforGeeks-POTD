@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 12: Gold Mine Problem](12(July)%20Gold%20Mine%20Problem.md)🏆💰📚
   - [Day 13: Maximum sum of elements not part of LIS](13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md)📉📈🔢
   - [Day 14: Cutting Binary String](14(July)%20Cutting%20Binary%20String.md)🎯⚡🔪
+  - [Day 15: Divisible by 13](15(July)%20Divisible%20by%2013.md)➗🔢📍	
 
 
 
@@ -60,9 +61,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 14(14 July) :* Cutting Binary String
 
-<!--*Day 15(15 July) :* Smallest Divisor
+*Day 15(15 July) :* Divisible by 13
 
-*Day 16(16 July) :* Equalize the Towers 
+<!--*Day 16(16 July) :* Equalize the Towers 
 
 *Day 17(17 July) :* Coin Piles
 
