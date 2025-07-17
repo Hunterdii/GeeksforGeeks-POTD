@@ -21,7 +21,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 13: Maximum sum of elements not part of LIS](13(July)%20Maximum%20sum%20of%20elements%20not%20part%20of%20LIS.md)📉📈🔢
   - [Day 14: Cutting Binary String](14(July)%20Cutting%20Binary%20String.md)🎯⚡🔪
   - [Day 15: Divisible by 13](15(July)%20Divisible%20by%2013.md)➗🔢📍
-  - [Day 16: Nine Divisors](16(July)%20Nine%20Divisors.md)🔢📐📘	
+  - [Day 16: Nine Divisors](16(July)%20Nine%20Divisors.md)🔢📐📘
+  - [Day 17: Power of k in factorial of n](17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md)📐♾️📝	
 
 
 
@@ -66,9 +67,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 16(16 July) :* Nine Divisors 
 
-<!--*Day 17(17 July) :* Coin Piles
+*Day 17(17 July) :* Power of k in factorial of n
 
-*Day 18(18 July) :* All Palindromic Partitions
+<!--*Day 18(18 July) :* All Palindromic Partitions
 
 *Day 19(19 July) :* Case-specific Sorting of Strings
 
