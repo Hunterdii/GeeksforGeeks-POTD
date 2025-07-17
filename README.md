@@ -53,6 +53,7 @@
 | 14 July    |  Cutting Binary String 🎯⚡🔪                  |  | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/14(July)%20Cutting%20Binary%20String.md#-code-python) |
 | 15 July    |  Divisible by 13 ➗🔢📍                  |  | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/15(July)%20Divisible%20by%2013.md#-code-python) |
 | 16 July    |  Nine Divisors 🔢📐📘                  |  | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-python) |
+| 17 July    |  Power of k in factorial of n 📐♾️📝                 |  | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-python) |
 
 
 ---
