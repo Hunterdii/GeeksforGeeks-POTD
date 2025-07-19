@@ -55,6 +55,7 @@
 | 16 July    |  Nine Divisors 🔢📐📘                  |  | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/16(July)%20Nine%20Divisors.md#-code-python) |
 | 17 July    |  Power of k in factorial of n 📐♾️📝                 |  | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md#-code-python) |
 | 18 July    |  LCM Triplet 🧮📊📐                 |  | [Solution](/July%202025%20GFG%20SOLUTION/18(July)%20LCM%20Triplet.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/18(July)%20LCM%20Triplet.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/18(July)%20LCM%20Triplet.md#-code-python) |
+| 19 July    |  Count Unique Vowel Strings 🗣️🔄🔤                 |  | [Solution](/July%202025%20GFG%20SOLUTION/19(July)%20Count%20Unique%20Vowel%20Strings.md#-code-c) | [Solution](/July%202025%20GFG%20SOLUTION/19(July)%20Count%20Unique%20Vowel%20Strings.md#-code-java) | [Solution](/July%202025%20GFG%20SOLUTION/19(July)%20Count%20Unique%20Vowel%20Strings.md#-code-python) |
 
 
 ---
