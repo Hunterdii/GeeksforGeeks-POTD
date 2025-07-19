@@ -23,7 +23,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 15: Divisible by 13](15(July)%20Divisible%20by%2013.md)➗🔢📍
   - [Day 16: Nine Divisors](16(July)%20Nine%20Divisors.md)🔢📐📘
   - [Day 17: Power of k in factorial of n](17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md)📐♾️📝
-  - [Day 18: LCM Triplet](18(July)%20LCM%20Triplet.md)🧮📊📐	
+  - [Day 18: LCM Triplet](18(July)%20LCM%20Triplet.md)🧮📊📐
+  - [Day 19: Count Unique Vowel Strings](19(July)%20Count%20Unique%20Vowel%20Strings.md)🗣️🔄🔤
 
 
 
@@ -72,9 +73,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 18(18 July) :* LCM Triplet 
 
-<!--*Day 19(19 July) :* Case-specific Sorting of Strings
+*Day 19(19 July) :* Count Unique Vowel Strings 
 
-*Day 20(20 July) :* Group Balls by Sequence 
+<!--*Day 20(20 July) :* Group Balls by Sequence 
 
 *Day 21(21 July) :* Police and Thieves
 
