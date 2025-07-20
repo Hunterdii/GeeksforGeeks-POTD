@@ -1,12 +1,21 @@
 ---
 title: "💯 Max Score from Subarray Mins | GFG Solution 🔍"
-keywords🏷️: ["💯 max score", "🔍 subarray", "📍 two smallest", "📈 optimization", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "💯 max score",
+    "🔍 subarray",
+    "📍 two smallest",
+    "📈 optimization",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Max Score from Subarray Mins problem: find maximum sum of smallest and second smallest elements across all subarrays using optimized approach. 🚀"
 date: 📅 2025-07-05
 ---
 
-# *05. Max Score from Subarray Mins*
+# _05. Max Score from Subarray Mins_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/1)
 
@@ -47,8 +56,8 @@ Maximum Score is 5
 
 ## **🔒 Constraints**
 
-* $2 \le \text{arr.size()} \le 10^5$
-* $1 \le \text{arr}[i] \le 10^6$
+- $2 \le \text{arr.size()} \le 10^5$
+- $1 \le \text{arr}[i] \le 10^6$
 
 ## **✅ My Approach**
 
@@ -57,24 +66,26 @@ The key insight is that we don't need to generate all subarrays. Instead, we can
 ### **Basic Single Pass**
 
 1. **Key Observation:**
-   * For any subarray of size > 2, adding more elements can only decrease or maintain the sum of two smallest elements.
-   * The maximum sum will always be achieved by some adjacent pair in the array.
+
+   - For any subarray of size > 2, adding more elements can only decrease or maintain the sum of two smallest elements.
+   - The maximum sum will always be achieved by some adjacent pair in the array.
 
 2. **Algorithm:**
-   * Iterate through the array once.
-   * For each adjacent pair `(arr[i], arr[i+1])`, calculate their sum.
-   * Track the maximum sum encountered.
+
+   - Iterate through the array once.
+   - For each adjacent pair `(arr[i], arr[i+1])`, calculate their sum.
+   - Track the maximum sum encountered.
 
 3. **Why This Works:**
-   * Consider subarray `[a, b, c]` where `a ≤ b ≤ c`.
-   * Sum of two smallest = `a + b`.
-   * But we already considered pair `[a, b]` which gives the same sum.
-   * Adding more elements never increases the sum of two smallest elements.
+   - Consider subarray `[a, b, c]` where `a ≤ b ≤ c`.
+   - Sum of two smallest = `a + b`.
+   - But we already considered pair `[a, b]` which gives the same sum.
+   - Adding more elements never increases the sum of two smallest elements.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. We iterate through the array once to check all adjacent pairs.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space to store the maximum sum and loop variables.
+- **Expected Time Complexity:** O(n), where n is the size of the array. We iterate through the array once to check all adjacent pairs.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space to store the maximum sum and loop variables.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -117,14 +128,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Handles edge cases better
-* Explicit initialization with first pair
-* Clear variable naming
+- Handles edge cases better
+- Explicit initialization with first pair
+- Clear variable naming
 
 ## 📊 **3️⃣ Iterator-Based Approach**
 
@@ -148,14 +159,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Modern C++ idioms
-* Iterator safety
-* Clean syntax
+- Modern C++ idioms
+- Iterator safety
+- Clean syntax
 
 ## 📊 **4️⃣ Parallel Processing Approach**
 
@@ -182,14 +193,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n/p) where p is number of processors
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n/p) where p is number of processors
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Utilizes multiple cores
-* Significant speedup for large arrays
-* OpenMP optimization
+- Utilizes multiple cores
+- Significant speedup for large arrays
+- OpenMP optimization
 
 ## 📊 **5️⃣ Bit Manipulation Optimization**
 
@@ -215,34 +226,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Reduced branch misprediction
-* Hardware-level optimization
-* Consistent performance
+- Reduced branch misprediction
+- Hardware-level optimization
+- Consistent performance
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Basic Single Pass**          | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Simple, efficient             | 💾 Starts with 0, may miss edge cases|
-| 🔄 **Early Termination**          | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Better edge case handling      | 📝 Slightly more complex            |
-| 🔺 **Iterator-Based**             | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Modern C++ style              | 💾 Iterator overhead                 |
-| ⏰ **Parallel Processing**        | 🟢 O(n/p)              | 🟢 O(1)                 | 🚀 Multi-core utilization        | 🔄 Overhead for small arrays        |
-| 📊 **Bit Manipulation**           | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Branch prediction optimization | 🔧 Hardware dependent               |
+| 🚀 **Approach**            | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                           |
+| -------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
+| 🔍 **Basic Single Pass**   | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Simple, efficient              | 💾 Starts with 0, may miss edge cases |
+| 🔄 **Early Termination**   | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Better edge case handling      | 📝 Slightly more complex              |
+| 🔺 **Iterator-Based**      | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Modern C++ style               | 💾 Iterator overhead                  |
+| ⏰ **Parallel Processing** | 🟢 O(n/p)              | 🟢 O(1)                 | 🚀 Multi-core utilization         | 🔄 Overhead for small arrays          |
+| 📊 **Bit Manipulation**    | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Branch prediction optimization | 🔧 Hardware dependent                 |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **General purpose, competitive programming**       | 🥇 **Basic Single Pass**             | ★★★★★                     |
-| 🔧 **Production code, edge case handling**            | 🥈 **Early Termination**             | ★★★★☆                     |
-| 📊 **Large datasets, multi-core systems**             | 🥉 **Parallel Processing**           | ★★★★☆                     |
-| 🎯 **Modern C++ projects**                            | 🎖️ **Iterator-Based**               | ★★★☆☆                     |
-| 🚀 **Performance-critical applications**              | 🏅 **Bit Manipulation**             | ★★★★★                     |
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ----------------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ **General purpose, competitive programming** | 🥇 **Basic Single Pass**    | ★★★★★                     |
+| 🔧 **Production code, edge case handling**      | 🥈 **Early Termination**    | ★★★★☆                     |
+| 📊 **Large datasets, multi-core systems**       | 🥉 **Parallel Processing**  | ★★★★☆                     |
+| 🎯 **Modern C++ projects**                      | 🎖️ **Iterator-Based**       | ★★★☆☆                     |
+| 🚀 **Performance-critical applications**        | 🏅 **Bit Manipulation**     | ★★★★★                     |
 
 </details>
 
@@ -283,7 +294,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-
-

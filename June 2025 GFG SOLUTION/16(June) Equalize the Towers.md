@@ -1,12 +1,21 @@
 ---
 title: "🏗️ Equalize the Towers | GFG Solution 🎯"
-keywords🏷️: ["🏗️ tower equalization", "🔍 binary search", "📈 optimization", "💰 minimum cost", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🏗️ tower equalization",
+    "🔍 binary search",
+    "📈 optimization",
+    "💰 minimum cost",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Equalize the Towers problem: find minimum cost to make all towers same height using binary search optimization. 🚀"
 date: 📅 2025-06-16
 ---
 
-# *16. Equalize the Towers*
+# _16. Equalize the Towers_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/equalize-the-towers2804/1)
 
@@ -38,9 +47,9 @@ Explanation: The minimum cost to equalize the towers is 6, achieved by setting a
 
 ## **🔒 Constraints**
 
-* $1 \le \text{heights.size()} = \text{cost.size()} \le 10^5$
-* $1 \le \text{heights}[i] \le 10^4$
-* $1 \le \text{cost}[i] \le 10^3$
+- $1 \le \text{heights.size()} = \text{cost.size()} \le 10^5$
+- $1 \le \text{heights}[i] \le 10^4$
+- $1 \le \text{cost}[i] \le 10^3$
 
 ## **✅ My Approach**
 
@@ -49,25 +58,28 @@ The optimal approach uses **Binary Search on Answer** to find the target height 
 ### **Binary Search on Target Height**
 
 1. **Search Space Setup:**
-   * The optimal target height lies between 0 and maximum height in the array.
-   * We need to find the height that minimizes the total cost function.
+
+   - The optimal target height lies between 0 and maximum height in the array.
+   - We need to find the height that minimizes the total cost function.
 
 2. **Cost Function Analysis:**
-   * For any target height `h`, cost = Σ|heights[i] - h| × cost[i]
-   * This creates a unimodal function (convex) with a single minimum.
+
+   - For any target height `h`, cost = Σ|heights[i] - h| × cost[i]
+   - This creates a unimodal function (convex) with a single minimum.
 
 3. **Binary Search Implementation:**
-   * Compare costs at adjacent heights `m` and `m+1`.
-   * If cost at `m` ≤ cost at `m+1`, optimal height is in left half (including m).
-   * Otherwise, optimal height is in right half.
+
+   - Compare costs at adjacent heights `m` and `m+1`.
+   - If cost at `m` ≤ cost at `m+1`, optimal height is in left half (including m).
+   - Otherwise, optimal height is in right half.
 
 4. **Final Calculation:**
-   * Once we find the optimal height, calculate the actual minimum cost.
+   - Once we find the optimal height, calculate the actual minimum cost.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n × log(max_height)), where n is the number of towers and max_height is the maximum height in the array. Binary search takes O(log(max_height)) iterations, and each iteration requires O(n) time to calculate the cost.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables and calculations (excluding the input arrays).
+- **Expected Time Complexity:** O(n × log(max_height)), where n is the number of towers and max_height is the maximum height in the array. Binary search takes O(log(max_height)) iterations, and each iteration requires O(n) time to calculate the cost.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables and calculations (excluding the input arrays).
 
 ## **🧑‍💻 Code (C++)**
 
@@ -132,13 +144,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × log₃(max_height))
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n × log₃(max_height))
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Faster theoretical convergence than binary search.
-* Reduces search space by 1/3 each iteration.
+- Faster theoretical convergence than binary search.
+- Reduces search space by 1/3 each iteration.
 
 ## 📊 **3️⃣ Weighted Median Approach**
 
@@ -159,7 +171,7 @@ public:
             total += cost[i];
         }
         sort(hc.begin(), hc.end());
-        
+
         long long sum = 0, ans = 0;
         for (auto& p : hc) {
             sum += p.second;
@@ -176,29 +188,29 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Mathematically optimal solution.
-* No iterative search required.
+- Mathematically optimal solution.
+- No iterative search required.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**           | ⏱️ **Time Complexity**           | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ------------------------- | -------------------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Binary Search**      | 🟢 O(n × log(max_height))        | 🟢 O(1)                 | ⚡ Fastest runtime, minimal ops    | 🧮 Requires understanding of convexity|
-| 🔺 **Ternary Search**     | 🟢 O(n × log₃(max_height))       | 🟢 O(1)                 | 🚀 Faster theoretical convergence  | 🧮 More complex per iteration        |
-| 📊 **Weighted Median**    | 🟡 O(n log n)                    | 🔸 O(n)                 | 🎯 Mathematically optimal          | 💾 Extra space, sorting overhead     |
+| 🚀 **Approach**        | ⏱️ **Time Complexity**     | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                            |
+| ---------------------- | -------------------------- | ----------------------- | --------------------------------- | -------------------------------------- |
+| 🔍 **Binary Search**   | 🟢 O(n × log(max_height))  | 🟢 O(1)                 | ⚡ Fastest runtime, minimal ops   | 🧮 Requires understanding of convexity |
+| 🔺 **Ternary Search**  | 🟢 O(n × log₃(max_height)) | 🟢 O(1)                 | 🚀 Faster theoretical convergence | 🧮 More complex per iteration          |
+| 📊 **Weighted Median** | 🟡 O(n log n)              | 🔸 O(n)                 | 🎯 Mathematically optimal         | 💾 Extra space, sorting overhead       |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ Maximum performance, competitive programming    | 🥇 **Binary Search**            | ★★★★★                     |
-| 🚀 Theoretical optimization                        | 🥈 **Ternary Search**           | ★★★★☆                     |
-| 🎯 Mathematically guaranteed optimal               | 🥉 **Weighted Median**          | ★★★★☆                     |
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ----------------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ Maximum performance, competitive programming | 🥇 **Binary Search**        | ★★★★★                     |
+| 🚀 Theoretical optimization                     | 🥈 **Ternary Search**       | ★★★★☆                     |
+| 🎯 Mathematically guaranteed optimal            | 🥉 **Weighted Median**      | ★★★★☆                     |
 
 </details>
 
@@ -256,5 +268,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

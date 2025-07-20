@@ -1,13 +1,24 @@
 ---
 title: "Sum of Nodes on the Longest Path | GFG Solution"
-keywords🏷️ : ["binary tree", "DFS", "longest path", "root to leaf", "sum path", "tree traversal", "GFG", "coding interview", "DSA", "sum of longest bloodline"]
+keywords🏷️:
+  [
+    "binary tree",
+    "DFS",
+    "longest path",
+    "root to leaf",
+    "sum path",
+    "tree traversal",
+    "GFG",
+    "coding interview",
+    "DSA",
+    "sum of longest bloodline",
+  ]
 author: "Het Patel (Hunterdii)"
 description: "GFG solution to the Sum of Nodes on the Longest Path problem using DFS."
 date: 2025-05-29
 ---
 
-
-# *29. Sum of nodes on the longest path*
+# _29. Sum of nodes on the longest path_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1)
 
@@ -15,8 +26,7 @@ The problem can be found at the following link: 🔗 [Question Link](https://www
 
 Given a binary tree, find the **sum of the nodes** on the **longest path** from the root to any leaf.
 
-* If there are multiple root-to-leaf paths of the same maximum length, return the maximum sum among them.
-
+- If there are multiple root-to-leaf paths of the same maximum length, return the maximum sum among them.
 
 ## **📘 Examples**
 
@@ -25,6 +35,7 @@ Given a binary tree, find the **sum of the nodes** on the **longest path** from 
 ```
 Input: root = [4,2,5,7,1,2,3,null,null,6]
 ```
+
 <img src="https://github.com/user-attachments/assets/0abeb953-31eb-41eb-88fa-b23a1ca0fc62" alt="Binary tree example for longest path sum" width="22%">
 
 ```
@@ -43,12 +54,14 @@ Longest path is 4 → 2 → 1 → 6, sum = 4+2+1+6 = 13
 ```
 Input: root = [1,2,3,4,5,6,7]
 ```
+
 <img src="https://github.com/user-attachments/assets/960ee6a7-4569-49c6-b6f0-abdfce68f2f0" alt="Binary tree example for longest path sum" width="22%">
 
 ```
 Output: 11
 Explanation:
 ```
+
 <img src="https://github.com/user-attachments/assets/0cb23992-45d8-4bb1-9a06-cce228c063a4" alt="Binary tree example for longest path sum" width="22%">
 
 ```
@@ -60,25 +73,24 @@ Longest path is 1 → 3 → 7, sum = 1+3+7 = 11
 ```
 Input: root = [10,5,15,3,7,null,20,1]
 ```
-<img src="https://github.com/user-attachments/assets/b72807f0-b75e-48ea-92ac-377c48a2b2d3" alt="Binary tree example for longest path sum" width="22%">
 
+<img src="https://github.com/user-attachments/assets/b72807f0-b75e-48ea-92ac-377c48a2b2d3" alt="Binary tree example for longest path sum" width="22%">
 
 ```
 Output: 19
 Explanation:
 ```
+
 <img src="https://github.com/user-attachments/assets/473912f0-b4b7-4da4-99e2-6195faf35fb7" alt="Binary tree example for longest path sum" width="22%">
 
 ```
 Longest path is 10 → 5 → 3 → 1, sum = 10+5+3+1 = 19
 ```
 
-
 ## **🔒 Constraints**
 
-* Number of nodes in the tree: \$1 \le N \le 10^6\$
-* Node values: \$0 \le \text{data} \le 10^4\$
-
+- Number of nodes in the tree: \$1 \le N \le 10^6\$
+- Node values: \$0 \le \text{data} \le 10^4\$
 
 ## **✅ My Approach**
 
@@ -86,22 +98,22 @@ Longest path is 10 → 5 → 3 → 1, sum = 10+5+3+1 = 19
 
 1. **Idea:**
 
-   * For each subtree, compute a pair `(maxDepth, maxSum)`, where `maxDepth` is the maximum root-to-leaf depth, and `maxSum` is the maximum sum along any path of that depth.
+   - For each subtree, compute a pair `(maxDepth, maxSum)`, where `maxDepth` is the maximum root-to-leaf depth, and `maxSum` is the maximum sum along any path of that depth.
+
 2. **Recurrence:**
 
-   * If left depth > right depth: take `(left.depth+1, left.sum + node->data)`.
-   * If right depth > left depth: take `(right.depth+1, right.sum + node->data)`.
-   * If equal: take `(left.depth+1, max(left.sum, right.sum) + node->data)`.
+   - If left depth > right depth: take `(left.depth+1, left.sum + node->data)`.
+   - If right depth > left depth: take `(right.depth+1, right.sum + node->data)`.
+   - If equal: take `(left.depth+1, max(left.sum, right.sum) + node->data)`.
+
 3. **Answer:**
 
-   * After processing the root, its `second` component is the desired sum.
-
+   - After processing the root, its `second` component is the desired sum.
 
 ## 📝 **Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(N), as we visit each node exactly once.
-* **Expected Auxiliary Space Complexity:** O(H), where H = height of the tree (recursion stack).
-
+- **Expected Time Complexity:** O(N), as we visit each node exactly once.
+- **Expected Auxiliary Space Complexity:** O(H), where H = height of the tree (recursion stack).
 
 ## **🧑‍💻 Code (C++)**
 
@@ -121,10 +133,8 @@ class Solution {
 };
 ```
 
-
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ Recursive with global state**
 
@@ -132,17 +142,20 @@ class Solution {
 
 1. Maintain two global variables:
 
-   * `maxLen` = maximum depth seen so far
-   * `maxSum` = maximum sum for paths of length `maxLen`
+   - `maxLen` = maximum depth seen so far
+   - `maxSum` = maximum sum for paths of length `maxLen`
+
 2. Define helper `void dfs(Node* node, int curLen, int curSum)`:
 
-   * If `node == nullptr`:
+   - If `node == nullptr`:
 
-     * If `curLen > maxLen`, update `maxLen = curLen`, `maxSum = curSum`.
-     * Else if `curLen == maxLen`, `maxSum = max(maxSum, curSum)`.
-     * Return.
-   * Recurse on `node->left` with `(curLen+1, curSum + node->data)`.
-   * Recurse on `node->right` with `(curLen+1, curSum + node->data)`.
+     - If `curLen > maxLen`, update `maxLen = curLen`, `maxSum = curSum`.
+     - Else if `curLen == maxLen`, `maxSum = max(maxSum, curSum)`.
+     - Return.
+
+   - Recurse on `node->left` with `(curLen+1, curSum + node->data)`.
+   - Recurse on `node->right` with `(curLen+1, curSum + node->data)`.
+
 3. Call `dfs(root, 0, 0)` and return `maxSum`.
 
 ```cpp
@@ -167,31 +180,29 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** 🟢 O(N)
-* **Auxiliary Space:** 🔸 O(H) (recursion depth)
+- **Time:** 🟢 O(N)
+- **Auxiliary Space:** 🔸 O(H) (recursion depth)
 
 ### ✅ **Why This Approach?**
 
-* Simple to implement and reason about.
-* Directly tracks global best without packing/unpacking pairs.
+- Simple to implement and reason about.
+- Directly tracks global best without packing/unpacking pairs.
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                   | ⏱️ **Time** | 🗂️ **Auxiliary Space** | ✅ **Pros**                                  | ⚠️ **Cons**                                  |
-| ------------------------------ | ----------- | ----------------------- | ------------------------------------------- | -------------------------------------------- |
-| 🔁 DFS Returning Pair          | 🟢 O(N)     | 🟢 O(H)                 | Pure functional, no globals                 | Slightly more code to return and unpack pair |
-| ▶️ Recursive with Global State | 🟢 O(N)     | 🔸 O(H)                 | Very straightforward, minimal return values | Uses mutable global variables                |
+| **Approach**                   | ⏱️ **Time** | 🗂️ **Auxiliary Space** | ✅ **Pros**                                 | ⚠️ **Cons**                                  |
+| ------------------------------ | ----------- | ---------------------- | ------------------------------------------- | -------------------------------------------- |
+| 🔁 DFS Returning Pair          | 🟢 O(N)     | 🟢 O(H)                | Pure functional, no globals                 | Slightly more code to return and unpack pair |
+| ▶️ Recursive with Global State | 🟢 O(N)     | 🔸 O(H)                | Very straightforward, minimal return values | Uses mutable global variables                |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                          | **Recommended Approach**  |
-| ------------------------------------- | ------------------------- |
-| 🏆 Clean, side-effect-free logic      | 🥇 DFS Returning Pair     |
+| **Scenario**                           | **Recommended Approach**  |
+| -------------------------------------- | ------------------------- |
+| 🏆 Clean, side-effect-free logic       | 🥇 DFS Returning Pair     |
 | ⚡️ Quick implementation & readability | 🥈 Recursive with Globals |
 
 </details>
-
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -210,7 +221,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -233,12 +243,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

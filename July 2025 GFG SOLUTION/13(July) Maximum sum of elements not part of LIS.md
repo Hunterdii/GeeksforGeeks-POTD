@@ -1,12 +1,21 @@
 ---
 title: "📉 Maximum Sum of Elements Not Part of LIS | GFG Solution 🔍"
-keywords🏷️: ["📉 longest increasing subsequence", "🔍 binary search", "📍 dynamic programming", "📈 LIS", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "📉 longest increasing subsequence",
+    "🔍 binary search",
+    "📍 dynamic programming",
+    "📈 LIS",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Maximum Sum of Elements Not Part of LIS problem: find maximum sum of elements not in the Longest Increasing Subsequence using binary search optimization. 🚀"
 date: 📅 2025-07-13
 ---
 
-# *13. Maximum Sum of Elements Not Part of LIS*
+# _13. Maximum Sum of Elements Not Part of LIS_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/maximum-sum-of-elements-not-part-of-lis/1)
 
@@ -23,7 +32,7 @@ The approach is to find the LIS with minimum sum among all possible LIS of maxim
 ```cpp
 Input: arr[] = [4, 6, 1, 2, 3, 8]
 Output: 10
-Explanation: The LIS could be [1, 2, 3, 8] with sum 14. 
+Explanation: The LIS could be [1, 2, 3, 8] with sum 14.
 The elements not in LIS are [4, 6] with sum 10.
 Total sum = 24, LIS sum = 14, so answer = 24 - 14 = 10.
 ```
@@ -40,8 +49,8 @@ Total sum = 15, LIS sum = 1, so answer = 15 - 1 = 14.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^3$
-* $1 \le \text{arr}[i] \le 10^5$
+- $1 \le \text{arr.size()} \le 10^3$
+- $1 \le \text{arr}[i] \le 10^5$
 
 ## **✅ My Approach**
 
@@ -50,26 +59,29 @@ The optimal approach uses **Binary Search** to efficiently construct the LIS whi
 ### **Binary Search + Cumulative Sum Tracking**
 
 1. **Initialize Data Structures:**
-   * `dp` vector to store the LIS using binary search technique
-   * `sums` vector to track cumulative sums corresponding to each LIS length
-   * Calculate total sum of the array
+
+   - `dp` vector to store the LIS using binary search technique
+   - `sums` vector to track cumulative sums corresponding to each LIS length
+   - Calculate total sum of the array
 
 2. **Process Each Element:**
-   * For each element `x` in the array, find its position in the current LIS using `lower_bound`
-   * This gives us the position where `x` should be placed to maintain the increasing property
+
+   - For each element `x` in the array, find its position in the current LIS using `lower_bound`
+   - This gives us the position where `x` should be placed to maintain the increasing property
 
 3. **Update LIS and Sums:**
-   * If `x` extends the LIS (position equals current LIS length), append it to both `dp` and `sums`
-   * Otherwise, replace the element at the found position and update the corresponding cumulative sum
+
+   - If `x` extends the LIS (position equals current LIS length), append it to both `dp` and `sums`
+   - Otherwise, replace the element at the found position and update the corresponding cumulative sum
 
 4. **Calculate Result:**
-   * The answer is `total_sum - minimum_LIS_sum`
-   * The minimum LIS sum is stored in `sums.back()` after processing all elements
+   - The answer is `total_sum - minimum_LIS_sum`
+   - The minimum LIS sum is stored in `sums.back()` after processing all elements
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log n), where n is the size of the array. Each element requires a binary search operation which takes O(log n) time, and we process n elements.
-* **Expected Auxiliary Space Complexity:** O(n), where n is the size of the array. We use additional space for the `dp` and `sums` vectors, each of which can grow up to size n in the worst case.
+- **Expected Time Complexity:** O(n log n), where n is the size of the array. Each element requires a binary search operation which takes O(log n) time, and we process n elements.
+- **Expected Auxiliary Space Complexity:** O(n), where n is the size of the array. We use additional space for the `dp` and `sums` vectors, each of which can grow up to size n in the worst case.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -131,14 +143,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n) - for tails array
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n) - for tails array
 
 ### ✅ **Why This Approach?**
 
-* Reduced memory footprint
-* Incremental sum calculation
-* Efficient for large arrays
+- Reduced memory footprint
+- Incremental sum calculation
+- Efficient for large arrays
 
 ## 📊 **3️⃣ Dynamic Programming Approach**
 
@@ -181,14 +193,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n²)
-* **Auxiliary Space:** 💾 O(n) - for DP array
+- **Time:** ⏱️ O(n²)
+- **Auxiliary Space:** 💾 O(n) - for DP array
 
 ### ✅ **Why This Approach?**
 
-* Handles duplicate values efficiently
-* Clear DP state transitions
-* Good for educational purposes
+- Handles duplicate values efficiently
+- Clear DP state transitions
+- Good for educational purposes
 
 ## 📊 **4️⃣ Coordinate Compression with Binary Search**
 
@@ -226,32 +238,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n) - for coordinate arrays
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n) - for coordinate arrays
 
 ### ✅ **Why This Approach?**
 
-* Optimal time complexity
-* Efficient range queries
-* Scalable for large inputs
+- Optimal time complexity
+- Efficient range queries
+- Scalable for large inputs
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Binary Search LIS**          | 🟢 O(n log n)         | 🟡 O(n)                 | 🚀 Optimal and simple            | 💾 Requires auxiliary arrays         |
-| 🔺 **Early Termination**          | 🟢 O(n log n)         | 🟢 O(n)                 | 🔧 Clean implementation          | 💾 Similar to main approach           |
-| ⏰ **Dynamic Programming**        | 🟡 O(n²)              | 🟡 O(n)                 | 🚀 Handles edge cases well       | 🔄 Higher time complexity             |
-| 📊 **Coordinate Compression**     | 🟢 O(n log n)         | 🟡 O(n)                 | ⚡ Efficient for large values     | 🔧 Extra preprocessing overhead       |
+| 🚀 **Approach**               | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**                     |
+| ----------------------------- | ---------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| 🔍 **Binary Search LIS**      | 🟢 O(n log n)          | 🟡 O(n)                 | 🚀 Optimal and simple         | 💾 Requires auxiliary arrays    |
+| 🔺 **Early Termination**      | 🟢 O(n log n)          | 🟢 O(n)                 | 🔧 Clean implementation       | 💾 Similar to main approach     |
+| ⏰ **Dynamic Programming**    | 🟡 O(n²)               | 🟡 O(n)                 | 🚀 Handles edge cases well    | 🔄 Higher time complexity       |
+| 📊 **Coordinate Compression** | 🟢 O(n log n)          | 🟡 O(n)                 | ⚡ Efficient for large values | 🔧 Extra preprocessing overhead |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **General purpose**                             | 🥇 **Binary Search LIS**             | ★★★★★                     |
-| 📊 **Clean implementation**                       | 🥈 **Early Termination**             | ★★★★☆                     |
-| 🎯 **Small arrays with complex logic**            | 🥉 **Dynamic Programming**           | ★★★☆☆                     |
-| 🚀 **Competitive programming**                    | 🏅 **Coordinate Compression**        | ★★★★★                     |
+| 🎯 **Scenario**                        | 🎖️ **Recommended Approach**   | 🔥 **Performance Rating** |
+| -------------------------------------- | ----------------------------- | ------------------------- |
+| ⚡ **General purpose**                 | 🥇 **Binary Search LIS**      | ★★★★★                     |
+| 📊 **Clean implementation**            | 🥈 **Early Termination**      | ★★★★☆                     |
+| 🎯 **Small arrays with complex logic** | 🥉 **Dynamic Programming**    | ★★★☆☆                     |
+| 🚀 **Competitive programming**         | 🏅 **Coordinate Compression** | ★★★★★                     |
 
 </details>
 
@@ -311,5 +323,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

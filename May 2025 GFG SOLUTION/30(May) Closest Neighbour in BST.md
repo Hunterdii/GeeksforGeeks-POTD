@@ -1,13 +1,22 @@
 ---
 title: "🌳 Closest Neighbour in BST | GFG Solution 🧠"
-keywords🏷️: ["🧩 binary search tree", "🌲 BST", "🤝 closest neighbour", "📉 floor value", "🔍 binary search", "📘 GFG", "🎯 coding interview", "📚 DSA"]
+keywords🏷️:
+  [
+    "🧩 binary search tree",
+    "🌲 BST",
+    "🤝 closest neighbour",
+    "📉 floor value",
+    "🔍 binary search",
+    "📘 GFG",
+    "🎯 coding interview",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Closest Neighbour in BST problem: find the greatest value ≤ k using BST properties. 🚀"
 date: 📅 2025-05-30
 ---
 
-
-# *30. Closest Neighbour in BST*
+# _30. Closest Neighbour in BST_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/closest-neighbor-in-bst/1)
 
@@ -15,10 +24,10 @@ The problem can be found at the following link: 🔗 [Question Link](https://www
 
 Given the root of a Binary Search Tree and a value `k`, find the **greatest node value** in the tree that is **less than or equal to** `k`. If no such node exists, return `-1`.
 
-
 ## **📘 Examples**
 
 ### Example 1
+
 ```
 
 Input: root = [10,7,15,2,8,11,16], k = 14
@@ -33,6 +42,7 @@ Explanation: The greatest element ≤ 14 is 11.
 ```
 
 ### Example 2
+
 ```
 
 Input: root = [5,2,12,1,3,9,21,null,null,null,null,null,null,19,25], k = 24
@@ -47,6 +57,7 @@ Explanation: The greatest element ≤ 24 is 21.
 ```
 
 ### Example 3
+
 ```
 
 Input: root = [5,2,12,1,3,9,21,null,null,null,null,null,null,19,25], k = 4
@@ -58,38 +69,34 @@ Input: root = [5,2,12,1,3,9,21,null,null,null,null,null,null,19,25], k = 4
 Output: 3
 Explanation: The greatest element ≤ 4 is 3.
 
-````
-
+```
 
 ## **🔒 Constraints**
 
-* Number of nodes \(N\): $\(1 \le N \le 10^5\)$  
-* Node values and \(k\): $\(1 \le \text{data}, k \le 10^5\)$  
-* All node values are **unique**  
-
+- Number of nodes \(N\): $\(1 \le N \le 10^5\)$
+- Node values and \(k\): $\(1 \le \text{data}, k \le 10^5\)$
+- All node values are **unique**
 
 ## **✅ My Approach**
 
 ### **Iterative BST Floor Search**
 
-1. **Idea:**  
-   * Leverage BST property: left subtree < node < right subtree.  
-   * Keep a variable `res = -1`.  
-   * Start at the root and traverse:
+1. **Idea:**
+   - Leverage BST property: left subtree < node < right subtree.
+   - Keep a variable `res = -1`.
+   - Start at the root and traverse:
      - If `node->data == k`, it's the best possible floor → return `k`.
      - If `node->data < k`, record `res = node->data` and move **right** to look for a closer larger value ≤ k.
      - If `node->data > k`, move **left** to find smaller values.
-2. **Why It Works:**  
-   * Each step eliminates half of the tree, guaranteeing we never miss a closer candidate.
-3. **Answer:**  
-   * After the loop, `res` holds the greatest value ≤ k, or `-1` if none found.
-
+2. **Why It Works:**
+   - Each step eliminates half of the tree, guaranteeing we never miss a closer candidate.
+3. **Answer:**
+   - After the loop, `res` holds the greatest value ≤ k, or `-1` if none found.
 
 ## 📝 **Expected Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(H), where H = height of the tree, since we traverse at most one path down the BST.  
-* **Expected Auxiliary Space Complexity:** O(1), as only a few variables are used.
-
+- **Expected Time Complexity:** O(H), where H = height of the tree, since we traverse at most one path down the BST.
+- **Expected Auxiliary Space Complexity:** O(1), as only a few variables are used.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -110,11 +117,10 @@ class Solution {
         return res;
     }
 };
-````
+```
 
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ Recursive DFS**
 
@@ -128,6 +134,7 @@ class Solution {
    int x = findMaxFork(root->right, k);
    return (x == -1 ? root->data : x);
    ```
+
 4. Else (value > k), search **left** subtree.
 
 ```cpp
@@ -147,14 +154,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** 🟢 O(H)
-* **Auxiliary Space:** 🔸 O(H) due to recursion stack
+- **Time:** 🟢 O(H)
+- **Auxiliary Space:** 🔸 O(H) due to recursion stack
 
 ### ✅ **Why This Approach?**
 
-* Very concise and mirrors the BST property naturally.
-* Easy to implement if recursion is preferred.
-
+- Very concise and mirrors the BST property naturally.
+- Easy to implement if recursion is preferred.
 
 ## 📊 **3️⃣ In-order Traversal with Early Exit**
 
@@ -163,9 +169,10 @@ class Solution {
 1. Initialize `res = -1`.
 2. Perform **in-order** (sorted) traversal:
 
-   * Recurse on left child.
-   * If `node->data > k`, **stop** traversal (all further nodes are larger).
-   * Else update `res = node->data` and recurse on right child.
+   - Recurse on left child.
+   - If `node->data > k`, **stop** traversal (all further nodes are larger).
+   - Else update `res = node->data` and recurse on right child.
+
 3. Return `res`.
 
 ```cpp
@@ -189,33 +196,31 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** 🟡 O(N) worst-case (skewed BST)
-* **Auxiliary Space:** 🔸 O(H)
+- **Time:** 🟡 O(N) worst-case (skewed BST)
+- **Auxiliary Space:** 🔸 O(H)
 
 ### ✅ **Why This Approach?**
 
-* Utilizes sorted nature to stop early once values exceed `k`.
-* Useful if you also need an ordered list of all values ≤ k.
-
+- Utilizes sorted nature to stop early once values exceed `k`.
+- Useful if you also need an ordered list of all values ≤ k.
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**             | ⏱️ **Time**   | 🗂️ **Auxiliary Space** | ✅ **Pros**                          | ⚠️ **Cons**                        |
-| ------------------------ | ------------- | ----------------------- | ----------------------------------- | ---------------------------------- |
-| 🔁 Iterative Traversal   | 🟢 O(H)       | 🟢 O(1)                 | Stack-safe, minimal memory          | —                                  |
-| 🧠 Recursive DFS         | 🟢 O(H)       | 🔸 O(H)                 | Clear recursive logic               | Recursion depth risk               |
-| 📋 In-order + Early Exit | 🟡 O(N) worst | 🔸 O(H)                 | Leverages sorted order, early break | May traverse many nodes if k large |
+| **Approach**             | ⏱️ **Time**   | 🗂️ **Auxiliary Space** | ✅ **Pros**                         | ⚠️ **Cons**                        |
+| ------------------------ | ------------- | ---------------------- | ----------------------------------- | ---------------------------------- |
+| 🔁 Iterative Traversal   | 🟢 O(H)       | 🟢 O(1)                | Stack-safe, minimal memory          | —                                  |
+| 🧠 Recursive DFS         | 🟢 O(H)       | 🔸 O(H)                | Clear recursive logic               | Recursion depth risk               |
+| 📋 In-order + Early Exit | 🟡 O(N) worst | 🔸 O(H)                | Leverages sorted order, early break | May traverse many nodes if k large |
 
 ### ✅ **Best Choice?**
 
 | **Scenario**                      | **Recommended Approach** |
 | --------------------------------- | ------------------------ |
-| ⚡ Performance & minimal memory    | 🥇 Iterative Traversal   |
+| ⚡ Performance & minimal memory   | 🥇 Iterative Traversal   |
 | 🧵 Clear, direct BST logic        | 🥈 Recursive DFS         |
 | 📋 Need sorted list of ≤ k values | 🥉 In-order Traversal    |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -237,7 +242,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -255,7 +259,6 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -269,6 +272,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-

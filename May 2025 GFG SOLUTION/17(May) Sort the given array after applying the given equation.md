@@ -1,15 +1,11 @@
-
-# *17. Sort the given array after applying the given equation*
-
+# _17. Sort the given array after applying the given equation_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/sort-the-given-array-after-applying-the-given-equation0304/1)
-
 
 ## **🧩 Problem Description**
 
 Given a sorted array `arr[]` in ascending order and integers `A`, `B`, and `C`, apply the quadratic transformation `f(x) = A·x² + B·x + C` to each element of the array.
 Then return the transformed array in sorted order.
-
 
 ## **📘 Examples**
 
@@ -29,7 +25,6 @@ Transformed values: `[9, 3, 5, 15, 33]`
 
 Sorted: `[3, 5, 9, 15, 33]`
 
-
 ### **Example 2:**
 
 **Input:**
@@ -44,11 +39,10 @@ Sorted: `[3, 5, 9, 15, 33]`
 Transformed values: `[-9, -1, -4, -16]`
 Sorted: `[-16, -9, -4, -1]`
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq \text{arr.size()} \leq 10^6\$
-* \$-10^3 \leq \text{arr}\[i], A, B, C \leq 10^3\$
+- \$1 \leq \text{arr.size()} \leq 10^6\$
+- \$-10^3 \leq \text{arr}\[i], A, B, C \leq 10^3\$
 
 ## **✅ My Approach**
 
@@ -56,8 +50,8 @@ Sorted: `[-16, -9, -4, -1]`
 
 We take advantage of the original array being sorted and the fact that a quadratic function opens upwards (when `A > 0`) or downwards (when `A < 0`). The key observation is that:
 
-* For `A >= 0`: Largest transformed values appear at both ends of the original array.
-* For `A < 0`: Smallest transformed values appear at both ends.
+- For `A >= 0`: Largest transformed values appear at both ends of the original array.
+- For `A < 0`: Smallest transformed values appear at both ends.
 
 We use two pointers from left and right, and fill the result from either start or end depending on the sign of `A`.
 
@@ -67,15 +61,15 @@ We use two pointers from left and right, and fill the result from either start o
 2. Use two pointers: `l` at start and `r` at end of the array.
 3. Maintain an index `i` that fills the result:
 
-   * From end if `A >= 0` (placing larger values last).
-   * From start if `A < 0` (placing smaller values first).
-4. Compare `f(arr[l])` and `f(arr[r])`, and insert the appropriate value into result.
+   - From end if `A >= 0` (placing larger values last).
+   - From start if `A < 0` (placing smaller values first).
 
+4. Compare `f(arr[l])` and `f(arr[r])`, and insert the appropriate value into result.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. We process each element once in a linear two-pointer sweep.
-* **Expected Auxiliary Space Complexity:** O(n), as we use a new result array to store the transformed elements.
+- **Expected Time Complexity:** O(n), where n is the size of the array. We process each element once in a linear two-pointer sweep.
+- **Expected Auxiliary Space Complexity:** O(n), as we use a new result array to store the transformed elements.
 
 ## **🧠 Code (C++)**
 
@@ -124,15 +118,14 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Straightforward and easy to implement.
+- Straightforward and easy to implement.
 
 #### 📝 **Complexity Analysis**
 
-* **Time:** 🔸 O(n log n) (due to sort)
-* **Auxiliary Space:** 🟢 O(n)
+- **Time:** 🔸 O(n log n) (due to sort)
+- **Auxiliary Space:** 🟢 O(n)
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -186,12 +179,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

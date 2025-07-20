@@ -1,12 +1,21 @@
 ---
 title: "🌸 Max Min Height | GFG Solution 💧"
-keywords🏷️: ["🌸 max min height", "💧 flower watering", "🔍 binary search", "📈 greedy algorithm", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🌸 max min height",
+    "💧 flower watering",
+    "🔍 binary search",
+    "📈 greedy algorithm",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Max Min Height problem: maximize minimum flower height after k days of watering using binary search and greedy strategy. 🚀"
 date: 📅 2025-06-30
 ---
 
-# *30. Max Min Height*
+# _30. Max Min Height_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/max-min-height--170647/1)
 
@@ -38,10 +47,10 @@ Day 5: Water the second flower -> arr becomes [9, 9]
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $1 \le w \le \text{arr.size()}$
-* $1 \le k \le 10^5$
-* $1 \le \text{arr}[i] \le 10^9$
+- $1 \le \text{arr.size()} \le 10^5$
+- $1 \le w \le \text{arr.size()}$
+- $1 \le k \le 10^5$
+- $1 \le \text{arr}[i] \le 10^9$
 
 ## **✅ My Approach**
 
@@ -50,29 +59,32 @@ The optimal approach uses **Binary Search on Answer** combined with a **Greedy W
 ### **Binary Search + Greedy Validation**
 
 1. **Binary Search Setup:**
-   * Search space: `[min(arr), min(arr) + k]`
-   * For each candidate minimum height, check if it's achievable with k days
+
+   - Search space: `[min(arr), min(arr) + k]`
+   - For each candidate minimum height, check if it's achievable with k days
 
 2. **Greedy Validation Strategy:**
-   * Use a sliding window approach to simulate watering effects
-   * Track cumulative water added using a frequency array
-   * When a flower's height is below target, greedily add water to achieve the target
-   * Early termination if we exceed k days
+
+   - Use a sliding window approach to simulate watering effects
+   - Track cumulative water added using a frequency array
+   - When a flower's height is below target, greedily add water to achieve the target
+   - Early termination if we exceed k days
 
 3. **Sliding Window Optimization:**
-   * Maintain running sum of water effects within window w
-   * Efficiently calculate current height by adding/removing window effects
-   * Use prefix sum technique for optimal performance
+
+   - Maintain running sum of water effects within window w
+   - Efficiently calculate current height by adding/removing window effects
+   - Use prefix sum technique for optimal performance
 
 4. **Maximize the Answer:**
-   * If current target is achievable, try a higher target
-   * If not achievable, reduce the target
-   * Return the maximum achievable minimum height
+   - If current target is achievable, try a higher target
+   - If not achievable, reduce the target
+   - Return the maximum achievable minimum height
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log k), where n is the array size and k is the number of days. Binary search takes O(log k) iterations, and each validation takes O(n) time to simulate the watering process.
-* **Expected Auxiliary Space Complexity:** O(n), as we use an auxiliary array to track the cumulative watering effects for each position in the garden.
+- **Expected Time Complexity:** O(n log k), where n is the array size and k is the number of days. Binary search takes O(log k) iterations, and each validation takes O(n) time to simulate the watering process.
+- **Expected Auxiliary Space Complexity:** O(n), as we use an auxiliary array to track the cumulative watering effects for each position in the garden.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -95,7 +107,7 @@ public:
         }
         return true;
     }
-    
+
     int maxMinHeight(vector<int> &arr, int k, int w) {
         int n = arr.size();
         int low = arr[0];
@@ -135,10 +147,10 @@ public:
         int n = arr.size();
         vector<int> added(n, 0);
         int windowSum = 0;
-        
+
         for (int i = 0; i < n; i++) {
             if (i >= w) windowSum -= added[i - w];
-            
+
             int currentHeight = arr[i] + windowSum;
             if (currentHeight < target) {
                 int need = target - currentHeight;
@@ -150,11 +162,11 @@ public:
         }
         return true;
     }
-    
+
     int maxMinHeight(vector<int>& arr, int k, int w) {
         int minVal = *min_element(arr.begin(), arr.end());
         int left = minVal, right = minVal + k, result = minVal;
-        
+
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (canAchieve(arr, k, w, mid)) {
@@ -171,14 +183,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log k)
-* **Auxiliary Space:** 💾 O(n) - For tracking water added
+- **Time:** ⏱️ O(n log k)
+- **Auxiliary Space:** 💾 O(n) - For tracking water added
 
 ### ✅ **Why This Approach?**
 
-* Uses STL min_element for cleaner code.
-* Optimized sliding window implementation.
-* Better variable naming for clarity.
+- Uses STL min_element for cleaner code.
+- Optimized sliding window implementation.
+- Better variable naming for clarity.
 
 ## 📊 **3️⃣ Greedy with Prefix Sum Optimization**
 
@@ -195,7 +207,7 @@ public:
         int n = heights.size();
         vector<long long> water(n + range, 0);
         long long used = 0;
-        
+
         for (int i = 0; i < n; i++) {
             long long current = heights[i] + water[i];
             if (current < minHeight) {
@@ -209,12 +221,12 @@ public:
         }
         return true;
     }
-    
+
     int maxMinHeight(vector<int>& arr, int k, int w) {
         int low = *min_element(arr.begin(), arr.end());
         int high = low + k;
         int answer = low;
-        
+
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (solve(arr, k, w, mid)) {
@@ -231,30 +243,30 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log k)
-* **Auxiliary Space:** 💾 O(n + w)
+- **Time:** ⏱️ O(n log k)
+- **Auxiliary Space:** 💾 O(n + w)
 
 ### ✅ **Why This Approach?**
 
-* Handles large numbers with long long.
-* Efficient prefix sum technique.
-* Optimized memory allocation.
+- Handles large numbers with long long.
+- Efficient prefix sum technique.
+- Optimized memory allocation.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                          | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Binary Search + Frequency Array**   | 🟢 O(n log k)          | 🟢 O(n)                 | ⚡ Simple implementation          | 🧮 Multiple array operations         |
-| 🔄 **Sliding Window**                   | 🟢 O(n log k)          | 🟢 O(n)                 | 🔧 Optimized window tracking     | 💾 Similar space complexity         |
-| 🔺 **Prefix Sum**                       | 🟢 O(n log k)          | 🟡 O(n + w)             | 🚀 Handles overflow, efficient   | 💾 Extra space for range           |
+| 🚀 **Approach**                        | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**                  |
+| -------------------------------------- | ---------------------- | ----------------------- | ------------------------------ | ---------------------------- |
+| 🔍 **Binary Search + Frequency Array** | 🟢 O(n log k)          | 🟢 O(n)                 | ⚡ Simple implementation       | 🧮 Multiple array operations |
+| 🔄 **Sliding Window**                  | 🟢 O(n log k)          | 🟢 O(n)                 | 🔧 Optimized window tracking   | 💾 Similar space complexity  |
+| 🔺 **Prefix Sum**                      | 🟢 O(n log k)          | 🟡 O(n + w)             | 🚀 Handles overflow, efficient | 💾 Extra space for range     |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**              | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ----------------------------------------- | ------------------------- |
-| ⚡ Competitive programming, simple implementation  | 🥇 **Binary Search + Frequency Array**   | ★★★★★                     |
-| 🔧 Production code, optimized window operations   | 🥈 **Sliding Window**                    | ★★★★☆                     |
-| 📊 Large numbers, overflow concerns               | 🥉 **Prefix Sum**                        | ★★★★☆                     |
+| 🎯 **Scenario**                                   | 🎖️ **Recommended Approach**            | 🔥 **Performance Rating** |
+| ------------------------------------------------- | -------------------------------------- | ------------------------- |
+| ⚡ Competitive programming, simple implementation | 🥇 **Binary Search + Frequency Array** | ★★★★★                     |
+| 🔧 Production code, optimized window operations   | 🥈 **Sliding Window**                  | ★★★★☆                     |
+| 📊 Large numbers, overflow concerns               | 🥉 **Prefix Sum**                      | ★★★★☆                     |
 
 </details>
 
@@ -278,7 +290,7 @@ class Solution {
         }
         return true;
     }
-    
+
     public int maxMinHeight(int[] arr, int k, int w) {
         int n = arr.length;
         int low = arr[0];
@@ -320,7 +332,7 @@ class Solution:
                 if k < 0:
                     return False
         return True
-    
+
     def maxMinHeight(self, arr, k, w):
         n = len(arr)
         low = min(arr)
@@ -349,5 +361,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

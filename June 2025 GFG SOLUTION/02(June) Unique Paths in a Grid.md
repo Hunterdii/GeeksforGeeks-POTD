@@ -1,12 +1,22 @@
 ---
 title: "🚶 Unique Paths in a Grid | GFG Solution 🚧"
-keywords🏷️: ["🚶 unique paths", "📊 dynamic programming", "🔄 DP", "📈 grid traversal", "📘 GFG", "🧩 obstacle grid", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🚶 unique paths",
+    "📊 dynamic programming",
+    "🔄 DP",
+    "📈 grid traversal",
+    "📘 GFG",
+    "🧩 obstacle grid",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Unique Paths in a Grid problem: count ways to traverse a grid with obstacles using optimized DP."
 date: 📅 2025-06-02
 ---
 
-# *02. Unique Paths in a Grid*
+# _02. Unique Paths in a Grid_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1)
 
@@ -14,14 +24,13 @@ The problem can be found at the following link: 🔗 [Question Link](https://www
 
 You are given a 2D list `grid[][]` of size `n × m` consisting of values `0` and `1`.
 
-* A value of `0` means that you can enter that cell.
-* A value of `1` implies that entry to that cell is not allowed (an obstacle).
+- A value of `0` means that you can enter that cell.
+- A value of `1` implies that entry to that cell is not allowed (an obstacle).
 
 You start at the upper-left corner of the grid `(1, 1)` and you have to reach the bottom-right corner `(n, m)` by moving only **right** or **down** at each step.
 Your task is to calculate the total number of ways to reach the target.
 
 **Note:** The first `(1, 1)` and last `(n, m)` cells of the grid can also be `1`. It is guaranteed that the total number of ways will fit within a 32-bit integer.
-
 
 ## **📘 Examples**
 
@@ -57,13 +66,11 @@ Explanation:
 The start cell (1,1) is blocked by an obstacle (value = 1), so no path exists.
 ```
 
-
 ## **🔒 Constraints**
 
-* $1 \le n \times m \le 10^6$
-* Each `grid[i][j]` is either `0` or `1`.
-* The result will fit in a 32-bit integer.
-
+- $1 \le n \times m \le 10^6$
+- Each `grid[i][j]` is either `0` or `1`.
+- The result will fit in a 32-bit integer.
 
 ## **✅ My Approach**
 
@@ -71,12 +78,13 @@ We use **dynamic programming** with a **1D rolling array** to count the number o
 
 ### **💡 Idea:**
 
-* Let `dp[j]` represent the number of ways to reach cell `(i, j)` in the current row `i`.
-* We iterate row by row. For each cell:
+- Let `dp[j]` represent the number of ways to reach cell `(i, j)` in the current row `i`.
+- We iterate row by row. For each cell:
 
   1. If `grid[i][j] == 1` (obstacle), set `dp[j] = 0` (no way).
   2. Else, if `j > 0`, add `dp[j - 1]` (ways from the left) to `dp[j]` (which already holds ways from above).
-* Initialize `dp[0]` as `1` if `grid[0][0] == 0`, else `0`.
+
+- Initialize `dp[0]` as `1` if `grid[0][0] == 0`, else `0`.
 
 This effectively uses the previous row’s `dp[j]` values (ways from above) and the current row’s left neighbor `dp[j - 1]` (ways from left).
 
@@ -86,22 +94,22 @@ This effectively uses the previous row’s `dp[j]` values (ways from above) and 
 2. If `grid[0][0] == 0`, set `dp[0] = 1`; otherwise `dp[0] = 0`.
 3. For each row `i` from `0` to `r - 1`:
 
-   * For each column `j` from `0` to `c - 1`:
+   - For each column `j` from `0` to `c - 1`:
 
      1. If `grid[i][j] == 1`:
 
-        * `dp[j] = 0` (no paths through an obstacle).
+        - `dp[j] = 0` (no paths through an obstacle).
+
      2. Else if `j > 0`:
 
-        * `dp[j] += dp[j - 1]` (add ways from the left).
-4. At the end, `dp[c - 1]` holds the number of ways to reach `(r - 1, c - 1)`.
+        - `dp[j] += dp[j - 1]` (add ways from the left).
 
+4. At the end, `dp[c - 1]` holds the number of ways to reach `(r - 1, c - 1)`.
 
 ## 📝 **Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n × m), as we process each of the $n \times m$ cells exactly once.
-* **Expected Auxiliary Space Complexity:** O(m), since we use a single array of size `m` for DP.
-
+- **Expected Time Complexity:** O(n × m), as we process each of the $n \times m$ cells exactly once.
+- **Expected Auxiliary Space Complexity:** O(m), since we use a single array of size `m` for DP.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -123,7 +131,6 @@ class Solution {
 
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ 2D Dynamic Programming (Tabulation)**
 
@@ -156,17 +163,15 @@ class Solution {
 };
 ```
 
-
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(m × n)
-* **Auxiliary Space:** 💾 O(m × n)
+- **Time:** ⏱️ O(m × n)
+- **Auxiliary Space:** 💾 O(m × n)
 
 ### ✅ **Why This Approach?**
 
-* Simple and straightforward.
-* Useful when readability is more important than space optimization.
-
+- Simple and straightforward.
+- Useful when readability is more important than space optimization.
 
 ## 📊 **3️⃣ In-Place Grid Modification**
 
@@ -199,17 +204,15 @@ class Solution {
 };
 ```
 
-
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(m × n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(m × n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* No extra space is needed.
-* Best when modifying the input grid is allowed.
-
+- No extra space is needed.
+- Best when modifying the input grid is allowed.
 
 ## 📊 **4️⃣ Top-Down Recursion with Memoization**
 
@@ -220,9 +223,10 @@ Use recursion to explore paths from `(0,0)` to `(r-1,c-1)` and store results in 
 1. Use a 2D memo array initialized with -1.
 2. Define recursive `dfs(i, j)` that:
 
-   * Returns 0 if out of bounds or on an obstacle.
-   * Returns 1 if at the start (0,0).
-   * Otherwise returns sum of `dfs(i-1, j)` and `dfs(i, j-1)`.
+   - Returns 0 if out of bounds or on an obstacle.
+   - Returns 1 if at the start (0,0).
+   - Otherwise returns sum of `dfs(i-1, j)` and `dfs(i, j-1)`.
+
 3. Cache results to avoid recomputation.
 4. Call `dfs(r-1, c-1)`.
 
@@ -251,42 +255,35 @@ class Solution {
 };
 ```
 
-
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(m × n)
-* **Auxiliary Space:** O(m × n) memo + O(m+n) recursion stack
-
+- **Time:** ⏱️ O(m × n)
+- **Auxiliary Space:** O(m × n) memo + O(m+n) recursion stack
 
 ### ✅ **Why This Approach?**
 
-* Good for understanding recursion and memoization.
-* Avoids unnecessary computation on blocked paths.
-
-
-
-
+- Good for understanding recursion and memoization.
+- Avoids unnecessary computation on blocked paths.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                             | ⚠️ **Cons**                              |
+| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                            | ⚠️ **Cons**                              |
 | ---------------------------------- | ---------------------- | ----------------------- | -------------------------------------- | ---------------------------------------- |
 | 🔢 **1D DP (Rolling Array)**       | 🟢 O(n × m)            | 🟢 O(m)                 | Space-optimized, easy implementation   | Slightly less intuitive than 2D DP       |
 | 📊 **2D DP (Tabulation)**          | 🟢 O(n × m)            | 🟡 O(n × m)             | Very intuitive, straightforward        | High space usage for large grids         |
-| 🏗️ **In-Place Grid Modification** | 🟢 O(n × m)            | 🟢 O(1)                 | No extra space needed                  | Modifies input grid (side effect)        |
+| 🏗️ **In-Place Grid Modification**  | 🟢 O(n × m)            | 🟢 O(1)                 | No extra space needed                  | Modifies input grid (side effect)        |
 | 🔄 **Top-Down Memoized Recursion** | 🟢 O(n × m)            | 🔴 O(n × m) + recursion | Clear recursion logic with memoization | Extra stack space, overhead of recursion |
 
 ### 🏆 **Best Choice by Scenario**
 
-| 🎯 **Scenario**                                     | 🥇 **Recommended Approach**     |
-| --------------------------------------------------- | ------------------------------- |
-| 🏁 Memory-constrained, large grids                  | 🥇 1D DP Rolling Array          |
-| 💻 Prioritize clarity and debugging                 | 🥈 2D DP Tabulation             |
-| ⚡ Strict space limitation and can modify input grid | 🥉 In-Place Grid Modification   |
-| 🔍 Learning recursion and memoization               | 🎖️ Top-Down Memoized Recursion |
+| 🎯 **Scenario**                                      | 🥇 **Recommended Approach**    |
+| ---------------------------------------------------- | ------------------------------ |
+| 🏁 Memory-constrained, large grids                   | 🥇 1D DP Rolling Array         |
+| 💻 Prioritize clarity and debugging                  | 🥈 2D DP Tabulation            |
+| ⚡ Strict space limitation and can modify input grid | 🥉 In-Place Grid Modification  |
+| 🔍 Learning recursion and memoization                | 🎖️ Top-Down Memoized Recursion |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -304,7 +301,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -336,5 +332,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

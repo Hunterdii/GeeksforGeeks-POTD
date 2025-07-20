@@ -1,54 +1,60 @@
-# *23. Unique Number II*  
+# _23. Unique Number II_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/finding-the-numbers0215/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/finding-the-numbers0215/1)
 
-## **Problem Description**  
+## **Problem Description**
 
-Given an array `arr[]` of size **2*N + 2**, where **2*N** elements appear in pairs and **two elements appear only once**, your task is to find those two **distinct unique numbers** and return them in **increasing order**.  
+Given an array `arr[]` of size **2\*N + 2**, where **2\*N** elements appear in pairs and **two elements appear only once**, your task is to find those two **distinct unique numbers** and return them in **increasing order**.
 
 ## **Examples**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
-`arr[] = [1, 2, 3, 2, 1, 4]`  
+#### **Input:**
 
-#### **Output:**  
+`arr[] = [1, 2, 3, 2, 1, 4]`
+
+#### **Output:**
+
 `[3, 4]`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 3 and 4 occur exactly once in the array. All other elements appear in pairs.
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
-`arr[] = [2, 1, 3, 2]`  
+`arr[] = [2, 1, 3, 2]`
 
-#### **Output:**  
-`[1, 3]`  
+#### **Output:**
 
-#### **Explanation:**  
+`[1, 3]`
+
+#### **Explanation:**
+
 1 and 3 occur only once. 2 appears twice.
 
+### **Example 3:**
 
-### **Example 3:**  
+#### **Input:**
 
-#### **Input:**  
-`arr[] = [2, 1, 3, 3]`  
+`arr[] = [2, 1, 3, 3]`
 
-#### **Output:**  
-`[1, 2]`  
+#### **Output:**
 
-#### **Explanation:**  
+`[1, 2]`
+
+#### **Explanation:**
+
 1 and 2 occur once. 3 appears twice.
 
+### **Constraints:**
 
-### **Constraints:**  
-- $\(2 \leq \text{arr.size()} \leq 10^6\)$  
-- $\(1 \leq \text{arr}[i] \leq 5 \times 10^6\)$  
-- `arr.size()` is even  
-
+- $\(2 \leq \text{arr.size()} \leq 10^6\)$
+- $\(1 \leq \text{arr}[i] \leq 5 \times 10^6\)$
+- `arr.size()` is even
 
 ## **My Approach**
 
@@ -56,17 +62,17 @@ Given an array `arr[]` of size **2*N + 2**, where **2*N** elements appear in pai
 
 This is the most efficient and clever approach using **bit manipulation**.
 
-### **Algorithm Steps:**  
-1. XOR all elements → result is XOR of the two unique numbers: `x = a ^ b`.  
-2. Find the **rightmost set bit** in `x`.  
-3. Partition the array into **two groups** based on this bit.  
-4. XOR each group → you get `a` and `b` separately.  
+### **Algorithm Steps:**
+
+1. XOR all elements → result is XOR of the two unique numbers: `x = a ^ b`.
+2. Find the **rightmost set bit** in `x`.
+3. Partition the array into **two groups** based on this bit.
+4. XOR each group → you get `a` and `b` separately.
 5. Return the numbers in increasing order.
 
+## **Time and Auxiliary Space Complexity**
 
-## **Time and Auxiliary Space Complexity**  
-
-- **Expected Time Complexity:** `O(n)`, as we iterate through the array a constant number of times.  
+- **Expected Time Complexity:** `O(n)`, as we iterate through the array a constant number of times.
 - **Expected Auxiliary Space Complexity:** `O(1)`, as we only use a constant number of variables.
 
 ## **Code (C++)**
@@ -89,6 +95,7 @@ class Solution {
 ## 📊 **2️⃣ Hash Map Frequency Count**
 
 ### **Algorithm Steps:**
+
 1. Traverse the array and count frequencies using a hash map.
 2. Collect the two numbers that appear exactly once.
 
@@ -108,16 +115,18 @@ class Solution {
 ```
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** `O(n log n)` (due to final sorting)
 - **Space Complexity:** `O(n)`
 
 #### ✅ **Why This Approach?**
-Simple and works with generalized inputs — even if frequencies are not exactly two.
 
+Simple and works with generalized inputs — even if frequencies are not exactly two.
 
 ## 📊 **3️⃣ Sorting and Pair Skipping**
 
 ### **Algorithm Steps:**
+
 1. Sort the array.
 2. Compare elements in pairs. Push elements that do not match with their pair.
 
@@ -143,30 +152,29 @@ class Solution {
 ```
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** `O(n log n)`
 - **Space Complexity:** `O(1)` (excluding result storage)
 
 #### ✅ **Why This Approach?**
+
 No extra data structures used beyond sorting. Best when space is limited.
-
-
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**           | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                          | ⚠️ **Cons**                    |
-|------------------------|------------------------|--------------------------|--------------------------------------|-------------------------------|
-| **XOR Partition**      | 🟢 `O(n)`              | 🟢 `O(1)`                | Fastest, elegant, minimal space      | Works only with exactly two unique elements |
-| **Hash Map Frequency** | 🟢 `O(n)`              | 🔴 `O(n)`                | Simple, handles arbitrary frequencies| More memory used              |
-| **Sorting + Pairing**  | 🔴 `O(n log n)`        | 🟢 `O(1)`                | No extra space, good for sorted data | Slower due to sorting         |
-
+| **Approach**           | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                           | ⚠️ **Cons**                                 |
+| ---------------------- | ---------------------- | ----------------------- | ------------------------------------- | ------------------------------------------- |
+| **XOR Partition**      | 🟢 `O(n)`              | 🟢 `O(1)`               | Fastest, elegant, minimal space       | Works only with exactly two unique elements |
+| **Hash Map Frequency** | 🟢 `O(n)`              | 🔴 `O(n)`               | Simple, handles arbitrary frequencies | More memory used                            |
+| **Sorting + Pairing**  | 🔴 `O(n log n)`        | 🟢 `O(1)`               | No extra space, good for sorted data  | Slower due to sorting                       |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                                           | **Recommended Approach**     |
-|--------------------------------------------------------|------------------------------|
-| ✅ **Exactly 2 unique elements, rest in pairs**        | 🥇 **XOR Partition**         |
-| ✅ **Frequencies may vary**                            | 🥈 **Hash Map Frequency**    |
-| ✅ **Limited space, sorting is acceptable**            | 🥉 **Sorting + Pair Check**  |
+| **Scenario**                                    | **Recommended Approach**    |
+| ----------------------------------------------- | --------------------------- |
+| ✅ **Exactly 2 unique elements, rest in pairs** | 🥇 **XOR Partition**        |
+| ✅ **Frequencies may vary**                     | 🥈 **Hash Map Frequency**   |
+| ✅ **Limited space, sorting is acceptable**     | 🥉 **Sorting + Pair Check** |
 
 > 🔹 **Overall Best**: **XOR Partition**, optimal in both time and space.  
 > 🔹 **Best for flexible scenarios**: **Hash Map**.
@@ -212,5 +220,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

@@ -7,7 +7,6 @@ Tags:
 
 # 🚀 _Day 7. Directed Graph Cycle_ 🧠
 
-
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/detect-cycle-in-a-directed-graph)
 
 > Note: Sorry for uploading late, my Final Sem exam is going on.
@@ -17,12 +16,12 @@ The problem can be found at the following link: [Question Link](https://www.geek
 Given a **Directed Graph** with **V** vertices (numbered from 0 to V-1) and **E** edges, determine whether the graph contains any cycle.  
 The graph is represented as a 2D vector `edges[][]`, where each entry `edges[i] = [u, v]` denotes an edge from vertex **u** to **v**.
 
-
 ## 🔍 **Example Walkthrough:**
 
 ### **Example 1:**
 
 #### **Input:**
+
 ```
 V = 4, edges[][] = [[0, 1], [1, 2], [2, 3], [3, 3]]
 ```
@@ -30,17 +29,19 @@ V = 4, edges[][] = [[0, 1], [1, 2], [2, 3], [3, 3]]
 <img src="https://github.com/user-attachments/assets/21442886-5a6a-4278-86ae-bc2b7d397a96" width="40%">
 
 #### **Output:**
+
 ```
 true
 ```
 
 #### **Explanation:**
-There is a self-loop at vertex 3 (3 -> 3) which forms a cycle.
 
+There is a self-loop at vertex 3 (3 -> 3) which forms a cycle.
 
 ### **Example 2:**
 
 #### **Input:**
+
 ```
 V = 3, edges[][] = [[0, 1], [1, 2]]
 ```
@@ -48,31 +49,35 @@ V = 3, edges[][] = [[0, 1], [1, 2]]
 <img src="https://github.com/user-attachments/assets/e029ecbb-377d-4dcb-bf42-01eed3f04149" width="40%">
 
 #### **Output:**
+
 ```
 false
 ```
 
 #### **Explanation:**
-There is no cycle in the graph.
 
+There is no cycle in the graph.
 
 ## 🎯 **My Approach:**
 
 ### **Kahn’s Algorithm (BFS-based Cycle Detection)**
 
-1. **Build the Graph and Compute In-Degrees:**  
+1. **Build the Graph and Compute In-Degrees:**
+
    - Convert the edge list into an adjacency list.
    - Compute the in-degree for each vertex.
 
-2. **Initialize a Queue:**  
+2. **Initialize a Queue:**
+
    - Add all vertices with zero in-degree into a queue.
 
-3. **Process Vertices:**  
+3. **Process Vertices:**
+
    - While the queue is not empty, remove a vertex and decrement the in-degree of its neighbors.
    - If any neighbor’s in-degree becomes zero, add it to the queue.
    - Count the number of vertices processed.
 
-4. **Cycle Check:**  
+4. **Cycle Check:**
    - If the count of processed vertices is not equal to V, a cycle exists.
 
 ## 🕒 **Time and Auxiliary Space Complexity**
@@ -100,7 +105,6 @@ bool isCycle(struct graph *g, int n, int m) {
     return c != n;
 }
 ```
-
 
 ## **Code (C++)**
 
@@ -171,8 +175,6 @@ public:
 
 This DFS-based method is intuitive for cycle detection and often simpler to implement, but may face recursion depth issues for very deep graphs.
 
-
-
 ## 📊 **3️⃣ DFS-Based Cycle Detection (Iterative using Stack)**
 
 #### **Algorithm Steps:**
@@ -229,15 +231,13 @@ public:
 
 It avoids recursion by using an explicit stack, which is useful in environments with limited recursion depth, though the logic can be slightly more complex.
 
-
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                      | ⏱️ **Time Complexity** | 🗂️ **Space Complexity**  | ✅ **Pros**                               | ⚠️ **Cons**                                      |
-|-----------------------------------|-------------------------|---------------------------|--------------------------------------------|--------------------------------------------------|
-| **Kahn’s Algorithm (BFS)**         | 🟢 O(V + E)                | 🟡 O(V + E)                  | Iterative; detects cycles via topological order | Requires extra space for the in-degree array     |
-| **DFS (Recursive)**               | 🟢 O(V + E)                | 🟢 O(V)                      | Simple; intuitive for cycle detection      | Risk of stack overflow on deep graphs            |
-| **DFS (Iterative using Stack)**   | 🟢 O(V + E)                | 🟢 O(V)                      | Avoids recursion; explicit stack control   | Slightly more complex to implement               |
+| **Approach**                    | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                     | ⚠️ **Cons**                                  |
+| ------------------------------- | ---------------------- | ----------------------- | ----------------------------------------------- | -------------------------------------------- |
+| **Kahn’s Algorithm (BFS)**      | 🟢 O(V + E)            | 🟡 O(V + E)             | Iterative; detects cycles via topological order | Requires extra space for the in-degree array |
+| **DFS (Recursive)**             | 🟢 O(V + E)            | 🟢 O(V)                 | Simple; intuitive for cycle detection           | Risk of stack overflow on deep graphs        |
+| **DFS (Iterative using Stack)** | 🟢 O(V + E)            | 🟢 O(V)                 | Avoids recursion; explicit stack control        | Slightly more complex to implement           |
 
 ✅ **Best Choice?**
 
@@ -246,7 +246,6 @@ It avoids recursion by using an explicit stack, which is useful in environments 
 - Use **DFS (Iterative)** in environments where recursion depth is a concern.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -269,7 +268,6 @@ class Solution {
 }
 ```
 
-
 ## **Code (Python)**
 
 ```python
@@ -288,8 +286,6 @@ class Solution:
         return c != V
 ```
 
-
-
 ## 🎯 **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -303,5 +299,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

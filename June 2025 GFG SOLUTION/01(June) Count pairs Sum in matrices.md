@@ -1,22 +1,28 @@
 ---
 title: "➕ Count pairs Sum in matrices | GFG Solution 🧮"
-keywords🏷️: ["🔢 matrix pair sum", "💡 2D array", "🧠 two-pointer", "💥 brute-force", "📈 sorted matrix", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔢 matrix pair sum",
+    "💡 2D array",
+    "🧠 two-pointer",
+    "💥 brute-force",
+    "📈 sorted matrix",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution for counting valid pairs from two matrices such that their sum equals X. Includes optimized two-pointer logic and more. 🚀"
 date: 📅 2025-06-01
 ---
 
-# *01. Count pairs Sum in matrices*
+# _01. Count pairs Sum in matrices_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/count-pairs-sum-in-matrices/1)
-
-
 
 ## **🧩 Problem Description**
 
 Given two matrices `mat1[][]` and `mat2[][]` of size `n x n`, where elements in each matrix are arranged in strictly ascending order (each row is sorted, and the last element of a row is smaller than the first element of the next row). You are given a target value `x`. Count all pairs `{a, b}` such that `a` is from `mat1` and `b` is from `mat2`, and `a + b = x`.
-
-
 
 ## **📘 Examples**
 
@@ -60,16 +66,12 @@ Explanation:
 Pairs summing to 10 are: (4,6), (3,7).
 ```
 
-
-
 ## **🔒 Constraints**
 
-* \$1 \le n \le 100\$
-* \$1 \le \text{mat1}\[i]\[j], ,\text{mat2}\[i]\[j] \le 10^5\$
-* \$1 \le x \le 10^5\$
-* Both matrices are sorted in row-major ascending order (strictly).
-
-
+- \$1 \le n \le 100\$
+- \$1 \le \text{mat1}\[i]\[j], ,\text{mat2}\[i]\[j] \le 10^5\$
+- \$1 \le x \le 10^5\$
+- Both matrices are sorted in row-major ascending order (strictly).
 
 ## **✅ My Approach: Two-Pointer Style Traversal (Optimized)**
 
@@ -81,26 +83,24 @@ We treat both matrices as flattened lists and scan from opposite ends — start 
 
 1. Initialize:
 
-   * Pointer `r1 = 0, c1 = 0` for matrix `a`
-   * Pointer `r2 = n-1, c2 = m-1` for matrix `b`
-   * A `cnt` variable to store valid pair count.
+   - Pointer `r1 = 0, c1 = 0` for matrix `a`
+   - Pointer `r2 = n-1, c2 = m-1` for matrix `b`
+   - A `cnt` variable to store valid pair count.
+
 2. While within bounds:
 
-   * Compute `sum = a[r1][c1] + b[r2][c2]`
-   * If sum matches `x`, increment `cnt`, move both pointers.
-   * If sum < x, move `c1` forward in `a`; if out-of-bounds, reset `c1 = 0`, increment `r1`
-   * If sum > x, move `c2` backward in `b`; if out-of-bounds, reset `c2 = m-1`, decrement `r2`
+   - Compute `sum = a[r1][c1] + b[r2][c2]`
+   - If sum matches `x`, increment `cnt`, move both pointers.
+   - If sum < x, move `c1` forward in `a`; if out-of-bounds, reset `c1 = 0`, increment `r1`
+   - If sum > x, move `c2` backward in `b`; if out-of-bounds, reset `c2 = m-1`, decrement `r2`
+
 3. Stop when either matrix is exhausted.
 4. Return `cnt`
 
-
-
 ## 📝 **Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n²), because in the worst-case each of the `n²` elements in `mat1` and `mat2` is visited once by the two pointers.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of extra space for pointers and counters.
-
-
+- **Expected Time Complexity:** O(n²), because in the worst-case each of the `n²` elements in `mat1` and `mat2` is visited once by the two pointers.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of extra space for pointers and counters.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -122,10 +122,8 @@ class Solution {
 };
 ```
 
-
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ Hash Map (Value Frequency Counter)**
 
@@ -152,16 +150,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n²)
-* **Auxiliary Space:** 💾 O(n²)
+- **Time:** ⏱️ O(n²)
+- **Auxiliary Space:** 💾 O(n²)
 
 ### ✅ **Why This Approach?**
 
-* Efficient for unsorted matrices.
-* Leverages constant-time hashmap lookup.
-
-
-
+- Efficient for unsorted matrices.
+- Leverages constant-time hashmap lookup.
 
 ## 📊 **3️⃣ Sort + Two Pointer on Flattened Grids**
 
@@ -194,13 +189,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n² log n)
-* **Auxiliary Space:** 💾 O(n²)
+- **Time:** ⏱️ O(n² log n)
+- **Auxiliary Space:** 💾 O(n²)
 
 ### ✅ **Why This Approach?**
 
-* Good balance of time and space if flattening is viable.
-* Works when matrix values are disorganized.
+- Good balance of time and space if flattening is viable.
+- Works when matrix values are disorganized.
 
 ## 📊 **4️⃣ Brute Force (Double Nested Loops)**
 
@@ -226,42 +221,41 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n⁴)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n⁴)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Works universally without needing sorting or extra space.
-* Very inefficient for large matrices.
+- Works universally without needing sorting or extra space.
+- Very inefficient for large matrices.
 
 ### ⚠️ Warning: TLE on Large Inputs
+
 #### ✅ Test Cases Passed: 1010 / 1115
-##### ❌ Result: Time Limit Exceeded (TLE) 
+
+##### ❌ Result: Time Limit Exceeded (TLE)
+
 ###### 🕓 Issue: Brute-force algorithm exceeded time constraints on larger test cases due to O(n⁴) complexity Won’t pass when `n` approaches 100 due to time explosion.
-
-
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**         | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                     |
-| ----------------------- | ---------------------- | ----------------------- | ------------------------------- | ------------------------------- |
-| 🔍 **Two Pointer**      | 🟢 O(n²)               | 🟢 O(1)                 | Fast for sorted matrices        | Needs sorted grid               |
-| 📦 **Hash Map**         | 🟢 O(n²)               | 🟡 O(n²)                | Best for unsorted matrices      | Extra memory                    |
-| 🧮 **Sort + 2-Pointer** | 🟡 O(n² log n)         | 🟡 O(n²)                | Efficient for disjoint matrices | Needs full flatten and sort     |
-| 🐢 **Brute Force (TLE)**      | 🔴 O(n⁴)               | 🟢 O(1)                 | Simplest universal logic        | Extremely slow for large inputs |
-
+| 🚀 **Approach**          | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                     | ⚠️ **Cons**                     |
+| ------------------------ | ---------------------- | ----------------------- | ------------------------------- | ------------------------------- |
+| 🔍 **Two Pointer**       | 🟢 O(n²)               | 🟢 O(1)                 | Fast for sorted matrices        | Needs sorted grid               |
+| 📦 **Hash Map**          | 🟢 O(n²)               | 🟡 O(n²)                | Best for unsorted matrices      | Extra memory                    |
+| 🧮 **Sort + 2-Pointer**  | 🟡 O(n² log n)         | 🟡 O(n²)                | Efficient for disjoint matrices | Needs full flatten and sort     |
+| 🐢 **Brute Force (TLE)** | 🔴 O(n⁴)               | 🟢 O(1)                 | Simplest universal logic        | Extremely slow for large inputs |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                     | 🥇 **Recommended Approach** |
-| ----------------------------------- | --------------------------- |
-| ✅ Both matrices sorted                | 🥇 Two Pointer               |
-| 📋 Matrices unsorted                   | 🥈 Hash Map                  |
-| 💥 Arrays easily flattenable           | 🥉 Sort + Two Pointer        |
-| 🔍 Small size or brute force benchmark | 🎖️ Brute Force (TLE)              |
+| 🎯 **Scenario**                        | 🥇 **Recommended Approach** |
+| -------------------------------------- | --------------------------- |
+| ✅ Both matrices sorted                | 🥇 Two Pointer              |
+| 📋 Matrices unsorted                   | 🥈 Hash Map                 |
+| 💥 Arrays easily flattenable           | 🥉 Sort + Two Pointer       |
+| 🔍 Small size or brute force benchmark | 🎖️ Brute Force (TLE)        |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -281,7 +275,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -323,5 +316,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

@@ -1,12 +1,21 @@
 ---
 title: "🪙 Coin Piles | GFG Solution 🎯"
-keywords🏷️: ["🪙 coin piles", "🎯 sliding window", "📊 sorting", "🔄 two pointers", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🪙 coin piles",
+    "🎯 sliding window",
+    "📊 sorting",
+    "🔄 two pointers",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Coin Piles problem: minimize coins removed to maintain difference ≤ k between any two piles using sliding window technique. 🚀"
 date: 📅 2025-06-17
 ---
 
-# *17. Coin Piles*
+# _17. Coin Piles_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/coin-piles5152/1)
 
@@ -23,7 +32,7 @@ You are given an array `arr[]` of integers, where each element represents the nu
 ```cpp
 Input: arr[] = [2, 2, 2, 2], k = 0
 Output: 0
-Explanation: For any two piles the difference in the number of coins is <= 0. 
+Explanation: For any two piles the difference in the number of coins is <= 0.
 So no need to remove any coin.
 ```
 
@@ -32,15 +41,15 @@ So no need to remove any coin.
 ```cpp
 Input: arr[] = [1, 5, 1, 2, 5, 1], k = 3
 Output: 2
-Explanation: If we remove one coin each from both the piles containing 5 coins, 
+Explanation: If we remove one coin each from both the piles containing 5 coins,
 then for any two piles the absolute difference in the number of coins is <= 3.
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $1 \le \text{arr}[i] \le 10^4$
-* $0 \le k \le 10^4$
+- $1 \le \text{arr.size()} \le 10^5$
+- $1 \le \text{arr}[i] \le 10^4$
+- $0 \le k \le 10^4$
 
 ## **✅ My Approach**
 
@@ -49,31 +58,35 @@ The optimal approach uses **Sorting** combined with **Sliding Window** technique
 ### **Sliding Window with Range Optimization**
 
 1. **Sort the Array:**
-   * Sort the array to group similar pile sizes together.
-   * This allows us to consider contiguous ranges where max - min ≤ k.
+
+   - Sort the array to group similar pile sizes together.
+   - This allows us to consider contiguous ranges where max - min ≤ k.
 
 2. **Calculate Total Sum:**
-   * Store the total sum of all coins for reference.
-   * This helps in calculating removal costs efficiently.
+
+   - Store the total sum of all coins for reference.
+   - This helps in calculating removal costs efficiently.
 
 3. **Sliding Window Technique:**
-   * For each possible starting position `s`, find the maximum range `[s, e)` where `arr[e-1] - arr[s] ≤ k`.
-   * All piles in this range can coexist without violating the constraint.
+
+   - For each possible starting position `s`, find the maximum range `[s, e)` where `arr[e-1] - arr[s] ≤ k`.
+   - All piles in this range can coexist without violating the constraint.
 
 4. **Optimization Strategy:**
-   * **Keep piles in range:** Sum of coins in window `[s, e)`.
-   * **Remove prefix:** All coins before position `s`.
-   * **Adjust suffix:** Reduce piles after position `e` to `arr[s] + k` (or remove if too small).
+
+   - **Keep piles in range:** Sum of coins in window `[s, e)`.
+   - **Remove prefix:** All coins before position `s`.
+   - **Adjust suffix:** Reduce piles after position `e` to `arr[s] + k` (or remove if too small).
 
 5. **Cost Calculation:**
-   * Prefix removal cost: Sum of `arr[0]` to `arr[s-1]`
-   * Window preservation: Keep all coins in `[s, e)`
-   * Suffix adjustment: `max(0, remaining_sum - (n-e) * (arr[s] + k))`
+   - Prefix removal cost: Sum of `arr[0]` to `arr[s-1]`
+   - Window preservation: Keep all coins in `[s, e)`
+   - Suffix adjustment: `max(0, remaining_sum - (n-e) * (arr[s] + k))`
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log n), where n is the array size. Sorting takes O(n log n) and the sliding window traversal takes O(n) with each element visited at most twice.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables (excluding the input array sorting space).
+- **Expected Time Complexity:** O(n log n), where n is the array size. Sorting takes O(n log n) and the sliding window traversal takes O(n) with each element visited at most twice.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables (excluding the input array sorting space).
 
 ## **🧑‍💻 Code (C++)**
 
@@ -125,13 +138,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Clear separation of concerns.
-* Easier to debug and maintain.
+- Clear separation of concerns.
+- Easier to debug and maintain.
 
 ## 📊 **3️⃣ Sliding Window with Deque**
 
@@ -161,13 +174,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Explicit window management.
-* Good for understanding the algorithm.
+- Explicit window management.
+- Good for understanding the algorithm.
 
 ## 📊 **4️⃣ Mathematical Optimization**
 
@@ -197,31 +210,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Cleaner mathematical operations.
-* Reduced function call overhead.
+- Cleaner mathematical operations.
+- Reduced function call overhead.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                          | ⚠️ **Cons**                    |
-| ---------------------------------- | ---------------------- | ----------------------- | ----------------------------------- | ----------------------------- |
-| 🔍 **Ultra-Optimized Sliding**     | 🟢 O(n log n)          | 🟢 O(1)                 | ⚡ Minimal memory, fastest runtime   | 🧮 Single-letter variables    |
-| 🔄 **Two Pointer Approach**        | 🟢 O(n log n)          | 🟢 O(1)                 | 🔧 Clear logic separation           | 🐢 Slightly more operations   |
-| 📊 **Deque Window**                | 🟢 O(n log n)          | 🔸 O(n)                 | 🏎️ Explicit window management       | 💾 Extra space overhead       |
-| 🧮 **Mathematical Optimization**   | 🟢 O(n log n)          | 🔸 O(n)                 | 📈 Clean mathematical operations     | 💾 Prefix sum space           |
+| 🚀 **Approach**                  | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                 |
+| -------------------------------- | ---------------------- | ----------------------- | ---------------------------------- | --------------------------- |
+| 🔍 **Ultra-Optimized Sliding**   | 🟢 O(n log n)          | 🟢 O(1)                 | ⚡ Minimal memory, fastest runtime | 🧮 Single-letter variables  |
+| 🔄 **Two Pointer Approach**      | 🟢 O(n log n)          | 🟢 O(1)                 | 🔧 Clear logic separation          | 🐢 Slightly more operations |
+| 📊 **Deque Window**              | 🟢 O(n log n)          | 🔸 O(n)                 | 🏎️ Explicit window management      | 💾 Extra space overhead     |
+| 🧮 **Mathematical Optimization** | 🟢 O(n log n)          | 🔸 O(n)                 | 📈 Clean mathematical operations   | 💾 Prefix sum space         |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                           | 🎖️ **Recommended Approach**      | 🔥 **Performance Rating** |
-| ---------------------------------------- | -------------------------------- | ------------------------- |
-| ⚡ Maximum performance, memory critical   | 🥇 **Ultra-Optimized Sliding**   | ★★★★★                     |
-| 🔧 Code clarity with good performance     | 🥈 **Two Pointer Approach**      | ★★★★☆                     |
-| 🏎️ Educational/debugging purposes        | 🥉 **Deque Window**              | ★★★☆☆                     |
-| 📊 Mathematical elegance                  | 🏅 **Mathematical Optimization** | ★★★★☆                     |
+| 🎯 **Scenario**                         | 🎖️ **Recommended Approach**      | 🔥 **Performance Rating** |
+| --------------------------------------- | -------------------------------- | ------------------------- |
+| ⚡ Maximum performance, memory critical | 🥇 **Ultra-Optimized Sliding**   | ★★★★★                     |
+| 🔧 Code clarity with good performance   | 🥈 **Two Pointer Approach**      | ★★★★☆                     |
+| 🏎️ Educational/debugging purposes       | 🥉 **Deque Window**              | ★★★☆☆                     |
+| 📊 Mathematical elegance                | 🏅 **Mathematical Optimization** | ★★★★☆                     |
 
 </details>
 
@@ -276,5 +289,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

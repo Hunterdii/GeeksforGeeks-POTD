@@ -1,12 +1,21 @@
 ---
 title: "🎯 All Palindromic Partitions | GFG Solution 🔍"
-keywords🏷️: ["🎯 palindrome partitions", "🔍 dynamic programming", "📍 backtracking", "📈 string processing", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🎯 palindrome partitions",
+    "🔍 dynamic programming",
+    "📍 backtracking",
+    "📈 string processing",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to All Palindromic Partitions problem: find all ways to partition string into palindromic substrings using DP preprocessing and backtracking. 🚀"
 date: 📅 2025-06-18
 ---
 
-# *18. All Palindromic Partitions*
+# _18. All Palindromic Partitions_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/1)
 
@@ -36,7 +45,7 @@ Explanation: [a, b, c, b, a], [a, bcb, a] and [abcba] are the only partitions of
 
 ## **🔒 Constraints**
 
-* $1 \le s.size() \le 20$
+- $1 \le s.size() \le 20$
 
 ## **✅ My Approach**
 
@@ -45,27 +54,29 @@ The optimal approach uses **Dynamic Programming Preprocessing** combined with **
 ### **DP Preprocessing + Backtracking**
 
 1. **Preprocessing Phase:**
-   * Build a 2D DP table `d[i][j]` to precompute whether substring `s[i...j]` is a palindrome.
-   * Fill single characters (always palindromes).
-   * Fill pairs of characters.
-   * Fill longer substrings using the recurrence: `d[i][j] = (s[i] == s[j]) && d[i+1][j-1]`.
+
+   - Build a 2D DP table `d[i][j]` to precompute whether substring `s[i...j]` is a palindrome.
+   - Fill single characters (always palindromes).
+   - Fill pairs of characters.
+   - Fill longer substrings using the recurrence: `d[i][j] = (s[i] == s[j]) && d[i+1][j-1]`.
 
 2. **Backtracking Phase:**
-   * Start from index 0 and try all possible partitions.
-   * For each position, check all substrings starting from that position.
-   * If a substring is palindromic (using precomputed table), add it to current partition and recurse.
-   * When we reach the end of string, add the current partition to results.
-   * Backtrack by removing the last added substring.
+
+   - Start from index 0 and try all possible partitions.
+   - For each position, check all substrings starting from that position.
+   - If a substring is palindromic (using precomputed table), add it to current partition and recurse.
+   - When we reach the end of string, add the current partition to results.
+   - Backtrack by removing the last added substring.
 
 3. **Optimization Benefits:**
-   * O(1) palindrome checks during backtracking.
-   * Avoids redundant palindrome computations.
-   * Clean separation of concerns between preprocessing and partition generation.
+   - O(1) palindrome checks during backtracking.
+   - Avoids redundant palindrome computations.
+   - Clean separation of concerns between preprocessing and partition generation.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n² + 2ⁿ), where n is the string length. The DP preprocessing takes O(n²) to fill the palindrome table, and the backtracking generates at most 2ⁿ partitions (each character can either start a new partition or continue the current one).
-* **Expected Auxiliary Space Complexity:** O(n²), as we use a 2D DP table of size n×n to store palindrome information. The recursion depth is O(n) and the space for storing results is not counted in auxiliary space.
+- **Expected Time Complexity:** O(n² + 2ⁿ), where n is the string length. The DP preprocessing takes O(n²) to fill the palindrome table, and the backtracking generates at most 2ⁿ partitions (each character can either start a new partition or continue the current one).
+- **Expected Auxiliary Space Complexity:** O(n²), as we use a 2D DP table of size n×n to store palindrome information. The recursion depth is O(n) and the space for storing results is not counted in auxiliary space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -140,14 +151,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n² + 2^n)
-* **Auxiliary Space:** 💾 O(n²)
+- **Time:** ⏱️ O(n² + 2^n)
+- **Auxiliary Space:** 💾 O(n²)
 
 ### ✅ **Why This Approach?**
 
-* Natural palindrome detection pattern.
-* Better cache locality during expansion.
-
+- Natural palindrome detection pattern.
+- Better cache locality during expansion.
 
 ## 🔄 **3️⃣ Recursive Backtracking Without Preprocessing**
 
@@ -193,15 +203,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × 2ⁿ) — palindrome check inside recursion
-* **Space:** 💾 O(n) recursion depth
+- **Time:** ⏱️ O(n × 2ⁿ) — palindrome check inside recursion
+- **Space:** 💾 O(n) recursion depth
 
 ### ✅ **Why This Approach?**
 
-* Very easy to write and understand.
-* Best for small inputs or conceptual learning.
-
-
+- Very easy to write and understand.
+- Best for small inputs or conceptual learning.
 
 ## 🚀 **4️⃣ Memoized DFS (Top-Down with Palindrome Cache)**
 
@@ -252,34 +260,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(2ⁿ × n)
-* **Space:** 💾 O(n²) for cache
+- **Time:** ⏱️ O(2ⁿ × n)
+- **Space:** 💾 O(n²) for cache
 
 ### ✅ **Why This Approach?**
 
-* Trades space for speed using lazy palindrome checks.
-* Useful when `s.length()` is moderate and substring reuse is frequent.
-
+- Trades space for speed using lazy palindrome checks.
+- Useful when `s.length()` is moderate and substring reuse is frequent.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
 | 🚀 **Approach**               | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**               | ⚠️ **Cons**                     |
-| ----------------------------- | ---------------------- | ----------------------- | ------------------------ | ------------------------------- |
+| ----------------------------- | ---------------------- | ----------------------- | ------------------------- | ------------------------------- |
 | 🔍 **Backtracking DP (Main)** | 🟢 O(n² + 2ⁿ)          | 🟢 O(n²)                | ⚡ Fast palindrome lookup | Uses extra space for DP table   |
-| 🔄 **Expand Centers**         | 🟢 O(n² + 2ⁿ)          | 🟢 O(n²)                | 🔧 Natural detection     | Center expansion less intuitive |
+| 🔄 **Expand Centers**         | 🟢 O(n² + 2ⁿ)          | 🟢 O(n²)                | 🔧 Natural detection      | Center expansion less intuitive |
 | 🧩 **Plain Backtracking**     | 🟠 O(n × 2ⁿ)           | 🟢 O(n)                 | ✨ Simple, clean          | Slower due to repeated checks   |
-| 🧠 **Memoized DFS**           | 🟢 O(2ⁿ × n)           | 🟠 O(n²)                | 💾 Avoids repeated work  | Slightly more complex           |
-
-
+| 🧠 **Memoized DFS**           | 🟢 O(2ⁿ × n)           | 🟠 O(n²)                | 💾 Avoids repeated work   | Slightly more complex           |
 
 ### 🏆 **Best Choice Recommendation**
 
 | 🎯 **Scenario**                          | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
-| ---------------------------------------- | ---------------------------- | ------------------------- |
-| ⚡ High performance and speed             | 🥇 **Backtracking DP**       | ★★★★★                     |
-| 🔧 Easy to implement                     | 🥈 **Plain Backtracking**    | ★★★★☆                     |
-| 🧠 Efficient for overlapping palindromes | 🥉 **Memoized DFS**          | ★★★★☆                     |
-| 🧪 Educational, visually intuitive       | 🏅 **Expand Centers**        | ★★★★☆                     |
+| ---------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ High performance and speed            | 🥇 **Backtracking DP**      | ★★★★★                     |
+| 🔧 Easy to implement                     | 🥈 **Plain Backtracking**   | ★★★★☆                     |
+| 🧠 Efficient for overlapping palindromes | 🥉 **Memoized DFS**         | ★★★★☆                     |
+| 🧪 Educational, visually intuitive       | 🏅 **Expand Centers**       | ★★★★☆                     |
 
 </details>
 
@@ -353,5 +358,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

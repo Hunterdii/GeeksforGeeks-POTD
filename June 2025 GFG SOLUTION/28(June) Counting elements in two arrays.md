@@ -1,12 +1,21 @@
 ---
 title: "🔢 Counting Elements in Two Arrays | GFG Solution 📊"
-keywords🏷️: ["🔢 count elements", "📊 frequency array", "🔍 binary search", "📈 prefix sum", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔢 count elements",
+    "📊 frequency array",
+    "🔍 binary search",
+    "📈 prefix sum",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to count elements in array b that are less than or equal to each element in array a using frequency array and prefix sum technique. 🚀"
 date: 📅 2025-06-28
 ---
 
-# *28. Counting Elements in Two Arrays*
+# _28. Counting Elements in Two Arrays_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/counting-elements-in-two-arrays/1)
 
@@ -21,7 +30,7 @@ You are given two **unsorted arrays** `a[]` and `b[]`. Both arrays may contain *
 ```cpp
 Input: a[] = [4, 8, 7, 5, 1], b[] = [4, 48, 3, 0, 1, 1, 5]
 Output: [5, 6, 6, 6, 3]
-Explanation: 
+Explanation:
 For a[0] = 4, there are 5 elements in b (4, 3, 0, 1, 1) that are ≤ 4.
 For a[1] = 8 and a[2] = 7, there are 6 elements in b that are ≤ 8 and ≤ 7.
 For a[3] = 5, there are 6 elements in b that are ≤ 5.
@@ -33,14 +42,14 @@ For a[4] = 1, there are 3 elements in b (0, 1, 1) that are ≤ 1.
 ```cpp
 Input: a[] = [10, 20], b[] = [30, 40, 50]
 Output: [0, 0]
-Explanation: 
+Explanation:
 For a[0] = 10 and a[1] = 20, there are no elements in b that are less than or equal to 10 or 20. Hence, the output is [0, 0].
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le a.size(), b.size() \le 10^5$
-* $0 \le a[i], b[j] \le 10^5$
+- $1 \le a.size(), b.size() \le 10^5$
+- $0 \le a[i], b[j] \le 10^5$
 
 ## **✅ My Approach**
 
@@ -49,21 +58,24 @@ The optimal approach uses **Frequency Array** with **Prefix Sum** technique to e
 ### **Frequency Array + Prefix Sum**
 
 1. **Find Maximum Element:**
-   * Determine the maximum element in array `b` to create frequency array.
+
+   - Determine the maximum element in array `b` to create frequency array.
 
 2. **Build Frequency Array:**
-   * Create a frequency array `cnt[]` where `cnt[i]` represents count of element `i` in array `b`.
+
+   - Create a frequency array `cnt[]` where `cnt[i]` represents count of element `i` in array `b`.
 
 3. **Convert to Prefix Sum:**
-   * Transform frequency array into prefix sum array where `cnt[i]` now represents count of elements ≤ `i`.
+
+   - Transform frequency array into prefix sum array where `cnt[i]` now represents count of elements ≤ `i`.
 
 4. **Query Processing:**
-   * For each element `x` in array `a`, the answer is `cnt[min(x, max_element)]`.
+   - For each element `x` in array `a`, the answer is `cnt[min(x, max_element)]`.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n + m + max), where n is size of array a, m is size of array b, and max is the maximum element in array b. We traverse both arrays once and build prefix sum in O(max) time.
-* **Expected Auxiliary Space Complexity:** O(max), where max is the maximum element in array b. We use a frequency array of size max+1 to store element counts.
+- **Expected Time Complexity:** O(n + m + max), where n is size of array a, m is size of array b, and max is the maximum element in array b. We traverse both arrays once and build prefix sum in O(max) time.
+- **Expected Auxiliary Space Complexity:** O(max), where max is the maximum element in array b. We use a frequency array of size max+1 to store element counts.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -108,13 +120,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(m log m + n log m)
-* **Auxiliary Space:** 💾 O(1) - Excluding output array
+- **Time:** ⏱️ O(m log m + n log m)
+- **Auxiliary Space:** 💾 O(1) - Excluding output array
 
 ### ✅ **Why This Approach?**
 
-* Simple implementation using STL functions.
-* Memory efficient for large maximum values.
+- Simple implementation using STL functions.
+- Memory efficient for large maximum values.
 
 ## 📊 **3️⃣ HashMap + Prefix Sum Approach**
 
@@ -137,7 +149,7 @@ public:
             sorted_freq[i].second += sorted_freq[i-1].second;
         }
         for (int i = 0; i < a.size(); i++) {
-            auto it = upper_bound(sorted_freq.begin(), sorted_freq.end(), 
+            auto it = upper_bound(sorted_freq.begin(), sorted_freq.end(),
                                 make_pair(a[i], INT_MAX));
             res[i] = (it == sorted_freq.begin()) ? 0 : prev(it)->second;
         }
@@ -148,29 +160,29 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(m log m + n log m)
-* **Auxiliary Space:** 💾 O(unique elements in b)
+- **Time:** ⏱️ O(m log m + n log m)
+- **Auxiliary Space:** 💾 O(unique elements in b)
 
 ### ✅ **Why This Approach?**
 
-* Efficient for sparse data with many unique values.
-* Handles extremely large element ranges gracefully.
+- Efficient for sparse data with many unique values.
+- Handles extremely large element ranges gracefully.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| ✅ **Frequency Array**            | 🟢 O(n + m + max)      | 🟡 O(max)               | ⚡ Fastest for small max values   | 💾 Space depends on max element      |
-| 🔍 **Binary Search**              | 🟡 O(m log m + n log m)| 🟢 O(1)                 | 🔧 Memory efficient               | ⏱️ Slower for large arrays           |
-| 🔢 **HashMap + Prefix Sum**       | 🟡 O(m log m + n log m)| 🟢 O(unique)            | 🚀 Handles sparse data well      | 🧮 Complex implementation            |
+| 🚀 **Approach**             | ⏱️ **Time Complexity**  | 💾 **Space Complexity** | ✅ **Pros**                     | ⚠️ **Cons**                     |
+| --------------------------- | ----------------------- | ----------------------- | ------------------------------- | ------------------------------- |
+| ✅ **Frequency Array**      | 🟢 O(n + m + max)       | 🟡 O(max)               | ⚡ Fastest for small max values | 💾 Space depends on max element |
+| 🔍 **Binary Search**        | 🟡 O(m log m + n log m) | 🟢 O(1)                 | 🔧 Memory efficient             | ⏱️ Slower for large arrays      |
+| 🔢 **HashMap + Prefix Sum** | 🟡 O(m log m + n log m) | 🟢 O(unique)            | 🚀 Handles sparse data well     | 🧮 Complex implementation       |
 
 ### 🏆 **Best Choice Recommendation**
 
 | 🎯 **Scenario**                                | 🎖️ **Recommended Approach** | 🔥 **Rating** |
-| ---------------------------------------------- | ---------------------------- | ------------- |
-| ⚡ Small range (0 ≤ elements ≤ 10⁶)             | 🥇 **Frequency Array**       | ★★★★★         |
-| 🔍 High max value, low memory usage required   | 🥈 **Binary Search**         | ★★★★☆         |
-| 📊 Sparse distribution with many unique values | 🥉 **HashMap + Prefix Sum**  | ★★★☆☆         |
+| ---------------------------------------------- | --------------------------- | ------------- |
+| ⚡ Small range (0 ≤ elements ≤ 10⁶)            | 🥇 **Frequency Array**      | ★★★★★         |
+| 🔍 High max value, low memory usage required   | 🥈 **Binary Search**        | ★★★★☆         |
+| 📊 Sparse distribution with many unique values | 🥉 **HashMap + Prefix Sum** | ★★★☆☆         |
 
 </details>
 
@@ -217,5 +229,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

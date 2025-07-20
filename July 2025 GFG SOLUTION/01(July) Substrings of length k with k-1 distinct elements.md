@@ -1,12 +1,21 @@
 ---
 title: "🪟 Substrings of Length K with K-1 Distinct Elements | GFG Solution 🔍"
-keywords🏷️: ["🪟 substring count", "🔍 sliding window", "📍 frequency array", "📈 string processing", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🪟 substring count",
+    "🔍 sliding window",
+    "📍 frequency array",
+    "📈 string processing",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to find count of substrings of length k with exactly k-1 distinct characters using optimized sliding window technique. 🚀"
 date: 📅 2025-07-01
 ---
 
-# *01. Substrings of Length K with K-1 Distinct Elements*
+# _01. Substrings of Length K with K-1 Distinct Elements_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1)
 
@@ -23,7 +32,7 @@ Input: s = "abcc", k = 2
 Output: 1
 Explanation: Possible substrings of length k = 2 are:
 - ab: 2 distinct characters
-- bc: 2 distinct characters  
+- bc: 2 distinct characters
 - cc: 1 distinct character ✓
 Only one substring has exactly k-1 = 1 distinct character.
 ```
@@ -42,8 +51,8 @@ All substrings have exactly k-1 = 2 distinct characters.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{s.size()} \le 10^5$
-* $2 \le k \le 27$
+- $1 \le \text{s.size()} \le 10^5$
+- $2 \le k \le 27$
 
 ## **✅ My Approach**
 
@@ -52,27 +61,30 @@ The optimal approach uses **Sliding Window with Frequency Array** technique to e
 ### **Sliding Window + Frequency Tracking**
 
 1. **Initialize Window:**
-   * Process first `k-1` characters to build initial frequency count.
-   * Track distinct character count for the initial window.
+
+   - Process first `k-1` characters to build initial frequency count.
+   - Track distinct character count for the initial window.
 
 2. **Slide the Window:**
-   * Add one character to the right and remove one from the left.
-   * Update frequency array and distinct count accordingly.
-   * Check if current window has exactly `k-1` distinct characters.
+
+   - Add one character to the right and remove one from the left.
+   - Update frequency array and distinct count accordingly.
+   - Check if current window has exactly `k-1` distinct characters.
 
 3. **Count Valid Substrings:**
-   * For each valid window (with `k-1` distinct characters), increment result.
-   * Continue sliding until the entire string is processed.
+
+   - For each valid window (with `k-1` distinct characters), increment result.
+   - Continue sliding until the entire string is processed.
 
 4. **Frequency Management:**
-   * Use array of size 26 for lowercase letters (constant space).
-   * Increment distinct count when frequency becomes 1 (new character).
-   * Decrement distinct count when frequency becomes 0 (character removed).
+   - Use array of size 26 for lowercase letters (constant space).
+   - Increment distinct count when frequency becomes 1 (new character).
+   - Decrement distinct count when frequency becomes 0 (character removed).
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. We traverse the string once with constant time operations per character.
-* **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size frequency array of 26 elements regardless of input size.
+- **Expected Time Complexity:** O(n), where n is the length of the string. We traverse the string once with constant time operations per character.
+- **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size frequency array of 26 elements regardless of input size.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -125,13 +137,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) - For HashMap storage
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) - For HashMap storage
 
 ### ✅ **Why This Approach?**
 
-* Works with any character set, not just lowercase letters.
-* More flexible for extended character ranges.
+- Works with any character set, not just lowercase letters.
+- More flexible for extended character ranges.
 
 ## 📊 **3️⃣ Optimized Single Pass**
 
@@ -179,29 +191,29 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Bitset operations are faster for presence checking.
-* Additional optimizations for edge cases.
+- Bitset operations are faster for presence checking.
+- Additional optimizations for edge cases.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Frequency Array**        | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, minimal memory usage	  | 🧮 Limited to specific character set  |
-| 🔄 **HashMap-Based**              | 🟢 O(n)                | 🟡 O(k)                 | 🔧 Works with any characters      | 💾 Extra space overhead              |
-| 🪄 **Bitmask/Bitset Optimized**           | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Bitwise operations faster      | 🧮 More complex implementation       |
+| 🚀 **Approach**                 | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                          |
+| ------------------------------- | ---------------------- | ----------------------- | -------------------------------- | ------------------------------------ |
+| 🔍 **Frequency Array**          | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, minimal memory usage | 🧮 Limited to specific character set |
+| 🔄 **HashMap-Based**            | 🟢 O(n)                | 🟡 O(k)                 | 🔧 Works with any characters     | 💾 Extra space overhead              |
+| 🪄 **Bitmask/Bitset Optimized** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Bitwise operations faster     | 🧮 More complex implementation       |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ Maximum performance, lowercase letters only     | 🥇 **Frequency Array**     | ★★★★★                     |
-| 🔧 Any character set, flexibility needed          | 🥈 **HashMap-Based**           | ★★★★☆                     |
-| 🎯 Micro-optimizations required                   | 🥉 **Bitmask/Bitset Optimized**        | ★★★★★                     |
+| 🎯 **Scenario**                                | 🎖️ **Recommended Approach**     | 🔥 **Performance Rating** |
+| ---------------------------------------------- | ------------------------------- | ------------------------- |
+| ⚡ Maximum performance, lowercase letters only | 🥇 **Frequency Array**          | ★★★★★                     |
+| 🔧 Any character set, flexibility needed       | 🥈 **HashMap-Based**            | ★★★★☆                     |
+| 🎯 Micro-optimizations required                | 🥉 **Bitmask/Bitset Optimized** | ★★★★★                     |
 
 </details>
 
@@ -258,5 +270,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

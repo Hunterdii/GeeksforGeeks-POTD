@@ -1,15 +1,25 @@
 ---
 title: "🌳 BST with Dead End | GFG Solution 🚧"
-keywords🏷️: ["🌳 BST", "🚧 dead end", "🧠 recursion", "📘 GFG", "✅ binary tree", "🔍 DFS", "🧬 tree traversal", "📚 DSA", "🏁 competitive programming"]
+keywords🏷️:
+  [
+    "🌳 BST",
+    "🚧 dead end",
+    "🧠 recursion",
+    "📘 GFG",
+    "✅ binary tree",
+    "🔍 DFS",
+    "🧬 tree traversal",
+    "📚 DSA",
+    "🏁 competitive programming",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to BST with Dead End: detect if a BST has any dead-end node where no more insertions are possible while maintaining BST properties. 🚀"
 date: 📅 2025-06-09
 ---
 
-# *09. BST with Dead End*
+# _09. BST with Dead End_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1)
-
 
 ## **🧩 Problem Description**
 
@@ -17,47 +27,32 @@ You are given a **Binary Search Tree (BST)** that contains **only unique positiv
 
 Your task is to determine whether the BST contains any such **dead end**.
 
-
 ## **📘 Examples**
 
 ### Example 1
 
-`
-Input: root[] = [8, 5, 9, 2, 7, N, N, 1]
-`
+`Input: root[] = [8, 5, 9, 2, 7, N, N, 1]`
 
 <img src="https://github.com/user-attachments/assets/15ef4c6d-28f4-422b-85da-cc783922fcef" width="30%">
 
-`
-Output: true
-`
+`Output: true`
 
-`
-Explanation: Node 1 is a dead end since 0 is not allowed and 2 already exists.
-`
+`Explanation: Node 1 is a dead end since 0 is not allowed and 2 already exists.`
 
 ### Example 2
 
-`
-Input: root[] = [8, 7, 10, 2, N, 9, 13]
-`
+`Input: root[] = [8, 7, 10, 2, N, 9, 13]`
 
 <img src="https://github.com/user-attachments/assets/c5c10602-fc6e-4b1e-9f8b-67c2fe3ecdba" width="30%">
 
-`
-Output: true
-`
+`Output: true`
 
-`
-Explanation: Node 9 is a dead end as no new node can be inserted below it.
-`
-
+`Explanation: Node 9 is a dead end as no new node can be inserted below it.`
 
 ## **🔒 Constraints**
 
-* \$1 \leq \text{Number of nodes} \leq 3000\$
-* \$1 \leq \text{Node->data} \leq 10^5\$
-
+- \$1 \leq \text{Number of nodes} \leq 3000\$
+- \$1 \leq \text{Node->data} \leq 10^5\$
 
 ## ✅ **My Approach**
 
@@ -65,27 +60,27 @@ Explanation: Node 9 is a dead end as no new node can be inserted below it.
 
 We recursively traverse the tree, carrying two bounds:
 
-* `l`: the lowest possible value a child node can take
-* `r`: the highest possible value a child node can take
+- `l`: the lowest possible value a child node can take
+- `r`: the highest possible value a child node can take
 
 If we encounter a **leaf node** where `l == r`, it means:
 
-* There is **no space left** to insert any node under this leaf while obeying BST rules and positivity constraint.
+- There is **no space left** to insert any node under this leaf while obeying BST rules and positivity constraint.
 
 ### 💡 Logic:
 
-* Initially call: `dfs(root, 1, INT_MAX)`
-* For each node:
+- Initially call: `dfs(root, 1, INT_MAX)`
+- For each node:
 
-  * Check left: `dfs(root->left, l, root->data - 1)`
-  * Check right: `dfs(root->right, root->data + 1, r)`
-* If `l == r` at a leaf ⇒ Dead End found.
+  - Check left: `dfs(root->left, l, root->data - 1)`
+  - Check right: `dfs(root->right, root->data + 1, r)`
+
+- If `l == r` at a leaf ⇒ Dead End found.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), as we visit each node exactly once.
-* **Expected Auxiliary Space Complexity:** O(h), where `h` is the height of the BST due to recursion stack.
-
+- **Expected Time Complexity:** O(n), as we visit each node exactly once.
+- **Expected Auxiliary Space Complexity:** O(h), where `h` is the height of the BST due to recursion stack.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -112,8 +107,9 @@ class Solution {
 
 1. Traverse the BST and store all nodes and leaf nodes in `unordered_set<int>`:
 
-   * `all` for every node
-   * `leaves` for leaf nodes
+   - `all` for every node
+   - `leaves` for leaf nodes
+
 2. After traversal, check for each leaf if `leaf+1` and `leaf-1` both exist in `all` set — this indicates a dead end.
 
 ```cpp
@@ -126,7 +122,7 @@ class Solution {
         traverse(root->left, all, leaf);
         traverse(root->right, all, leaf);
     }
-    
+
     bool isDeadEnd(Node* root) {
         unordered_set<int> all, leaf;
         all.insert(0);
@@ -141,14 +137,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Space:** 💾 O(n) (due to sets)
+- **Time:** ⏱️ O(n)
+- **Space:** 💾 O(n) (due to sets)
 
 ### ✅ **Why This Approach?**
 
-* Tracks all nodes and leaves to verify dead ends directly.
-* Effective when recursive range-check logic is hard to trace.
-
+- Tracks all nodes and leaves to verify dead ends directly.
+- Effective when recursive range-check logic is hard to trace.
 
 ## 📊 **3️⃣ Bottom-Up BST Recursion with Early Return**
 
@@ -163,7 +158,7 @@ class Solution {
     bool check(Node* root, int min, int max) {
         if (!root) return false;
         if (min == max) return true;
-        return check(root->left, min, root->data - 1) || 
+        return check(root->left, min, root->data - 1) ||
                check(root->right, root->data + 1, max);
     }
     bool isDeadEnd(Node* root) {
@@ -174,33 +169,31 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Space:** 💾 O(h) (recursive stack)
+- **Time:** ⏱️ O(n)
+- **Space:** 💾 O(h) (recursive stack)
 
 ### ✅ **Why This Approach?**
 
-* Clean, concise, and leverages BST property via boundary propagation.
-* Matches the original reference approach.
-
+- Clean, concise, and leverages BST property via boundary propagation.
+- Matches the original reference approach.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**            | ⏱️ **Time** | 💾 **Space** | ✅ **Pros**                     | ⚠️ **Cons**                                 |
+| 🚀 **Approach**            | ⏱️ **Time** | 💾 **Space** | ✅ **Pros**                    | ⚠️ **Cons**                                 |
 | -------------------------- | ----------- | ------------ | ------------------------------ | ------------------------------------------- |
-| 🔍 **DFS with Boundaries** | 🟢 O(n)        | 🟢 O(h)         | Efficient, no extra memory     | Requires correct range management           |
-| 📦 **HashSet + Traverse**  | 🟢 O(n)        | 🟢 O(n)         | Simple logic with pre-checking | Uses more memory                            |
-| 🧮 **Bottom-Up Recursion** | 🟢 O(n)        | 🟡 O(h)         | Clear condition checking       | Conceptually similar to 1st but less direct |
+| 🔍 **DFS with Boundaries** | 🟢 O(n)     | 🟢 O(h)      | Efficient, no extra memory     | Requires correct range management           |
+| 📦 **HashSet + Traverse**  | 🟢 O(n)     | 🟢 O(n)      | Simple logic with pre-checking | Uses more memory                            |
+| 🧮 **Bottom-Up Recursion** | 🟢 O(n)     | 🟡 O(h)      | Clear condition checking       | Conceptually similar to 1st but less direct |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                       | 🎖️ **Recommended Approach**      |
-| ------------------------------------- | --------------------------------- |
-| 👍 For concise & optimal solution     | 🥇 DFS with boundaries            |
-| 🧪 For readability and debugging ease | 🥈 HashSet leaf checking          |
-| 📘 When working with deep tree logic  | 🥉 Bottom-Up recursion            |
+| 🎯 **Scenario**                       | 🎖️ **Recommended Approach** |
+| ------------------------------------- | --------------------------- |
+| 👍 For concise & optimal solution     | 🥇 DFS with boundaries      |
+| 🧪 For readability and debugging ease | 🥈 HashSet leaf checking    |
+| 📘 When working with deep tree logic  | 🥉 Bottom-Up recursion      |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -211,13 +204,12 @@ class Solution {
         if (root.left == null && root.right == null && l == r) return true;
         return dfs(root.left, l, root.data - 1) || dfs(root.right, root.data + 1, r);
     }
-    
+
     public boolean isDeadEnd(Node root) {
         return dfs(root, 1, Integer.MAX_VALUE);
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -245,5 +237,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

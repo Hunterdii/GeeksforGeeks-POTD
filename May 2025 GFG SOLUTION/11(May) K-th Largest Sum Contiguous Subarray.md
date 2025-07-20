@@ -1,4 +1,4 @@
-# *11. K-th Largest Sum Contiguous Subarray*
+# _11. K-th Largest Sum Contiguous Subarray_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/k-th-largest-sum-contiguous-subarray/1)
 
@@ -46,9 +46,9 @@ All sums are `[13, 12, 11, 10, 8, 6, 5, 4, 2, 1]`. The 3rd largest is `11`.
 
 ## **🔒 Constraints**
 
-* \$1 \leq n \leq 1000\$
-* \$1 \leq k \leq \dfrac{n(n+1)}{2}\$
-* \$-10^5 \leq arr\[i] \leq 10^5\$
+- \$1 \leq n \leq 1000\$
+- \$1 \leq k \leq \dfrac{n(n+1)}{2}\$
+- \$-10^5 \leq arr\[i] \leq 10^5\$
 
 ## **✅ My Approach**
 
@@ -59,14 +59,15 @@ All sums are `[13, 12, 11, 10, 8, 6, 5, 4, 2, 1]`. The 3rd largest is `11`.
 2. **Use a min-heap** (`priority_queue<int, vector<int>, greater<int>>`) of size up to `k` to keep track of the k largest sums seen so far.
 3. **Enumerate all subarrays** by two loops `i` from `0` to `n-1`, `j` from `i+1` to `n`:
 
-   * Compute current sum `S = P[j] - P[i]`.
-   * **Push** `S` into the heap; if size exceeds `k`, **pop** the smallest.
+   - Compute current sum `S = P[j] - P[i]`.
+   - **Push** `S` into the heap; if size exceeds `k`, **pop** the smallest.
+
 4. After processing all, the **top** of the min-heap is the **K-th largest sum**.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** \$O(n^2 \log k)\$, due to the double loop over subarrays (\$O(n^2)\$) and heap operations (\$O(\log k)\$).
-* **Expected Auxiliary Space Complexity:** \$O(k)\$, for storing at most k sums in the heap.
+- **Expected Time Complexity:** \$O(n^2 \log k)\$, due to the double loop over subarrays (\$O(n^2)\$) and heap operations (\$O(\log k)\$).
+- **Expected Auxiliary Space Complexity:** \$O(k)\$, for storing at most k sums in the heap.
 
 ## **🧠 Code (C++)**
 
@@ -87,7 +88,6 @@ class Solution {
     }
 };
 ```
-
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
@@ -114,8 +114,8 @@ class Solution {
 };
 ```
 
-* **Time:** \$O(n^2 + n^2\log n^2) = O(n^2 \log n)\$
-* **Space:** \$O(n^2)\$
+- **Time:** \$O(n^2 + n^2\log n^2) = O(n^2 \log n)\$
+- **Space:** \$O(n^2)\$
 
 ## 📊 **3️⃣ Max-Heap Extraction**
 
@@ -140,24 +140,24 @@ class Solution {
 };
 ```
 
-* **Time:** \$O(n^2 + k\log(n^2))\$
-* **Space:** \$O(n^2)\$
+- **Time:** \$O(n^2 + k\log(n^2))\$
+- **Space:** \$O(n^2)\$
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**        | ⏱️ **Time**      | 🗂️ **Space** | ✅ **Pros**                   | ⚠️ **Cons**                        |
-| ------------------- | ---------------- | ------------- | ---------------------------- | ---------------------------------- |
-| Prefix + Min-Heap   | 🟢 O(n² log k)      | 🟢 O(k)          | Uses limited extra space     | Still \$O(n^2)\$ enumeration       |
-| Brute-Force + Sort  | 🟡 O(n² log n)      | 🟡 O(n²)         | Simple to implement          | High memory for storing all sums   |
-| Max-Heap Extraction | 🔸 O(n² + k log n²) | 🟡 O(n²)         | Conceptually straightforward | Uses large heap of size \$O(n^2)\$ |
+| **Approach**        | ⏱️ **Time**         | 🗂️ **Space** | ✅ **Pros**                  | ⚠️ **Cons**                        |
+| ------------------- | ------------------- | ------------ | ---------------------------- | ---------------------------------- |
+| Prefix + Min-Heap   | 🟢 O(n² log k)      | 🟢 O(k)      | Uses limited extra space     | Still \$O(n^2)\$ enumeration       |
+| Brute-Force + Sort  | 🟡 O(n² log n)      | 🟡 O(n²)     | Simple to implement          | High memory for storing all sums   |
+| Max-Heap Extraction | 🔸 O(n² + k log n²) | 🟡 O(n²)     | Conceptually straightforward | Uses large heap of size \$O(n^2)\$ |
 
 ### ✅ **Best Choice?**
 
 | **Scenario**                          | **Recommended Approach** |
 | ------------------------------------- | ------------------------ |
-| Moderate n, small k (k ≪ n²)          | 🥇 Prefix + Min-Heap        |
-| Very small n (store all sums cheaply) | 🥈 Brute-Force + Sort       |
-| k close to n² (need many pops)        | 🥉 Max-Heap Extraction      |
+| Moderate n, small k (k ≪ n²)          | 🥇 Prefix + Min-Heap     |
+| Very small n (store all sums cheaply) | 🥈 Brute-Force + Sort    |
+| k close to n² (need many pops)        | 🥉 Max-Heap Extraction   |
 
 </details>
 
@@ -200,12 +200,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

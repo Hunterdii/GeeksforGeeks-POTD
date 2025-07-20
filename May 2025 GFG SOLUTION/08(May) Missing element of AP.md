@@ -1,4 +1,4 @@
-# *8. Missing Element of Arithmetic Progression*
+# _8. Missing Element of Arithmetic Progression_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/missing-element-of-ap2228/1)
 
@@ -8,45 +8,42 @@ Given an array of `n` integers which forms an arithmetic progression (AP) except
 
 The given array is sorted in increasing order and follows the property:
 
-**`arr[i+1] - arr[i] = constant`** for all valid `i`, *except where the number is missing*.
-
+**`arr[i+1] - arr[i] = constant`** for all valid `i`, _except where the number is missing_.
 
 ## **📘 Examples**
 
 ### **Example 1**
 
-* **Input:**
+- **Input:**
   `arr = [2, 4, 8, 10, 12, 14]`
-* **Output:**
+- **Output:**
   `6`
-* **Explanation:**
+- **Explanation:**
   The intended AP is `2, 4, 6, 8, 10, 12, 14`. The missing element is `6`.
 
 ### **Example 2**
 
-* **Input:**
+- **Input:**
   `arr = [1, 6, 11, 16, 21, 31]`
-* **Output:**
+- **Output:**
   `26`
-* **Explanation:**
+- **Explanation:**
   The intended AP is `1, 6, 11, 16, 21, 26, 31`. The missing element is `26`.
 
 ### **Example 3**
 
-* **Input:**
+- **Input:**
   `arr = [4, 7, 10, 13, 16]`
-* **Output:**
+- **Output:**
   `19`
-* **Explanation:**
+- **Explanation:**
   Already a perfect AP with difference `3`. The next element is `16 + 3 = 19`.
-
 
 ## **🔒 Constraints**
 
-* `2 ≤ arr.size() ≤ 10^5`
-* `0 ≤ arr[i] ≤ 2×10^7`
-* It is guaranteed that exactly one term is missing in the AP.
-
+- `2 ≤ arr.size() ≤ 10^5`
+- `0 ≤ arr[i] ≤ 2×10^7`
+- It is guaranteed that exactly one term is missing in the AP.
 
 ## **✅ My Approach**
 
@@ -59,29 +56,28 @@ We use the formula of an AP:
 Let `d` be the common difference. Since one term is missing, we try to estimate `d` using the edges.
 We use binary search to find the first position where the actual difference doesn’t match the expected difference.
 
-
 ### **Algorithm Steps:**
 
 1. Let `n` be the size of the array.
 2. Estimate `d` using a combination of:
 
-   * `d1 = arr[1] - arr[0]`
-   * `d2 = arr[n-1] - arr[n-2]`
-   * `d3 = (arr[n-1] - arr[0]) / n`
+   - `d1 = arr[1] - arr[0]`
+   - `d2 = arr[n-1] - arr[n-2]`
+   - `d3 = (arr[n-1] - arr[0]) / n`
+
 3. Choose the most frequent/common value among `d1`, `d2`, and `d3` as `d`.
 4. Use binary search:
 
-   * At each step, compute `mid`.
-   * If `arr[mid] - arr[0] == mid * d`, go right.
-   * Otherwise, the missing number lies to the left.
-5. After exiting loop, return `arr[0] + lo * d`.
+   - At each step, compute `mid`.
+   - If `arr[mid] - arr[0] == mid * d`, go right.
+   - Otherwise, the missing number lies to the left.
 
+5. After exiting loop, return `arr[0] + lo * d`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(log n), using binary search to locate the break point in the AP.
-* **Expected Auxiliary Space Complexity:** O(1), as only a constant number of variables are used.
-
+- **Expected Time Complexity:** O(log n), using binary search to locate the break point in the AP.
+- **Expected Auxiliary Space Complexity:** O(1), as only a constant number of variables are used.
 
 ## **🧠 Code (C++)**
 
@@ -90,8 +86,8 @@ class Solution {
   public:
     int findMissing(vector<int> &arr) {
         int n = arr.size();
-        int d1 = arr[1] - arr[0], 
-            d2 = arr[n-1] - arr[n-2], 
+        int d1 = arr[1] - arr[0],
+            d2 = arr[n-1] - arr[n-2],
             d3 = (arr[n-1] - arr[0]) / n;
         int d = (d1==d2 || d1==d3) ? d1 : d2;
         if (d == 0) return arr[0];
@@ -126,7 +122,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -150,12 +145,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

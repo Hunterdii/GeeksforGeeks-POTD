@@ -1,41 +1,54 @@
-# *4. Smallest Distinct Window*
+# _4. Smallest Distinct Window_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1)
-
 
 ## **🧩 Problem Description**
 
 Given a string `str`, find the length of the smallest window (substring) that contains **all the distinct characters** of the string **at least once**.
 
-
 ## **📘 Examples**
 
 ### **Example 1:**
-#### **Input:**  
-`str = "aabcbcdbca"`  
-#### **Output:**  
-`4`  
-#### **Explanation:**  
+
+#### **Input:**
+
+`str = "aabcbcdbca"`
+
+#### **Output:**
+
+`4`
+
+#### **Explanation:**
+
 The smallest window that contains all characters is `"dbca"`.
 
-
 ### **Example 2:**
-#### **Input:**  
-`str = "aaab"`  
-#### **Output:**  
-`2`  
-#### **Explanation:**  
+
+#### **Input:**
+
+`str = "aaab"`
+
+#### **Output:**
+
+`2`
+
+#### **Explanation:**
+
 The smallest window that contains all distinct characters is `"ab"`.
 
-
 ### **Example 3:**
-#### **Input:**  
-`str = "geeksforgeeks"`  
-#### **Output:**  
-`8`  
-#### **Explanation:**  
-Substrings `"geeksfor"` and `"forgeeks"` are both valid.
 
+#### **Input:**
+
+`str = "geeksforgeeks"`
+
+#### **Output:**
+
+`8`
+
+#### **Explanation:**
+
+Substrings `"geeksfor"` and `"forgeeks"` are both valid.
 
 ## **🔒 Constraints**
 
@@ -56,7 +69,6 @@ This is a classic sliding window problem where we dynamically maintain a window 
 4. Keep expanding the window by moving `j` and updating character counts.
 5. When the current window includes **all `d` characters**, try to shrink it by moving `i`.
 6. Keep track of the minimum window length during this process.
-
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
@@ -84,10 +96,8 @@ class Solution {
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## 📊 **2️⃣ HashMap instead of Frequency Array**
 
@@ -118,14 +128,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Flexible for Unicode/extended character sets.
-* Easier to extend for character frequency-based problems.
+- Flexible for Unicode/extended character sets.
+- Easier to extend for character frequency-based problems.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n)
-* **Auxiliary Space:** O(n)
-
+- **Time:** O(n)
+- **Auxiliary Space:** O(n)
 
 ## 📊 **3️⃣ Dynamic Character Indexing with Array Shrink**
 
@@ -158,34 +167,30 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Another variation with similar runtime but more dynamic character tracking.
+- Another variation with similar runtime but more dynamic character tracking.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n)
-* **Auxiliary Space:** O(n)
-
+- **Time:** O(n)
+- **Auxiliary Space:** O(n)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                          | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                  | ⚠️ **Cons**                       |
-| ------------------------------------- | ----------- | ------------- | ------------------------------------------- | --------------------------------- |
-| Frequency Array Sliding Window        | 🟢 O(n)     | 🟢 O(1)       | Fastest, uses fixed array                   | ASCII-bound only                  |
-| HashMap-Based Sliding Window           | 🟢 O(n)     | 🟢 O(n)       | Generalized for any char set                | Slightly more overhead than array |
-| Last-Seen Map-Based Window              | 🟢 O(n)     | 🟢 O(n)       | Flexible, works well with character streams | More complex to implement         |
-
+| **Approach**                   | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                 | ⚠️ **Cons**                       |
+| ------------------------------ | ----------- | ------------ | ------------------------------------------- | --------------------------------- |
+| Frequency Array Sliding Window | 🟢 O(n)     | 🟢 O(1)      | Fastest, uses fixed array                   | ASCII-bound only                  |
+| HashMap-Based Sliding Window   | 🟢 O(n)     | 🟢 O(n)      | Generalized for any char set                | Slightly more overhead than array |
+| Last-Seen Map-Based Window     | 🟢 O(n)     | 🟢 O(n)      | Flexible, works well with character streams | More complex to implement         |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                           | **Recommended Approach**          |
-| -------------------------------------- | --------------------------------- |
-| Fastest solution for standard ASCII strings      | 🥇 Frequency Array Sliding Window |
-| Extended characters / multilingual string compatibility       | 🥈 HashMap-Based Sliding Window  |
-| Handling character streams or online inputs dynamically | 🥉 Last-Seen Map-Based Window   |
+| **Scenario**                                            | **Recommended Approach**          |
+| ------------------------------------------------------- | --------------------------------- |
+| Fastest solution for standard ASCII strings             | 🥇 Frequency Array Sliding Window |
+| Extended characters / multilingual string compatibility | 🥈 HashMap-Based Sliding Window   |
+| Handling character streams or online inputs dynamically | 🥉 Last-Seen Map-Based Window     |
 
 </details>
-
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -207,7 +212,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -232,19 +236,18 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

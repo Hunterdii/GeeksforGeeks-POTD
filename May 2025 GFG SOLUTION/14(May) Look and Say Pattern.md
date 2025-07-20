@@ -1,4 +1,4 @@
-# *14. Look and Say Pattern*
+# _14. Look and Say Pattern_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/decode-the-pattern1138/1)
 
@@ -8,17 +8,15 @@ Given an integer `n`, return the `n`th term in the **Look-and-Say Sequence**, al
 
 This sequence is built by describing the previous term in terms of the **count of digits in groups of the same digit**.
 
-
 ### 🔁 **How It Works:**
 
 Start with `"1"` as the first term. To generate each subsequent term:
 
-* Read off the digits of the previous term.
-* For each group of consecutive identical digits, state:
+- Read off the digits of the previous term.
+- For each group of consecutive identical digits, state:
 
-  * The number of times it appears (the count),
-  * Followed by the digit itself.
-
+  - The number of times it appears (the count),
+  - Followed by the digit itself.
 
 ### 📚 **Examples of the Sequence:**
 
@@ -30,8 +28,6 @@ Start with `"1"` as the first term. To generate each subsequent term:
 111221      # One 1, One 2, Two 1s → "111221"
 ...
 ```
-
-
 
 ## **📘 Examples**
 
@@ -47,8 +43,6 @@ Start with `"1"` as the first term. To generate each subsequent term:
 The sequence evolves as:
 1 → 11 → 21 → 1211 → **111221**
 
-
-
 ### **Example 2:**
 
 **Input:**
@@ -61,12 +55,9 @@ The sequence evolves as:
 The third term is:
 1 → 11 → **21**
 
-
-
 ## **🔒 Constraints**
 
-* \$1 \leq n \leq 30\$
-
+- \$1 \leq n \leq 30\$
 
 ## ✅ **My Approach**
 
@@ -79,15 +70,15 @@ We iteratively build each term in the Look-and-Say sequence by scanning the prev
 1. **Initialize** the sequence with the first term as `"1"`.
 2. **Repeat** the following process from the 2nd term to the `n`th term:
 
-   * Create an empty string `next_term`.
-   * Traverse the current term:
+   - Create an empty string `next_term`.
+   - Traverse the current term:
 
-     * Count how many times a digit repeats consecutively.
-     * Append the **count** followed by the **digit** to `next_term`.
-   * Update the current term to `next_term` for the next iteration.
+     - Count how many times a digit repeats consecutively.
+     - Append the **count** followed by the **digit** to `next_term`.
+
+   - Update the current term to `next_term` for the next iteration.
+
 3. **Return** the final term after `n - 1` transformations.
-
-
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
@@ -95,7 +86,6 @@ We iteratively build each term in the Look-and-Say sequence by scanning the prev
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | **Time**            | O(n × L), where `L` is the average length of terms in the sequence. Each of the `n` iterations processes a string with increasing size. |
 | **Auxiliary Space** | O(L), used for building the next term at each step.                                                                                     |
-
 
 ## **🧠 Code (C++)**
 
@@ -122,7 +112,6 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ Using `ostringstream` for Cleaner Formatting**
 
 ### **💡 Algorithm Steps:**
@@ -130,12 +119,13 @@ class Solution {
 1. Initialize the result as `"1"`.
 2. Repeat the following for `n-1` times:
 
-   * Create an `ostringstream` to build the next sequence.
-   * Traverse the current result:
+   - Create an `ostringstream` to build the next sequence.
+   - Traverse the current result:
 
-     * Count consecutive identical digits.
-     * Append count and digit to the stream.
-   * Convert stream to string for the next iteration.
+     - Count consecutive identical digits.
+     - Append count and digit to the stream.
+
+   - Convert stream to string for the next iteration.
 
 ```cpp
 class Solution {
@@ -163,14 +153,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* 🧹 Makes code cleaner and more readable.
-* 🧵 Uses standard `ostringstream` for better formatting.
+- 🧹 Makes code cleaner and more readable.
+- 🧵 Uses standard `ostringstream` for better formatting.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n × L), where L = average length of result strings.
-* **Auxiliary Space:** O(L) per iteration.
-
+- **Time:** O(n × L), where L = average length of result strings.
+- **Auxiliary Space:** O(L) per iteration.
 
 ## 📊 **3️⃣ Recursive Implementation**
 
@@ -180,8 +169,8 @@ class Solution {
 2. Recursively get the string for `n - 1`.
 3. Traverse that result:
 
-   * Count repeating digits.
-   * Build the result string using count and digit.
+   - Count repeating digits.
+   - Build the result string using count and digit.
 
 ```cpp
 class Solution {
@@ -203,34 +192,31 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* 🧠 Clear and elegant for recursive thinkers.
-* 🎯 Shows the conceptual chain between `n` and `n-1`.
+- 🧠 Clear and elegant for recursive thinkers.
+- 🎯 Shows the conceptual chain between `n` and `n-1`.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n × L)
-* **Auxiliary Space:** O(n × L) (due to recursion stack + strings)
-
+- **Time:** O(n × L)
+- **Auxiliary Space:** O(n × L) (due to recursion stack + strings)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                 | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                             | ⚠️ **Cons**                          |
-| ---------------------------- | ----------- | ------------- | -------------------------------------- | ------------------------------------ |
-| 🧠 Iterative                 | 🟢 O(n × L) | 🟢 O(L)       | Efficient, easy to follow              | Manual string manipulation           |
-| 🧵 `ostringstream` version   | 🟢 O(n × L) | 🟢 O(L)       | Cleaner, readable syntax               | Slightly more memory due to stream   |
-| 🔁 Recursive version         | 🔸 O(n × L) | 🔸 O(n × L)   | Short, expressive, good for interviews | ⚠️ Stack overflow risk for large `n` |
-
+| **Approach**               | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                            | ⚠️ **Cons**                          |
+| -------------------------- | ----------- | ------------ | -------------------------------------- | ------------------------------------ |
+| 🧠 Iterative               | 🟢 O(n × L) | 🟢 O(L)      | Efficient, easy to follow              | Manual string manipulation           |
+| 🧵 `ostringstream` version | 🟢 O(n × L) | 🟢 O(L)      | Cleaner, readable syntax               | Slightly more memory due to stream   |
+| 🔁 Recursive version       | 🔸 O(n × L) | 🔸 O(n × L)  | Short, expressive, good for interviews | ⚠️ Stack overflow risk for large `n` |
 
 ### ✅ **Best Choice by Scenario**
 
 | **Scenario**                       | **Recommended Approach**    |
 | ---------------------------------- | --------------------------- |
-| 🏎️ Performance-focused            | 🥇 Iterative (main version) |
+| 🏎️ Performance-focused             | 🥇 Iterative (main version) |
 | 🧼 Clean, readable formatting      | 🥈 `ostringstream` version  |
 | 💬 Interviews / Conceptual Clarity | 🥉 Recursive implementation |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -256,7 +242,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -284,12 +269,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

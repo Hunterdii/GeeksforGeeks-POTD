@@ -1,14 +1,12 @@
-# *15. Substrings with Same First and Last Characters*
+# _15. Substrings with Same First and Last Characters_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/substrings-with-similar-first-and-last-characters3644/1)
-
 
 ## **🧩 Problem Description**
 
 Given a string `s` consisting of lowercase English letters, count all substrings in which the first and last characters are the same.
 
 A substring is a contiguous sequence of characters within the string. Single-character substrings are always valid.
-
 
 ## **📘 Examples**
 
@@ -40,12 +38,10 @@ The valid substrings are `"a"`, `"b"`, `"c"`, `"a"`, `"b"`, `"abca"`, and `"bcab
 
 The valid substrings are `"a"`, `"b"`, `"a"`, and `"aba"`.
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq |s| \leq 10^4\$
-* `s` contains only lowercase English alphabets (`'a'` to `'z'`)
-
+- \$1 \leq |s| \leq 10^4\$
+- `s` contains only lowercase English alphabets (`'a'` to `'z'`)
 
 ## **✅ My Approach**
 
@@ -60,17 +56,15 @@ $$
 
 This accounts for:
 
-* `f` single-character substrings
-* `fC2` substrings where both ends are the same character
+- `f` single-character substrings
+- `fC2` substrings where both ends are the same character
 
 We use a frequency array of size 256 (or 26 if lowercase only) to count characters, then sum this formula over all counts.
 
-
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), as we scan the string once to count character frequencies and once more to sum results.
-* **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size array of length 256 regardless of input size.
-
+- **Expected Time Complexity:** O(n), as we scan the string once to count character frequencies and once more to sum results.
+- **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size array of length 256 regardless of input size.
 
 ## **🧠 Code (C++)**
 
@@ -89,8 +83,6 @@ class Solution {
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
-
 
 ## 📊 **2️⃣ HashMap-Based Frequency Count**
 
@@ -115,13 +107,12 @@ class Solution {
 
 ### ✅ Why This Approach?
 
-* Reduces unnecessary storage compared to fixed-size array (good for limited character sets).
+- Reduces unnecessary storage compared to fixed-size array (good for limited character sets).
 
 #### 📝 Complexity Analysis:
 
-* **Time:** O(n)
-* **Auxiliary Space:** O(k), where `k` is the number of unique characters
-
+- **Time:** O(n)
+- **Auxiliary Space:** O(k), where `k` is the number of unique characters
 
 ## 📊 **3️⃣ Using C++ STL `map` or `array<int, 26>` (If Input is Lowercase Only)**
 
@@ -146,31 +137,29 @@ class Solution {
 
 ### ✅ Why This Approach?
 
-* Fast and space-efficient when you know the character set (a–z).
-* Constant-size array is faster than unordered\_map.
+- Fast and space-efficient when you know the character set (a–z).
+- Constant-size array is faster than unordered_map.
 
 #### 📝 Complexity Analysis:
 
-* **Time:** O(n)
-* **Auxiliary Space:** O(1) (since 26 is constant)
-
+- **Time:** O(n)
+- **Auxiliary Space:** O(1) (since 26 is constant)
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**           | ⏱️ Time | 💾 Space | ✅ Pros                             | ⚠️ Cons                         |
-| ---------------------- | ------- | -------- | ---------------------------------- | ------------------------------- |
-| Frequency array (main) | 🟢 O(n)  | 🟢 O(Σ=256) | Fastest, simplest                  | Wastes space for small charsets |
-| `unordered_map` count  | 🟢 O(n)  | 🔸 O(k)     | Efficient for limited unique chars | Slightly longer code            |
-| `array<int, 26>`       | 🟢 O(n)  | 🔸 O(1)     | Best for lowercase-only strings    | Only works with known charsets  |
-
+| **Approach**           | ⏱️ Time | 💾 Space    | ✅ Pros                            | ⚠️ Cons                         |
+| ---------------------- | ------- | ----------- | ---------------------------------- | ------------------------------- |
+| Frequency array (main) | 🟢 O(n) | 🟢 O(Σ=256) | Fastest, simplest                  | Wastes space for small charsets |
+| `unordered_map` count  | 🟢 O(n) | 🔸 O(k)     | Efficient for limited unique chars | Slightly longer code            |
+| `array<int, 26>`       | 🟢 O(n) | 🔸 O(1)     | Best for lowercase-only strings    | Only works with known charsets  |
 
 ### ✅ Best Choice by Scenario
 
-| **Scenario**                      | **Recommended Approach**      |
-| --------------------------------- | ----------------------------- |
-| Performance-critical, any charset | 🥇 Fixed-size array of 256     |
-| Lowercase input (a–z)             | 🥈 26-letter frequency array         |
-| Space-aware and clean design      | 🥉 HashMap |
+| **Scenario**                      | **Recommended Approach**     |
+| --------------------------------- | ---------------------------- |
+| Performance-critical, any charset | 🥇 Fixed-size array of 256   |
+| Lowercase input (a–z)             | 🥈 26-letter frequency array |
+| Space-aware and clean design      | 🥉 HashMap                   |
 
 </details>
 
@@ -203,12 +192,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

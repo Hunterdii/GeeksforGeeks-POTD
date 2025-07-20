@@ -9,18 +9,23 @@ Given an integer `n`, find the square root of `n`. If `n` is not a perfect squar
 **Example:**
 
 Input:
+
 ```
 n = 5
 ```
+
 Output:
+
 ```
 2
 ```
+
 Explanation: Since 5 is not a perfect square, the floor of the square root of 5 is 2.
 
 ### My Approach
 
 1. **Initial Check:**
+
    - If `n` is 0 or 1, return `n` immediately as the square root of 0 is 0 and the square root of 1 is 1.
 
 2. **Binary Search:**
@@ -95,7 +100,7 @@ class Solution {
 
 ```python
 class Solution:
-    def floorSqrt(self, n): 
+    def floorSqrt(self, n):
         if n == 0 or n == 1:
             return n
 
@@ -128,5 +133,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

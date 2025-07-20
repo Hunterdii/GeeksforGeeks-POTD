@@ -1,55 +1,56 @@
-# *28. Maximum Sum of Non-Adjacent Nodes*
+# _28. Maximum Sum of Non-Adjacent Nodes_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1)
-
 
 ## **🧩 Problem Description**
 
 Given a binary tree where each node has a positive integer value, the task is to find the **maximum sum of nodes** such that no two nodes are **directly connected** (i.e., if you pick a node, you cannot pick its parent or its immediate children).
-
 
 ## **📘 Examples**
 
 ### **Example 1:**
 
 #### **Input:**
+
 `root[] = [11, 1, 2]`
 
 #### **Output:**
+
 `11`
 
 #### **Explanation:**
-The maximum sum is obtained by selecting node `11`. Since selecting its children would violate the non-adjacency rule, they are skipped.
 
+The maximum sum is obtained by selecting node `11`. Since selecting its children would violate the non-adjacency rule, they are skipped.
 
 ### **Example 2:**
 
 #### **Input:**
+
 `root[] = [1, 2, 3, 4, N, 5, 6]`
 
 #### **Output:**
+
 `16`
 
 #### **Explanation:**
-Pick nodes `1, 4, 5, and 6` for maximum sum `16`, maintaining the rule that no two selected nodes are directly connected.
 
+Pick nodes `1, 4, 5, and 6` for maximum sum `16`, maintaining the rule that no two selected nodes are directly connected.
 
 ## **🔒 Constraints**
 
 - $1 \leq \text{No. of nodes in the tree} \leq 10^4$
 - $1 \leq \text{Node.val} \leq 10^5$
 
-
 ## **✅ My Approach:**
 
 ### **Dynamic Programming on Trees (Pair Recursion)**
 
 This method uses **postorder traversal** and **dynamic programming** to calculate two values at each node:
+
 - **Include** current node → Node's value + exclude sum of left and right children.
 - **Exclude** current node → Maximum of include/exclude from both children.
 
 We recursively return a pair representing these two choices for each node.
-
 
 ### **Algorithm Steps:**
 
@@ -62,13 +63,10 @@ We recursively return a pair representing these two choices for each node.
      - **Exclude** current node → max of left include/exclude + max of right include/exclude.
 3. The final answer will be the maximum of the two values at the root.
 
-
 ## **🧮 Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n), as each node is visited exactly once during the traversal.
-- **Expected Auxiliary Space Complexity:** O(h), where *h* is the height of the tree, due to the recursion call stack.
-
-
+- **Expected Auxiliary Space Complexity:** O(h), where _h_ is the height of the tree, due to the recursion call stack.
 
 ## 🧠 **Code (C++)**
 
@@ -86,7 +84,6 @@ class Solution {
     }
 };
 ```
-
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
@@ -118,24 +115,22 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
+
 - Useful when there are repeated subtrees (though rare in standard binary trees).
 
-
 #### 📝 **Complexity Analysis:**
+
 - **Expected Time Complexity:** O(n), as memoization ensures each node processed once.
 - **Expected Auxiliary Space Complexity:** O(n), due to storage in the map.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                   | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                         | ⚠️ **Cons**                  |
-|----------------------------------|-------------|--------------|-------------------------------------|-------------------------------|
-| Simple DP Recursion             | 🟢 O(n)      | 🟢 O(h)       | Clean, minimal extra space          | Stack overflow if tree too deep |
-| DP + Memoization Map             | 🟢 O(n)      | 🔴 O(n)       | Better in overlapping cases         | More memory consumption        |
-
+| **Approach**         | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                 | ⚠️ **Cons**                     |
+| -------------------- | ----------- | ------------ | --------------------------- | ------------------------------- |
+| Simple DP Recursion  | 🟢 O(n)     | 🟢 O(h)      | Clean, minimal extra space  | Stack overflow if tree too deep |
+| DP + Memoization Map | 🟢 O(n)     | 🔴 O(n)      | Better in overlapping cases | More memory consumption         |
 
 </details>
-
 
 ## 🧑‍💻 **Code (Java)**
 
@@ -152,7 +147,6 @@ class Solution {
     }
 }
 ```
-
 
 ## 🐍 **Code (Python)**
 
@@ -172,12 +166,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

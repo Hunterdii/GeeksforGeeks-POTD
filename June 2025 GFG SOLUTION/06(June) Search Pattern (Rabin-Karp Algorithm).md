@@ -1,25 +1,33 @@
 ---
 title: "🔍 Search Pattern (Rabin-Karp Algorithm) | GFG Solution 🧠"
-keywords🏷️: ["🔍 string matching", "🧪 Rabin-Karp", "🧠 hashing", "📘 GFG", "🔢 pattern search", "💡 substring search", "📚 DSA", "🏁 competitive programming"]
+keywords🏷️:
+  [
+    "🔍 string matching",
+    "🧪 Rabin-Karp",
+    "🧠 hashing",
+    "📘 GFG",
+    "🔢 pattern search",
+    "💡 substring search",
+    "📚 DSA",
+    "🏁 competitive programming",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution for Rabin-Karp based substring search. Fast, efficient pattern matching using rolling hash! 🚀"
 date: 📅 2025-06-06
 ---
 
-# *06. Search Pattern (Rabin-Karp Algorithm)*
+# _06. Search Pattern (Rabin-Karp Algorithm)_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1)
-
 
 ## **🧩 Problem Description**
 
 Given two strings:
 
-* A **text** string in which to search.
-* A **pattern** string to find.
+- A **text** string in which to search.
+- A **pattern** string to find.
 
 Return **all starting positions** (1-based) where the pattern occurs in the text. Use the **Rabin-Karp Algorithm** (rolling hash-based pattern matching).
-
 
 ## **📘 Examples**
 
@@ -37,13 +45,11 @@ Input: text = "geeksforgeeks", pattern = "geek"
 Output: [1, 9]
 ```
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq \text{len(text)} \leq 5 \times 10^5\$
-* \$1 \leq \text{len(pattern)} \leq \text{len(text)}\$
-* All characters are lowercase English letters (`a-z`)
-
+- \$1 \leq \text{len(text)} \leq 5 \times 10^5\$
+- \$1 \leq \text{len(pattern)} \leq \text{len(text)}\$
+- All characters are lowercase English letters (`a-z`)
 
 ## **✅ My Approach**
 
@@ -51,8 +57,8 @@ The **Rabin-Karp Algorithm** uses hashing to match the pattern with substrings i
 
 ### Hashing Basics
 
-* Convert strings to numerical hash using a rolling hash formula.
-* If two hashes match, perform a direct string comparison to confirm (to avoid false positives from collisions).
+- Convert strings to numerical hash using a rolling hash formula.
+- If two hashes match, perform a direct string comparison to confirm (to avoid false positives from collisions).
 
 ### Algorithm Steps:
 
@@ -61,20 +67,17 @@ The **Rabin-Karp Algorithm** uses hashing to match the pattern with substrings i
 
 2. **Precompute Hashes**:
 
-   * Compute the hash of the `pattern` and the initial window in `text`.
-   * Use a rolling hash to update hash as the window slides by 1 character.
+   - Compute the hash of the `pattern` and the initial window in `text`.
+   - Use a rolling hash to update hash as the window slides by 1 character.
 
 3. **Match Check**:
 
-   * When hash matches, check characters one by one to confirm.
-
+   - When hash matches, check characters one by one to confirm.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(N + M), where `N` is text length and `M` is pattern length. We compute hashes in linear time and only compare strings when hashes match.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a fixed number of variables for hashing.
-
-
+- **Expected Time Complexity:** O(N + M), where `N` is text length and `M` is pattern length. We compute hashes in linear time and only compare strings when hashes match.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a fixed number of variables for hashing.
 
 ## 🧑‍💻 **Code (C++)**
 
@@ -110,7 +113,6 @@ class Solution {
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
 
-
 ### 📊 **2️⃣ Naive Matching (Brute Force)**
 
 #### 💡 Idea:
@@ -134,39 +136,38 @@ class Solution {
 
 #### 📝 Complexity:
 
-* **Time:** O(N × M)
-* **Space:** O(1)
+- **Time:** O(N × M)
+- **Space:** O(1)
 
 #### ✅ Pros:
 
-* Easy to understand and implement
+- Easy to understand and implement
 
 #### ⚠️ Cons:
 
-* Slow for large inputs
-  
-### ⚠️ Warning: TLE on Large Inputs
-#### ✅ Test Cases Passed: 1111 / 1115
-##### ❌ Result: Time Limit Exceeded (TLE) 
+- Slow for large inputs
 
+### ⚠️ Warning: TLE on Large Inputs
+
+#### ✅ Test Cases Passed: 1111 / 1115
+
+##### ❌ Result: Time Limit Exceeded (TLE)
 
 ### 🆚 **Comparison of Approaches**
 
-| 🚀 **Approach**          | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**        | ⚠️ **Cons**            |
-| ------------------------ | ---------------------- | ----------------------- | ----------------- | ---------------------- |
-| 🔍 Rabin-Karp            | 🟢 O(N + M)            | 🟢 O(1)                 | Fast and scalable | Hash collisions (rare) |
+| 🚀 **Approach**                | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**       | ⚠️ **Cons**            |
+| ------------------------------ | ---------------------- | ----------------------- | ----------------- | ---------------------- |
+| 🔍 Rabin-Karp                  | 🟢 O(N + M)            | 🟢 O(1)                 | Fast and scalable | Hash collisions (rare) |
 | 🐢 Naive Substring Match (TLE) | 🔸 O(N × M)            | 🟢 O(1)                 | Very simple       | Slow for large strings |
-
 
 ### 🏆 Best Choice Recommendation
 
-| 🎯 **Scenario**                             | 🎖️ **Recommended Approach** |
+| 🎯 **Scenario**                             | 🎖️ **Recommended Approach**  |
 | ------------------------------------------- | ---------------------------- |
 | 📈 Large strings and fast matching required | 🥇 **Rabin-Karp Algorithm**  |
 | 📋 Simple brute-force acceptable            | 🥈 **Naive Substring Match** |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -202,7 +203,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -236,5 +236,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

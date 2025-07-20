@@ -1,14 +1,12 @@
-# *16. Smallest Range in K Lists*
+# _16. Smallest Range in K Lists_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1)
-
 
 ## **🧩 Problem Description**
 
 You are given a 2D integer array `arr[][]` of size `k × n`, where each row contains `n` sorted integers. Your task is to find the smallest range `[l, r]` that includes **at least one element from each of the `k` lists**.
 
 If multiple such ranges exist, return the one that occurs first in the traversal.
-
 
 ## **📘 Examples**
 
@@ -24,7 +22,6 @@ If multiple such ranges exist, return the one that occurs first in the traversal
 **Explanation:**
 One element from each list: 7 (1st list), 8 (2nd list), 6 (3rd list) → range = \[6, 8].
 
-
 ### **Example 2:**
 
 **Input:**
@@ -36,7 +33,6 @@ One element from each list: 7 (1st list), 8 (2nd list), 6 (3rd list) → range =
 
 **Explanation:**
 Range includes: 1 (list1), 2 (list2 and list3) → range = \[1, 2].
-
 
 ### **Example 3:**
 
@@ -50,12 +46,10 @@ Range includes: 1 (list1), 2 (list2 and list3) → range = \[1, 2].
 **Explanation:**
 Smallest range covering 3 lists: 4 (1st), 7 (2nd), 20 (3rd) → range = \[4, 20].
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq k, n \leq 500\$
-* \$0 \leq arr\[i]\[j] \leq 10^5\$
-
+- \$1 \leq k, n \leq 500\$
+- \$0 \leq arr\[i]\[j] \leq 10^5\$
 
 ## **✅ My Approach**
 
@@ -65,25 +59,23 @@ We maintain a **min heap** (priority queue) to always get the smallest current v
 At the same time, we keep track of the **maximum** among the current elements, to compute the range.
 We slide the window by popping the minimum element and inserting the next element from its respective list.
 
-
 ### **Algorithm Steps:**
 
 1. Initialize a min heap with the first element of each row (along with row and col indices).
 2. Keep track of the maximum of the current elements.
 3. In each iteration:
 
-   * Pop the minimum element from the heap.
-   * Update the best range `[lo, hi]` if `(hi - min) < (r - l)`.
-   * Push the next element from the same row into the heap.
-   * If any row is exhausted, terminate.
-4. Return the best `[lo, hi]`.
+   - Pop the minimum element from the heap.
+   - Update the best range `[lo, hi]` if `(hi - min) < (r - l)`.
+   - Push the next element from the same row into the heap.
+   - If any row is exhausted, terminate.
 
+4. Return the best `[lo, hi]`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n \* k \* log k), since we insert and remove `n × k` elements into a heap of size `k` and heap operations cost `log k`.
-* **Expected Auxiliary Space Complexity:** O(k), for the heap storing one element per list.
-
+- **Expected Time Complexity:** O(n \* k \* log k), since we insert and remove `n × k` elements into a heap of size `k` and heap operations cost `log k`.
+- **Expected Auxiliary Space Complexity:** O(k), for the heap storing one element per list.
 
 ## **🧠 Code (C++)**
 
@@ -110,7 +102,6 @@ public:
     }
 };
 ```
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -168,12 +159,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

@@ -10,75 +10,82 @@ Tags:
 
 # 🚀 _Day 2. Missing in Array_ 🧠
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/bit-manipulation-gfg-160/problem/missing-number-in-array1416)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/bit-manipulation-gfg-160/problem/missing-number-in-array1416)
 
 ## 💡 **Problem Description:**
 
 You are given an array `arr[]` of size **n - 1** that contains distinct integers in the range from **1 to n** (inclusive).  
-The array represents a permutation of numbers from `1` to `n` with **one number missing**. Your task is to **find the missing number**.  
+The array represents a permutation of numbers from `1` to `n` with **one number missing**. Your task is to **find the missing number**.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
-arr[] = [1, 2, 3, 5]  
+#### **Input:**
 
-#### **Output:**  
-4  
+arr[] = [1, 2, 3, 5]
 
-#### **Explanation:**  
-All numbers from 1 to 5 should be present. The number **4** is missing.  
+#### **Output:**
 
+4
 
-### **Example 2:**  
+#### **Explanation:**
 
-#### **Input:**  
-arr[] = [8, 2, 4, 5, 3, 7, 1]  
+All numbers from 1 to 5 should be present. The number **4** is missing.
 
-#### **Output:**  
-6  
+### **Example 2:**
 
-#### **Explanation:**  
-All numbers from 1 to 8 should be present. The number **6** is missing.  
+#### **Input:**
 
+arr[] = [8, 2, 4, 5, 3, 7, 1]
 
-### **Example 3:**  
+#### **Output:**
 
-#### **Input:**  
-arr[] = [1]  
+6
 
-#### **Output:**  
-2  
+#### **Explanation:**
 
-#### **Explanation:**  
-Only 1 is present, hence the missing number is **2**.  
+All numbers from 1 to 8 should be present. The number **6** is missing.
 
+### **Example 3:**
 
-### **Constraints:**  
-- $\(1 \leq \text{arr.size()} \leq 10^6\)$  
-- $\(1 \leq \text{arr[i]} \leq \text{arr.size()} + 1\)$  
+#### **Input:**
 
+arr[] = [1]
+
+#### **Output:**
+
+2
+
+#### **Explanation:**
+
+Only 1 is present, hence the missing number is **2**.
+
+### **Constraints:**
+
+- $\(1 \leq \text{arr.size()} \leq 10^6\)$
+- $\(1 \leq \text{arr[i]} \leq \text{arr.size()} + 1\)$
 
 ## 🎯 **My Approach:**
 
 ### **Optimal XOR Approach**
 
 This approach relies on properties of XOR:
+
 - **a ⊕ a = 0** and **a ⊕ 0 = a**
 - If you XOR all numbers from `1 to n` and all elements in the array, the duplicate numbers cancel each other out, leaving only the missing number.
 
-### **Algorithm Steps:**  
-1. Initialize `x = 0`.  
-2. XOR all elements of the array with `x`.  
-3. XOR all numbers from `1` to `n` with `x`.  
-4. The result is the missing number.  
+### **Algorithm Steps:**
 
+1. Initialize `x = 0`.
+2. XOR all elements of the array with `x`.
+3. XOR all numbers from `1` to `n` with `x`.
+4. The result is the missing number.
 
 ## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** `O(n)`, as we make two passes over the array (XOR and loop from 1 to n).  
-- **Expected Auxiliary Space Complexity:** `O(1)`, as we use only a constant amount of additional space.  
+- **Expected Time Complexity:** `O(n)`, as we make two passes over the array (XOR and loop from 1 to n).
+- **Expected Auxiliary Space Complexity:** `O(1)`, as we use only a constant amount of additional space.
 
 ## 📝 **Solution Code**
 
@@ -111,6 +118,7 @@ public:
 ## 📊 **2️⃣ Sum Formula**
 
 ### **Algorithm Steps:**
+
 1. Calculate the expected sum of 1 to `n` using the formula `n*(n+1)/2`.
 2. Subtract the sum of the array from it to get the missing number.
 
@@ -127,16 +135,18 @@ public:
 ```
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(1)`
 
 #### ✅ **Why This Approach?**
-Simple and intuitive. Effective when integer overflow is handled using `long long`.
 
+Simple and intuitive. Effective when integer overflow is handled using `long long`.
 
 ## 📊 **3️⃣ Sorting**
 
 ### **Algorithm Steps:**
+
 1. Sort the array.
 2. Traverse from 1 to `n` and compare values at each index.
 3. The first mismatch is the missing number.
@@ -154,16 +164,18 @@ public:
 ```
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** `O(n log n)`
 - **Space Complexity:** `O(1)`
 
 #### ✅ **Why This Approach?**
-Easy to understand and implement, but not optimal due to the sorting step.
 
+Easy to understand and implement, but not optimal due to the sorting step.
 
 ## 📊 **4️⃣ Hashing (Boolean Array)**
 
 ### **Algorithm Steps:**
+
 1. Create a boolean array of size `n+1`.
 2. Mark visited indices.
 3. The index with `false` is the missing number.
@@ -183,36 +195,36 @@ public:
 ```
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(n)`
 
 #### ✅ **Why This Approach?**
-Straightforward and effective. Especially helpful when array contains invalid or repeated values. Useful in debugging.
 
+Straightforward and effective. Especially helpful when array contains invalid or repeated values. Useful in debugging.
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**             | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                          | ⚠️ **Cons**                         |
-|-----------------------|-------------|--------------|------------------------------|----------------------------------|
-| **XOR Method**        | 🟢 `O(n)`   | 🟢 `O(1)`     | Fastest + no extra memory    | Less intuitive                  |
-| **Sum Formula**       | 🟢 `O(n)`   | 🟢 `O(1)`     | Clean math-based             | Needs care with overflow        |
-| **Sorting**           | 🔴 `O(n log n)` | 🟢 `O(1)` | Simple logic                 | Slower due to sorting           |
-| **Hashing/Boolean**   | 🟢 `O(n)`   | 🔴 `O(n)`     | Easy to read/debug           | Uses extra memory               |
+| **Approach**        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**               | ⚠️ **Cons**              |
+| ------------------- | ---------------------- | ----------------------- | ------------------------- | ------------------------ |
+| **XOR Method**      | 🟢 `O(n)`              | 🟢 `O(1)`               | Fastest + no extra memory | Less intuitive           |
+| **Sum Formula**     | 🟢 `O(n)`              | 🟢 `O(1)`               | Clean math-based          | Needs care with overflow |
+| **Sorting**         | 🔴 `O(n log n)`        | 🟢 `O(1)`               | Simple logic              | Slower due to sorting    |
+| **Hashing/Boolean** | 🟢 `O(n)`              | 🔴 `O(n)`               | Easy to read/debug        | Uses extra memory        |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                                           | **Recommended Approach**         |
-|--------------------------------------------------------|----------------------------------|
-| ✅ **No extra space allowed & optimal runtime needed** | 🥇 **XOR Method**                |
-| ✅ **Readable and simple with math knowledge**         | 🥈 **Sum Formula**               |
-| ✅ **Array can be modified and performance matters less** | **Sorting**                     |
-| ✅ **Clarity and debugging are priorities**            | **Hashing (Boolean Array)**      |
+| **Scenario**                                              | **Recommended Approach**    |
+| --------------------------------------------------------- | --------------------------- |
+| ✅ **No extra space allowed & optimal runtime needed**    | 🥇 **XOR Method**           |
+| ✅ **Readable and simple with math knowledge**            | 🥈 **Sum Formula**          |
+| ✅ **Array can be modified and performance matters less** | **Sorting**                 |
+| ✅ **Clarity and debugging are priorities**               | **Hashing (Boolean Array)** |
 
 > 🔹 **Overall Best** for **runtime and space**: **XOR Method**  
 > 🔹 **Best for clarity**: **Hashing or Sum Formula**
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -236,7 +248,6 @@ class Solution:
         return x ^ (len(a) + 1)
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -250,5 +261,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

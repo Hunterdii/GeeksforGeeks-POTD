@@ -1,4 +1,4 @@
-# *12. Meeting Rooms III*
+# _12. Meeting Rooms III_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/meeting-rooms-iii/1)
 
@@ -14,7 +14,6 @@ You are given an integer `n` representing the number of meeting rooms numbered f
 
 Return the room number that hosts the most meetings. If multiple rooms have the same highest number of meetings, return the smallest room number among them.
 
-
 ## **📘 Examples**
 
 ### **Example 1:**
@@ -22,7 +21,7 @@ Return the room number that hosts the most meetings. If multiple rooms have the 
 #### **Input:**
 
 ```
-n = 2  
+n = 2
 meetings = [[0,6],[2,3],[3,7],[4,8],[6,8]]
 ```
 
@@ -34,13 +33,13 @@ meetings = [[0,6],[2,3],[3,7],[4,8],[6,8]]
 
 #### **Explanation:**
 
-* Time 0: Both rooms free. Meeting \[0,6) → room 0.
-* Time 2: Room 0 busy, room 1 free. Meeting \[2,3) → room 1.
-* Time 3: Room 1 frees. Meeting \[3,7) → room 1.
-* Time 4: Both busy. Meeting \[4,8) delayed.
-* Time 6: Room 0 frees; delayed \[4,8) starts in room 0 at \[6,10).
-* Time 6: Meeting \[6,8) arrives; both busy → delayed.
-* Time 7: Room 1 frees; delayed \[6,8) starts in room 1 at \[7,9).
+- Time 0: Both rooms free. Meeting \[0,6) → room 0.
+- Time 2: Room 0 busy, room 1 free. Meeting \[2,3) → room 1.
+- Time 3: Room 1 frees. Meeting \[3,7) → room 1.
+- Time 4: Both busy. Meeting \[4,8) delayed.
+- Time 6: Room 0 frees; delayed \[4,8) starts in room 0 at \[6,10).
+- Time 6: Meeting \[6,8) arrives; both busy → delayed.
+- Time 7: Room 1 frees; delayed \[6,8) starts in room 1 at \[7,9).
   Counts → room 0 has 2, room 1 has 3.
 
 ### **Example 2:**
@@ -48,7 +47,7 @@ meetings = [[0,6],[2,3],[3,7],[4,8],[6,8]]
 #### **Input:**
 
 ```
-n = 4  
+n = 4
 meetings = [[0,8],[1,4],[3,4],[2,3]]
 ```
 
@@ -60,20 +59,18 @@ meetings = [[0,8],[1,4],[3,4],[2,3]]
 
 #### **Explanation:**
 
-* Time 0: All free. \[0,8) → room 0.
-* Time 1: Rooms 1–3 free. \[1,4) → room 1.
-* Time 2: Rooms 2–3 free. \[2,3) → room 2.
-* Time 3: Room 2 frees. \[3,4) → room 2.
+- Time 0: All free. \[0,8) → room 0.
+- Time 1: Rooms 1–3 free. \[1,4) → room 1.
+- Time 2: Rooms 2–3 free. \[2,3) → room 2.
+- Time 3: Room 2 frees. \[3,4) → room 2.
   Counts → \[1,1,2,0].
-
 
 ## **🔒 Constraints**
 
-* $`1 ≤ n ≤ 10^4`$
-* $`1 ≤ meetings.size() ≤ 10^4`$
-* $`meetings[i].size() == 2`$
-* $`0 ≤ start_i < end_i ≤ 10^4`$
-
+- $`1 ≤ n ≤ 10^4`$
+- $`1 ≤ meetings.size() ≤ 10^4`$
+- $`meetings[i].size() == 2`$
+- $`0 ≤ start_i < end_i ≤ 10^4`$
 
 ## **✅ My Approach**
 
@@ -81,8 +78,8 @@ meetings = [[0,8],[1,4],[3,4],[2,3]]
 
 We simulate the process using two min‐heaps:
 
-* **`avail`**: a min‐heap of available room indices.
-* **`busy`**: a min‐heap of pairs `(free_time, room_index)` for rooms currently occupied.
+- **`avail`**: a min‐heap of available room indices.
+- **`busy`**: a min‐heap of pairs `(free_time, room_index)` for rooms currently occupied.
 
 **Key idea:** At each meeting arrival, first release all rooms whose `free_time ≤ start`. If there is an available room, assign the smallest index. Otherwise, take the room that frees the earliest, delay the meeting to that free time, and reassign accordingly.
 
@@ -93,24 +90,25 @@ We simulate the process using two min‐heaps:
 3. Initialize empty `busy` heap and count array `cnt[n] = {0}`.
 4. For each meeting `[s, e]` in sorted order:
 
-   * While `busy` is nonempty and `busy.top().free_time ≤ s`, pop and push its `room_index` into `avail`.
-   * If `avail` is not empty:
+   - While `busy` is nonempty and `busy.top().free_time ≤ s`, pop and push its `room_index` into `avail`.
+   - If `avail` is not empty:
 
      1. Pop the smallest room `r` from `avail`.
      2. Push `(e, r)` into `busy`.
      3. Increment `cnt[r]`.
-   * Else:
+
+   - Else:
 
      1. Pop `(t, r)` from `busy` (earliest free).
      2. Push `(t + (e - s), r)` into `busy` (delayed end).
      3. Increment `cnt[r]`.
+
 5. Return the index of the maximum in `cnt` (tie → smallest index).
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** Each meeting does up to two heap‐operations on heaps of size ≤ n ⇒ **O(m log n)**, where *m* = number of meetings.
-* **Expected Auxiliary Space Complexity:** Storing two heaps and the count array ⇒ **O(n + m)**.
-
+- **Expected Time Complexity:** Each meeting does up to two heap‐operations on heaps of size ≤ n ⇒ **O(m log n)**, where _m_ = number of meetings.
+- **Expected Auxiliary Space Complexity:** Storing two heaps and the count array ⇒ **O(n + m)**.
 
 ## **🧠 Code (C++)**
 
@@ -165,7 +163,7 @@ public:
         sort(meetings.begin(), meetings.end());
         priority_queue<int, vector<int>, greater<int>> available;
         priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<>> busy;
-        vector<int> count(n, 0); 
+        vector<int> count(n, 0);
         for (int i = 0; i < n; ++i)
             available.push(i);
         for (const auto& m : meetings) {
@@ -198,16 +196,16 @@ public:
 };
 ```
 
-* **Time:** O(m log n)
-* **Space:** O(n)
+- **Time:** O(m log n)
+- **Space:** O(n)
 
 ## 📊 **4️⃣ Event-Driven Sweep with Waiting Queue**
 
 We build an **event list** of all meeting **start-events**, sorted by time. We also maintain:
 
-* `freeRooms` (min-heap of indices),
-* `waiting` (min-heap of delayed meetings by original start),
-* `busy` (min-heap of `(end_time, room)`).
+- `freeRooms` (min-heap of indices),
+- `waiting` (min-heap of delayed meetings by original start),
+- `busy` (min-heap of `(end_time, room)`).
 
 Process by **advancing** to the next event (either a meeting start or a room freeing):
 
@@ -215,8 +213,9 @@ Process by **advancing** to the next event (either a meeting start or a room fre
 2. **Enqueue** any meeting whose start = `T` into `waiting`.
 3. While `freeRooms` & `waiting` both nonempty:
 
-   * Pop `i` from `freeRooms` and meeting `m` from `waiting`,
-   * Schedule it: push `(T + duration, i)` into `busy`, `cnt[i]++`.
+   - Pop `i` from `freeRooms` and meeting `m` from `waiting`,
+   - Schedule it: push `(T + duration, i)` into `busy`, `cnt[i]++`.
+
 4. Advance `T` to next event time.
 
 ```cpp
@@ -279,29 +278,26 @@ public:
 };
 ```
 
-* **Time:** O((m + k) log n) where *k* = number of delayed assignments
-* **Space:** O(n + m)
-
+- **Time:** O((m + k) log n) where _k_ = number of delayed assignments
+- **Space:** O(n + m)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                 | ⏱️ **Time**       | 🗂️ **Space** | ✅ **Pros**            | ⚠️ **Cons**               |
-| ---------------------------- | ----------------- | ------------- | --------------------- | ------------------------- |
-| Two-Heap Simulation          | 🟢 O(m log n)     | 🟢 O(n + m)   | Fast, straightforward | Requires two heaps        |
-| Single `multiset`            | 🟡 O(m log n)     | 🟢 O(n)       | Only one container    | Slightly more complex API |
-| Event-Driven + Waiting Queue | 🟡 O((m+k) log n) | 🔴 O(n + m)   | Models delays exactly | More bookkeeping          |
-
+| **Approach**                 | ⏱️ **Time**       | 🗂️ **Space** | ✅ **Pros**           | ⚠️ **Cons**               |
+| ---------------------------- | ----------------- | ------------ | --------------------- | ------------------------- |
+| Two-Heap Simulation          | 🟢 O(m log n)     | 🟢 O(n + m)  | Fast, straightforward | Requires two heaps        |
+| Single `multiset`            | 🟡 O(m log n)     | 🟢 O(n)      | Only one container    | Slightly more complex API |
+| Event-Driven + Waiting Queue | 🟡 O((m+k) log n) | 🔴 O(n + m)  | Models delays exactly | More bookkeeping          |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                     | **Recommended Approach**         |
-| -------------------------------- | -------------------------------- |
-| Large *m* and *n* (≤10⁴)         | 🥇 Two-Heap Simulation           |
-| Want a single balanced container | 🥈 `multiset`-based              |
+| **Scenario**                     | **Recommended Approach**        |
+| -------------------------------- | ------------------------------- |
+| Large _m_ and _n_ (≤10⁴)         | 🥇 Two-Heap Simulation          |
+| Want a single balanced container | 🥈 `multiset`-based             |
 | Exact event modeling             | 🥉 Event-Driven + Waiting Queue |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -360,19 +356,18 @@ class Solution:
         return cnt.index(max(cnt))
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

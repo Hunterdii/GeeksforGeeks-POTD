@@ -1,4 +1,4 @@
-# *16. Floyd Warshall*
+# _16. Floyd Warshall_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1)
 
@@ -15,11 +15,10 @@ Your task is to compute the shortest distance between every pair of nodes `(i, j
 
 ### **Example 1:**
 
-
-
 ![image](https://github.com/user-attachments/assets/e750580e-9c59-4f63-ab48-83f07fa539dc)
 
-#### **Output:**  
+#### **Output:**
+
 ```
 [
   [0, 4, 5, 5, 7],
@@ -32,18 +31,18 @@ Your task is to compute the shortest distance between every pair of nodes `(i, j
 
 ![image](https://github.com/user-attachments/assets/825f4e9d-bcde-41ca-9bb9-4d90cb61b13f)
 
-#### **Explanation:**  
-Each cell `dist[i][j]` in the output shows the shortest distance from node `i` to node `j`, computed by considering all possible intermediate nodes.
+#### **Explanation:**
 
+Each cell `dist[i][j]` in the output shows the shortest distance from node `i` to node `j`, computed by considering all possible intermediate nodes.
 
 ### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
 
 ![image](https://github.com/user-attachments/assets/7db4430b-778a-4af9-9575-c96e52ffbab3)
 
+#### **Output:**
 
-#### **Output:**  
 ```
 [
   [0, -1, 2],
@@ -54,10 +53,10 @@ Each cell `dist[i][j]` in the output shows the shortest distance from node `i` t
 
 ![image](https://github.com/user-attachments/assets/843da9c7-dc96-4603-bd44-4b670d8fb80f)
 
-#### **Explanation:**  
-- The shortest path from node `2` to node `0` is via node `1` (i.e., `2 -> 1 -> 0`), which gives a distance of `2`.  
-- Similarly, the shortest path from node `1` to node `2` is `1 -> 0 -> 2`, with a total cost of `3`.
+#### **Explanation:**
 
+- The shortest path from node `2` to node `0` is via node `1` (i.e., `2 -> 1 -> 0`), which gives a distance of `2`.
+- Similarly, the shortest path from node `1` to node `2` is `1 -> 0 -> 2`, with a total cost of `3`.
 
 ### **Constraints:**
 
@@ -65,27 +64,23 @@ Each cell `dist[i][j]` in the output shows the shortest distance from node `i` t
 - $\(-1000 \leq \text{dist}[i][j] \leq 1000\)$
 - If there is no edge between two nodes, the weight is given as a large value (e.g., `10^8`) representing infinity.
 
-
 ## **My Approach**
 
 ### **Floyd Warshall**
-1. **Concept:**  
+
+1. **Concept:**
    - The algorithm considers every node as an intermediate vertex and updates the distance between every pair of nodes (i, j) if including an intermediate node \( k \) yields a smaller path.
-   
 2. **Algorithm Steps:**
    - For every intermediate node `k` from `0` to `n-1`:
      - For each source node `i` from `0` to `n-1`:
        - For each destination node `j` from `0` to `n-1`:
          - If the path from `i` to `j` can be minimized by passing through `k` (i.e., if `d[i][j] > d[i][k] + d[k][j]`), then update `d[i][j]`.
-  
+
 ## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** **O(n³)**, due to the triple nested loop over \( n \) nodes.
 
 - **Expected Auxiliary Space Complexity:** **O(1)**, as we update the matrix in-place and only use a few additional variables.
-
-
-
 
 ## **Code (C++)**
 
@@ -144,5 +139,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

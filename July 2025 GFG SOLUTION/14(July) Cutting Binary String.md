@@ -1,12 +1,21 @@
 ---
 title: "🔪 Cutting Binary String | GFG Solution ⚡"
-keywords🏷️: ["🔪 binary string", "🔍 dynamic programming", "⚡ power of 5", "🎯 string splitting", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔪 binary string",
+    "🔍 dynamic programming",
+    "⚡ power of 5",
+    "🎯 string splitting",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Cutting Binary String problem: find minimum cuts to split binary string into substrings representing powers of 5 using dynamic programming. 🚀"
 date: 📅 2025-07-14
 ---
 
-# *14. Cutting Binary String*
+# _14. Cutting Binary String_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/cutting-binary-string1342/1)
 
@@ -28,7 +37,7 @@ Return the minimum number of such pieces the string can be divided into.
 ```cpp
 Input: s = "101101101"
 Output: 3
-Explanation: The string can be split into three substrings: "101", "101", and "101", 
+Explanation: The string can be split into three substrings: "101", "101", and "101",
 each of which is a power of 5 with no leading zeros.
 ```
 
@@ -37,7 +46,7 @@ each of which is a power of 5 with no leading zeros.
 ```cpp
 Input: s = "1111101"
 Output: 1
-Explanation: The string can be split into one binary string "1111101" which is 125 
+Explanation: The string can be split into one binary string "1111101" which is 125
 in decimal and a power of 5 with no leading zeros.
 ```
 
@@ -51,7 +60,7 @@ Explanation: There is no substring that can be split into power of 5.
 
 ## **🔒 Constraints**
 
-* $1 \le s.size() \le 30$
+- $1 \le s.size() \le 30$
 
 ## **✅ My Approach**
 
@@ -60,31 +69,35 @@ The optimal approach uses **Dynamic Programming** with **precomputed powers of 5
 ### **Dynamic Programming + Hash Set**
 
 1. **Early Validation:**
-   * If the first character is '0', return -1 immediately (no valid split possible).
+
+   - If the first character is '0', return -1 immediately (no valid split possible).
 
 2. **Precompute Powers of 5:**
-   * Generate all powers of 5 up to 10^9 (within reasonable limits for 30-bit strings).
-   * Store them in a hash set for O(1) lookup.
+
+   - Generate all powers of 5 up to 10^9 (within reasonable limits for 30-bit strings).
+   - Store them in a hash set for O(1) lookup.
 
 3. **DP State Definition:**
-   * `dp[i]` = minimum cuts needed to split substring from index `i` to end.
-   * Base case: `dp[n] = 0` (empty string needs 0 cuts).
+
+   - `dp[i]` = minimum cuts needed to split substring from index `i` to end.
+   - Base case: `dp[n] = 0` (empty string needs 0 cuts).
 
 4. **DP Transition:**
-   * For each position `i` from right to left:
-     * Skip if current character is '0' (no valid substring can start with '0').
-     * Try all possible substrings starting from `i`.
-     * Convert binary substring to decimal using bit manipulation.
-     * If the number is a power of 5, update `dp[i] = min(dp[i], 1 + dp[j+1])`.
+
+   - For each position `i` from right to left:
+     - Skip if current character is '0' (no valid substring can start with '0').
+     - Try all possible substrings starting from `i`.
+     - Convert binary substring to decimal using bit manipulation.
+     - If the number is a power of 5, update `dp[i] = min(dp[i], 1 + dp[j+1])`.
 
 5. **Optimization:**
-   * Use bitwise operations for faster binary-to-decimal conversion.
-   * Break early if the number exceeds 10^9 to avoid overflow.
+   - Use bitwise operations for faster binary-to-decimal conversion.
+   - Break early if the number exceeds 10^9 to avoid overflow.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n²), where n is the length of the string. For each starting position, we check all possible ending positions, and each check involves O(1) operations for power-of-5 validation.
-* **Expected Auxiliary Space Complexity:** O(log n + n), where log n space is used for storing precomputed powers of 5 (approximately 14 powers for numbers up to 10^9), and O(n) space for the DP array.
+- **Expected Time Complexity:** O(n²), where n is the length of the string. For each starting position, we check all possible ending positions, and each check involves O(1) operations for power-of-5 validation.
+- **Expected Auxiliary Space Complexity:** O(log n + n), where log n space is used for storing precomputed powers of 5 (approximately 14 powers for numbers up to 10^9), and O(n) space for the DP array.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -155,14 +168,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n² log n)
-* **Auxiliary Space:** 💾 O(n) - for memoization table
+- **Time:** ⏱️ O(n² log n)
+- **Auxiliary Space:** 💾 O(n) - for memoization table
 
 ### ✅ **Why This Approach?**
 
-* Natural recursive structure makes logic clear.
-* Memoization prevents redundant calculations.
-* Easy to understand and debug step by step.
+- Natural recursive structure makes logic clear.
+- Memoization prevents redundant calculations.
+- Easy to understand and debug step by step.
 
 ## 📊 **3️⃣ BFS with State Compression**
 
@@ -211,30 +224,30 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n²)
-* **Auxiliary Space:** 💾 O(n) - for queue and visited array
+- **Time:** ⏱️ O(n²)
+- **Auxiliary Space:** 💾 O(n) - for queue and visited array
 
 ### ✅ **Why This Approach?**
 
-* Guarantees finding minimum cuts first.
-* Level-order exploration is intuitive.
-* Natural BFS structure for shortest path problems.
+- Guarantees finding minimum cuts first.
+- Level-order exploration is intuitive.
+- Natural BFS structure for shortest path problems.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **DP with Hash Set**            | 🟢 O(n²)              | 🟡 O(log n + n)        | 🚀 Optimal for most cases        | 💾 Hash table overhead               |
-| 🔺 **Memoized Recursion**          | 🟡 O(n² log n)        | 🟡 O(n)                 | 🔧 Natural recursive structure    | 💾 Function call overhead            |
-| ⏰ **BFS Approach**                | 🟢 O(n²)              | 🟡 O(n)                 | ⚡ Guarantees minimum cuts        | 🔧 Queue management overhead         |
+| 🚀 **Approach**           | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**                  |
+| ------------------------- | ---------------------- | ----------------------- | ------------------------------ | ---------------------------- |
+| 🔍 **DP with Hash Set**   | 🟢 O(n²)               | 🟡 O(log n + n)         | 🚀 Optimal for most cases      | 💾 Hash table overhead       |
+| 🔺 **Memoized Recursion** | 🟡 O(n² log n)         | 🟡 O(n)                 | 🔧 Natural recursive structure | 💾 Function call overhead    |
+| ⏰ **BFS Approach**       | 🟢 O(n²)               | 🟡 O(n)                 | ⚡ Guarantees minimum cuts     | 🔧 Queue management overhead |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **General purpose, balanced performance**          | 🥇 **DP with Hash Set**              | ★★★★★                     |
-| 🎯 **Recursive thinking preference**                 | 🥈 **Memoized Recursion**            | ★★★★☆                     |
-| 🚀 **Shortest path guarantee needed**                | 🥉 **BFS Approach**                  | ★★★☆☆                     |
+| 🎯 **Scenario**                              | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| -------------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ **General purpose, balanced performance** | 🥇 **DP with Hash Set**     | ★★★★★                     |
+| 🎯 **Recursive thinking preference**         | 🥈 **Memoized Recursion**   | ★★★★☆                     |
+| 🚀 **Shortest path guarantee needed**        | 🥉 **BFS Approach**         | ★★★☆☆                     |
 
 </details>
 
@@ -302,5 +315,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

@@ -1,4 +1,4 @@
-# *15. Bellman-Ford*
+# _15. Bellman-Ford_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1)
 
@@ -28,7 +28,6 @@ src = 0
 
 <img src="https://github.com/user-attachments/assets/459e6b36-f56c-4168-a4de-d57077575fbf" width="30%">
 
-
 #### **Output:**
 
 ```text
@@ -37,12 +36,10 @@ src = 0
 
 #### **Explanation:**
 
-- 0 → 1: 5  
-- 0 → 1 → 2: 6  
-- 0 → 1 → 2 → 4 → 3: 6  
+- 0 → 1: 5
+- 0 → 1 → 2: 6
+- 0 → 1 → 2 → 4 → 3: 6
 - 0 → 1 → 2 → 4: 7
-
-
 
 ### **Example 2:**
 
@@ -66,15 +63,12 @@ src = 0
 
 - The cycle: 1 → 2 → 3 → 1 has a negative weight → **Negative Cycle Detected**
 
-
 ## **Constraints**
 
 - $\( 1 \leq V \leq 100 \)$
 - $\( 1 \leq E = \text{edges.size()} \leq V \times (V-1) \)$
 - $\( -1000 \leq w \leq 1000 \)$
 - $\( 0 \leq \text{src} < V \)$
-
-
 
 ## **My Approach**
 
@@ -89,14 +83,11 @@ The Bellman-Ford algorithm is designed to find the shortest paths from a **singl
 3. Check for negative weight cycles by attempting one more relaxation:
    - If any edge still updates, it means a negative cycle exists → return `[-1]`.
 
-
-
 ## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** $\( O(V \times E) \)$, as we perform edge relaxation `V-1` times over all `E` edges.
 
 - **Expected Auxiliary Space Complexity:** $\( O(V) \)$, to store the distance array of size `V`.
-
 
 ## Code (C++)
 
@@ -122,13 +113,12 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ Bellman-Ford with Early Termination Optimization**
 
 #### **Algorithm Steps:**
 
 1. Initialize a distance array with a large value (here, `1e8`) and set the source distance to 0.
-2. For each of the `V - 1` iterations, update the distances of the vertices.  
+2. For each of the `V - 1` iterations, update the distances of the vertices.
    - If no update is made in an iteration, break out early to optimize runtime.
 3. Check once more for any possible relaxation to detect negative cycles.
 4. Return `{-1}` if a negative cycle is detected, else return the distance array.
@@ -170,21 +160,18 @@ class Solution {
 
 This can significantly reduce computation when the graph stabilizes early. A practical tweak that saves time in sparse or nearly optimal graphs.
 
-
 ### 🆚 Comparison of Approaches
 
-| **Approach**                                 | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                  | ⚠️ **Cons**                            |
-|---------------------------------------------|-------------------------|--------------------------|----------------------------------------------|-----------------------------------------|
-| **Standard Bellman-Ford**                   | 🟢 O(V × E)                | 🟢 O(V)                     | Simple, classic, handles all cases            | May do redundant passes                 |
-| **Optimized with Early Termination**        | 🟡 Best: O(E), Worst: O(V × E) | 🟢 O(V)              | Faster on converging graphs, fewer passes    | Still worst-case `O(V × E)`             |
+| **Approach**                         | ⏱️ **Time Complexity**         | 🗂️ **Space Complexity** | ✅ **Pros**                               | ⚠️ **Cons**                 |
+| ------------------------------------ | ------------------------------ | ----------------------- | ----------------------------------------- | --------------------------- |
+| **Standard Bellman-Ford**            | 🟢 O(V × E)                    | 🟢 O(V)                 | Simple, classic, handles all cases        | May do redundant passes     |
+| **Optimized with Early Termination** | 🟡 Best: O(E), Worst: O(V × E) | 🟢 O(V)                 | Faster on converging graphs, fewer passes | Still worst-case `O(V × E)` |
 
 - Use **Bellman-Ford** when negative weights or cycles are possible.
 
 - Use **Early Termination** for performance optimization.
 
-
 </details>
-
 
 ## Code (Java)
 
@@ -205,7 +192,6 @@ class Solution {
     }
 }
 ```
-
 
 ## Code (Python)
 
@@ -237,5 +223,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

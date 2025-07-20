@@ -1,4 +1,4 @@
-# *5. Search in an Almost Sorted Array*
+# _5. Search in an Almost Sorted Array_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/search-in-an-almost-sorted-array/1)
 
@@ -10,27 +10,45 @@ Given an integer `target`. You have to return the index (0-based) of the target 
 ## **📘 Examples**
 
 ### **Example 1:**
+
 #### **Input:**
+
 `arr[] = [10, 3, 40, 20, 50, 80, 70]`, `target = 40`
+
 #### **Output:**
+
 `2`
+
 #### **Explanation:**
+
 Index of 40 in the given array is 2.
 
 ### **Example 2:**
+
 #### **Input:**
+
 `arr[] = [10, 3, 40, 20, 50, 80, 70]`, `target = 90`
+
 #### **Output:**
+
 `-1`
+
 #### **Explanation:**
+
 90 is not present in the array.
 
 ### **Example 3:**
+
 #### **Input:**
+
 `arr[] = [-20]`, `target = -20`
+
 #### **Output:**
+
 `0`
+
 #### **Explanation:**
+
 -20 is the only element present in the array.
 
 ## **🔒 Constraints**
@@ -51,12 +69,10 @@ This is the most straightforward searching technique where we iterate through th
 3. If a match is found, return the index `i`.
 4. If the loop completes without a match, return `-1`.
 
-
-
 ## 🧮 **Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), where `n` is the number of elements in the array. In the worst case, we may have to check every element.
-* **Expected Auxiliary Space Complexity:** O(1), as we do not use any extra space beyond a few variables.
+- **Expected Time Complexity:** O(n), where `n` is the number of elements in the array. In the worst case, we may have to check every element.
+- **Expected Auxiliary Space Complexity:** O(1), as we do not use any extra space beyond a few variables.
 
 ## **🧠 Code (C++)**
 
@@ -83,11 +99,12 @@ This approach modifies binary search to account for the fact that the target may
 1. Initialize `low = 0`, `high = n - 1`.
 2. While `low <= high`:
 
-   * Compute `mid = low + (high - low) / 2`.
-   * Check if `arr[mid] == target`. If yes, return `mid`.
-   * Check `arr[mid - 1]` if `mid > low`, and `arr[mid + 1]` if `mid < high`.
-   * If `target < arr[mid]`, move `high = mid - 2`.
-   * Else, move `low = mid + 2`.
+   - Compute `mid = low + (high - low) / 2`.
+   - Check if `arr[mid] == target`. If yes, return `mid`.
+   - Check `arr[mid - 1]` if `mid > low`, and `arr[mid + 1]` if `mid < high`.
+   - If `target < arr[mid]`, move `high = mid - 2`.
+   - Else, move `low = mid + 2`.
+
 3. Return `-1` if not found.
 
 ```cpp
@@ -111,13 +128,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Leverages the “almost sorted” nature of the array.
-* More efficient than linear search for large arrays.
+- Leverages the “almost sorted” nature of the array.
+- More efficient than linear search for large arrays.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(log n)
-* **Auxiliary Space:** O(1)
+- **Time:** O(log n)
+- **Auxiliary Space:** O(1)
 
 ## 📊 **3️⃣ Using `std::find`**
 
@@ -136,16 +153,16 @@ class Solution {
     }
 };
 ```
+
 ### ✅ **Why This Approach?**
 
-* Cleaner and more readable using STL.
-* Avoids explicit loops—ideal for quick and concise code.
+- Cleaner and more readable using STL.
+- Avoids explicit loops—ideal for quick and concise code.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n)
-* **Auxiliary Space:** O(1)
-
+- **Time:** O(n)
+- **Auxiliary Space:** O(1)
 
 ## 📊 **4️⃣ Hash Map Lookup (Best for unsorted data, many queries)**
 
@@ -173,13 +190,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Extremely fast for large arrays with repeated queries.
-* Good preprocessing strategy.
+- Extremely fast for large arrays with repeated queries.
+- Good preprocessing strategy.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n) to build, O(1) query
-* **Auxiliary Space:** O(n)
+- **Time:** O(n) to build, O(1) query
+- **Auxiliary Space:** O(n)
 
 ## 📊 **5️⃣ Binary Search (Only for Sorted Arrays)**
 
@@ -222,23 +239,23 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Optimal for large **sorted** arrays with infrequent updates.
-* Faster lookup in O(log n) time after preprocessing.
+- Optimal for large **sorted** arrays with infrequent updates.
+- Faster lookup in O(log n) time after preprocessing.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n log n) for sorting, O(log n) for search
-* **Auxiliary Space:** O(n) for map + copy
+- **Time:** O(n log n) for sorting, O(log n) for search
+- **Auxiliary Space:** O(n) for map + copy
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**               | ⏱️ **Time**              | 🗂️ **Space** | ✅ **Pros**                         | ⚠️ **Cons**                  |
-| -------------------------- | ------------------------ | ------------- | ---------------------------------- | ---------------------------- |
-| Linear Search              | 🔸 O(n)                  | 🟢 O(1)       | Simple and works for unsorted data | Slow for large arrays        |
-| Optimized Binary Search    | 🟢 O(log n)              | 🟢 O(1)       | Best for almost sorted arrays      | Needs careful mid checks     |
-| `std::find` (STL)          | 🔸 O(n)                  | 🟢 O(1)       | Clean code using STL               | Still linear time            |
-| Hash Map Lookup            | 🟢 O(n) + O(1)           | 🔸 O(n)       | Fastest for repeated searches      | Extra space needed           |
-| Binary Search with Mapping | 🟡 O(n log n) + O(log n) | 🔸 O(n)       | Fast lookups after sorting         | Requires sorting and mapping |
+| **Approach**               | ⏱️ **Time**              | 🗂️ **Space** | ✅ **Pros**                        | ⚠️ **Cons**                  |
+| -------------------------- | ------------------------ | ------------ | ---------------------------------- | ---------------------------- |
+| Linear Search              | 🔸 O(n)                  | 🟢 O(1)      | Simple and works for unsorted data | Slow for large arrays        |
+| Optimized Binary Search    | 🟢 O(log n)              | 🟢 O(1)      | Best for almost sorted arrays      | Needs careful mid checks     |
+| `std::find` (STL)          | 🔸 O(n)                  | 🟢 O(1)      | Clean code using STL               | Still linear time            |
+| Hash Map Lookup            | 🟢 O(n) + O(1)           | 🔸 O(n)      | Fastest for repeated searches      | Extra space needed           |
+| Binary Search with Mapping | 🟡 O(n log n) + O(log n) | 🔸 O(n)      | Fast lookups after sorting         | Requires sorting and mapping |
 
 ### ✅ **Best Choice?**
 
@@ -262,7 +279,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -273,22 +289,18 @@ class Solution:
         return -1
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>
-
-
-

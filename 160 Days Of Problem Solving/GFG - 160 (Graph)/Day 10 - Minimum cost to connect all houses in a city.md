@@ -7,8 +7,7 @@ Tags:
 
 # 🚀 _Day 10. Minimum cost to connect all houses in a city_ 🧠
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/minimum-cost-to-connect-all-houses-in-a-city)  
-
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/minimum-cost-to-connect-all-houses-in-a-city)
 
 ## 💡 **Problem Description:**
 
@@ -24,79 +23,82 @@ $\]
 
 > **Note:** Sorry for uploading late, my Final Sem exam is going on.
 
-
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
-n = 5  
+n = 5
 houses[][] = [[0, 7], [0, 9], [20, 7], [30, 7], [40, 70]]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 105
 ```
 
-#### **Explanation:**  
-- Connect house 1 (0,7) and house 2 (0,9) with cost = 2  
-- Connect house 1 (0,7) and house 3 (20,7) with cost = 20  
-- Connect house 3 (20,7) and house 4 (30,7) with cost = 10  
+#### **Explanation:**
+
+- Connect house 1 (0,7) and house 2 (0,9) with cost = 2
+- Connect house 1 (0,7) and house 3 (20,7) with cost = 20
+- Connect house 3 (20,7) and house 4 (30,7) with cost = 10
 - Connect house 4 (30,7) and house 5 (40,70) with cost = 73  
-Overall minimum cost: 2 + 10 + 20 + 73 = 105.
+  Overall minimum cost: 2 + 10 + 20 + 73 = 105.
 
 <img src="https://github.com/user-attachments/assets/ef830f3f-5d6f-4300-ae9b-96681842dd2c" width="40%">
 
-### **Example 2:**  
+### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
-n = 4  
+n = 4
 houses[][] = [[0, 0], [1, 1], [1, 3], [3, 0]]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 7
 ```
 
-#### **Explanation:**  
-- Connect house 1 (0,0) and house 2 (1,1) with cost = 2  
-- Connect house 2 (1,1) and house 3 (1,3) with cost = 2  
-- Connect house 1 (0,0) and house 4 (3,0) with cost = 3  
-Overall minimum cost: 2 + 2 + 3 = 7.
+#### **Explanation:**
 
-### **Constraints:**  
-- $1 ≤ n ≤ 10^3$  
-- $0 ≤ houses[i][j] ≤ 10^3$  
+- Connect house 1 (0,0) and house 2 (1,1) with cost = 2
+- Connect house 2 (1,1) and house 3 (1,3) with cost = 2
+- Connect house 1 (0,0) and house 4 (3,0) with cost = 3  
+  Overall minimum cost: 2 + 2 + 3 = 7.
+
+### **Constraints:**
+
+- $1 ≤ n ≤ 10^3$
+- $0 ≤ houses[i][j] ≤ 10^3$
 
 ## 🎯 **My Approach:**
 
 ### **Optimized Prim’s Algorithm**
+
 1. **Overview:**  
    We use **Prim's algorithm** to compute the Minimum Spanning Tree (MST) of a complete graph where each node represents a house and the weight between two houses is their Manhattan distance.
-   
-2. **Algorithm Steps:**  
-   - **Initialize:**  
+2. **Algorithm Steps:**
+   - **Initialize:**
      - Create an array `d` to store the minimum cost (distance) to connect each house; initialize with a large value (infinity), except for the first house set to 0.
      - Maintain an array `vis` to mark visited houses.
-     
-   - **Construct the MST:**  
-     - Repeat for all houses:  
+   - **Construct the MST:**
+     - Repeat for all houses:
        - Select the house `u` not yet visited with the smallest cost `d[u]`.
        - Mark the house `u` as visited and add `d[u]` to the total cost.
        - Update the cost of reaching every other house `v` (not yet visited) as the minimum of its current cost and the Manhattan distance from house `u` to house `v`.
-     
-   - **Return the Total Cost:**  
+   - **Return the Total Cost:**
      - After processing all houses, the total cost accumulated gives the minimum cost to connect all houses.
 
-   
 ## 🕒 **Time and Auxiliary Space Complexity**
 
-   - **Expected Time Complexity:** O(n²), as for each of the n houses, we update distances for up to n houses.  
-   - **Expected Auxiliary Space Complexity:** O(n), as we maintain two arrays (`d` and `vis`) of size n.
+- **Expected Time Complexity:** O(n²), as for each of the n houses, we update distances for up to n houses.
+- **Expected Auxiliary Space Complexity:** O(n), as we maintain two arrays (`d` and `vis`) of size n.
 
 ## 📝 **Solution Code**
 
@@ -188,5 +190,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

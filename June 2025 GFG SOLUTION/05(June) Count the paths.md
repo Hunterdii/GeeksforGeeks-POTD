@@ -1,19 +1,28 @@
 ---
 title: "🛤️ Count the paths | GFG Solution 🚦"
-keywords🏷️: ["🛤️ count paths", "🌳 DAG", "🔢 topological sort", "🧮 dynamic programming", "📈 graph traversal", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🛤️ count paths",
+    "🌳 DAG",
+    "🔢 topological sort",
+    "🧮 dynamic programming",
+    "📈 graph traversal",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to Count Paths in DAG problem: count total distinct paths from source to destination in a directed acyclic graph using topological sorting and DP. 🚀"
 date: 📅 2025-06-05
 ---
 
-# *05. Count the paths*
+# _05. Count the paths_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/count-the-paths4332/1)
 
 ## **🧩 Problem Description**
 
 Given a Directed Acyclic Graph (DAG) with `V` nodes labeled from `0` to `V-1`, and a list of directed edges `edges[i] = [u, v]` representing a directed edge from node `u` to node `v`, find the total number of distinct paths from a given source node `S` to a destination node `D`.
-
 
 ## **📘 Examples**
 
@@ -30,7 +39,6 @@ Explanation: There are 3 ways to reach 3 from 2:
 
 <img src="https://github.com/user-attachments/assets/bd89acc7-c440-44f9-91a5-1f06110c4778" alt="Count the paths" width="30%">
 
-
 ### Example 2
 
 ```
@@ -43,12 +51,10 @@ Explanation: There are 2 ways to reach 3 from 0:
 
 <img src="https://github.com/user-attachments/assets/19fd6173-f70b-48c3-b708-3de64de95f67" alt="Count the paths" width="30%">
 
-
 ## **🔒 Constraints**
 
-* \$2 \le V \le 10^3\$
-* \$1 \le E = \text{edges.size()} \le \frac{V \times (V - 1)}{2}\$
-
+- \$2 \le V \le 10^3\$
+- \$1 \le E = \text{edges.size()} \le \frac{V \times (V - 1)}{2}\$
 
 ## **✅ My Approach**
 
@@ -61,22 +67,23 @@ Since the graph is a DAG (Directed Acyclic Graph), we can perform a **topologica
 1. **Build the adjacency list** and an **in-degree array** (counts of incoming edges per node).
 2. Use **Kahn’s algorithm** for **topological sorting**:
 
-   * Initialize a queue with all nodes having zero in-degree.
-   * Iteratively remove nodes from the queue, adding them to the topological order, and decrease in-degree of their neighbors.
+   - Initialize a queue with all nodes having zero in-degree.
+   - Iteratively remove nodes from the queue, adding them to the topological order, and decrease in-degree of their neighbors.
+
 3. Initialize a `dp` array where `dp[i]` = number of ways to reach the destination `D` from node `i`.
 
-   * Set `dp[D] = 1` (base case).
+   - Set `dp[D] = 1` (base case).
+
 4. Iterate nodes in reverse topological order:
 
-   * For each node `u`, sum the paths of all its neighbors `v`: `dp[u] += dp[v]`.
-5. The answer is `dp[S]` — the number of ways from source `S` to destination `D`.
+   - For each node `u`, sum the paths of all its neighbors `v`: `dp[u] += dp[v]`.
 
+5. The answer is `dp[S]` — the number of ways from source `S` to destination `D`.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(V + E), since each node and edge is processed exactly once during topological sort and DP calculation.
-* **Expected Auxiliary Space Complexity:** O(V + E), required for adjacency list, in-degree array, DP array, and queue.
-
+- **Expected Time Complexity:** O(V + E), since each node and edge is processed exactly once during topological sort and DP calculation.
+- **Expected Auxiliary Space Complexity:** O(V + E), required for adjacency list, in-degree array, DP array, and queue.
 
 ## 🧑‍💻 **Code (C++)**
 
@@ -102,7 +109,6 @@ class Solution {
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
 
-
 ## 📊 **2️⃣ DFS + Memoization**
 
 Use a depth‐first search from the source, caching (memoizing) the number of ways from each node to the destination.
@@ -113,9 +119,10 @@ Use a depth‐first search from the source, caching (memoizing) the number of wa
 2. Maintain a `memo` array of size `V`, initialized to `-1`.
 3. Write a recursive function `dfs(u)` that:
 
-   * If `u == dest`, return `1`.
-   * If `memo[u] != -1`, return `memo[u]`.
-   * Otherwise, iterate over all neighbors `v` of `u`, sum up `dfs(v)`, store in `memo[u]`, and return it.
+   - If `u == dest`, return `1`.
+   - If `memo[u] != -1`, return `memo[u]`.
+   - Otherwise, iterate over all neighbors `v` of `u`, sum up `dfs(v)`, store in `memo[u]`, and return it.
+
 4. Call `dfs(src)` to get the total number of distinct paths.
 
 ```cpp
@@ -142,39 +149,33 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time: ⏱️** O(V + E) — Each node and edge is processed once thanks to memoization.
-* **Auxiliary Space: 💾** O(V + E) — For adjacency list and memo array, plus recursion stack space.
-
+- **Time: ⏱️** O(V + E) — Each node and edge is processed once thanks to memoization.
+- **Auxiliary Space: 💾** O(V + E) — For adjacency list and memo array, plus recursion stack space.
 
 ### ✅ **Why This Approach?**
-* Avoids building an explicit topological order.
-* Caches results of subproblems for efficiency.
-  
+
+- Avoids building an explicit topological order.
+- Caches results of subproblems for efficiency.
+
 ### ⚠️ Caveat:
 
-* May cause stack overflow on very deep graphs.
-
-
+- May cause stack overflow on very deep graphs.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                 | ⏱️ **Time Complexity** | 💾 **Space Complexity**    | ✅ **Pros**                                         | ⚠️ **Cons**                                 |
-| -------------------- | ----------- | -------- | ---------------------------- | -------------------------------- |
-| 🎯 Topo + DP         | 🟢 O(V + E)    | 🟢 O(V + E) | Fast, optimal, non-recursive | Slightly more setup (Kahn’s alg) |
-| 🔄 DFS + Memoization | 🟢 O(V + E)    | 🟢 O(V + E) | Simple recursive logic       | Risk of stack overflow           |
-
+| 🚀 **Approach**      | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                  | ⚠️ **Cons**                      |
+| -------------------- | ---------------------- | ----------------------- | ---------------------------- | -------------------------------- |
+| 🎯 Topo + DP         | 🟢 O(V + E)            | 🟢 O(V + E)             | Fast, optimal, non-recursive | Slightly more setup (Kahn’s alg) |
+| 🔄 DFS + Memoization | 🟢 O(V + E)            | 🟢 O(V + E)             | Simple recursive logic       | Risk of stack overflow           |
 
 ### 🏆 **Best Choice by Scenario**
 
-| 🎯 Scenario                                        | 🥇 Recommended Approach |
-| -------------------------------------------------- | ----------------------- |
-| 🌐 Moderate/large DAG, need guaranteed O(V+E)      | 🥇 Topo + DP (Kahn’s)   |
-| 📚 Simpler code when graph size is small           | 🥈 DFS + Memoization    |
-
+| 🎯 Scenario                                   | 🥇 Recommended Approach |
+| --------------------------------------------- | ----------------------- |
+| 🌐 Moderate/large DAG, need guaranteed O(V+E) | 🥇 Topo + DP (Kahn’s)   |
+| 📚 Simpler code when graph size is small      | 🥈 DFS + Memoization    |
 
 </details>
-
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -202,7 +203,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -237,5 +237,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

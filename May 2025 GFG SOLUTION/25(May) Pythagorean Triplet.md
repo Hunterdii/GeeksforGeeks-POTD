@@ -1,4 +1,4 @@
-# *25. Pythagorean Triplet*
+# _25. Pythagorean Triplet_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/pythagorean-triplet3018/1)
 
@@ -58,9 +58,8 @@ No such triplet possible.
 
 ## **🔒 Constraints**
 
-* $1 \leq \text{arr.size()} \leq 10^5$
-* $1 \leq \text{arr}[i] \leq 10^3$
-
+- $1 \leq \text{arr.size()} \leq 10^5$
+- $1 \leq \text{arr}[i] \leq 10^3$
 
 ## **✅ My Approach**
 
@@ -68,9 +67,9 @@ No such triplet possible.
 
 To efficiently check for the Pythagorean triplet, we use the following insight:
 
-* If $a^2 + b^2 = c^2$, then $c^2$ must be present in the array.
-* We can precompute the squares of all elements and store them in a hash set.
-* Then, iterate over all pairs $(a, b)$ in the array, compute $a^2 + b^2$, and check if this sum exists in the set.
+- If $a^2 + b^2 = c^2$, then $c^2$ must be present in the array.
+- We can precompute the squares of all elements and store them in a hash set.
+- Then, iterate over all pairs $(a, b)$ in the array, compute $a^2 + b^2$, and check if this sum exists in the set.
 
 ### **Algorithm Steps:**
 
@@ -79,15 +78,14 @@ To efficiently check for the Pythagorean triplet, we use the following insight:
 3. For each pair, calculate `sum_squares = arr[i]^2 + arr[j]^2`.
 4. Check if `sum_squares` exists in `squares`.
 
-   * If yes, return `true` immediately.
-5. If no such triplet is found after checking all pairs, return `false`.
+   - If yes, return `true` immediately.
 
+5. If no such triplet is found after checking all pairs, return `false`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n²), since we check all pairs `(i, j)` of elements in the array.
-* **Expected Auxiliary Space Complexity:** O(n), as we store squares of all elements in a hash set.
-
+- **Expected Time Complexity:** O(n²), since we check all pairs `(i, j)` of elements in the array.
+- **Expected Auxiliary Space Complexity:** O(n), as we store squares of all elements in a hash set.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -108,7 +106,6 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approach</h2></summary>
 
-
 ## 📊 **2️⃣ Frequency Array & Math (O(k²))**
 
 Use a fixed-size frequency array (max value ≤1000) and check `c = √(a²+b²)`.
@@ -119,13 +116,15 @@ Use a fixed-size frequency array (max value ≤1000) and check `c = √(a²+b²)
 2. Collect sorted `unique_nums` where `freq[x] > 0`.
 3. For each `i ≤ j` in `unique_nums`:
 
-   * Compute `c2 = a*a + b*b`, `c = round(sqrt(c2))`.
-   * If `c ≤ 1000`, `c*c == c2`, and `freq[c] > 0`, validate counts:
+   - Compute `c2 = a*a + b*b`, `c = round(sqrt(c2))`.
+   - If `c ≤ 1000`, `c*c == c2`, and `freq[c] > 0`, validate counts:
 
-     * If all three equal, `freq[a] ≥ 3`.
-     * If two equal, those freq≥2.
-     * Else all distinct.
-   * Return `true` if valid.
+     - If all three equal, `freq[a] ≥ 3`.
+     - If two equal, those freq≥2.
+     - Else all distinct.
+
+   - Return `true` if valid.
+
 4. Return `false`.
 
 ```cpp
@@ -154,29 +153,26 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Exploits small value range for O(1) existence checks.
-* Ensures correct index‐distinctness via frequency validation.
+- Exploits small value range for O(1) existence checks.
+- Ensures correct index‐distinctness via frequency validation.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(k²), k ≤ 1000 unique values → worst \~10⁶ operations.
-* **Auxiliary Space:** O(1) (fixed array of size 1001).
-
-
+- **Time:** O(k²), k ≤ 1000 unique values → worst \~10⁶ operations.
+- **Auxiliary Space:** O(1) (fixed array of size 1001).
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                  | ⚠️ **Cons**                        |
-| --------------------------- | ----------- | ------------- | ------------------------------------------- | ---------------------------------- |
-| 🔢 Hash Set of Squares      | 🟢 O(n²)    | 🟢 O(n)       | Simple, single pass, O(1) lookups           | Extra hash memory                  |
-| ⚙️ Frequency Array & Math   | 🟢 O(k²)    | 🟢 O(1)       | Constant extra space, leverages constraints | Only works when max(arr\[i]) small |
-
+| **Approach**              | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                 | ⚠️ **Cons**                        |
+| ------------------------- | ----------- | ------------ | ------------------------------------------- | ---------------------------------- |
+| 🔢 Hash Set of Squares    | 🟢 O(n²)    | 🟢 O(n)      | Simple, single pass, O(1) lookups           | Extra hash memory                  |
+| ⚙️ Frequency Array & Math | 🟢 O(k²)    | 🟢 O(1)      | Constant extra space, leverages constraints | Only works when max(arr\[i]) small |
 
 ### ✅ **Best Choice by Scenario**
 
-| **Scenario**                              | **Recommended Approach**              |
-|-------------------------------------------|-------------------------------------|
-| 🏆 Fastest solution for large or generic input   | 🥇 Hash Set of Squares (One-Pass DP) |
+| **Scenario**                                        | **Recommended Approach**             |
+| --------------------------------------------------- | ------------------------------------ |
+| 🏆 Fastest solution for large or generic input      | 🥇 Hash Set of Squares (One-Pass DP) |
 | 🔧 Optimized for small value ranges with O(1) space | 🥈 Frequency Array & Math            |
 
 </details>
@@ -196,7 +192,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -218,12 +213,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

@@ -1,12 +1,21 @@
 ---
 title: "🔢 Subarrays With At Most K Distinct Integers | GFG Solution 🔍"
-keywords🏷️: ["🔢 subarrays", "🔍 sliding window", "📍 two pointers", "📈 hash map", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔢 subarrays",
+    "🔍 sliding window",
+    "📍 two pointers",
+    "📈 hash map",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Subarrays With At Most K Distinct Integers problem: count subarrays containing at most k distinct elements using sliding window technique. 🚀"
 date: 📅 2025-07-04
 ---
 
-# *04. Subarrays With At Most K Distinct Integers*
+# _04. Subarrays With At Most K Distinct Integers_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/subarrays-with-at-most-k-distinct-integers/1)
 
@@ -44,9 +53,9 @@ Explanation: There are 24 subarrays with at most 2 distinct elements.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 2 \times 10^4$
-* $1 \le k \le 2 \times 10^4$
-* $1 \le \text{arr}[i] \le 10^9$
+- $1 \le \text{arr.size()} \le 2 \times 10^4$
+- $1 \le k \le 2 \times 10^4$
+- $1 \le \text{arr}[i] \le 10^9$
 
 ## **✅ My Approach**
 
@@ -55,30 +64,34 @@ The optimal approach uses the **Sliding Window** technique with a **Hash Map** t
 ### **Sliding Window + Hash Map**
 
 1. **Initialize Variables:**
-   * Use two pointers: `left` (start of window) and `right` (end of window).
-   * Maintain a hash map to store frequency of elements in current window.
-   * Use a counter to track distinct elements efficiently.
+
+   - Use two pointers: `left` (start of window) and `right` (end of window).
+   - Maintain a hash map to store frequency of elements in current window.
+   - Use a counter to track distinct elements efficiently.
 
 2. **Expand Window:**
-   * Move `right` pointer and add `arr[right]` to the hash map.
-   * If it's a new element (frequency becomes 1), decrement `k`.
+
+   - Move `right` pointer and add `arr[right]` to the hash map.
+   - If it's a new element (frequency becomes 1), decrement `k`.
 
 3. **Contract Window:**
-   * If `k` becomes negative (more than k distinct elements), shrink window from left.
-   * Remove `arr[left]` from frequency map and increment `k` if element is completely removed.
-   * Move `left` pointer forward.
+
+   - If `k` becomes negative (more than k distinct elements), shrink window from left.
+   - Remove `arr[left]` from frequency map and increment `k` if element is completely removed.
+   - Move `left` pointer forward.
 
 4. **Count Subarrays:**
-   * For each valid window ending at `right`, add `(right - left + 1)` to result.
-   * This counts all subarrays ending at `right` with at most k distinct elements.
+
+   - For each valid window ending at `right`, add `(right - left + 1)` to result.
+   - This counts all subarrays ending at `right` with at most k distinct elements.
 
 5. **Continue Until End:**
-   * Repeat until `right` pointer reaches the end of array.
+   - Repeat until `right` pointer reaches the end of array.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. Each element is visited at most twice by the sliding window pointers, making it linear time.
-* **Expected Auxiliary Space Complexity:** O(k), where k is the maximum number of distinct elements allowed. In the worst case, the hash map stores at most k distinct elements with their frequencies.
+- **Expected Time Complexity:** O(n), where n is the size of the array. Each element is visited at most twice by the sliding window pointers, making it linear time.
+- **Expected Auxiliary Space Complexity:** O(k), where k is the maximum number of distinct elements allowed. In the worst case, the hash map stores at most k distinct elements with their frequencies.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -135,14 +148,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n + maxVal)
-* **Auxiliary Space:** 💾 O(maxVal) - for frequency array
+- **Time:** ⏱️ O(n + maxVal)
+- **Auxiliary Space:** 💾 O(maxVal) - for frequency array
 
 ### ✅ **Why This Approach?**
 
-* Faster access times with array indexing
-* No hash collisions
-* Better cache locality
+- Faster access times with array indexing
+- No hash collisions
+- Better cache locality
 
 ## 📊 **3️⃣ Two-Pointer with Set Approach**
 
@@ -177,14 +190,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) - for set and map
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) - for set and map
 
 ### ✅ **Why This Approach?**
 
-* Clear separation of concerns
-* Easy to understand logic
-* Explicit distinct element tracking
+- Clear separation of concerns
+- Easy to understand logic
+- Explicit distinct element tracking
 
 ## 📊 **4️⃣ Optimized Single Map Approach**
 
@@ -216,14 +229,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) - for map storage
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) - for map storage
 
 ### ✅ **Why This Approach?**
 
-* Memory efficient with single data structure
-* Clean and concise implementation
-* Automatic distinct count via map size
+- Memory efficient with single data structure
+- Clean and concise implementation
+- Automatic distinct count via map size
 
 ## 📊 **5️⃣ Frequency Counter Optimization**
 
@@ -255,34 +268,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) - for frequency map
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) - for frequency map
 
 ### ✅ **Why This Approach?**
 
-* Avoids repeated map.size() calls
-* Explicit control over distinct count
-* Cleaner logic flow
+- Avoids repeated map.size() calls
+- Explicit control over distinct count
+- Cleaner logic flow
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **HashMap Sliding Window**     | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Works with any values          | 💾 HashMap overhead                   |
-| 🔄 **Array-Based Approach**       | 🟢 O(n)                | 🟡 O(maxVal)            | ⚡ Fastest access, no collisions  | 📝 Limited to known range            |
-| 🔺 **Two-Pointer with Set**       | 🟢 O(n)                | 🟡 O(k)                 | 🔧 Clear logic, explicit tracking| 💾 Extra space for set              |
-| ⏰ **Single Map Approach**        | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Memory efficient, clean code  | 🔄 Map erase operations              |
-| 📊 **Frequency Counter**          | 🟢 O(n)                | 🟡 O(k)                 | ⚡ Avoids size() calls, optimal   | 🔧 Slightly more complex counter     |
+| 🚀 **Approach**               | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                      |
+| ----------------------------- | ---------------------- | ----------------------- | --------------------------------- | -------------------------------- |
+| 🔍 **HashMap Sliding Window** | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Works with any values          | 💾 HashMap overhead              |
+| 🔄 **Array-Based Approach**   | 🟢 O(n)                | 🟡 O(maxVal)            | ⚡ Fastest access, no collisions  | 📝 Limited to known range        |
+| 🔺 **Two-Pointer with Set**   | 🟢 O(n)                | 🟡 O(k)                 | 🔧 Clear logic, explicit tracking | 💾 Extra space for set           |
+| ⏰ **Single Map Approach**    | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Memory efficient, clean code   | 🔄 Map erase operations          |
+| 📊 **Frequency Counter**      | 🟢 O(n)                | 🟡 O(k)                 | ⚡ Avoids size() calls, optimal   | 🔧 Slightly more complex counter |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Maximum performance, known element range**       | 🥇 **Array-Based Approach**          | ★★★★★                     |
-| 🔧 **General purpose, any integer values**            | 🥈 **HashMap Sliding Window**        | ★★★★☆                     |
-| 📊 **Memory constrained environments**                | 🥉 **Single Map Approach**           | ★★★★☆                     |
-| 🎯 **Educational purposes, clear logic**              | 🎖️ **Two-Pointer with Set**         | ★★★☆☆                     |
-| 🚀 **Optimal performance, competitive programming**   | 🏅 **Frequency Counter**             | ★★★★★                     |
+| 🎯 **Scenario**                                     | 🎖️ **Recommended Approach**   | 🔥 **Performance Rating** |
+| --------------------------------------------------- | ----------------------------- | ------------------------- |
+| ⚡ **Maximum performance, known element range**     | 🥇 **Array-Based Approach**   | ★★★★★                     |
+| 🔧 **General purpose, any integer values**          | 🥈 **HashMap Sliding Window** | ★★★★☆                     |
+| 📊 **Memory constrained environments**              | 🥉 **Single Map Approach**    | ★★★★☆                     |
+| 🎯 **Educational purposes, clear logic**            | 🎖️ **Two-Pointer with Set**   | ★★★☆☆                     |
+| 🚀 **Optimal performance, competitive programming** | 🏅 **Frequency Counter**      | ★★★★★                     |
 
 </details>
 
@@ -338,5 +351,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

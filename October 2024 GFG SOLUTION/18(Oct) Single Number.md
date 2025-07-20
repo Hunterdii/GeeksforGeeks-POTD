@@ -96,5 +96,5 @@ For discussions, questions, or doubts related to this solution, please visit my 
 </div>
 
 <p align="center">   
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />  
 </p>

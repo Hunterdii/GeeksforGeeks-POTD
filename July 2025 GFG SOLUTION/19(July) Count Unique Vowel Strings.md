@@ -1,12 +1,21 @@
 ---
 title: "🔤 Count Unique Vowel Strings | GFG Solution 🎯"
-keywords🏷️: ["🔤 vowel strings", "🧮 combinatorics", "📊 frequency counting", "🔄 permutations", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔤 vowel strings",
+    "🧮 combinatorics",
+    "📊 frequency counting",
+    "🔄 permutations",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to Count Unique Vowel Strings problem: calculate total distinct strings by selecting vowels and forming permutations using combinatorial mathematics. 🚀"
 date: 📅 2025-07-19
 ---
 
-# *19. Count Unique Vowel Strings*
+# _19. Count Unique Vowel Strings_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/count-unique-vowel-strings/1)
 
@@ -43,7 +52,7 @@ Explanation: Pick a and e, make all orders → "ae", "ea".
 ```cpp
 Input: s = "aacidf"
 Output: 4
-Explanation: Vowels in s are 'a' and 'i'. Pick each 'a' once with a single 'i', 
+Explanation: Vowels in s are 'a' and 'i'. Pick each 'a' once with a single 'i',
 make all orders → "ai", "ia", "ai", "ia".
 Since 'a' appears twice, we have 2 ways to pick 'a' and 1 way to pick 'i'.
 Total selections = 2 × 1 = 2. Permutations of 2 vowels = 2! = 2.
@@ -52,7 +61,7 @@ Total distinct strings = 2 × 2 = 4.
 
 ## **🔒 Constraints**
 
-* $1 \le s.size() \le 100$
+- $1 \le s.size() \le 100$
 
 ## **✅ My Approach**
 
@@ -61,33 +70,38 @@ The solution uses **Combinatorial Mathematics** with **Frequency Counting** to c
 ### **Frequency Counting + Combinatorics**
 
 1. **Count Vowel Frequencies:**
-   * Iterate through the string and count occurrences of each vowel (a, e, i, o, u).
-   * Store frequencies in an array or map.
+
+   - Iterate through the string and count occurrences of each vowel (a, e, i, o, u).
+   - Store frequencies in an array or map.
 
 2. **Calculate Selection Ways:**
-   * For each vowel that appears in the string, the number of ways to select one occurrence equals its frequency.
-   * Multiply frequencies of all present vowels to get total selection combinations.
+
+   - For each vowel that appears in the string, the number of ways to select one occurrence equals its frequency.
+   - Multiply frequencies of all present vowels to get total selection combinations.
 
 3. **Calculate Permutations:**
-   * Count the number of distinct vowel types present.
-   * Calculate factorial of this count to get all possible arrangements.
+
+   - Count the number of distinct vowel types present.
+   - Calculate factorial of this count to get all possible arrangements.
 
 4. **Final Result:**
-   * Total distinct strings = (Product of frequencies) × (Factorial of distinct vowel count)
+   - Total distinct strings = (Product of frequencies) × (Factorial of distinct vowel count)
 
 ### **Mathematical Formula:**
+
 ```
 Result = (∏ frequency[vowel]) × (distinct_vowels)!
 ```
 
 Where:
+
 - `∏ frequency[vowel]` = product of frequencies of all vowels present
 - `distinct_vowels` = count of unique vowel types in the string
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. We traverse the string once to count vowel frequencies, then perform constant operations for calculation.
-* **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size array to store vowel frequencies (maximum 5 vowels) and a few variables for calculation.
+- **Expected Time Complexity:** O(n), where n is the length of the string. We traverse the string once to count vowel frequencies, then perform constant operations for calculation.
+- **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size array to store vowel frequencies (maximum 5 vowels) and a few variables for calculation.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -120,7 +134,7 @@ class Solution {
 public:
     int vowelCount(string& s) {
         unordered_map<char, int> freq;
-        for (char c : s) 
+        for (char c : s)
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
                 freq[c]++;
         int cnt = 0, mul = 1;
@@ -138,14 +152,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - single pass through string
-* **Auxiliary Space:** 💾 O(1) - fixed vowel storage
+- **Time:** ⏱️ O(n) - single pass through string
+- **Auxiliary Space:** 💾 O(1) - fixed vowel storage
 
 ### ✅ **Why This Approach?**
 
-* Better precision than tgamma
-* More readable code structure
-* Handles large frequencies better
+- Better precision than tgamma
+- More readable code structure
+- Handles large frequencies better
 
 ## 📊 **3️⃣ Switch-Case Optimization**
 
@@ -181,14 +195,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) – single pass with O(1) checks per character
-* **Auxiliary Space:** 💾 O(1) – fixed-size arrays only
+- **Time:** ⏱️ O(n) – single pass with O(1) checks per character
+- **Auxiliary Space:** 💾 O(1) – fixed-size arrays only
 
 ### ✅ **Why This Approach?**
 
-* Fastest character lookup via `switch`
-* Compile-time branch resolution
-* Branch-free vowel identification (no string searches)
+- Fastest character lookup via `switch`
+- Compile-time branch resolution
+- Branch-free vowel identification (no string searches)
 
 ## 📊 **4️⃣ String View Optimization**
 
@@ -222,32 +236,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - optimized with lookup tables
-* **Auxiliary Space:** 💾 O(1) - constant space arrays
+- **Time:** ⏱️ O(n) - optimized with lookup tables
+- **Auxiliary Space:** 💾 O(1) - constant space arrays
 
 ### ✅ **Why This Approach?**
 
-* Fastest character lookup
-* Compile-time optimizations
-* Branch-free vowel detection
+- Fastest character lookup
+- Compile-time optimizations
+- Branch-free vowel detection
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Array + tgamma**             | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Compact and fast               | 💾 Potential precision issues        |
-| 🔺 **Map-based Counting**         | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Better precision               | 💾 Slightly more memory              |
-| ⏰ **Switch-Case**                 | 🟢 O(n)               | 🟢 O(1)                | 🚀 O(1) character lookup        | 🔄 More lines of code                 |
-| 📊 **Lookup Table**               | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest character lookup       | 🔧 Larger code size                  |
+| 🚀 **Approach**           | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                 | ⚠️ **Cons**                   |
+| ------------------------- | ---------------------- | ----------------------- | --------------------------- | ----------------------------- |
+| 🔍 **Array + tgamma**     | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Compact and fast         | 💾 Potential precision issues |
+| 🔺 **Map-based Counting** | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Better precision         | 💾 Slightly more memory       |
+| ⏰ **Switch-Case**        | 🟢 O(n)                | 🟢 O(1)                 | 🚀 O(1) character lookup    | 🔄 More lines of code         |
+| 📊 **Lookup Table**       | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest character lookup | 🔧 Larger code size           |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Speed-critical applications**                    | 🥇 **Lookup Table**                  | ★★★★★                     |
-| 📊 **General purpose**                               | 🥈 **Array + tgamma**                | ★★★★☆                     |
-| 🎯 **High precision required**                       | 🥉 **Map-based Counting**            | ★★★★☆                     |
-| 🚀 **Memory-constrained**                            | 🏅 **Switch-Case**              | ★★★★☆                     |
+| 🎯 **Scenario**                    | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ---------------------------------- | --------------------------- | ------------------------- |
+| ⚡ **Speed-critical applications** | 🥇 **Lookup Table**         | ★★★★★                     |
+| 📊 **General purpose**             | 🥈 **Array + tgamma**       | ★★★★☆                     |
+| 🎯 **High precision required**     | 🥉 **Map-based Counting**   | ★★★★☆                     |
+| 🚀 **Memory-constrained**          | 🏅 **Switch-Case**          | ★★★★☆                     |
 
 </details>
 
@@ -292,5 +306,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

@@ -1,4 +1,4 @@
-# *29. Sort a Linked List of 0s, 1s, and 2s*
+# _29. Sort a Linked List of 0s, 1s, and 2s_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1)
 
@@ -11,36 +11,42 @@ Given the head of a linked list where each node contains a value of either `0`, 
 ### **Example 1:**
 
 #### **Input:**
+
 `head = 1 → 2 → 2 → 1 → 2 → 0 → 2 → 2`
 
 <img src="https://github.com/user-attachments/assets/9d9f6ffc-7813-481c-b48f-68d155b4868b" width="60%">
 
 #### **Output:**
+
 `0 → 1 → 1 → 2 → 2 → 2 → 2 → 2`
 
 <img src="https://github.com/user-attachments/assets/96d7ff8a-4101-4441-99eb-c5bc52e0ef52" width="60%">
 
 #### **Explanation:**
+
 After sorting, all the `0`s are at the beginning, followed by the `1`s, and all the `2`s appear at the end of the list.
 
 ### **Example 2:**
 
 #### **Input:**
+
 `head = 2 → 2 → 0 → 1`
 
 <img src="https://github.com/user-attachments/assets/e54f02f9-c689-4679-912f-b831ad6d144d" width="40%">
 
 #### **Output:**
+
 `0 → 1 → 2 → 2`
 
 <img src="https://github.com/user-attachments/assets/57c4683b-853d-482e-acf3-8069d06163fe" width="40%">
 
 #### **Explanation:**
+
 After sorting, the list is rearranged to have `0` at the beginning, followed by `1`, and all `2`s at the end.
 
 ### **🔒 Constraints**
 
-- $\( 1 \leq \text{no. of nodes} \leq 10^6 \)$  
+- $\( 1 \leq \text{no. of nodes} \leq 10^6 \)$
 - $\( 0 \leq node->data \leq 2 \)$
 
 ## **✅ My Approach**
@@ -52,6 +58,7 @@ The problem can be solved using a modified version of the Dutch National Flag pr
 ### **Algorithm Steps:**
 
 1. **Three Pointers Approach:**
+
    - Initialize three pointers: `low`, `mid`, and `high`.
    - Traverse the list and:
      - If the current node’s value is `0`, move it to the beginning (increment `low`).
@@ -59,6 +66,7 @@ The problem can be solved using a modified version of the Dutch National Flag pr
      - If the current node’s value is `2`, move it to the end (decrement `high`).
 
 2. **Pointer Movement:**
+
    - The `low` pointer tracks the end of the 0s section.
    - The `mid` pointer tracks the current node.
    - The `high` pointer tracks the start of the 2s section.
@@ -93,6 +101,7 @@ class Solution {
 ## 📊 **2️⃣ Node Rearrangement with Dummy Nodes**
 
 ### **Algorithm Steps:**
+
 1. Create three dummy nodes for sublists of 0s, 1s, and 2s.
 2. Traverse the original list and attach nodes to respective lists.
 3. Connect the three sublists in order and return the new head.
@@ -120,17 +129,19 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
+
 - Maintains original nodes — no value rewriting.
 - Good for cases where mutating node values is not allowed.
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** O(n), where `n` is the number of nodes in the linked list. We traverse the list once.
 - **Auxiliary Space Complexity:** O(1) as no extra data structures other than dummy nodes are used.
-
 
 ## 📊 **3️⃣ Extract, Sort & Reassign**
 
 ### **Algorithm Steps:**
+
 1. Traverse the list and collect all node values into a `std::vector<int>`.
 2. Sort the vector.
 3. Traverse the list again, overwriting each node’s `data` with the corresponding sorted value.
@@ -150,17 +161,19 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
+
 - Simple to implement, leverages built-in sorting.
 - Suitable for environments where the list can be temporarily transformed into an array for sorting.
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** O(n log n) due to the sorting step.
 - **Auxiliary Space Complexity:** O(n) for the vector to store node values.
-
 
 ## 📊 **4️⃣ In‐Place Node Insertion**
 
 ### **Algorithm Steps:**
+
 1. Maintain two pointers: `tail0` (end of 0s sublist) and `prev`/`curr`.
 2. First pass: whenever `curr->data == 0`, detach `curr` and insert it **after** `tail0` (or at head if `tail0` is null), advance `tail0`.
 3. Second pass (starting from `tail0->next`): similarly extract `1`s and insert after the end of the 1s sublist.
@@ -203,34 +216,34 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
+
 - No extra memory for node values (only pointer manipulation).
 - Efficient for cases where you need to segregate nodes without rewriting data.
 
 #### 📝 **Complexity Analysis:**
+
 - **Time Complexity:** O(n), where `n` is the number of nodes in the list. We perform two passes over the list.
 - **Auxiliary Space Complexity:** O(1), as the algorithm only uses a few pointer variables for manipulation.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                  | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                       | ⚠️ **Cons**                            |
-|------------------------------|-------------|--------------|----------------------------------|----------------------------------------|
-| Value Overwrite              | 🟢 O(n)      | 🟢 O(1)       | Short, fastest, easy to code     | Mutates values directly                |
-| Node Rearrangement           | 🟢 O(n)      | 🟢 O(1)       | Does not change node data        | Slightly longer, uses extra dummy nodes|
-| Extract & Sort               | 🔸 O(n log n) | 🔴 O(n)       | Very simple to implement         | Extra memory, slower due to sort      |
-| In‐Place Node Insertion      | 🟢 O(n)      | 🟢 O(1)       | No extra allocations, preserves original nodes | Code is more intricate, careful pointer handling |
+| **Approach**            | ⏱️ **Time**   | 🗂️ **Space** | ✅ **Pros**                                    | ⚠️ **Cons**                                      |
+| ----------------------- | ------------- | ------------ | ---------------------------------------------- | ------------------------------------------------ |
+| Value Overwrite         | 🟢 O(n)       | 🟢 O(1)      | Short, fastest, easy to code                   | Mutates values directly                          |
+| Node Rearrangement      | 🟢 O(n)       | 🟢 O(1)      | Does not change node data                      | Slightly longer, uses extra dummy nodes          |
+| Extract & Sort          | 🔸 O(n log n) | 🔴 O(n)      | Very simple to implement                       | Extra memory, slower due to sort                 |
+| In‐Place Node Insertion | 🟢 O(n)       | 🟢 O(1)      | No extra allocations, preserves original nodes | Code is more intricate, careful pointer handling |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                                | **Recommended Approach**     |
-|---------------------------------------------|------------------------------|
-| Minimal code and max speed                 | 🥇 Value Overwrite           |
-| Cannot mutate node values                  | 🥈 Node Rearrangement        |
-| Memory is abundant, simplicity preferred    | 🥉 Extract & Sort            |
-| Strict no-allocation and O(1) overhead      | 🎖️ In‐Place Node Insertion   |
+| **Scenario**                             | **Recommended Approach**   |
+| ---------------------------------------- | -------------------------- |
+| Minimal code and max speed               | 🥇 Value Overwrite         |
+| Cannot mutate node values                | 🥈 Node Rearrangement      |
+| Memory is abundant, simplicity preferred | 🥉 Extract & Sort          |
+| Strict no-allocation and O(1) overhead   | 🎖️ In‐Place Node Insertion |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -246,7 +259,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -273,13 +285,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>
-

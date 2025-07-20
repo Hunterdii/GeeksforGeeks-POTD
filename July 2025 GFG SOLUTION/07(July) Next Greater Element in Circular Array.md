@@ -1,12 +1,21 @@
 ---
 title: "🔄 Next Greater Element in Circular Array | GFG Solution 🔍"
-keywords🏷️: ["🔄 circular array", "📚 stack", "🔍 next greater element", "📈 monotonic stack", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔄 circular array",
+    "📚 stack",
+    "🔍 next greater element",
+    "📈 monotonic stack",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Next Greater Element in Circular Array problem: find the next greater element for each element in a circular array using monotonic stack technique. 🚀"
 date: 📅 2025-07-07
 ---
 
-# *07. Next Greater Element in Circular Array*
+# _07. Next Greater Element in Circular Array_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/next-greater-element/1)
 
@@ -17,6 +26,7 @@ Given a circular integer array `arr[]`, the task is to determine the **next grea
 The next greater element of an element `arr[i]` is the first element that is greater than `arr[i]` when traversing circularly. If no such element exists, return -1 for that position.
 
 ### **Circular Property:**
+
 Since the array is circular, after reaching the last element, the search continues from the beginning until we have looked at all elements once.
 
 ## **📘 Examples**
@@ -48,8 +58,8 @@ The next greater element for 1 is 2 (from circular traversal).
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $0 \le \text{arr}[i] \le 10^6$
+- $1 \le \text{arr.size()} \le 10^5$
+- $0 \le \text{arr}[i] \le 10^6$
 
 ## ✅ **My Approach**
 
@@ -59,39 +69,40 @@ The optimal solution leverages a **Monotonic Stack** combined with a **Circular 
 
 1. **Problem Observation**:
 
-   * We're asked to find the **next greater element** for every element in the array, considering the array as **circular**.
-   * If no greater element exists, return `-1` for that position.
+   - We're asked to find the **next greater element** for every element in the array, considering the array as **circular**.
+   - If no greater element exists, return `-1` for that position.
 
 2. **Circular Traversal Strategy**:
 
-   * To simulate a circular array, we **traverse the array twice** (from `2n-1` to `0`), using modulo (`% n`) to wrap around.
-   * This ensures every element can “see” all others to its right and left (as per circular property).
+   - To simulate a circular array, we **traverse the array twice** (from `2n-1` to `0`), using modulo (`% n`) to wrap around.
+   - This ensures every element can “see” all others to its right and left (as per circular property).
 
 3. **Stack Stores Candidates**:
 
-   * Use a **monotonic decreasing stack** to keep track of potential "next greater" elements.
-   * Elements in the stack are always **greater than the current value** for which we are finding the NGE.
+   - Use a **monotonic decreasing stack** to keep track of potential "next greater" elements.
+   - Elements in the stack are always **greater than the current value** for which we are finding the NGE.
 
 4. **Processing Each Index (Right to Left)**:
 
-   * For every index `i` from `2n-1` to `0`:
+   - For every index `i` from `2n-1` to `0`:
 
-     * Discard all elements from the stack that are **less than or equal** to `arr[i % n]` (they can't be NGE).
-     * If we're in the **first pass (i < n)**:
+     - Discard all elements from the stack that are **less than or equal** to `arr[i % n]` (they can't be NGE).
+     - If we're in the **first pass (i < n)**:
 
-       * The top of the stack is the **next greater element** for this index.
-       * If the stack is empty, it means no NGE exists; keep result as `-1`.
-     * Push `arr[i % n]` into the stack for future comparisons.
+       - The top of the stack is the **next greater element** for this index.
+       - If the stack is empty, it means no NGE exists; keep result as `-1`.
+
+     - Push `arr[i % n]` into the stack for future comparisons.
 
 5. **Result Accumulation**:
 
-   * Maintain a `res[]` array initialized to `-1`.
-   * Update the result during the first pass only, to avoid overwriting values from the second simulated pass.
+   - Maintain a `res[]` array initialized to `-1`.
+   - Update the result during the first pass only, to avoid overwriting values from the second simulated pass.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. Each element is pushed and popped from the stack at most once during the 2*n traversal.
-* **Expected Auxiliary Space Complexity:** O(n), for the stack that stores at most n elements in the worst case.
+- **Expected Time Complexity:** O(n), where n is the size of the array. Each element is pushed and popped from the stack at most once during the 2\*n traversal.
+- **Expected Auxiliary Space Complexity:** O(n), for the stack that stores at most n elements in the worst case.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -145,14 +156,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for stack
 
 ### ✅ **Why This Approach?**
 
-* Forward traversal with index tracking
-* Direct result assignment
-* Better cache locality
+- Forward traversal with index tracking
+- Direct result assignment
+- Better cache locality
 
 ## 📊 **3️⃣ Optimized Value Stack**
 
@@ -185,14 +196,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for stack with pairs
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for stack with pairs
 
 ### ✅ **Why This Approach?**
 
-* Combined value and index tracking
-* Efficient pair operations
-* Reduced lookup overhead
+- Combined value and index tracking
+- Efficient pair operations
+- Reduced lookup overhead
 
 ## 📊 **4️⃣ Reverse Traversal Optimization**
 
@@ -225,32 +236,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for stack
 
 ### ✅ **Why This Approach?**
 
-* Efficient reverse processing
-* Minimal conditional checks
-* Optimal for decreasing sequences
+- Efficient reverse processing
+- Minimal conditional checks
+- Optimal for decreasing sequences
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Circular Array + Monotonic Stack**        | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Simple implementation         | 💾 Reverse traversal overhead        |
-| 🔺 **Index Stack Forward**        | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Direct assignment             | 💾 Index management overhead         |
-| ⏰ **Pair Stack Forward**         | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Combined tracking             | 🔄 Pair creation overhead            |
-| 📊 **Optimized Reverse**          | 🟢 O(n)                | 🟡 O(n)                 | ⚡ Minimal conditionals          | 🔧 Less intuitive flow               |
+| 🚀 **Approach**                         | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**              | ⚠️ **Cons**                   |
+| --------------------------------------- | ---------------------- | ----------------------- | ------------------------ | ----------------------------- |
+| 🔍 **Circular Array + Monotonic Stack** | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Simple implementation | 💾 Reverse traversal overhead |
+| 🔺 **Index Stack Forward**              | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Direct assignment     | 💾 Index management overhead  |
+| ⏰ **Pair Stack Forward**               | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Combined tracking     | 🔄 Pair creation overhead     |
+| 📊 **Optimized Reverse**                | 🟢 O(n)                | 🟡 O(n)                 | ⚡ Minimal conditionals  | 🔧 Less intuitive flow        |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **General purpose**                                | 🥇 **Circular Array + Monotonic Stack**           | ★★★★★                     |
-| 📊 **Memory constrained**                             | 🥈 **Optimized Reverse**             | ★★★★☆                     |
-| 🎯 **Forward processing preference**                  | 🥉 **Index Stack Forward**           | ★★★★☆                     |
-| 🚀 **Competitive programming**                        | 🏅 **Value Stack Reverse**           | ★★★★★                     |
+| 🎯 **Scenario**                      | 🎖️ **Recommended Approach**             | 🔥 **Performance Rating** |
+| ------------------------------------ | --------------------------------------- | ------------------------- |
+| ⚡ **General purpose**               | 🥇 **Circular Array + Monotonic Stack** | ★★★★★                     |
+| 📊 **Memory constrained**            | 🥈 **Optimized Reverse**                | ★★★★☆                     |
+| 🎯 **Forward processing preference** | 🥉 **Index Stack Forward**              | ★★★★☆                     |
+| 🚀 **Competitive programming**       | 🏅 **Value Stack Reverse**              | ★★★★★                     |
 
 </details>
 
@@ -302,5 +313,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

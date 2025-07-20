@@ -1,12 +1,21 @@
 ---
 title: "🏆 Maximum Sum Combination | GFG Solution 🔍"
-keywords🏷️: ["🏆 maximum sum", "🔍 priority queue", "📍 heap", "📈 greedy", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🏆 maximum sum",
+    "🔍 priority queue",
+    "📍 heap",
+    "📈 greedy",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Maximum Sum Combination problem: find top k maximum sum pairs from two arrays using priority queue and greedy approach. 🚀"
 date: 📅 2025-07-06
 ---
 
-# *06. Maximum Sum Combination*
+# _06. Maximum Sum Combination_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/maximum-sum-combination/1)
 
@@ -37,9 +46,9 @@ Explanation: The top 3 maximum possible sums are: 4 + 6 = 10, 3 + 6 = 9, and 4 +
 
 ## **🔒 Constraints**
 
-* $1 \le a.size() = b.size() \le 10^5$
-* $1 \le k \le a.size()$
-* $1 \le a[i], b[i] \le 10^4$
+- $1 \le a.size() = b.size() \le 10^5$
+- $1 \le k \le a.size()$
+- $1 \le a[i], b[i] \le 10^4$
 
 ## **✅ My Approach**
 
@@ -48,37 +57,42 @@ The optimal approach uses a **Priority Queue (Max-Heap)** combined with a **Gree
 ### **Max-Heap + Greedy + Visited Tracking**
 
 1. **Sort Both Arrays:**
-   * Sort both arrays in descending order to start with the largest possible elements.
-   * This ensures we begin with the maximum possible sum: `a[0] + b[0]`.
+
+   - Sort both arrays in descending order to start with the largest possible elements.
+   - This ensures we begin with the maximum possible sum: `a[0] + b[0]`.
 
 2. **Initialize Data Structures:**
-   * Use a max-heap (priority queue) to always get the largest available sum.
-   * Use a visited set to track already processed index pairs to avoid duplicates.
-   * Store tuples of `(sum, index_i, index_j)` in the heap.
+
+   - Use a max-heap (priority queue) to always get the largest available sum.
+   - Use a visited set to track already processed index pairs to avoid duplicates.
+   - Store tuples of `(sum, index_i, index_j)` in the heap.
 
 3. **Start with Maximum Sum:**
-   * Push the largest possible sum `a[0] + b[0]` with indices `(0, 0)` into the heap.
-   * Mark `(0, 0)` as visited.
+
+   - Push the largest possible sum `a[0] + b[0]` with indices `(0, 0)` into the heap.
+   - Mark `(0, 0)` as visited.
 
 4. **Greedy Selection:**
-   * For each iteration (k times):
-     * Pop the maximum sum from the heap and add it to the result.
-     * From the current position `(i, j)`, explore two adjacent possibilities:
-       * `(i+1, j)`: Next element from array `a` with same element from array `b`
-       * `(i, j+1)`: Same element from array `a` with next element from array `b`
-     * Add these new combinations to the heap if not already visited.
+
+   - For each iteration (k times):
+     - Pop the maximum sum from the heap and add it to the result.
+     - From the current position `(i, j)`, explore two adjacent possibilities:
+       - `(i+1, j)`: Next element from array `a` with same element from array `b`
+       - `(i, j+1)`: Same element from array `a` with next element from array `b`
+     - Add these new combinations to the heap if not already visited.
 
 5. **Avoid Duplicates:**
-   * Use a visited set with unique pair encoding to prevent processing the same combination twice.
-   * This ensures each index pair is used at most once.
+
+   - Use a visited set with unique pair encoding to prevent processing the same combination twice.
+   - This ensures each index pair is used at most once.
 
 6. **Continue Until k Results:**
-   * Repeat until we have collected k maximum sums.
+   - Repeat until we have collected k maximum sums.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log n + k log k), where n is the size of the arrays. The sorting takes O(n log n) time, and we perform k heap operations, each taking O(log k) time in the worst case.
-* **Expected Auxiliary Space Complexity:** O(k), where k is the number of elements we need to find. We use a heap of size at most k and a visited set that stores at most k unique pairs.
+- **Expected Time Complexity:** O(n log n + k log k), where n is the size of the arrays. The sorting takes O(n log n) time, and we perform k heap operations, each taking O(log k) time in the worst case.
+- **Expected Auxiliary Space Complexity:** O(k), where k is the number of elements we need to find. We use a heap of size at most k and a visited set that stores at most k unique pairs.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -112,7 +126,6 @@ public:
 
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ Optimized Max-Heap with Unordered Set**
 
@@ -160,14 +173,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + k log k)
-* **Auxiliary Space:** 💾 O(k) - for heap and set
+- **Time:** ⏱️ O(n log n + k log k)
+- **Auxiliary Space:** 💾 O(k) - for heap and set
 
 ### ✅ **Why This Approach?**
 
-* Faster lookup with unordered_set
-* Efficient string-based key generation
-* Better average case performance
+- Faster lookup with unordered_set
+- Efficient string-based key generation
+- Better average case performance
 
 ## 📊 **3️⃣ Two-Pointer Merge Approach**
 
@@ -209,14 +222,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + k log n)
-* **Auxiliary Space:** 💾 O(n) - for priority queue and indices
+- **Time:** ⏱️ O(n log n + k log n)
+- **Auxiliary Space:** 💾 O(n) - for priority queue and indices
 
 ### ✅ **Why This Approach?**
 
-* Efficient for sparse result sets
-* Systematic exploration of combinations
-* Optimal when k << n²
+- Efficient for sparse result sets
+- Systematic exploration of combinations
+- Optimal when k << n²
 
 ## 📊 **4️⃣ Coordinate Compression Approach**
 
@@ -263,32 +276,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + k log k)
-* **Auxiliary Space:** 💾 O(k) - for heap and set
+- **Time:** ⏱️ O(n log n + k log k)
+- **Auxiliary Space:** 💾 O(k) - for heap and set
 
 ### ✅ **Why This Approach?**
 
-* Single integer key for coordinates
-* Efficient hash operations
-* Reduced memory overhead
+- Single integer key for coordinates
+- Efficient hash operations
+- Reduced memory overhead
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Max-Heap with Set**          | 🟢 O(n log n + k log k)| 🟡 O(k)                 | 🚀 Optimal for small k           | 💾 Set overhead for large k          |
-| 🔺 **Unordered Set Optimization** | 🟢 O(n log n + k log k)| 🟡 O(k)                 | 🔧 Faster lookup operations      | 💾 String key generation overhead    |
-| ⏰ **Two-Pointer Merge**          | 🟢 O(n log n + k log n)| 🟡 O(n)                 | 🚀 Systematic exploration        | 🔄 Higher space for indices          |
-| 📊 **Coordinate Compression**     | 🟢 O(n log n + k log k)| 🟡 O(k)                 | ⚡ Efficient coordinate handling  | 🔧 Coordinate calculation overhead    |
+| 🚀 **Approach**                   | ⏱️ **Time Complexity**  | 💾 **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                        |
+| --------------------------------- | ----------------------- | ----------------------- | -------------------------------- | ---------------------------------- |
+| 🔍 **Max-Heap with Set**          | 🟢 O(n log n + k log k) | 🟡 O(k)                 | 🚀 Optimal for small k           | 💾 Set overhead for large k        |
+| 🔺 **Unordered Set Optimization** | 🟢 O(n log n + k log k) | 🟡 O(k)                 | 🔧 Faster lookup operations      | 💾 String key generation overhead  |
+| ⏰ **Two-Pointer Merge**          | 🟢 O(n log n + k log n) | 🟡 O(n)                 | 🚀 Systematic exploration        | 🔄 Higher space for indices        |
+| 📊 **Coordinate Compression**     | 🟢 O(n log n + k log k) | 🟡 O(k)                 | ⚡ Efficient coordinate handling | 🔧 Coordinate calculation overhead |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Small k, large arrays**                          | 🥇 **Max-Heap with Set**             | ★★★★★                     |
-| 📊 **Balanced performance**                           | 🥈 **Coordinate Compression**        | ★★★★☆                     |
-| 🎯 **Sparse results (k << n²)**                       | 🥉 **Two-Pointer Merge**            | ★★★★☆                     |
-| 🚀 **Competitive programming**                        | 🏅 **Max-Heap with Set**             | ★★★★★                     |
+| 🎯 **Scenario**                 | 🎖️ **Recommended Approach**   | 🔥 **Performance Rating** |
+| ------------------------------- | ----------------------------- | ------------------------- |
+| ⚡ **Small k, large arrays**    | 🥇 **Max-Heap with Set**      | ★★★★★                     |
+| 📊 **Balanced performance**     | 🥈 **Coordinate Compression** | ★★★★☆                     |
+| 🎯 **Sparse results (k << n²)** | 🥉 **Two-Pointer Merge**      | ★★★★☆                     |
+| 🚀 **Competitive programming**  | 🏅 **Max-Heap with Set**      | ★★★★★                     |
 
 </details>
 
@@ -341,7 +354,6 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let's make this learning journey more collaborative!
@@ -355,7 +367,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-
-

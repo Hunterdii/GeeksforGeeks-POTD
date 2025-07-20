@@ -1,7 +1,6 @@
-# *26. Insert in Sorted Circular Linked List*
+# _26. Insert in Sorted Circular Linked List_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1)
-
 
 ## **🧩 Problem Description**
 
@@ -39,14 +38,13 @@ We insert the new node with `2` after the second node.
 
 We insert the new node with `5` after the node containing `4`.
 
-
 ![image](https://github.com/user-attachments/assets/573cdaf1-4bcd-45f2-a190-0f92a87122c4)
 
 ## **🔒 Constraints**
 
-* $`2 ≤ number of nodes ≤ 10^6`$
-* $`0 ≤ node->data ≤ 10^6`$
-* $`0 ≤ data ≤ 10^6`$
+- $`2 ≤ number of nodes ≤ 10^6`$
+- $`0 ≤ node->data ≤ 10^6`$
+- $`0 ≤ data ≤ 10^6`$
 
 ## **✅ My Approach**
 
@@ -61,19 +59,20 @@ We traverse the circular list looking for the proper "gap" between two consecuti
 3. Use pointer `cur = head`.
 4. Loop indefinitely:
 
-   * Let `nxt = cur->next`.
-   * **Case 1:** Normal gap: if `cur->data ≤ data ≤ nxt->data`, insert between `cur` and `nxt`.
-   * **Case 2:** Wrap‑around gap: if `cur->data > nxt->data` (largest→smallest transition) and `(data ≥ cur->data or data ≤ nxt->data)`, insert here.
-   * **Case 3:** Full cycle fallback: if `nxt == head`, insert here.
-   * On insertion: set `cur->next = n`, `n->next = nxt`.
-   * If `data < head->data`, update `head = n` to maintain head as smallest.
-   * Break the loop.
+   - Let `nxt = cur->next`.
+   - **Case 1:** Normal gap: if `cur->data ≤ data ≤ nxt->data`, insert between `cur` and `nxt`.
+   - **Case 2:** Wrap‑around gap: if `cur->data > nxt->data` (largest→smallest transition) and `(data ≥ cur->data or data ≤ nxt->data)`, insert here.
+   - **Case 3:** Full cycle fallback: if `nxt == head`, insert here.
+   - On insertion: set `cur->next = n`, `n->next = nxt`.
+   - If `data < head->data`, update `head = n` to maintain head as smallest.
+   - Break the loop.
+
 5. Return `head`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), as in the worst case we traverse all nodes once to find the insertion point.
-* **Expected Auxiliary Space Complexity:** O(1), since we use only a fixed number of pointers.
+- **Expected Time Complexity:** O(n), as in the worst case we traverse all nodes once to find the insertion point.
+- **Expected Auxiliary Space Complexity:** O(1), since we use only a fixed number of pointers.
 
 ## **🧠 Code (C++)**
 
@@ -107,8 +106,6 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
-
 ## 📊 **2️⃣ Linear Traversal with Do‑While Loop**
 
 ### **Algorithm Steps:**
@@ -118,13 +115,15 @@ class Solution {
 3. Set `cur = head`.
 4. **do-while** loop until `cur` returns to `head`:
 
-   * Let `nxt = cur->next`.
-   * If `(cur->data ≤ data ≤ nxt->data)` **or** at wrap‑point `(cur->data > nxt->data and (data ≥ cur->data or data ≤ nxt->data))`, do:
+   - Let `nxt = cur->next`.
+   - If `(cur->data ≤ data ≤ nxt->data)` **or** at wrap‑point `(cur->data > nxt->data and (data ≥ cur->data or data ≤ nxt->data))`, do:
 
-     * `cur->next = n; n->next = nxt;`
-     * If `data < head->data` then `head = n`.
-     * Break.
-   * `cur = nxt`.
+     - `cur->next = n; n->next = nxt;`
+     - If `data < head->data` then `head = n`.
+     - Break.
+
+   - `cur = nxt`.
+
 5. Return `head`.
 
 ```cpp
@@ -155,13 +154,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Uses a clear `do-while` to guarantee at least one full cycle.
-* Cleaner separation of traversal and insertion logic.
+- Uses a clear `do-while` to guarantee at least one full cycle.
+- Cleaner separation of traversal and insertion logic.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(n) — one cycle maximum.
-* **Space:** 🟢 O(1).
+- **Time:** 🔸 O(n) — one cycle maximum.
+- **Space:** 🟢 O(1).
 
 ## 🪜 **3️⃣ Find Maximum Node Then Insert**
 
@@ -196,13 +195,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Explicitly handles the rotation point.
-* Two-phase traversal: find boundary then insert.
+- Explicitly handles the rotation point.
+- Two-phase traversal: find boundary then insert.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(n).
-* **Space:** 🟢 O(1).
+- **Time:** 🔸 O(n).
+- **Space:** 🟢 O(1).
 
 ## 🔃 **4️⃣ Break, Insert, Reconnect**
 
@@ -243,22 +242,22 @@ class Solution {
 
 ### ✅ **Why This Works:**
 
-* Leverages familiar linear list insert.
-* Easy to debug by isolating circular logic.
+- Leverages familiar linear list insert.
+- Easy to debug by isolating circular logic.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(n).
-* **Space:** 🟢 O(1).
+- **Time:** 🔸 O(n).
+- **Space:** 🟢 O(1).
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                  | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                  | ⚠️ **Cons**                    |
-| ----------------------------- | ----------- | ------------- | ------------------------------------------- | ------------------------------ |
-| ▶️ Gap Detection (main)       | 🟢 O(n)     | 🟢 O(1)       | Elegant, single pass handles all edge cases | Condition‑heavy logic          |
-| 🔁 Do‑While Traversal         | 🔸 O(n)     | 🟢 O(1)       | Guaranteed cycle, clear syntax              | Slightly more verbose          |
-| 🪜 Max Node First             | 🔸 O(n)     | 🟢 O(1)       | Separates boundary detection from insertion | Two traversal phases           |
-| 🔃 Break → Insert → Reconnect | 🔸 O(n)     | 🟢 O(1)       | Simplifies to linear insert + reconnect     | Modifies structure temporarily |
+| **Approach**                  | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                                 | ⚠️ **Cons**                    |
+| ----------------------------- | ----------- | ------------ | ------------------------------------------- | ------------------------------ |
+| ▶️ Gap Detection (main)       | 🟢 O(n)     | 🟢 O(1)      | Elegant, single pass handles all edge cases | Condition‑heavy logic          |
+| 🔁 Do‑While Traversal         | 🔸 O(n)     | 🟢 O(1)      | Guaranteed cycle, clear syntax              | Slightly more verbose          |
+| 🪜 Max Node First             | 🔸 O(n)     | 🟢 O(1)      | Separates boundary detection from insertion | Two traversal phases           |
+| 🔃 Break → Insert → Reconnect | 🔸 O(n)     | 🟢 O(1)      | Simplifies to linear insert + reconnect     | Modifies structure temporarily |
 
 ### ✅ **Best Choice by Scenario**
 
@@ -270,8 +269,6 @@ class Solution {
 | 🪛 Familiar with linear inserts              | 🔹 Break → Insert → Reconnect |
 
 </details>
-
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -300,7 +297,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -308,7 +304,7 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-     
+
 
 class Solution:
     def sortedInsert(self, head, data):
@@ -336,12 +332,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

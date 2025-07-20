@@ -179,7 +179,6 @@ public:
 - If **you need recursion**, use **Memoized DP** (`O(N³) Time, O(N²) Space`).
 </details>
 
-
 ## **Code (Java)**
 
 ```java
@@ -228,5 +227,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

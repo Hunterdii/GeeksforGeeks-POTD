@@ -111,5 +111,5 @@ For any questions or discussions about this solution, feel free to reach out to 
 </div>
 
 <p align="center" >   
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />  
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />  
 </p>

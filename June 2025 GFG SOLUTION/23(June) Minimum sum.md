@@ -1,12 +1,22 @@
 ---
 title: "💰 Minimum Sum | GFG Solution 🔍"
-keywords🏷️: ["💰 minimum sum",  "➕ string addition", "🧮 greedy algorithm","🔢 digit manipulation", "📈 counting sort", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "💰 minimum sum",
+    "➕ string addition",
+    "🧮 greedy algorithm",
+    "🔢 digit manipulation",
+    "📈 counting sort",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Minimum Sum problem: form two numbers using all digits to minimize their sum using greedy approach and counting sort. 🚀"
 date: 📅 2025-06-23
 ---
 
-# *23. Minimum Sum*
+# _23. Minimum Sum_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/minimum-sum4058/1)
 
@@ -47,8 +57,8 @@ Explanation: The minimum sum is formed by numbers 9 and 4.
 
 ## **🔒 Constraints**
 
-* $2 \le \text{arr.size()} \le 10^6$
-* $0 \le \text{arr}[i] \le 9$
+- $2 \le \text{arr.size()} \le 10^6$
+- $0 \le \text{arr}[i] \le 9$
 
 ## **✅ My Approach**
 
@@ -57,27 +67,30 @@ The optimal approach uses **Counting Sort** followed by **Greedy Distribution** 
 ### **Counting + Greedy Distribution**
 
 1. **Count Digit Frequencies:**
-   * Use a counting array to store frequency of each digit (0-9).
-   * This naturally sorts the digits in O(n) time.
+
+   - Use a counting array to store frequency of each digit (0-9).
+   - This naturally sorts the digits in O(n) time.
 
 2. **Greedy Distribution Strategy:**
-   * Distribute digits alternately between two strings `s1` and `s2`.
-   * Start with the smallest available digit to ensure minimum sum.
-   * Skip leading zeros to avoid invalid number formation.
+
+   - Distribute digits alternately between two strings `s1` and `s2`.
+   - Start with the smallest available digit to ensure minimum sum.
+   - Skip leading zeros to avoid invalid number formation.
 
 3. **String Addition:**
-   * Implement custom string addition to handle large numbers.
-   * Add digits from right to left with carry propagation.
-   * Remove trailing zeros from the result.
+
+   - Implement custom string addition to handle large numbers.
+   - Add digits from right to left with carry propagation.
+   - Remove trailing zeros from the result.
 
 4. **Optimization Details:**
-   * Use alternating distribution to balance the lengths of both numbers.
-   * Smaller digits in higher positions contribute less to the final sum.
+   - Use alternating distribution to balance the lengths of both numbers.
+   - Smaller digits in higher positions contribute less to the final sum.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the array size. Counting takes O(n), distribution takes O(n), and string addition takes O(n) where n is the maximum length of formed numbers.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for counting array (size 10) and string operations (excluding the output strings).
+- **Expected Time Complexity:** O(n), where n is the array size. Counting takes O(n), distribution takes O(n), and string addition takes O(n) where n is the maximum length of formed numbers.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for counting array (size 10) and string operations (excluding the output strings).
 
 ## **🧑‍💻 Code (C++)**
 
@@ -176,13 +189,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Pre-allocated strings reduce memory allocations.
-* Faster character operations with direct array access.
+- Pre-allocated strings reduce memory allocations.
+- Faster character operations with direct array access.
 
 ## 📊 **3️⃣ Sort-Based Greedy Approach**
 
@@ -225,13 +238,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Very simple to implement with standard STL sort.
-* Works well when n is moderate.
+- Very simple to implement with standard STL sort.
+- Works well when n is moderate.
 
 ## 📊 **4️⃣ Priority Queue (Min-Heap) Approach**
 
@@ -280,31 +293,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Avoids explicit sort call; uses heap to stream smallest digits first.
-* Useful if you want to interleave extraction with processing.
+- Avoids explicit sort call; uses heap to stream smallest digits first.
+- Useful if you want to interleave extraction with processing.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                          | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | ----------------------------------- | ------------------------------------- |
-| 🔍 **Count-Array Greedy**          | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, constant extra space     | 🧮 Requires digit frequency logic    |
-| 🚀 **Optimized String Building**   | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Memory-efficient, fast strings   | 🧮 More complex implementation       |
-| 🔄 **Sort-Based Greedy**           | 🟡 O(n log n)          | 🔸 O(n)                 | 🔧 Very simple, uses STL sort      | ⏱️ Sorting overhead                  |
-| 📊 **Priority Queue**              | 🟡 O(n log n)          | 🔸 O(n)                 | 🏎️ Stream processing capability     | 💾 Heap overhead                     |
+| 🚀 **Approach**                  | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                       |
+| -------------------------------- | ---------------------- | ----------------------- | --------------------------------- | --------------------------------- |
+| 🔍 **Count-Array Greedy**        | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, constant extra space  | 🧮 Requires digit frequency logic |
+| 🚀 **Optimized String Building** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Memory-efficient, fast strings | 🧮 More complex implementation    |
+| 🔄 **Sort-Based Greedy**         | 🟡 O(n log n)          | 🔸 O(n)                 | 🔧 Very simple, uses STL sort     | ⏱️ Sorting overhead               |
+| 📊 **Priority Queue**            | 🟡 O(n log n)          | 🔸 O(n)                 | 🏎️ Stream processing capability   | 💾 Heap overhead                  |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                           | 🎖️ **Recommended Approach**      | 🔥 **Performance Rating** |
-| ---------------------------------------- | -------------------------------- | ------------------------- |
-| ⚡ Maximum performance, large datasets    | 🥇 **Count-Array Greedy**        | ★★★★★                     |
-| 💾 Memory-critical applications          | 🥈 **Optimized String Building** | ★★★★★                     |
-| 🔧 Quick implementation, simplicity       | 🥉 **Sort-Based Greedy**         | ★★★★☆                     |
-| 🏎️ Stream processing, partial data       | 🏅 **Priority Queue**            | ★★★☆☆                     |
+| 🎯 **Scenario**                        | 🎖️ **Recommended Approach**      | 🔥 **Performance Rating** |
+| -------------------------------------- | -------------------------------- | ------------------------- |
+| ⚡ Maximum performance, large datasets | 🥇 **Count-Array Greedy**        | ★★★★★                     |
+| 💾 Memory-critical applications        | 🥈 **Optimized String Building** | ★★★★★                     |
+| 🔧 Quick implementation, simplicity    | 🥉 **Sort-Based Greedy**         | ★★★★☆                     |
+| 🏎️ Stream processing, partial data     | 🏅 **Priority Queue**            | ★★★☆☆                     |
 
 </details>
 
@@ -394,5 +407,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

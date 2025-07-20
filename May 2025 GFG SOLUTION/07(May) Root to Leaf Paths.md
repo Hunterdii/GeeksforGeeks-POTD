@@ -1,4 +1,4 @@
-# *7. Root to Leaf Paths*
+# _7. Root to Leaf Paths_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/root-to-leaf-paths/1)
 
@@ -10,48 +10,63 @@ A leaf node is a node that does not have any children. The paths should be retur
 ### **Examples**
 
 ### **Example 1:**
-#### **Input:**  
+
+#### **Input:**
+
 `root = [1, 2, 3, 4, 5, null, null]`
 
 <img src="https://github.com/user-attachments/assets/4356f92f-1972-4974-a731-679e4edb5e54" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
-`[[1, 2, 4], [1, 2, 5], [1, 3]]`  
-#### **Explanation:**  
-All the possible paths from root node to leaf nodes are:  
-- 1 → 2 → 4  
-- 1 → 2 → 5  
-- 1 → 3  
+`[[1, 2, 4], [1, 2, 5], [1, 3]]`
+
+#### **Explanation:**
+
+All the possible paths from root node to leaf nodes are:
+
+- 1 → 2 → 4
+- 1 → 2 → 5
+- 1 → 3
 
 ### **Example 2:**
-#### **Input:**  
-`root = [1, 2, 3]`  
+
+#### **Input:**
+
+`root = [1, 2, 3]`
 
 <img src="https://github.com/user-attachments/assets/4ce0bea5-8f3f-45b1-b1c9-6e884ae65a5e" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
-`[[1, 2], [1, 3]]`  
-#### **Explanation:**  
-All the possible paths from root node to leaf nodes are:  
-- 1 → 2  
-- 1 → 3  
+`[[1, 2], [1, 3]]`
+
+#### **Explanation:**
+
+All the possible paths from root node to leaf nodes are:
+
+- 1 → 2
+- 1 → 3
 
 ### **Example 3:**
-#### **Input:**  
-`root = [10, 20, 30, 40, 60, null, null]`  
+
+#### **Input:**
+
+`root = [10, 20, 30, 40, 60, null, null]`
 
 <img src="https://github.com/user-attachments/assets/47c7bc9b-5884-4f34-9130-f9acda772b76" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
-`[[10, 20, 40], [10, 20, 60], [10, 30]]`  
-#### **Explanation:**  
-All the possible paths from root node to leaf nodes are:  
-- 10 → 20 → 40  
-- 10 → 20 → 60  
-- 10 → 30  
+`[[10, 20, 40], [10, 20, 60], [10, 30]]`
+
+#### **Explanation:**
+
+All the possible paths from root node to leaf nodes are:
+
+- 10 → 20 → 40
+- 10 → 20 → 60
+- 10 → 30
 
 ## **🔒 Constraints**
 
@@ -104,10 +119,10 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ Iterative DFS using Stack**
 
 ### **Algorithm Steps:**
+
 1. Use a stack storing tuples of (current node, current path).
 2. On each iteration, if the node is a leaf, add the path to result.
 3. Push right and left children with updated paths.
@@ -144,28 +159,28 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
+
 - Avoids recursion overhead.
 - Handles deep trees better if stack size is a concern.
 
 #### 📝 **Complexity Analysis:**
+
 - **Expected Time Complexity:** O(N)
 - **Expected Auxiliary Space Complexity:** O(H) in average case, O(N) worst case (stack and path copies)
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**             | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                              | ⚠️ **Cons**                         |
-|--------------------------|-------------|--------------|------------------------------------------|-------------------------------------|
-| Recursive DFS     | 🟢 O(N)      | 🟢 O(H)       | Clean, simple, tail-recursive friendly   | Recursion stack risk on deep trees  |
-| Iterative DFS (stack)    | 🟢 O(N)      | 🟠 O(N)       | No recursion limit, depth control        | Slightly more verbose               |
-
+| **Approach**          | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                            | ⚠️ **Cons**                        |
+| --------------------- | ----------- | ------------ | -------------------------------------- | ---------------------------------- |
+| Recursive DFS         | 🟢 O(N)     | 🟢 O(H)      | Clean, simple, tail-recursive friendly | Recursion stack risk on deep trees |
+| Iterative DFS (stack) | 🟢 O(N)     | 🟠 O(N)      | No recursion limit, depth control      | Slightly more verbose              |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                            | **Recommended Approach**     |
-|-----------------------------------------|------------------------------|
-| ✅ Concise, clean implementation         | 🥇 Recursive DFS             |
-| ✅ Avoid recursion stack                | 🥈 Iterative DFS (stack)     |
+| **Scenario**                     | **Recommended Approach** |
+| -------------------------------- | ------------------------ |
+| ✅ Concise, clean implementation | 🥇 Recursive DFS         |
+| ✅ Avoid recursion stack         | 🥈 Iterative DFS (stack) |
 
 </details>
 
@@ -192,7 +207,6 @@ class Solution {
 }
 ```
 
-
 ## 🐍 **Code (Python)**
 
 ```python
@@ -211,19 +225,18 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

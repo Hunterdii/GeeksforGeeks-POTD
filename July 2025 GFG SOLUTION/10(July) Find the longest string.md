@@ -1,12 +1,21 @@
 ---
 title: "🔤 Find the Longest String | GFG Solution 🔍"
-keywords🏷️: ["🔤 longest string", "🔍 prefix validation", "📍 sorting", "📈 hash set", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔤 longest string",
+    "🔍 prefix validation",
+    "📍 sorting",
+    "📈 hash set",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Find the Longest String problem: find the longest string where every prefix exists in the array using efficient prefix validation technique. 🚀"
 date: 📅 2025-07-10
 ---
 
-# *10. Find the Longest String*
+# _10. Find the Longest String_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/find-the-longest-string--170645/1)
 
@@ -36,8 +45,8 @@ Explanation: Both "abc" and "abd" has all the prefixes in words[]. Since, "abc" 
 
 ## **🔒 Constraints**
 
-* $1 \le \text{words.length} \le 10^3$
-* $1 \le \text{words}[i].\text{length} \le 10^3$
+- $1 \le \text{words.length} \le 10^3$
+- $1 \le \text{words}[i].\text{length} \le 10^3$
 
 ## **✅ My Approach**
 
@@ -46,30 +55,34 @@ The optimal approach uses **Sorting** combined with **Hash Set** for efficient p
 ### **Sorting + Hash Set Validation**
 
 1. **Sort the Array:**
-   * Sort the words array to ensure lexicographical order.
-   * This guarantees that when we find a valid string, it's the lexicographically smallest among strings of the same length.
+
+   - Sort the words array to ensure lexicographical order.
+   - This guarantees that when we find a valid string, it's the lexicographically smallest among strings of the same length.
 
 2. **Initialize Data Structures:**
-   * Use an `unordered_set` to store valid strings (those whose all prefixes exist).
-   * Initialize result string as empty.
+
+   - Use an `unordered_set` to store valid strings (those whose all prefixes exist).
+   - Initialize result string as empty.
 
 3. **Validate Each Word:**
-   * For each word in the sorted array:
-     * If word length is 1 (single character), it's automatically valid.
-     * Otherwise, check if the prefix (word without last character) exists in the set.
-   * If valid, add the word to the set and update result if it's longer.
+
+   - For each word in the sorted array:
+     - If word length is 1 (single character), it's automatically valid.
+     - Otherwise, check if the prefix (word without last character) exists in the set.
+   - If valid, add the word to the set and update result if it's longer.
 
 4. **Prefix Validation:**
-   * For a word to be valid, all its prefixes must exist in the array.
-   * We build valid strings incrementally, ensuring each new string's prefix is already validated.
+
+   - For a word to be valid, all its prefixes must exist in the array.
+   - We build valid strings incrementally, ensuring each new string's prefix is already validated.
 
 5. **Lexicographical Ordering:**
-   * Sorting ensures that among strings of equal length, the lexicographically smallest is processed first.
+   - Sorting ensures that among strings of equal length, the lexicographically smallest is processed first.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log n + n*m), where n is the number of words and m is the average length of words. The sorting takes O(n log n) and prefix validation takes O(n*m) time.
-* **Expected Auxiliary Space Complexity:** O(n*m), where n is the number of words and m is the average length of words for storing valid strings in the hash set.
+- **Expected Time Complexity:** O(n log n + n*m), where n is the number of words and m is the average length of words. The sorting takes O(n log n) and prefix validation takes O(n*m) time.
+- **Expected Auxiliary Space Complexity:** O(n\*m), where n is the number of words and m is the average length of words for storing valid strings in the hash set.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -123,14 +136,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + n*m) where m is average word length
-* **Auxiliary Space:** 💾 O(n*m) - for storing valid words
+- **Time:** ⏱️ O(n log n + n\*m) where m is average word length
+- **Auxiliary Space:** 💾 O(n\*m) - for storing valid words
 
 ### ✅ **Why This Approach?**
 
-* Faster prefix checking with hash set
-* Lexicographical ordering guaranteed by sorting
-* Efficient string operations
+- Faster prefix checking with hash set
+- Lexicographical ordering guaranteed by sorting
+- Efficient string operations
 
 ## 📊 **3️⃣ DFS-Based Validation**
 
@@ -148,14 +161,14 @@ public:
         sort(words.begin(), words.end());
         unordered_map<string, vector<string>> adj;
         unordered_set<string> wordSet(words.begin(), words.end());
-        
+
         for (string& w : words) {
             if (w.length() > 1) {
                 string prefix = w.substr(0, w.length() - 1);
                 if (wordSet.count(prefix)) adj[prefix].push_back(w);
             }
         }
-        
+
         string result = "";
         for (string& w : words) {
             if (w.length() == 1) {
@@ -165,7 +178,7 @@ public:
         }
         return result;
     }
-    
+
 private:
     string dfs(string word, unordered_map<string, vector<string>>& adj) {
         string longest = word;
@@ -180,14 +193,14 @@ private:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + n*m)
-* **Auxiliary Space:** 💾 O(n*m) - for adjacency list and recursion
+- **Time:** ⏱️ O(n log n + n\*m)
+- **Auxiliary Space:** 💾 O(n\*m) - for adjacency list and recursion
 
 ### ✅ **Why This Approach?**
 
-* Comprehensive validation of prefix chains
-* Handles complex word relationships
-* Optimal for sparse prefix connections
+- Comprehensive validation of prefix chains
+- Handles complex word relationships
+- Optimal for sparse prefix connections
 
 ## 📊 **4️⃣ Trie with Optimized Traversal**
 
@@ -204,20 +217,20 @@ public:
     string longestString(vector<string>& words) {
         sort(words.begin(), words.end());
         TrieNode* root = new TrieNode();
-        
+
         for (string& w : words) {
             TrieNode* node = root;
             for (char c : w) {
-                if (!node->children[c - 'a']) 
+                if (!node->children[c - 'a'])
                     node->children[c - 'a'] = new TrieNode();
                 node = node->children[c - 'a'];
             }
             node->isEnd = true;
         }
-        
+
         return dfs(root, "");
     }
-    
+
 private:
     struct TrieNode {
         TrieNode* children[26];
@@ -226,7 +239,7 @@ private:
             fill(children, children + 26, nullptr);
         }
     };
-    
+
     string dfs(TrieNode* node, string path) {
         string result = path;
         for (int i = 0; i < 26; i++) {
@@ -242,14 +255,14 @@ private:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + n*m)
-* **Auxiliary Space:** 💾 O(n*m) - for trie structure
+- **Time:** ⏱️ O(n log n + n\*m)
+- **Auxiliary Space:** 💾 O(n\*m) - for trie structure
 
 ### ✅ **Why This Approach?**
 
-* Memory efficient for large datasets
-* Natural prefix validation
-* Optimal for prefix-heavy problems
+- Memory efficient for large datasets
+- Natural prefix validation
+- Optimal for prefix-heavy problems
 
 ## 📊 **5️⃣ Length-Based Sorting Approach**
 
@@ -268,10 +281,10 @@ public:
             if (a.length() != b.length()) return a.length() < b.length();
             return a < b;
         });
-        
+
         unordered_set<string> valid;
         string result = "";
-        
+
         for (string& w : words) {
             if (w.length() == 1 || valid.count(w.substr(0, w.length() - 1))) {
                 valid.insert(w);
@@ -285,34 +298,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + n*m)
-* **Auxiliary Space:** 💾 O(n*m) - for storing valid words
+- **Time:** ⏱️ O(n log n + n\*m)
+- **Auxiliary Space:** 💾 O(n\*m) - for storing valid words
 
 ### ✅ **Why This Approach?**
 
-* Processes shorter words first
-* Ensures prefix availability before longer words
-* Clear logical flow
+- Processes shorter words first
+- Ensures prefix availability before longer words
+- Clear logical flow
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Set + Sort**       | 🟢 O(n log n + n*m)    | 🟡 O(n*m)              | 🚀 Simple, lex order inherently handled          | 💾 Hash set overhead                 |
-| 🔁 **Set-Based Validation**       | 🟢 O(n log n + n*m)    | 🟡 O(n*m)              | 🚀 Simple and efficient          | 💾 Substring copies                 |
-| 🔺 **DFS Validation**             | 🟢 O(n log n + n*m)    | 🟡 O(n*m)              | 🔧 Comprehensive validation       | 💾 Recursion stack overhead          |
-| ⏰ **Trie-Based**                 | 🟢 O(n log n + n*m)    | 🟡 O(n*m)              | 🚀 Memory efficient              | 🔄 Complex implementation             |
-| 📊 **Length-Based Sorting**       | 🟢 O(n log n + n*m)    | 🟡 O(n*m)              | ⚡ Logical processing order       | 🔧 Custom comparator needed          |
+| 🚀 **Approach**             | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                             | ⚠️ **Cons**                 |
+| --------------------------- | ---------------------- | ----------------------- | --------------------------------------- | --------------------------- |
+| 🔍 **Set + Sort**           | 🟢 O(n log n + n\*m)   | 🟡 O(n\*m)              | 🚀 Simple, lex order inherently handled | 💾 Hash set overhead        |
+| 🔁 **Set-Based Validation** | 🟢 O(n log n + n\*m)   | 🟡 O(n\*m)              | 🚀 Simple and efficient                 | 💾 Substring copies         |
+| 🔺 **DFS Validation**       | 🟢 O(n log n + n\*m)   | 🟡 O(n\*m)              | 🔧 Comprehensive validation             | 💾 Recursion stack overhead |
+| ⏰ **Trie-Based**           | 🟢 O(n log n + n\*m)   | 🟡 O(n\*m)              | 🚀 Memory efficient                     | 🔄 Complex implementation   |
+| 📊 **Length-Based Sorting** | 🟢 O(n log n + n\*m)   | 🟡 O(n\*m)              | ⚡ Logical processing order             | 🔧 Custom comparator needed |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| 🧠 **Quick implementation & clarity**	                              | 🥇 **Set + Sort**          | ★★★★★                     |
-| ⚡ **General use cases**                              | 🥈 **Set-Based Validation**          | ★★★★★                     |
-| 📊 **Memory constrained**                            | 🥉 **Trie-Based**                    | ★★★★☆                     |
-| 🎯 **Complex prefix relationships**                  | 🎖️ **DFS Validation**               | ★★★★☆                     |
-| 🚀 **Competitive programming**                       | 🏅 **Length-Based Sorting**          | ★★★★★                     |
+| 🎯 **Scenario**                       | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ------------------------------------- | --------------------------- | ------------------------- |
+| 🧠 **Quick implementation & clarity** | 🥇 **Set + Sort**           | ★★★★★                     |
+| ⚡ **General use cases**              | 🥈 **Set-Based Validation** | ★★★★★                     |
+| 📊 **Memory constrained**             | 🥉 **Trie-Based**           | ★★★★☆                     |
+| 🎯 **Complex prefix relationships**   | 🎖️ **DFS Validation**       | ★★★★☆                     |
+| 🚀 **Competitive programming**        | 🏅 **Length-Based Sorting** | ★★★★★                     |
 
 </details>
 
@@ -366,6 +379,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-

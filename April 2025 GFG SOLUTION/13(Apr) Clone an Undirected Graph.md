@@ -1,16 +1,16 @@
-# *13. Clone an Undirected Graph*
+# _13. Clone an Undirected Graph_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/clone-graph/1)
 
-
 ## **Problem Description**
 
-Given a connected undirected graph represented by an adjacency list, `adjList[][]`, with **n** nodes (each node having a distinct label from `0` to `n-1`), your task is to create a **clone** (deep copy) of this graph. Each node in the graph has:  
+Given a connected undirected graph represented by an adjacency list, `adjList[][]`, with **n** nodes (each node having a distinct label from `0` to `n-1`), your task is to create a **clone** (deep copy) of this graph. Each node in the graph has:
 
 - An integer `val`
 - A list `neighbors` containing references to its adjacent nodes
 
 ### **Structure**
+
 ```cpp
 class Node {
     int val;
@@ -22,8 +22,6 @@ Return a reference to the cloned graph such that the cloned graph is identical t
 
 > Note: Sorry for uploading late, my Final Sem exam is going on.
 
-
-
 ## **Examples**
 
 ### **Example 1**
@@ -34,14 +32,14 @@ n = 4
 adjList = [[1, 2], [0, 2], [0, 1, 3], [2]]
 
 #### **Output:**
+
 true
 
-#### **Explanation:**  
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/eae32789-2302-42bd-83b5-f58a871493ed" width="30%">
 
 The cloned graph is structurally identical to the original. Driver code checks memory and structure integrity.
-
 
 ### **Example 2**
 
@@ -51,21 +49,20 @@ n = 3
 adjList = [[1, 2], [0], [0]]
 
 #### **Output:**
+
 true
 
-#### **Explanation:**  
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/d248652e-0938-42d1-aad7-8711530cf356" width="30%">
 
 The cloned graph is identical to the original one, hence driver code outputs true.
 
-
 ### **Constraints**
 
-- $\( 1 \leq n \leq 10^4 \)$  
-- $\( 0 \leq \text{number of edges} \leq 10^5 \)$  
+- $\( 1 \leq n \leq 10^4 \)$
+- $\( 0 \leq \text{number of edges} \leq 10^5 \)$
 - $\( 0 \leq \text{adjList[i][j]} < n \)$
-
 
 ## My Approach
 
@@ -73,27 +70,25 @@ The cloned graph is identical to the original one, hence driver code outputs tru
 
 ### **Algorithm Steps:**
 
-1. **Initialization:**  
+1. **Initialization:**
+
    - If the starting node is `null`, return `null`.
    - Create a hash map (or dictionary) to store mappings from each original node to its clone.
    - Initialize a queue and enqueue the starting node.
 
-2. **BFS Traversal:**  
+2. **BFS Traversal:**
    - While the queue is not empty:
      - Dequeue the front node.
      - For each neighbor of the dequeued node:
        - If the neighbor hasn't been cloned (i.e., not present in the map), create its clone, store it in the map, and enqueue the neighbor.
        - Append the clone of the neighbor to the `neighbors` list of the clone corresponding to the current node.
-       
-3. **Return:**  
+3. **Return:**
    - After processing all nodes, return the clone corresponding to the starting node.
-
 
 ## Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** `O(N + M)`, where `N` is the number of nodes and `M` is the number of edges. We visit each node and edge exactly once during the clone.
 - **Expected Auxiliary Space Complexity:** `O(N)`, used by the hash map and the queue.
-
 
 ## Code (C++)
 
@@ -118,10 +113,8 @@ class Solution {
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## 📊 **2️⃣ DFS-Based Clone (Recursive)**
 
@@ -159,7 +152,6 @@ public:
 #### ✅ **Why This Approach?**
 
 Very elegant and simple implementation that leverages recursion, suitable for medium-size graphs.
-
 
 ## 📊 **3️⃣ DFS-Based Clone (Iterative using Stack)**
 
@@ -204,15 +196,13 @@ public:
 
 Avoids recursion and risk of stack overflow. Ideal when recursion depth is a limitation.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                              | ⚠️ **Cons**                              |
-|----------------------------------|-------------------------|--------------------------|------------------------------------------|-------------------------------------------|
-| **BFS (Queue + Map)**            | 🟡 O(N + M)                | 🟢 O(N)                  | Iterative, clean traversal                | Slightly more space for queue             |
-| **DFS (Recursive)**              | 🟡 O(N + M)                | 🟢 O(N)                  | Concise and elegant                       | Risk of stack overflow on deep graphs     |
-| **DFS (Iterative using Stack)**  | 🟡 O(N + M)                | 🟢 O(N)                  | Avoids recursion limit                    | More verbose and a bit complex            |
-
+| **Approach**                    | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                | ⚠️ **Cons**                           |
+| ------------------------------- | ---------------------- | ----------------------- | -------------------------- | ------------------------------------- |
+| **BFS (Queue + Map)**           | 🟡 O(N + M)            | 🟢 O(N)                 | Iterative, clean traversal | Slightly more space for queue         |
+| **DFS (Recursive)**             | 🟡 O(N + M)            | 🟢 O(N)                 | Concise and elegant        | Risk of stack overflow on deep graphs |
+| **DFS (Iterative using Stack)** | 🟡 O(N + M)            | 🟢 O(N)                 | Avoids recursion limit     | More verbose and a bit complex        |
 
 ✅ **Best Choice?**
 
@@ -220,9 +210,7 @@ Avoids recursion and risk of stack overflow. Ideal when recursion depth is a lim
 - Prefer **Recursive DFS** for elegance, unless you're dealing with very deep or cyclic graphs.
 - Choose **Iterative DFS** if recursion depth is a concern or restricted.
 
-
 </details>
-
 
 ## Code (Java)
 
@@ -248,7 +236,6 @@ class Solution {
     }
 }
 ```
-
 
 ## Code (Python)
 
@@ -280,5 +267,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

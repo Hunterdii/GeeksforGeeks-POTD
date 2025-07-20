@@ -1,16 +1,23 @@
 ---
 title: "➕ Sum String | GFG Solution 🧮"
-keywords🏷️: ["➕ string addition", "🧮 sum string", "🔄 recursion", "🧑‍💻 string manipulation", "📚 GFG", "🧑‍🏫 learning recursion", "🧑‍💻 manual addition"]
+keywords🏷️:
+  [
+    "➕ string addition",
+    "🧮 sum string",
+    "🔄 recursion",
+    "🧑‍💻 string manipulation",
+    "📚 GFG",
+    "🧑‍🏫 learning recursion",
+    "🧑‍💻 manual addition",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Sum String problem: check if a numeric string follows a sum sequence using string addition and recursion. 🚀"
 date: 📅 2025-06-08
 ---
 
-# *08. Sum-String*
+# _08. Sum-String_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/sum-string3151/1)
-
-
 
 ## 🧩 Problem Description
 
@@ -20,11 +27,10 @@ Given a digit string `s`, determine whether it can be split into more than two n
 2. This sum-rule applies recursively to the preceding parts.
 3. No part may have leading zeros unless it is exactly `"0"`.
 
-
-
 ## 📘 Examples
 
 ### Example 1:
+
 ```
 
 Input: s = "12243660"
@@ -37,6 +43,7 @@ Split as ["12","24","36","60"]:
 ```
 
 ### Example 2:
+
 ```
 
 Input: s = "1111112223"
@@ -49,6 +56,7 @@ Split as ["1","111","112","223"]:
 ```
 
 ### Example 3:
+
 ```
 
 Input: s = "123456"
@@ -56,16 +64,12 @@ Output: false
 Explanation:
 No valid recursive sum-split exists.
 
-````
-
-
+```
 
 ## 🔒 Constraints:
 
-- `1 ≤ s.length() ≤ 100`  
+- `1 ≤ s.length() ≤ 100`
 - `s` consists only of digits `'0'–'9'`.
-
-
 
 ## **✅ My Approach**
 
@@ -80,28 +84,27 @@ No valid recursive sum-split exists.
 
 ### ⚙️ Algorithm Steps:
 
-1. Let `n = s.length()`.  
+1. Let `n = s.length()`.
 2. For `len1` from `1` to `n-2`, and for `len2` from `1` to `n - len1 - 1`:
    - If `s[0..len1-1]` or `s[len1..len1+len2-1]` invalid (leading zero), continue.
    - Call `check(0, len1, len2)`. If it returns `true`, answer `true`.
 3. If no split works, return `false`.
 
 Helper `bool check(int idx, int l1, int l2)`:
+
 - Extract `x = s.substr(idx, l1)`, `y = s.substr(idx+l1, l2)`.
 - Compute `z = addStrings(x,y)`; let `l3 = z.length()`.
 - If substring at `idx + l1 + l2` of length `l3` ≠ `z`, return `false`.
 - If exactly reached end, return `true`.
 - Else recurse with `(idx + l1, l2, l3)`.
 
-
-
 ## 📝 Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n³)  
+- **Expected Time Complexity:** O(n³)
   - Triple nested loops over `(len1, len2)` and recursive checks with string-addition/substr of O(n) each.
-- **Expected Auxiliary Space Complexity:** O(n)  
+- **Expected Auxiliary Space Complexity:** O(n)
   - Recursion depth and temporary strings up to length n.
- 
+
 ## **🧑‍💻 Code (C++)**
 
 ```cpp
@@ -156,7 +159,8 @@ class Solution {
 1. Try all possible pairs of substrings for the first two numbers (`a`, `b`) in the string.
 2. For each pair:
 
-   * Skip if either `a` or `b` starts with `'0'` and is longer than 1.
+   - Skip if either `a` or `b` starts with `'0'` and is longer than 1.
+
 3. Use a helper `add()` function to simulate string-based addition.
 4. Use DFS to check if the rest of the string follows the sum pattern:
    `a + b = c`, `b + c = d`, etc.
@@ -200,24 +204,24 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(N³) – due to triple nested traversal & substring checks
-* **Auxiliary Space:** 💾 O(N) – for string recursion stack
+- **Time:** ⏱️ O(N³) – due to triple nested traversal & substring checks
+- **Auxiliary Space:** 💾 O(N) – for string recursion stack
 
 ### ✅ **Why This Approach?**
 
-* Handles **string overflow** issues using manual addition.
-* Good educational value to learn string manipulation + recursion.
+- Handles **string overflow** issues using manual addition.
+- Good educational value to learn string manipulation + recursion.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                         | ⚠️ **Cons**                            |
+| 🚀 **Approach**                | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                            |
 | ------------------------------ | ---------------------- | ----------------------- | ---------------------------------- | -------------------------------------- |
 | 🔁 Recursion + String Addition | 🟢 O(N³)               | 🟢 O(N)                 | Accurate, string-safe, recursive   | Slower due to overhead and deep calls  |
 | 🔎 Brute Force + Manual Add    | 🔸 O(N³)               | 🔸 O(N)                 | Simpler logic, useful for learning | Redundant with recursion, less optimal |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                              | 🎖️ **Recommended Approach**    |
+| 🎯 **Scenario**                              | 🎖️ **Recommended Approach**     |
 | -------------------------------------------- | ------------------------------- |
 | 📏 Long strings or potential overflow issues | 🥇 **String Add + Recursion**   |
 | 📘 Educational brute-force understanding     | 🥈 **Manual Brute Force (DFS)** |
@@ -270,7 +274,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -278,7 +281,7 @@ class Solution:
     def isSumString(self, s: str) -> bool:
         def add(a, b):
             return str(int(a) + int(b))
-        
+
         def check(i, l1, l2):
             x, y = s[i:i + l1], s[i + l1:i + l1 + l2]
             if (len(x) > 1 and x[0] == '0') or (len(y) > 1 and y[0] == '0'):
@@ -297,7 +300,6 @@ class Solution:
         return False
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -311,5 +313,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

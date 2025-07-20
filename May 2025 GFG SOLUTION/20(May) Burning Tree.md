@@ -1,4 +1,4 @@
-# *20. Burning Tree*
+# _20. Burning Tree_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/burning-tree/1)
 
@@ -19,9 +19,7 @@ Input: root[] = [1, 2, 3, 4, 5, 6, 7]
 Target = 2
 ```
 
-
 <img src="https://github.com/user-attachments/assets/1939164d-f574-4660-9558-32d93b68fd12" width="30%">
-
 
 #### **Output:**
 
@@ -29,11 +27,11 @@ Target = 2
 
 #### **Explanation:**
 
-* Initially 2 is set to fire at 0 sec 
-* At 1 sec: Nodes 4, 5, 1 catches fire.
-* At 2 sec: Node 3 catches fire.
-* At 3 sec: Nodes 6, 7 catches fire.
-* It takes 3s to burn the complete tree.
+- Initially 2 is set to fire at 0 sec
+- At 1 sec: Nodes 4, 5, 1 catches fire.
+- At 2 sec: Node 3 catches fire.
+- At 3 sec: Nodes 6, 7 catches fire.
+- It takes 3s to burn the complete tree.
 
 ### **Example 2:**
 
@@ -44,9 +42,7 @@ Input: root[] = [1, 2, 3, 4, 5, N, 7, 8, N, 10]
 Target = 10
 ```
 
-
 <img src="https://github.com/user-attachments/assets/392736f2-8147-43a3-9951-68a821c73ab5" width="30%">
-
 
 #### **Output:**
 
@@ -54,20 +50,18 @@ Target = 10
 
 #### **Explanation:**
 
-* Initially 10 is set to fire at 0 sec 
-* At 1 sec: Node 5 catches fire.
-* At 2 sec: Node 2 catches fire.
-* At 3 sec: Nodes 1 and 4 catches fire.
-* At 4 sec: Node 3 and 8 catches fire.
-* At 5 sec: Node 7 catches fire.
-* It takes 5s to burn the complete tree.
-
+- Initially 10 is set to fire at 0 sec
+- At 1 sec: Node 5 catches fire.
+- At 2 sec: Node 2 catches fire.
+- At 3 sec: Nodes 1 and 4 catches fire.
+- At 4 sec: Node 3 and 8 catches fire.
+- At 5 sec: Node 7 catches fire.
+- It takes 5s to burn the complete tree.
 
 ## **🔒 Constraints**
 
-* Number of nodes in the tree: \$1 \leq N \leq 10^5\$
-* Node values are unique and in the range $\[1, 10^5]\$
-
+- Number of nodes in the tree: \$1 \leq N \leq 10^5\$
+- Node values are unique and in the range $\[1, 10^5]\$
 
 ## **✅ My Approach**
 
@@ -75,23 +69,21 @@ Target = 10
 
 We use a recursive DFS to calculate:
 
-* The **height** of each subtree.
-* The **distance** from the current node to the target node (if it exists in the subtree).
-* The maximum time taken to burn all affected nodes from the target.
+- The **height** of each subtree.
+- The **distance** from the current node to the target node (if it exists in the subtree).
+- The maximum time taken to burn all affected nodes from the target.
 
 The idea is to perform a postorder traversal and:
 
 1. Track when the target is found and how far it is from the current node.
 2. Compute burn time as the **maximum of:**
 
-   * Distance to target in one subtree + height of the other subtree.
-
+   - Distance to target in one subtree + height of the other subtree.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** `O(N)` — Every node is visited once during DFS.
-* **Expected Auxiliary Space Complexity:** `O(H)` — Due to recursion stack, where `H` is the height of the tree.
-
+- **Expected Time Complexity:** `O(N)` — Every node is visited once during DFS.
+- **Expected Auxiliary Space Complexity:** `O(H)` — Due to recursion stack, where `H` is the height of the tree.
 
 ## **🧠 Code (C++)**
 
@@ -119,7 +111,6 @@ public:
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ BFS from Target with Parent Mapping**
 
 ### 📌 **Algorithm Steps**
@@ -129,8 +120,6 @@ public:
 3. Perform a level-order BFS starting from the target node.
 4. At each level, spread the fire to the left, right, and parent nodes.
 5. Track visited nodes to avoid reprocessing and count the number of levels needed to burn all nodes.
-
-
 
 ```cpp
 class Solution {
@@ -157,7 +146,7 @@ public:
     unordered_map<Node*, Node*> par;
     mapParents(root, par);
     Node* start = findTarget(root, target);
-    
+
     unordered_set<Node*> vis;
     queue<Node*> q;
     q.push(start);
@@ -179,19 +168,16 @@ public:
 };
 ```
 
-
 ### ✅ **Why This Approach?**
 
-* Conceptually simple and flexible.
-* Converts tree to a graph and simulates fire propagation.
-* Works well for problems requiring path traversal in all directions.
-
+- Conceptually simple and flexible.
+- Converts tree to a graph and simulates fire propagation.
+- Works well for problems requiring path traversal in all directions.
 
 ### 📝 **Complexity Analysis**
 
-* **Time Complexity:** 🔸 `O(N)` — Each node is visited once during mapping and once during BFS.
-* **Auxiliary Space:** 🔸 `O(N)` — Space used for parent map, visited set, and BFS queue.
-
+- **Time Complexity:** 🔸 `O(N)` — Each node is visited once during mapping and once during BFS.
+- **Auxiliary Space:** 🔸 `O(N)` — Space used for parent map, visited set, and BFS queue.
 
 ## 📊 **3️⃣ Postorder DFS with Distance Tracking**
 
@@ -202,14 +188,13 @@ public:
 3. If one of the subtrees returns a valid distance, update the global burn time by summing distance to this node and height of the other subtree.
 4. Return height and distance for further propagation.
 
-
 ```cpp
 class Solution {
   int ans = 0;
 
   int dfs(Node* root, int target, int& dist) {
     if (!root) return 0;
-    
+
     if (root->data == target) {
       dist = 0;
       int l = dfs(root->left, target, dist), r = dfs(root->right, target, dist);
@@ -241,28 +226,24 @@ public:
 };
 ```
 
-
 ### ✅ **Why This Approach?**
 
-* Pure DFS solution without auxiliary structures like parent maps.
-* Computes everything during a single recursive pass.
-* Slightly cleaner than the original if structured properly.
-
+- Pure DFS solution without auxiliary structures like parent maps.
+- Computes everything during a single recursive pass.
+- Slightly cleaner than the original if structured properly.
 
 ### 📝 **Complexity Analysis**
 
-* **Time Complexity:** 🔸 `O(N)` — Each node is visited once during DFS.
-* **Auxiliary Space:** 🔸 `O(H)` — Stack space used in recursion (H = tree height).
-
+- **Time Complexity:** 🔸 `O(N)` — Each node is visited once during DFS.
+- **Auxiliary Space:** 🔸 `O(H)` — Stack space used in recursion (H = tree height).
 
 ## 🆚 Comparison
 
-| **Approach**               | ⏱️ **Time** | 🗂️ **Aux Space** | ✅ **Pros**                                        | ⚠️ **Cons**                      |
-| -------------------------- | ----------- | ----------------- | ------------------------------------------------- | -------------------------------- |
-| Original DFS               | 🟢 O(N)     | 🟢 O(H)           | Elegant, no parent map needed                     | Slightly harder to debug         |
-| BFS with Parent Map        | 🔸 O(N)     | 🔸 O(N)           | Conceptually clean, simulates spread step-by-step | Needs extra space for parent map |
-| DFS with Distance Tracking | 🔸 O(N)     | 🔸 O(H)           | Simplified and intuitive recursive structure      | Slightly verbose                 |
-
+| **Approach**               | ⏱️ **Time** | 🗂️ **Aux Space** | ✅ **Pros**                                       | ⚠️ **Cons**                      |
+| -------------------------- | ----------- | ---------------- | ------------------------------------------------- | -------------------------------- |
+| Original DFS               | 🟢 O(N)     | 🟢 O(H)          | Elegant, no parent map needed                     | Slightly harder to debug         |
+| BFS with Parent Map        | 🔸 O(N)     | 🔸 O(N)          | Conceptually clean, simulates spread step-by-step | Needs extra space for parent map |
+| DFS with Distance Tracking | 🔸 O(N)     | 🔸 O(H)          | Simplified and intuitive recursive structure      | Slightly verbose                 |
 
 ### ✅ **Best Choice by Scenario**
 
@@ -273,7 +254,6 @@ public:
 | Shortest & most optimized code      | 🥉 Original Postorder DFS     |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -329,12 +309,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

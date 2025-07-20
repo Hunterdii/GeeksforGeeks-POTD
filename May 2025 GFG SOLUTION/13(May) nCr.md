@@ -1,4 +1,4 @@
-# *13. nCr*
+# _13. nCr_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/ncr1019/1)
 
@@ -74,9 +74,8 @@ $$
 
 ## **🔒 Constraints**
 
-* $1 \leq n \leq 100$
-* $0 \leq r \leq 100$
-
+- $1 \leq n \leq 100$
+- $0 \leq r \leq 100$
 
 ## **✅ My Approach**
 
@@ -93,7 +92,6 @@ We compute factorials up to `n` modulo $10^9+7$, then use Fermat’s little theo
    C(n,r) = fact[n] \times inv[r] \times inv[n-r]\ \bmod\ \text{MOD}.
    $$
 
-
 ### **Algorithm Steps:**
 
 1. **Handle** if $r > n$: return 0.
@@ -106,6 +104,7 @@ We compute factorials up to `n` modulo $10^9+7$, then use Fermat’s little theo
    for i in 1..n:
      fact[i] = fact[i-1] * i % MOD
    ```
+
 5. **Compute inverse factorial of n**:
 
    ```
@@ -113,27 +112,27 @@ We compute factorials up to `n` modulo $10^9+7$, then use Fermat’s little theo
    ```
 
    using binary exponentiation in $O(\log\,\text{MOD})$.
+
 6. **Compute remaining inverses**:
 
    ```
    for i = n..1:
      inv[i-1] = inv[i] * i % MOD
    ```
+
 7. **Combine**:
 
    ```
    return fact[n] * inv[r] % MOD * inv[n-r] % MOD
    ```
 
-
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:**
+- **Expected Time Complexity:**
   $O(n + \log(\text{MOD}))$, since we build factorials in $O(n)$, compute one modular exponentiation in $O(\log\,\text{MOD})$, and build inverse factorials in $O(n)$.
 
-* **Expected Auxiliary Space Complexity:**
+- **Expected Auxiliary Space Complexity:**
   $O(n)$, for storing `fact[]` and `inv[]` arrays of size $n+1$.
-
 
 ## **🧠 Code (C++)**
 
@@ -166,7 +165,6 @@ public:
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ DP Table (Pascal’s Triangle)**
 
 ### **Idea**
@@ -178,10 +176,11 @@ Use the identity $C(i, j) = C(i-1, j-1) + C(i-1, j)$ to build a DP table of size
 1. Allocate `C[n+1][r+1]`, initialize with zeros.
 2. For each `i` in `0..n`:
 
-   * For each `j` in `0..min(i,r)`:
+   - For each `j` in `0..min(i,r)`:
 
-     * If `j == 0` or `j == i`: `C[i][j]=1`.
-     * Else: `C[i][j] = (C[i-1][j-1] + C[i-1][j]) % MOD`.
+     - If `j == 0` or `j == i`: `C[i][j]=1`.
+     - Else: `C[i][j] = (C[i-1][j-1] + C[i-1][j]) % MOD`.
+
 3. Return `C[n][r]`.
 
 ```cpp
@@ -204,7 +203,6 @@ public:
 
 ⏱️ **Time:** $O(n \times r)$
 🗂️ **Space:** $O(n \times r)$
-
 
 ## 📊 **3️⃣ Recursive + Memoization**
 
@@ -239,16 +237,13 @@ public:
 ⏱️ **Time:** $O(n \times r)$
 🗂️ **Space:** $O(n \times r)$
 
-
-
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                 | ⏱️ **Time**                  | 🗂️ **Space**      | ✅ **Pros**                        | ⚠️ **Cons**                            |
+| **Approach**                 | ⏱️ **Time**                  | 🗂️ **Space**       | ✅ **Pros**                       | ⚠️ **Cons**                            |
 | ---------------------------- | ---------------------------- | ------------------ | --------------------------------- | -------------------------------------- |
 | Modular Inverse + Factorials | 🟢 $O(n + \log\,\text{MOD})$ | 🟢 $O(n)$          | Fast; handles large $n$; reusable | Requires mod exponentiation step       |
 | DP Table                     | 🔸 $O(n \times r)$           | 🔸 $O(n \times r)$ | Simple; no exponentiation         | Higher time/memory for large inputs    |
 | Recursive + Memoization      | 🔸 $O(n \times r)$           | 🔸 $O(n \times r)$ | Elegant recursion                 | Recursion/memo overhead; risk of stack |
-
 
 ### ✅ **Best Choice?**
 
@@ -259,7 +254,6 @@ public:
 | Academic demonstration of recursion    | 🥉 Recursive + Memoization      |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -289,7 +283,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -318,19 +311,18 @@ class Solution:
         return fact[n] * inv[r] % self.MOD * inv[n-r] % self.MOD
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

@@ -10,12 +10,11 @@ Tags:
 
 # 🚀 _Day 12. Flood fill Algorithm_ 🧠
 
-
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/flood-fill-algorithm1856)
 
 ## 💡 **Problem Description:**
 
-You are given a 2D grid `image[][]` of size n×m, where each `image[i][j]` represents the color of a pixel in the image. You are also provided with a coordinate `(sr, sc)` representing the starting pixel (row and column) and a new color value `newColor`.  
+You are given a 2D grid `image[][]` of size n×m, where each `image[i][j]` represents the color of a pixel in the image. You are also provided with a coordinate `(sr, sc)` representing the starting pixel (row and column) and a new color value `newColor`.
 
 Your task is to perform a **flood fill** starting from the pixel `(sr, sc)`, changing its color to `newColor` and also changing the color of all connected pixels that have the same original color. Two pixels are considered connected if they are adjacent horizontally or vertically (not diagonally) and share the same original color.
 
@@ -23,9 +22,10 @@ Your task is to perform a **flood fill** starting from the pixel `(sr, sc)`, cha
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
 image[][] = [
   [1, 1, 1, 0],
@@ -33,30 +33,30 @@ image[][] = [
   [1, 0, 1, 1]
 ]
 sr = 1, sc = 2, newColor = 2
-```  
+```
 
 <img src="https://github.com/user-attachments/assets/56ccec2d-ab19-4eea-91a7-e49a097c502e" width="40%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 [
   [2, 2, 2, 0],
   [0, 2, 2, 2],
   [1, 0, 2, 2]
 ]
-```  
+```
 
 <img src="https://github.com/user-attachments/assets/a0f61ed8-0207-4b66-90c9-4607f4e18e5c" width="40%">
 
+#### **Explanation:**
 
-#### **Explanation:**  
 Starting from pixel `(1, 2)` with value `1`, the algorithm updates every 4-directionally connected pixel that has a value of `1` to `2`.
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 ```
 image[][] = [
   [1, 1, 1],
@@ -64,50 +64,54 @@ image[][] = [
   [1, 0, 1]
 ]
 sr = 1, sc = 1, newColor = 2
-```  
+```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 [
   [2, 2, 2],
   [2, 2, 0],
   [2, 0, 1]
 ]
-```  
+```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 Starting from the center pixel `(1, 1)` (with value `1`), all pixels connected by a path of the same color are changed to `2`. Note that the bottom right corner remains unchanged because it is not 4-directionally connected.
 
+### **Example 3:**
 
-### **Example 3:**  
+#### **Input:**
 
-#### **Input:**  
 ```
 image[][] = [
   [0, 1, 0],
   [0, 1, 0]
 ]
 sr = 0, sc = 1, newColor = 0
-```  
+```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 [
   [0, 0, 0],
   [0, 0, 0]
 ]
-```  
+```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 Starting from pixel `(0, 1)` with value `1`, all its 4-directionally connected pixels with value `1` are updated to `0`.
 
-### **Constraints:**  
+### **Constraints:**
+
 - `1 ≤ n ≤ m ≤ 500`
 - `0 ≤ image[i][j] ≤ 10`
 - `0 ≤ newColor ≤ 10`
 - `0 ≤ sr ≤ (n-1)`
 - `0 ≤ sc ≤ (m-1)`
- 
 
 ## 🎯 **My Approach:**
 
@@ -115,15 +119,14 @@ Starting from pixel `(0, 1)` with value `1`, all its 4-directionally connected p
 
 ### **Algorithm Steps:**
 
-1. **Identify the original color:** Determine the color of the starting pixel `(sr, sc)`.  
-2. **Edge Case Check:** If the original color is the same as `newColor`, no changes are needed.  
-3. **Traversal:**  
-   - **BFS Approach:** Use a queue to perform a level-order traversal and update the color for every 4-directionally connected pixel that matches the original color.  
+1. **Identify the original color:** Determine the color of the starting pixel `(sr, sc)`.
+2. **Edge Case Check:** If the original color is the same as `newColor`, no changes are needed.
+3. **Traversal:**
+   - **BFS Approach:** Use a queue to perform a level-order traversal and update the color for every 4-directionally connected pixel that matches the original color.
    - **DFS Approach (Recursive):** Use recursion to update connected pixels.
-4. **Update Process:**  
+4. **Update Process:**
    - For each pixel meeting the criteria, update its color to `newColor` and add its valid neighbors (up, down, left, right) to be processed next.
 5. **Return the Updated Image:** After processing every eligible pixel, return the modified grid.
-
 
 ## 🕒 **Time and Auxiliary Space Complexity**
 
@@ -161,7 +164,6 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ DFS-Based Flood Fill (Recursive)**
 
 #### **Algorithm Steps:**
@@ -193,30 +195,28 @@ public:
 
 ## 📊 Time and Space Complexity
 
-| Metric             | Value        |
-|--------------------|--------------|
-| 🕒 Time Complexity  | `O(m * n)`   |
+| Metric              | Value                             |
+| ------------------- | --------------------------------- |
+| 🕒 Time Complexity  | `O(m * n)`                        |
 | 🧠 Space Complexity | `O(m * n)` (recursive call stack) |
 
 #### ✅ **Why This Approach?**
 
 Recursive DFS is intuitive and easy to implement for grid-based problems. It works well for small to medium-sized images.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                              | ⚠️ **Cons**                              |
-|------------------------------------|-------------------------|--------------------------|----------------------------------------------|-----------------------------------------------|
-| **BFS (Queue)**                | 🟢 O`O(m * n)`                | 🟡 `O(m * n)`                 | Iterative, avoids recursion depth issues	 | Slightly more verbose      |
-| **DFS (Recursive)**                | 🟢 O`O(m * n)`                | 🟡 `O(m * n)`                 | Intuitive, concise implementation	 | Risk of stack overflow on large inputs	      |
-
+| **Approach**        | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                              | ⚠️ **Cons**                            |
+| ------------------- | ---------------------- | ----------------------- | ---------------------------------------- | -------------------------------------- |
+| **BFS (Queue)**     | 🟢 O`O(m * n)`         | 🟡 `O(m * n)`           | Iterative, avoids recursion depth issues | Slightly more verbose                  |
+| **DFS (Recursive)** | 🟢 O`O(m * n)`         | 🟡 `O(m * n)`           | Intuitive, concise implementation        | Risk of stack overflow on large inputs |
 
 ✅ **Best Choice?**
+
 - Use BFS as the main method for better safety on large inputs.
 - Use **DFS (Recursive)** for simpler problems and shorter DAGs.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -277,5 +277,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

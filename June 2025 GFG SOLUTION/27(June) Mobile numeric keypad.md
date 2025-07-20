@@ -1,18 +1,27 @@
 ---
 title: "📱 Mobile Numeric Keypad | GFG Solution 🔢"
-keywords🏷️: ["📱 mobile keypad", "🔢 dynamic programming", "📊 2D array", "🎯 unique sequences", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "📱 mobile keypad",
+    "🔢 dynamic programming",
+    "📊 2D array",
+    "🎯 unique sequences",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Mobile Numeric Keypad problem: count unique sequences of length n using keypad movements with dynamic programming. 🚀"
 date: 📅 2025-06-27
 ---
 
-# *27. Mobile Numeric Keypad*
+# _27. Mobile Numeric Keypad_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/mobile-numeric-keypad5456/1)
 
 ## **🧩 Problem Description**
 
-You have a standard numeric keypad on a mobile phone. You can press the current button or any button that is directly **above, below, left, or right** of it. Diagonal movements and pressing the bottom row corner buttons (* and #) are **not allowed**.
+You have a standard numeric keypad on a mobile phone. You can press the current button or any button that is directly **above, below, left, or right** of it. Diagonal movements and pressing the bottom row corner buttons (\* and #) are **not allowed**.
 
 Given an integer `n`, determine how many **unique sequences** of length `n` can be formed by pressing buttons on the keypad, starting from any digit.
 
@@ -27,7 +36,7 @@ Given an integer `n`, determine how many **unique sequences** of length `n` can 
 ```cpp
 Input: n = 1
 Output: 10
-Explanation: Possible 1-digit numbers follow keypad moves - 
+Explanation: Possible 1-digit numbers follow keypad moves -
 From 0 → 0, 1 → 1, 2 → 2 and so on, total 10 valid combinations are possible.
 ```
 
@@ -37,7 +46,7 @@ From 0 → 0, 1 → 1, 2 → 2 and so on, total 10 valid combinations are possib
 Input: n = 2
 Output: 36
 Explanation: Possible 2-digit numbers follow keypad moves -
-From 0 → 00, 08 (2), 
+From 0 → 00, 08 (2),
 From 1 → 11, 12, 14 (3),
 From 3 → 33, 32, 36 (3), and so on,
 total 36 valid combinations are possible.
@@ -45,7 +54,7 @@ total 36 valid combinations are possible.
 
 ## **🔒 Constraints**
 
-* $1 \le n \le 15$
+- $1 \le n \le 15$
 
 ## **✅ My Approach**
 
@@ -54,26 +63,29 @@ The optimal approach uses **Dynamic Programming** with a 2D array representing t
 ### **Dynamic Programming with 2D Grid Simulation**
 
 1. **Model the Keypad:**
-   * Represent keypad as a 4×3 grid where [3][0] and [3][2] are invalid (* and # positions).
-   * Initialize all valid positions with 1 (base case for n=1).
+
+   - Represent keypad as a 4×3 grid where [3][0] and [3][2] are invalid (\* and # positions).
+   - Initialize all valid positions with 1 (base case for n=1).
 
 2. **Define Movement Directions:**
-   * Use direction vectors: stay in place (0,0), up/down/left/right movements.
-   * This allows pressing current button or adjacent buttons.
+
+   - Use direction vectors: stay in place (0,0), up/down/left/right movements.
+   - This allows pressing current button or adjacent buttons.
 
 3. **Iterative DP Transition:**
-   * For each step from 2 to n, calculate new possibilities.
-   * For each position, sum up contributions from all reachable positions.
-   * Use two arrays (previous and current) to avoid overwriting.
+
+   - For each step from 2 to n, calculate new possibilities.
+   - For each position, sum up contributions from all reachable positions.
+   - Use two arrays (previous and current) to avoid overwriting.
 
 4. **Boundary Handling:**
-   * Skip invalid keypad positions ([3][0] and [3][2]).
-   * Ensure movements stay within 4×3 grid bounds.
+   - Skip invalid keypad positions ([3][0] and [3][2]).
+   - Ensure movements stay within 4×3 grid bounds.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the sequence length. We iterate n-1 times, and for each iteration, we process a constant 4×3 grid with constant direction moves.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use two fixed-size 4×3 arrays regardless of input size, making it constant extra space.
+- **Expected Time Complexity:** O(n), where n is the sequence length. We iterate n-1 times, and for each iteration, we process a constant 4×3 grid with constant direction moves.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use two fixed-size 4×3 arrays regardless of input size, making it constant extra space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -118,20 +130,20 @@ public:
 class Solution {
 public:
     int dp[16][4][3];
-    
+
     int dfs(int n, int i, int j) {
         if (i < 0 || i > 3 || j < 0 || j > 2 || (i==3 && j!=1)) return 0;
         if (n == 1) return 1;
         if (dp[n][i][j] != -1) return dp[n][i][j];
-        
+
         vector<pair<int,int>> dir = {{0,0},{0,1},{0,-1},{1,0},{-1,0}};
         int res = 0;
-        for (auto d : dir) 
+        for (auto d : dir)
             res += dfs(n-1, i+d.first, j+d.second);
-        
+
         return dp[n][i][j] = res;
     }
-    
+
     int getCount(int n) {
         memset(dp, -1, sizeof(dp));
         int res = 0;
@@ -146,13 +158,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) due to memoization table and recursion stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) due to memoization table and recursion stack
 
 ### ✅ **Why This Approach?**
 
-* Natural recursive thinking.
-* Easy to understand the state transitions.
+- Natural recursive thinking.
+- Easy to understand the state transitions.
 
 ## 📊 **3️⃣ Adjacency List Based DP**
 
@@ -171,9 +183,9 @@ public:
             {1, 4, 5, 7}, {2, 4, 5, 6, 8}, {3, 5, 6, 9},
             {4, 7, 8}, {5, 7, 8, 9, 0}, {6, 8, 9}
         };
-        
+
         vector<int> dp(10, 1), next(10, 0);
-        
+
         for (int step = 2; step <= n; step++) {
             fill(next.begin(), next.end(), 0);
             for (int digit = 0; digit <= 9; digit++) {
@@ -183,7 +195,7 @@ public:
             }
             dp = next;
         }
-        
+
         int result = 0;
         for (int count : dp) result += count;
         return result;
@@ -193,29 +205,29 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1) - Fixed size arrays for 10 digits
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1) - Fixed size arrays for 10 digits
 
 ### ✅ **Why This Approach?**
 
-* Direct digit-to-digit mapping.
-* Clean separation of adjacency logic.
+- Direct digit-to-digit mapping.
+- Clean separation of adjacency logic.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                    |
-| ------------------------------ | ---------------------- | ----------------------- | -------------------------------- | ------------------------------ |
-| 🔁 **2D Grid DP**              | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Most space efficient          | 🧮 Grid indexing complexity     |
-| 🧠 **Recursive + Memoization** | 🟢 O(n)                | 🟡 O(n)                 | 🧩 Natural recursive thinking    | 💾 Higher memory usage         |
-| 📋 **Adjacency List DP**       | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Clean digit-based logic       | 🔄 Requires pre-defined mapping |
+| 🚀 **Approach**                | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**                     |
+| ------------------------------ | ---------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| 🔁 **2D Grid DP**              | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Most space efficient       | 🧮 Grid indexing complexity     |
+| 🧠 **Recursive + Memoization** | 🟢 O(n)                | 🟡 O(n)                 | 🧩 Natural recursive thinking | 💾 Higher memory usage          |
+| 📋 **Adjacency List DP**       | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Clean digit-based logic    | 🔄 Requires pre-defined mapping |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                              | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
-| -------------------------------------------- | ---------------------------- | ------------------------- |
-| ⚡ Memory-critical applications              | 🥇 **2D Grid DP**            | ★★★★★                     |
-| 📚 Learning recursion and memoization       | 🥈 **Recursive + Memo**      | ★★★★☆                     |
-| 🔧 Clean, maintainable code                 | 🥉 **Adjacency List DP**     | ★★★★☆                     |
+| 🎯 **Scenario**                       | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ Memory-critical applications       | 🥇 **2D Grid DP**           | ★★★★★                     |
+| 📚 Learning recursion and memoization | 🥈 **Recursive + Memo**     | ★★★★☆                     |
+| 🔧 Clean, maintainable code           | 🥉 **Adjacency List DP**    | ★★★★☆                     |
 
 </details>
 
@@ -280,5 +292,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

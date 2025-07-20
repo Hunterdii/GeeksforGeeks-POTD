@@ -1,4 +1,4 @@
-# *5. Sort 0s, 1s, and 2s*
+# _5. Sort 0s, 1s, and 2s_
 
 The problem can be found at the following link: [Problem Link](https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1)
 
@@ -6,9 +6,9 @@ The problem can be found at the following link: [Problem Link](https://www.geeks
   <h2>✨ LeetCode Problem of the Day (POTD) Started ✨</h2>
 </div>
 
-- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯  
+- As promised in the poll, I’ve started solving and uploading **LeetCode Problem of the Day (POTD)** solutions! 🎯
 - Here’s my **December 5** solution:  
-  **[2337. Move Pieces to Obtain a String](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2337.Move%20Pieces%20to%20Obtain%20a%20String.md)**  
+  **[2337. Move Pieces to Obtain a String](https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2337.Move%20Pieces%20to%20Obtain%20a%20String.md)**
 
 <div align="center">
   <a href="https://github.com/Hunterdii/Leetcode-POTD/blob/main/December%202024%20Leetcode%20Solution/2337.Move%20Pieces%20to%20Obtain%20a%20String.md">
@@ -44,35 +44,31 @@ The array is sorted into ascending order.
 The array is sorted into ascending order.
 
 ### Constraints:
+
 - `1 <= arr.size() <= 10^6`
 - `0 <= arr[i] <= 2`
 
-
-
 ## My Approach
 
-1. **Dutch National Flag Algorithm**:  
-   - This problem can be solved using a two-pointer approach, also known as the Dutch National Flag Algorithm.  
-   - It divides the array into three sections:  
-     - All `0s` will be placed at the beginning.  
-     - All `2s` will be placed at the end.  
-     - All `1s` will remain in the middle.  
+1. **Dutch National Flag Algorithm**:
+
+   - This problem can be solved using a two-pointer approach, also known as the Dutch National Flag Algorithm.
+   - It divides the array into three sections:
+     - All `0s` will be placed at the beginning.
+     - All `2s` will be placed at the end.
+     - All `1s` will remain in the middle.
    - By iterating through the array and performing swaps, we can sort the array in a single pass.
 
-2. **Steps:**  
-   - Initialize three pointers: `low`, `mid`, and `high`.  
-   - Use `low` to track the position of `0s`, `high` to track the position of `2s`, and `mid` to traverse the array.  
-   - Swap elements as necessary to place `0s`, `1s`, and `2s` in their respective positions.  
+2. **Steps:**
+   - Initialize three pointers: `low`, `mid`, and `high`.
+   - Use `low` to track the position of `0s`, `high` to track the position of `2s`, and `mid` to traverse the array.
+   - Swap elements as necessary to place `0s`, `1s`, and `2s` in their respective positions.
    - Continue until `mid` crosses `high`.
-
-
 
 ## Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n), as we iterate through the array exactly once, performing constant-time operations during each step.  
+- **Expected Time Complexity:** O(n), as we iterate through the array exactly once, performing constant-time operations during each step.
 - **Expected Auxiliary Space Complexity:** O(1), as we use only three pointers (`low`, `mid`, `high`) and no extra data structures.
-
-
 
 ## Code (C)
 
@@ -109,8 +105,6 @@ void sort012(int arr[], int n) {
 }
 ```
 
-
-
 ## Code (Cpp)
 
 ```cpp
@@ -135,8 +129,6 @@ public:
     }
 };
 ```
-
-
 
 ## Code (Java)
 
@@ -171,8 +163,6 @@ class Solution {
 }
 ```
 
-
-
 ## Code (Python)
 
 ```python
@@ -192,8 +182,6 @@ class Solution:
                 high -= 1
 ```
 
-
-
 ## Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/starshadow0707/). Let’s make this learning journey more collaborative!
@@ -207,5 +195,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

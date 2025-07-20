@@ -1,4 +1,4 @@
-# *10. Longest Subarray With Majority Greater Than K*
+# _10. Longest Subarray With Majority Greater Than K_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/longest-subarray-with-majority-greater-than-k/1)
 
@@ -46,14 +46,14 @@ Full array has 4 elements > 2 and 0 elements ≤ 2, so length = 4.
 
 ## **🔒 Constraints**
 
-* $`1 ≤ n = arr.size() ≤ 10^6`$
-* $`0 ≤ k ≤ 10^6`$
-* $`0 ≤ arr[i] ≤ 10^6`$
-
+- $`1 ≤ n = arr.size() ≤ 10^6`$
+- $`0 ≤ k ≤ 10^6`$
+- $`0 ≤ arr[i] ≤ 10^6`$
 
 ## **✅ My Approach**
 
 ### **Prefix‐Sum + Hash Map**
+
 We transform each element into `+1` if it’s > k, or `−1` otherwise. Then the problem reduces to finding the **longest subarray** whose **sum** is **positive**.
 
 ### **Algorithm Steps:**
@@ -61,18 +61,17 @@ We transform each element into `+1` if it’s > k, or `−1` otherwise. Then the
 1. Initialize a prefix‐sum `s = 0` and an empty hash map `firstIdx` mapping each seen prefix‐sum to its **earliest** index.
 2. Iterate through the array with index `i`:
 
-   * Update `s += (arr[i] > k ? 1 : -1)`.
-   * If `s > 0`, the subarray `[0…i]` has positive sum; update `res = i + 1`.
-   * Else if `(s - 1)` exists in `firstIdx`, a subarray ending at `i` starting after `firstIdx[s - 1]` has positive sum; update `res = max(res, i - firstIdx[s - 1])`.
-   * If `s` is not yet in `firstIdx`, store `firstIdx[s] = i`.
-3. Return `res` (the maximum length found).
+   - Update `s += (arr[i] > k ? 1 : -1)`.
+   - If `s > 0`, the subarray `[0…i]` has positive sum; update `res = i + 1`.
+   - Else if `(s - 1)` exists in `firstIdx`, a subarray ending at `i` starting after `firstIdx[s - 1]` has positive sum; update `res = max(res, i - firstIdx[s - 1])`.
+   - If `s` is not yet in `firstIdx`, store `firstIdx[s] = i`.
 
+3. Return `res` (the maximum length found).
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** `O(n)`, since we make a single pass and each hash operation is amortized O(1).
-* **Expected Auxiliary Space Complexity:** `O(n)`, for storing up to `n` distinct prefix‐sums in the hash map.
-
+- **Expected Time Complexity:** `O(n)`, since we make a single pass and each hash operation is amortized O(1).
+- **Expected Auxiliary Space Complexity:** `O(n)`, for storing up to `n` distinct prefix‐sums in the hash map.
 
 ## **🧠 Code (C++)**
 
@@ -97,7 +96,6 @@ public:
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
@@ -109,7 +107,8 @@ public:
 2. Build a **monotonically decreasing stack** of indices where the corresponding `P[i]` values are strictly decreasing.
 3. Traverse the array from the end (`i = n`) to the beginning (`i = 0`):
 
-   * While the stack is not empty and `P[i] > P[stack.top()]`, pop from the stack and compute `res = max(res, i - idx)`.
+   - While the stack is not empty and `P[i] > P[stack.top()]`, pop from the stack and compute `res = max(res, i - idx)`.
+
 4. Return `res`.
 
 ```cpp
@@ -134,18 +133,15 @@ public:
 };
 ```
 
-
-
 ### ✅ **Why This Approach?**
 
-* Achieves **O(n)** time and **O(n)** space complexity.
-* Avoids the use of hash maps, which can be beneficial in environments where hash map performance is unpredictable.
+- Achieves **O(n)** time and **O(n)** space complexity.
+- Avoids the use of hash maps, which can be beneficial in environments where hash map performance is unpredictable.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n)
-* **Space:** O(n)
-
+- **Time:** O(n)
+- **Space:** O(n)
 
 ## 📊 **3️⃣ Balanced BST (Ordered Map)**
 
@@ -180,26 +176,23 @@ public:
 };
 ```
 
-
-
 ### ✅ **Why This Approach?**
 
-* Provides **O(n log n)** worst-case time complexity due to the balanced BST operations.
-* Deterministic performance without relying on hash functions.
+- Provides **O(n log n)** worst-case time complexity due to the balanced BST operations.
+- Deterministic performance without relying on hash functions.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n log n)
-* **Space:** O(n)
-
+- **Time:** O(n log n)
+- **Space:** O(n)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                 | ⏱️ **Time**   | 🗂️ **Space** | ✅ **Pros**                   | ⚠️ **Cons**                 |
-| ---------------------------- | ------------- | ------------- | ---------------------------- | --------------------------- |
-| Prefix Sum + Hash Map        | 🟢 O(n)       | 🟢 O(n)       | Simple, fastest average case | Potential hash collisions   |
-| Monotonic Stack + Prefix Sum | 🟢 O(n)       | 🟢 O(n)       | No hash map needed           | Slightly more complex logic |
-| Balanced BST (Ordered Map)   | 🔸 O(n log n) | 🟢 O(n)       | Deterministic performance    | Slower due to log n factor  |
+| **Approach**                 | ⏱️ **Time**   | 🗂️ **Space** | ✅ **Pros**                  | ⚠️ **Cons**                 |
+| ---------------------------- | ------------- | ------------ | ---------------------------- | --------------------------- |
+| Prefix Sum + Hash Map        | 🟢 O(n)       | 🟢 O(n)      | Simple, fastest average case | Potential hash collisions   |
+| Monotonic Stack + Prefix Sum | 🟢 O(n)       | 🟢 O(n)      | No hash map needed           | Slightly more complex logic |
+| Balanced BST (Ordered Map)   | 🔸 O(n log n) | 🟢 O(n)      | Deterministic performance    | Slower due to log n factor  |
 
 ### ✅ **Best Choice?**
 
@@ -210,7 +203,6 @@ public:
 | Guarantee tree-based lookup     | 🥉 Balanced BST             |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -235,7 +227,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -254,7 +245,6 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -268,5 +258,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

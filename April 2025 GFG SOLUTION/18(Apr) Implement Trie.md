@@ -1,63 +1,72 @@
-# *18. Implement Trie*  
+# _18. Implement Trie_
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/trie-insert-and-search0651/1)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/trie-insert-and-search0651/1)
 
-## **Problem Description**  
+## **Problem Description**
 
 Implement the Trie data structure. You are given queries of the following three types:
+
 - **Type 1**: Insert a word into the Trie.
 - **Type 2**: Search whether a word exists in the Trie.
 - **Type 3**: Check whether a word is a prefix of any word stored in the Trie.
 
 > 📅 Note: Sorry for uploading late, my Final Sem exam is going on.
 
-
 ## **Examples**
 
-### **Example 1:**  
-#### **Input:**  
-`[[1, "abcd"], [1, "abc"], [1, "bcd"], [2, "bc"], [3, "bc"], [2, "abc"]]`  
-#### **Output:**  
-`[false, true, true]`  
-#### **Explanation:**  
-- "bc" does not exist as a word  
-- "bc" exists as prefix of "bcd"  
-- "abc" exists  
+### **Example 1:**
 
+#### **Input:**
 
-### **Example 2:**  
-#### **Input:**  
-`[[1, "gfg"], [1, "geeks"], [3, "fg"], [3, "geek"], [2, "for"]]`  
-#### **Output:**  
-`[false, true, false]`  
-#### **Explanation:**  
-- "fg" is not a prefix  
-- "geek" is a prefix of "geeks"  
-- "for" not in Trie  
+`[[1, "abcd"], [1, "abc"], [1, "bcd"], [2, "bc"], [3, "bc"], [2, "abc"]]`
 
+#### **Output:**
 
-### **Constraints:**  
-- $1 \leq \text{query.size()} \leq 10^4$  
-- $1 \leq \text{word.size()} \leq 10^3$  
+`[false, true, true]`
 
+#### **Explanation:**
+
+- "bc" does not exist as a word
+- "bc" exists as prefix of "bcd"
+- "abc" exists
+
+### **Example 2:**
+
+#### **Input:**
+
+`[[1, "gfg"], [1, "geeks"], [3, "fg"], [3, "geek"], [2, "for"]]`
+
+#### **Output:**
+
+`[false, true, false]`
+
+#### **Explanation:**
+
+- "fg" is not a prefix
+- "geek" is a prefix of "geeks"
+- "for" not in Trie
+
+### **Constraints:**
+
+- $1 \leq \text{query.size()} \leq 10^4$
+- $1 \leq \text{word.size()} \leq 10^3$
 
 ## **My Approach**
 
-### **Fixed-Size Trie Using 26 Pointers**  
+### **Fixed-Size Trie Using 26 Pointers**
 
 ### **Algorithm Steps:**
 
-We create a class Trie, with a nested structure (Node) that stores a boolean flag for end of word and a fixed array of 26 pointers (one for each lowercase letter).  
-- **Insert:** Walk through characters, initialize child if needed.  
-- **Search:** Check for existence and end-of-word.  
-- **Prefix:** Just ensure prefix exists in Trie.
+We create a class Trie, with a nested structure (Node) that stores a boolean flag for end of word and a fixed array of 26 pointers (one for each lowercase letter).
 
+- **Insert:** Walk through characters, initialize child if needed.
+- **Search:** Check for existence and end-of-word.
+- **Prefix:** Just ensure prefix exists in Trie.
 
 ## **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O(L), where L = length of the word  
-- **Expected Auxiliary Space Complexity:** O(1), as each function uses constant extra space aside from Trie structure itself  
-
+- **Expected Time Complexity:** O(L), where L = length of the word
+- **Expected Auxiliary Space Complexity:** O(1), as each function uses constant extra space aside from Trie structure itself
 
 ## **Code (C++)**
 
@@ -87,10 +96,10 @@ public:
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ Map‐Based Trie (unordered_map children)**
 
 #### **Algorithm Steps:**
+
 1. Each node stores an `unordered_map<char, N*>` instead of a fixed array.
 2. Insert/search/prefix each walk the map—only existing edges consume memory.
 
@@ -127,20 +136,18 @@ public:
 ```
 
 #### 📝 **Complexity Analysis:**
-- **Time Complexity:** O(L) average per operation (L = word length)  
+
+- **Time Complexity:** O(L) average per operation (L = word length)
 - **Space Complexity:** O(total characters stored), only allocates for existing edges
-
-
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**              | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**           |
-|-----------------------------|-----------------|-------------------------|------------------------------------------|-----------------------------------------------|
-| Fixed‐Array (26 pointers)   | 🟢 O(L)            | 🟢 O(26 × nodes)           | Fast, constant‑time child access         | Wastes memory for sparse alphabets            |
-| Map‐Based (unordered_map)   | 🟢 O(L) avg        | 🟡 O(children × nodes)     | Space‑efficient when sparse              | Hash overhead, slower than array lookup       |
+| **Approach**              | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                      | ⚠️ **Cons**                             |
+| ------------------------- | ---------------------- | ----------------------- | -------------------------------- | --------------------------------------- |
+| Fixed‐Array (26 pointers) | 🟢 O(L)                | 🟢 O(26 × nodes)        | Fast, constant‑time child access | Wastes memory for sparse alphabets      |
+| Map‐Based (unordered_map) | 🟢 O(L) avg            | 🟡 O(children × nodes)  | Space‑efficient when sparse      | Hash overhead, slower than array lookup |
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -168,7 +175,6 @@ class Trie {
     }
 }
 ```
-
 
 ## **Code (Python)**
 
@@ -213,5 +219,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

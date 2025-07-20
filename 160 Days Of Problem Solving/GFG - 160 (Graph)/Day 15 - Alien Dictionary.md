@@ -9,10 +9,7 @@ Tags:
 
 # 🚀 _Day 15. Alien Dictionary_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/alien-dictionary)  
-
-
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/alien-dictionary)
 
 ## 💡 **Problem Description:**
 
@@ -22,11 +19,10 @@ Your task is to **determine the correct order of letters** based on the given wo
 If multiple valid orderings are possible, return any one of them.  
 If no valid ordering exists (i.e., the words are not consistent with any letter ordering), return an empty string (`""`).
 
-
-
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
+
 **Input:**  
 `words[] = ["cb", "cba", "a", "bc"]`  
 **Output:**  
@@ -34,7 +30,8 @@ If no valid ordering exists (i.e., the words are not consistent with any letter 
 **Explanation:**  
 One valid letter order is: `"cab"`.
 
-### **Example 2:**  
+### **Example 2:**
+
 **Input:**  
 `words[] = ["ab", "aa", "a"]`  
 **Output:**  
@@ -42,7 +39,8 @@ One valid letter order is: `"cab"`.
 **Explanation:**  
 The order is invalid because `"aa"` appears before `"a"`.
 
-### **Example 3:**  
+### **Example 3:**
+
 **Input:**  
 `words[] = ["ab", "cd", "ef", "ad"]`  
 **Output:**  
@@ -50,14 +48,11 @@ The order is invalid because `"aa"` appears before `"a"`.
 **Explanation:**  
 There is a contradiction in the letter ordering.
 
-
-
 ### **Constraints**
-- $1 \leq \text{words.length} \leq 500$  
-- $1 \leq \text{words}[i].\text{length} \leq 100$  
-- $\text{words}[i]$ consists only of lowercase English letters.  
 
-
+- $1 \leq \text{words.length} \leq 500$
+- $1 \leq \text{words}[i].\text{length} \leq 100$
+- $\text{words}[i]$ consists only of lowercase English letters.
 
 ## 🎯 **My Approach:**
 
@@ -66,6 +61,7 @@ There is a contradiction in the letter ordering.
 We model the **characters as graph nodes**, and **directed edges represent the precedence** between letters.
 
 ### **Algorithm Steps**:
+
 1. Create an adjacency list `graph` to store the directed relationships (edges) between characters.
 2. Build the graph by comparing adjacent words in the list:
    - For two words `a` and `b`, find the first index `i` where `a[i] != b[i]`.
@@ -77,13 +73,13 @@ We model the **characters as graph nodes**, and **directed edges represent the p
    - Repeatedly remove a character from the queue, append to result, and decrement the in-degree of its neighbors.
 5. If the result length is less than the number of unique characters, a cycle exists — return `""`.
 
-
 ## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** `O(N + K)`, where  
-  - `N` is the total number of characters across all words, and  
+- **Expected Time Complexity:** `O(N + K)`, where
+
+  - `N` is the total number of characters across all words, and
   - `K` is the number of distinct precedence relationships (edges in the graph).  
-  We traverse each word once and process each edge once during topological sort.
+    We traverse each word once and process each edge once during topological sort.
 
 - **Expected Auxiliary Space Complexity:** `O(N + K)`,  
   for the graph representation, in-degree array, and the result string.
@@ -168,6 +164,7 @@ public:
     }
 };
 ```
+
 #### 📝 **Complexity Analysis:**
 
 - **Time Complexity:** `O(N + K)`
@@ -179,12 +176,12 @@ It uses post-order DFS with cycle detection to build the order naturally and eff
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ Time Complexity | 🗂️ Space Complexity | ✅ Pros                                  | ⚠️ Cons                                  |
-|----------------------------------|---------------------|----------------------|------------------------------------------|-------------------------------------------|
-| Kahn’s Algorithm (BFS)           | 🟢 `O(N + K)`          | 🟢 `O(N + K)`           | Detects cycles easily, iterative         | More verbose for simple problems          |
-| DFS-Based Topological Sort       | 🟢 `O(N + K)`          | 🟢 `O(N + K)`           | Simple logic, natural ordering           | Stack overflow possible on deep graphs    |
+| **Approach**               | ⏱️ Time Complexity | 🗂️ Space Complexity | ✅ Pros                          | ⚠️ Cons                                |
+| -------------------------- | ------------------ | ------------------- | -------------------------------- | -------------------------------------- |
+| Kahn’s Algorithm (BFS)     | 🟢 `O(N + K)`      | 🟢 `O(N + K)`       | Detects cycles easily, iterative | More verbose for simple problems       |
+| DFS-Based Topological Sort | 🟢 `O(N + K)`      | 🟢 `O(N + K)`       | Simple logic, natural ordering   | Stack overflow possible on deep graphs |
 
-- `N`: Total number of characters processed  
+- `N`: Total number of characters processed
 - `K`: Total number of unique precedence relationships (edges in the graph)
 
 ✅ **Best Choice?**
@@ -274,5 +271,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

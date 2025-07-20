@@ -8,48 +8,51 @@ Tags:
 
 # 🚀 _Day 2. Maximum XOR of two numbers in an array_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tries-gfg-160/problem/maximum-xor-of-two-numbers-in-an-array)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tries-gfg-160/problem/maximum-xor-of-two-numbers-in-an-array)
 
 ## 💡 **Problem Description:**
 
 Given an array `arr[]` of **non-negative integers**, your task is to find the **maximum XOR** value that can be obtained by XORing any two distinct elements of the array.
-
 
 ## 🔍 **Example Walkthrough:**
 
 ### **Example 1:**
 
 #### **Input:**
+
 `arr[] = [25, 10, 2, 8, 5, 3]`
 
-#### **Output:**  
+#### **Output:**
+
 `28`
 
-#### **Explanation:**  
-The pair `(25 ^ 5)` gives the maximum XOR value which is `28`.
+#### **Explanation:**
 
+The pair `(25 ^ 5)` gives the maximum XOR value which is `28`.
 
 ### **Example 2:**
 
 #### **Input:**
+
 `arr[] = [1, 2, 3, 4, 5, 6, 7]`
 
-#### **Output:**  
+#### **Output:**
+
 `7`
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The pair `(1 ^ 6)` gives the maximum XOR value which is `7`.
 
+### **Constraints:**
 
-### **Constraints:**  
-- $\(2 \leq \text{arr.size()} \leq 5 \times 10^4\)$  
-- $\(1 \leq \text{arr[i]} \leq 10^6\)$  
-
+- $\(2 \leq \text{arr.size()} \leq 5 \times 10^4\)$
+- $\(1 \leq \text{arr[i]} \leq 10^6\)$
 
 ## 🎯 **My Approach:**
 
 ### **Greedy Bitmasking with HashSet**
+
 1. Iterate from **MSB to LSB** (31 to 0).
 2. At each bit position:
    - Mask numbers to keep the current prefix.
@@ -57,8 +60,8 @@ The pair `(1 ^ 6)` gives the maximum XOR value which is `7`.
    - Use a set to check if there's a pair that can form this potential result.
 3. This way, we **greedily try to set each bit** from left to right, ensuring it's possible.
 
-
 ### **Algorithm Steps:**
+
 1. Initialize `max_xor = 0` and `mask = 0`.
 2. Loop over 31 bits from high to low.
 3. For each bit:
@@ -66,7 +69,6 @@ The pair `(1 ^ 6)` gives the maximum XOR value which is `7`.
    - Store all prefixes using the current mask.
    - Try setting the bit in `max_xor`, and see if two prefixes exist that form it.
 4. If yes, update `max_xor`.
-
 
 ## 🕒 **Time and Auxiliary Space Complexity**
 
@@ -98,13 +100,13 @@ public:
 };
 ```
 
-
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
 ## 📊 **2️⃣ Trie-based Optimal**
 
 ### **Algorithm Steps:**
+
 1. **Build a Trie** to store binary representations of numbers (MSB to LSB).
 2. **Insert all numbers** into the Trie bit by bit.
 3. **Query each number** against the Trie to find the maximum possible XOR by choosing opposite bits greedily.
@@ -140,18 +142,19 @@ public:
 };
 ```
 
-
 #### 📝 **Complexity Analysis:**
-- **Time Complexity:** `O(32n)`  
+
+- **Time Complexity:** `O(32n)`
 - **Space Complexity:** `O(32n)` (Trie storage)
 
 #### ✅ **Why This Approach?**
-Optimal for large datasets. Uses bitwise Trie to efficiently compute maximum XOR in linear time.
 
+Optimal for large datasets. Uses bitwise Trie to efficiently compute maximum XOR in linear time.
 
 ## 📊 **3️⃣ Brute-force (Check All Pairs)**
 
 #### **Algorithm Steps:**
+
 1. Check all possible pairs of elements.
 2. Compute XOR for each pair and track the maximum.
 
@@ -169,25 +172,26 @@ public:
 ```
 
 #### 📝 **Complexity Analysis:**
-- **Time Complexity:** `O(n²)`  
+
+- **Time Complexity:** `O(n²)`
 - **Space Complexity:** `O(1)`
 
 #### ✅ **Why This Approach?**
+
 Simple to implement for small arrays. Avoids complex data structures.
 
 > **Note:** This approach results in **Time Limit Exceeded (TLE)** for large inputs _(fails ~30/1140 test cases due to time constraints)_.
 
-
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**       | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                | ⚠️ **Cons**                |
-|---------------------|-------------------------|--------------------------|----------------------------|----------------------------|
-| **Bitmask Greedy**  | 🟢 `O(31n)`                | 🟡 `O(n)`                   | Balanced speed & memory    | Complex bit manipulation   |
-| **Trie-based**      | 🟢 `O(32n)`                | 🟡 `O(32n)`                | Optimal for large datasets | Higher memory usage        |
-| **Brute-force**     | 🔴 `O(n²)`                 | 🟢 `O(1)`                   | Simple implementation      | **TLE for large inputs** Impractical for large `n`  |
+| **Approach**       | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                | ⚠️ **Cons**                                        |
+| ------------------ | ---------------------- | ----------------------- | -------------------------- | -------------------------------------------------- |
+| **Bitmask Greedy** | 🟢 `O(31n)`            | 🟡 `O(n)`               | Balanced speed & memory    | Complex bit manipulation                           |
+| **Trie-based**     | 🟢 `O(32n)`            | 🟡 `O(32n)`             | Optimal for large datasets | Higher memory usage                                |
+| **Brute-force**    | 🔴 `O(n²)`             | 🟢 `O(1)`               | Simple implementation      | **TLE for large inputs** Impractical for large `n` |
 
 ✅ **Best Choice?**
+
 - **Large Arrays:** Use **Bitmask Greedy** or **Trie-based**.
 - **Small Arrays (n ≤ 1e3):** **Brute-force** is acceptable.
 
@@ -242,7 +246,6 @@ class Solution:
         return max_xor
 ```
 
-
 ## 🎯 **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -256,5 +259,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

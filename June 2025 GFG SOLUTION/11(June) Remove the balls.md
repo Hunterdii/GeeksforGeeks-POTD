@@ -1,28 +1,36 @@
 ---
 title: "🎯 Remove the Balls | GFG Solution 🔵🔴"
-keywords🏷️: ["🟣 remove balls", "🧹 stack removal", "🧠 in-place optimization", "📘 GFG", "💥 duplicate removal", "🔁 repeated pair", "🧮 DSA", "🏁 competitive programming"]
+keywords🏷️:
+  [
+    "🟣 remove balls",
+    "🧹 stack removal",
+    "🧠 in-place optimization",
+    "📘 GFG",
+    "💥 duplicate removal",
+    "🔁 repeated pair",
+    "🧮 DSA",
+    "🏁 competitive programming",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the 'Remove the Balls' problem: simulate consecutive removal of matching balls using stack or in-place logic. 🚀"
 date: 📅 2025-06-11
 ---
 
-# *11. Remove the Balls*
+# _11. Remove the Balls_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1)
-
 
 ## **🧩 Problem Description**
 
 You are given two arrays `color[]` and `radius[]`, representing a sequence of balls:
 
-* `color[i]` denotes the color of the i-th ball.
-* `radius[i]` denotes the radius of the i-th ball.
+- `color[i]` denotes the color of the i-th ball.
+- `radius[i]` denotes the radius of the i-th ball.
 
 👉 If **two consecutive balls** have the **same color** and **same radius**, they are removed.
 🧹 This removal process is repeated until no more such adjacent pairs exist.
 
 🧮 Your task is to return the **number of balls remaining** after all possible removals.
-
 
 ## **📘 Examples**
 
@@ -55,13 +63,11 @@ First two balls match in color and radius, so are removed.
 Only one ball remains which cannot be removed.
 ```
 
-
 ## **🔒 Constraints**
 
-* 1 ≤ color.length = radius.length ≤ 10⁵
-* 1 ≤ color\[i] ≤ 10⁹
-* 1 ≤ radius\[i] ≤ 10⁹
-
+- 1 ≤ color.length = radius.length ≤ 10⁵
+- 1 ≤ color\[i] ≤ 10⁹
+- 1 ≤ radius\[i] ≤ 10⁹
 
 ## ✅ My Approach
 
@@ -76,16 +82,15 @@ Use a variable `j` as a **stack pointer** (think of it like the top of a stack):
 1. Traverse through the `color[]` and `radius[]` arrays using `i`.
 2. At each index `i`, check if `color[i] == color[j]` and `radius[i] == radius[j]`:
 
-   * If **yes**, it’s a matching pair — **remove both** by decrementing `j`.
-   * If **no**, move the current ball to the new `j` index (simulate pushing to stack).
-3. Finally, return `j + 1` as the number of remaining balls.
+   - If **yes**, it’s a matching pair — **remove both** by decrementing `j`.
+   - If **no**, move the current ball to the new `j` index (simulate pushing to stack).
 
+3. Finally, return `j + 1` as the number of remaining balls.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where `n` is the number of balls. We traverse the list once and do constant work per step.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a few variables and modify the input in-place without extra space.
-
+- **Expected Time Complexity:** O(n), where `n` is the number of balls. We traverse the list once and do constant work per step.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a few variables and modify the input in-place without extra space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -118,8 +123,9 @@ public:
 1. Initialize a stack `st`.
 2. For each index `i` from `0` to `n-1`:
 
-   * If the stack is **not empty** and the `color[i] == color[st.top()]` **and** `radius[i] == radius[st.top()]`, pop the top of the stack.
-   * Otherwise, push the index `i` into the stack.
+   - If the stack is **not empty** and the `color[i] == color[st.top()]` **and** `radius[i] == radius[st.top()]`, pop the top of the stack.
+   - Otherwise, push the index `i` into the stack.
+
 3. Return the final size of the stack as the answer.
 
 ```cpp
@@ -142,34 +148,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Space:** 💾 O(n) for stack
+- **Time:** ⏱️ O(n)
+- **Space:** 💾 O(n) for stack
 
 ### ✅ **Pros:**
 
-* Very intuitive — follows the direct simulation of the problem.
-* Easy to debug and implement.
+- Very intuitive — follows the direct simulation of the problem.
+- Easy to debug and implement.
 
 ### ⚠️ **Cons:**
 
-* Uses additional space for the stack (not in-place).
-
+- Uses additional space for the stack (not in-place).
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**             | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**             | ⚠️ **Cons**            |
+| 🚀 **Approach**             | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**            | ⚠️ **Cons**            |
 | --------------------------- | ---------------------- | ----------------------- | ---------------------- | ---------------------- |
 | 🔲 **Stack**                | 🟢 O(n)                | 🟡 O(n)                 | Easy, clear logic      | Extra memory usage     |
 | 🔳 **In-Place Two-Pointer** | 🟢 O(n)                | 🟢 O(1)                 | Memory-efficient, fast | Input gets overwritten |
 
-
-
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                  | 🎖️ **Recommended Approach** |
-| -------------------------------- | ---------------------------- |
-| ⚡ Large inputs, best performance | 🥇 **In-Place Two-Pointer**  |
-| 🔍 Easy to write & maintain      | 🥈 **Stack**                 |
+| 🎯 **Scenario**                   | 🎖️ **Recommended Approach** |
+| --------------------------------- | --------------------------- |
+| ⚡ Large inputs, best performance | 🥇 **In-Place Two-Pointer** |
+| 🔍 Easy to write & maintain       | 🥈 **Stack**                |
 
 </details>
 
@@ -221,5 +224,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

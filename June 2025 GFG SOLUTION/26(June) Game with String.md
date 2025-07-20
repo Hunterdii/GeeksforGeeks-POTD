@@ -1,11 +1,21 @@
 ---
 title: "🎮 Game with String | GFG Solution 🧠"
-keywords🏷️: ["🧮 frequency reduction", "🧵 string manipulation", "🧊 bucket sort", "📦 max heap", "📘 GFG", "💻 DSA", "🏁 competitive programming"]
+keywords🏷️:
+  [
+    "🧮 frequency reduction",
+    "🧵 string manipulation",
+    "🧊 bucket sort",
+    "📦 max heap",
+    "📘 GFG",
+    "💻 DSA",
+    "🏁 competitive programming",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Game with String problem: minimize string value after removing k characters using greedy strategies. 🚀"
 date: 📅 2025-06-26
 ---
-# *26. Game with String*
+
+# _26. Game with String_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/game-with-string4100/1)
 
@@ -35,12 +45,10 @@ Output: 2
 Explanation: Remove two 'a' to get: a=1, b=1 → 1² + 1² = 2
 ```
 
-
 ## **🔒 Constraints**
 
-* \$0 \leq k \leq \text{s.length()} \leq 10^5\$
-* \$s\$ consists of lowercase English letters only
-
+- \$0 \leq k \leq \text{s.length()} \leq 10^5\$
+- \$s\$ consists of lowercase English letters only
 
 ## **✅ My Approach**
 
@@ -55,16 +63,15 @@ We aim to reduce the frequencies of the most common characters first, because sq
 3. Create a **bucket array** `b[m+1]` where `b[i]` stores how many characters have frequency `i`.
 4. Starting from the largest frequency:
 
-   * If we can remove all `b[i]` characters with frequency `i`, move them to frequency `i-1`.
-   * Repeat until `k` becomes zero.
-5. Finally, compute the total value: for all frequencies `i`, add `b[i] * i * i` to result.
+   - If we can remove all `b[i]` characters with frequency `i`, move them to frequency `i-1`.
+   - Repeat until `k` becomes zero.
 
+5. Finally, compute the total value: for all frequencies `i`, add `b[i] * i * i` to result.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n + k), where n = size of input string, and frequency reduction takes at most O(k) operations.
-* **Expected Auxiliary Space Complexity:** O(n), used for frequency and bucket arrays of size up to max frequency.
-
+- **Expected Time Complexity:** O(n + k), where n = size of input string, and frequency reduction takes at most O(k) operations.
+- **Expected Auxiliary Space Complexity:** O(n), used for frequency and bucket arrays of size up to max frequency.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -90,7 +97,6 @@ public:
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
 
-
 ## 📊 **2️⃣ Priority Queue Approach**
 
 ### 💡 Algorithm Steps:
@@ -99,8 +105,9 @@ public:
 2. Push all frequencies into a **max heap**.
 3. Repeat `k` times:
 
-   * Extract the largest frequency.
-   * Decrease it by 1 and push back if non-zero.
+   - Extract the largest frequency.
+   - Decrease it by 1 and push back if non-zero.
+
 4. Finally, sum squares of remaining frequencies.
 
 ```cpp
@@ -124,14 +131,13 @@ public:
 
 ### 📝 Complexity Analysis:
 
-* **Expected Time Complexity:** O(n + k log 26)
-* **Expected Auxiliary Space Complexity:** O(26)
+- **Expected Time Complexity:** O(n + k log 26)
+- **Expected Auxiliary Space Complexity:** O(26)
 
 ### ✅ Why This Approach?
 
-* Easy to code and intuitive.
-* Works well when `k` is small.
-
+- Easy to code and intuitive.
+- Works well when `k` is small.
 
 ## 📊 **3️⃣ Greedy Frequency Array Approach**
 
@@ -140,7 +146,8 @@ public:
 1. Count character frequencies in an array.
 2. For each of `k` steps:
 
-   * Find character with max frequency and reduce by 1.
+   - Find character with max frequency and reduce by 1.
+
 3. Calculate the final sum of squares.
 
 ```cpp
@@ -162,34 +169,31 @@ public:
 
 ### 📝 Complexity Analysis:
 
-* **Expected Time Complexity:** O(n + 26k)
-* **Expected Auxiliary Space Complexity:** O(1)
+- **Expected Time Complexity:** O(n + 26k)
+- **Expected Auxiliary Space Complexity:** O(1)
 
 ### ✅ Why This Approach?
 
-* Uses constant space.
-* May be slow if `k` is large (due to repeated scans).
-
+- Uses constant space.
+- May be slow if `k` is large (due to repeated scans).
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**     | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                 | ⚠️ **Cons**                    |
+| 🚀 **Approach**     | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                | ⚠️ **Cons**                    |
 | ------------------- | ---------------------- | ----------------------- | -------------------------- | ------------------------------ |
 | 📊 Frequency Bucket | 🟢 O(n + k)            | 🟢 O(n)                 | 💨 Fastest, optimal greedy | Slightly complex logic         |
 | 🧺 Priority Queue   | 🟡 O(n + k log 26)     | 🟢 O(26)                | 🔧 Clean & intuitive       | Heap overhead                  |
 | 🔢 Greedy Array     | 🔴 O(n + 26k)          | 🟢 O(1)                 | 💾 Constant space          | Slow for large k (linear scan) |
 
-
 ### 🏆 **Best Choice Recommendation**
 
 | 🎯 **Scenario**                       | 🥇 **Recommended Approach** | 🔥 **Performance Rating** |
 | ------------------------------------- | --------------------------- | ------------------------- |
-| ⚡ Large input and large k             | ✅ **Frequency Bucket**      | ★★★★★                     |
-| 🔧 Simpler implementation for small k | ✅ **Priority Queue**        | ★★★★☆                     |
-| 💾 Space-constrained environment      | ✅ **Greedy Array**          | ★★★☆☆                     |
+| ⚡ Large input and large k            | ✅ **Frequency Bucket**     | ★★★★★                     |
+| 🔧 Simpler implementation for small k | ✅ **Priority Queue**       | ★★★★☆                     |
+| 💾 Space-constrained environment      | ✅ **Greedy Array**         | ★★★☆☆                     |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -202,12 +206,12 @@ class Solution {
         for (int x : f) if (x > 0) b[x]++;
         while (k > 0 && m > 0) {
             if (b[m] <= k) {
-                k -= b[m]; 
-                b[m - 1] += b[m]; 
+                k -= b[m];
+                b[m - 1] += b[m];
                 b[m--] = 0;
             } else {
-                b[m] -= k; 
-                b[m - 1] += k; 
+                b[m] -= k;
+                b[m - 1] += k;
                 k = 0;
             }
         }
@@ -217,7 +221,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -235,7 +238,6 @@ class Solution:
         return sum(i * i * b[i] for i in range(1, m + 1))
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let's make this learning journey more collaborative!
@@ -249,5 +251,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

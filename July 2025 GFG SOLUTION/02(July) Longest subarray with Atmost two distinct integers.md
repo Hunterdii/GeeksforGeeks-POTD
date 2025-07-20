@@ -1,12 +1,21 @@
 ---
 title: "🔢 Longest Subarray with At Most Two Distinct Integers | GFG Solution 🔍"
-keywords🏷️: ["🔢 longest subarray", "🔍 sliding window", "📍 two pointers", "📈 hash map", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔢 longest subarray",
+    "🔍 sliding window",
+    "📍 two pointers",
+    "📈 hash map",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Longest Subarray with At Most Two Distinct Integers problem: find maximum length subarray containing at most 2 distinct elements using sliding window technique. 🚀"
 date: 📅 2025-07-02
 ---
 
-# *02. Longest Subarray with At Most Two Distinct Integers*
+# _02. Longest Subarray with At Most Two Distinct Integers_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/fruit-into-baskets-1663137462/1)
 
@@ -41,14 +50,14 @@ which has a length of 5.
 ```cpp
 Input: arr[] = [1, 1, 1, 1]
 Output: 4
-Explanation: The entire array contains only one distinct integer (1), which satisfies 
+Explanation: The entire array contains only one distinct integer (1), which satisfies
 the condition of at most two distinct integers.
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $1 \le \text{arr}[i] \le 10^5$
+- $1 \le \text{arr.size()} \le 10^5$
+- $1 \le \text{arr}[i] \le 10^5$
 
 ## **✅ My Approach**
 
@@ -57,29 +66,33 @@ The optimal approach uses the **Sliding Window** technique with a **Hash Map** t
 ### **Sliding Window + Hash Map**
 
 1. **Initialize Variables:**
-   * Use two pointers: `left` (start of window) and `right` (end of window).
-   * Maintain a hash map to store frequency of elements in current window.
-   * Track `maxLength` to store the result.
+
+   - Use two pointers: `left` (start of window) and `right` (end of window).
+   - Maintain a hash map to store frequency of elements in current window.
+   - Track `maxLength` to store the result.
 
 2. **Expand Window:**
-   * Move `right` pointer and add `arr[right]` to the hash map.
-   * Increment its frequency.
+
+   - Move `right` pointer and add `arr[right]` to the hash map.
+   - Increment its frequency.
 
 3. **Contract Window:**
-   * If hash map size exceeds 2 (more than 2 distinct elements), shrink window from left.
-   * Decrement frequency of `arr[left]` and remove it if frequency becomes 0.
-   * Move `left` pointer forward.
+
+   - If hash map size exceeds 2 (more than 2 distinct elements), shrink window from left.
+   - Decrement frequency of `arr[left]` and remove it if frequency becomes 0.
+   - Move `left` pointer forward.
 
 4. **Update Result:**
-   * After each valid window, update `maxLength` with current window size.
+
+   - After each valid window, update `maxLength` with current window size.
 
 5. **Continue Until End:**
-   * Repeat until `right` pointer reaches the end of array.
+   - Repeat until `right` pointer reaches the end of array.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. Each element is visited at most twice (once by right pointer and once by left pointer).
-* **Expected Auxiliary Space Complexity:** O(k), where k is the number of distinct elements in the current window. In the worst case, k ≤ 2, so effectively O(1) additional space.
+- **Expected Time Complexity:** O(n), where n is the size of the array. Each element is visited at most twice (once by right pointer and once by left pointer).
+- **Expected Auxiliary Space Complexity:** O(k), where k is the number of distinct elements in the current window. In the worst case, k ≤ 2, so effectively O(1) additional space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -111,11 +124,11 @@ public:
 
 1. Initialize two variables `first` and `second` to represent the two distinct numbers allowed in the window, and `firstIdx`, `secondIdx` to store their most recent positions.
 2. Traverse the array with a right pointer:
-   * If the current element equals `first` or `second`, update the corresponding index.
-   * If a third new element appears:
-     * Determine which of the two existing numbers appeared earlier (minimum of `firstIdx` and `secondIdx`).
-     * Move the left pointer just past that index to ensure only two distinct elements remain.
-     * Replace the older number (`first` or `second`) with the new element and update its index.
+   - If the current element equals `first` or `second`, update the corresponding index.
+   - If a third new element appears:
+     - Determine which of the two existing numbers appeared earlier (minimum of `firstIdx` and `secondIdx`).
+     - Move the left pointer just past that index to ensure only two distinct elements remain.
+     - Replace the older number (`first` or `second`) with the new element and update its index.
 3. Update the maximum length after each iteration.
 
 ```cpp
@@ -143,14 +156,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1) - Constant space
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1) - Constant space
 
 ### ✅ **Why This Approach?**
 
-* Optimal space complexity with O(1) memory usage.
-* No hash map overhead, direct variable tracking.
-* Efficient for small distinct element tracking.
+- Optimal space complexity with O(1) memory usage.
+- No hash map overhead, direct variable tracking.
+- Efficient for small distinct element tracking.
 
 ## 📊 **3️⃣ Frequency Array Optimization**
 
@@ -159,12 +172,12 @@ public:
 1. Use a frequency array (e.g., `freq[100001]`) assuming all elements fall within a known small integer range.
 2. Initialize variables: `left = 0`, `distinctCount = 0`, `maxLen = 0`.
 3. Traverse using a right pointer:
-   * If `arr[right]` is added to the window for the first time (`freq[arr[right]] == 0`), increment `distinctCount`.
-   * Increase the count for `arr[right]`.
+   - If `arr[right]` is added to the window for the first time (`freq[arr[right]] == 0`), increment `distinctCount`.
+   - Increase the count for `arr[right]`.
 4. If `distinctCount > 2`, shrink the window:
-   * Decrease the count of `arr[left]`.
-   * If its count becomes 0, decrement `distinctCount`.
-   * Move `left` forward.
+   - Decrease the count of `arr[left]`.
+   - If its count becomes 0, decrement `distinctCount`.
+   - Move `left` forward.
 5. At each iteration, update `maxLen` as the maximum valid window size.
 
 ```cpp
@@ -188,14 +201,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) where k = range of elements
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) where k = range of elements
 
 ### ✅ **Why This Approach?**
 
-* Faster than hash map for known small ranges.
-* Cache-friendly array access pattern.
-* No need for key-value mapping—constant-time operations.
+- Faster than hash map for known small ranges.
+- Cache-friendly array access pattern.
+- No need for key-value mapping—constant-time operations.
 
 ## 📊 **4️⃣ STL Set-Based Tracking**
 
@@ -204,11 +217,11 @@ public:
 1. Use an `unordered_map<int, int>` to store frequency of elements and a `unordered_set<int>` to track the number of unique elements in the current window.
 2. Initialize `left = 0`, `maxLen = 0`.
 3. Traverse using a right pointer:
-   * Add `arr[right]` to the map and insert into the set.
+   - Add `arr[right]` to the map and insert into the set.
 4. If the set size exceeds 2 (more than 2 distinct elements), shrink the window:
-   * Decrease count of `arr[left]`.
-   * If the count becomes 0, remove it from the set.
-   * Move the `left` pointer forward.
+   - Decrease count of `arr[left]`.
+   - If the count becomes 0, remove it from the set.
+   - Move the `left` pointer forward.
 5. At each step, update `maxLen` with the current valid window size.
 
 ```cpp
@@ -236,14 +249,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Clear separation of concerns with set and map.
-* Easy to trace which elements are currently active.
-* Good for debugging and understanding logic flow.
+- Clear separation of concerns with set and map.
+- Easy to trace which elements are currently active.
+- Good for debugging and understanding logic flow.
 
 ## 5️⃣ 📝 **Ordered Map Sliding Window**
 
@@ -252,8 +265,8 @@ public:
 1. Use a `std::map<int, int>` (ordered map) to count the elements within the sliding window.
 2. Expand the window to the right by moving pointer `j`; increase the count for `a[j]`.
 3. If the map contains more than 2 distinct elements, shrink the window from the left:
-   * Decrement the count for `a[i]`.
-   * If the count becomes 0, erase the element from the map.
+   - Decrement the count for `a[i]`.
+   - If the count becomes 0, erase the element from the map.
 4. Track the maximum window size during each iteration.
 
 ```cpp
@@ -277,34 +290,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log k), where k ≤ 2 here
-* **Auxiliary Space:** 💾 O(k)
+- **Time:** ⏱️ O(n log k), where k ≤ 2 here
+- **Auxiliary Space:** 💾 O(k)
 
 ### ✅ **Why This Approach?**
 
-* Maintains ordering automatically with `std::map`.
-* Shrinks window cleanly using count + erase.
-* Good readability and debugging via sorted structure.
+- Maintains ordering automatically with `std::map`.
+- Shrinks window cleanly using count + erase.
+- Good readability and debugging via sorted structure.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Hash Map Sliding Window**    | 🟢 O(n)                | 🟡 O(k)                 | ⚡ Clean code, general solution   | 💾 Hash map overhead                 |
-| 🔄 **Two Variable Tracking**      | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Optimal space, fastest runtime | 🧮 Complex logic, harder to debug    |
-| 🔺 **Frequency Array**            | 🟢 O(n)                | 🟡 O(range)             | ⚡ Cache-friendly, fast access    | 💾 Limited to known small ranges     |
-| 🔑 **STL Set-Based**              | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Clear logic, STL optimized     | 💾 Extra space for set structure     |
-| ⏰ **Ordered Map Sliding Window** | 🟡 O(n log k)          | 🟢 O(1)                 | 🚀 Predictable, no hash collisions | 💾 Slightly slower per op     |
+| 🚀 **Approach**                   | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                       |
+| --------------------------------- | ---------------------- | ----------------------- | ---------------------------------- | --------------------------------- |
+| 🔍 **Hash Map Sliding Window**    | 🟢 O(n)                | 🟡 O(k)                 | ⚡ Clean code, general solution    | 💾 Hash map overhead              |
+| 🔄 **Two Variable Tracking**      | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Optimal space, fastest runtime  | 🧮 Complex logic, harder to debug |
+| 🔺 **Frequency Array**            | 🟢 O(n)                | 🟡 O(range)             | ⚡ Cache-friendly, fast access     | 💾 Limited to known small ranges  |
+| 🔑 **STL Set-Based**              | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Clear logic, STL optimized      | 💾 Extra space for set structure  |
+| ⏰ **Ordered Map Sliding Window** | 🟡 O(n log k)          | 🟢 O(1)                 | 🚀 Predictable, no hash collisions | 💾 Slightly slower per op         |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ **Maximum performance, competitive programming**    | 🥇 **Two Variable Tracking**   | ★★★★★                     |
-| 🔧 **Production code, readability important**         | 🥈 **Hash Map Sliding Window** | ★★★★☆                     |
-| 📊 **Known small element range**                      | 🥉 **Frequency Array**         | ★★★★☆                     |
-| 🎯 **Educational purposes, clear logic**               | 🎖️ **STL Set-Based**           | ★★★☆☆                     |
-| 📚 **Readability / simplicity**                    | 🏅 **Ordered Map Sliding Window**   | ★★★★☆              |
+| 🎯 **Scenario**                                     | 🎖️ **Recommended Approach**       | 🔥 **Performance Rating** |
+| --------------------------------------------------- | --------------------------------- | ------------------------- |
+| ⚡ **Maximum performance, competitive programming** | 🥇 **Two Variable Tracking**      | ★★★★★                     |
+| 🔧 **Production code, readability important**       | 🥈 **Hash Map Sliding Window**    | ★★★★☆                     |
+| 📊 **Known small element range**                    | 🥉 **Frequency Array**            | ★★★★☆                     |
+| 🎯 **Educational purposes, clear logic**            | 🎖️ **STL Set-Based**              | ★★★☆☆                     |
+| 📚 **Readability / simplicity**                     | 🏅 **Ordered Map Sliding Window** | ★★★★☆                     |
 
 </details>
 
@@ -360,13 +373,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-
-
-
-
-
-
-
-

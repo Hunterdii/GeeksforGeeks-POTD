@@ -1,12 +1,22 @@
 ---
 title: "🧮 Smallest Divisor | GFG Solution 🎯"
-keywords🏷️: ["🧮 smallest divisor", "🔍 binary search", "📈 array", "🎯 optimization", "📉 greedy", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🧮 smallest divisor",
+    "🔍 binary search",
+    "📈 array",
+    "🎯 optimization",
+    "📉 greedy",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Smallest Divisor problem: find the smallest divisor such that sum of ceiling divisions is ≤ k using binary search. 🚀"
 date: 📅 2025-06-15
 ---
 
-# *15. Smallest Divisor*
+# _15. Smallest Divisor_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/smallest-divisor/1)
 
@@ -38,9 +48,9 @@ Explanation: 1 is the smallest divisor having sum of quotients:
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $1 \le \text{arr}[i] \le 10^6$
-* $\text{arr.size()} \le k \le 10^6$
+- $1 \le \text{arr.size()} \le 10^5$
+- $1 \le \text{arr}[i] \le 10^6$
+- $\text{arr.size()} \le k \le 10^6$
 
 ## **✅ My Approach**
 
@@ -49,26 +59,29 @@ The optimal approach uses **Binary Search** on the answer space. Since we need t
 ### **Binary Search**
 
 1. **Define Search Space:**
-   * Lower bound: `l = 1` (smallest positive divisor)
-   * Upper bound: `h = max(arr)` (largest possible needed divisor)
+
+   - Lower bound: `l = 1` (smallest positive divisor)
+   - Upper bound: `h = max(arr)` (largest possible needed divisor)
 
 2. **Binary Search Logic:**
-   * For each mid value `m`, calculate the sum of ceiling divisions
-   * Use the formula: `⌈a/b⌉ = (a + b - 1) / b` for efficient ceiling calculation
-   * If sum ≤ k, try smaller divisors (move right boundary)
-   * If sum > k, need larger divisors (move left boundary)
+
+   - For each mid value `m`, calculate the sum of ceiling divisions
+   - Use the formula: `⌈a/b⌉ = (a + b - 1) / b` for efficient ceiling calculation
+   - If sum ≤ k, try smaller divisors (move right boundary)
+   - If sum > k, need larger divisors (move left boundary)
 
 3. **Ceiling Division Optimization:**
-   * Instead of using `ceil(arr[i]/m)`, use `(arr[i] + m - 1) / m`
-   * This avoids floating-point operations and is more efficient
+
+   - Instead of using `ceil(arr[i]/m)`, use `(arr[i] + m - 1) / m`
+   - This avoids floating-point operations and is more efficient
 
 4. **Termination:**
-   * When `l >= h`, we found the smallest valid divisor
+   - When `l >= h`, we found the smallest valid divisor
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n * log(max_element)), where n is the array size. Binary search runs in O(log(max_element)) iterations, and each iteration requires O(n) time to calculate the sum of ceiling divisions.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables like left, right, mid, and sum.
+- **Expected Time Complexity:** O(n \* log(max_element)), where n is the array size. Binary search runs in O(log(max_element)) iterations, and each iteration requires O(n) time to calculate the sum of ceiling divisions.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use constant extra space for variables like left, right, mid, and sum.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -118,13 +131,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n * log(max_element))
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n \* log(max_element))
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* More readable ceiling division logic.
-* Classical binary search pattern.
+- More readable ceiling division logic.
+- Classical binary search pattern.
 
 ## 📊 **3️⃣ Ternary Search Approach**
 
@@ -158,13 +171,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n * log₃(max_element))
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n \* log₃(max_element))
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Theoretically faster convergence than binary search.
-* Reduces search space by 1/3 each iteration.
+- Theoretically faster convergence than binary search.
+- Reduces search space by 1/3 each iteration.
 
 ## 📊 **4️⃣ Square Root Decomposition**
 
@@ -181,7 +194,7 @@ public:
         int n = arr.size(), b = sqrt(n) + 1;
         vector<vector<int>> blocks(b);
         for (int i = 0; i < n; i++) blocks[i / b].push_back(arr[i]);
-        
+
         int l = 1, h = *max_element(arr.begin(), arr.end());
         while (l < h) {
             int m = l + (h - l) / 2, s = 0;
@@ -196,31 +209,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n * log(max_element))
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n \* log(max_element))
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Better cache locality for large arrays.
-* Potential for parallelization.
+- Better cache locality for large arrays.
+- Potential for parallelization.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**           | ⏱️ **Time Complexity**           | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ------------------------- | -------------------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Binary Search(Ultra-Optimized)**    | 🟢 O(n * log(max))               | 🟢 O(1)                 | ⚡ Fastest runtime, minimal ops    | 🧮 Less readable                     |
-| 🔄 **Math Ceiling**       | 🟢 O(n * log(max))               | 🟢 O(1)                 | 🔧 Clear division logic            | 🐢 More operations per iteration      |
-| 🔺 **Ternary Search**     | 🟢 O(n * log₃(max))              | 🟢 O(1)                 | 🚀 Faster theoretical convergence  | 🧮 Complex implementation            |
-| 📊 **Sqrt Decomposition** | 🟢 O(n * log(max))               | 🔸 O(n)                 | 🏎️ Better cache locality          | 💾 Extra space overhead              |
+| 🚀 **Approach**                       | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                      |
+| ------------------------------------- | ---------------------- | ----------------------- | --------------------------------- | -------------------------------- |
+| 🔍 **Binary Search(Ultra-Optimized)** | 🟢 O(n \* log(max))    | 🟢 O(1)                 | ⚡ Fastest runtime, minimal ops   | 🧮 Less readable                 |
+| 🔄 **Math Ceiling**                   | 🟢 O(n \* log(max))    | 🟢 O(1)                 | 🔧 Clear division logic           | 🐢 More operations per iteration |
+| 🔺 **Ternary Search**                 | 🟢 O(n \* log₃(max))   | 🟢 O(1)                 | 🚀 Faster theoretical convergence | 🧮 Complex implementation        |
+| 📊 **Sqrt Decomposition**             | 🟢 O(n \* log(max))    | 🔸 O(n)                 | 🏎️ Better cache locality          | 💾 Extra space overhead          |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ Maximum performance, large datasets             | 🥇 **Binary Search**          | ★★★★★                     |
-| 🔧 Code clarity with good performance              | 🥈 **Math Ceiling**             | ★★★★☆                     |
-| 📊 Theoretical optimization                        | 🥉 **Ternary Search**           | ★★★★☆                     |
-| 🏎️ Cache-sensitive large arrays                   | 🏅 **Sqrt Decomposition**       | ★★★☆☆                     |
+| 🎯 **Scenario**                        | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| -------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ Maximum performance, large datasets | 🥇 **Binary Search**        | ★★★★★                     |
+| 🔧 Code clarity with good performance  | 🥈 **Math Ceiling**         | ★★★★☆                     |
+| 📊 Theoretical optimization            | 🥉 **Ternary Search**       | ★★★★☆                     |
+| 🏎️ Cache-sensitive large arrays        | 🏅 **Sqrt Decomposition**   | ★★★☆☆                     |
 
 </details>
 
@@ -272,5 +285,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

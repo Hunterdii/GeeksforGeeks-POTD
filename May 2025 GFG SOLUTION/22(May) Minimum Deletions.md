@@ -1,7 +1,6 @@
-# *22. Minimum Deletions*
+# _22. Minimum Deletions_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/minimum-deletitions1648/1)
-
 
 ## **🧩 Problem Description**
 
@@ -11,9 +10,8 @@ To solve this, we must **maximize** the length of the longest palindromic subseq
 
 ### 💬 Key Insight:
 
-* The minimum number of deletions = `len(s) - LPS(s)`
-* Where **LPS(s)** is the length of the **Longest Palindromic Subsequence** of `s`.
-
+- The minimum number of deletions = `len(s) - LPS(s)`
+- Where **LPS(s)** is the length of the **Longest Palindromic Subsequence** of `s`.
 
 ## **📘 Examples**
 
@@ -31,7 +29,6 @@ To solve this, we must **maximize** the length of the longest palindromic subseq
 
 The LPS is `"abcba"` (length = 5). Minimum deletions = `7 - 5 = 2`.
 
-
 ### **Example 2:**
 
 #### **Input:**
@@ -46,11 +43,9 @@ The LPS is `"abcba"` (length = 5). Minimum deletions = `7 - 5 = 2`.
 
 The LPS is `"eeggee"` or `"eefeef"` (length = 5). Deletions = `13 - 5 = 8`.
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq \text{length of } s \leq 10^3\$
-
+- \$1 \leq \text{length of } s \leq 10^3\$
 
 ## **✅ My Approach**
 
@@ -64,23 +59,22 @@ This optimized implementation uses only two 1D arrays (`dp` and `prev`) to store
 1. Initialize two 1D arrays of size `n`: `dp` and `prev`.
 2. Start from the end of the string and move backward:
 
-   * For each character `s[i]`:
+   - For each character `s[i]`:
 
-     * Set `dp[i] = 1` (each character is a palindrome of length 1).
-     * Iterate `j` from `i+1` to `n-1`:
+     - Set `dp[i] = 1` (each character is a palindrome of length 1).
+     - Iterate `j` from `i+1` to `n-1`:
 
-       * If `s[i] == s[j]`, set `dp[j] = prev[j-1] + 2`.
-       * Else, set `dp[j] = max(prev[j], dp[j-1])`.
-   * Copy `dp` to `prev` for the next iteration.
+       - If `s[i] == s[j]`, set `dp[j] = prev[j-1] + 2`.
+       - Else, set `dp[j] = max(prev[j], dp[j-1])`.
+
+   - Copy `dp` to `prev` for the next iteration.
+
 3. Return `n - dp[n-1]`, which is the minimum number of deletions.
-
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n²), because we compute values for all pairs `(i, j)` where `i < j`.
-* **Expected Auxiliary Space Complexity:** O(n), as we only use two arrays of size `n`.
-
-
+- **Expected Time Complexity:** O(n²), because we compute values for all pairs `(i, j)` where `i < j`.
+- **Expected Auxiliary Space Complexity:** O(n), as we only use two arrays of size `n`.
 
 ## **🧠 Code (C++)**
 
@@ -103,7 +97,6 @@ class Solution {
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## 📊 **2️⃣ LCS with Reversed String (Bottom-Up 2D DP)**
 
@@ -132,14 +125,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Classic LCS technique reused to find LPS.
-* Easy to understand and debug.
+- Classic LCS technique reused to find LPS.
+- Easy to understand and debug.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n²)
-* **Auxiliary Space:** O(n²)
-
+- **Time:** O(n²)
+- **Auxiliary Space:** O(n²)
 
 ## 📊 **3️⃣ LCS with Reversed String (Space Optimized)**
 
@@ -169,23 +161,21 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Minimizes memory use with only two rows.
-* Retains full accuracy and speed of 2D DP.
+- Minimizes memory use with only two rows.
+- Retains full accuracy and speed of 2D DP.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n²)
-* **Auxiliary Space:** O(n)
-
+- **Time:** O(n²)
+- **Auxiliary Space:** O(n)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                        | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                        | ⚠️ **Cons**                   |
-| ----------------------------------- | ----------- | ------------- | --------------------------------- | ----------------------------- |
-| Original (1D DP from end)           | 🟢 O(n²)    | 🟢 O(n)       | Compact, direct LPS logic         | Harder to grasp for beginners |
-| LCS with Reversed (2D DP)           | 🟢 O(n²)    | 🔸 O(n²)      | Classic, easy to write            | Higher memory usage           |
-| LCS with Reversed (Space Optimized) | 🟢 O(n²)    | 🟢 O(n)       | Balanced: space-efficient + clear | Slightly longer to implement  |
-
+| **Approach**                        | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                       | ⚠️ **Cons**                   |
+| ----------------------------------- | ----------- | ------------ | --------------------------------- | ----------------------------- |
+| Original (1D DP from end)           | 🟢 O(n²)    | 🟢 O(n)      | Compact, direct LPS logic         | Harder to grasp for beginners |
+| LCS with Reversed (2D DP)           | 🟢 O(n²)    | 🔸 O(n²)     | Classic, easy to write            | Higher memory usage           |
+| LCS with Reversed (Space Optimized) | 🟢 O(n²)    | 🟢 O(n)      | Balanced: space-efficient + clear | Slightly longer to implement  |
 
 ### ✅ **Best Choice?**
 
@@ -237,12 +227,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

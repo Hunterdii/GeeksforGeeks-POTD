@@ -1,7 +1,6 @@
-# *6. Left View of Binary Tree*
+# _6. Left View of Binary Tree_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1)
-
 
 ## **🧩 Problem Description**
 
@@ -9,7 +8,6 @@ You are given the root of a binary tree. Your task is to return the **left view*
 The left view is defined as the set of nodes visible when the tree is observed from the **left side**.
 
 If the tree is empty, return an empty list.
-
 
 ## **📘 Examples**
 
@@ -31,7 +29,6 @@ From the left side of the tree, the visible nodes are: 1 (level 0), 2 (level 1),
 
 <img src="https://github.com/user-attachments/assets/4c1b1e9a-cee6-4623-bb2c-24a0936e50cb" width="30%">
 
-
 ### **Example 2:**
 
 #### **Input:**
@@ -50,7 +47,6 @@ Only one node at each level is visible from the left side, namely: 1, 2, 4, and 
 
 <img src="https://github.com/user-attachments/assets/b5d42a3b-ca93-4391-b139-e0d522e58151" width="30%">
 
-
 ### **Example 3:**
 
 #### **Input:**
@@ -61,11 +57,10 @@ Only one node at each level is visible from the left side, namely: 1, 2, 4, and 
 
 `[]`
 
-
 ### 🔒 Constraints:
 
-* \$0 \leq\$ Number of nodes \$\leq 10^6\$
-* \$0 \leq\$ Node \$\rightarrow\$ data \$\leq 10^5\$
+- \$0 \leq\$ Number of nodes \$\leq 10^6\$
+- \$0 \leq\$ Node \$\rightarrow\$ data \$\leq 10^5\$
 
 ## ✅ **My Approach**
 
@@ -78,15 +73,15 @@ We use level-order traversal (BFS) to traverse the binary tree. For each level, 
 1. Initialize an empty queue and push the root node.
 2. For each level in the tree:
 
-   * Record the first node's value at the front of the queue.
-   * Add all children (left first, then right) to the queue.
-3. Repeat for all levels and return the result list.
+   - Record the first node's value at the front of the queue.
+   - Add all children (left first, then right) to the queue.
 
+3. Repeat for all levels and return the result list.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(N), as we visit every node exactly once during level-order traversal.
-* **Expected Auxiliary Space Complexity:** O(W), where W is the maximum width of the binary tree (maximum number of nodes at any level due to the queue used in BFS).
+- **Expected Time Complexity:** O(N), as we visit every node exactly once during level-order traversal.
+- **Expected Auxiliary Space Complexity:** O(W), where W is the maximum width of the binary tree (maximum number of nodes at any level due to the queue used in BFS).
 
 ## **🧠 Code (C++)**
 
@@ -115,7 +110,6 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ DFS with First Node at Each Level**
 
 ### **Algorithm Steps:**
@@ -123,8 +117,6 @@ class Solution {
 1. Use DFS and maintain a level counter.
 2. Track the **maximum level visited so far**.
 3. If the current node is the first at its level, add it to the result.
-
-
 
 ```cpp
 class Solution {
@@ -145,8 +137,8 @@ public:
 
 ### ✅ **Why This Approach?**
 
-* Does not use a queue (no level-order), just recursion.
-* Very elegant and recursive.
+- Does not use a queue (no level-order), just recursion.
+- Very elegant and recursive.
 
 ### 📝 **Complexity Analysis**
 
@@ -156,18 +148,16 @@ public:
 | **Auxiliary Space** | O(H) recursion stack       |
 |                     | (`H` = height of the tree) |
 
-
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**      | ⏱️ **Time Complexity** | 🗂️ **Auxiliary Space** | ✅ **Pros**                       | ⚠️ **Cons**                      |
-| ----------------- | ---------------------- | ----------------------- | -------------------------------- | -------------------------------- |
-| BFS (Level Order) | 🟢 O(N)                   | 🟢 O(W)                    | Simple, iterative                | Needs queue memory (width `W`)   |
-| DFS (Recursive)   | 🟢 O(N)                   | 🟡 O(H)                    | Cleaner recursion, minimal logic | Uses recursion stack (depth `H`) |
+| **Approach**      | ⏱️ **Time Complexity** | 🗂️ **Auxiliary Space** | ✅ **Pros**                      | ⚠️ **Cons**                      |
+| ----------------- | ---------------------- | ---------------------- | -------------------------------- | -------------------------------- |
+| BFS (Level Order) | 🟢 O(N)                | 🟢 O(W)                | Simple, iterative                | Needs queue memory (width `W`)   |
+| DFS (Recursive)   | 🟢 O(N)                | 🟡 O(H)                | Cleaner recursion, minimal logic | Uses recursion stack (depth `H`) |
 
-> * `N`: Number of nodes
-> * `H`: Height of tree
-> * `W`: Maximum width of tree (BFS queue size)
-
+> - `N`: Number of nodes
+> - `H`: Height of tree
+> - `W`: Maximum width of tree (BFS queue size)
 
 ### ✅ **Best Choice?**
 
@@ -201,7 +191,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -215,19 +204,18 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

@@ -1,12 +1,21 @@
 ---
 title: "💰 Gold Mine Problem | GFG Solution 🏆"
-keywords🏷️: ["💰 gold mine", "🔍 dynamic programming", "📍 path optimization", "📈 matrix traversal", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "💰 gold mine",
+    "🔍 dynamic programming",
+    "📍 path optimization",
+    "📈 matrix traversal",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Gold Mine Problem: find maximum gold collection path from left to right using dynamic programming optimization. 🚀"
 date: 📅 2025-07-12
 ---
 
-# *12. Gold Mine Problem*
+# _12. Gold Mine Problem_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/gold-mine-problem2608/1)
 
@@ -35,7 +44,7 @@ Explanation: The path is (1, 0) -> (2, 1) -> (2, 2). Total gold collected is 2 +
 ```cpp
 Input: mat[][] = [[1, 3, 1, 5], [2, 2, 4, 1], [5, 0, 2, 3], [0, 6, 1, 2]]
 Output: 16
-Explanation: The path is (2, 0) -> (3, 1) -> (2, 2) -> (2, 3) or (2, 0) -> (1, 1) -> (1, 2) -> (0, 3). 
+Explanation: The path is (2, 0) -> (3, 1) -> (2, 2) -> (2, 3) or (2, 0) -> (1, 1) -> (1, 2) -> (0, 3).
 Total gold collected is (5 + 6 + 2 + 3) or (5 + 2 + 4 + 5) = 16.
 ```
 
@@ -49,8 +58,8 @@ Explanation: The path is (1,0) -> (2,1) -> (2,2). Total gold collected is 2 + 7 
 
 ## **🔒 Constraints**
 
-* $1 \le \text{mat.size()}, \text{mat[0].size()} \le 500$
-* $0 \le \text{mat}[i][j] \le 100$
+- $1 \le \text{mat.size()}, \text{mat[0].size()} \le 500$
+- $0 \le \text{mat}[i][j] \le 100$
 
 ## **✅ My Approach**
 
@@ -59,32 +68,36 @@ The optimal approach uses **Dynamic Programming** with **in-place optimization**
 ### **Bottom-Up Dynamic Programming**
 
 1. **Initialize Strategy:**
-   * Start from the rightmost column (last column) as base case.
-   * Work backwards towards the first column, column by column.
-   * For each cell, calculate the maximum gold that can be collected from that position.
+
+   - Start from the rightmost column (last column) as base case.
+   - Work backwards towards the first column, column by column.
+   - For each cell, calculate the maximum gold that can be collected from that position.
 
 2. **State Transition:**
-   * For each cell `mat[i][j]`, the maximum gold from this position is:
-   * `mat[i][j] + max(gold from three possible next moves)`
-   * Three possible moves: diagonally up-right, right, diagonally down-right.
+
+   - For each cell `mat[i][j]`, the maximum gold from this position is:
+   - `mat[i][j] + max(gold from three possible next moves)`
+   - Three possible moves: diagonally up-right, right, diagonally down-right.
 
 3. **Boundary Handling:**
-   * Check if the next position is within matrix bounds.
-   * Use only valid adjacent cells for maximum calculation.
-   * Handle edge cases for first and last rows.
+
+   - Check if the next position is within matrix bounds.
+   - Use only valid adjacent cells for maximum calculation.
+   - Handle edge cases for first and last rows.
 
 4. **In-place Optimization:**
-   * Modify the original matrix to store maximum gold from each position.
-   * No need for additional space to store DP values.
+
+   - Modify the original matrix to store maximum gold from each position.
+   - No need for additional space to store DP values.
 
 5. **Result Extraction:**
-   * After processing all columns, the answer is the maximum value in the first column.
-   * Any starting row in the first column can be chosen.
+   - After processing all columns, the answer is the maximum value in the first column.
+   - Any starting row in the first column can be chosen.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n × m), where n is the number of rows and m is the number of columns. We visit each cell exactly once and perform constant time operations for each cell.
-* **Expected Auxiliary Space Complexity:** O(1), as we perform the dynamic programming in-place by modifying the original matrix without using any additional space.
+- **Expected Time Complexity:** O(n × m), where n is the number of rows and m is the number of columns. We visit each cell exactly once and perform constant time operations for each cell.
+- **Expected Auxiliary Space Complexity:** O(1), as we perform the dynamic programming in-place by modifying the original matrix without using any additional space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -146,14 +159,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × m)
-* **Auxiliary Space:** 💾 O(n) - two arrays only
+- **Time:** ⏱️ O(n × m)
+- **Auxiliary Space:** 💾 O(n) - two arrays only
 
 ### ✅ **Why This Approach?**
 
-* Constant space optimization
-* Better cache performance
-* Preserves original matrix
+- Constant space optimization
+- Better cache performance
+- Preserves original matrix
 
 ## 📊 **3️⃣ Reverse Iteration with Lambda**
 
@@ -184,14 +197,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × m)
-* **Auxiliary Space:** 💾 O(1) - in-place modification
+- **Time:** ⏱️ O(n × m)
+- **Auxiliary Space:** 💾 O(1) - in-place modification
 
 ### ✅ **Why This Approach?**
 
-* Clean lambda-based boundary checking
-* Functional programming paradigm
-* Readable and maintainable code
+- Clean lambda-based boundary checking
+- Functional programming paradigm
+- Readable and maintainable code
 
 ## 📊 **4️⃣ Bit Manipulation Optimization**
 
@@ -226,14 +239,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × m)
-* **Auxiliary Space:** 💾 O(1) - in-place modification
+- **Time:** ⏱️ O(n × m)
+- **Auxiliary Space:** 💾 O(1) - in-place modification
 
 ### ✅ **Why This Approach?**
 
-* Eliminates standard library calls
-* Optimized conditional operations
-* Better performance on low-level hardware
+- Eliminates standard library calls
+- Optimized conditional operations
+- Better performance on low-level hardware
 
 ## 📊 **5️⃣ Recursive Memoization Approach**
 
@@ -253,7 +266,7 @@ public:
         function<int(int, int)> dfs = [&](int i, int j) -> int {
             if (j == m - 1) return mat[i][j];
             if (memo[i][j] != -1) return memo[i][j];
-            
+
             int maxNext = 0;
             for (int di = -1; di <= 1; di++) {
                 int ni = i + di;
@@ -274,34 +287,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n × m)
-* **Auxiliary Space:** 💾 O(n × m) - memoization table
+- **Time:** ⏱️ O(n × m)
+- **Auxiliary Space:** 💾 O(n × m) - memoization table
 
 ### ✅ **Why This Approach?**
 
-* Intuitive recursive thinking
-* Natural problem decomposition
-* Good for understanding the problem structure
+- Intuitive recursive thinking
+- Natural problem decomposition
+- Good for understanding the problem structure
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **In-place DP**                | 🟢 O(n × m)            | 🟢 O(1)                 | 🚀 Minimal space usage           | 💾 Modifies input matrix             |
-| 🔺 **Space-Optimized**            | 🟢 O(n × m)            | 🟡 O(n)                 | 🔧 Preserves original matrix     | 💾 Extra space for two arrays        |
-| ⏰ **Lambda-based**               | 🟢 O(n × m)            | 🟢 O(1)                 | 🚀 Clean and readable code       | 🔄 Lambda overhead                    |
-| 📊 **Bit Manipulation**           | 🟢 O(n × m)            | 🟢 O(1)                 | ⚡ Hardware-level optimization    | 🔧 Less readable code                |
-| 🔄 **Recursive Memoization**      | 🟢 O(n × m)            | 🟡 O(n × m)             | 🎯 Intuitive problem structure   | 💾 High space complexity            |
+| 🚀 **Approach**              | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**                   |
+| ---------------------------- | ---------------------- | ----------------------- | ------------------------------ | ----------------------------- |
+| 🔍 **In-place DP**           | 🟢 O(n × m)            | 🟢 O(1)                 | 🚀 Minimal space usage         | 💾 Modifies input matrix      |
+| 🔺 **Space-Optimized**       | 🟢 O(n × m)            | 🟡 O(n)                 | 🔧 Preserves original matrix   | 💾 Extra space for two arrays |
+| ⏰ **Lambda-based**          | 🟢 O(n × m)            | 🟢 O(1)                 | 🚀 Clean and readable code     | 🔄 Lambda overhead            |
+| 📊 **Bit Manipulation**      | 🟢 O(n × m)            | 🟢 O(1)                 | ⚡ Hardware-level optimization | 🔧 Less readable code         |
+| 🔄 **Recursive Memoization** | 🟢 O(n × m)            | 🟡 O(n × m)             | 🎯 Intuitive problem structure | 💾 High space complexity      |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Competitive programming**                         | 🥇 **In-place DP**                   | ★★★★★                     |
-| 📊 **Production code**                                | 🥈 **Lambda-based**                  | ★★★★☆                     |
-| 🎯 **Memory-constrained systems**                     | 🥉 **Bit Manipulation**              | ★★★★☆                     |
-| 🚀 **Interview/readable code**                        | 🏅 **Space-Optimized**               | ★★★★☆                     |
-| 📚 **Educational purposes**                           | 🎖️ **Recursive Memoization**         | ★★★☆☆                     |
+| 🎯 **Scenario**                   | 🎖️ **Recommended Approach**  | 🔥 **Performance Rating** |
+| --------------------------------- | ---------------------------- | ------------------------- |
+| ⚡ **Competitive programming**    | 🥇 **In-place DP**           | ★★★★★                     |
+| 📊 **Production code**            | 🥈 **Lambda-based**          | ★★★★☆                     |
+| 🎯 **Memory-constrained systems** | 🥉 **Bit Manipulation**      | ★★★★☆                     |
+| 🚀 **Interview/readable code**    | 🏅 **Space-Optimized**       | ★★★★☆                     |
+| 📚 **Educational purposes**       | 🎖️ **Recursive Memoization** | ★★★☆☆                     |
 
 </details>
 
@@ -358,7 +371,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
-
-

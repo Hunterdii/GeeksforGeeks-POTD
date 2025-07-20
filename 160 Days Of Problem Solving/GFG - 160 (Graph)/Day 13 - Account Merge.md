@@ -1,6 +1,6 @@
 ---
-Difficulty: Hard  
-Source: 160 Days of Problem Solving  
+Difficulty: Hard
+Source: 160 Days of Problem Solving
 Tags:
   - Graph
   - Union Find
@@ -15,18 +15,18 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ## 💡 **Problem Description:**
 
-You are given a list of accounts, where each account is a list of strings. The first string represents the name of the account holder, and the remaining strings represent the account holder's emails.  
+You are given a list of accounts, where each account is a list of strings. The first string represents the name of the account holder, and the remaining strings represent the account holder's emails.
 
-Your task is to **merge accounts** that belong to the same person. Two accounts belong to the same person **if there is at least one common email address** between them.  
+Your task is to **merge accounts** that belong to the same person. Two accounts belong to the same person **if there is at least one common email address** between them.
 
 After merging, each account should contain the name followed by all unique emails in **sorted order**. The result can be in any order.
-
 
 ## 🔍 **Example Walkthrough:**
 
 ### **Example 1:**
 
 #### **Input:**
+
 ```
 accounts = [
   ["John", "johnsmith@mail.com", "john_newyork@mail.com"],
@@ -37,6 +37,7 @@ accounts = [
 ```
 
 #### **Output:**
+
 ```
 [
   ["John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"],
@@ -46,14 +47,15 @@ accounts = [
 ```
 
 #### **Explanation:**
+
 - The first and second accounts for "John" are merged because they share the email `"johnsmith@mail.com"`.
 - The third account belongs to "Mary", and the fourth account is a separate "John" (with a different set of emails).
 - The emails in each merged account are sorted.
 
-
 ### **Example 2:**
 
 #### **Input:**
+
 ```
 accounts = [
   ["Gabe","Gabe00@m.co","Gabe3@m.co","Gabe1@m.co"],
@@ -65,6 +67,7 @@ accounts = [
 ```
 
 #### **Output:**
+
 ```
 [
   ["Ethan","Ethan0@m.co","Ethan4@m.co","Ethan5@m.co"],
@@ -76,10 +79,10 @@ accounts = [
 ```
 
 #### **Explanation:**
+
 - None of the accounts share a common email. Hence, each account remains separate.
 - For each account, the emails are sorted.
 - The merged accounts (or non-merged ones in this case) can be returned in any order.
-
 
 ## 🎯 **My Approach**
 
@@ -90,13 +93,14 @@ We treat each email as a node in a graph. If two emails appear in the same accou
 ### **Algorithm Steps:**
 
 1. **Initialization:**
+
    - Use two hash maps:
      - **Parent Map (`P`)**: To keep track of the representative (or parent) for each email.
      - **Name Map (`N`)**: To map each email to a name (since all emails in one account share the same name).
-     
    - A helper function `find(email)` is defined to return the representative for the given email using **path compression**.
 
 2. **Union-Find Setup:**
+
    - For each account:
      - The first element is the name.
      - For each email in the account:
@@ -104,6 +108,7 @@ We treat each email as a node in a graph. If two emails appear in the same accou
        - **Union** the current email with the first email in the account. This effectively groups all emails from the same account together.
 
 3. **Grouping Emails:**
+
    - After processing all accounts, traverse the parent map.
    - For each email, use the `find(email)` function to find its representative.
    - Group emails by their representative in a map (for example, `M`), using a structure (like a set) to store emails in sorted order later.
@@ -114,15 +119,12 @@ We treat each email as a node in a graph. If two emails appear in the same accou
      - Append the sorted emails.
    - Return the final list of merged account details.
 
-
 ## 🕒 **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** `O(n * m * logn)`, where `n` is the number of accounts and `m` is the average number of emails per account.  
+- **Expected Time Complexity:** `O(n * m * logn)`, where `n` is the number of accounts and `m` is the average number of emails per account.
   - Union-Find operations are nearly constant with path compression.
   - Sorting emails for each group takes `log n` time per group.
-  
 - **Expected Auxiliary Space Complexity:** `O(n * m)`, to store mappings of emails to names, parent references, and grouped components.
-
 
 ## 📝 **Solution Code**
 
@@ -218,5 +220,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

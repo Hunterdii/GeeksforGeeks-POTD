@@ -1,7 +1,6 @@
-# *1. Pascal Triangle*
+# _1. Pascal Triangle_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/pascal-triangle0652/1)
-
 
 ## **🧩 Problem Description**
 
@@ -14,39 +13,57 @@ Pascal's Triangle is a triangular array where each element is the sum of the two
 ## **📘 Examples**
 
 ### **Example 1:**
-#### **Input:**  
-`n = 4`  
-#### **Output:**  
-`[1, 3, 3, 1]`  
-#### **Explanation:**  
-The 4<sup>th</sup> row of Pascal’s Triangle is `[1, 3, 3, 1]`.  
+
+#### **Input:**
+
+`n = 4`
+
+#### **Output:**
+
+`[1, 3, 3, 1]`
+
+#### **Explanation:**
+
+The 4<sup>th</sup> row of Pascal’s Triangle is `[1, 3, 3, 1]`.
 
 ### **Example 2:**
-#### **Input:**  
-`n = 5`  
-#### **Output:**  
-`[1, 4, 6, 4, 1]`  
-#### **Explanation:**  
-The 5<sup>th</sup> row of Pascal’s Triangle is `[1, 4, 6, 4, 1]`.  
+
+#### **Input:**
+
+`n = 5`
+
+#### **Output:**
+
+`[1, 4, 6, 4, 1]`
+
+#### **Explanation:**
+
+The 5<sup>th</sup> row of Pascal’s Triangle is `[1, 4, 6, 4, 1]`.
 
 ### **Example 3:**
-#### **Input:**  
-`n = 1`  
-#### **Output:**  
-`[1]`  
-#### **Explanation:**  
-The 1<sup>st</sup> row of Pascal’s Triangle is `[1]`.  
+
+#### **Input:**
+
+`n = 1`
+
+#### **Output:**
+
+`[1]`
+
+#### **Explanation:**
+
+The 1<sup>st</sup> row of Pascal’s Triangle is `[1]`.
 
 ## **🔒 Constraints**
 
 - $1 \leq n \leq 20$
 
-
 ## **✅ My Approach**
 
 ### **Optimized Approach: Direct Binomial Formula**
+
 We use the mathematical identity:  
-`C(n, k) = C(n, k - 1) * (n - k + 1) / k` 
+`C(n, k) = C(n, k - 1) * (n - k + 1) / k`
 
 $\[
 \text{row}[0] = 1,\quad
@@ -54,7 +71,6 @@ $\[
 \]$
 
 This builds the row in a single pass, using only integer arithmetic and avoiding overflow when $n\le20$.
-
 
 ### **Algorithm Steps:**
 
@@ -64,7 +80,6 @@ This builds the row in a single pass, using only integer arithmetic and avoiding
    - Append current `val` to `row`.
    - Compute next `val` as: `val = val * (n - 1 - k) / (k + 1)`
 4. Return the `row`.
-
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
@@ -91,11 +106,12 @@ class Solution {
 ## 📊 **2️⃣ Build from Previous Row**
 
 ### **Algorithm Steps:**
-1. Initialize a vector `prev = {1}`.  
+
+1. Initialize a vector `prev = {1}`.
 2. For each level `i` from 2 to `n`:
    - Create a new `curr` of size `i`, set `curr[0]=curr[i-1]=1`.
    - For `j` in `[1..i-2]`, `curr[j] = prev[j-1] + prev[j]`.
-   - Swap `prev` and `curr`.  
+   - Swap `prev` and `curr`.
 3. Return `prev`.
 
 ```cpp
@@ -114,20 +130,22 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
-- Conceptually simple (direct use of Pascal’s definition).  
+
+- Conceptually simple (direct use of Pascal’s definition).
 - No risk of overflow if values small.
 
 #### 📝 **Complexity Analysis:**
-- **Time:** O(n²) (summing up all elements up to row n).  
-- **Auxiliary Space:** O(n) (two rows of length ≤ n).
 
+- **Time:** O(n²) (summing up all elements up to row n).
+- **Auxiliary Space:** O(n) (two rows of length ≤ n).
 
 ## 📊 **3️⃣ Full Triangle Generation**
 
 ### **Algorithm Steps:**
+
 1. Create a 2D vector `T` of size `n × n`, initialize all to 0.
 2. Set `T[i][0]=T[i][i]=1` for each row `i`.
-3. For each `i` from 2 to `n-1` and `j` from 1 to `i-1`, `T[i][j]=T[i-1][j-1]+T[i-1][j]`.  
+3. For each `i` from 2 to `n-1` and `j` from 1 to `i-1`, `T[i][j]=T[i-1][j-1]+T[i-1][j]`.
 4. Return `T[n-1]`.
 
 ```cpp
@@ -145,17 +163,19 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
-- Good for when multiple rows are needed.  
+
+- Good for when multiple rows are needed.
 - Directly produces the entire triangle.
 
 #### 📝 **Complexity Analysis:**
-- **Time:** O(n²)  
-- **Auxiliary Space:** O(n²)
 
+- **Time:** O(n²)
+- **Auxiliary Space:** O(n²)
 
 ## 📊 **4️⃣ Factorial‐Based Formula**
 
 ### **Algorithm Steps:**
+
 1. Precompute factorials `fact[k]` for `k` up to `n-1`.
 2. For each `k` in `[0..n-1]`, compute `C(n-1,k) = fact[n-1] / (fact[k]*fact[n-1-k])`.
 
@@ -175,31 +195,33 @@ class Solution {
 ```
 
 ### ✅ **Why This Approach?**
-- Uses closed‐form combinatorics.  
+
+- Uses closed‐form combinatorics.
 - If factorials cached, can answer multiple queries very fast.
 
 #### 📝 **Complexity Analysis:**
-- **Time:** O(n) for factorial build + O(n) for row → O(n)  
-- **Auxiliary Space:** O(n)
 
+- **Time:** O(n) for factorial build + O(n) for row → O(n)
+- **Auxiliary Space:** O(n)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                             | ⚠️ **Cons**                           |
-|-----------------------------|-------------|--------------|-----------------------------------------|----------------------------------------|
-| Direct Binomial Formula     | 🟢 O(n)      | 🟢 O(n)       | Fast, no factorials needed              | Risk of overflow if `n` is large       |
-| Build from Previous Row     | 🔸 O(n²)     | 🟢 O(n)       | Intuitive, avoids math operations       | Slower for larger `n`                  |
-| Full Triangle Generation    | 🔸 O(n²)     | 🔸 O(n²)      | Useful if full triangle needed          | High memory usage                      |
-| Factorial-Based             | 🟢 O(n)      | 🟢 O(n)       | Mathematical, supports batch queries    | Needs extra space and handling overflow|
+| **Approach**             | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**                          | ⚠️ **Cons**                             |
+| ------------------------ | ----------- | ------------ | ------------------------------------ | --------------------------------------- |
+| Direct Binomial Formula  | 🟢 O(n)     | 🟢 O(n)      | Fast, no factorials needed           | Risk of overflow if `n` is large        |
+| Build from Previous Row  | 🔸 O(n²)    | 🟢 O(n)      | Intuitive, avoids math operations    | Slower for larger `n`                   |
+| Full Triangle Generation | 🔸 O(n²)    | 🔸 O(n²)     | Useful if full triangle needed       | High memory usage                       |
+| Factorial-Based          | 🟢 O(n)     | 🟢 O(n)      | Mathematical, supports batch queries | Needs extra space and handling overflow |
 
 ### ✅ **Best Choice?**
 
-| **Scenario**                             | **Recommended Approach**    |
-|------------------------------------------|-----------------------------|
-| Single large row, optimal runtime       | 🥇 Direct Formula           |
-| Need to inspect multiple rows           | 🥈 Full Triangle Generation |
-| Educational/demo purpose                | 🥉 Build from Previous Row  |
-| Batch queries with varying n            | 🎖️ Factorial‐Based          |
+| **Scenario**                      | **Recommended Approach**    |
+| --------------------------------- | --------------------------- |
+| Single large row, optimal runtime | 🥇 Direct Formula           |
+| Need to inspect multiple rows     | 🥈 Full Triangle Generation |
+| Educational/demo purpose          | 🥉 Build from Previous Row  |
+| Batch queries with varying n      | 🎖️ Factorial‐Based          |
+
 </details>
 
 ## **🧑‍💻 Code (Java)**
@@ -236,14 +258,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>
-
-

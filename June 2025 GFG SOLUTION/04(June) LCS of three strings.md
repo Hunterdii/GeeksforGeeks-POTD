@@ -1,22 +1,30 @@
 ---
 title: "📚 LCS of three Strings | GFG Solution 🧬"
-keywords🏷️: ["🧬 LCS", "📘 dynamic programming", "📚 3D DP", "🧠 string problems", "📈 optimization", "📘 GFG", "🏁 competitive programming", "🔁 memoization"]
+keywords🏷️:
+  [
+    "🧬 LCS",
+    "📘 dynamic programming",
+    "📚 3D DP",
+    "🧠 string problems",
+    "📈 optimization",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "🔁 memoization",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution for LCS of 3 strings: dynamic programming with full 3D table, space optimized 2D, and recursion with memoization. 💡"
 date: 📅 2025-06-04
 ---
 
-# *04. LCS of three Strings*
+# _04. LCS of three Strings_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/lcs-of-three-strings0028/1)
-
 
 ## **🧩 Problem Description**
 
 Given three strings `A`, `B`, and `C`, the task is to find the **length of the Longest Common Subsequence (LCS)** present in all three strings.
 
 A **subsequence** is a sequence that appears in the same relative order, but not necessarily contiguous.
-
 
 ## **📘 Examples**
 
@@ -48,11 +56,10 @@ Explanation:
 The longest common subsequence is "b1e" (length = 3).
 ```
 
-
 ## **🔒 Constraints**
 
-* $1 \leq |s1|,|s2|,|s3| \leq 100$
-* Strings contain only lowercase English letters.
+- $1 \leq |s1|,|s2|,|s3| \leq 100$
+- Strings contain only lowercase English letters.
 
 ## **✅ My Approach**
 
@@ -60,37 +67,39 @@ The longest common subsequence is "b1e" (length = 3).
 
 1. **Idea:**
 
-   * A naive 3D DP table $dp[i][j][k]$ (size $(n1+1) \times (n2+1) \times (n3+1)$) takes $O(n1 \times n2 \times n3)$ time and space.
-   * We can reduce space by noticing that at layer `i`, we only need layer `i-1` to compute the current values.
-   * Maintain two 2D arrays `prev[j][k]` and `curr[j][k]` of size $(n2+1) \times (n3+1)$.
+   - A naive 3D DP table $dp[i][j][k]$ (size $(n1+1) \times (n2+1) \times (n3+1)$) takes $O(n1 \times n2 \times n3)$ time and space.
+   - We can reduce space by noticing that at layer `i`, we only need layer `i-1` to compute the current values.
+   - Maintain two 2D arrays `prev[j][k]` and `curr[j][k]` of size $(n2+1) \times (n3+1)$.
 
 2. **DP Relation:**
 
-   * Let `n1 = |s1|`, `n2 = |s2|`, `n3 = |s3|`.
-   * For each `i` from `1` to `n1`, and for each `j` from `1` to `n2`, and each `k` from `1` to `n3`:
+   - Let `n1 = |s1|`, `n2 = |s2|`, `n3 = |s3|`.
+   - For each `i` from `1` to `n1`, and for each `j` from `1` to `n2`, and each `k` from `1` to `n3`:
 
-     * If `s1[i-1] == s2[j-1] == s3[k-1]`, then
+     - If `s1[i-1] == s2[j-1] == s3[k-1]`, then
 
        $$
          \text{curr}[j][k] = 1 + \text{prev}[\,j-1\,][\,k-1\,];
        $$
-     * Otherwise,
+
+     - Otherwise,
 
        $$
          \text{curr}[j][k] = \max\bigl(\text{prev}[j][k],\,\text{curr}[\,j-1\,][k],\,\text{curr}[j][\,k-1\,]\bigr).
        $$
-   * After filling `curr` for a fixed `i`, swap `prev` and `curr`, and zero out `curr` for the next iteration.
+
+   - After filling `curr` for a fixed `i`, swap `prev` and `curr`, and zero out `curr` for the next iteration.
 
 3. **Answer:**
 
-   * The value `prev[n2][n3]` at the end of the loops is the length of the LCS among all three strings.
+   - The value `prev[n2][n3]` at the end of the loops is the length of the LCS among all three strings.
 
 ## 📝 **Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:**
+- **Expected Time Complexity:**
   $\displaystyle O(n1 \times n2 \times n3)$, since we iterate over all `i ∈ [1..n1]`, `j ∈ [1..n2]`, `k ∈ [1..n3]`.
 
-* **Expected Auxiliary Space Complexity:**
+- **Expected Auxiliary Space Complexity:**
   $\displaystyle O(n2 \times n3)$, because we only store two 2D arrays of size $(n2+1)\times(n3+1)$ instead of a full 3D table.
 
 ## **🧑‍💻 Code (C++)**
@@ -130,19 +139,22 @@ class Solution {
    $$
      dp[i][j][k] = \text{length of LCS for } s1[0..i-1],\,s2[0..j-1],\,s3[0..k-1].
    $$
+
 2. Initialize a `(n1+1) × (n2+1) × (n3+1)` table with zeros.
 3. For each `i` in `[1..n1]`, `j` in `[1..n2]`, `k` in `[1..n3]`:
 
-   * If `s1[i-1] == s2[j-1] == s3[k-1]`, then
+   - If `s1[i-1] == s2[j-1] == s3[k-1]`, then
 
      $$
        dp[i][j][k] = 1 + dp[i-1][j-1][k-1];
      $$
-   * Otherwise,
+
+   - Otherwise,
 
      $$
        dp[i][j][k] = \max\bigl(dp[i-1][j][k],\,dp[i][j-1][k],\,dp[i][j][k-1]\bigr).
      $$
+
 4. Return `dp[n1][n2][n3]`.
 
 ```cpp
@@ -175,14 +187,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n1 × n2 × n3) — three nested loops.
-* **Auxiliary Space:** 💾 O(n1 × n2 × n3) — full 3D DP table.
+- **Time:** ⏱️ O(n1 × n2 × n3) — three nested loops.
+- **Auxiliary Space:** 💾 O(n1 × n2 × n3) — full 3D DP table.
 
 ### ✅ **Why This Approach?**
 
-* Directly generalizes 2-string LCS to three dimensions.
-* Conceptually straightforward—each state references the previous layer for matching or skipping.
-
+- Directly generalizes 2-string LCS to three dimensions.
+- Conceptually straightforward—each state references the previous layer for matching or skipping.
 
 ## 📊 **3️⃣ Recursive + Memoization**
 
@@ -206,12 +217,13 @@ class Solution {
        \text{solve}(i, j, k-1)
      \bigr).
    $$
+
 5. Return `memo[n1-1][n2-1][n3-1]`.
 
 ```cpp
 class Solution {
   public:
-    int dp[101][101][101]; 
+    int dp[101][101][101];
 
     int solve(int i, int j, int k, const string& s1, const string& s2, const string& s3) {
         if (i < 0 || j < 0 || k < 0) return 0;
@@ -235,19 +247,17 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n1 × n2 × n3) — each `(i,j,k)` computed once via memo.
-* **Auxiliary Space:** 💾 O(n1 × n2 × n3) — memo table plus recursion stack.
+- **Time:** ⏱️ O(n1 × n2 × n3) — each `(i,j,k)` computed once via memo.
+- **Auxiliary Space:** 💾 O(n1 × n2 × n3) — memo table plus recursion stack.
 
 ### ✅ **Why This Approach?**
 
-* Expresses the problem in a recursive decision-tree style.
-* Memoization avoids redundant computations of overlapping subproblems.
-
-
+- Expresses the problem in a recursive decision-tree style.
+- Memoization avoids redundant computations of overlapping subproblems.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                 | ⏱️ **Time Complexity** | 💾 **Space Complexity**    | ✅ **Pros**                                         | ⚠️ **Cons**                                 |
+| 🚀 **Approach**                 | ⏱️ **Time Complexity** | 💾 **Space Complexity**    | ✅ **Pros**                                        | ⚠️ **Cons**                                 |
 | ------------------------------- | ---------------------- | -------------------------- | -------------------------------------------------- | ------------------------------------------- |
 | 🎯 **2D DP + Swap (Optimized)** | 🟢 O(n1 × n2 × n3)     | 🟢 O(n2 × n3)              | Low memory (only two 2D layers), easy to implement | Still O(n1·n2·n3) runtime                   |
 | 🧮 **Full 3D DP Table**         | 🟢 O(n1 × n2 × n3)     | 🔴 O(n1 × n2 × n3)         | Conceptually simple 3D extension                   | Very high memory usage for large inputs     |
@@ -274,7 +284,7 @@ class Solution {
         for (int i = 1; i <= n1; ++i) {
             for (int j = 1; j <= n2; ++j) {
                 for (int k = 1; k <= n3; ++k) {
-                    if (s1.charAt(i - 1) == s2.charAt(j - 1) && 
+                    if (s1.charAt(i - 1) == s2.charAt(j - 1) &&
                         s2.charAt(j - 1) == s3.charAt(k - 1))
                         curr[j][k] = 1 + prev[j - 1][k - 1];
                     else
@@ -316,7 +326,6 @@ class Solution:
         return prev[n2][n3]
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -330,5 +339,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

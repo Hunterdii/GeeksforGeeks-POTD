@@ -1,12 +1,21 @@
 ---
 title: "🔤 Longest Substring with K Uniques | GFG Solution 🔍"
-keywords🏷️: ["🔤 longest substring", "🔍 sliding window", "📍 two pointers", "📈 frequency array", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔤 longest substring",
+    "🔍 sliding window",
+    "📍 two pointers",
+    "📈 frequency array",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Longest Substring with K Uniques problem: find maximum length substring containing exactly k distinct characters using sliding window technique. 🚀"
 date: 📅 2025-07-03
 ---
 
-# *03. Longest Substring with K Uniques*
+# _03. Longest Substring with K Uniques_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1)
 
@@ -23,7 +32,7 @@ Note: If no such substring exists, return -1.
 ```cpp
 Input: s = "aabacbebebe", k = 3
 Output: 7
-Explanation: The longest substring with exactly 3 distinct characters is "cbebebe", 
+Explanation: The longest substring with exactly 3 distinct characters is "cbebebe",
 which includes 'c', 'b', and 'e'.
 ```
 
@@ -40,14 +49,14 @@ Explanation: There's no substring with 2 distinct characters.
 ```cpp
 Input: s = "aabaaab", k = 2
 Output: 7
-Explanation: The entire string "aabaaab" has exactly 2 unique characters 'a' and 'b', 
+Explanation: The entire string "aabaaab" has exactly 2 unique characters 'a' and 'b',
 making it the longest valid substring.
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le \text{s.size()} \le 10^5$
-* $1 \le k \le 26$
+- $1 \le \text{s.size()} \le 10^5$
+- $1 \le k \le 26$
 
 ## **✅ My Approach**
 
@@ -56,29 +65,33 @@ The optimal approach uses the **Sliding Window** technique with a **Frequency Ar
 ### **Sliding Window + Frequency Array**
 
 1. **Initialize Variables:**
-   * Use two pointers: `i` (start of window) and `j` (end of window).
-   * Maintain a frequency array `fre[26]` to store frequency of each character in current window.
-   * Track `cnt` to count distinct characters and `maxi` to store the result.
+
+   - Use two pointers: `i` (start of window) and `j` (end of window).
+   - Maintain a frequency array `fre[26]` to store frequency of each character in current window.
+   - Track `cnt` to count distinct characters and `maxi` to store the result.
 
 2. **Expand Window:**
-   * Move `j` pointer and increment frequency of `s[j]`.
-   * If this is the first occurrence of `s[j]` (frequency was 0), increment `cnt`.
+
+   - Move `j` pointer and increment frequency of `s[j]`.
+   - If this is the first occurrence of `s[j]` (frequency was 0), increment `cnt`.
 
 3. **Contract Window:**
-   * If `cnt` exceeds `k` (more than k distinct characters), shrink window from left.
-   * Decrement frequency of `s[i]` and if it becomes 0, decrement `cnt`.
-   * Move `i` pointer forward.
+
+   - If `cnt` exceeds `k` (more than k distinct characters), shrink window from left.
+   - Decrement frequency of `s[i]` and if it becomes 0, decrement `cnt`.
+   - Move `i` pointer forward.
 
 4. **Update Result:**
-   * Only when `cnt == k` (exactly k distinct characters), update `maxi` with current window size.
+
+   - Only when `cnt == k` (exactly k distinct characters), update `maxi` with current window size.
 
 5. **Return Result:**
-   * Return `maxi` if found, otherwise return -1.
+   - Return `maxi` if found, otherwise return -1.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. Each character is visited at most twice (once by right pointer and once by left pointer).
-* **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size frequency array of 26 elements for lowercase alphabets, which is constant space.
+- **Expected Time Complexity:** O(n), where n is the length of the string. Each character is visited at most twice (once by right pointer and once by left pointer).
+- **Expected Auxiliary Space Complexity:** O(1), as we use a fixed-size frequency array of 26 elements for lowercase alphabets, which is constant space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -134,14 +147,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(k) - for storing at most k distinct characters
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(k) - for storing at most k distinct characters
 
 ### ✅ **Why This Approach?**
 
-* Works for any character set, not just lowercase letters
-* Clear and intuitive logic
-* Efficient hash map operations
+- Works for any character set, not just lowercase letters
+- Clear and intuitive logic
+- Efficient hash map operations
 
 ## 📊 **3️⃣ Two-Pass Approach**
 
@@ -172,14 +185,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n²)
-* **Auxiliary Space:** 💾 O(1) - constant space for frequency array
+- **Time:** ⏱️ O(n²)
+- **Auxiliary Space:** 💾 O(1) - constant space for frequency array
 
 ### ✅ **Why This Approach?**
 
-* Simple nested loop structure
-* Easy to understand and implement
-* Good for small input sizes
+- Simple nested loop structure
+- Easy to understand and implement
+- Good for small input sizes
 
 ## 📊 **4️⃣ Optimized Array-Based Tracking**
 
@@ -210,32 +223,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1) - constant space for fixed-size array
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1) - constant space for fixed-size array
 
 ### ✅ **Why This Approach?**
 
-* Fastest execution due to array access
-* Minimal memory overhead
-* Cache-friendly access pattern
+- Fastest execution due to array access
+- Minimal memory overhead
+- Cache-friendly access pattern
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Array-Based Sliding Window** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, minimal space         | 📝 Limited to lowercase letters      |
-| 🔄 **HashMap Sliding Window**     | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Works with any characters      | 💾 HashMap overhead                   |
-| 🔺 **Two-Pass Approach**          | 🟡 O(n²)               | 🟢 O(1)                 | 🔧 Simple logic, easy to debug   | ⏰ Slower for large inputs           |
-| ⏰ **Optimized Array Tracking**   | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Cache-friendly, efficient     | 📝 Limited character set             |
+| 🚀 **Approach**                   | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**                     |
+| --------------------------------- | ---------------------- | ----------------------- | ------------------------------ | ------------------------------- |
+| 🔍 **Array-Based Sliding Window** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest, minimal space      | 📝 Limited to lowercase letters |
+| 🔄 **HashMap Sliding Window**     | 🟢 O(n)                | 🟡 O(k)                 | 🚀 Works with any characters   | 💾 HashMap overhead             |
+| 🔺 **Two-Pass Approach**          | 🟡 O(n²)               | 🟢 O(1)                 | 🔧 Simple logic, easy to debug | ⏰ Slower for large inputs      |
+| ⏰ **Optimized Array Tracking**   | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Cache-friendly, efficient   | 📝 Limited character set        |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Maximum performance, lowercase letters only**    | 🥇 **Array-Based Sliding Window**    | ★★★★★                     |
-| 🔧 **General purpose, any character set**             | 🥈 **HashMap Sliding Window**        | ★★★★☆                     |
-| 📊 **Educational purposes, simple logic**             | 🥉 **Two-Pass Approach**             | ★★★☆☆                     |
-| 🎯 **Balanced performance and clarity**               | 🎖️ **Optimized Array Tracking**     | ★★★★☆                     |
+| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**       | 🔥 **Performance Rating** |
+| -------------------------------------------------- | --------------------------------- | ------------------------- |
+| ⚡ **Maximum performance, lowercase letters only** | 🥇 **Array-Based Sliding Window** | ★★★★★                     |
+| 🔧 **General purpose, any character set**          | 🥈 **HashMap Sliding Window**     | ★★★★☆                     |
+| 📊 **Educational purposes, simple logic**          | 🥉 **Two-Pass Approach**          | ★★★☆☆                     |
+| 🎯 **Balanced performance and clarity**            | 🎖️ **Optimized Array Tracking**   | ★★★★☆                     |
 
 </details>
 
@@ -293,5 +306,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

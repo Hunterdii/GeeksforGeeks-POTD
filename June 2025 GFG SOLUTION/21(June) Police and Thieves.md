@@ -1,12 +1,21 @@
 ---
 title: "🚔 Police and Thieves | GFG Solution 👮‍♂️"
-keywords🏷️: ["🚔 police thieves", "🎯 two pointers", "🔍 greedy algorithm", "📍 array traversal", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🚔 police thieves",
+    "🎯 two pointers",
+    "🔍 greedy algorithm",
+    "📍 array traversal",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Police and Thieves problem: find maximum number of thieves that can be caught using optimal two-pointer greedy approach. 🚀"
 date: 📅 2025-06-21
 ---
 
-# *21. Police and Thieves*
+# _21. Police and Thieves_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/police-and-thieves--141631/1)
 
@@ -15,6 +24,7 @@ The problem can be found at the following link: 🔗 [Question Link](https://www
 Given an array `arr[]`, where each element contains either a **'P'** for policeman or a **'T'** for thief. Find the **maximum number of thieves** that can be caught by the police.
 
 Keep in mind the following conditions:
+
 - Each policeman can catch only **one thief**
 - A policeman cannot catch a thief who is more than **k units away** from him
 
@@ -25,8 +35,8 @@ Keep in mind the following conditions:
 ```cpp
 Input: arr[] = ['P', 'T', 'T', 'P', 'T'], k = 1
 Output: 2
-Explanation: Maximum 2 thieves can be caught. 
-First policeman catches first thief and second policeman 
+Explanation: Maximum 2 thieves can be caught.
+First policeman catches first thief and second policeman
 can catch either second or third thief.
 ```
 
@@ -40,9 +50,9 @@ Explanation: Maximum 3 thieves can be caught.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^5$
-* $1 \le k \le 1000$
-* $\text{arr}[i] = \text{'P'} \text{ or } \text{'T'}$
+- $1 \le \text{arr.size()} \le 10^5$
+- $1 \le k \le 1000$
+- $\text{arr}[i] = \text{'P'} \text{ or } \text{'T'}$
 
 ## **✅ My Approach**
 
@@ -51,22 +61,25 @@ The optimal approach uses a **Greedy Two-Pointer** technique to maximize the num
 ### **Two-Pointer Greedy Algorithm**
 
 1. **Initialize Two Pointers:**
-   * `i = 0` (searching for policemen)
-   * `j = 0` (searching for thieves)
-   * `count = 0` (number of successful catches)
+
+   - `i = 0` (searching for policemen)
+   - `j = 0` (searching for thieves)
+   - `count = 0` (number of successful catches)
 
 2. **Find Next Valid Pair:**
-   * Move pointer `i` to find the next policeman ('P')
-   * Move pointer `j` to find the next thief ('T')
+
+   - Move pointer `i` to find the next policeman ('P')
+   - Move pointer `j` to find the next thief ('T')
 
 3. **Check Distance Constraint:**
-   * If `|i - j| ≤ k`, both can be paired successfully
-   * Increment both pointers and increase count
-   * Otherwise, move the pointer that points to the earlier position
+
+   - If `|i - j| ≤ k`, both can be paired successfully
+   - Increment both pointers and increase count
+   - Otherwise, move the pointer that points to the earlier position
 
 4. **Greedy Strategy:**
-   * Always try to pair the earliest available policeman with the earliest reachable thief
-   * This ensures optimal utilization of resources
+   - Always try to pair the earliest available policeman with the earliest reachable thief
+   - This ensures optimal utilization of resources
 
 ### **Why This Approach Works:**
 
@@ -76,8 +89,8 @@ The optimal approach uses a **Greedy Two-Pointer** technique to maximize the num
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. Each element is processed at most twice by the two pointers, resulting in linear time complexity.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for the two pointers and counter variables.
+- **Expected Time Complexity:** O(n), where n is the size of the array. Each element is processed at most twice by the two pointers, resulting in linear time complexity.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for the two pointers and counter variables.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -136,13 +149,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - For storing indices
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - For storing indices
 
 ### ✅ **Why This Approach?**
 
-* Clear separation of roles using STL containers.
-* Easier to debug and understand logic flow.
+- Clear separation of roles using STL containers.
+- Easier to debug and understand logic flow.
 
 ## 📊 **3️⃣ Vector-Based Greedy with Preprocessing**
 
@@ -180,13 +193,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(p + t) where p = police count, t = thief count
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(p + t) where p = police count, t = thief count
 
 ### ✅ **Why This Approach?**
 
-* Natural positions are already sorted.
-* Clean implementation with vectors.
+- Natural positions are already sorted.
+- Clean implementation with vectors.
 
 ## 📊 **4️⃣ Binary Search Optimization**
 
@@ -222,31 +235,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log t) where t = thief count
-* **Auxiliary Space:** 💾 O(t)
+- **Time:** ⏱️ O(n log t) where t = thief count
+- **Auxiliary Space:** 💾 O(t)
 
 ### ✅ **Why This Approach?**
 
-* Efficient for sparse thief distribution.
-* Uses STL set for automatic sorting and removal.
+- Efficient for sparse thief distribution.
+- Uses STL set for automatic sorting and removal.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Two Pointer**                | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest runtime, optimal space | 🧮 Requires careful pointer management |
-| 🔄 **Queue-Based Greedy**         | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Clear logic, easy to debug     | 💾 Extra space for queues           |
-| 🔺 **Vector-Based Greedy**        | 🟢 O(n)                | 🟡 O(p + t)             | 🚀 Natural sorting, clean code    | 💾 Space proportional to characters |
-| 🔍 **Binary Search**              | 🟡 O(n log t)          | 🟡 O(t)                 | ⚡ Efficient for sparse thieves    | 🧮 Complex implementation           |
+| 🚀 **Approach**            | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                            |
+| -------------------------- | ---------------------- | ----------------------- | --------------------------------- | -------------------------------------- |
+| 🔍 **Two Pointer**         | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Fastest runtime, optimal space | 🧮 Requires careful pointer management |
+| 🔄 **Queue-Based Greedy**  | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Clear logic, easy to debug     | 💾 Extra space for queues              |
+| 🔺 **Vector-Based Greedy** | 🟢 O(n)                | 🟡 O(p + t)             | 🚀 Natural sorting, clean code    | 💾 Space proportional to characters    |
+| 🔍 **Binary Search**       | 🟡 O(n log t)          | 🟡 O(t)                 | ⚡ Efficient for sparse thieves   | 🧮 Complex implementation              |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ Maximum performance, competitive programming    | 🥇 **Two Pointer**             | ★★★★★                     |
-| 🔧 Production code, readability important         | 🥈 **Queue-Based Greedy**      | ★★★★☆                     |
-| 📊 Educational purposes, clear logic               | 🥉 **Vector-Based Greedy**     | ★★★★☆                     |
-| 🎯 Sparse data, many thieves                      | 🎖️ **Binary Search**           | ★★★★☆                     |
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ----------------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ Maximum performance, competitive programming | 🥇 **Two Pointer**          | ★★★★★                     |
+| 🔧 Production code, readability important       | 🥈 **Queue-Based Greedy**   | ★★★★☆                     |
+| 📊 Educational purposes, clear logic            | 🥉 **Vector-Based Greedy**  | ★★★★☆                     |
+| 🎯 Sparse data, many thieves                    | 🎖️ **Binary Search**        | ★★★★☆                     |
 
 </details>
 
@@ -305,5 +318,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

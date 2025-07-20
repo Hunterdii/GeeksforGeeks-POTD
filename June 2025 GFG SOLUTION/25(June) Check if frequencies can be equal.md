@@ -1,12 +1,23 @@
 ---
 title: "🧪 Check if Frequencies Can Be Equal | GFG Solution 🔍"
-keywords🏷️: ["🧪 frequency check", "🧮 character frequency", "🔠 string", "🗑️ remove one char", "📈 hash map", "🏁 competitive programming", "📘 GFG", "📚 DSA", "🧠 hashing"]
+keywords🏷️:
+  [
+    "🧪 frequency check",
+    "🧮 character frequency",
+    "🔠 string",
+    "🗑️ remove one char",
+    "📈 hash map",
+    "🏁 competitive programming",
+    "📘 GFG",
+    "📚 DSA",
+    "🧠 hashing",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to Check if Frequencies Can Be Equal problem: determine if removing at most one character makes all character frequencies equal. 🚀"
 date: 📅 2025-06-25
 ---
 
-# *25. Check if Frequencies Can Be Equal*
+# _25. Check if Frequencies Can Be Equal_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/check-frequencies4211/1)
 
@@ -42,7 +53,7 @@ Explanation: Frequency cannot be made same by removing at most one character.
 
 ## **🔒 Constraints**
 
-* $1 \le s.size() \le 10^5$
+- $1 \le s.size() \le 10^5$
 
 ## **✅ My Approach**
 
@@ -51,26 +62,28 @@ The optimal approach uses **Frequency Counting** followed by **Frequency Analysi
 ### **Frequency Map Analysis**
 
 1. **Count Character Frequencies:**
-   * Use frequency array to count occurrences of each character.
-   * Store non-zero frequencies in a hash map with their counts.
+
+   - Use frequency array to count occurrences of each character.
+   - Store non-zero frequencies in a hash map with their counts.
 
 2. **Analyze Frequency Distribution:**
-   * **Case 1:** All characters have same frequency → Return `true`
-   * **Case 2:** Exactly 2 different frequencies exist → Check validity
-   * **Case 3:** More than 2 different frequencies → Return `false`
+
+   - **Case 1:** All characters have same frequency → Return `true`
+   - **Case 2:** Exactly 2 different frequencies exist → Check validity
+   - **Case 3:** More than 2 different frequencies → Return `false`
 
 3. **Validate Two-Frequency Cases:**
-   * One frequency is 1 and occurs once (remove that single character)
-   * Two frequencies differ by 1 and higher frequency occurs once (reduce higher frequency)
+
+   - One frequency is 1 and occurs once (remove that single character)
+   - Two frequencies differ by 1 and higher frequency occurs once (reduce higher frequency)
 
 4. **Return Result:**
-   * Return `true` if any valid case is satisfied, otherwise `false`.
-
+   - Return `true` if any valid case is satisfied, otherwise `false`.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. We iterate through the string once to count frequencies, then iterate through the frequency map (at most 26 entries) to analyze the distribution.
-* **Expected Auxiliary Space Complexity:** O(1), as we use fixed-size arrays and hash maps with at most 26 entries for lowercase letters, which is constant space.
+- **Expected Time Complexity:** O(n), where n is the length of the string. We iterate through the string once to count frequencies, then iterate through the frequency map (at most 26 entries) to analyze the distribution.
+- **Expected Auxiliary Space Complexity:** O(1), as we use fixed-size arrays and hash maps with at most 26 entries for lowercase letters, which is constant space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -134,13 +147,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n + 26) = O(n)
-* **Auxiliary Space:** 💾 O(1) - Fixed size array and set
+- **Time:** ⏱️ O(n + 26) = O(n)
+- **Auxiliary Space:** 💾 O(1) - Fixed size array and set
 
 ### ✅ **Why This Approach?**
 
-* Early termination saves computation when more than 2 frequencies exist.
-* Array-based frequency counting offers better cache performance.
+- Early termination saves computation when more than 2 frequencies exist.
+- Array-based frequency counting offers better cache performance.
 
 ## 📊 **3️⃣ Bit Manipulation Optimization**
 
@@ -178,29 +191,29 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Bit manipulation provides efficient frequency uniqueness tracking.
-* Single-pass solution with minimal memory overhead.
+- Bit manipulation provides efficient frequency uniqueness tracking.
+- Single-pass solution with minimal memory overhead.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **HashMap-Based Frequency Check** | 🟢 O(n)              | 🟡 O(1)                 | ⚡ Clean logic, readable          | 💾 HashMap operations overhead        |
-| 🔄 **Early Termination with Set**    | 🟢 O(n)              | 🟢 O(1)                 | 🔧 Fast exit, cache-friendly     | 🧮 Extra sorting step required       |
-| 🔍 **Bit Manipulation Optimization** | 🟢 O(n)              | 🟢 O(1)                 | ⚡ Minimal overhead, efficient    | 🧮 Complex bit operations            |
+| 🚀 **Approach**                      | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                    | ⚠️ **Cons**                    |
+| ------------------------------------ | ---------------------- | ----------------------- | ------------------------------ | ------------------------------ |
+| 🔍 **HashMap-Based Frequency Check** | 🟢 O(n)                | 🟡 O(1)                 | ⚡ Clean logic, readable       | 💾 HashMap operations overhead |
+| 🔄 **Early Termination with Set**    | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Fast exit, cache-friendly   | 🧮 Extra sorting step required |
+| 🔍 **Bit Manipulation Optimization** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Minimal overhead, efficient | 🧮 Complex bit operations      |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**         | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------ | ------------------------- |
-| ⚡ Maximum performance, competitive programming    | 🥇 **HashMap-Based Frequency Check** | ★★★★★                     |
-| 🔧 Production code, memory constraints             | 🥈 **Early Termination with Set**    | ★★★★☆                     |
-| 🎯 Extreme optimization, embedded systems          | 🎖️ **Bit Manipulation Optimization** | ★★★★☆                     |
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
+| ----------------------------------------------- | ------------------------------------ | ------------------------- |
+| ⚡ Maximum performance, competitive programming | 🥇 **HashMap-Based Frequency Check** | ★★★★★                     |
+| 🔧 Production code, memory constraints          | 🥈 **Early Termination with Set**    | ★★★★☆                     |
+| 🎯 Extreme optimization, embedded systems       | 🎖️ **Bit Manipulation Optimization** | ★★★★☆                     |
 
 </details>
 
@@ -256,5 +269,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

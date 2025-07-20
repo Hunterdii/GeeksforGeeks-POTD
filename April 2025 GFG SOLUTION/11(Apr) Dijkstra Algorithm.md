@@ -1,23 +1,22 @@
-# *11. Dijkstra’s Algorithm*
+# _11. Dijkstra’s Algorithm_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1)
 
 ## **Problem Description**
 
 Given an **undirected, weighted graph** with **V** vertices numbered from **0** to **V-1** and **E** edges, represented by a 2D array `edges[][]` (where each `edges[i] = [u, v, w]` represents an edge between nodes **u** and **v** with weight **w**), find the shortest distance from a given source vertex **src** to all other vertices.  
-Return an array of integers where the *ith* element denotes the shortest distance from the source vertex **src** to vertex **i**.
+Return an array of integers where the _ith_ element denotes the shortest distance from the source vertex **src** to vertex **i**.
 
 > **Note:** The graph is connected and does not contain any negative weight edge.
 
-
 > **Note:** Sorry for uploading late, my Final Sem exam is going on.
-
 
 ## **Examples**
 
 ### **Example 1:**
 
 #### **Input:**
+
 ```
 V = 3
 edges[][] = [[0, 1, 1], [1, 2, 3], [0, 2, 6]]
@@ -25,23 +24,23 @@ src = 2
 ```
 
 #### **Output:**
+
 ```
 [4, 3, 0]
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/c49bf243-bd02-4e76-90cf-a69be01c5e60" width="40%">
 
-
-- For vertex **0**: The shortest path is `2 -> 1 -> 0` with total distance **4**.  
-- For vertex **1**: The shortest path is `2 -> 1` with total distance **3**.  
+- For vertex **0**: The shortest path is `2 -> 1 -> 0` with total distance **4**.
+- For vertex **1**: The shortest path is `2 -> 1` with total distance **3**.
 - For vertex **2**: The distance is **0** as it is the source.
-
 
 ### **Example 2:**
 
 #### **Input:**
+
 ```
 V = 5
 edges[][] = [[0, 1, 4], [0, 2, 8], [1, 4, 6], [2, 3, 2], [3, 4, 10]]
@@ -49,37 +48,39 @@ src = 0
 ```
 
 #### **Output:**
+
 ```
 [0, 4, 8, 10, 10]
 ```
 
-#### **Explanation:** 
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/b91a8560-bedc-4b4c-9637-22de781f3bc7" width="40%">
 
-
-- For vertex **1**: The shortest path is `0 -> 1` with total distance **4**.  
-- For vertex **2**: The shortest path is `0 -> 2` with total distance **8**.  
-- For vertex **3**: The shortest path is `0 -> 2 -> 3` with total distance **10**.  
+- For vertex **1**: The shortest path is `0 -> 1` with total distance **4**.
+- For vertex **2**: The shortest path is `0 -> 2` with total distance **8**.
+- For vertex **3**: The shortest path is `0 -> 2 -> 3` with total distance **10**.
 - For vertex **4**: The shortest path is `0 -> 1 -> 4` with total distance **10**.
 
 ### **Constraints**
 
-- $1 \leq V \leq 10^4$  
+- $1 \leq V \leq 10^4$
 - $1 ≤ E = edges.size() ≤ 10^5$
-- $0 ≤ edges[i][j] ≤ 10^4$  
-- $0 \leq src < V$  
+- $0 ≤ edges[i][j] ≤ 10^4$
+- $0 \leq src < V$
 - Edge weights are non-negative
 
 ## **My Approach**
 
 ### **Optimized Dijkstra’s Algorithm (Min-Heap + Adjacency List)**
+
 1. **Build the Graph:** Convert the given edge list into an adjacency list representation.
 2. **Initialize Distances:** Set a distance vector `d[]` with high values and update `d[src] = 0`.
 3. **Min-Heap (Priority Queue):** Use a min-heap to pick the node with the smallest tentative distance.
 4. **Relaxation:** For each neighboring vertex, update its distance if a shorter path is found.
 
 ### **Algorithm Steps:**
+
 1. Convert the edges into an adjacency list `g`.
 2. Initialize a distance array `d` of size **V** with a large value (e.g., `1e9`), and set `d[src] = 0`.
 3. Push `(0, src)` into a min-heap.
@@ -89,12 +90,10 @@ src = 0
    - Otherwise, for each adjacent vertex, check if the path through the current vertex gives a smaller distance; update and push the new pair in the heap.
 5. Return the distance array `d` as the result.
 
-
 ## **Time and Auxiliary Space Complexity**
 
-- **Expected Time Complexity:** O((V + E) * log V), since each vertex and edge is processed, and insertion/extraction from the heap takes logarithmic time.
+- **Expected Time Complexity:** O((V + E) \* log V), since each vertex and edge is processed, and insertion/extraction from the heap takes logarithmic time.
 - **Expected Auxiliary Space Complexity:** O(V + E), for the adjacency list and the additional storage used by the heap.
-
 
 ## **Code (C++)**
 
@@ -119,7 +118,6 @@ class Solution {
     }
 };
 ```
-
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
@@ -171,20 +169,20 @@ class Solution {
 
 #### 📝 **Complexity Analysis:**
 
-- **Expected Time Complexity:** O((V + E) * log V)
+- **Expected Time Complexity:** O((V + E) \* log V)
 - **Expected Auxiliary Space Complexity:** O(V + E)
 
 #### ✅ **Why This Approach?**
+
 - Leverages `std::set` to ease decrease-key operations.
 - Provides more control over updates at the cost of increased insertion/erase overhead compared to the min-heap.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                           | ⏱️ **Time Complexity**         | 🗂️ **Space Complexity**    | ✅ **Pros**                                     | ⚠️ **Cons**                                 |
-|----------------------------------------|-------------------------------|---------------------------|------------------------------------------------|---------------------------------------------|
-| **Min-Heap (Priority Queue)**          | 🟢 O((V + E) * log V)           | 🟡 O(V + E)                | Fast for sparse graphs, standard implementation | Slightly verbose STL usage                  |
-| **Set-Based Approach**                 | 🟡 O((V + E) * log V)           | 🟡 O(V + E)                | Easy key updates using ordered set             | Set operations can be slower than heap push   |
+| **Approach**                  | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                     | ⚠️ **Cons**                                 |
+| ----------------------------- | ---------------------- | ----------------------- | ----------------------------------------------- | ------------------------------------------- |
+| **Min-Heap (Priority Queue)** | 🟢 O((V + E) \* log V) | 🟡 O(V + E)             | Fast for sparse graphs, standard implementation | Slightly verbose STL usage                  |
+| **Set-Based Approach**        | 🟡 O((V + E) \* log V) | 🟡 O(V + E)             | Easy key updates using ordered set              | Set operations can be slower than heap push |
 
 ✅ **Best Choice?**
 
@@ -240,7 +238,6 @@ class Solution:
         return d
 ```
 
-
 ## **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -254,5 +251,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

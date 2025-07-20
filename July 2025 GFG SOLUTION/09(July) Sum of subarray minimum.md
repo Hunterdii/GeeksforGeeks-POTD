@@ -1,12 +1,21 @@
 ---
 title: "➕ Sum of Subarray Minimums | GFG Solution 🔍"
-keywords🏷️: ["➕ sum of subarray minimums", "🔍 monotonic stack", "📍 contribution technique", "📈 stack", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "➕ sum of subarray minimums",
+    "🔍 monotonic stack",
+    "📍 contribution technique",
+    "📈 stack",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Sum of Subarray Minimums problem: find the total sum of minimum elements in all subarrays using monotonic stack and contribution technique. 🚀"
 date: 📅 2025-07-09
 ---
 
-# *09. Sum of Subarray Minimums*
+# _09. Sum of Subarray Minimums_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/sum-of-subarray-minimum/1)
 
@@ -23,7 +32,7 @@ A subarray is a contiguous sequence of elements within an array. For each subarr
 ```cpp
 Input: arr[] = [3, 1, 2, 4]
 Output: 17
-Explanation: Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4]. 
+Explanation: Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4].
 Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1. Sum of all these is 17.
 ```
 
@@ -37,8 +46,8 @@ Explanation: The sum of the minimum of all the subarrays is 593.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 3 \times 10^4$
-* $1 \le \text{arr}[i] \le 10^3$
+- $1 \le \text{arr.size()} \le 3 \times 10^4$
+- $1 \le \text{arr}[i] \le 10^3$
 
 ## **✅ My Approach**
 
@@ -47,26 +56,29 @@ The optimal approach uses **Monotonic Stack** with **Contribution Technique** to
 ### **Two-Pass Stack**
 
 1. **Calculate Left Boundaries:**
-   * For each element at index `i`, find how many elements to the left are greater than or equal to `arr[i]`.
-   * Use a monotonic stack to find the nearest smaller element on the left.
-   * `left[i]` represents the number of subarrays ending at `i` where `arr[i]` is the minimum.
+
+   - For each element at index `i`, find how many elements to the left are greater than or equal to `arr[i]`.
+   - Use a monotonic stack to find the nearest smaller element on the left.
+   - `left[i]` represents the number of subarrays ending at `i` where `arr[i]` is the minimum.
 
 2. **Calculate Right Boundaries:**
-   * For each element at index `i`, find how many elements to the right are strictly greater than `arr[i]`.
-   * Use a monotonic stack to find the nearest smaller element on the right.
-   * `right[i]` represents the number of subarrays starting at `i` where `arr[i]` is the minimum.
+
+   - For each element at index `i`, find how many elements to the right are strictly greater than `arr[i]`.
+   - Use a monotonic stack to find the nearest smaller element on the right.
+   - `right[i]` represents the number of subarrays starting at `i` where `arr[i]` is the minimum.
 
 3. **Calculate Contribution:**
-   * For each element `arr[i]`, its total contribution = `arr[i] × left[i] × right[i]`.
-   * This gives the sum of `arr[i]` across all subarrays where it's the minimum.
+
+   - For each element `arr[i]`, its total contribution = `arr[i] × left[i] × right[i]`.
+   - This gives the sum of `arr[i]` across all subarrays where it's the minimum.
 
 4. **Sum All Contributions:**
-   * Add up all individual contributions to get the final result.
+   - Add up all individual contributions to get the final result.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the size of the array. Each element is pushed and popped from the stack at most once, resulting in linear time complexity.
-* **Expected Auxiliary Space Complexity:** O(n), as we use additional arrays for left and right boundaries and a stack for processing, all of which require O(n) space.
+- **Expected Time Complexity:** O(n), where n is the size of the array. Each element is pushed and popped from the stack at most once, resulting in linear time complexity.
+- **Expected Auxiliary Space Complexity:** O(n), as we use additional arrays for left and right boundaries and a stack for processing, all of which require O(n) space.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -139,14 +151,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for stack
 
 ### ✅ **Why This Approach?**
 
-* Single pass through array
-* Efficient stack operations
-* Reduced memory allocations
+- Single pass through array
+- Efficient stack operations
+- Reduced memory allocations
 
 ## 📊 **3️⃣ Monotonic Stack with Contribution**
 
@@ -182,14 +194,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for stack
 
 ### ✅ **Why This Approach?**
 
-* Clean monotonic stack implementation
-* Handles duplicates efficiently
-* Optimal time complexity
+- Clean monotonic stack implementation
+- Handles duplicates efficiently
+- Optimal time complexity
 
 ## 📊 **4️⃣ Dynamic Programming Approach**
 
@@ -227,32 +239,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - for DP array and stack
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - for DP array and stack
 
 ### ✅ **Why This Approach?**
 
-* Intuitive DP approach
-* Builds solution incrementally
-* Easy to understand and debug
+- Intuitive DP approach
+- Builds solution incrementally
+- Easy to understand and debug
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Two-Pass Stack**             | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Clear logic, easy to debug    | 💾 Two passes through array          |
-| 🔺 **Single Pass Stack**          | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Optimal passes                | 💾 More complex implementation       |
-| ⏰ **Monotonic Stack**             | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Clean implementation          | 🔄 Requires careful duplicate handling|
-| 📊 **Dynamic Programming**        | 🟢 O(n)                | 🟡 O(n)                 | ⚡ Intuitive approach             | 🔧 Additional DP array needed        |
+| 🚀 **Approach**            | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                   | ⚠️ **Cons**                            |
+| -------------------------- | ---------------------- | ----------------------- | ----------------------------- | -------------------------------------- |
+| 🔍 **Two-Pass Stack**      | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Clear logic, easy to debug | 💾 Two passes through array            |
+| 🔺 **Single Pass Stack**   | 🟢 O(n)                | 🟡 O(n)                 | 🔧 Optimal passes             | 💾 More complex implementation         |
+| ⏰ **Monotonic Stack**     | 🟢 O(n)                | 🟡 O(n)                 | 🚀 Clean implementation       | 🔄 Requires careful duplicate handling |
+| 📊 **Dynamic Programming** | 🟢 O(n)                | 🟡 O(n)                 | ⚡ Intuitive approach         | 🔧 Additional DP array needed          |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Interview/Competitive Programming**              | 🥇 **Two-Pass Stack**                | ★★★★★                     |
-| 📊 **Production Code**                               | 🥈 **Monotonic Stack**               | ★★★★☆                     |
-| 🎯 **Learning/Educational**                          | 🥉 **Dynamic Programming**           | ★★★★☆                     |
-| 🚀 **Memory Constrained**                            | 🏅 **Single Pass Stack**             | ★★★★★                     |
+| 🎯 **Scenario**                          | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ---------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ **Interview/Competitive Programming** | 🥇 **Two-Pass Stack**       | ★★★★★                     |
+| 📊 **Production Code**                   | 🥈 **Monotonic Stack**      | ★★★★☆                     |
+| 🎯 **Learning/Educational**              | 🥉 **Dynamic Programming**  | ★★★★☆                     |
+| 🚀 **Memory Constrained**                | 🏅 **Single Pass Stack**    | ★★★★★                     |
 
 </details>
 
@@ -310,7 +322,6 @@ class Solution:
         return sum(arr[i] * left[i] * right[i] for i in range(n)) % MOD
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let's make this learning journey more collaborative!
@@ -324,5 +335,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

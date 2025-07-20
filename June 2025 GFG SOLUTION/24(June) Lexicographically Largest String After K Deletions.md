@@ -1,12 +1,20 @@
 ---
 title: "🦁 Lexicographically Largest String After K Deletions | GFG Solution 🔍"
-keywords🏷️: ["🦁 lexicographically largest string", "🧹 remove k characters", "🧠 greedy approach", "📘 GFG", "📚 string problems", "🛠️ monotonic stack"]
+keywords🏷️:
+  [
+    "🦁 lexicographically largest string",
+    "🧹 remove k characters",
+    "🧠 greedy approach",
+    "📘 GFG",
+    "📚 string problems",
+    "🛠️ monotonic stack",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Lexicographically Largest String After K Deletions problem: remove exactly k characters to get the largest possible string using greedy approach. 🚀"
 date: 📅 2025-06-24
 ---
 
-# *24. Lexicographically Largest String After K Deletions*
+# _24. Lexicographically Largest String After K Deletions_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/lexicographically-largest-string-after-deleting-k-characters/1)
 
@@ -21,7 +29,7 @@ Given a string `s` consisting of lowercase English letters and an integer `k`, y
 ```cpp
 Input: s = "ritz", k = 2
 Output: "tz"
-Explanation: By removing two characters in all possible ways, we get: 
+Explanation: By removing two characters in all possible ways, we get:
 "ri", "rt", "rz", "it", "iz", and "tz". Among these, "tz" is lexicographically largest.
 ```
 
@@ -35,9 +43,9 @@ Explanation: Removing "e", "b", and "a" results in "zr", which is lexicographica
 
 ## **🔒 Constraints**
 
-* $1 \le \text{s.size()} \le 10^5$
-* $0 \le k < \text{s.size()}$
-* String consists of lowercase English letters only
+- $1 \le \text{s.size()} \le 10^5$
+- $0 \le k < \text{s.size()}$
+- String consists of lowercase English letters only
 
 ## **✅ My Approach**
 
@@ -46,24 +54,26 @@ The optimal approach uses a **Greedy Algorithm** with **Monotonic Stack** concep
 ### **Greedy String Manipulation**
 
 1. **Core Strategy:**
-   * Remove smaller characters when a larger character appears, as long as we have deletions remaining.
-   * This ensures we keep the largest possible characters in their relative positions.
+
+   - Remove smaller characters when a larger character appears, as long as we have deletions remaining.
+   - This ensures we keep the largest possible characters in their relative positions.
 
 2. **Algorithm Steps:**
-   * Iterate through each character in the string.
-   * While the result string is not empty, we have deletions left, and the last character in result is smaller than current character:
+
+   - Iterate through each character in the string.
+   - While the result string is not empty, we have deletions left, and the last character in result is smaller than current character:
      - Remove the last character from result (this counts as one deletion).
-   * Add the current character to the result.
-   * After processing all characters, resize the result to final length (n - k).
+   - Add the current character to the result.
+   - After processing all characters, resize the result to final length (n - k).
 
 3. **Key Insight:**
-   * By removing smaller characters when larger ones appear, we maximize the lexicographical value of the remaining string.
-   * The greedy choice at each step leads to the globally optimal solution.
+   - By removing smaller characters when larger ones appear, we maximize the lexicographical value of the remaining string.
+   - The greedy choice at each step leads to the globally optimal solution.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. Each character is processed at most twice (once when added, once when potentially removed), resulting in linear time complexity.
-* **Expected Auxiliary Space Complexity:** O(n), as we use a result string that can grow up to the size of the input string during processing.
+- **Expected Time Complexity:** O(n), where n is the length of the string. Each character is processed at most twice (once when added, once when potentially removed), resulting in linear time complexity.
+- **Expected Auxiliary Space Complexity:** O(n), as we use a result string that can grow up to the size of the input string during processing.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -118,14 +128,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n·(n−k)) worst-case (O(n²))
-* **Auxiliary Space:** 💾 O(1) - Only uses constant extra space
+- **Time:** ⏱️ O(n·(n−k)) worst-case (O(n²))
+- **Auxiliary Space:** 💾 O(1) - Only uses constant extra space
 
 ### ✅ **Why This Approach?**
 
-* Simple "pick-max-in-window" logic that's easy to understand.
-* No auxiliary data structures needed.
-* Direct greedy selection without stack operations.
+- Simple "pick-max-in-window" logic that's easy to understand.
+- No auxiliary data structures needed.
+- Direct greedy selection without stack operations.
 
 ## 📊 **3️⃣ Stack-Based Monotonic Approach**
 
@@ -159,14 +169,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - For stack storage
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - For stack storage
 
 ### ✅ **Why This Approach?**
 
-* Clear stack-based implementation for monotonic sequence.
-* Easier to visualize the greedy removal process.
-* Classic data structure approach for such problems.
+- Clear stack-based implementation for monotonic sequence.
+- Easier to visualize the greedy removal process.
+- Classic data structure approach for such problems.
 
 ## 📊 **4️⃣ Deque-Based Sliding Window**
 
@@ -199,14 +209,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - For deque storage
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - For deque storage
 
 ### ✅ **Why This Approach?**
 
-* Flexible front and back operations.
-* Natural sliding window behavior.
-* Good for scenarios requiring both-end access.
+- Flexible front and back operations.
+- Natural sliding window behavior.
+- Good for scenarios requiring both-end access.
 
 ## 📊 **5️⃣ Vector-Based Greedy with Index Tracking**
 
@@ -238,35 +248,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) - For vector storage
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) - For vector storage
 
 ### ✅ **Why This Approach?**
 
-* Explicit index tracking for complex scenarios.
-* Vector operations are cache-friendly.
-* Suitable when additional metadata is needed.
+- Explicit index tracking for complex scenarios.
+- Vector operations are cache-friendly.
+- Suitable when additional metadata is needed.
 
 ## 🆚 **🔍 Comprehensive Comparison of All Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | 🎯 **Best Use Case**                     | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | ---------------------------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **String Manipulation**        | 🟢 O(n)                | 🟢 O(n)                 | Competitive programming, optimal speed   | ⚡ Direct operations, minimal overhead | 🧮 String resize operations          |
-| 🎯 **Greedy Selection**           | 🔴 O(n²)               | 🟢 O(1)                 | Small inputs, educational purposes       | 💾 No extra space, simple logic   | ⏰ Quadratic time complexity         |
-| 🔄 **Stack-Based**                | 🟢 O(n)                | 🟡 O(n)                 | Learning data structures, clear visualization | 🔧 Clear monotonic logic        | 💾 Extra space, requires reversal   |
-| 🔺 **Deque-Based**                | 🟢 O(n)                | 🟡 O(n)                 | Complex scenarios, flexible operations   | 🚀 Both-end access flexibility    | 💾 Deque operation overhead          |
-| 🔍 **Vector with Index**          | 🟢 O(n)                | 🟡 O(n)                 | When index tracking is crucial          | ⚡ Cache-friendly, metadata support | 🧮 Complex pair management          |
+| 🚀 **Approach**            | ⏱️ **Time Complexity** | 💾 **Space Complexity** | 🎯 **Best Use Case**                          | ✅ **Pros**                            | ⚠️ **Cons**                       |
+| -------------------------- | ---------------------- | ----------------------- | --------------------------------------------- | -------------------------------------- | --------------------------------- |
+| 🔍 **String Manipulation** | 🟢 O(n)                | 🟢 O(n)                 | Competitive programming, optimal speed        | ⚡ Direct operations, minimal overhead | 🧮 String resize operations       |
+| 🎯 **Greedy Selection**    | 🔴 O(n²)               | 🟢 O(1)                 | Small inputs, educational purposes            | 💾 No extra space, simple logic        | ⏰ Quadratic time complexity      |
+| 🔄 **Stack-Based**         | 🟢 O(n)                | 🟡 O(n)                 | Learning data structures, clear visualization | 🔧 Clear monotonic logic               | 💾 Extra space, requires reversal |
+| 🔺 **Deque-Based**         | 🟢 O(n)                | 🟡 O(n)                 | Complex scenarios, flexible operations        | 🚀 Both-end access flexibility         | 💾 Deque operation overhead       |
+| 🔍 **Vector with Index**   | 🟢 O(n)                | 🟡 O(n)                 | When index tracking is crucial                | ⚡ Cache-friendly, metadata support    | 🧮 Complex pair management        |
 
 ### 🏆 **Best Choice Recommendations**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** | 📝 **Notes** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- | ------------ |
-| ⚡ Maximum performance, competitive programming    | 🥇 **String Manipulation**     | ★★★★★                     | Best overall choice |
-| 🎓 Learning algorithms, understanding the logic    | 🥈 **Stack-Based**             | ★★★★☆                     | Most educational |
-| 💾 Memory-constrained environments                 | 🥉 **Greedy Selection**        | ★★★☆☆                     | O(1) space but O(n²) time |
-| 🔧 Complex requirements, debugging needed          | 🎖️ **Vector with Index**       | ★★★★☆                     | Easy to modify and debug |
-| 📊 Flexible operations, both-end access needed     | 🏅 **Deque-Based**             | ★★★★☆                     | Good for complex scenarios |
-
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** | 📝 **Notes**               |
+| ----------------------------------------------- | --------------------------- | ------------------------- | -------------------------- |
+| ⚡ Maximum performance, competitive programming | 🥇 **String Manipulation**  | ★★★★★                     | Best overall choice        |
+| 🎓 Learning algorithms, understanding the logic | 🥈 **Stack-Based**          | ★★★★☆                     | Most educational           |
+| 💾 Memory-constrained environments              | 🥉 **Greedy Selection**     | ★★★☆☆                     | O(1) space but O(n²) time  |
+| 🔧 Complex requirements, debugging needed       | 🎖️ **Vector with Index**    | ★★★★☆                     | Easy to modify and debug   |
+| 📊 Flexible operations, both-end access needed  | 🏅 **Deque-Based**          | ★★★★☆                     | Good for complex scenarios |
 
 </details>
 
@@ -317,5 +326,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

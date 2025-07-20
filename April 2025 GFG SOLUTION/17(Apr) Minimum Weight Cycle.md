@@ -1,7 +1,6 @@
-# *17. Minimum Weight Cycle*
+# _17. Minimum Weight Cycle_
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/minimum-weight-cycle/1)
-
 
 ## **Problem Description**
 
@@ -22,29 +21,28 @@ If **no cycle** exists, return `-1`.
 ```
 V = 5
 edges = [
-    [0, 1, 2], 
-    [1, 2, 2], 
-    [1, 3, 1], 
-    [1, 4, 1], 
-    [0, 4, 3], 
+    [0, 1, 2],
+    [1, 2, 2],
+    [1, 3, 1],
+    [1, 4, 1],
+    [0, 4, 3],
     [2, 3, 4]
 ]
 ```
 
 <img src="https://github.com/user-attachments/assets/e703fb35-e446-4183-b06b-d9d3c83c8498" width="30%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 6
 ```
 
-#### **Explanation:** 
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/786ce890-a51f-4f07-9177-a0ff18059f72" width="30%">
 
 Minimum-weighted cycle is `0 → 1 → 4 → 0` with total weight = `2 + 1 + 3 = 6`.
-
 
 ### **Example 2**
 
@@ -65,24 +63,23 @@ edges = [
 
 <img src="https://github.com/user-attachments/assets/6ed55a03-6c81-41f0-9e95-7887ac2a6bb3" width="30%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 5
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
 
 <img src="https://github.com/user-attachments/assets/657330bf-88df-4b3d-a8ec-3b2064426821" width="30%">
 
 Minimum-weighted cycle is `1 → 3 → 4 → 1` with total weight = `1 + 2 + 2 = 5`.
 
-
 ### **Constraints**
 
-- $\(1 \leq V \leq 100\)$  
-- $\(1 \leq E = \text{edges.length} \leq 10^3\)$  
+- $\(1 \leq V \leq 100\)$
+- $\(1 \leq E = \text{edges.length} \leq 10^3\)$
 - $\(1 \leq \text{edges[i][j]} \leq 100\)$
-
 
 ## **My Approach**
 
@@ -97,18 +94,15 @@ Minimum-weighted cycle is `1 → 3 → 4 → 1` with total weight = `1 + 2 + 2 =
    - **Update the minimum cycle weight** if a better cycle is found.
 3. After checking from all nodes, return the **minimum cycle length** found, or `-1` if no cycle exists.
 
-
 #### ✅ **Why It Works**
 
 - Each shortest path computed from `i` guarantees minimal distance to `v`, so combining **two shortest paths** and an **extra edge** efficiently checks all **minimal cycles passing through that edge**.
 - The parent check ensures we’re not just tracing the same edge forward and backward.
 
-
 ## **Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(V × E × log V), since we run Dijkstra's algorithm (O(E log V)) for each vertex.
 - **Expected Auxiliary Space Complexity:** O(V + E), to store the adjacency list, distance array, parent tracking, and priority queue per run.
-
 
 ## **Code (C++)**
 
@@ -143,7 +137,6 @@ class Solution {
     }
 };
 ```
-
 
 ## **Code (Java)**
 
@@ -217,5 +210,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

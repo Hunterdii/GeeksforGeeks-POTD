@@ -1,12 +1,21 @@
 ---
 title: "🧩 Largest Divisible Subset | GFG Solution 📊"
-keywords🏷️: ["🧩 largest divisible subset", "🔍 dynamic programming", "📍 subset", "📈 divisibility", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🧩 largest divisible subset",
+    "🔍 dynamic programming",
+    "📍 subset",
+    "📈 divisibility",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Largest Divisible Subset problem: find the largest subset where every pair divides each other using dynamic programming. 🚀"
 date: 📅 2025-06-22
 ---
 
-# *22. Largest Divisible Subset*
+# _22. Largest Divisible Subset_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/largest-divisible-subset--170643/1)
 
@@ -36,8 +45,8 @@ Explanation: The largest divisible subset is [2, 4, 8], where each element divid
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^3$
-* $1 \le \text{arr}[i] \le 10^9$
+- $1 \le \text{arr.size()} \le 10^3$
+- $1 \le \text{arr}[i] \le 10^9$
 
 ## **✅ My Approach**
 
@@ -46,35 +55,40 @@ The optimal approach uses **Dynamic Programming** with **Longest Increasing Subs
 ### **Dynamic Programming with Parent Tracking**
 
 1. **Sort in Descending Order:**
-   * Sort the array in descending order to ensure lexicographically greatest result.
-   * This helps in getting the largest elements first when building the subset.
+
+   - Sort the array in descending order to ensure lexicographically greatest result.
+   - This helps in getting the largest elements first when building the subset.
 
 2. **Initialize DP Arrays:**
-   * `dp[i]` = length of longest divisible subset ending at index `i`
-   * `parent[i]` = previous index in the optimal subset chain ending at `i`
-   * Initialize all `dp[i] = 1` and `parent[i] = -1`
+
+   - `dp[i]` = length of longest divisible subset ending at index `i`
+   - `parent[i]` = previous index in the optimal subset chain ending at `i`
+   - Initialize all `dp[i] = 1` and `parent[i] = -1`
 
 3. **Fill DP Table:**
-   * For each element `arr[i]`, check all previous elements `arr[j]` where `j < i`
-   * If `arr[j] % arr[i] == 0` (since array is sorted in descending order), update:
+
+   - For each element `arr[i]`, check all previous elements `arr[j]` where `j < i`
+   - If `arr[j] % arr[i] == 0` (since array is sorted in descending order), update:
      - `dp[i] = max(dp[i], dp[j] + 1)`
      - Store parent relationship for path reconstruction
 
 4. **Find Maximum Length:**
-   * Track the index with maximum `dp[i]` value
-   * This gives us the ending point of the longest divisible subset
+
+   - Track the index with maximum `dp[i]` value
+   - This gives us the ending point of the longest divisible subset
 
 5. **Reconstruct Result:**
-   * Use parent array to backtrack and build the actual subset
-   * The result will be in descending order (lexicographically greatest)
+   - Use parent array to backtrack and build the actual subset
+   - The result will be in descending order (lexicographically greatest)
 
 ### **Key Insight:**
+
 If we sort in descending order, then for any valid divisible subset, if `a > b` and both are in the subset, then `a % b == 0`. This transforms the problem into finding the longest chain where each element divides the next smaller element.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n²), where n is the array size. We have nested loops where for each element, we check all previous elements to build the optimal subset.
-* **Expected Auxiliary Space Complexity:** O(n), as we use additional arrays `dp[]` and `parent[]` of size n to store the dynamic programming states and parent relationships.
+- **Expected Time Complexity:** O(n²), where n is the array size. We have nested loops where for each element, we check all previous elements to build the optimal subset.
+- **Expected Auxiliary Space Complexity:** O(n), as we use additional arrays `dp[]` and `parent[]` of size n to store the dynamic programming states and parent relationships.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -86,7 +100,7 @@ public:
         sort(arr.rbegin(), arr.rend());
         vector<int> dp(n, 1), parent(n, -1);
         int maxIdx = 0;
-        
+
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++) {
                 if (arr[j] % arr[i] == 0 && dp[j] + 1 > dp[i]) {
@@ -96,7 +110,7 @@ public:
             }
             if (dp[i] > dp[maxIdx]) maxIdx = i;
         }
-        
+
         vector<int> result;
         for (int i = maxIdx; i != -1; i = parent[i]) {
             result.push_back(arr[i]);
@@ -115,12 +129,12 @@ class Solution {
         Integer[] temp = new Integer[n];
         for (int i = 0; i < n; i++) temp[i] = arr[i];
         Arrays.sort(temp, Collections.reverseOrder());
-        
+
         int[] dp = new int[n];
         int[] parent = new int[n];
         Arrays.fill(dp, 1);
         Arrays.fill(parent, -1);
-        
+
         int maxIdx = 0;
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++) {
@@ -131,7 +145,7 @@ class Solution {
             }
             if (dp[i] > dp[maxIdx]) maxIdx = i;
         }
-        
+
         ArrayList<Integer> result = new ArrayList<>();
         for (int i = maxIdx; i != -1; i = parent[i]) {
             result.add(temp[i]);
@@ -179,5 +193,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

@@ -1,12 +1,22 @@
 ---
 title: "🔤 Case-specific Sorting of Strings | GFG Solution 🔍"
-keywords🏷️: ["🔤 case sorting", "🔠 uppercase lowercase", "🔍 frequency counting", "📍 in-place sorting", "📈 string processing", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔤 case sorting",
+    "🔠 uppercase lowercase",
+    "🔍 frequency counting",
+    "📍 in-place sorting",
+    "📈 string processing",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Case-specific Sorting of Strings problem: sort uppercase and lowercase characters separately while maintaining their original positions. 🚀"
 date: 📅 2025-06-19
 ---
 
-# *19. Case-specific Sorting of Strings*
+# _19. Case-specific Sorting of Strings_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/case-specific-sorting-of-strings4845/1)
 
@@ -23,7 +33,7 @@ An element maintains its case but gets sorted within its case group while preser
 ```cpp
 Input: s = "GEekS"
 Output: EGekS
-Explanation: 
+Explanation:
 - Uppercase positions: 0(G), 1(E), 4(S) → sorted: E, G, S
 - Lowercase positions: 2(e), 3(k) → sorted: e, k
 - Result: EGekS (maintaining original case positions)
@@ -39,7 +49,7 @@ Explanation: Since all characters are of the same case, we can simply perform a 
 
 ## **🔒 Constraints**
 
-* $1 \le s.length() \le 10^5$
+- $1 \le s.length() \le 10^5$
 
 ## **✅ My Approach**
 
@@ -48,26 +58,29 @@ The optimal approach uses **Frequency Counting** with **Bitwise Operations** for
 ### **Bitwise Optimized Frequency Counting**
 
 1. **Case Detection:**
-   * Use bitwise operation `c & 32` to detect case instantly.
-   * If `c & 32` is true, it's lowercase; otherwise uppercase.
+
+   - Use bitwise operation `c & 32` to detect case instantly.
+   - If `c & 32` is true, it's lowercase; otherwise uppercase.
 
 2. **Frequency Counting:**
-   * Count frequency of each character using separate arrays for lowercase and uppercase.
-   * Use direct ASCII arithmetic: `c - 97` for lowercase, `c - 65` for uppercase.
+
+   - Count frequency of each character using separate arrays for lowercase and uppercase.
+   - Use direct ASCII arithmetic: `c - 97` for lowercase, `c - 65` for uppercase.
 
 3. **In-place Reconstruction:**
-   * Iterate through original string maintaining case positions.
-   * Replace each character with the next available sorted character of the same case.
-   * Use pointer tracking to avoid redundant searches.
+
+   - Iterate through original string maintaining case positions.
+   - Replace each character with the next available sorted character of the same case.
+   - Use pointer tracking to avoid redundant searches.
 
 4. **Pointer Optimization:**
-   * Maintain separate pointers for lowercase and uppercase arrays.
-   * Skip zero-frequency positions efficiently.
+   - Maintain separate pointers for lowercase and uppercase arrays.
+   - Skip zero-frequency positions efficiently.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. We make two passes through the string - one for counting frequencies and one for reconstruction, both taking O(n) time.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use fixed-size arrays of 26 elements each for lowercase and uppercase character frequencies, which is constant space regardless of input size.
+- **Expected Time Complexity:** O(n), where n is the length of the string. We make two passes through the string - one for counting frequencies and one for reconstruction, both taking O(n) time.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use fixed-size arrays of 26 elements each for lowercase and uppercase character frequencies, which is constant space regardless of input size.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -133,13 +146,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n + 26) = O(n)
-* **Auxiliary Space:** 💾 O(1) - Fixed size arrays
+- **Time:** ⏱️ O(n + 26) = O(n)
+- **Auxiliary Space:** 💾 O(1) - Fixed size arrays
 
 ### ✅ **Why This Approach?**
 
-* Standard readable implementation.
-* Clear separation of concerns.
+- Standard readable implementation.
+- Clear separation of concerns.
 
 ## 📊 **3️⃣ Two-Pass Sorting with Vectors**
 
@@ -172,13 +185,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n) - Due to sorting
-* **Auxiliary Space:** 💾 O(n) - For storing characters
+- **Time:** ⏱️ O(n log n) - Due to sorting
+- **Auxiliary Space:** 💾 O(n) - For storing characters
 
 ### ✅ **Why This Approach?**
 
-* Intuitive separation and sorting.
-* Works with any character set.
+- Intuitive separation and sorting.
+- Works with any character set.
 
 ## 📊 **4️⃣ Counting Sort with String Builder**
 
@@ -195,7 +208,7 @@ public:
         int freq[128] = {0};
         string result = s;
         for (char c : s) freq[c]++;
-        
+
         for (int i = 0; i < s.length(); i++) {
             if (islower(s[i])) {
                 for (int j = 'a'; j <= 'z'; j++) {
@@ -222,31 +235,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n * 26) = O(n)
-* **Auxiliary Space:** 💾 O(128) = O(1)
+- **Time:** ⏱️ O(n \* 26) = O(n)
+- **Auxiliary Space:** 💾 O(128) = O(1)
 
 ### ✅ **Why This Approach?**
 
-* Works with extended ASCII.
-* Flexible for different character ranges.
+- Works with extended ASCII.
+- Flexible for different character ranges.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                    |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------ |
-| 🔍 **Bitwise Optimized**          | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Ultra-fast, minimal operations | 🧮 Less readable              |
-| 🔄 **Frequency Array**            | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Clear and readable            | 🐢 More function calls        |
-| 🔺 **Two-Pass Sorting**           | 🟡 O(n log n)          | 🟡 O(n)                 | 🚀 Intuitive logic               | 💾 Higher complexity          |
-| 📊 **Counting Sort**              | 🟢 O(n)                | 🟢 O(1)                 | 🏎️ Flexible character support    | 🔄 More iterations per char    |
+| 🚀 **Approach**          | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                       | ⚠️ **Cons**                 |
+| ------------------------ | ---------------------- | ----------------------- | --------------------------------- | --------------------------- |
+| 🔍 **Bitwise Optimized** | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Ultra-fast, minimal operations | 🧮 Less readable            |
+| 🔄 **Frequency Array**   | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Clear and readable             | 🐢 More function calls      |
+| 🔺 **Two-Pass Sorting**  | 🟡 O(n log n)          | 🟡 O(n)                 | 🚀 Intuitive logic                | 💾 Higher complexity        |
+| 📊 **Counting Sort**     | 🟢 O(n)                | 🟢 O(1)                 | 🏎️ Flexible character support     | 🔄 More iterations per char |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ Maximum performance, competitive programming    | 🥇 **Bitwise Optimized**       | ★★★★★                     |
-| 🔧 Production code, readability important         | 🥈 **Frequency Array**         | ★★★★☆                     |
-| 📊 Educational purposes, clear logic               | 🥉 **Two-Pass Sorting**        | ★★★☆☆                     |
-| 🏎️ Extended character set support                 | 🏅 **Counting Sort**           | ★★★★☆                     |
+| 🎯 **Scenario**                                 | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ----------------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ Maximum performance, competitive programming | 🥇 **Bitwise Optimized**    | ★★★★★                     |
+| 🔧 Production code, readability important       | 🥈 **Frequency Array**      | ★★★★☆                     |
+| 📊 Educational purposes, clear logic            | 🥉 **Two-Pass Sorting**     | ★★★☆☆                     |
+| 🏎️ Extended character set support               | 🏅 **Counting Sort**        | ★★★★☆                     |
 
 </details>
 
@@ -317,5 +330,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

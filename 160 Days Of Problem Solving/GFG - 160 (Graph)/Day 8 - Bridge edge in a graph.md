@@ -7,7 +7,6 @@ Tags:
 
 # 🚀 _Day 8. Bridge edge in a graph_ 🧠
 
-
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/bridge-edge-in-graph)
 
 ## 💡 **Problem Description:**
@@ -24,15 +23,16 @@ Given an **undirected graph** with **V** vertices and **E** edges, along with a 
 
 <img src="https://github.com/user-attachments/assets/1630b101-9fdd-4c26-958e-986c0b274e33" width="40%">
 
-
 - V = 5, E = 5
 - Edges = {{0, 1}, {1, 2}, {2, 3}, {3, 4}, {2, 4}}
 - c = 1, d = 2
 
 #### **Output:**
+
 - True
 
 #### **Explanation:**
+
 Removing the edge between nodes 1 and 2 disconnects the graph, indicating that it is a bridge.
 
 ### **Example 2:**
@@ -41,21 +41,22 @@ Removing the edge between nodes 1 and 2 disconnects the graph, indicating that i
 
 <img src="https://github.com/user-attachments/assets/09149db6-b08f-4974-9996-b4d0c6115979" width="40%">
 
-
 - V = 5, E = 5
 - Edges = {{0, 1}, {1, 2}, {2, 3}, {3, 4}, {2, 4}}
 - c = 2, d = 4
 
 #### **Output:**
+
 - False
 
 #### **Explanation:**
+
 Removing the edge between nodes 2 and 4 does not affect the connectivity of the graph, indicating that it is not a bridge.
 
 <img src="https://github.com/user-attachments/assets/c88756b4-e3ce-4fc1-b9c1-df4c8677abab" width="40%">
 
-
 ## **Constraints:**
+
 - $1 \leq V, E \leq 10^5$
 - $0 \leq c, d \leq V-1$
 
@@ -79,11 +80,13 @@ To determine if the edge (c, d) is a bridge, we can use the following approach:
 2. **Remove the Edge (c, d):** Temporarily remove the edge by not including it in the adjacency list.
 
 3. **DFS Traversal:**
+
    - Initialize a visited array to keep track of visited nodes.
    - Start DFS traversal from node c.
    - Mark all reachable nodes from c as visited.
 
 4. **Check Reachability of d:**
+
    - After the DFS traversal, check if node d has been visited.
    - If node d is not visited, it means removing the edge (c, d) disconnects node d from node c, indicating that the edge is a bridge.
 
@@ -168,7 +171,6 @@ public:
 
 Efficient for detecting **all** bridges in a graph in one pass. The fastest method if this is done repeatedly or on large graphs.
 
-
 ## 📊 **3️⃣ Remove Edge + DFS Reachability Check (Iterative)**
 
 #### **Algorithm Steps:**
@@ -208,14 +210,13 @@ public:
 
 Simple to implement and avoids recursion limits; best when only one edge needs checking, not all bridges.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                         | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                      | ⚠️ **Cons**                           |
-|-------------------------------------|-------------------------|--------------------------|--------------------------------------------------|----------------------------------------|
-| **Tarjan’s Algorithm**              | 🟢 O(V + E)              | 🟡 O(V + E)               | Fastest for multiple bridge queries              | More complex; recursive                |
-| **Remove Edge + DFS (Recursive)**   | 🟢 O(V + E)              | 🟢 O(V + E)               | Intuitive; easier to write                       | Recursion depth limits                 |
-| **Remove Edge + DFS (Iterative)**   | 🟢 O(V + E)              | 🟡 O(V + E)               | Stack-based; avoids recursion                    | Slightly more verbose                  |
+| **Approach**                      | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                         | ⚠️ **Cons**             |
+| --------------------------------- | ---------------------- | ----------------------- | ----------------------------------- | ----------------------- |
+| **Tarjan’s Algorithm**            | 🟢 O(V + E)            | 🟡 O(V + E)             | Fastest for multiple bridge queries | More complex; recursive |
+| **Remove Edge + DFS (Recursive)** | 🟢 O(V + E)            | 🟢 O(V + E)             | Intuitive; easier to write          | Recursion depth limits  |
+| **Remove Edge + DFS (Iterative)** | 🟢 O(V + E)            | 🟡 O(V + E)             | Stack-based; avoids recursion       | Slightly more verbose   |
 
 ✅ **Best Choice?**
 
@@ -223,7 +224,6 @@ Simple to implement and avoids recursion limits; best when only one edge needs c
 - **Use DFS-based** methods for one-time or simpler cases.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -248,7 +248,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **Code (Python)**
 
@@ -283,5 +282,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

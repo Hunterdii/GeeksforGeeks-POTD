@@ -1,4 +1,4 @@
-# *9. Articulation Point - II*
+# _9. Articulation Point - II_
 
 ## **Problem Description**
 
@@ -11,55 +11,57 @@ An articulation point is a vertex whose removal (along with all its connected ed
 > **Note:** The graph may be disconnected, i.e., it may consist of more than one connected component.  
 > If no such point exists, return `{-1}`.
 
-> *Note: Sorry for the delayed upload; my Final Semester exams are underway. Best of luck with your coding journey!*
+> _Note: Sorry for the delayed upload; my Final Semester exams are underway. Best of luck with your coding journey!_
 
 ## **Example**
 
-
 ### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
-V = 5  
+V = 5
 edges = [[0, 1], [1, 4], [4, 3], [4, 2], [2, 3]]
 ```
 
 <img src="https://github.com/user-attachments/assets/eac31efb-cc2a-4dc0-9589-b15b99856b5b" width="40%">
 
-#### **Output:**  
+#### **Output:**
+
 ```
 [1, 4]
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 Removing vertex **1** or **4** disconnects the graph. For instance, if vertex **1** is removed, the part of the graph connected to **1** becomes isolated from the rest of the components.
 
 <img src="https://github.com/user-attachments/assets/ff5cb0aa-9555-4ba0-87fb-2e67a302e623" width="37%">
 
 <img src="https://github.com/user-attachments/assets/4adc114a-b353-458a-9e41-8558632fe1c7" width="38%">
 
-
 ### **Example 2:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
-V = 4  
+V = 4
 edges = [[0, 1], [0, 2]]
 ```
 
-#### **Output:**  
+#### **Output:**
+
 ```
 [0]
 ```
 
-#### **Explanation:**  
-Removing vertex **0** will increase the number of disconnected components from 1 to 3.
+#### **Explanation:**
 
+Removing vertex **0** will increase the number of disconnected components from 1 to 3.
 
 ## **Constraints**
 
 - **1 ≤ V, E ≤ 10⁴**
-
 
 ## **My Approach**
 
@@ -71,12 +73,14 @@ Removing vertex **0** will increase the number of disconnected components from 1
    Build an adjacency list from the given edges to represent the graph.
 
 2. **Use Tarjan’s DFS-based algorithm:**  
-   During the DFS traversal, maintain two arrays:  
-   - **`disc[u]`:** The discovery time of vertex **u**.  
+   During the DFS traversal, maintain two arrays:
+
+   - **`disc[u]`:** The discovery time of vertex **u**.
    - **`low[u]`:** The lowest discovery time reachable from **u** (including back-edges).
 
-3. **Identify Articulation Points:**  
-   - For a **non-root vertex** **u**, if there is a child **v** such that `low[v] >= disc[u]`, then **u** is an articulation point.  
+3. **Identify Articulation Points:**
+
+   - For a **non-root vertex** **u**, if there is a child **v** such that `low[v] >= disc[u]`, then **u** is an articulation point.
    - For the **root vertex** of the DFS, if it has **more than one child**, then it is an articulation point.
 
 4. **Handle Disconnected Graphs:**  
@@ -126,10 +130,8 @@ public:
 };
 ```
 
-
 <details>
   <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## 📊 **2️⃣ Biconnected Components (Using Modified Tarjan’s Algorithm)**
 
@@ -139,7 +141,7 @@ This approach builds upon Tarjan’s algorithm by identifying biconnected compon
 
 1. **Perform DFS** to compute discovery times (`disc[u]`) and low values (`low[u]`).
 2. **Maintain a stack** of edges as part of the DFS to capture biconnected components.
-3. For each vertex *u*, if a child *v* satisfies `low[v] >= disc[u]`, then *u* is an articulation point.
+3. For each vertex _u_, if a child _v_ satisfies `low[v] >= disc[u]`, then _u_ is an articulation point.
 4. Optionally, you can **pop edges** from the stack to report each biconnected component.
 
 ## **C++ Code:**
@@ -166,7 +168,7 @@ public:
             }
         }
     }
-    
+
     vector<int> articulationPoints(int V, vector<vector<int>>& edges) {
         vector<vector<int>> adj(V);
         for (auto &e : edges) {
@@ -180,7 +182,7 @@ public:
         for (int i = 0; i < V; i++)
             if (!visited[i])
                 dfs(i, -1, adj, disc, low, visited, st, ap, time);
-        
+
         vector<int> res;
         for (int i = 0; i < V; i++)
             if (ap[i])
@@ -192,7 +194,7 @@ public:
 
 #### 📝 **Complexity Analysis:**
 
-- **Time Complexity:** O(V + E)  
+- **Time Complexity:** O(V + E)
 - **Space Complexity:** O(V + E) (includes the recursion stack and the edge stack)
 
 #### ✅ **Why Use This Approach?**
@@ -200,23 +202,22 @@ public:
 - **Comprehensive Analysis:** It not only finds articulation points but also helps in identifying biconnected components.
 - **Applications:** Particularly useful when the structure of biconnected components is needed, as in network reliability studies.
 
-
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                                    | ⏱️ **Time Complexity**    | 🗂️ **Space Complexity**       | ✅ **Pros**                                                      | ⚠️ **Cons**                                 |
-|-------------------------------------------------|---------------------------|-------------------------------|------------------------------------------------------------------|----------------------------------------------|
-| **Tarjan’s Algorithm**          | 🟢 O(V + E)                  | 🟢 O(V + E)                      | Optimal, widely used, and efficient                              | Recursive (may hit limits for very deep graphs) |
-| **Biconnected Components (Modified Tarjan’s)**  | 🟢 O(V + E)                  | 🟡 O(V + E)                      | Provides extra insight into the structure of the graph           | Slightly more complex to implement          |
+| **Approach**                                   | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                            | ⚠️ **Cons**                                     |
+| ---------------------------------------------- | ---------------------- | ----------------------- | ------------------------------------------------------ | ----------------------------------------------- |
+| **Tarjan’s Algorithm**                         | 🟢 O(V + E)            | 🟢 O(V + E)             | Optimal, widely used, and efficient                    | Recursive (may hit limits for very deep graphs) |
+| **Biconnected Components (Modified Tarjan’s)** | 🟢 O(V + E)            | 🟡 O(V + E)             | Provides extra insight into the structure of the graph | Slightly more complex to implement              |
 
-✅ **Best Choice?**  
-- For efficient and optimal detection of articulation points, **Tarjan’s algorithm** is the best choice.  
+✅ **Best Choice?**
+
+- For efficient and optimal detection of articulation points, **Tarjan’s algorithm** is the best choice.
 - The **biconnected components approach** is useful when additional component structure is required.
 
 </details>
 
-
-
 ## **Code (Java)**
+
 ```java
 class Solution {
     static ArrayList<Integer> articulationPoints(int V, int[][] edges) {
@@ -257,6 +258,7 @@ class Solution {
 ```
 
 ## **Code (Python)**
+
 ```python
 class Solution:
     def articulationPoints(self, V, edges):
@@ -293,7 +295,6 @@ class Solution:
         return res if res else [-1]
 ```
 
-
 ## **Contribution and Support:**
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -307,8 +308,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>
-
-
-

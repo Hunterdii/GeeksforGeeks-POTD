@@ -1,4 +1,4 @@
-# *3. Prime List*
+# _3. Prime List_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/prime-list--170646/1)
 
@@ -22,10 +22,9 @@ If multiple prime numbers are equidistant from the current value, choose the sma
 
 **Explanation:**
 
-* 2 is already prime.
-* 6 has nearest primes 5 and 7 → choose 5.
-* 10 has nearest primes 7 and 11 → choose 11.
-
+- 2 is already prime.
+- 6 has nearest primes 5 and 7 → choose 5.
+- 10 has nearest primes 7 and 11 → choose 11.
 
 #### **Example 2:**
 
@@ -39,15 +38,14 @@ If multiple prime numbers are equidistant from the current value, choose the sma
 
 **Explanation:**
 
-* Nearest prime to 1 is 2.
-* 15 → nearest primes: 13 and 17 → choose 13.
-* 20 → nearest primes: 19 and 23 → choose 19.
-
+- Nearest prime to 1 is 2.
+- 15 → nearest primes: 13 and 17 → choose 13.
+- 20 → nearest primes: 19 and 23 → choose 19.
 
 ## 🔒 Constraints
 
-* \$1 \leq \text{Number of nodes} \leq 10^4\$
-* \$1 \leq \text{Node.val} \leq 10^4\$
+- \$1 \leq \text{Number of nodes} \leq 10^4\$
+- \$1 \leq \text{Node.val} \leq 10^4\$
 
 ## **✅ My Approach**
 
@@ -63,16 +61,15 @@ Precompute all prime numbers up to twice the maximum value in the list using the
 2. Build a sieve array of size `2*m+1` to mark prime numbers.
 3. Traverse the list again:
 
-   * For each node, search outward from `node.val` until a prime is found (prefer the smaller one if both directions are valid).
-   * Replace the value in the node.
-4. Return the updated head.
+   - For each node, search outward from `node.val` until a prime is found (prefer the smaller one if both directions are valid).
+   - Replace the value in the node.
 
+4. Return the updated head.
 
 ## 🧮 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n + m·loglogm), where `n` is the number of nodes and `m` is the maximum value. Sieve is built once, and each node is updated in amortized constant time.
-* **Expected Auxiliary Space Complexity:** O(m), to store the sieve of prime numbers.
-
+- **Expected Time Complexity:** O(n + m·loglogm), where `n` is the number of nodes and `m` is the maximum value. Sieve is built once, and each node is updated in amortized constant time.
+- **Expected Auxiliary Space Complexity:** O(m), to store the sieve of prime numbers.
 
 ## **🧠 Code (C++)**
 
@@ -100,7 +97,6 @@ public:
     }
 };
 ```
-
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
@@ -138,22 +134,20 @@ public:
 
 ### ✅ **Why This Approach?**
 
-* Simpler to implement without preprocessing.
-* Doesn’t use extra memory.
+- Simpler to implement without preprocessing.
+- Doesn’t use extra memory.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** O(n√m) – for `n` nodes and value up to `m`.
-* **Auxiliary Space:** O(1)
-
+- **Time:** O(n√m) – for `n` nodes and value up to `m`.
+- **Auxiliary Space:** O(1)
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**               | ⏱️ **Time**         | 🗂️ **Space** | ✅ **Pros**                                 | ⚠️ **Cons**                 |
-| -------------------------- | ------------------- | ------------- | ------------------------------------------ | --------------------------- |
-| Sieve + Search (Optimal)   | 🟢 O(n + m loglogm) | 🔸 O(m)       | Fast, efficient lookup, handles large data | Needs extra space for sieve |
-| Brute Force Prime Checking | 🟡 O(n√m)           | 🟢 O(1)       | Simple, no extra memory                    | Slower on large inputs      |
-
+| **Approach**               | ⏱️ **Time**         | 🗂️ **Space** | ✅ **Pros**                                | ⚠️ **Cons**                 |
+| -------------------------- | ------------------- | ------------ | ------------------------------------------ | --------------------------- |
+| Sieve + Search (Optimal)   | 🟢 O(n + m loglogm) | 🔸 O(m)      | Fast, efficient lookup, handles large data | Needs extra space for sieve |
+| Brute Force Prime Checking | 🟡 O(n√m)           | 🟢 O(1)      | Simple, no extra memory                    | Slower on large inputs      |
 
 ### ✅ **Best Choice?**
 
@@ -190,7 +184,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -212,19 +205,18 @@ class Solution:
         return h
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

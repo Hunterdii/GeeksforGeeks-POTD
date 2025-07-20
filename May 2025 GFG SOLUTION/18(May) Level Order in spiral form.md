@@ -1,4 +1,4 @@
-# *18. Level Order in spiral form*
+# _18. Level Order in spiral form_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1)
 
@@ -7,8 +7,8 @@ The problem can be found at the following link: 🔗 [Question Link](https://www
 Given a binary tree, return its spiral (zigzag) level-order traversal.
 In spiral order traversal:
 
-* At even-indexed levels (0-based), traverse nodes **from right to left**.
-* At odd-indexed levels, traverse nodes **from left to right**.
+- At even-indexed levels (0-based), traverse nodes **from right to left**.
+- At odd-indexed levels, traverse nodes **from left to right**.
 
 Return a list containing all node values in spiral order.
 
@@ -33,7 +33,6 @@ Return a list containing all node values in spiral order.
 Level 0 (even) → right to left: `1`
 Level 1 (odd) → left to right: `3 2`
 
-
 ### **Example 2:**
 
 #### **Input:**
@@ -45,7 +44,6 @@ Level 1 (odd) → left to right: `3 2`
 #### **Output:**
 
 `[10, 20, 30, 60, 40]`
-
 
 ### **Example 3:**
 
@@ -59,12 +57,10 @@ Level 1 (odd) → left to right: `3 2`
 
 `[1, 2, 4]`
 
-
 ## **🔒 Constraints**
 
-* 1 ≤ number of nodes ≤ 10⁵
-* 0 ≤ node->data ≤ 10⁵
-
+- 1 ≤ number of nodes ≤ 10⁵
+- 0 ≤ node->data ≤ 10⁵
 
 ## **✅ My Approach**
 
@@ -72,29 +68,27 @@ Level 1 (odd) → left to right: `3 2`
 
 We use a `deque` to simulate two-directional traversal:
 
-* For **even-indexed levels**, we traverse from right to left using `pop_back()` and push children to the **front**.
-* For **odd-indexed levels**, we traverse from left to right using `pop_front()` and push children to the **back**.
+- For **even-indexed levels**, we traverse from right to left using `pop_back()` and push children to the **front**.
+- For **odd-indexed levels**, we traverse from left to right using `pop_front()` and push children to the **back**.
 
 We alternate the direction at each level using a boolean flag.
-
 
 ### **Algorithm Steps:**
 
 1. Initialize deque `q` and push root node.
 2. While `q` is not empty:
 
-   * Traverse the current level based on direction:
+   - Traverse the current level based on direction:
 
-     * If flag is `True` (even), pop from back and push right→left children to front.
-     * If flag is `False` (odd), pop from front and push left→right children to back.
-   * Flip the flag at the end of each level.
+     - If flag is `True` (even), pop from back and push right→left children to front.
+     - If flag is `False` (odd), pop from front and push left→right children to back.
 
+   - Flip the flag at the end of each level.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), as we visit each node exactly once in level order.
-* **Expected Auxiliary Space Complexity:** O(n), due to storing up to an entire level of nodes in the deque.
-
+- **Expected Time Complexity:** O(n), as we visit each node exactly once in level order.
+- **Expected Auxiliary Space Complexity:** O(n), due to storing up to an entire level of nodes in the deque.
 
 ## **🧠 Code (C++)**
 
@@ -139,18 +133,20 @@ class Solution {
 3. Push `root` to `s1`.
 4. While either `s1` or `s2` is non-empty:
 
-   * **Process `s1`** (right→left):
+   - **Process `s1`** (right→left):
 
      1. While `s1` isn’t empty:
 
-        * Pop `u` from `s1`, append `u->data`.
-        * Push `u->right` then `u->left` onto `s2`.
-   * **Process `s2`** (left→right):
+        - Pop `u` from `s1`, append `u->data`.
+        - Push `u->right` then `u->left` onto `s2`.
+
+   - **Process `s2`** (left→right):
 
      1. While `s2` isn’t empty:
 
-        * Pop `u` from `s2`, append `u->data`.
-        * Push `u->left` then `u->right` onto `s1`.
+        - Pop `u` from `s2`, append `u->data`.
+        - Push `u->left` then `u->right` onto `s1`.
+
 5. Return the combined result.
 
 ```cpp
@@ -182,15 +178,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Clear separation of two traversal directions via two stacks.
-* No deque operations—pure LIFO.
+- Clear separation of two traversal directions via two stacks.
+- No deque operations—pure LIFO.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(N)
-* **Auxiliary Space:** 🔸 O(N)
-
-
+- **Time:** 🔸 O(N)
+- **Auxiliary Space:** 🔸 O(N)
 
 ## 📊 **3️⃣ Level-Collection + Reverse**
 
@@ -199,8 +193,8 @@ class Solution {
 1. Perform a standard level-order traversal using a queue, but **collect each level** into its own vector.
 2. After collecting all levels in `levels[]`, iterate through `levels`:
 
-   * If level index is even → reverse that level.
-   * Append elements in order to final answer.
+   - If level index is even → reverse that level.
+   - Append elements in order to final answer.
 
 ```cpp
 class Solution {
@@ -234,33 +228,31 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* Simple to reason about by separating concerns.
-* Useful if you need per-level data later.
+- Simple to reason about by separating concerns.
+- Useful if you need per-level data later.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(N)
-* **Auxiliary Space:** 🔸 O(N) (for both queue and `levels`)
-
+- **Time:** 🔸 O(N)
+- **Auxiliary Space:** 🔸 O(N) (for both queue and `levels`)
 
 ## 🆚 Comparison
 
-| **Approach**           | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**              | ⚠️ **Cons**          |
-| ---------------------- | ----------- | ------------- | ----------------------- | -------------------- |
-| Deque Zigzag Traversal | 🟢 O(n)        | 🟢 O(n)          | Clean, single container | Requires deque logic |
-| Two Stack Zigzag       | 🟢 O(n)        | 🟢 O(n)          | Stack-based alternative | Slightly verbose     |
-| Level-Collect + Reverse | 🔸 O(N)     | 🔸 O(N)       | Simple to implement               | Needs extra storage for all levels |
+| **Approach**            | ⏱️ **Time** | 🗂️ **Space** | ✅ **Pros**             | ⚠️ **Cons**                        |
+| ----------------------- | ----------- | ------------ | ----------------------- | ---------------------------------- |
+| Deque Zigzag Traversal  | 🟢 O(n)     | 🟢 O(n)      | Clean, single container | Requires deque logic               |
+| Two Stack Zigzag        | 🟢 O(n)     | 🟢 O(n)      | Stack-based alternative | Slightly verbose                   |
+| Level-Collect + Reverse | 🔸 O(N)     | 🔸 O(N)      | Simple to implement     | Needs extra storage for all levels |
 
 ### ✅ **Best Choice by Scenario**
 
-| **Scenario**                    | **Recommended Approach**   |
-| ------------------------------- | -------------------------- |
-| 🚀 Performance & minimal passes | 🥇 Deque-Based Traversal (Optimal)   |
-| 🎓 Clarity in interview demos   | 🥈 Two-Stacks              |
-| 📊 Need per-level data retained | 🥉 Level-Collect + Reverse |
+| **Scenario**                    | **Recommended Approach**           |
+| ------------------------------- | ---------------------------------- |
+| 🚀 Performance & minimal passes | 🥇 Deque-Based Traversal (Optimal) |
+| 🎓 Clarity in interview demos   | 🥈 Two-Stacks                      |
+| 📊 Need per-level data retained | 🥉 Level-Collect + Reverse         |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -319,12 +311,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

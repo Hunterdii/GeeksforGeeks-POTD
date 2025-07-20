@@ -1,12 +1,21 @@
 ---
 title: "➗ Divisible by 13 | GFG Solution 🔍"
-keywords🏷️: ["➗ divisible by 13", "🔍 modular arithmetic", "📍 string processing", "📈 number theory", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "➗ divisible by 13",
+    "🔍 modular arithmetic",
+    "📍 string processing",
+    "📈 number theory",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to check if a large number (given as string) is divisible by 13 using modular arithmetic properties. 🚀"
 date: 📅 2025-07-15
 ---
 
-# *15. Divisible by 13*
+# _15. Divisible by 13_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/divisible-by-13/1)
 
@@ -44,8 +53,8 @@ Explanation: 169 ÷ 13 = 13, which is a whole number with no remainder.
 
 ## **🔒 Constraints**
 
-* $1 \le \text{s.size()} \le 10^5$
-* String `s` contains only digits
+- $1 \le \text{s.size()} \le 10^5$
+- String `s` contains only digits
 
 ## **✅ My Approach**
 
@@ -54,31 +63,34 @@ The optimal approach uses **Modular Arithmetic** properties to process the large
 ### **Modular Arithmetic Method**
 
 1. **Key Insight:**
-   * For a number ABCD, we can write it as: A×1000 + B×100 + C×10 + D
-   * Using modular arithmetic: (A×1000 + B×100 + C×10 + D) % 13
-   * This is equivalent to: ((A%13)×(1000%13) + (B%13)×(100%13) + (C%13)×(10%13) + (D%13)) % 13
+
+   - For a number ABCD, we can write it as: A×1000 + B×100 + C×10 + D
+   - Using modular arithmetic: (A×1000 + B×100 + C×10 + D) % 13
+   - This is equivalent to: ((A%13)×(1000%13) + (B%13)×(100%13) + (C%13)×(10%13) + (D%13)) % 13
 
 2. **Algorithm Steps:**
-   * Initialize remainder `r = 0`
-   * For each digit from left to right:
-     * Update remainder: `r = (r × 10 + digit) % 13`
-   * If final remainder is 0, the number is divisible by 13
+
+   - Initialize remainder `r = 0`
+   - For each digit from left to right:
+     - Update remainder: `r = (r × 10 + digit) % 13`
+   - If final remainder is 0, the number is divisible by 13
 
 3. **Why This Works:**
-   * We build the number incrementally while keeping track of remainder
-   * At each step, we maintain: `r = (current_number_so_far) % 13`
-   * The multiplication by 10 shifts the previous digits left by one position
-   * Adding the new digit incorporates it into our running remainder
+
+   - We build the number incrementally while keeping track of remainder
+   - At each step, we maintain: `r = (current_number_so_far) % 13`
+   - The multiplication by 10 shifts the previous digits left by one position
+   - Adding the new digit incorporates it into our running remainder
 
 4. **Mathematical Foundation:**
-   * If we have processed digits d₁d₂...dₖ with remainder r
-   * Adding digit dₖ₊₁ gives us: new_remainder = (r × 10 + dₖ₊₁) % 13
-   * This maintains the invariant that r represents the remainder of the number formed so far
+   - If we have processed digits d₁d₂...dₖ with remainder r
+   - Adding digit dₖ₊₁ gives us: new_remainder = (r × 10 + dₖ₊₁) % 13
+   - This maintains the invariant that r represents the remainder of the number formed so far
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), where n is the length of the string. We process each digit exactly once in a single pass through the string.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space to store the remainder variable regardless of the input size.
+- **Expected Time Complexity:** O(n), where n is the length of the string. We process each digit exactly once in a single pass through the string.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space to store the remainder variable regardless of the input size.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -119,14 +131,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - single pass through string
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(n) - single pass through string
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Compact loop structure
-* Direct ASCII conversion (48 = '0')
-* Efficient memory access pattern
+- Compact loop structure
+- Direct ASCII conversion (48 = '0')
+- Efficient memory access pattern
 
 ## 📊 **3️⃣ Reverse Iteration Approach**
 
@@ -152,14 +164,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - single pass through string
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(n) - single pass through string
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Mathematical approach using positional values
-* Efficient modular arithmetic
-* Alternative iteration pattern
+- Mathematical approach using positional values
+- Efficient modular arithmetic
+- Alternative iteration pattern
 
 ## 📊 **4️⃣ Pointer-Based Optimization**
 
@@ -183,14 +195,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - single pass through string
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(n) - single pass through string
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Direct memory access via pointer
-* Eliminates string bounds checking
-* Highly optimized for performance
+- Direct memory access via pointer
+- Eliminates string bounds checking
+- Highly optimized for performance
 
 ## 📊 **5️⃣ Range-Based Loop**
 
@@ -215,34 +227,34 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n) - single pass through string
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(n) - single pass through string
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Clean, modern C++ syntax
-* Automatic iterator management
-* Enhanced readability
+- Clean, modern C++ syntax
+- Automatic iterator management
+- Enhanced readability
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Standard Index Loop**        | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Clean, readable syntax        | 💾 Standard performance              |
-| 🔺 **Optimized Index Loop**       | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Compact loop structure        | 💾 Less readable                      |
-| ⏰ **Reverse Iteration**          | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Mathematical elegance         | 🔄 Additional power calculation       |
-| 📊 **Pointer-Based**             | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Maximum performance           | 🔧 C-style, less safe                |
-| 🎯 **Range-Based Loop**          | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Modern C++, clean syntax      | 💾 Iterator overhead                  |
+| 🚀 **Approach**             | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                 | ⚠️ **Cons**                     |
+| --------------------------- | ---------------------- | ----------------------- | --------------------------- | ------------------------------- |
+| 🔍 **Standard Index Loop**  | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Clean, readable syntax   | 💾 Standard performance         |
+| 🔺 **Optimized Index Loop** | 🟢 O(n)                | 🟢 O(1)                 | 🔧 Compact loop structure   | 💾 Less readable                |
+| ⏰ **Reverse Iteration**    | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Mathematical elegance    | 🔄 Additional power calculation |
+| 📊 **Pointer-Based**        | 🟢 O(n)                | 🟢 O(1)                 | ⚡ Maximum performance      | 🔧 C-style, less safe           |
+| 🎯 **Range-Based Loop**     | 🟢 O(n)                | 🟢 O(1)                 | 🚀 Modern C++, clean syntax | 💾 Iterator overhead            |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Maximum performance**                         | 🥇 **Pointer-Based**                 | ★★★★★                     |
-| 📊 **Balanced readability/performance**           | 🥈 **Range-Based Loop**              | ★★★★☆                     |
-| 🎯 **Compact code**                               | 🥉 **Optimized Index Loop**          | ★★★★☆                     |
-| 🚀 **Competitive programming**                    | 🏅 **Reverse Iteration**                | ★★★★★                     |
-| 🔧 **Production code**                            | 🎖️ **Standard Index Loop**           | ★★★★☆                     |
+| 🎯 **Scenario**                         | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| --------------------------------------- | --------------------------- | ------------------------- |
+| ⚡ **Maximum performance**              | 🥇 **Pointer-Based**        | ★★★★★                     |
+| 📊 **Balanced readability/performance** | 🥈 **Range-Based Loop**     | ★★★★☆                     |
+| 🎯 **Compact code**                     | 🥉 **Optimized Index Loop** | ★★★★☆                     |
+| 🚀 **Competitive programming**          | 🏅 **Reverse Iteration**    | ★★★★★                     |
+| 🔧 **Production code**                  | 🎖️ **Standard Index Loop**  | ★★★★☆                     |
 
 </details>
 
@@ -284,5 +296,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

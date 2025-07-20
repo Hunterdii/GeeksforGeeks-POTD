@@ -1,7 +1,6 @@
-# *21. Kth Smallest Number in Multiplication Table*
+# _21. Kth Smallest Number in Multiplication Table_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/kth-smallest-number-in-multiplication-table/1)
-
 
 ## **🧩 Problem Description**
 
@@ -10,7 +9,6 @@ Each cell of the matrix is defined as:
     **`mat[i][j] = i × j`**
 
 The multiplication table is filled in row-wise sorted and column-wise sorted order.
-
 
 ## **📘 Examples**
 
@@ -24,7 +22,6 @@ The multiplication table is filled in row-wise sorted and column-wise sorted ord
 
 <img src="https://github.com/user-attachments/assets/0a356397-7709-4a6f-a554-aaa8a1178055" width="30%">
 
-
 The elements in increasing order are: `[1, 2, 2, 3, 3, 4, 6, 6, 9]` → the 5<sup>th</sup> smallest is `3`.
 
 ### **Example 2:**
@@ -35,20 +32,17 @@ The elements in increasing order are: `[1, 2, 2, 3, 3, 4, 6, 6, 9]` → the 5<su
 
 **Explanation:** The multiplication table is:
 
-
 ```
-[1, 2, 3]  
-[2, 4, 6]  
+[1, 2, 3]
+[2, 4, 6]
 ```
 
 Flattened and sorted: `[1, 2, 2, 3, 4, 6]` → the 6<sup>th</sup> smallest is `6`.
 
-
 ## **🔒 Constraints**
 
-* \$1 \leq m, n \leq 3 \times 10^4\$
-* \$1 \leq k \leq m \times n\$
-
+- \$1 \leq m, n \leq 3 \times 10^4\$
+- \$1 \leq k \leq m \times n\$
 
 ## **✅ My Approach**
 
@@ -58,9 +52,9 @@ We are asked to find the `k`th smallest value in a virtual `m × n` multiplicati
 
 At each step of binary search:
 
-* We guess a value `mid`, and count how many numbers in the table are `≤ mid`.
-* For each row `i` (1-based), the count of elements ≤ `mid` is `min(n, mid // i)`.
-* If total count ≥ `k`, then `mid` might be the answer (go left).
+- We guess a value `mid`, and count how many numbers in the table are `≤ mid`.
+- For each row `i` (1-based), the count of elements ≤ `mid` is `min(n, mid // i)`.
+- If total count ≥ `k`, then `mid` might be the answer (go left).
   Else, go right.
 
 ### **Algorithm Steps:**
@@ -68,18 +62,17 @@ At each step of binary search:
 1. Initialize the binary search bounds: `l = 1`, `r = m * n`.
 2. While `l < r`:
 
-   * Compute `mid = (l + r) // 2`.
-   * Count how many elements in the table are `≤ mid`.
-   * If count < `k`, set `l = mid + 1`
+   - Compute `mid = (l + r) // 2`.
+   - Count how many elements in the table are `≤ mid`.
+   - If count < `k`, set `l = mid + 1`
      Else, set `r = mid`.
-3. Return `l`.
 
+3. Return `l`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(log(m × n) × min(m, n)), as we binary search over value space and count in each row up to `min(m, n)`.
-* **Expected Auxiliary Space Complexity:** O(1), as we use only a constant amount of extra space.
-
+- **Expected Time Complexity:** O(log(m × n) × min(m, n)), as we binary search over value space and count in each row up to `min(m, n)`.
+- **Expected Auxiliary Space Complexity:** O(1), as we use only a constant amount of extra space.
 
 ## **🧠 Code (C++)**
 
@@ -97,7 +90,6 @@ class Solution {
     }
 };
 ```
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -136,12 +128,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

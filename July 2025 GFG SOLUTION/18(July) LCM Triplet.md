@@ -1,12 +1,21 @@
 ---
 title: "📐 LCM Triplet | GFG Solution ⚙️"
-keywords🏷️: ["📐 LCM triplet", "🧮 mathematical optimization", "📊 number theory", "🎯 greedy approach", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "📐 LCM triplet",
+    "🧮 mathematical optimization",
+    "📊 number theory",
+    "🎯 greedy approach",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the LCM Triplet problem: find maximum possible LCM by selecting three numbers ≤ n using mathematical optimization and greedy approach. 🚀"
 date: 📅 2025-07-18
 ---
 
-# *18. LCM Triplet*
+# _18. LCM Triplet_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/lcm-triplet1501/1)
 
@@ -25,7 +34,7 @@ The goal is to find three numbers ≤ n such that their LCM is maximized.
 ```cpp
 Input: n = 9
 Output: 504
-Explanation: 504 is the maximum LCM that can be attained by any triplet of numbers less than or equal 9. 
+Explanation: 504 is the maximum LCM that can be attained by any triplet of numbers less than or equal 9.
 The triplet which has this LCM is {7, 8, 9}.
 ```
 
@@ -34,13 +43,13 @@ The triplet which has this LCM is {7, 8, 9}.
 ```cpp
 Input: n = 7
 Output: 210
-Explanation: 210 is the maximum LCM that can be attained by any triplet of numbers less than or equal 7. 
+Explanation: 210 is the maximum LCM that can be attained by any triplet of numbers less than or equal 7.
 The triplet which has this LCM is {5, 6, 7}.
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le n \le 10^3$
+- $1 \le n \le 10^3$
 
 ## **✅ My Approach**
 
@@ -49,29 +58,32 @@ The optimal approach uses **Mathematical Optimization** with **Greedy Strategy**
 ### **Mathematical Analysis + Greedy Selection**
 
 1. **Key Insight:**
-   * To maximize LCM, we need to choose numbers that are as large as possible and have minimal common factors.
-   * The LCM of three numbers is maximized when they are pairwise coprime (gcd = 1).
+
+   - To maximize LCM, we need to choose numbers that are as large as possible and have minimal common factors.
+   - The LCM of three numbers is maximized when they are pairwise coprime (gcd = 1).
 
 2. **Case Analysis:**
-   * **Case 1:** `n < 3` → Return `n` (insufficient numbers for triplet)
-   * **Case 2:** `n` is odd → Choose `{n, n-1, n-2}` (consecutive numbers have small gcds)
-   * **Case 3:** `n` is even and `n % 3 ≠ 0` → Choose `{n, n-1, n-3}` (avoid n-2 which is even)
-   * **Case 4:** `n` is even and `n % 3 = 0` → Choose `{n-1, n-2, n-3}` (avoid n which is divisible by 3)
+
+   - **Case 1:** `n < 3` → Return `n` (insufficient numbers for triplet)
+   - **Case 2:** `n` is odd → Choose `{n, n-1, n-2}` (consecutive numbers have small gcds)
+   - **Case 3:** `n` is even and `n % 3 ≠ 0` → Choose `{n, n-1, n-3}` (avoid n-2 which is even)
+   - **Case 4:** `n` is even and `n % 3 = 0` → Choose `{n-1, n-2, n-3}` (avoid n which is divisible by 3)
 
 3. **Mathematical Reasoning:**
-   * When `n` is odd: `n` and `n-1` are coprime, `n-1` and `n-2` are coprime
-   * When `n` is even: avoid consecutive even numbers to minimize common factors
-   * When `n % 3 = 0`: avoid `n` to prevent factor of 3 from reducing LCM
+
+   - When `n` is odd: `n` and `n-1` are coprime, `n-1` and `n-2` are coprime
+   - When `n` is even: avoid consecutive even numbers to minimize common factors
+   - When `n % 3 = 0`: avoid `n` to prevent factor of 3 from reducing LCM
 
 4. **Optimization:**
-   * Use bitwise operations for faster even/odd checks
-   * Minimize conditional branches with ternary operators
-   * Perform constant-time calculations regardless of input size
+   - Use bitwise operations for faster even/odd checks
+   - Minimize conditional branches with ternary operators
+   - Perform constant-time calculations regardless of input size
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(1), as we perform a constant number of arithmetic operations and conditional checks regardless of the input value n.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for storing intermediate calculations.
+- **Expected Time Complexity:** O(1), as we perform a constant number of arithmetic operations and conditional checks regardless of the input value n.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for storing intermediate calculations.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -79,7 +91,7 @@ The optimal approach uses **Mathematical Optimization** with **Greedy Strategy**
 class Solution {
 public:
     int lcmTriplets(int n) {
-        return n < 3 ? n : n & 1 ? n * (n - 1) * (n - 2) : 
+        return n < 3 ? n : n & 1 ? n * (n - 1) * (n - 2) :
                n % 3 ? n * (n - 1) * (n - 3) : (n - 1) * (n - 2) * (n - 3);
     }
 };
@@ -110,14 +122,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(1)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(1)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Pre-computed decrements reduce operations
-* Bitwise AND faster than modulo for even check
-* Clear logical flow
+- Pre-computed decrements reduce operations
+- Bitwise AND faster than modulo for even check
+- Clear logical flow
 
 ## 📊 **3️⃣ Lookup Table Optimization**
 
@@ -143,14 +155,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(1)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(1)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Lambda functions for modularity
-* Clean separation of logic
-* Maintainable code structure
+- Lambda functions for modularity
+- Clean separation of logic
+- Maintainable code structure
 
 ## 📊 **4️⃣ Explicit Conditional Approach **
 
@@ -181,32 +193,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(1)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(1)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Maximum readability and maintainability
-* Easy to understand the logic flow
-* Simple to debug and extend
+- Maximum readability and maintainability
+- Easy to understand the logic flow
+- Simple to debug and extend
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Ternary Chain**              | 🟢 O(1)                | 🟢 O(1)                 | 🚀 Minimal code, fast execution   | 💾 Hard to read for complex logic    |
-| 🔺 **Bit Manipulation**           | 🟢 O(1)                | 🟢 O(1)                 | 🔧 Optimized operations          | 💾 Requires bit manipulation knowledge |
-| 📊 **Function Pointers**          | 🟢 O(1)                | 🟢 O(1)                 | ⚡ Modular and maintainable       | 🔧 Lambda overhead                    |
-| 🎯 **Explicit Conditional**       | 🟢 O(1)                | 🟢 O(1)                 | 📖 Maximum readability           | 💾 More verbose code                  |
+| 🚀 **Approach**             | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                     | ⚠️ **Cons**                            |
+| --------------------------- | ---------------------- | ----------------------- | ------------------------------- | -------------------------------------- |
+| 🔍 **Ternary Chain**        | 🟢 O(1)                | 🟢 O(1)                 | 🚀 Minimal code, fast execution | 💾 Hard to read for complex logic      |
+| 🔺 **Bit Manipulation**     | 🟢 O(1)                | 🟢 O(1)                 | 🔧 Optimized operations         | 💾 Requires bit manipulation knowledge |
+| 📊 **Function Pointers**    | 🟢 O(1)                | 🟢 O(1)                 | ⚡ Modular and maintainable     | 🔧 Lambda overhead                     |
+| 🎯 **Explicit Conditional** | 🟢 O(1)                | 🟢 O(1)                 | 📖 Maximum readability          | 💾 More verbose code                   |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **Competitive Programming**                        | 🥇 **Ternary Chain**                 | ★★★★★                     |
-| 📊 **Production Code**                               | 🥈 **Bit Manipulation**              | ★★★★☆                     |
-| 🚀 **Large Scale Systems**                           | 🥉 **Function Pointers**             | ★★★★☆                     |
-| 🎓 **Educational/Learning**                          | 🎖️ **Explicit Conditional**          | ★★★☆☆                     |
+| 🎯 **Scenario**                | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| ------------------------------ | --------------------------- | ------------------------- |
+| ⚡ **Competitive Programming** | 🥇 **Ternary Chain**        | ★★★★★                     |
+| 📊 **Production Code**         | 🥈 **Bit Manipulation**     | ★★★★☆                     |
+| 🚀 **Large Scale Systems**     | 🥉 **Function Pointers**    | ★★★★☆                     |
+| 🎓 **Educational/Learning**    | 🎖️ **Explicit Conditional** | ★★★☆☆                     |
 
 </details>
 
@@ -215,7 +227,7 @@ public:
 ```java
 class Solution {
     int lcmTriplets(int n) {
-        return n < 3 ? n : (n & 1) == 1 ? n * (n - 1) * (n - 2) : 
+        return n < 3 ? n : (n & 1) == 1 ? n * (n - 1) * (n - 2) :
                n % 3 != 0 ? n * (n - 1) * (n - 3) : (n - 1) * (n - 2) * (n - 3);
     }
 }
@@ -243,5 +255,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

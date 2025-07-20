@@ -7,72 +7,72 @@ Tags:
 
 # 🚀 _Day 6. Topological sort_ 🧠
 
-
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/topological-sort)  
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/topological-sort)
 
 ## 💡 **Problem Description:**
 
-Given a **Directed Acyclic Graph (DAG)** with V vertices (numbered from 0 to V-1) and E directed edges (represented as a 2D list where each edge is given as `[u, v]` indicating an edge from u to v), return a topological ordering of the vertices.  
+Given a **Directed Acyclic Graph (DAG)** with V vertices (numbered from 0 to V-1) and E directed edges (represented as a 2D list where each edge is given as `[u, v]` indicating an edge from u to v), return a topological ordering of the vertices.
 
 A **topological sort** of a DAG is a linear ordering of vertices such that for every directed edge u -> v, vertex u appears before vertex v in the ordering.  
 Note: Since there can be multiple valid topological orders, you may return any one of them. The returned ordering is considered correct if for every directed edge u -> v, u comes before v.
 
 ## 🔍 **Example Walkthrough:**
 
-### **Example 1:**  
+### **Example 1:**
 
-#### **Input:**  
+#### **Input:**
+
 ```
-V = 4, E = 3  
+V = 4, E = 3
 edges = [[3, 0], [1, 0], [2, 0]]
 ```
 
 <img src="https://github.com/user-attachments/assets/2a57649a-027b-4ce4-8d29-f5f16724ba29" width="40%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 true
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The output `true` denotes that the ordering is valid.  
-Few valid topological orders are:  
-- [3, 2, 1, 0]  
-- [1, 2, 3, 0]  
-- [2, 3, 1, 0]  
+Few valid topological orders are:
 
+- [3, 2, 1, 0]
+- [1, 2, 3, 0]
+- [2, 3, 1, 0]
 
+### **Example 2:**
 
-### **Example 2:**  
+#### **Input:**
 
-#### **Input:**  
 ```
-V = 6, E = 6  
+V = 6, E = 6
 edges = [[1, 3], [2, 3], [4, 1], [4, 0], [5, 0], [5, 2]]
 ```
 
 <img src="https://github.com/user-attachments/assets/d6e5ea9c-4ffb-4ec5-8ce1-9cdd5b0d6efc" width="40%">
 
+#### **Output:**
 
-#### **Output:**  
 ```
 true
 ```
 
-#### **Explanation:**  
+#### **Explanation:**
+
 The output `true` denotes that the returned ordering is valid.  
-Few valid topological orders for this graph are:  
-- [4, 5, 0, 1, 2, 3]  
-- [5, 2, 4, 0, 1, 3]  
+Few valid topological orders for this graph are:
 
+- [4, 5, 0, 1, 2, 3]
+- [5, 2, 4, 0, 1, 3]
 
+### **Constraints:**
 
-### **Constraints:**  
-- 2 ≤ V ≤ 10³  
-- 1 ≤ E (edges.size()) ≤ (V * (V - 1)) / 2  
-
-
+- 2 ≤ V ≤ 10³
+- 1 ≤ E (edges.size()) ≤ (V \* (V - 1)) / 2
 
 ## 🎯 **My Approach:**
 
@@ -80,19 +80,22 @@ Few valid topological orders for this graph are:
 
 ### **Algorithm Steps:**
 
-1. **Construct the Graph:**  
+1. **Construct the Graph:**
+
    - Build an **adjacency list** from the edge list.
    - Create an **in-degree array** to store the number of incoming edges for each vertex.
 
-2. **Initialize the Queue:**  
+2. **Initialize the Queue:**
+
    - Push all vertices with in-degree 0 into a queue.
 
-3. **Process the Queue:**  
+3. **Process the Queue:**
+
    - While the queue is not empty, pop a vertex and add it to the result list.
    - For each neighbor of the popped vertex, reduce its in-degree by 1.
    - If any neighbor's in-degree becomes 0, add it to the queue.
 
-4. **Final Check:**  
+4. **Final Check:**
    - If the result list contains all vertices, the ordering is valid.
 
 ## 🕒 **Time and Auxiliary Space Complexity**
@@ -134,7 +137,6 @@ public:
 
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
-
 
 ## 📊 **2️⃣ DFS-Based Topological Sort (Recursive)**
 
@@ -246,12 +248,11 @@ It simulates recursion using an explicit stack, which helps avoid recursion limi
 
 ### 🆚 **Comparison of Approaches**
 
-| **Approach**                     | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                              | ⚠️ **Cons**                              |
-|------------------------------------|-------------------------|--------------------------|----------------------------------------------|-----------------------------------------------|
-| **Kahn’s Algorithm (BFS)**         | 🟢 O(V + E)                | 🟡 O(V + E)                 | Iterative, detects cycles, queue-based       | Less intuitive for some, more verbose         |
-| **DFS (Recursive)**                | 🟢 O(V + E)                | 🟡 O(V + E)                 | Simple and elegant, classic topological sort | Stack overflow risk on large/deep graphs      |
-| **DFS (Iterative using Stack)**    | 🟢 O(V + E)                | 🟡 O(V + E)                 | Avoids recursion limit                       | Slightly complex and harder to follow         |
-
+| **Approach**                    | ⏱️ **Time Complexity** | 🗂️ **Space Complexity** | ✅ **Pros**                                  | ⚠️ **Cons**                              |
+| ------------------------------- | ---------------------- | ----------------------- | -------------------------------------------- | ---------------------------------------- |
+| **Kahn’s Algorithm (BFS)**      | 🟢 O(V + E)            | 🟡 O(V + E)             | Iterative, detects cycles, queue-based       | Less intuitive for some, more verbose    |
+| **DFS (Recursive)**             | 🟢 O(V + E)            | 🟡 O(V + E)             | Simple and elegant, classic topological sort | Stack overflow risk on large/deep graphs |
+| **DFS (Iterative using Stack)** | 🟢 O(V + E)            | 🟡 O(V + E)             | Avoids recursion limit                       | Slightly complex and harder to follow    |
 
 ✅ **Best Choice?**
 
@@ -260,7 +261,6 @@ It simulates recursion using an explicit stack, which helps avoid recursion limi
 - Use **Iterative DFS** to avoid stack overflow in recursion-heavy cases.
 
 </details>
-
 
 ## **Code (Java)**
 
@@ -324,5 +324,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

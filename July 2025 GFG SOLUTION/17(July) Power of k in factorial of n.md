@@ -1,12 +1,21 @@
 ---
 title: "🧮 Power of k in factorial of n | GFG Solution 🔍"
-keywords🏷️: ["🧮 power of k", "🔍 prime factorization", "📍 legendre's formula", "📈 factorial", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🧮 power of k",
+    "🔍 prime factorization",
+    "📍 legendre's formula",
+    "📈 factorial",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to find the highest power of k that divides n! using prime factorization and Legendre's formula. 🚀"
 date: 📅 2025-07-17
 ---
 
-# *17. Power of k in factorial of n*
+# _17. Power of k in factorial of n_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/power-of-k-in-n-where-k-may-be-non-prime4206/1)
 
@@ -36,8 +45,8 @@ Explanation: 10! = 3628800, and 9² = 81 is the highest power of 9 that divides 
 
 ## **🔒 Constraints**
 
-* $1 \le n \le 10^5$
-* $2 \le k \le 10^5$
+- $1 \le n \le 10^5$
+- $2 \le k \le 10^5$
 
 ## **✅ My Approach**
 
@@ -46,27 +55,30 @@ The optimal approach uses **Prime Factorization** combined with **Legendre's For
 ### **Prime Factorization + Legendre's Formula**
 
 1. **Prime Factorization of k:**
-   * Decompose k into its prime factors: k = p₁^a₁ × p₂^a₂ × ... × pₘ^aₘ
-   * For each prime factor pᵢ with exponent aᵢ, we need to find how many times pᵢ appears in n!
+
+   - Decompose k into its prime factors: k = p₁^a₁ × p₂^a₂ × ... × pₘ^aₘ
+   - For each prime factor pᵢ with exponent aᵢ, we need to find how many times pᵢ appears in n!
 
 2. **Apply Legendre's Formula:**
-   * For each prime p, the highest power of p that divides n! is:
-   * `⌊n/p⌋ + ⌊n/p²⌋ + ⌊n/p³⌋ + ...`
-   * This counts how many multiples of p, p², p³, etc. are ≤ n
+
+   - For each prime p, the highest power of p that divides n! is:
+   - `⌊n/p⌋ + ⌊n/p²⌋ + ⌊n/p³⌋ + ...`
+   - This counts how many multiples of p, p², p³, etc. are ≤ n
 
 3. **Calculate Maximum Power:**
-   * For each prime factor pᵢ with exponent aᵢ in k:
-   * Find legendre_count(n, pᵢ) using Legendre's formula
-   * The contribution of this prime is `legendre_count(n, pᵢ) / aᵢ`
+
+   - For each prime factor pᵢ with exponent aᵢ in k:
+   - Find legendre_count(n, pᵢ) using Legendre's formula
+   - The contribution of this prime is `legendre_count(n, pᵢ) / aᵢ`
 
 4. **Find Minimum:**
-   * The answer is the minimum of all contributions from prime factors
-   * This ensures k^x divides n! for the maximum possible x
+   - The answer is the minimum of all contributions from prime factors
+   - This ensures k^x divides n! for the maximum possible x
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(√k + Σlog_p n), where the sum is over all prime factors p of k. We factorize k in O(√k) time and apply Legendre's formula for each prime factor in O(log_p n) time.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for variables, without storing the prime factors explicitly.
+- **Expected Time Complexity:** O(√k + Σlog_p n), where the sum is over all prime factors p of k. We factorize k in O(√k) time and apply Legendre's formula for each prime factor in O(log_p n) time.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use a constant amount of additional space for variables, without storing the prime factors explicitly.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -132,14 +144,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(√k + log_p n) for each prime p
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(√k + log_p n) for each prime p
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Eliminates vector storage overhead
-* Better cache performance with inline calculations
-* Reduced memory allocations
+- Eliminates vector storage overhead
+- Better cache performance with inline calculations
+- Reduced memory allocations
 
 ## 📊 **3️⃣ Optimized Sieve-Based Approach**
 
@@ -177,14 +189,14 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(√k + Σlog_p n) for primes p|k
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(√k + Σlog_p n) for primes p|k
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Early termination optimization
-* Long long prevents overflow in multiplication
-* Efficient prime factorization
+- Early termination optimization
+- Long long prevents overflow in multiplication
+- Efficient prime factorization
 
 ## 📊 **4️⃣ Bit Manipulation Optimization**
 
@@ -227,32 +239,32 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(√k + log n) optimized for powers of 2
-* **Auxiliary Space:** 💾 O(1) - constant space
+- **Time:** ⏱️ O(√k + log n) optimized for powers of 2
+- **Auxiliary Space:** 💾 O(1) - constant space
 
 ### ✅ **Why This Approach?**
 
-* Efficient handling of powers of 2
-* Reduced iterations for odd numbers only
-* Built-in functions for bit counting
+- Efficient handling of powers of 2
+- Reduced iterations for odd numbers only
+- Built-in functions for bit counting
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ---------------------------------- | ---------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Inline Factorization**       | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🚀 Minimal memory usage           | 💾 Repeated calculations              |
-| 🔺 **Iterative Optimization**     | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🔧 Better cache locality         | 💾 Similar performance               |
-| ⏰ **Sieve-Based Early Exit**     | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🚀 Early termination             | 🔄 Overflow handling needed          |
-| 📊 **Bit Manipulation**           | 🟢 O(√k + log n)       | 🟢 O(1)                 | ⚡ Optimized for powers of 2     | 🔧 Complex bit operations            |
+| 🚀 **Approach**               | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                  | ⚠️ **Cons**                 |
+| ----------------------------- | ---------------------- | ----------------------- | ---------------------------- | --------------------------- |
+| 🔍 **Inline Factorization**   | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🚀 Minimal memory usage      | 💾 Repeated calculations    |
+| 🔺 **Iterative Optimization** | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🔧 Better cache locality     | 💾 Similar performance      |
+| ⏰ **Sieve-Based Early Exit** | 🟢 O(√k + Σlog_p n)    | 🟢 O(1)                 | 🚀 Early termination         | 🔄 Overflow handling needed |
+| 📊 **Bit Manipulation**       | 🟢 O(√k + log n)       | 🟢 O(1)                 | ⚡ Optimized for powers of 2 | 🔧 Complex bit operations   |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**          | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------------- | ------------------------- |
-| ⚡ **General purpose**                               | 🥇 **Inline Factorization**          | ★★★★★                     |
-| 📊 **Large k values**                               | 🥈 **Sieve-Based Early Exit**        | ★★★★☆                     |
-| 🎯 **Powers of 2 heavy**                            | 🥉 **Bit Manipulation**              | ★★★★☆                     |
-| 🚀 **Competitive programming**                      | 🏅 **Iterative Optimization**        | ★★★★★                     |
+| 🎯 **Scenario**                | 🎖️ **Recommended Approach**   | 🔥 **Performance Rating** |
+| ------------------------------ | ----------------------------- | ------------------------- |
+| ⚡ **General purpose**         | 🥇 **Inline Factorization**   | ★★★★★                     |
+| 📊 **Large k values**          | 🥈 **Sieve-Based Early Exit** | ★★★★☆                     |
+| 🎯 **Powers of 2 heavy**       | 🥉 **Bit Manipulation**       | ★★★★☆                     |
+| 🚀 **Competitive programming** | 🏅 **Iterative Optimization** | ★★★★★                     |
 
 </details>
 
@@ -324,5 +336,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

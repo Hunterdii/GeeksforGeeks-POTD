@@ -1,4 +1,4 @@
-# *9. Largest Number in K Swaps*
+# _9. Largest Number in K Swaps_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1)
 
@@ -52,8 +52,8 @@ Swap 1↔4 → `4031`, then 0↔3 → `4301`.
 
 ## **🔒 Constraints**
 
-* `1 ≤ s.size() ≤ 15`
-* `1 ≤ k ≤ 7`
+- `1 ≤ s.size() ≤ 15`
+- `1 ≤ k ≤ 7`
 
 ## **✅ My Approach**
 
@@ -66,22 +66,24 @@ We explore swap operations recursively, always targeting the maximum digit avail
 1. Initialize global `ans = s`.
 2. Define recursive function `dfs(array a, int k, int i)`:
 
-   * If `k == 0` or `i == a.length`, return.
-   * Find `m = max(a[i..end])`.
-   * If `m != a[i]`, for each position `j` from end to `i` where `a[j] == m`:
+   - If `k == 0` or `i == a.length`, return.
+   - Find `m = max(a[i..end])`.
+   - If `m != a[i]`, for each position `j` from end to `i` where `a[j] == m`:
 
      1. Swap `a[i]` and `a[j]`, decrement `k` by 1.
      2. Update `ans = max(ans, string(a))`.
      3. Recurse `dfs(a, k, i+1)`.
      4. Undo swap and restore `k`.
-   * Else, recurse `dfs(a, k, i+1)` without using `k`.
+
+   - Else, recurse `dfs(a, k, i+1)` without using `k`.
+
 3. Convert `s` to array and call `dfs(a, k, 0)`.
 4. Return `ans`.
 
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** $O(N! / (N-K)!)$ in the worst case, where N = length of `s` and K = number of allowed swaps. We prune branches when no beneficial swap exists, greatly reducing the practical search space for small N ≤ 15 and K ≤ 7.
-* **Expected Auxiliary Space Complexity:** O(N + K), due to recursion depth up to `min(N, K)` and storing the character array of size N.
+- **Expected Time Complexity:** $O(N! / (N-K)!)$ in the worst case, where N = length of `s` and K = number of allowed swaps. We prune branches when no beneficial swap exists, greatly reducing the practical search space for small N ≤ 15 and K ≤ 7.
+- **Expected Auxiliary Space Complexity:** O(N + K), due to recursion depth up to `min(N, K)` and storing the character array of size N.
 
 ## **🧠 Code (C++)**
 
@@ -166,12 +168,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

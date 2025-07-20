@@ -1,12 +1,24 @@
 ---
 title: "🏀 Group Balls by Sequence | GFG Solution 🔍"
-keywords🏷️: ["🏀 group balls", "🔍 frequency map", "🔢 consecutive sequence", "🗂️ hash map", "📊 counting sort", "🚀 coding interview", "🧩 greedy", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🏀 group balls",
+    "🔍 frequency map",
+    "🔢 consecutive sequence",
+    "🗂️ hash map",
+    "📊 counting sort",
+    "🚀 coding interview",
+    "🧩 greedy",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Group Balls by Sequence problem: determine if balls can be grouped into consecutive sequences of length k using frequency mapping. 🚀"
 date: 📅 2025-06-20
 ---
 
-# *20. Group Balls by Sequence*
+# _20. Group Balls by Sequence_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/group-balls-by-sequence/1)
 
@@ -24,7 +36,7 @@ You are given an array `arr[]` of positive integers, where each element `arr[i]`
 ```cpp
 Input: arr[] = [10, 1, 2, 11], k = 2
 Output: true
-Explanation: The balls can be rearranged as [1, 2], [10, 11]. 
+Explanation: The balls can be rearranged as [1, 2], [10, 11].
 There are two groups of size 2. Each group has 2 consecutive numbers.
 ```
 
@@ -33,15 +45,15 @@ There are two groups of size 2. Each group has 2 consecutive numbers.
 ```cpp
 Input: arr[] = [7, 8, 9, 10, 11], k = 2
 Output: false
-Explanation: The balls cannot be rearranged into groups of 2, 
+Explanation: The balls cannot be rearranged into groups of 2,
 since there are 5 balls, and 5 balls cannot be divided into groups of 2.
 ```
 
 ## **🔒 Constraints**
 
-* $1 \le \text{arr.size()} \le 10^6$
-* $0 \le \text{arr}[i] \le 10^5$
-* $1 \le k \le 10^3$
+- $1 \le \text{arr.size()} \le 10^6$
+- $0 \le \text{arr}[i] \le 10^5$
+- $1 \le k \le 10^3$
 
 ## **✅ My Approach**
 
@@ -50,26 +62,29 @@ The optimal approach uses **Frequency Mapping** with **Greedy Algorithm**:
 ### **Frequency Map + Greedy Processing**
 
 1. **Check Divisibility:**
-   * First, verify if the total number of balls is divisible by `k`.
-   * If not, return `false` immediately.
+
+   - First, verify if the total number of balls is divisible by `k`.
+   - If not, return `false` immediately.
 
 2. **Build Frequency Map:**
-   * Use a `TreeMap` (or sorted map) to store frequency of each number.
-   * TreeMap ensures we process numbers in ascending order.
+
+   - Use a `TreeMap` (or sorted map) to store frequency of each number.
+   - TreeMap ensures we process numbers in ascending order.
 
 3. **Greedy Group Formation:**
-   * For each number with non-zero frequency, try to form consecutive groups.
-   * Starting from current number, check if next `k-1` consecutive numbers exist.
-   * Deduct the required frequency from all numbers in the sequence.
+
+   - For each number with non-zero frequency, try to form consecutive groups.
+   - Starting from current number, check if next `k-1` consecutive numbers exist.
+   - Deduct the required frequency from all numbers in the sequence.
 
 4. **Validation:**
-   * If any consecutive number has insufficient frequency, return `false`.
-   * Continue until all numbers are processed.
+   - If any consecutive number has insufficient frequency, return `false`.
+   - Continue until all numbers are processed.
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n log n + n * k), where n is the array size. Building the frequency map takes O(n log n) time, and processing each element with k consecutive checks takes O(n * k) time.
-* **Expected Auxiliary Space Complexity:** O(n), as we use a frequency map to store at most n distinct elements.
+- **Expected Time Complexity:** O(n log n + n _ k), where n is the array size. Building the frequency map takes O(n log n) time, and processing each element with k consecutive checks takes O(n _ k) time.
+- **Expected Auxiliary Space Complexity:** O(n), as we use a frequency map to store at most n distinct elements.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -110,7 +125,7 @@ public:
     bool validgroup(vector<int> &arr, int k) {
         map<int, int> freq;
         for (int val : arr) freq[val]++;
-        
+
         auto it = freq.begin();
         while (it != freq.end()) {
             if (it->second == 0) { ++it; continue; }
@@ -128,13 +143,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n * k + n log n)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n \* k + n log n)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Iterator-based traversal avoids redundant lookups.
-* Cleaner code structure with early exits.
+- Iterator-based traversal avoids redundant lookups.
+- Cleaner code structure with early exits.
 
 ## 📊 **3️⃣ Counting Sort Based Approach**
 
@@ -157,7 +172,7 @@ public:
             int cnt = freq[i];
             if (cnt == 0) continue;
             for (int j = 1; j < k; j++) {
-                if (i + j >= freq.size() || freq[i + j] < cnt) 
+                if (i + j >= freq.size() || freq[i + j] < cnt)
                     return false;
                 freq[i + j] -= cnt;
             }
@@ -169,13 +184,13 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n + range * k)
-* **Auxiliary Space:** 💾 O(range)
+- **Time:** ⏱️ O(n + range \* k)
+- **Auxiliary Space:** 💾 O(range)
 
 ### ✅ **Why This Approach?**
 
-* O(1) array access instead of O(log n) map access.
-* Better performance for bounded integer ranges.
+- O(1) array access instead of O(log n) map access.
+- Better performance for bounded integer ranges.
 
 ## 📊 **4️⃣ Greedy with Sliding Window**
 
@@ -208,31 +223,31 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n log n + n * k)
-* **Auxiliary Space:** 💾 O(n)
+- **Time:** ⏱️ O(n log n + n \* k)
+- **Auxiliary Space:** 💾 O(n)
 
 ### ✅ **Why This Approach?**
 
-* Unordered_map for O(1) average access time.
-* Sorted processing ensures optimal grouping.
+- Unordered_map for O(1) average access time.
+- Sorted processing ensures optimal grouping.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**           | ⏱️ **Time Complexity**           | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
-| ------------------------- | -------------------------------- | ----------------------- | --------------------------------- | ------------------------------------- |
-| 🔍 **Map Ultra-Optimized**| 🟢 O(n log n + n * k)            | 🟢 O(n)                 | ⚡ Cleanest, most readable         | 🧮 Map overhead                      |
-| 🔄 **TreeMap Iterator**   | 🟢 O(n log n + n * k)            | 🟢 O(n)                 | 🔧 Iterator efficiency             | 🐢 Still map-based                   |
-| 🔺 **Counting Sort**      | 🟢 O(n + range * k)              | 🟢 O(range)             | 🚀 O(1) access, fastest for bounded| 🧮 Only works for bounded ranges    |
-| 📊 **Greedy Sliding**     | 🟢 O(n log n + n * k)            | 🟢 O(n)                 | 🏎️ Unordered_map speed            | 💾 Extra sorting step               |
+| 🚀 **Approach**            | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                         | ⚠️ **Cons**                      |
+| -------------------------- | ---------------------- | ----------------------- | ----------------------------------- | -------------------------------- |
+| 🔍 **Map Ultra-Optimized** | 🟢 O(n log n + n \* k) | 🟢 O(n)                 | ⚡ Cleanest, most readable          | 🧮 Map overhead                  |
+| 🔄 **TreeMap Iterator**    | 🟢 O(n log n + n \* k) | 🟢 O(n)                 | 🔧 Iterator efficiency              | 🐢 Still map-based               |
+| 🔺 **Counting Sort**       | 🟢 O(n + range \* k)   | 🟢 O(range)             | 🚀 O(1) access, fastest for bounded | 🧮 Only works for bounded ranges |
+| 📊 **Greedy Sliding**      | 🟢 O(n log n + n \* k) | 🟢 O(n)                 | 🏎️ Unordered_map speed              | 💾 Extra sorting step            |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 **Scenario**                                    | 🎖️ **Recommended Approach**    | 🔥 **Performance Rating** |
-| -------------------------------------------------- | ------------------------------- | ------------------------- |
-| ⚡ General case, clean code                        | 🥇 **Map Ultra-Optimized**     | ★★★★★                     |
-| 🔧 Bounded integer range (≤ 10^5)                 | 🥈 **Counting Sort**            | ★★★★★                     |
-| 📊 Large datasets, hash-friendly                  | 🥉 **Greedy Sliding**           | ★★★★☆                     |
-| 🏎️ Iterator-heavy processing                      | 🏅 **TreeMap Iterator**         | ★★★☆☆                     |
+| 🎯 **Scenario**                   | 🎖️ **Recommended Approach** | 🔥 **Performance Rating** |
+| --------------------------------- | --------------------------- | ------------------------- |
+| ⚡ General case, clean code       | 🥇 **Map Ultra-Optimized**  | ★★★★★                     |
+| 🔧 Bounded integer range (≤ 10^5) | 🥈 **Counting Sort**        | ★★★★★                     |
+| 📊 Large datasets, hash-friendly  | 🥉 **Greedy Sliding**       | ★★★★☆                     |
+| 🏎️ Iterator-heavy processing      | 🏅 **TreeMap Iterator**     | ★★★☆☆                     |
 
 </details>
 
@@ -285,5 +300,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

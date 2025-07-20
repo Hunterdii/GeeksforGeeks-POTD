@@ -1,4 +1,4 @@
-# *27. Multiply Two Strings*
+# _27. Multiply Two Strings_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/multiply-two-strings/1)
 
@@ -14,50 +14,56 @@ You don't need to explicitly show the '+' sign for positive numbers.
 ### **Example 1:**
 
 #### **Input:**
+
 `s1 = "0033", s2 = "2"`
 
 #### **Output:**
+
 `66`
 
 #### **Explanation:**
-After removing leading zeros, we have 33 × 2 = 66.
 
+After removing leading zeros, we have 33 × 2 = 66.
 
 ### **Example 2:**
 
 #### **Input:**
+
 `s1 = "11", s2 = "23"`
 
 #### **Output:**
+
 `253`
 
 #### **Explanation:**
-11 × 23 = 253.
 
+11 × 23 = 253.
 
 ### **Example 3:**
 
 #### **Input:**
+
 `s1 = "123", s2 = "0"`
 
 #### **Output:**
+
 `0`
 
 #### **Explanation:**
-Any number multiplied by 0 results in 0.
 
+Any number multiplied by 0 results in 0.
 
 ## **🔒 Constraints**
 
-- $\( 1 \leq \text{s1.size()} \leq 10^3 \)$  
-- $\( 1 \leq \text{s2.size()} \leq 10^3 \)$  
-
+- $\( 1 \leq \text{s1.size()} \leq 10^3 \)$
+- $\( 1 \leq \text{s2.size()} \leq 10^3 \)$
 
 ## **✅ My Approach:**
 
 ### **Manual Digit-by-Digit Multiplication**
 
 ### **Algorithm Steps:**
+
 Since direct integer conversion is not allowed, we simulate multiplication the way we do it by hand:
 
 1. Determine the overall **sign** of the result based on the signs of `s1` and `s2`.
@@ -68,13 +74,10 @@ Since direct integer conversion is not allowed, we simulate multiplication the w
 6. Construct the final answer string from the result array.
 7. Add a negative sign if required.
 
-
-
 ## **🧮 Time and Auxiliary Space Complexity**
 
 - **Expected Time Complexity:** O(n × m), where `n` and `m` are the lengths of `s1` and `s2`, since we multiply every digit of one number with every digit of the other.
 - **Expected Auxiliary Space Complexity:** O(n + m), for storing the result of the multiplication as an array of digits.
-
 
 ## **🧠 Code (C++)**
 
@@ -128,7 +131,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -157,12 +159,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

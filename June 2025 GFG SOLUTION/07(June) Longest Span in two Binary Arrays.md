@@ -1,12 +1,21 @@
 ---
 title: "🔗 Longest Span in two Binary Arrays | GFG Solution 🧮"
-keywords🏷️: ["🔢 longest span", "⚖️ equal sum subarray", "🧮 binary arrays", "📊 prefix sums", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+keywords🏷️:
+  [
+    "🔢 longest span",
+    "⚖️ equal sum subarray",
+    "🧮 binary arrays",
+    "📊 prefix sums",
+    "📘 GFG",
+    "🏁 competitive programming",
+    "📚 DSA",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to find the longest span where two binary arrays have equal sum in the span. 🚀"
 date: 📅 2025-06-07
 ---
 
-# *07. Longest Span in two Binary Arrays*
+# _07. Longest Span in two Binary Arrays_
 
 The problem can be found here: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/longest-span-with-same-sum-in-two-binary-arrays5142/1)
 
@@ -34,12 +43,12 @@ Input: a1 = [0, 1, 0, 1, 1, 1, 1], a2 = [1, 1, 1, 1, 1, 0, 1]
 Output: 6
 Explanation: The longest span with same sum is from index 1 to 6.
 
-````
+```
 
 ## **🔒 Constraints**
 
-* $1 \leq \text{a1.size()} = \text{a2.size()} \leq 10^6$
-* $a1[i], a2[i] \in \{0,1\}$
+- $1 \leq \text{a1.size()} = \text{a2.size()} \leq 10^6$
+- $a1[i], a2[i] \in \{0,1\}$
 
 ## **✅ My Approach**
 
@@ -47,7 +56,7 @@ Explanation: The longest span with same sum is from index 1 to 6.
 
 ### **💡 Idea:**
 
-  If the sums of `a1` and `a2` over some subarray are equal, then the difference of their prefix sums at two indices will be the same.
+If the sums of `a1` and `a2` over some subarray are equal, then the difference of their prefix sums at two indices will be the same.
 
 - **Detailed Explanation:**
 
@@ -70,13 +79,10 @@ Explanation: The longest span with same sum is from index 1 to 6.
   - Else if `diff` seen before at index `prevIndex`, update `maxLen = max(maxLen, i - prevIndex)`.
   - Else store `diff` with current index in `diffMap`.
 
-
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), as we traverse arrays once and perform O(1) average lookups in the hash map.
-* **Expected Auxiliary Space Complexity:** O(n), for storing the hash map of prefix sum differences.
-
-
+- **Expected Time Complexity:** O(n), as we traverse arrays once and perform O(1) average lookups in the hash map.
+- **Expected Auxiliary Space Complexity:** O(n), for storing the hash map of prefix sum differences.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -103,7 +109,6 @@ class Solution {
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
 
-
 ## 📊 **2️⃣ Difference Array + Zero-Sum Subarray**
 
 Transform the problem into finding the **longest subarray with sum 0** using a difference array.
@@ -113,9 +118,9 @@ Transform the problem into finding the **longest subarray with sum 0** using a d
 1. Construct a new array `diff[i] = arr1[i] - arr2[i]`.
 2. Find the longest subarray in `diff` whose sum is zero:
 
-   * Use a `prefix_sum` and store the **first index** where each sum appears in a `hash map`.
-   * If at any point, `prefix_sum == 0`, update result to `i + 1`.
-   * If `prefix_sum` seen before, `res = max(res, i - first_index[prefix_sum])`.
+   - Use a `prefix_sum` and store the **first index** where each sum appears in a `hash map`.
+   - If at any point, `prefix_sum == 0`, update result to `i + 1`.
+   - If `prefix_sum` seen before, `res = max(res, i - first_index[prefix_sum])`.
 
 ### 📌 Key Insight:
 
@@ -149,23 +154,21 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(n) — to store first index of each prefix sum.
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(n) — to store first index of each prefix sum.
 
 ### ✅ **Why This Approach?**
 
-* Transforms the original problem into a **classic subarray sum problem**.
-* More readable than prefix diff directly on sums.
-* Leverages prefix tricks for optimal performance.
-
-
+- Transforms the original problem into a **classic subarray sum problem**.
+- More readable than prefix diff directly on sums.
+- Leverages prefix tricks for optimal performance.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                       | ⏱️ **Time** | 💾 **Space** | ✅ **Pros**                          | ⚠️ **Cons**                |
+| 🚀 **Approach**                       | ⏱️ **Time** | 💾 **Space** | ✅ **Pros**                         | ⚠️ **Cons**                |
 | ------------------------------------- | ----------- | ------------ | ----------------------------------- | -------------------------- |
-| 🔄 **Prefix Sum + HashMap** | 🟢 O(n)        | 🟢 O(n)         | Most intuitive and efficient        | —                          |
-| ✂️ **Diff Array + Zero-Sum Subarray** | 🟢 O(n)        | 🟡 O(n)         | Turns into classic zero-sum problem | Slight extra preprocessing |
+| 🔄 **Prefix Sum + HashMap**           | 🟢 O(n)     | 🟢 O(n)      | Most intuitive and efficient        | —                          |
+| ✂️ **Diff Array + Zero-Sum Subarray** | 🟢 O(n)     | 🟡 O(n)      | Turns into classic zero-sum problem | Slight extra preprocessing |
 
 ### 🏆 **Best Choice by Scenario**
 
@@ -220,7 +223,6 @@ class Solution:
         return res
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -234,5 +236,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>

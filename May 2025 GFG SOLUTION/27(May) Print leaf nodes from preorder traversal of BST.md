@@ -1,4 +1,4 @@
-# *27. Print Leaf Nodes from Preorder Traversal of BST*
+# _27. Print Leaf Nodes from Preorder Traversal of BST_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/print-leaf-nodes-from-preorder-traversal-of-bst2657/1)
 
@@ -8,17 +8,16 @@ Given the preorder traversal of a Binary Search Tree (BST), print all the leaf n
 
 ### ❗Note:
 
-* It is guaranteed that the input preorder is of a **valid BST**.
-* The output order must follow the **order of the leaf nodes as they appear during preorder traversal**.
-
+- It is guaranteed that the input preorder is of a **valid BST**.
+- The output order must follow the **order of the leaf nodes as they appear during preorder traversal**.
 
 ## **📘 Examples**
 
 ### **Example 1:**
 
-* **Input:** `preorder = [5, 2, 10]`
-* **Output:** `[2, 10]`
-* **Explanation:**
+- **Input:** `preorder = [5, 2, 10]`
+- **Output:** `[2, 10]`
+- **Explanation:**
   The BST is:
 
   ```
@@ -29,15 +28,13 @@ Given the preorder traversal of a Binary Search Tree (BST), print all the leaf n
 
 <img src="https://github.com/user-attachments/assets/511c10ef-05f4-4337-b0cf-37f11a28a996" width="22%">
 
-
-
-  Leaf nodes are `2` and `10`.
+Leaf nodes are `2` and `10`.
 
 ### **Example 2:**
 
-* **Input:** `preorder = [4, 2, 1, 3, 6, 5]`
-* **Output:** `[1, 3, 5]`
-* **Explanation:**
+- **Input:** `preorder = [4, 2, 1, 3, 6, 5]`
+- **Output:** `[1, 3, 5]`
+- **Explanation:**
   The BST is:
 
   ```
@@ -50,14 +47,13 @@ Given the preorder traversal of a Binary Search Tree (BST), print all the leaf n
 
 <img src="https://github.com/user-attachments/assets/e8338cd6-3fdc-4b37-b45e-eaeb869e37d8" width="22%">
 
-
-  Leaf nodes are `1, 3, 5`.
+Leaf nodes are `1, 3, 5`.
 
 ### **Example 3:**
 
-* **Input:** `preorder = [8, 2, 5, 10, 12]`
-* **Output:** `[5, 12]`
-* **Explanation:**
+- **Input:** `preorder = [8, 2, 5, 10, 12]`
+- **Output:** `[5, 12]`
+- **Explanation:**
   The BST is:
 
   ```
@@ -70,14 +66,12 @@ Given the preorder traversal of a Binary Search Tree (BST), print all the leaf n
 
 <img src="https://github.com/user-attachments/assets/a06492e0-dc3b-4fc0-b791-daa95774fc54" width="22%">
 
-  Leaf nodes are `5` and `12`.
-
+Leaf nodes are `5` and `12`.
 
 ## **🔒 Constraints**
 
-* $`1 ≤ preorder.size() ≤ 10^3`$
-* $`1 ≤ preorder[i] ≤ 10^3`$
-
+- $`1 ≤ preorder.size() ≤ 10^3`$
+- $`1 ≤ preorder[i] ≤ 10^3`$
 
 ## **✅ My Approach**
 
@@ -90,21 +84,20 @@ We can determine leaf nodes directly by observing when a node’s value is “po
 1. Initialize an empty stack `st` and an empty result list `leafs`.
 2. Iterate index `i` from `0` to `preorder.size() - 2`:
 
-   * Let `cur = preorder[i]`, `nxt = preorder[i+1]`.
-   * If `cur > nxt`, push `cur` onto `st`.
-   * Else (i.e., `nxt > cur`):
+   - Let `cur = preorder[i]`, `nxt = preorder[i+1]`.
+   - If `cur > nxt`, push `cur` onto `st`.
+   - Else (i.e., `nxt > cur`):
 
      1. While `!st.empty()` and `nxt > st.top()`, pop `st` and mark a flag.
      2. If flag was set (we popped at least once), **record** `cur` as a leaf.
+
 3. After loop, **always** append the last element `preorder.back()` as a leaf.
 4. Return `leafs`.
 
-
 ## **🧮 Time and Auxiliary Space Complexity**
 
-* **Expected Time Complexity:** O(n), as we scan the array once and each element is pushed and popped at most once.
-* **Expected Auxiliary Space Complexity:** O(n), as in the worst case (strictly decreasing preorder) all elements go into the stack.
-
+- **Expected Time Complexity:** O(n), as we scan the array once and each element is pushed and popped at most once.
+- **Expected Auxiliary Space Complexity:** O(n), as in the worst case (strictly decreasing preorder) all elements go into the stack.
 
 ## 🧠 **Code (C++)**
 
@@ -129,21 +122,21 @@ class Solution {
 <details>
 <summary><h2 align="center">⚡ Alternative Approaches</h2></summary>
 
-
 ## 📊 **2️⃣ Recursive BST Reconstruction + DFS**
 
 ### **Algorithm Steps:**
 
 1. **Reconstruct BST** from `preorder` using a helper `build(preorder, idx, bound)`:
 
-   * If `idx == n` or `preorder[idx] > bound`, return `nullptr`.
-   * Create node `u` with `preorder[idx++]`.
-   * `u->left  = build(preorder, idx, u->val);`
-   * `u->right = build(preorder, idx, bound);`
+   - If `idx == n` or `preorder[idx] > bound`, return `nullptr`.
+   - Create node `u` with `preorder[idx++]`.
+   - `u->left  = build(preorder, idx, u->val);`
+   - `u->right = build(preorder, idx, bound);`
+
 2. **DFS** on this tree:
 
-   * If `u` has no children, record `u->val` in `leafs`.
-   * Recurse on `u->left` then `u->right`.
+   - If `u` has no children, record `u->val` in `leafs`.
+   - Recurse on `u->left` then `u->right`.
 
 ```cpp
 class Solution {
@@ -171,14 +164,13 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* 🏗️ Builds the exact BST structure for clarity.
-* 🔍 Separates tree construction from leaf-collection.
+- 🏗️ Builds the exact BST structure for clarity.
+- 🔍 Separates tree construction from leaf-collection.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🟢 O(n) — each element inserted once, each visited once in DFS.
-* **Auxiliary Space:** 🔸 O(n) — recursion stack + newly allocated nodes.
-
+- **Time:** 🟢 O(n) — each element inserted once, each visited once in DFS.
+- **Auxiliary Space:** 🔸 O(n) — recursion stack + newly allocated nodes.
 
 ## 📊 **3️⃣ Divide & Conquer on Array**
 
@@ -210,35 +202,31 @@ class Solution {
 
 ### ✅ **Why This Approach?**
 
-* 📏 Works purely on the array, no extra DS beyond call stack.
-* 🎯 Directly identifies leaves by subarray bounds.
+- 📏 Works purely on the array, no extra DS beyond call stack.
+- 🎯 Directly identifies leaves by subarray bounds.
 
 #### 📝 **Complexity Analysis:**
 
-* **Time:** 🔸 O(n²) worst-case (e.g., sorted preorder).
-* **Auxiliary Space:** 🔸 O(n) recursion depth.
-
-
+- **Time:** 🔸 O(n²) worst-case (e.g., sorted preorder).
+- **Auxiliary Space:** 🔸 O(n) recursion depth.
 
 ## 🆚 **Comparison of Approaches**
 
-| **Approach**                 | ⏱️ **Time**    | 🗂️ **Space** | ✅ **Pros**                           | ⚠️ **Cons**                     |
-| ---------------------------- | -------------- | ------------- | ------------------------------------ | ------------------------------- |
-| ▶️ Stack Sweep               | 🟢 O(n)        | 🟢 O(n)       | Single pass, no tree nodes allocated | Uses auxiliary stack            |
-| 🔁 Recursive BST + DFS       | 🟢 O(n)        | 🟢 O(n)       | Clean separation, true BST structure | Allocates nodes, recursion cost |
-| 🪜 Divide & Conquer on Array | 🔸 O(n²) worst | 🟢 O(n)       | No extra DS, direct on array         | Quadratic on pathological input |
-
+| **Approach**                 | ⏱️ **Time**    | 🗂️ **Space** | ✅ **Pros**                          | ⚠️ **Cons**                     |
+| ---------------------------- | -------------- | ------------ | ------------------------------------ | ------------------------------- |
+| ▶️ Stack Sweep               | 🟢 O(n)        | 🟢 O(n)      | Single pass, no tree nodes allocated | Uses auxiliary stack            |
+| 🔁 Recursive BST + DFS       | 🟢 O(n)        | 🟢 O(n)      | Clean separation, true BST structure | Allocates nodes, recursion cost |
+| 🪜 Divide & Conquer on Array | 🔸 O(n²) worst | 🟢 O(n)      | No extra DS, direct on array         | Quadratic on pathological input |
 
 ### ✅ **Best Choice by Scenario**
 
-| **Scenario**                             | **Recommended**          |
-| ---------------------------------------- | ------------------------ |
-| 🏆 Fastest and simplest                  | 🥇 Stack Sweep           |
-| 📚 Need explicit BST structure           | 🥈 Recursive BST + DFS   |
-| 💡 Working purely on array without nodes | 🥉 Divide & Conquer      |
+| **Scenario**                             | **Recommended**        |
+| ---------------------------------------- | ---------------------- |
+| 🏆 Fastest and simplest                  | 🥇 Stack Sweep         |
+| 📚 Need explicit BST structure           | 🥈 Recursive BST + DFS |
+| 💡 Working purely on array without nodes | 🥉 Divide & Conquer    |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -263,7 +251,6 @@ class Solution {
     }
 }
 ```
-
 
 ## **🐍 Code (Python)**
 
@@ -291,12 +278,12 @@ For discussions, questions, or doubts related to this solution, feel free to con
 
 ⭐ **If you find this helpful, please give this repository a star!** ⭐
 
---- 
+---
 
 <div align="center">
   <h3><b>📍Visitor Count</b></h3>
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" />
 </p>

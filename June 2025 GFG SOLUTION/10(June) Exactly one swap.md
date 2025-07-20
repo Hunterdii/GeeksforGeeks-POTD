@@ -1,11 +1,20 @@
 ---
 title: "🔁 Exactly One Swap | GFG Solution 🎯"
-keywords🏷️: ["🔁 one swap", "🧠 string permutations", "⚡ efficient counting", "📘 GFG", "📚 DSA", "💻 competitive programming"]
+keywords🏷️:
+  [
+    "🔁 one swap",
+    "🧠 string permutations",
+    "⚡ efficient counting",
+    "📘 GFG",
+    "📚 DSA",
+    "💻 competitive programming",
+  ]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Exactly One Swap problem: count distinct strings after one swap. Uses hashing & counting. 🚀"
 date: 📅 2025-06-10
 ---
-# *10. Exactly One Swap*
+
+# _10. Exactly One Swap_
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/exactly-one-swap--170637/1)
 
@@ -34,8 +43,8 @@ Explanation: Only one distinct string is possible after any swap ("aaaa").
 
 ## **🔒 Constraints**
 
-* **$2 ≤ s.size() ≤ 10^4$**
-* `s` consists of lowercase English letters.
+- **$2 ≤ s.size() ≤ 10^4$**
+- `s` consists of lowercase English letters.
 
 ## **✅ My Approach**
 
@@ -44,11 +53,12 @@ Explanation: Only one distinct string is possible after any swap ("aaaa").
 1. Maintain a frequency array `m[26]` to track how many times each lowercase character has appeared.
 2. For each character at index `i` in the string:
 
-   * Add `i - m[s[i] - 'a']` to the result, which effectively counts how many earlier characters are *not equal* to the current character.
-   * Increment the frequency of `s[i]`.
+   - Add `i - m[s[i] - 'a']` to the result, which effectively counts how many earlier characters are _not equal_ to the current character.
+   - Increment the frequency of `s[i]`.
+
 3. After the loop, check if any character appears more than once:
 
-   * If so, increment the result once more to reflect the presence of a duplicate.
+   - If so, increment the result once more to reflect the presence of a duplicate.
 
 ### ⚙️ Algorithm Steps:
 
@@ -56,20 +66,19 @@ Explanation: Only one distinct string is possible after any swap ("aaaa").
 2. Initialize `ans = 0`.
 3. Loop through the string:
 
-   * For each character `s[i]`, add `i - m[s[i]-'a']` to `ans`.
-   * Increment `m[s[i]-'a']` by 1.
+   - For each character `s[i]`, add `i - m[s[i]-'a']` to `ans`.
+   - Increment `m[s[i]-'a']` by 1.
+
 4. After the loop, scan the frequency array:
 
-   * If any value > 1, increment `ans` by 1 and break.
+   - If any value > 1, increment `ans` by 1 and break.
+
 5. Return `ans`.
-
-
 
 ## 📝 Time and Auxiliary Space Complexity
 
-* **Expected Time Complexity:** O(n), as we iterate through the string once while maintaining a constant-size frequency array.
-* **Expected Auxiliary Space Complexity:** O(1), as we only use an array of fixed size 26.
-
+- **Expected Time Complexity:** O(n), as we iterate through the string once while maintaining a constant-size frequency array.
+- **Expected Auxiliary Space Complexity:** O(1), as we only use an array of fixed size 26.
 
 ## **🧑‍💻 Code (C++)**
 
@@ -91,7 +100,6 @@ public:
 
 <details>
 <summary><b>⚡ View Alternative Approaches with Code and Analysis</b></summary>
-
 
 ## 📊 **2️⃣ Hash Map + Count Difference Pairs**
 
@@ -119,14 +127,13 @@ class Solution {
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Clean and constant-space method.
-* Slightly more compact than vector + loop alternative.
-
+- Clean and constant-space method.
+- Slightly more compact than vector + loop alternative.
 
 ## 📊 **3️⃣ Prefix Count + Single Pass**
 
@@ -152,33 +159,30 @@ public:
 
 ### 📝 **Complexity Analysis:**
 
-* **Time:** ⏱️ O(n)
-* **Auxiliary Space:** 💾 O(1)
+- **Time:** ⏱️ O(n)
+- **Auxiliary Space:** 💾 O(1)
 
 ### ✅ **Why This Approach?**
 
-* Compact and expressive using STL utilities like `any_of`.
-* Perfectly suited for interview or contest environments.
-
+- Compact and expressive using STL utilities like `any_of`.
+- Perfectly suited for interview or contest environments.
 
 ## 🆚 **🔍 Comparison of Approaches**
 
-| 🚀 **Approach**                  | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**               | ⚠️ **Cons**                     |
+| 🚀 **Approach**                  | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**              | ⚠️ **Cons**                     |
 | -------------------------------- | ---------------------- | ----------------------- | ------------------------ | ------------------------------- |
-| ⚡ **Last‐Occurrence Vector**     | 🟢 O(n)                | 🟢 O(1)                 | Clean and fast           | Minor overhead with `vector`    |
+| ⚡ **Last‐Occurrence Vector**    | 🟢 O(n)                | 🟢 O(1)                 | Clean and fast           | Minor overhead with `vector`    |
 | 🧠 **Hash Map Difference Pairs** | 🟢 O(n)                | 🟢 O(1)                 | Short, efficient         | Less expressive error checking  |
-| 🚀 **Prefix Count + any\_of**    | 🟢 O(n)                | 🟢 O(1)                 | Shortest and STL-powered | Slightly less readable for some |
+| 🚀 **Prefix Count + any_of**     | 🟢 O(n)                | 🟢 O(1)                 | Shortest and STL-powered | Slightly less readable for some |
 
 ### 🏆 **Best Choice Recommendation**
 
-| 🎯 Scenario                 | 🎖️ Recommended Approach        |
-| --------------------------- | ------------------------------- |
-| ⚡ Want fastest and cleanest | 🥇 Prefix Count + any\_of       |
-| 🧵 Prefer simple loop logic | 🥈 Vector/Hash Difference Logic |
-
+| 🎯 Scenario                  | 🎖️ Recommended Approach         |
+| ---------------------------- | ------------------------------- |
+| ⚡ Want fastest and cleanest | 🥇 Prefix Count + any_of        |
+| 🧵 Prefer simple loop logic  | 🥈 Vector/Hash Difference Logic |
 
 </details>
-
 
 ## **🧑‍💻 Code (Java)**
 
@@ -197,7 +201,6 @@ class Solution {
 }
 ```
 
-
 ## **🐍 Code (Python)**
 
 ```python
@@ -213,7 +216,6 @@ class Solution:
         return ans
 ```
 
-
 ## 🧠 Contribution and Support
 
 For discussions, questions, or doubts related to this solution, feel free to connect on LinkedIn: [📬 Any Questions?](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Let’s make this learning journey more collaborative!
@@ -227,5 +229,5 @@ For discussions, questions, or doubts related to this solution, feel free to con
 </div>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Hunterdii/count.svg" alt="Visitor counter" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor counter" />
 </p>
