@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 17: Power of k in factorial of n](17(July)%20Power%20of%20k%20in%20factorial%20of%20n.md)📐♾️📝
   - [Day 18: LCM Triplet](18(July)%20LCM%20Triplet.md)🧮📊📐
   - [Day 19: Count Unique Vowel Strings](19(July)%20Count%20Unique%20Vowel%20Strings.md)🗣️🔄🔤
+  - [Day 20: Count Numbers Containing Specific Digits](20(July)%20Count%20Numbers%20Containing%20Specific%20Digits.md)🔢📍📈
 
 
 
@@ -75,9 +76,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 19(19 July) :* Count Unique Vowel Strings 
 
-<!--*Day 20(20 July) :* Group Balls by Sequence 
+*Day 20(20 July) :* Count Numbers Containing Specific Digits 
 
-*Day 21(21 July) :* Police and Thieves
+<!--*Day 21(21 July) :* Police and Thieves
 
 *Day 22(22 July) :* Largest Divisible Subset
 
