@@ -76,7 +76,7 @@ The optimal approach uses the **Möbius Function** with **Inclusion-Exclusion Pr
 * **Expected Time Complexity:** O(n log n), where n is the maximum element in array. The first term is for sieve-based Möbius computation, and the second term is for divisor counting across all elements.
 * **Expected Auxiliary Space Complexity:** O(n), where n is the maximum element. We need arrays for frequency counting, divisor sums, Möbius function values, and visited markers during sieve computation.
 
-# **🧑‍💻 Code (C++)**
+## **🧑‍💻 Code (C++)**
 
 ```cpp
 class Solution {
