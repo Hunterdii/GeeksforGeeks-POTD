@@ -617,13 +617,15 @@ For any inquiries or feedback, please contact. Happy Contributing❤
 
  <!-- ## 🌍 Star Geographical Distribution-->
   <p>This map shows the global distribution of stars for the repository. Click to explore more details.</p>
-  <a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=769514979&activity=stars" target="_blank" style="display: block;">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=dark" width="1100" height="auto">
-      <img alt="Star Geographical Distribution of GeeksforGeeks-POTD" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=light" width="1100" height="auto">
-    </picture>
-  </a>
-  
+  <!-- Copy-paste in your Readme.md file -->
+<a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map?repo_id=769514979&activity=stars" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=dark" width="721" height="auto">
+    <img alt="Star Geographical Distribution of Hunterdii/GeeksforGeeks-POTD" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?repo_id=769514979&activity=stars&image_size=auto&color_scheme=light" width="721" height="auto">
+  </picture>
+</a>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
   <p><img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:22px; color: #FFD700" alt="Star GIF"> See the geographical spread of stars on the map above! <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:22px; color: #FFD700" alt="Star GIF"></p>
   
 </div>
