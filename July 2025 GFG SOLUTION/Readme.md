@@ -26,7 +26,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 18: LCM Triplet](18(July)%20LCM%20Triplet.md)🧮📊📐
   - [Day 19: Count Unique Vowel Strings](19(July)%20Count%20Unique%20Vowel%20Strings.md)🗣️🔄🔤
   - [Day 20: Count Numbers Containing Specific Digits](20(July)%20Count%20Numbers%20Containing%20Specific%20Digits.md)🔢📍📈
-  - [Day 21: Count the Coprimes](21(July)%20Count%20the%20Coprimes.md)🧮🟰📈	
+  - [Day 21: Count the Coprimes](21(July)%20Count%20the%20Coprimes.md)🧮🟰📈
+  - [Day 22: Smallest Positive Missing](22(July)%20Smallest%20Positive%20Missing.md)🧩🔄📍	
 
 
 
@@ -81,9 +82,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 21(21 July) :* Count the Coprimes
 
-<!--*Day 22(22 July) :* Largest Divisible Subset
+*Day 22(22 July) :* Smallest Positive Missing
 
-*Day 23(23 July) :* Minimum sum
+<!--*Day 23(23 July) :* Minimum sum
 
 *Day 24(24 July) :* Lexicographically Largest String After K Deletions
 
