@@ -28,7 +28,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 20: Count Numbers Containing Specific Digits](20(July)%20Count%20Numbers%20Containing%20Specific%20Digits.md)🔢📍📈
   - [Day 21: Count the Coprimes](21(July)%20Count%20the%20Coprimes.md)🧮🟰📈
   - [Day 22: Smallest Positive Missing](22(July)%20Smallest%20Positive%20Missing.md)🧩🔄📍
-  - [Day 23: Sum of Subarrays](23(July)%20Sum%20of%20Subarrays.md)💡📐🧩	
+  - [Day 23: Sum of Subarrays](23(July)%20Sum%20of%20Subarrays.md)💡📐🧩
+  - [Day 24: Last Moment Before All Ants Fall Out](24(July)%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out.md)🐜🎯📐
 
 
 
@@ -87,9 +88,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 23(23 July) :* Sum of Subarrays 
 
-<!--*Day 24(24 July) :* Lexicographically Largest String After K Deletions
+*Day 24(24 July) :* Last Moment Before All Ants Fall Out 
 
-*Day 25(25 July) :* Check if frequencies can be equal 
+<!--*Day 25(25 July) :* Check if frequencies can be equal 
 
 *Day 26(26 July) :* Game with String
 
