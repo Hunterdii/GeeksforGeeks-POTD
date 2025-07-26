@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 23: Sum of Subarrays](23(July)%20Sum%20of%20Subarrays.md)💡📐🧩
   - [Day 24: Last Moment Before All Ants Fall Out](24(July)%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out.md)🐜🎯📐
   - [Day 25: Max Circular Subarray Sum](25(July)%20Max%20Circular%20Subarray%20Sum.md)📈🔄🔑
+  - [Day 26: Majority Element II](26(July)%20Majority%20Element%20II.md)🔍🗳️🔢
 
 
 
@@ -93,9 +94,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 25(25 July) :* Max Circular Subarray Sum 
 
-<!--*Day 26(26 July) :* Game with String
+*Day 26(26 July) :* Majority Element II 
 
-*Day 27(27 July) :* Mobile numeric keypad
+<!--*Day 27(27 July) :* Mobile numeric keypad
 
 *Day 28(28 July) :* Counting elements in two arrays
 
