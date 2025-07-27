@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 24: Last Moment Before All Ants Fall Out](24(July)%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out.md)🐜🎯📐
   - [Day 25: Max Circular Subarray Sum](25(July)%20Max%20Circular%20Subarray%20Sum.md)📈🔄🔑
   - [Day 26: Majority Element II](26(July)%20Majority%20Element%20II.md)🔍🗳️🔢
+  - [Day 27: Set Matrix Zeros](27(July)%20Set%20Matrix%20Zeros.md)🧩⚙️🧮	
 
 
 
@@ -96,9 +97,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 26(26 July) :* Majority Element II 
 
-<!--*Day 27(27 July) :* Mobile numeric keypad
+*Day 27(27 July) :* Set Matrix Zeros
 
-*Day 28(28 July) :* Counting elements in two arrays
+<!--*Day 28(28 July) :* Counting elements in two arrays
 
 *Day 29(29 July) :* Split Array Largest Sum 
 
