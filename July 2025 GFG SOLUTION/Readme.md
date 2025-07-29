@@ -33,7 +33,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 25: Max Circular Subarray Sum](25(July)%20Max%20Circular%20Subarray%20Sum.md)📈🔄🔑
   - [Day 26: Majority Element II](26(July)%20Majority%20Element%20II.md)🔍🗳️🔢
   - [Day 27: Set Matrix Zeros](27(July)%20Set%20Matrix%20Zeros.md)🧩⚙️🧮
-  - [Day 28: Make Matrix Beautiful](28(July)%20Make%20Matrix%20Beautiful.md)🎨🔄🛠️	
+  - [Day 28: Make Matrix Beautiful](28(July)%20Make%20Matrix%20Beautiful.md)🎨🔄🛠️
+  - [Day 29: ASCII Range Sum](29(July)%20ASCII%20Range%20Sum.md)📍📝🔄
 
 
 
@@ -102,6 +103,6 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 *Day 28(28 July) :* Make Matrix Beautiful
 
-<!--*Day 29(29 July) :* Split Array Largest Sum 
+*Day 29(29 July) :* ASCII Range Sum 
 
-*Day 30(30 July) :* Max min Height-->
+<!--*Day 30(30 July) :* Max min Height-->
