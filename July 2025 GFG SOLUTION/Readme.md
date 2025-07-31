@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
   - [Day 28: Make Matrix Beautiful](28(July)%20Make%20Matrix%20Beautiful.md)🎨🔄🛠️
   - [Day 29: ASCII Range Sum](29(July)%20ASCII%20Range%20Sum.md)📍📝🔄
   - [Day 30: Subarrays with sum K](30(July)%20Subarrays%20with%20sum%20K.md)➕📈📐
+  - [Day 31: Powerful Integer](31(July)%20Powerful%20Integer.md)🔍📈📍
 
 
 
@@ -107,3 +108,5 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 *Day 29(29 July) :* ASCII Range Sum 
 
 *Day 30(30 July) :* Subarrays with sum K
+
+*Day 31(31 July) :* Powerful Integer
