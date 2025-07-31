@@ -6,6 +6,7 @@ description: "✅ GFG solution to the Powerful Integer problem: find maximum int
 date: 📅 2025-07-30
 ---
 
+
 # *30. Powerful Integer*
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/powerfull-integer--170647/1)
