@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: Balancing Consonants and Vowels Ratio](01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md)
+- [Day 1: Balancing Consonants and Vowels Ratio](01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md)🔠🔍🏁
 
 
 ## Introduction
@@ -14,7 +14,6 @@ For discussions, questions, or doubts related to this solution, please visit my 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
 _Day 1(01 AUG) :_ Balancing Consonants and Vowels Ratio
-
 
 <!--_Day 2(02 AUG) :_
 
