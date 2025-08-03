@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
 - [Day 1: Balancing Consonants and Vowels Ratio](01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md)🔠🔍🏁
 - [Day 2: Longest Subarray with Majority Greater than K](02(Aug)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md)📊🚀⚖️
+- [Day 3: 2D Difference Array](03(Aug)%202D%20Difference%20Array.md)📊📈🔢
 
 
 ## Introduction
@@ -18,9 +19,9 @@ _Day 1(01 AUG) :_ Balancing Consonants and Vowels Ratio
 
 _Day 2(02 AUG) :_ Longest Subarray with Majority Greater than K
 
-<!--_Day 3(03 AUG) :_
+_Day 3(03 AUG) :_ 2D Difference Array
 
-_Day 4(04 AUG) :_
+<!--_Day 4(04 AUG) :_
 
 _Day 5(05 AUG) :_
 
