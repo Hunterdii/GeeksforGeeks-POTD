@@ -38,6 +38,8 @@
 | 01 August  | Balancing Consonants and Vowels Ratio 🔠🔍🏁  |       | [Solution](</August%202025%20GFG%20SOLUTION/01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/01(Aug)%20Balancing%20Consonants%20and%20Vowels%20Ratio.md#-code-python>) |
 | 02 August  | Longest Subarray with Majority Greater than K 📊🚀⚖️  |       | [Solution](</August%202025%20GFG%20SOLUTION/02(Aug)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/02(Aug)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/02(Aug)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md#-code-python>) |
 | 03 August  | 2D Difference Array 📊📈🔢  |       | [Solution](</August%202025%20GFG%20SOLUTION/03(Aug)%202D%20Difference%20Array.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/03(Aug)%202D%20Difference%20Array.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/03(Aug)%202D%20Difference%20Array.md#-code-python>) |
+| 04 August  | Maximum sum Rectangle 📐🧠📚  |       | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-python>) |
+
 
 ---
 
