@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: 2D Difference Array](03(Aug)%202D%20Difference%20Array.md)📊📈🔢
 - [Day 4: Maximum sum Rectangle](04(Aug)%20Maximum%20sum%20Rectangle.md)📐🧠📚
 - [Day 5: Palindrome Sentence](05(Aug)%20Palindrome%20Sentence.md)🧠🔄🔍
+- [Day 6: Roman Number to Integer](06(Aug)%20Roman%20Number%20to%20Integer.md)🔢📊🏛️
 
 
 ## Introduction
@@ -27,9 +28,9 @@ _Day 4(04 AUG) :_ Maximum sum Rectangle
 
 _Day 5(05 AUG) :_ Palindrome Sentence
 
-<!--_Day 6(06 AUG) :_
+_Day 6(06 AUG) :_ Roman Number to Integer
 
-_Day 7(07 AUG) :_
+<!--_Day 7(07 AUG) :_
 
 _Day 8(08 AUG) :_
 
