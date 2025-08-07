@@ -41,6 +41,7 @@
 | 04 August  | Maximum sum Rectangle 📐🧠📚  |       | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/04(Aug)%20Maximum%20sum%20Rectangle.md#-code-python>) |
 | 05 August  | Palindrome Sentence 🧠🔄🔍 |       | [Solution](</August%202025%20GFG%20SOLUTION/05(Aug)%20Palindrome%20Sentence.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/05(Aug)%20Palindrome%20Sentence.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/05(Aug)%20Palindrome%20Sentence.md#-code-python>) |
 | 06 August  | Roman Number to Integer 🔢📊🏛️ |       | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-python>) |
+| 07 August  | Difference Check 🕒🚀⏱️ |       | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-python>) |
 
 
 
