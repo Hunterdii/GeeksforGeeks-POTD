@@ -13,6 +13,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Palindrome Sentence](05(Aug)%20Palindrome%20Sentence.md)🧠🔄🔍
 - [Day 6: Roman Number to Integer](06(Aug)%20Roman%20Number%20to%20Integer.md)🔢📊🏛️
 - [Day 7: Difference Check](07(Aug)%20Difference%20Check.md)🕒🚀⏱️
+- [Day 8: Longest Prefix Suffix](08(Aug)%20Longest%20Prefix%20Suffix.md)📘📏📈
+
 
 
 ## Introduction
@@ -33,9 +35,9 @@ _Day 6(06 AUG) :_ Roman Number to Integer
 
 _Day 7(07 AUG) :_ Difference Check
 
-<!--_Day 8(08 AUG) :_
+_Day 8(08 AUG) :_ Longest Prefix Suffix
 
-_Day 9(09 AUG) :_
+<!--_Day 9(09 AUG) :_
 
 _Day 10(10 AUG) :_
 
