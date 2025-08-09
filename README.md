@@ -43,6 +43,7 @@
 | 06 August  | Roman Number to Integer 🔢📊🏛️ |       | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/06(Aug)%20Roman%20Number%20to%20Integer.md#-code-python>) |
 | 07 August  | Difference Check 🕒🚀⏱️ |       | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/07(Aug)%20Difference%20Check.md#-code-python>) |
 | 08 August  | Longest Prefix Suffix 📘📏📈 |       | [Solution](</August%202025%20GFG%20SOLUTION/08(Aug)%20Longest%20Prefix%20Suffix.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/08(Aug)%20Longest%20Prefix%20Suffix.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/08(Aug)%20Longest%20Prefix%20Suffix.md#-code-python>) |
+| 09 August  | Longest Periodic Proper Prefix 🔍📈🔤 |       | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-python>) |
 
 
 
