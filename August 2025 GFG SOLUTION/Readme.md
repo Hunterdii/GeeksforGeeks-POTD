@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Roman Number to Integer](06(Aug)%20Roman%20Number%20to%20Integer.md)🔢📊🏛️
 - [Day 7: Difference Check](07(Aug)%20Difference%20Check.md)🕒🚀⏱️
 - [Day 8: Longest Prefix Suffix](08(Aug)%20Longest%20Prefix%20Suffix.md)📘📏📈
+- [Day 9: Longest Periodic Proper Prefix](09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md)🔍📈🔤
 
 
 
@@ -37,9 +38,9 @@ _Day 7(07 AUG) :_ Difference Check
 
 _Day 8(08 AUG) :_ Longest Prefix Suffix
 
-<!--_Day 9(09 AUG) :_
+_Day 9(09 AUG) :_ Longest Periodic Proper Prefix
 
-_Day 10(10 AUG) :_
+<!--_Day 10(10 AUG) :_
 
 _Day 11(11 AUG) :_
 
