@@ -231,6 +231,9 @@ public:
 * Easy to understand and debug
 * Good for small input sizes
 
+> Note: This approach results in Time Limit Exceeded (TLE) for large inputs (fails ~1110 /1120 test cases due to time constraints).
+
+
 ## 🆚 **🔍 Comparison of Approaches**
 
 | 🚀 **Approach**                    | ⏱️ **Time Complexity** | 💾 **Space Complexity** | ✅ **Pros**                        | ⚠️ **Cons**                           |
