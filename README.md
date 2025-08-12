@@ -46,6 +46,7 @@
 | 09 August  | Longest Periodic Proper Prefix 🔍📈🔤 |       | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md#-code-python>) |
 | 10 August  | Palindrome SubStrings 🔁📐🔤 |       | [Solution](</August%202025%20GFG%20SOLUTION/10(Aug)%20Palindrome%20SubStrings.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/10(Aug)%20Palindrome%20SubStrings.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/10(Aug)%20Palindrome%20SubStrings.md#-code-python>) |
 | 11 August  | Maximum Non-Overlapping Odd Palindrome Sum 🧮🔮🧩 |       | [Solution](</August%202025%20GFG%20SOLUTION/11(Aug)%20Maximum%20Non-Overlapping%20Odd%20Palindrome%20Sum.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/11(Aug)%20Maximum%20Non-Overlapping%20Odd%20Palindrome%20Sum.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/11(Aug)%20Maximum%20Non-Overlapping%20Odd%20Palindrome%20Sum.md#-code-python>) |
+| 12 August  | Shop in Candy Store 🍭🛒💰  |       | [Solution](</August%202025%20GFG%20SOLUTION/12(Aug)%20Shop%20in%20Candy%20Store.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/12(Aug)%20Shop%20in%20Candy%20Store.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/12(Aug)%20Shop%20in%20Candy%20Store.md#-code-python>) |
 
 
 
