@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Longest Periodic Proper Prefix](09(Aug)%20Longest%20Periodic%20Proper%20Prefix.md)🔍📈🔤
 - [Day 10:Palindrome SubStrings](10(Aug)%20Palindrome%20SubStrings.md)🔁📐🔤	
 - [Day 11: Maximum Non-Overlapping Odd Palindrome Sum](11(Aug)%20Maximum%20Non-Overlapping%20Odd%20Palindrome%20Sum.md)🧮🔮🧩
+- [Day 12: Shop in Candy Store](12(Aug)%20Shop%20in%20Candy%20Store.md)🍭🛒💰
 
 
 
@@ -46,9 +47,9 @@ _Day 10(10 AUG) :_ Palindrome SubStrings
 
 _Day 11(11 AUG) :_ Maximum Non-Overlapping Odd Palindrome Sum 
 
-<!--_Day 12(12 AUG) :_
+_Day 12(12 AUG) :_ Shop in Candy Store 
 
-_Day 13(13 AUG) :_
+<!--_Day 13(13 AUG) :_
 
 _Day 14(14 AUG) :_
 
