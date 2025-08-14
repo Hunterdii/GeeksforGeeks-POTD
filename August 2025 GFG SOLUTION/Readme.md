@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 11: Maximum Non-Overlapping Odd Palindrome Sum](11(Aug)%20Maximum%20Non-Overlapping%20Odd%20Palindrome%20Sum.md)🧮🔮🧩
 - [Day 12: Shop in Candy Store](12(Aug)%20Shop%20in%20Candy%20Store.md)🍭🛒💰
 - [Day 13: Tywin's War Strategy](13(Aug)%20Tywin's%20War%20Strategy.md)⚔️🏹🎯
+- [Day 14: Count Reverse Pairs](14(Aug)%20Count%20Reverse%20Pairs.md)📈🔢🔍
 
 
 
@@ -52,9 +53,9 @@ _Day 12(12 AUG) :_ Shop in Candy Store
 
 _Day 13(13 AUG) :_ Tywin's War Strategy
 
-<!--_Day 14(14 AUG) :_
+_Day 14(14 AUG) :_ Count Reverse Pairs 
 
-_Day 15(15 AUG) :_
+<!--_Day 15(15 AUG) :_
 
 _Day 16(16 AUG) :_
 
