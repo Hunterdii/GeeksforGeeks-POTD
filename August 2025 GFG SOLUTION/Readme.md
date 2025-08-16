@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Tywin's War Strategy](13(Aug)%20Tywin's%20War%20Strategy.md)⚔️🏹🎯
 - [Day 14: Count Reverse Pairs](14(Aug)%20Count%20Reverse%20Pairs.md)📈🔢🔍
 - [Day 15: Insert Interval](15(Aug)%20Insert%20Interval.md)📈📍🗓️
+- [Day 16: Form the Largest Number](16(Aug)%20Form%20the%20Largest%20Number.md)🔤🔄📊
 
 
 
@@ -58,9 +59,10 @@ _Day 14(14 AUG) :_ Count Reverse Pairs
 
 _Day 15(15 AUG) :_ Insert Interval 
 
-<!--_Day 16(16 AUG) :_
+_Day 16(16 AUG) :_ Form the Largest Number
 
-_Day 17(17 AUG) :_
+
+<!--_Day 17(17 AUG) :_
 
 _Day 18(18 AUG) :_
 
