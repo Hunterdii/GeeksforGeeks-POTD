@@ -51,6 +51,7 @@
 | 14 August  | Count Reverse Pairs 📈🔢🔍  |       | [Solution](</August%202025%20GFG%20SOLUTION/14(Aug)%20Count%20Reverse%20Pairs.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/14(Aug)%20Count%20Reverse%20Pairs.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/14(Aug)%20Count%20Reverse%20Pairs.md#-code-python>) |
 | 15 August  | Insert Interval 📈📍🗓️  |   [Solution](</August%202025%20GFG%20SOLUTION/15(Aug)%20Insert%20Interval.md#-code-c>)     | [Solution](</August%202025%20GFG%20SOLUTION/15(Aug)%20Insert%20Interval.md#-code-c-1>) | [Solution](</August%202025%20GFG%20SOLUTION/15(Aug)%20Insert%20Interval.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/15(Aug)%20Insert%20Interval.md#-code-python>) |
 | 16 August  | Form the Largest Number 🔤🔄📊  |       | [Solution](</August%202025%20GFG%20SOLUTION/16(Aug)%20Form%20the%20Largest%20Number.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/16(Aug)%20Form%20the%20Largest%20Number.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/16(Aug)%20Form%20the%20Largest%20Number.md#-code-python>) |
+| 17 August  | Sort by Absolute Difference 📏🔢📈  |       | [Solution](</August%202025%20GFG%20SOLUTION/17(Aug)%20Sort%20by%20Absolute%20Difference.md#-code-c>) | [Solution](</August%202025%20GFG%20SOLUTION/17(Aug)%20Sort%20by%20Absolute%20Difference.md#-code-java>) | [Solution](</August%202025%20GFG%20SOLUTION/17(Aug)%20Sort%20by%20Absolute%20Difference.md#-code-python>) |
 
 
 
