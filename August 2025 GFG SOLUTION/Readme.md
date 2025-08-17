@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Count Reverse Pairs](14(Aug)%20Count%20Reverse%20Pairs.md)📈🔢🔍
 - [Day 15: Insert Interval](15(Aug)%20Insert%20Interval.md)📈📍🗓️
 - [Day 16: Form the Largest Number](16(Aug)%20Form%20the%20Largest%20Number.md)🔤🔄📊
+- [Day 17: Sort by Absolute Difference](17(Aug)%20Sort%20by%20Absolute%20Difference.md)📏🔢📈
 
 
 
@@ -61,10 +62,9 @@ _Day 15(15 AUG) :_ Insert Interval
 
 _Day 16(16 AUG) :_ Form the Largest Number
 
+_Day 17(17 AUG) :_ Sort by Absolute Difference
 
-<!--_Day 17(17 AUG) :_
-
-_Day 18(18 AUG) :_
+<!--_Day 18(18 AUG) :_
 
 _Day 19(19 AUG) :_
 
