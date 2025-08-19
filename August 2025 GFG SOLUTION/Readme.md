@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Form the Largest Number](16(Aug)%20Form%20the%20Largest%20Number.md)🔤🔄📊
 - [Day 17: Sort by Absolute Difference](17(Aug)%20Sort%20by%20Absolute%20Difference.md)📏🔢📈
 - [Day 18: Find H-Index](18(Aug)%20Find%20H-Index.md)🏷️🎓📖
+- [Day 19: Farthest Smaller Right](19(Aug)%20Farthest%20Smaller%20Right.md)🔢📍📈	
 
 
 
@@ -67,9 +68,9 @@ _Day 17(17 AUG) :_ Sort by Absolute Difference
 
 _Day 18(18 AUG) :_ Find H-Index
 
-<!--_Day 19(19 AUG) :_
+_Day 19(19 AUG) :_ Farthest Smaller Right
 
-_Day 20(20 AUG) :_
+<!--_Day 20(20 AUG) :_
 
 _Day 21(21 AUG) :_
 
