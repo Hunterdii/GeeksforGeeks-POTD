@@ -24,7 +24,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Form the Largest Number](16(Aug)%20Form%20the%20Largest%20Number.md)🔤🔄📊
 - [Day 17: Sort by Absolute Difference](17(Aug)%20Sort%20by%20Absolute%20Difference.md)📏🔢📈
 - [Day 18: Find H-Index](18(Aug)%20Find%20H-Index.md)🏷️🎓📖
-- [Day 19: Farthest Smaller Right](19(Aug)%20Farthest%20Smaller%20Right.md)🔢📍📈	
+- [Day 19: Farthest Smaller Right](19(Aug)%20Farthest%20Smaller%20Right.md)🔢📍📈
+- [Day 20: Search in fully rotated sorted 2D matrix](20(Aug)%20Search%20in%20fully%20rotated%20sorted%202D%20matrix.md)🌀🔍🔄
 
 
 
@@ -70,9 +71,9 @@ _Day 18(18 AUG) :_ Find H-Index
 
 _Day 19(19 AUG) :_ Farthest Smaller Right
 
-<!--_Day 20(20 AUG) :_
+_Day 20(20 AUG) :_ Search in fully rotated sorted 2D matrix
 
-_Day 21(21 AUG) :_
+<!--_Day 21(21 AUG) :_
 
 _Day 22(22 AUG) :_
 
