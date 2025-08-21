@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Find H-Index](18(Aug)%20Find%20H-Index.md)🏷️🎓📖
 - [Day 19: Farthest Smaller Right](19(Aug)%20Farthest%20Smaller%20Right.md)🔢📍📈
 - [Day 20: Search in fully rotated sorted 2D matrix](20(Aug)%20Search%20in%20fully%20rotated%20sorted%202D%20matrix.md)🌀🔍🔄
+- [Day 21: Maximize the minimum difference between k elements](21(Aug)%20Maximize%20the%20minimum%20difference%20between%20k%20elements.md)📏↔️🧮	
 
 
 
@@ -73,9 +74,9 @@ _Day 19(19 AUG) :_ Farthest Smaller Right
 
 _Day 20(20 AUG) :_ Search in fully rotated sorted 2D matrix
 
-<!--_Day 21(21 AUG) :_
+_Day 21(21 AUG) :_ Maximize the minimum difference between k elements
 
-_Day 22(22 AUG) :_
+<!--_Day 22(22 AUG) :_
 
 _Day 23(23 AUG) :_
 
