@@ -29,6 +29,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Maximize the minimum difference between k elements](21(Aug)%20Maximize%20the%20minimum%20difference%20between%20k%20elements.md)📏↔️🧮
 - [Day 22: Median in a row-wise sorted Matrix](22(Aug)%20Median%20in%20a%20row-wise%20sorted%20Matrix.md)🔢🏗️🧮
 - [Day 23: Allocate Minimum Pages](23(Aug)%20Allocate%20Minimum%20Pages.md)📚🔍📊
+- [Day 24: Minimum days to make M bouquets](24(Aug)%20Minimum%20days%20to%20make%20M%20bouquets.md)📈🌸🏗️
 
 
 
@@ -82,9 +83,9 @@ _Day 22(22 AUG) :_ Median in a row-wise sorted Matrix
 
 _Day 23(23 AUG) :_ Allocate Minimum Pages
 
-<!--_Day 24(24 AUG) :_
+_Day 24(24 AUG) :_ Minimum days to make M bouquets 
 
-_Day 25(25 AUG) :_
+<!--_Day 25(25 AUG) :_
 
 _Day 26(26 AUG) :_
 
