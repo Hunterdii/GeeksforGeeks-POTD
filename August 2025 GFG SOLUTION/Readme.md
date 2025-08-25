@@ -30,6 +30,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 22: Median in a row-wise sorted Matrix](22(Aug)%20Median%20in%20a%20row-wise%20sorted%20Matrix.md)🔢🏗️🧮
 - [Day 23: Allocate Minimum Pages](23(Aug)%20Allocate%20Minimum%20Pages.md)📚🔍📊
 - [Day 24: Minimum days to make M bouquets](24(Aug)%20Minimum%20days%20to%20make%20M%20bouquets.md)📈🌸🏗️
+- [Day 25: Maximize median after doing k addition operation](25(Aug)%20Maximize%20median%20after%20doing%20k%20addition%20operation.md)📈🔢📊
 
 
 
@@ -85,9 +86,9 @@ _Day 23(23 AUG) :_ Allocate Minimum Pages
 
 _Day 24(24 AUG) :_ Minimum days to make M bouquets 
 
-<!--_Day 25(25 AUG) :_
+_Day 25(25 AUG) :_ Maximize median after doing k addition operation
 
-_Day 26(26 AUG) :_
+<!--_Day 26(26 AUG) :_
 
 _Day 27(27 AUG) :_
 
