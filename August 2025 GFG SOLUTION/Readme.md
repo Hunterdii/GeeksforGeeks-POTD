@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Allocate Minimum Pages](23(Aug)%20Allocate%20Minimum%20Pages.md)📚🔍📊
 - [Day 24: Minimum days to make M bouquets](24(Aug)%20Minimum%20days%20to%20make%20M%20bouquets.md)📈🌸🏗️
 - [Day 25: Maximize median after doing k addition operation](25(Aug)%20Maximize%20median%20after%20doing%20k%20addition%20operation.md)📈🔢📊
+- [Day 26: Check if a String is Subsequence of Other](26(Aug)%20Check%20if%20a%20String%20is%20Subsequence%20of%20Other.md)👥🌀🎛️
 
 
 
@@ -88,9 +89,9 @@ _Day 24(24 AUG) :_ Minimum days to make M bouquets
 
 _Day 25(25 AUG) :_ Maximize median after doing k addition operation
 
-<!--_Day 26(26 AUG) :_
+_Day 26(26 AUG) :_ Check if a String is Subsequence of Other
 
-_Day 27(27 AUG) :_
+<!--_Day 27(27 AUG) :_
 
 _Day 28(28 AUG) :_
 
