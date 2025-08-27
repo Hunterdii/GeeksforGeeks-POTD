@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Minimum days to make M bouquets](24(Aug)%20Minimum%20days%20to%20make%20M%20bouquets.md)📈🌸🏗️
 - [Day 25: Maximize median after doing k addition operation](25(Aug)%20Maximize%20median%20after%20doing%20k%20addition%20operation.md)📈🔢📊
 - [Day 26: Check if a String is Subsequence of Other](26(Aug)%20Check%20if%20a%20String%20is%20Subsequence%20of%20Other.md)👥🌀🎛️
+- [Day 27: Count the number of possible triangles](27(Aug)%20Count%20the%20number%20of%20possible%20triangles.md)🔺🔍📐
 
 
 
@@ -91,9 +92,9 @@ _Day 25(25 AUG) :_ Maximize median after doing k addition operation
 
 _Day 26(26 AUG) :_ Check if a String is Subsequence of Other
 
-<!--_Day 27(27 AUG) :_
+_Day 27(27 AUG) :_ Count the number of possible triangles
 
-_Day 28(28 AUG) :_
+<!--_Day 28(28 AUG) :_
 
 _Day 29(29 AUG) :_
 
