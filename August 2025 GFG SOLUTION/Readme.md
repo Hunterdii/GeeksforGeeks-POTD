@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: Check if a String is Subsequence of Other](26(Aug)%20Check%20if%20a%20String%20is%20Subsequence%20of%20Other.md)👥🌀🎛️
 - [Day 27: Count the number of possible triangles](27(Aug)%20Count%20the%20number%20of%20possible%20triangles.md)🔺🔍📐
 - [Day 28: Maximize Number of 1's](28(Aug)%20Maximize%20Number%20of%201's.md)🔢📍📈
+- [Day 29: Smallest window containing all characters](29(Aug)%20Smallest%20window%20containing%20all%20characters.md)🔤🪟🏁
 
 
 
@@ -97,8 +98,8 @@ _Day 27(27 AUG) :_ Count the number of possible triangles
 
 _Day 28(28 AUG) :_ Maximize Number of 1's
 
-<!--_Day 29(29 AUG) :_
+_Day 29(29 AUG) :_ Smallest window containing all characters
 
-_Day 30(30 AUG) :_
+<!--_Day 30(30 AUG) :_
 
 _Day 31(31 AUG) :_-->
