@@ -35,6 +35,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 27: Count the number of possible triangles](27(Aug)%20Count%20the%20number%20of%20possible%20triangles.md)🔺🔍📐
 - [Day 28: Maximize Number of 1's](28(Aug)%20Maximize%20Number%20of%201's.md)🔢📍📈
 - [Day 29: Smallest window containing all characters](29(Aug)%20Smallest%20window%20containing%20all%20characters.md)🔤🪟🏁
+- [Day 30: The Celebrity Problem](30(Aug)%20The%20Celebrity%20Problem.md)🔤📈🌟
 
 
 
@@ -100,6 +101,6 @@ _Day 28(28 AUG) :_ Maximize Number of 1's
 
 _Day 29(29 AUG) :_ Smallest window containing all characters
 
-<!--_Day 30(30 AUG) :_
+_Day 30(30 AUG) :_ The Celebrity Problem 
 
-_Day 31(31 AUG) :_-->
+<!--_Day 31(31 AUG) :_-->
