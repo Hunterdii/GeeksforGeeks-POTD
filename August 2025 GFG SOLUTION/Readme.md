@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 28: Maximize Number of 1's](28(Aug)%20Maximize%20Number%20of%201's.md)🔢📍📈
 - [Day 29: Smallest window containing all characters](29(Aug)%20Smallest%20window%20containing%20all%20characters.md)🔤🪟🏁
 - [Day 30: The Celebrity Problem](30(Aug)%20The%20Celebrity%20Problem.md)🔤📈🌟
+- [Day 31: Container With Most Water](31(Aug)%20Container%20With%20Most%20Water.md)🌊💧📈
 
 
 
@@ -103,4 +104,4 @@ _Day 29(29 AUG) :_ Smallest window containing all characters
 
 _Day 30(30 AUG) :_ The Celebrity Problem 
 
-<!--_Day 31(31 AUG) :_-->
+_Day 31(31 AUG) :_  Container With Most Water 
