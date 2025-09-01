@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: Sum of Mode]()🔥➡️💰
+- [Day 1: Sum of Mode](01(Sep)%20Sum%20of%20Mode.md)🔢📈🪟
 
 ## Introduction
 
