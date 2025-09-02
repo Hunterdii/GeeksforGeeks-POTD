@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 1: Sum of Mode](01(Sep)%20Sum%20of%20Mode.md)🔢📈🪟
+- [Day 2: Swap Kth nodes from ends](02(Sep)%20Swap%20Kth%20nodes%20from%20ends.md)🔗🔄🎯
 
 ## Introduction
 
@@ -14,8 +15,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 _Day 1(01 SEP) :_ Sum of Mode
 
-<!--_Day 2(02 SEP) :_ 
-_Day 3(03 SEP) :_ 
+_Day 2(02 SEP) :_ Swap Kth nodes from ends
+
+<!--_Day 3(03 SEP) :_ 
 _Day 4(04 SEP) :_ 
 _Day 5(05 SEP) :_ 
 _Day 6(06 SEP) :_ 
