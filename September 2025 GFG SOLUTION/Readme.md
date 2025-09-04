@@ -9,6 +9,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: Sum of Mode](01(Sep)%20Sum%20of%20Mode.md)🔢📈🪟
 - [Day 2: Swap Kth nodes from ends](02(Sep)%20Swap%20Kth%20nodes%20from%20ends.md)🔗🔄🎯
 - [Day 3: Reverse a Doubly Linked List](03(Sep)%20Reverse%20a%20Doubly%20Linked%20List.md)🔁🔗🔄
+- [Day 4: Linked List Group Reverse](04(Sep)%20Linked%20List%20Group%20Reverse.md)🔗↔️👩‍💻
 
 ## Introduction
 
@@ -20,8 +21,9 @@ _Day 2(02 SEP) :_ Swap Kth nodes from ends
 
 _Day 3(03 SEP) :_ Reverse a Doubly Linked List
 
-<!--_Day 4(04 SEP) :_ 
-_Day 5(05 SEP) :_ 
+_Day 4(04 SEP) :_ Linked List Group Reverse
+
+<!--_Day 5(05 SEP) :_ 
 _Day 6(06 SEP) :_ 
 _Day 7(07 SEP) :_ 
 _Day 8(08 SEP) :_ 
