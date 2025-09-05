@@ -39,6 +39,8 @@
 | 02 September  | Swap Kth nodes from ends 🔗🔄🎯  |       | [Solution](</September%202025%20GFG%20SOLUTION/02(Sep)%20Swap%20Kth%20nodes%20from%20ends.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/02(Sep)%20Swap%20Kth%20nodes%20from%20ends.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/02(Sep)%20Swap%20Kth%20nodes%20from%20ends.md#-code-python>) |
 | 03 September  | Reverse a Doubly Linked List 🔁🔗🔄  |       | [Solution](</September%202025%20GFG%20SOLUTION/03(Sep)%20Reverse%20a%20Doubly%20Linked%20List.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/03(Sep)%20Reverse%20a%20Doubly%20Linked%20List.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/03(Sep)%20Reverse%20a%20Doubly%20Linked%20List.md#-code-python>) |
 | 04 September  | Linked List Group Reverse 🔗↔️👩‍💻  |       | [Solution](</September%202025%20GFG%20SOLUTION/04(Sep)%20Linked%20List%20Group%20Reverse.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/04(Sep)%20Linked%20List%20Group%20Reverse.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/04(Sep)%20Linked%20List%20Group%20Reverse.md#-code-python>) |
+| 05 September  | Sort a linked list of 0s, 1s and 2s 🔗🎯🚀  |       | [Solution](</September%202025%20GFG%20SOLUTION/05(Sep)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/05(Sep)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/05(Sep)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md#-code-python>) |
+
 
 
 
