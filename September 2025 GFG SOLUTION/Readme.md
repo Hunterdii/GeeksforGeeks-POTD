@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 4: Linked List Group Reverse](04(Sep)%20Linked%20List%20Group%20Reverse.md)🔗↔️👩‍💻
 - [Day 5: Sort a linked list of 0s, 1s and 2s](05(Sep)%20Sort%20a%20linked%20list%20of%200s%2C%201s%20and%202s.md)🔗🎯🚀
 - [Day 6: Find length of Loop](06(Sep)%20Find%20length%20of%20Loop.md)🏃‍♂️⏳🧩
+- [Day 7: Merge K sorted linked lists](07(Sep)%20Merge%20K%20sorted%20linked%20lists.md)🔗🧵📈
 
 ## Introduction
 
@@ -29,8 +30,9 @@ _Day 5(05 SEP) :_ Sort a linked list of 0s, 1s and 2s
 
 _Day 6(06 SEP) :_ Find length of Loop
 
-<!--_Day 7(07 SEP) :_ 
-_Day 8(08 SEP) :_ 
+_Day 7(07 SEP) :_ Merge K sorted linked lists
+
+<!--_Day 8(08 SEP) :_ 
 _Day 9(09 SEP) :_ 
 _Day 10(10 SEP) :_ 
 _Day 11(11 SEP) :_ 
