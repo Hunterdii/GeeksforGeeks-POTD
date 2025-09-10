@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: Merge K sorted linked lists](07(Sep)%20Merge%20K%20sorted%20linked%20lists.md)🔗🧵📈
 - [Day 8: Merge Sort for Linked List](08(Sep)%20Merge%20Sort%20for%20Linked%20List.md)🔀🔗⏳
 - [Day 9: Assign Mice Holes](09(Sep)%20Assign%20Mice%20Holes.md)🐭🕳️📈
+- [Day 10: Largest number in one swap](10(Sep)%20Largest%20number%20in%20one%20swap.md)🔢🔄🔍
 
 ## Introduction
 
@@ -38,8 +39,9 @@ _Day 8(08 SEP) :_ Merge Sort for Linked List
 
 _Day 9(09 SEP) :_ Assign Mice Holes
 
-<!--_Day 10(10 SEP) :_ 
-_Day 11(11 SEP) :_ 
+_Day 10(10 SEP) :_ Largest number in one swap
+
+<!--_Day 11(11 SEP) :_ 
 _Day 12(12 SEP) :_ 
 _Day 13(13 SEP) :_ 
 _Day 14(14 SEP) :_ 
