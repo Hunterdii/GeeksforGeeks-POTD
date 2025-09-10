@@ -44,6 +44,7 @@
 | 07 September  | Merge K sorted linked lists 🔗🧵📈  |       | [Solution](</September%202025%20GFG%20SOLUTION/07(Sep)%20Merge%20K%20sorted%20linked%20lists.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/07(Sep)%20Merge%20K%20sorted%20linked%20lists.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/07(Sep)%20Merge%20K%20sorted%20linked%20lists.md#-code-python>) |
 | 08 September  | Merge Sort for Linked List 🔀🔗⏳  |       | [Solution](</September%202025%20GFG%20SOLUTION/08(Sep)%20Merge%20Sort%20for%20Linked%20List.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/08(Sep)%20Merge%20Sort%20for%20Linked%20List.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/08(Sep)%20Merge%20Sort%20for%20Linked%20List.md#-code-python>) |
 | 09 September  | Assign Mice Holes 🐭🕳️📈  |       | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-python>) |
+| 10 September  | Largest number in one swap 🔢🔄🔍  |       | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-python>) |
 
 
 
