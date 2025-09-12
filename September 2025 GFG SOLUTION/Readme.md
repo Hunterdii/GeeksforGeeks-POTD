@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Assign Mice Holes](09(Sep)%20Assign%20Mice%20Holes.md)🐭🕳️📈
 - [Day 10: Largest number in one swap](10(Sep)%20Largest%20number%20in%20one%20swap.md)🔢🔄🔍
 - [Day 11: Minimum Jumps](11(Sep)%20Minimum%20Jumps.md)🪂⚡🏃‍♂️
+- [Day 12: Minimize the Heights II](12(Sep)Minimize%20the%20Heights%20II.md)📉🏰🔧
 
 ## Introduction
 
@@ -44,8 +45,9 @@ _Day 10(10 SEP) :_ Largest number in one swap
 
 _Day 11(11 SEP) :_ Minimum Jumps
 
-<!--_Day 12(12 SEP) :_ 
-_Day 13(13 SEP) :_ 
+_Day 12(12 SEP) :_ Minimize the Heights II
+
+<!--_Day 13(13 SEP) :_ 
 _Day 14(14 SEP) :_ 
 _Day 15(15 SEP) :_ 
 _Day 16(16 SEP) :_ 
