@@ -46,6 +46,7 @@
 | 09 September  | Assign Mice Holes 🐭🕳️📈  |       | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/09(Sep)%20Assign%20Mice%20Holes.md#-code-python>) |
 | 10 September  | Largest number in one swap 🔢🔄🔍  |       | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/10(Sep)%20Largest%20number%20in%20one%20swap.md#-code-python>) |
 | 11 September  | Minimum Jumps 🪂⚡🏃‍♂️  |       | [Solution](</September%202025%20GFG%20SOLUTION/11(Sep)%20Minimum%20Jumps.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/11(Sep)%20Minimum%20Jumps.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/11(Sep)%20Minimum%20Jumps.md#-code-python>) |
+| 12 September  | Minimize the Heights II 📉🏰🔧  |       | [Solution](</September%202025%20GFG%20SOLUTION/12(Sep)Minimize%20the%20Heights%20II.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/12(Sep)Minimize%20the%20Heights%20II.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/12(Sep)Minimize%20the%20Heights%20II.md#-code-python>) |
 
 
 
