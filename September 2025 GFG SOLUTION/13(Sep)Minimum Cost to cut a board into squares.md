@@ -8,8 +8,8 @@ date: 📅 2025-09-13
 
 # *13. Minimum Cost to Cut a Board into Squares*
 
-> **Note:** Yesterday I was busy in hackathon so I cannot upload the problem solution, sorry for inconvenience
-
+> **Note:** The solution for this problem is being published today as I was engaged in a hackathon yesterday. Thank you for your understanding.
+> 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/minimum-cost-to-cut-a-board-into-squares/1)
 
 ## **🧩 Problem Description**
