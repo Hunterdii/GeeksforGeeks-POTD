@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Largest number in one swap](10(Sep)%20Largest%20number%20in%20one%20swap.md)🔢🔄🔍
 - [Day 11: Minimum Jumps](11(Sep)%20Minimum%20Jumps.md)🪂⚡🏃‍♂️
 - [Day 12: Minimize the Heights II](12(Sep)Minimize%20the%20Heights%20II.md)📉🏰🔧
+- [Day 13: Minimum Cost to cut a board into squares](13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md)🪚✂💰
 
 ## Introduction
 
@@ -47,8 +48,9 @@ _Day 11(11 SEP) :_ Minimum Jumps
 
 _Day 12(12 SEP) :_ Minimize the Heights II
 
-<!--_Day 13(13 SEP) :_ 
-_Day 14(14 SEP) :_ 
+_Day 13(13 SEP) :_ Minimum Cost to cut a board into squares
+
+<!--_Day 14(14 SEP) :_ 
 _Day 15(15 SEP) :_ 
 _Day 16(16 SEP) :_ 
 _Day 17(17 SEP) :_ 
