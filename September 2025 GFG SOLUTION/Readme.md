@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Minimize the Heights II](12(Sep)Minimize%20the%20Heights%20II.md)📉🏰🔧
 - [Day 13: Minimum Cost to cut a board into squares](13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md)🪚✂💰
 - [Day 14: Gas Station](14(Sep)%20Gas%20Station.md)⛽🚗🛢️
+- [Day 15: String stack](15(Sep)%20String%20stack.md)📤🗂️🪜
 
 ## Introduction
 
@@ -53,8 +54,9 @@ _Day 13(13 SEP) :_ Minimum Cost to cut a board into squares
 
 _Day 14(14 SEP) :_ Gas Station
 
-<!--_Day 15(15 SEP) :_ 
-_Day 16(16 SEP) :_ 
+_Day 15(15 SEP) :_ String stack
+
+<!--_Day 16(16 SEP) :_ 
 _Day 17(17 SEP) :_ 
 _Day 18(18 SEP) :_ 
 _Day 19(19 SEP) :_ 
