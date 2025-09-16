@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Minimum Cost to cut a board into squares](13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md)🪚✂💰
 - [Day 14: Gas Station](14(Sep)%20Gas%20Station.md)⛽🚗🛢️
 - [Day 15: String stack](15(Sep)%20String%20stack.md)📤🗂️🪜
+- [Day 16: Postfix Evaluation](16(Sep)%20Postfix%20Evaluation.md)🧮🔍📊 
 
 ## Introduction
 
@@ -56,8 +57,9 @@ _Day 14(14 SEP) :_ Gas Station
 
 _Day 15(15 SEP) :_ String stack
 
-<!--_Day 16(16 SEP) :_ 
-_Day 17(17 SEP) :_ 
+_Day 16(16 SEP) :_ Postfix Evaluation
+
+<!--_Day 17(17 SEP) :_ 
 _Day 18(18 SEP) :_ 
 _Day 19(19 SEP) :_ 
 _Day 20(20 SEP) :_ 
