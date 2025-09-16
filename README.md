@@ -50,6 +50,7 @@
 | 13 September  | Minimum Cost to cut a board into squares 🪚✂💰  |       | [Solution](</September%202025%20GFG%20SOLUTION/13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/13(Sep)Minimum%20Cost%20to%20cut%20a%20board%20into%20squares.md#-code-python>) |
 | 14 September  | Gas Station ⛽🚗🛢️  |       | [Solution](</September%202025%20GFG%20SOLUTION/14(Sep)%20Gas%20Station.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/14(Sep)%20Gas%20Station.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/14(Sep)%20Gas%20Station.md#-code-python>) |
 | 15 September  | String stack 📤🗂️🪜  |       | [Solution](</September%202025%20GFG%20SOLUTION/15(Sep)%20String%20stack.md#-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/15(Sep)%20String%20stack.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/15(Sep)%20String%20stack.md#-code-python>) |
+| 16 September  | Postfix Evaluation 🧮🔍📊   |    [Solution](</September%202025%20GFG%20SOLUTION/16(Sep)%20Postfix%20Evaluation.md#-code-c>)   | [Solution](</September%202025%20GFG%20SOLUTION/16(Sep)%20Postfix%20Evaluation.md#-code-c-1>) | [Solution](</September%202025%20GFG%20SOLUTION/16(Sep)%20Postfix%20Evaluation.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/16(Sep)%20Postfix%20Evaluation.md#-code-python>) |
 
 
 
