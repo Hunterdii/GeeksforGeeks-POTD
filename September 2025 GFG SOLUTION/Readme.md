@@ -23,6 +23,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: String stack](15(Sep)%20String%20stack.md)📤🗂️🪜
 - [Day 16: Postfix Evaluation](16(Sep)%20Postfix%20Evaluation.md)🧮🔍📊
 - [Day 17: Decode the string](17(Sep)%20Decode%20the%20string.md)📜🔤✨
+- [Day 18: Next Greater Element in Circular Array](18(Sep)%20Next%20Greater%20Element%20in%20Circular%20Array.md)🔄🌀👉
 
 ## Introduction
 
@@ -62,8 +63,9 @@ _Day 16(16 SEP) :_ Postfix Evaluation
 
 _Day 17(17 SEP) :_ Decode the string
 
-<!--_Day 18(18 SEP) :_ 
-_Day 19(19 SEP) :_ 
+_Day 18(18 SEP) :_ Next Greater Element in Circular Array
+
+<!--_Day 19(19 SEP) :_ 
 _Day 20(20 SEP) :_ 
 _Day 21(21 SEP) :_ 
 _Day 22(22 SEP) :_ 
