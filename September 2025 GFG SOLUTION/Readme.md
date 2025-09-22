@@ -27,6 +27,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Min Add to Make Parentheses Valid](19(Sep)%20Min%20Add%20to%20Make%20Parentheses%20Valid.md)📊🔧🚀
 - [Day 20: Longest Subarray Length](20(Sep)%20Longest%20Subarray%20Length.md)📏🔢➿
 - [Day 21: Max rectangle](21(Sep)%20Max%20rectangle.md)🔲📐🔄
+- [Day 22: Max of min for every window size](22(Sep)%20Max%20of%20min%20for%20every%20window%20size.md)📏🔍📈
 
 ## Introduction
 
@@ -74,8 +75,9 @@ _Day 20(20 SEP) :_ Longest Subarray Length
  
 _Day 21(21 SEP) :_ Max rectangle
 
-<!--_Day 22(22 SEP) :_ 
-_Day 23(23 SEP) :_ 
+_Day 22(22 SEP) :_ Max of min for every window size
+
+<!--_Day 23(23 SEP) :_ 
 _Day 24(24 SEP) :_ 
 _Day 25(25 SEP) :_ 
 _Day 26(26 SEP) :_ 
