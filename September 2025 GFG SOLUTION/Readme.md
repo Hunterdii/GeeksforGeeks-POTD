@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Longest Subarray Length](20(Sep)%20Longest%20Subarray%20Length.md)📏🔢➿
 - [Day 21: Max rectangle](21(Sep)%20Max%20rectangle.md)🔲📐🔄
 - [Day 22: Max of min for every window size](22(Sep)%20Max%20of%20min%20for%20every%20window%20size.md)📏🔍📈
+- [Day 23: Queue Reversal](23(Sep)%20Queue%20Reversal.md)🔁📦🔄
 
 ## Introduction
 
@@ -77,8 +78,9 @@ _Day 21(21 SEP) :_ Max rectangle
 
 _Day 22(22 SEP) :_ Max of min for every window size
 
-<!--_Day 23(23 SEP) :_ 
-_Day 24(24 SEP) :_ 
+_Day 23(23 SEP) :_ Queue Reversal
+
+<!--_Day 24(24 SEP) :_ 
 _Day 25(25 SEP) :_ 
 _Day 26(26 SEP) :_ 
 _Day 27(27 SEP) :_ 
