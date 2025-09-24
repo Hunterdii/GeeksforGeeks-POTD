@@ -58,6 +58,7 @@
 | 21 September  | Max rectangle 🔲📐🔄  |       | [Solution](</September%202025%20GFG%20SOLUTION/21(Sep)%20Max%20rectangle.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/21(Sep)%20Max%20rectangle.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/21(Sep)%20Max%20rectangle.md#-code-python>) |
 | 22 September  | Max of min for every window size 📏🔍📈  |       | [Solution](</September%202025%20GFG%20SOLUTION/22(Sep)%20Max%20of%20min%20for%20every%20window%20size.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/22(Sep)%20Max%20of%20min%20for%20every%20window%20size.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/22(Sep)%20Max%20of%20min%20for%20every%20window%20size.md#-code-python>) |
 | 23 September  | Queue Reversal 🔁📦🔄  |       | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#-code-python>) |
+| 24 September  | Design MinMax Queue 🌀⚡📚  |       | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#-code-python>) |
 
 
 
