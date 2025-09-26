@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Queue Reversal](23(Sep)%20Queue%20Reversal.md)🔁📦🔄
 - [Day 24: Design MinMax Queue](24(Sep)%20Design%20MinMax%20Queue.md)🌀⚡📚
 - [Day 25: Generate Binary Numbers](25(Sep)%20Generate%20Binary%20Numbers.md)🔢📟🖥️
+- [Day 16: Rotate Deque By K](26(Sep)%20Rotate%20Deque%20By%20K.md)🔄➡️↩️	
 
 ## Introduction
 
@@ -86,8 +87,9 @@ _Day 24(24 SEP) :_ Design MinMax Queue
 
 _Day 25(25 SEP) :_ Generate Binary Numbers 
 
-<!--_Day 26(26 SEP) :_ 
-_Day 27(27 SEP) :_ 
+_Day 26(26 SEP) :_ Rotate Deque By K 
+
+<!--_Day 27(27 SEP) :_ 
 _Day 28(28 SEP) :_ 
 _Day 29(29 SEP) :_ 
 _Day 30(30 SEP) :_ -->
