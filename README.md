@@ -60,6 +60,7 @@
 | 23 September  | Queue Reversal 🔁📦🔄  |       | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/23(Sep)%20Queue%20Reversal.md#-code-python>) |
 | 24 September  | Design MinMax Queue 🌀⚡📚  |       | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/24(Sep)%20Design%20MinMax%20Queue.md#-code-python>) |
 | 25 September  | Generate Binary Numbers 🔢📟🖥️  |   [Solution](</September%202025%20GFG%20SOLUTION/25(Sep)%20Generate%20Binary%20Numbers.md#-code-c>)    | [Solution](</September%202025%20GFG%20SOLUTION/25(Sep)%20Generate%20Binary%20Numbers.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/25(Sep)%20Generate%20Binary%20Numbers.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/25(Sep)%20Generate%20Binary%20Numbers.md#-code-python>) |
+| 26 September  | Rotate Deque By K 🔄➡️↩️  |       | [Solution](</September%202025%20GFG%20SOLUTION/26(Sep)%20Rotate%20Deque%20By%20K.md#%E2%80%8D-code-c>) | [Solution](</September%202025%20GFG%20SOLUTION/26(Sep)%20Rotate%20Deque%20By%20K.md#-code-java>) | [Solution](</September%202025%20GFG%20SOLUTION/26(Sep)%20Rotate%20Deque%20By%20K.md#-code-python>) |
 
 
 
