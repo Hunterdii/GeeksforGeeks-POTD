@@ -34,6 +34,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 26: Rotate Deque By K](26(Sep)%20Rotate%20Deque%20By%20K.md)🔄➡️↩️
 - [Day 27: Minimum K Consecutive Bit Flips](/September%202025%20GFG%20SOLUTION/27(Sep)%20Minimum%20K%20Consecutive%20Bit%20Flips.md)⚪➡️🔀
 - [Day 28: Longest Bounded-Difference Subarray](28(Sep)%20Longest%20Bounded-Difference%20Subarray.md)📏🔄📍
+- [Maximum subarray sum 2](29(Sep)%20Maximum%20subarray%20sum%202.md)💹📦🔄	
 
 ## Introduction
 
@@ -95,5 +96,6 @@ _Day 27(27 SEP) :_ Minimum K Consecutive Bit Flips
 
 _Day 28(28 SEP) :_ Longest Bounded-Difference Subarray
 
-<!--_Day 29(29 SEP) :_ 
-_Day 30(30 SEP) :_ -->
+_Day 29(29 SEP) :_ Maximum subarray sum 2
+
+<!--_Day 30(30 SEP) :_ -->
