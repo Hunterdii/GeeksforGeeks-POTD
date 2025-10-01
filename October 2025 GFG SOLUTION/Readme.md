@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: All Unique Permutations of an array]()🔀🌀♻️
+- [Day 1: All Unique Permutations of an array](01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md)🔀🌀♻️
 
 ## Introduction
 
