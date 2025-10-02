@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 1: All Unique Permutations of an array](01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md)🔀🌀♻️
+- [Day 2: Unique K-Number Sum](02(Oct)%20Unique%20K-Number%20Sum.md)🎯🪄📈
 
 ## Introduction
 
@@ -14,9 +15,10 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 _Day 1(01 OCT) :_ All Unique Permutations of an array
 
-<!--_Day 2(02 OCT) :_ 
+_Day 2(02 OCT) :_ Unique K-Number Sum
 
-_Day 3(03 OCT) :_ 
+
+<!--_Day 3(03 OCT) :_ 
 
 _Day 4(04 OCT) :_ 
 
