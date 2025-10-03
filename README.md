@@ -37,6 +37,8 @@
 | :------: | :-------------------------------------------------------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 | 01 October  | All Unique Permutations of an array 🔀🌀♻️  |       | [Solution](</October%202025%20GFG%20SOLUTION/01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md#-code-python>) |
 | 02 October  | Unique K-Number Sum 🪄📈🎯  |       | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#-code-python>) |
+| 03 October  | Possible Words From Phone Digits 📱📞🔢  |       | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#-code-python>) |
+
 
 
 
