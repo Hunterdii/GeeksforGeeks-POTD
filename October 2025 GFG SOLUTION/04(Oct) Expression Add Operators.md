@@ -1,3 +1,12 @@
+---
+title: "🧮 Expression Add Operators | GFG Solution 🔍"
+keywords🏷️: ["🧮 expression add operators", "🔍 backtracking", "📍 recursion", "💡 DFS", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
+author: "✍️ Het Patel (Hunterdii)"
+description: "✅ GFG solution to the Expression Add Operators problem: insert +, -, * between digits to reach a target value using DFS & backtracking. 🚀"
+date: 📅 2025-10-04
+---
+
+
 # *04. Expression Add Operators*
 
 The problem can be found at the following link: 🔗 [Question Link](https://www.geeksforgeeks.org/problems/expression-add-operators/1)
