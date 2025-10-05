@@ -9,7 +9,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: All Unique Permutations of an array](01(Oct)%20All%20Unique%20Permutations%20of%20an%20array.md)🔀🌀♻️
 - [Day 2: Unique K-Number Sum](02(Oct)%20Unique%20K-Number%20Sum.md)🎯🪄📈
 - [Day 3: Possible Words From Phone Digits](03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md)📱📞🔢
-- [Day 4: Expression Add Operators](04(Oct)%20Expression%20Add%20Operators.md)💡🧮🏁	
+- [Day 4: Expression Add Operators](04(Oct)%20Expression%20Add%20Operators.md)💡🧮🏁
+- [Day 5: Rat in a Maze](05(Oct)%20Rat%20in%20a%20Maze.md)🐭🐀🚀	
 
 ## Introduction
 
@@ -23,9 +24,9 @@ _Day 3(03 OCT) :_ Possible Words From Phone Digits
 
 _Day 4(04 OCT) :_ Expression Add Operators 
 
-<!--_Day 5(05 OCT) :_ 
+_Day 5(05 OCT) :_ Rat in a Maze 
 
-_Day 6(06 OCT) :_ 
+<!--_Day 6(06 OCT) :_ 
 
 _Day 7(07 OCT) :_ 
 
