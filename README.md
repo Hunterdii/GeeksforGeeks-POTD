@@ -39,7 +39,7 @@
 | 02 October  | Unique K-Number Sum 🪄📈🎯  |       | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/02(Oct)%20Unique%20K-Number%20Sum.md#-code-python>) |
 | 03 October  | Possible Words From Phone Digits 📱📞🔢  |       | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md#-code-python>) |
 | 04 October  | Expression Add Operators 💡🧮🏁  |   [Solution](</October%202025%20GFG%20SOLUTION/04(Oct)%20Expression%20Add%20Operators.md#ⓜ%EF%B8%8F-code-c>)    | [Solution](</October%202025%20GFG%20SOLUTION/04(Oct)%20Expression%20Add%20Operators.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/04(Oct)%20Expression%20Add%20Operators.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/04(Oct)%20Expression%20Add%20Operators.md#-code-python>) |
-
+| 05 October  | Rat in a Maze 🐭🐀🚀  |       | [Solution](</October%202025%20GFG%20SOLUTION/05(Oct)%20Rat%20in%20a%20Maze.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/05(Oct)%20Rat%20in%20a%20Maze.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/05(Oct)%20Rat%20in%20a%20Maze.md#-code-python>) |
 
 
 
