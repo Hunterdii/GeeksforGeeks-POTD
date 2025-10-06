@@ -10,7 +10,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Unique K-Number Sum](02(Oct)%20Unique%20K-Number%20Sum.md)🎯🪄📈
 - [Day 3: Possible Words From Phone Digits](03(Oct)%20Possible%20Words%20From%20Phone%20Digits.md)📱📞🔢
 - [Day 4: Expression Add Operators](04(Oct)%20Expression%20Add%20Operators.md)💡🧮🏁
-- [Day 5: Rat in a Maze](05(Oct)%20Rat%20in%20a%20Maze.md)🐭🐀🚀	
+- [Day 5: Rat in a Maze](05(Oct)%20Rat%20in%20a%20Maze.md)🐭🐀🚀
+- [Day 6: The Knight's tour problem](06(Oct)%20The%20Knight's%20tour%20problem.md)♞♟️🔄	
 
 ## Introduction
 
@@ -26,9 +27,9 @@ _Day 4(04 OCT) :_ Expression Add Operators
 
 _Day 5(05 OCT) :_ Rat in a Maze 
 
-<!--_Day 6(06 OCT) :_ 
+_Day 6(06 OCT) :_ The Knight's tour problem
 
-_Day 7(07 OCT) :_ 
+<!--_Day 7(07 OCT) :_ 
 
 _Day 8(08 OCT) :_ 
 
