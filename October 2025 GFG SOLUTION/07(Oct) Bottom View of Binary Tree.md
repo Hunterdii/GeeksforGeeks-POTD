@@ -3,7 +3,7 @@ title: "🌳 Bottom View of Binary Tree | GFG Solution 🔍"
 keywords🏷️: ["🌳 binary tree", "🔍 bottom view", "📍 BFS traversal", "📈 horizontal distance", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to the Bottom View of Binary Tree problem: find nodes visible from bottom using level order traversal and horizontal distance tracking. 🚀"
-date: 📅 2025-10-06
+date: 📅 2025-10-07
 ---
 
 # *07. Bottom View of Binary Tree*
