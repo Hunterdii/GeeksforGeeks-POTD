@@ -12,7 +12,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 4: Expression Add Operators](04(Oct)%20Expression%20Add%20Operators.md)💡🧮🏁
 - [Day 5: Rat in a Maze](05(Oct)%20Rat%20in%20a%20Maze.md)🐭🐀🚀
 - [Day 6: The Knight's tour problem](06(Oct)%20The%20Knight's%20tour%20problem.md)♞♟️🔄
-- [Day 7: Bottom View of Binary Tree](07(Oct)%20Bottom%20View%20of%20Binary%20Tree.md)🌳📚🔍	
+- [Day 7: Bottom View of Binary Tree](07(Oct)%20Bottom%20View%20of%20Binary%20Tree.md)🌳📚🔍
+- [Day 8: Construct Tree from Preorder & Postorder](08(Oct)%20Construct%20Tree%20from%20Preorder%20%26%20Postorder.md)🌳🌲📘
 
 ## Introduction
 
@@ -32,10 +33,9 @@ _Day 6(06 OCT) :_ The Knight's tour problem
 
 _Day 7(07 OCT) :_ Bottom View of Binary Tree
 
+_Day 8(08 OCT) :_ Construct Tree from Preorder & Postorder
 
-<!--_Day 8(08 OCT) :_ 
-
-_Day 9(09 OCT) :_ 
+<!--_Day 9(09 OCT) :_ 
 
 _Day 10(10 OCT) :_ 
 
