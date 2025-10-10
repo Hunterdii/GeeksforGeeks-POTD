@@ -15,6 +15,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: Bottom View of Binary Tree](07(Oct)%20Bottom%20View%20of%20Binary%20Tree.md)🌳📚🔍
 - [Day 8: Construct Tree from Preorder & Postorder](08(Oct)%20Construct%20Tree%20from%20Preorder%20%26%20Postorder.md)🌳🌲📘
 - [Day 9: Postorder Traversal](09(Oct)%20Postorder%20Traversal.md)🔄🌳📊
+- [Day 10: ZigZag Tree Traversal](10(Oct)%20ZigZag%20Tree%20Traversal.md)🔁🌳⬅️	
 
 ## Introduction
 
@@ -38,9 +39,9 @@ _Day 8(08 OCT) :_ Construct Tree from Preorder & Postorder
 
 _Day 9(09 OCT) :_ Postorder Traversal
 
-<!--_Day 10(10 OCT) :_ 
+_Day 10(10 OCT) :_ ZigZag Tree Traversal
 
-_Day 11(11 OCT) :_ 
+<!--_Day 11(11 OCT) :_ 
 
 _Day 12(12 OCT) :_ 
 
