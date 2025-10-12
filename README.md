@@ -46,6 +46,7 @@
 | 09 October  | Postorder Traversal 🔄🌳📊  |   [Solution](</October%202025%20GFG%20SOLUTION/09(Oct)%20Postorder%20Traversal.md#ⓜ%EF%B8%8F-code-c>)    | [Solution](</October%202025%20GFG%20SOLUTION/09(Oct)%20Postorder%20Traversal.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/09(Oct)%20Postorder%20Traversal.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/09(Oct)%20Postorder%20Traversal.md#-code-python>) |
 | 10 October  | ZigZag Tree Traversal 🔁🌳⬅️  |       | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#-code-python>) |
 | 11 October  | Maximum path sum 🌳💰🔝  |       | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-python>) |
+| 12 October  | Distribute Candies 🍬🔢⚖️  |       | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-python>) |
 
 
 
