@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Postorder Traversal](09(Oct)%20Postorder%20Traversal.md)🔄🌳📊
 - [Day 10: ZigZag Tree Traversal](10(Oct)%20ZigZag%20Tree%20Traversal.md)🔁🌳⬅️
 - [Day 11: Maximum path sum](11(Oct)%20Maximum%20path%20sum.md)🌳💰🔝
+- [Day 12: Distribute Candies](12(Oct)%20Distribute%20Candies.md)🍬🔢⚖️
 
 ## Introduction
 
@@ -44,9 +45,9 @@ _Day 10(10 OCT) :_ ZigZag Tree Traversal
 
 _Day 11(11 OCT) :_ Maximum path sum
 
-<!--_Day 12(12 OCT) :_ 
+_Day 12(12 OCT) :_ Distribute Candies
 
-_Day 13(13 OCT) :_ 
+<!--_Day 13(13 OCT) :_ 
 
 _Day 14(14 OCT) :_ 
 
