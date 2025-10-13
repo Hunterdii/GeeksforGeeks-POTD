@@ -47,6 +47,7 @@
 | 10 October  | ZigZag Tree Traversal 🔁🌳⬅️  |       | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/10(Oct)%20ZigZag%20Tree%20Traversal.md#-code-python>) |
 | 11 October  | Maximum path sum 🌳💰🔝  |       | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-python>) |
 | 12 October  | Distribute Candies 🍬🔢⚖️  |       | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-python>) |
+| 13 October  | Maximum Non-Adjacent Nodes Sum 🌳🚫📈  |       | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#-code-python>) |
 
 
 
