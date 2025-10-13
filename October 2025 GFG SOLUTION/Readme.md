@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: ZigZag Tree Traversal](10(Oct)%20ZigZag%20Tree%20Traversal.md)🔁🌳⬅️
 - [Day 11: Maximum path sum](11(Oct)%20Maximum%20path%20sum.md)🌳💰🔝
 - [Day 12: Distribute Candies](12(Oct)%20Distribute%20Candies.md)🍬🔢⚖️
+- [Day 13: Maximum Non-Adjacent Nodes Sum](13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md)🌳🚫📈
 
 ## Introduction
 
@@ -47,9 +48,9 @@ _Day 11(11 OCT) :_ Maximum path sum
 
 _Day 12(12 OCT) :_ Distribute Candies
 
-<!--_Day 13(13 OCT) :_ 
+_Day 13(13 OCT) :_ Maximum Non-Adjacent Nodes Sum
 
-_Day 14(14 OCT) :_ 
+<!--_Day 14(14 OCT) :_ 
 
 _Day 15(15 OCT) :_ 
 
