@@ -48,6 +48,7 @@
 | 11 October  | Maximum path sum 🌳💰🔝  |       | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/11(Oct)%20Maximum%20path%20sum.md#-code-python>) |
 | 12 October  | Distribute Candies 🍬🔢⚖️  |       | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/12(Oct)%20Distribute%20Candies.md#-code-python>) |
 | 13 October  | Maximum Non-Adjacent Nodes Sum 🌳🚫📈  |       | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md#-code-python>) |
+| 14 October  | Sum of Nodes in BST Range 🌳↔️🪓  |       | [Solution](</October%202025%20GFG%20SOLUTION/14(Oct)%20Sum%20of%20Nodes%20in%20BST%20Range.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/14(Oct)%20Sum%20of%20Nodes%20in%20BST%20Range.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/14(Oct)%20Sum%20of%20Nodes%20in%20BST%20Range.md#-code-python>) |
 
 
 
