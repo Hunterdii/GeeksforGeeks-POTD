@@ -20,6 +20,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Distribute Candies](12(Oct)%20Distribute%20Candies.md)🍬🔢⚖️
 - [Day 13: Maximum Non-Adjacent Nodes Sum](13(Oct)%20Maximum%20Non-Adjacent%20Nodes%20Sum.md)🌳🚫📈
 - [Day 14: Sum of Nodes in BST Range](14(Oct)%20Sum%20of%20Nodes%20in%20BST%20Range.md)🌳↔️🪓
+- [Day 15: k-th Smallest in BST](15(Oct)%20k-th%20Smallest%20in%20BST.md)🌳🎯🧩
 
 
 ## Introduction
@@ -54,9 +55,9 @@ _Day 13(13 OCT) :_ Maximum Non-Adjacent Nodes Sum
 
 _Day 14(14 OCT) :_ Sum of Nodes in BST Range
 
-<!--_Day 15(15 OCT) :_ 
+_Day 15(15 OCT) :_ k-th Smallest in BST
 
-_Day 16(16 OCT) :_ 
+<!--_Day 16(16 OCT) :_ 
 
 _Day 17(17 OCT) :_ 
 
