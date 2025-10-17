@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Sum of Nodes in BST Range](14(Oct)%20Sum%20of%20Nodes%20in%20BST%20Range.md)🌳↔️🪓
 - [Day 15: k-th Smallest in BST](15(Oct)%20k-th%20Smallest%20in%20BST.md)🌳🎯🧩
 - [Day 16: Remove BST keys outside given range](16(Oct)%20Remove%20BST%20keys%20outside%20given%20range.md)🌳🏁🔄
+- [Day 17: BST to greater sum tree](17(Oct)%20BST%20to%20greater%20sum%20tree.md)🔄📊🌳	
 
 
 ## Introduction
@@ -60,9 +61,9 @@ _Day 15(15 OCT) :_ k-th Smallest in BST
 
 _Day 16(16 OCT) :_ Remove BST keys outside given range
 
-<!--_Day 17(17 OCT) :_ 
+_Day 17(17 OCT) :_ BST to greater sum tree
 
-_Day 18(18 OCT) :_ 
+<!--_Day 18(18 OCT) :_ 
 
 _Day 19(19 OCT) :_ 
 
