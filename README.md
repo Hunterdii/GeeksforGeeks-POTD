@@ -53,6 +53,7 @@
 | 16 October  | Remove BST keys outside given range 🌳🏁🔄  |       | [Solution](</October%202025%20GFG%20SOLUTION/16(Oct)%20Remove%20BST%20keys%20outside%20given%20range.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/16(Oct)%20Remove%20BST%20keys%20outside%20given%20range.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/16(Oct)%20Remove%20BST%20keys%20outside%20given%20range.md#-code-python>) |
 | 17 October  | BST to greater sum tree 🔄📊🌳  |       | [Solution](</October%202025%20GFG%20SOLUTION/17(Oct)%20BST%20to%20greater%20sum%20tree.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/17(Oct)%20BST%20to%20greater%20sum%20tree.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/17(Oct)%20BST%20to%20greater%20sum%20tree.md#-code-python>) |
 | 18 October  | Median of BST 🌳⚖️📈  |       | [Solution](</October%202025%20GFG%20SOLUTION/18(Oct)%20Median%20of%20BST.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/18(Oct)%20Median%20of%20BST.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/18(Oct)%20Median%20of%20BST.md#-code-python>) |
+| 19 October  | K closest Values 📏🎯🌳  |       | [Solution](</October%202025%20GFG%20SOLUTION/19(Oct)%20K%20closest%20Values.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/19(Oct)%20K%20closest%20Values.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/19(Oct)%20K%20closest%20Values.md#-code-python>) |
 
 
 
