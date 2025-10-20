@@ -25,7 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 17: BST to greater sum tree](17(Oct)%20BST%20to%20greater%20sum%20tree.md)🔄📊🌳
 - [Day 18: Median of BST](18(Oct)%20Median%20of%20BST.md)🌳⚖️📈
 - [Day 19: K closest Values](19(Oct)%20K%20closest%20Values.md)📏🎯🌳
-- [Day 20: Number of BST From Array]()🌳🔢🚀
+- [Day 20: Number of BST From Array](20(Oct)%20Number%20of%20BST%20From%20Array.md)🌳🔢🚀
 
 
 ## Introduction
