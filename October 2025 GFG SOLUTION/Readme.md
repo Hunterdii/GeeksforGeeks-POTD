@@ -26,6 +26,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Median of BST](18(Oct)%20Median%20of%20BST.md)🌳⚖️📈
 - [Day 19: K closest Values](19(Oct)%20K%20closest%20Values.md)📏🎯🌳
 - [Day 20: Number of BST From Array](20(Oct)%20Number%20of%20BST%20From%20Array.md)🌳🔢🚀
+- [Day 21: Top K Frequent Elements in Array](21(Oct)%20Top%20K%20Frequent%20in%20Array.md)🔝📊⚡
+- [Day 22: Nearly sorted](22(Oct)%20Nearly%20sorted.md)🧩📉🪜
 
 
 ## Introduction
@@ -72,11 +74,11 @@ _Day 19(19 OCT) :_ K closest Values
 
 _Day 20(20 OCT) :_ Number of BST From Array
 
-<!--_Day 21(21 OCT) :_ 
+_Day 21(21 OCT) :_ Top K Frequent Elements in Array
 
-_Day 22(22 OCT) :_ 
+_Day 22(22 OCT) :_ Nearly sorted
 
-_Day 23(23 OCT) :_ 
+<!--_Day 23(23 OCT) :_ 
 
 _Day 24(24 OCT) :_ 
 
