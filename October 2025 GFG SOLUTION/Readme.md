@@ -28,6 +28,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Number of BST From Array](20(Oct)%20Number%20of%20BST%20From%20Array.md)🌳🔢🚀
 - [Day 21: Top K Frequent Elements in Array](21(Oct)%20Top%20K%20Frequent%20in%20Array.md)🔝📊⚡
 - [Day 22: Nearly sorted](22(Oct)%20Nearly%20sorted.md)🧩📉🪜
+- [Day 23: K Closest Points to Origin](23(Oct)%20K%20Closest%20Points%20to%20Origin.md)📍🧭↔️
 
 
 ## Introduction
@@ -78,9 +79,9 @@ _Day 21(21 OCT) :_ Top K Frequent Elements in Array
 
 _Day 22(22 OCT) :_ Nearly sorted
 
-<!--_Day 23(23 OCT) :_ 
+_Day 23(23 OCT) :_ K Closest Points to Origin
 
-_Day 24(24 OCT) :_ 
+<!--_Day 24(24 OCT) :_ 
 
 _Day 25(25 OCT) :_ 
 
