@@ -58,6 +58,7 @@
 | 21 October  | Top K Frequent in Array 🔝📊⚡  |       | [Solution](</October%202025%20GFG%20SOLUTION/21(Oct)%20Top%20K%20Frequent%20in%20Array.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/21(Oct)%20Top%20K%20Frequent%20in%20Array.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/21(Oct)%20Top%20K%20Frequent%20in%20Array.md#-code-python>) |
 | 22 October  | Nearly sorted 🧩📉🪜 |       | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#-code-python>) |
 | 23 October  | K Closest Points to Origin 📍🧭↔️ |       | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#-code-python>) |
+| 24 October  | Split Array Subsequences 🔢✂️💻 |       | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#-code-python>) |
 
 
 
