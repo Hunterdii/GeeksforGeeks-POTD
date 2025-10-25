@@ -59,6 +59,7 @@
 | 22 October  | Nearly sorted 🧩📉🪜 |       | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/22(Oct)%20Nearly%20sorted.md#-code-python>) |
 | 23 October  | K Closest Points to Origin 📍🧭↔️ |       | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/23(Oct)%20K%20Closest%20Points%20to%20Origin.md#-code-python>) |
 | 24 October  | Split Array Subsequences 🔢✂️💻 |       | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/24(Oct)%20Split%20Array%20Subsequences.md#-code-python>) |
+| 25 October  | Minimum Steps to Halve Sum ⚖️📉➗ |       | [Solution](</October%202025%20GFG%20SOLUTION/25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md#-code-python>) |
 
 
 
