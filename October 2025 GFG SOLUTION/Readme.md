@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: K Closest Points to Origin](23(Oct)%20K%20Closest%20Points%20to%20Origin.md)📍🧭↔️
 - [Day 24: Split Array Subsequences](24(Oct)%20Split%20Array%20Subsequences.md)🔢✂️💻
 - [Day 25: Minimum Steps to Halve Sum](25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md)⚖️📉➗
+- [Day 26: Minimum Cost of ropes](26(Oct)%20Minimum%20Cost%20of%20ropes.md)🪢🔗🌳
 
 
 ## Introduction
@@ -87,9 +88,9 @@ _Day 24(24 OCT) :_ Split Array Subsequences
 
 _Day 25(25 OCT) :_ Minimum Steps to Halve Sum
 
-<!--_Day 26(26 OCT) :_ 
+_Day 26(26 OCT) :_ Minimum Cost of ropes
 
-_Day 27(27 OCT) :_ 
+<!--_Day 27(27 OCT) :_ 
 
 _Day 28(28 OCT) :_ 
 
