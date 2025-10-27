@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Split Array Subsequences](24(Oct)%20Split%20Array%20Subsequences.md)🔢✂️💻
 - [Day 25: Minimum Steps to Halve Sum](25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md)⚖️📉➗
 - [Day 26: Minimum Cost of ropes](26(Oct)%20Minimum%20Cost%20of%20ropes.md)🪢🔗🌳
+- [Day 27: Find K Smallest Sum Pairs](27(Oct)%20Find%20K%20Smallest%20Sum%20Pairs.md)📈🔢📦
 
 
 ## Introduction
@@ -90,9 +91,9 @@ _Day 25(25 OCT) :_ Minimum Steps to Halve Sum
 
 _Day 26(26 OCT) :_ Minimum Cost of ropes
 
-<!--_Day 27(27 OCT) :_ 
+_Day 27(27 OCT) :_ Find K Smallest Sum Pairs
 
-_Day 28(28 OCT) :_ 
+<!--_Day 28(28 OCT) :_ 
 
 _Day 29(29 OCT) :_ 
 
