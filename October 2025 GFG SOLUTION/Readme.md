@@ -33,6 +33,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Minimum Steps to Halve Sum](25(Oct)%20Minimum%20Steps%20to%20Halve%20Sum.md)⚖️📉➗
 - [Day 26: Minimum Cost of ropes](26(Oct)%20Minimum%20Cost%20of%20ropes.md)🪢🔗🌳
 - [Day 27: Find K Smallest Sum Pairs](27(Oct)%20Find%20K%20Smallest%20Sum%20Pairs.md)📈🔢📦
+- [Day 28: Distance of nearest cell having 1](28(Oct)%20Distance%20of%20nearest%20cell%20having%201.md)🗺️🌊🔢
 
 
 ## Introduction
@@ -93,8 +94,8 @@ _Day 26(26 OCT) :_ Minimum Cost of ropes
 
 _Day 27(27 OCT) :_ Find K Smallest Sum Pairs
 
-<!--_Day 28(28 OCT) :_ 
+_Day 28(28 OCT) :_ Distance of nearest cell having 1
 
-_Day 29(29 OCT) :_ 
+<!--_Day 29(29 OCT) :_ 
 
 _Day 30(30 OCT) :_ -->
