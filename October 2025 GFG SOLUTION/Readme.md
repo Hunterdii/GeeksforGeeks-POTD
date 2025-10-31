@@ -36,6 +36,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 28: Distance of nearest cell having 1](28(Oct)%20Distance%20of%20nearest%20cell%20having%201.md)🗺️🌊🔢
 - [Day 29: Graph Diameter](29(Oct)%20Graph%20Diameter.md)🌳🌐📉
 - [Day 30: Replace O's with X's](30(Oct)%20Replace%20O's%20with%20X's.md)🔄🌊📍
+- [Day 31: Shortest Cycle](31(Oct)%20Shortest%20Cycle.md)🔁🔄📈
 
 
 ## Introduction
@@ -102,3 +103,4 @@ _Day 29(29 OCT) :_ Graph Diameter
 
 _Day 30(30 OCT) :_ Replace O's with X's
 
+_Day 31(31 OCT) :_ Shortest Cycle
