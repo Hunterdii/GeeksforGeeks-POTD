@@ -65,6 +65,7 @@
 | 28 October  | Distance of nearest cell having 1 🗺️🌊🔢 |       | [Solution](</October%202025%20GFG%20SOLUTION/28(Oct)%20Distance%20of%20nearest%20cell%20having%201.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/28(Oct)%20Distance%20of%20nearest%20cell%20having%201.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/28(Oct)%20Distance%20of%20nearest%20cell%20having%201.md#-code-python>) |
 | 29 October  | Graph Diameter 🌳🌐📉 |       | [Solution](</October%202025%20GFG%20SOLUTION/29(Oct)%20Graph%20Diameter.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/29(Oct)%20Graph%20Diameter.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/29(Oct)%20Graph%20Diameter.md#-code-python>) |
 | 30 October  | Replace O's with X's 🔄🌊📍 |       | [Solution](</October%202025%20GFG%20SOLUTION/30(Oct)%20Replace%20O's%20with%20X's.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/30(Oct)%20Replace%20O's%20with%20X's.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/30(Oct)%20Replace%20O's%20with%20X's.md#-code-python>) |
+| 31 October  | Shortest Cycle 🔁🔄📈 |       | [Solution](</October%202025%20GFG%20SOLUTION/31(Oct)%20Shortest%20Cycle.md#%E2%80%8D-code-c>) | [Solution](</October%202025%20GFG%20SOLUTION/31(Oct)%20Shortest%20Cycle.md#-code-java>) | [Solution](</October%202025%20GFG%20SOLUTION/31(Oct)%20Shortest%20Cycle.md#-code-python>) |
 
 
 
