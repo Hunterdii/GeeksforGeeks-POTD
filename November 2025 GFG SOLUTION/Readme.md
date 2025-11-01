@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: Course Schedule II]()🔀📚🔄
+- [Day 1: Course Schedule II](01(Nov)%20Course%20Schedule%20II.md)🔀📚🔄
 
 
 ## Introduction
