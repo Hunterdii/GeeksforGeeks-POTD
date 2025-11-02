@@ -7,16 +7,18 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 1: Course Schedule II](01(Nov)%20Course%20Schedule%20II.md)🔀📚🔄
+- [Day 2: Max DAG Edges](02(Nov)%20Max%20DAG%20Edges.md)🧮📊📘
 
 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-_Day 1(01 NOV) :_ 
+_Day 1(01 NOV) :_ Course Schedule II
 
-<!--_Day 2(02 NOV) :_ 
-_Day 3(03 NOV) :_ 
+_Day 2(02 NOV) :_ Max DAG Edges
+
+<!--_Day 3(03 NOV) :_ 
 _Day 4(04 NOV) :_ 
 _Day 5(05 NOV) :_ 
 _Day 6(06 NOV) :_ 
