@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
 - [Day 1: Course Schedule II](01(Nov)%20Course%20Schedule%20II.md)🔀📚🔄
 - [Day 2: Max DAG Edges](02(Nov)%20Max%20DAG%20Edges.md)🧮📊📘
+- [Day 3: Safe States](03(Nov)%20Safe%20States.md)🔒🛡️✅
 
 
 ## Introduction
@@ -18,8 +19,9 @@ _Day 1(01 NOV) :_ Course Schedule II
 
 _Day 2(02 NOV) :_ Max DAG Edges
 
-<!--_Day 3(03 NOV) :_ 
-_Day 4(04 NOV) :_ 
+_Day 3(03 NOV) :_ Safe States
+
+<!--_Day 4(04 NOV) :_ 
 _Day 5(05 NOV) :_ 
 _Day 6(06 NOV) :_ 
 _Day 7(07 NOV) :_ 
