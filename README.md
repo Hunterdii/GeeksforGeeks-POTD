@@ -37,6 +37,7 @@
 | :------: | :-------------------------------------------------------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 | 01 November  | Course Schedule II 🔀📚🔄  |       | [Solution](</November%202025%20GFG%20SOLUTION/01(Nov)%20Course%20Schedule%20II.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/01(Nov)%20Course%20Schedule%20II.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/01(Nov)%20Course%20Schedule%20II.md#-code-python>) |
 | 02 November  | Max DAG Edges 🧮📊📘  |       | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#-code-python>) |
+| 03 November  | Safe States 🔒🛡️✅  |       | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#-code-python>) |
 
 
 ---
