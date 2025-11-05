@@ -39,6 +39,7 @@
 | 02 November  | Max DAG Edges 🧮📊📘  |       | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/02(Nov)%20Max%20DAG%20Edges.md#-code-python>) |
 | 03 November  | Safe States 🔒🛡️✅  |       | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/03(Nov)%20Safe%20States.md#-code-python>) |
 | 04 November  | Frog Jump 🐸🏗️💡  |   [Solution](</November%202025%20GFG%20SOLUTION/04(Nov)%20Frog%20Jump.md#%E2%80%8D-code-c>)    | [Solution](</November%202025%20GFG%20SOLUTION/04(Nov)%20Frog%20Jump.md#%E2%80%8D-code-c-1>) | [Solution](</November%202025%20GFG%20SOLUTION/04(Nov)%20Frog%20Jump.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/04(Nov)%20Frog%20Jump.md#-code-python>) |
+| 05 November  | Get Minimum Squares 🧮📏💭  |       | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#-code-python>) |
 
 
 ---
