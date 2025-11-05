@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Max DAG Edges](02(Nov)%20Max%20DAG%20Edges.md)🧮📊📘
 - [Day 3: Safe States](03(Nov)%20Safe%20States.md)🔒🛡️✅
 - [Day 4: Frog Jump](04(Nov)%20Frog%20Jump.md)🐸🏗️💡
+- [Day 5: Get Minimum Squares](05(Nov)%20Get%20Minimum%20Squares.md)🧮📏💭
 
 
 ## Introduction
@@ -24,8 +25,9 @@ _Day 3(03 NOV) :_ Safe States
 
 _Day 4(04 NOV) :_ Frog Jump
 
-<!--_Day 5(05 NOV) :_ 
-_Day 6(06 NOV) :_ 
+_Day 5(05 NOV) :_ Get Minimum Squares
+
+<!--_Day 6(06 NOV) :_ 
 _Day 7(07 NOV) :_ 
 _Day 8(08 NOV) :_ 
 _Day 9(09 NOV) :_ 
