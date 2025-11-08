@@ -11,6 +11,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 3: Safe States](03(Nov)%20Safe%20States.md)🔒🛡️✅
 - [Day 4: Frog Jump](04(Nov)%20Frog%20Jump.md)🐸🏗️💡
 - [Day 5: Get Minimum Squares](05(Nov)%20Get%20Minimum%20Squares.md)🧮📏💭
+- [Day 6: Ways To Tile A Floor](06(Nov)%20Ways%20To%20Tile%20A%20Floor.md)🧱📐🪵	
+- [Day 7: Weighted Job Scheduling](07(Nov)%20Weighted%20Job%20Scheduling.md)⏰📅💰	
+- [Day 8: Number of paths in a matrix with k coins](08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md)🪙🧭🚀
 
 
 ## Introduction
@@ -27,10 +30,13 @@ _Day 4(04 NOV) :_ Frog Jump
 
 _Day 5(05 NOV) :_ Get Minimum Squares
 
-<!--_Day 6(06 NOV) :_ 
-_Day 7(07 NOV) :_ 
-_Day 8(08 NOV) :_ 
-_Day 9(09 NOV) :_ 
+_Day 6(06 NOV) :_ Ways To Tile A Floor
+
+_Day 7(07 NOV) :_ Weighted Job Scheduling
+
+_Day 8(08 NOV) :_ Number of paths in a matrix with k coins 
+
+<!--_Day 9(09 NOV) :_ 
 _Day 10(10 NOV) :_ 
 _Day 11(11 NOV) :_ 
 _Day 12(12 NOV) :_ 
