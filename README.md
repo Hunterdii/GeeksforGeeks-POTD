@@ -42,6 +42,8 @@
 | 05 November  | Get Minimum Squares 🧮📏💭  |       | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/05(Nov)%20Get%20Minimum%20Squares.md#-code-python>) |
 | 06 November  | Ways To Tile A Floor 🧱📐🪵  |       | [Solution](</November%202025%20GFG%20SOLUTION/06(Nov)%20Ways%20To%20Tile%20A%20Floor.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/06(Nov)%20Ways%20To%20Tile%20A%20Floor.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/06(Nov)%20Ways%20To%20Tile%20A%20Floor.md#-code-python>) |
 | 07 November  | Weighted Job Scheduling ⏰📅💰  |       | [Solution](</November%202025%20GFG%20SOLUTION/07(Nov)%20Weighted%20Job%20Scheduling.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/07(Nov)%20Weighted%20Job%20Scheduling.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/07(Nov)%20Weighted%20Job%20Scheduling.md#-code-python>) |
+| 08 November  | Number of paths in a matrix with k coins 🪙🧭🚀  |       | [Solution](</November%202025%20GFG%20SOLUTION/08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md#-code-python>) |
+
 
 
 ---
