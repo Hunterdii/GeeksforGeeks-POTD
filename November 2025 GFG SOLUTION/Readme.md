@@ -14,6 +14,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Ways To Tile A Floor](06(Nov)%20Ways%20To%20Tile%20A%20Floor.md)🧱📐🪵	
 - [Day 7: Weighted Job Scheduling](07(Nov)%20Weighted%20Job%20Scheduling.md)⏰📅💰	
 - [Day 8: Number of paths in a matrix with k coins](08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md)🪙🧭🚀
+- [Day 9: Chocolate Pickup II](09(Nov)%20Chocolate%20Pickup%20II.md)🍫🤖🍬
+
 
 
 ## Introduction
@@ -36,8 +38,9 @@ _Day 7(07 NOV) :_ Weighted Job Scheduling
 
 _Day 8(08 NOV) :_ Number of paths in a matrix with k coins 
 
-<!--_Day 9(09 NOV) :_ 
-_Day 10(10 NOV) :_ 
+_Day 9(09 NOV) :_ Chocolate Pickup II
+
+<!--_Day 10(10 NOV) :_ 
 _Day 11(11 NOV) :_ 
 _Day 12(12 NOV) :_ 
 _Day 13(13 NOV) :_ 
