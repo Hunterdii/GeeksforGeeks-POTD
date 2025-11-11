@@ -15,6 +15,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: Weighted Job Scheduling](07(Nov)%20Weighted%20Job%20Scheduling.md)⏰📅💰	
 - [Day 8: Number of paths in a matrix with k coins](08(Nov)%20Number%20of%20paths%20in%20a%20matrix%20with%20k%20coins.md)🪙🧭🚀
 - [Day 9: Chocolate Pickup II](09(Nov)%20Chocolate%20Pickup%20II.md)🍫🤖🍬
+- [Day 10: Stock Buy and Sell with Cooldown](10(Nov)%20Stock%20Buy%20and%20Sell%20with%20Cooldown.md)📈💰🧊
+- [Day 11: Shortest Common Supersequence](11(Nov)%20Shortest%20Common%20Supersequence.md)⏳✨🔤	
 
 
 
@@ -40,9 +42,11 @@ _Day 8(08 NOV) :_ Number of paths in a matrix with k coins
 
 _Day 9(09 NOV) :_ Chocolate Pickup II
 
-<!--_Day 10(10 NOV) :_ 
-_Day 11(11 NOV) :_ 
-_Day 12(12 NOV) :_ 
+_Day 10(10 NOV) :_ Stock Buy and Sell with Cooldown 
+
+_Day 11(11 NOV) :_ Shortest Common Supersequence 	
+
+<!--_Day 12(12 NOV) :_ 
 _Day 13(13 NOV) :_ 
 _Day 14(14 NOV) :_ 
 _Day 15(15 NOV) :_ 
