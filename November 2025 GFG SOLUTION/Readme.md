@@ -18,6 +18,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 10: Stock Buy and Sell with Cooldown](10(Nov)%20Stock%20Buy%20and%20Sell%20with%20Cooldown.md)📈💰🧊
 - [Day 11: Shortest Common Supersequence](11(Nov)%20Shortest%20Common%20Supersequence.md)⏳✨🔤
 - [Day 12: Wildcard Pattern Matching](12(Nov)%20Wildcard%20Pattern%20Matching.md)🎭🔍💻
+- [Day 13: Interleaved Strings](13(Nov)%20Interleaved%20Strings.md)🔀🧩🏷️
 
 
 
@@ -49,8 +50,9 @@ _Day 11(11 NOV) :_ Shortest Common Supersequence
 
 _Day 12(12 NOV) :_ Wildcard Pattern Matching
 
-<!--_Day 13(13 NOV) :_ 
-_Day 14(14 NOV) :_ 
+_Day 13(13 NOV) :_ Interleaved Strings
+
+<!--_Day 14(14 NOV) :_ 
 _Day 15(15 NOV) :_ 
 _Day 16(16 NOV) :_ 
 _Day 17(17 NOV) :_ 
