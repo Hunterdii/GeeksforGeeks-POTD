@@ -20,7 +20,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: Wildcard Pattern Matching](12(Nov)%20Wildcard%20Pattern%20Matching.md)🎭🔍💻
 - [Day 13: Interleaved Strings](13(Nov)%20Interleaved%20Strings.md)🔀🧩🏷️
 - [Day 14: Minimum Cost to Merge Stones](14(Nov)%20Minimum%20Cost%20to%20Merge%20Stones.md)🪨➕🧠
-- [Day 15: Minimum Cost to Cut a Stick of length N](15(Nov)%20Minimum%20Cost%20to%20Cut%20a%20Stick%20of%20length%20N.md)🔪📏✂️	
+- [Day 15: Minimum Cost to Cut a Stick of length N](15(Nov)%20Minimum%20Cost%20to%20Cut%20a%20Stick%20of%20length%20N.md)🔪📏✂️
+- [Day 16: Longest Common Increasing Subsequence](16(Nov)%20Longest%20Common%20Increasing%20Subsequence.md)🔗🔍🏷️
 
 
 
@@ -58,8 +59,9 @@ _Day 14(14 NOV) :_ Minimum Cost to Merge Stones
 
 _Day 15(15 NOV) :_ Minimum Cost to Cut a Stick of length N
 
-<!--_Day 16(16 NOV) :_ 
-_Day 17(17 NOV) :_ 
+_Day 16(16 NOV) :_ Longest Common Increasing Subsequence
+
+<!--_Day 17(17 NOV) :_ 
 _Day 18(18 NOV) :_ 
 _Day 19(19 NOV) :_ 
 _Day 20(20 NOV) :_ 
