@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Longest Common Increasing Subsequence](16(Nov)%20Longest%20Common%20Increasing%20Subsequence.md)🔗🔍🏷️
 - [Day 17: Max Sum Increasing Subsequence](17(Nov)%20Max%20Sum%20Increasing%20Subsequence.md)📈🌱🧩
 - [Day 18: Number of Ways to Arrive at Destination](18(Nov)%20Number%20of%20Ways%20to%20Arrive%20at%20Destination.md)🛣️🚦🧭
+- [Path With Minimum Effort](19(Nov)%20Path%20With%20Minimum%20Effort.md)🗺️⛰️🚶‍♂️	
 
 
 
@@ -67,8 +68,9 @@ _Day 17(17 NOV) :_ Max Sum Increasing Subsequence
 
 _Day 18(18 NOV) :_ Number of Ways to Arrive at Destination 
 
-<!--_Day 19(19 NOV) :_ 
-_Day 20(20 NOV) :_ 
+_Day 19(19 NOV) :_ Path With Minimum Effort 
+
+<!--_Day 20(20 NOV) :_ 
 _Day 21(21 NOV) :_ 
 _Day 22(22 NOV) :_ 
 _Day 23(23 NOV) :_ 
