@@ -26,6 +26,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Number of Ways to Arrive at Destination](18(Nov)%20Number%20of%20Ways%20to%20Arrive%20at%20Destination.md)🛣️🚦🧭
 - [Day 19: Path With Minimum Effort](19(Nov)%20Path%20With%20Minimum%20Effort.md)🗺️⛰️🚶‍♂️
 - [Day 20: Make Strings Equal](20(Nov)%20Make%20Strings%20Equal.md)🔤🔁⚖️
+- [Day 21: Shortest Path Using Atmost One Curved Edge](21(Nov)%20Shortest%20Path%20Using%20Atmost%20One%20Curved%20Edge.md)🚦🛣️➰
 
 
 
@@ -73,8 +74,9 @@ _Day 19(19 NOV) :_ Path With Minimum Effort
 
 _Day 20(20 NOV) :_ Make Strings Equal
 
-<!--_Day 21(21 NOV) :_ 
-_Day 22(22 NOV) :_ 
+_Day 21(21 NOV) :_ Shortest Path Using Atmost One Curved Edge 
+
+<!--_Day 22(22 NOV) :_ 
 _Day 23(23 NOV) :_ 
 _Day 24(24 NOV) :_ 
 _Day 25(25 NOV) :_ 
