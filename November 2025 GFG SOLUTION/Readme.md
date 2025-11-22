@@ -27,6 +27,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Path With Minimum Effort](19(Nov)%20Path%20With%20Minimum%20Effort.md)🗺️⛰️🚶‍♂️
 - [Day 20: Make Strings Equal](20(Nov)%20Make%20Strings%20Equal.md)🔤🔁⚖️
 - [Day 21: Shortest Path Using Atmost One Curved Edge](21(Nov)%20Shortest%20Path%20Using%20Atmost%20One%20Curved%20Edge.md)🚦🛣️➰
+- [Day 22: Minimum Operations to Connect Hospitals](22(Nov)%20Minimum%20Operations%20to%20Connect%20Hospitals.md)🏥🌐🧭
+- [Day 23: Maximum Stone Removal](23(Nov)%20Maximum%20Stone%20Removal.md)🪨🌳🔗	
 
 
 
@@ -76,9 +78,11 @@ _Day 20(20 NOV) :_ Make Strings Equal
 
 _Day 21(21 NOV) :_ Shortest Path Using Atmost One Curved Edge 
 
-<!--_Day 22(22 NOV) :_ 
-_Day 23(23 NOV) :_ 
-_Day 24(24 NOV) :_ 
+_Day 22(22 NOV) :_ Minimum Operations to Connect Hospitals
+
+_Day 23(23 NOV) :_ Maximum Stone Removal 
+
+<!--_Day 24(24 NOV) :_ 
 _Day 25(25 NOV) :_ 
 _Day 26(26 NOV) :_ 
 _Day 27(27 NOV) :_ 
