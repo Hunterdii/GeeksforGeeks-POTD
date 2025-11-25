@@ -29,7 +29,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Shortest Path Using Atmost One Curved Edge](21(Nov)%20Shortest%20Path%20Using%20Atmost%20One%20Curved%20Edge.md)🚦🛣️➰
 - [Day 22: Minimum Operations to Connect Hospitals](22(Nov)%20Minimum%20Operations%20to%20Connect%20Hospitals.md)🏥🌐🧭
 - [Day 23: Maximum Stone Removal](23(Nov)%20Maximum%20Stone%20Removal.md)🪨🌳🔗
-- [Day 24: Second Best Minimum Spanning Tree](24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md)🌲⚖️🔁	
+- [Day 24: Second Best Minimum Spanning Tree](24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md)🌲⚖️🔁
+- [Day 25: Game of XOR](25(Nov)%20Game%20of%20XOR.md)🎮🧩⚔️
 
 
 
@@ -85,8 +86,9 @@ _Day 23(23 NOV) :_ Maximum Stone Removal
 
 _Day 24(24 NOV) :_ Second Best Minimum Spanning Tree
 
-<!--_Day 25(25 NOV) :_ 
-_Day 26(26 NOV) :_ 
+_Day 25(25 NOV) :_ Game of XOR
+
+<!--_Day 26(26 NOV) :_ 
 _Day 27(27 NOV) :_ 
 _Day 28(28 NOV) :_ 
 _Day 29(29 NOV) :_ 
