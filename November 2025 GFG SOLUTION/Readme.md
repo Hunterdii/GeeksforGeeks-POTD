@@ -31,6 +31,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Maximum Stone Removal](23(Nov)%20Maximum%20Stone%20Removal.md)🪨🌳🔗
 - [Day 24: Second Best Minimum Spanning Tree](24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md)🌲⚖️🔁
 - [Day 25: Game of XOR](25(Nov)%20Game%20of%20XOR.md)🎮🧩⚔️
+- [Day 26: AND In Range](26(Nov)%20AND%20In%20Range.md)📏➡️🎯
 
 
 
@@ -88,8 +89,9 @@ _Day 24(24 NOV) :_ Second Best Minimum Spanning Tree
 
 _Day 25(25 NOV) :_ Game of XOR
 
-<!--_Day 26(26 NOV) :_ 
-_Day 27(27 NOV) :_ 
+_Day 26(26 NOV) :_ AND In Range
+
+<!--_Day 27(27 NOV) :_ 
 _Day 28(28 NOV) :_ 
 _Day 29(29 NOV) :_ 
 _Day 30(30 NOV) :_ 
