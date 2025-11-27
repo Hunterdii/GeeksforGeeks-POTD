@@ -61,6 +61,7 @@
 | 24 November  | Second Best Minimum Spanning Tree 🌲⚖️🔁   |       | [Solution](</November%202025%20GFG%20SOLUTION/24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md#-code-python>) |
 | 25 November  | Game of XOR 🎮🧩⚔️   |       | [Solution](</November%202025%20GFG%20SOLUTION/25(Nov)%20Game%20of%20XOR.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/25(Nov)%20Game%20of%20XOR.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/25(Nov)%20Game%20of%20XOR.md#-code-python>) |
 | 26 November  | AND In Range 📏➡️🎯   |       | [Solution](</November%202025%20GFG%20SOLUTION/26(Nov)%20AND%20In%20Range.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/26(Nov)%20AND%20In%20Range.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/26(Nov)%20AND%20In%20Range.md#-code-python>) |
+| 27 November  | All Subsets Xor Sum ⚡🧮🔢   |       | [Solution](</November%202025%20GFG%20SOLUTION/27(Nov)%20All%20Subsets%20Xor%20Sum.md#%E2%80%8D-code-c>) | [Solution](</November%202025%20GFG%20SOLUTION/27(Nov)%20All%20Subsets%20Xor%20Sum.md#-code-java>) | [Solution](</November%202025%20GFG%20SOLUTION/27(Nov)%20All%20Subsets%20Xor%20Sum.md#-code-python>) |
 
 
 
