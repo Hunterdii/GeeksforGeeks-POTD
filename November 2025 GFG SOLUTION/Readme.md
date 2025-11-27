@@ -32,6 +32,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Second Best Minimum Spanning Tree](24(Nov)%20Second%20Best%20Minimum%20Spanning%20Tree.md)🌲⚖️🔁
 - [Day 25: Game of XOR](25(Nov)%20Game%20of%20XOR.md)🎮🧩⚔️
 - [Day 26: AND In Range](26(Nov)%20AND%20In%20Range.md)📏➡️🎯
+- [Day 27: All Subsets Xor Sum](27(Nov)%20All%20Subsets%20Xor%20Sum.md)⚡🧮🔢
 
 
 
@@ -91,8 +92,9 @@ _Day 25(25 NOV) :_ Game of XOR
 
 _Day 26(26 NOV) :_ AND In Range
 
-<!--_Day 27(27 NOV) :_ 
-_Day 28(28 NOV) :_ 
+_Day 27(27 NOV) :_ All Subsets Xor Sum
+
+<!--_Day 28(28 NOV) :_ 
 _Day 29(29 NOV) :_ 
 _Day 30(30 NOV) :_ 
 _Day 31(31 NOV) :_ -->
