@@ -33,6 +33,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Game of XOR](25(Nov)%20Game%20of%20XOR.md)🎮🧩⚔️
 - [Day 26: AND In Range](26(Nov)%20AND%20In%20Range.md)📏➡️🎯
 - [Day 27: All Subsets Xor Sum](27(Nov)%20All%20Subsets%20Xor%20Sum.md)⚡🧮🔢
+- [Day 28: Subset XOR](28(Nov)%20Subset%20XOR.md)❌➕🧩
+- [Day 29: Count set bits](29(Nov)%20Count%20set%20bits.md)0️⃣1️⃣🔁
+- [Day 30:Count of distinct substrings](30(Nov)%20Count%20of%20distinct%20substrings.md)🔡🧮🧵	
 
 
 
@@ -94,7 +97,10 @@ _Day 26(26 NOV) :_ AND In Range
 
 _Day 27(27 NOV) :_ All Subsets Xor Sum
 
-<!--_Day 28(28 NOV) :_ 
-_Day 29(29 NOV) :_ 
-_Day 30(30 NOV) :_ 
-_Day 31(31 NOV) :_ -->
+_Day 28(28 NOV) :_ Subset XOR 
+
+_Day 29(29 NOV) :_ Count set bits
+
+_Day 30(30 NOV) :_ Count of distinct substrings 
+
+<!--_Day 31(31 NOV) :_ -->
