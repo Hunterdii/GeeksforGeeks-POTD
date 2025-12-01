@@ -1,0 +1,45 @@
+## 📜 Table of Contents 📜
+
+For discussions, questions, or doubts related to this solution, please visit my LinkedIn: [Any Questions](https://www.linkedin.com/in/patel-hetkumar-sandipbhai-8b110525a/). Thank you for your input, together, we strive to create a space where learning is a collaborative endeavor.
+
+### 🔮Your feedback is valuable! Please consider leaving a 🌟 star 🌟 and sharing your thoughts in the comments.
+
+- [Introduction](../README.md)📝
+- [Solutions]()💡
+- [Day 1: XOR Pairs less than K]()🔢📝💭
+
+## Introduction
+
+This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
+
+_Day 1(01 DEC) :_ 
+<!--_Day 2(02 DEC) :_ 
+_Day 3(03 DEC) :_ 
+_Day 4(04 DEC) :_ 
+_Day 5(05 DEC) :_ 
+_Day 6(06 DEC) :_ 
+_Day 7(07 DEC) :_ 
+_Day 8(08 DEC) :_ 
+_Day 9(09 DEC) :_ 
+_Day 10(10 DEC) :_ 
+_Day 11(11 DEC) :_ 
+_Day 12(12 DEC) :_ 
+_Day 13(13 DEC) :_ 
+_Day 14(14 DEC) :_ 
+_Day 15(15 DEC) :_ 
+_Day 16(16 DEC) :_ 
+_Day 17(17 DEC) :_ 
+_Day 18(18 DEC) :_ 
+_Day 19(19 DEC) :_ 
+_Day 20(20 DEC) :_ 
+_Day 21(21 DEC) :_ 
+_Day 22(22 DEC) :_ 
+_Day 23(23 DEC) :_ 
+_Day 24(24 DEC) :_ 
+_Day 25(25 DEC) :_ 
+_Day 26(26 DEC) :_ 
+_Day 27(27 DEC) :_ 
+_Day 28(28 DEC) :_ 
+_Day 29(29 DEC) :_ 
+_Day 30(30 DEC) :_ 
+_Day 31(31 DEC) :_ -->
