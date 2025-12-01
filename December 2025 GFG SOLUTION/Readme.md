@@ -6,15 +6,18 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: XOR Pairs less than K]()🔢📝💭
+- [Day 1: XOR Pairs less than K](01(Dec)%20XOR%20Pairs%20less%20than%20K.md)➕🤝🔢	
+- [Day 2: Maximise String Score](02(Dec)%20Maximise%20String%20Score.md)💥📈🎯	
 
 ## Introduction
 
 This repository contains solutions to daily problems from GeeksforGeeks. Each day, a new problem is provided along with its solution.
 
-_Day 1(01 DEC) :_ 
-<!--_Day 2(02 DEC) :_ 
-_Day 3(03 DEC) :_ 
+_Day 1(01 DEC) :_ XOR Pairs less than K
+
+_Day 2(02 DEC) :_ Maximise String Score
+
+<!--_Day 3(03 DEC) :_ 
 _Day 4(04 DEC) :_ 
 _Day 5(05 DEC) :_ 
 _Day 6(06 DEC) :_ 
