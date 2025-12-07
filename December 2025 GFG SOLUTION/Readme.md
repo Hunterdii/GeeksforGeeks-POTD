@@ -9,6 +9,10 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 1: XOR Pairs less than K](01(Dec)%20XOR%20Pairs%20less%20than%20K.md)➕🤝🔢	
 - [Day 2: Maximise String Score](02(Dec)%20Maximise%20String%20Score.md)💥📈🎯
 - [Day 3: Travelling Salesman Problem](03(Dec)%20Travelling%20Salesman%20Problem.md)🚗🚖🗺️
+- [Day 4: Optimal binary search tree date](04(Dec)%20Optimal%20binary%20search%20tree.md)🔢🌐🌳	
+- [Day 5: Walls Coloring II](05(Dec)%20Walls%20Coloring%20II.md)🎨🔄🏗️	
+- [Day 6: Optimal Strategy For A Game](06(Dec)%20Optimal%20Strategy%20For%20A%20Game.md)📍🎮🧮	
+- [Day 7: Number of distinct subsequences](07(Dec)%20Number%20of%20distinct%20subsequences.md)🔤📈🔍	
 
 ## Introduction
 
@@ -20,11 +24,15 @@ _Day 2(02 DEC) :_ Maximise String Score
 
 _Day 3(03 DEC) :_ Travelling Salesman Problem 
 
-<!--_Day 4(04 DEC) :_ 
-_Day 5(05 DEC) :_ 
-_Day 6(06 DEC) :_ 
-_Day 7(07 DEC) :_ 
-_Day 8(08 DEC) :_ 
+_Day 4(04 DEC) :_ Optimal binary search tree date 	
+
+_Day 5(05 DEC) :_ Walls Coloring II	
+
+_Day 6(06 DEC) :_ Optimal Strategy For A Game 	
+
+_Day 7(07 DEC) :_ Number of distinct subsequences 	
+
+<!--_Day 8(08 DEC) :_ 
 _Day 9(09 DEC) :_ 
 _Day 10(10 DEC) :_ 
 _Day 11(11 DEC) :_ 
