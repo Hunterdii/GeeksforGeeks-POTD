@@ -38,6 +38,9 @@
 | 01 December  | XOR Pairs less than K ➕🤝🔢 |       | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#-code-python>) |
 | 02 December  | Maximise String Score 💥📈🎯  |       | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#-code-python>) |
 | 03 December  | Travelling Salesman Problem 🚗🚖🗺️  |       | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#-code-python>) |
+| 04 December  | Optimal binary search tree date 🔢🌐🌳  |       | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#-code-python>) |
+| 05 December  | Walls Coloring II 🎨🔄🏗️  |       | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#-code-python>) |
+
 
 
 ---
