@@ -1,8 +1,8 @@
 ---
-title: "🌳 Optimal binary search tree | GFG Solution 🎯"
-keywords🏷️: ["Optimal BST", "Dynamic Programming", "BST construction", "GFG", "search cost", "frequency optimization", "Knuth Optimization"]
-author: "Het Patel (Hunterdii)"
-description: "Efficient solutions to compute minimum cost of Optimal Binary Search Tree using DP, including optimized variants."
+title: "🌳 Optimal Binary Search Tree | GFG Solution 🎯"
+keywords: ["🔢 optimal BST", "📊 dynamic programming", "🌐 BST construction", "🎯 minimum search cost", "📘 GFG", "⚙️ DP optimization"]
+author: "✍️ Het Patel (Hunterdii)"
+description: "✅ Minimum Cost Optimal BST solution using Dynamic Programming, including optimized techniques for efficient lookup cost computation. Perfect for DSA and competitive programming."
 date: 📅 2025-12-04
 ---
 
