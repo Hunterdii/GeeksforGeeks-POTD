@@ -6,7 +6,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 11: Minimum Window Subsequence]()🧵🔤🧠
+- [Day 11: Minimum Window Subsequence](11(Jan)%20Minimum%20Window%20Subsequence.md)🧵🔤🧠
 
 ## Introduction
 
