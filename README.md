@@ -2,7 +2,7 @@
 
 <div align="center">
   
-## [📅 **December 2025 Problem of the Day Solutions** 📅](/December%202025%20GFG%20SOLUTION)
+## [📅 **January 2025 Problem of the Day Solutions** 📅](/January%202026%20GFG%20SOLUTION)
 
 ## 🚀 My Open-Source Projects
 
@@ -35,13 +35,7 @@
 
 | **Date** |                     **Problem Name**                      | **C** |                                                              **C++**                                                              |                                                               **Java**                                                               |                                                               **Python**                                                               |
 | :------: | :-------------------------------------------------------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
-| 01 December  | XOR Pairs less than K ➕🤝🔢 |       | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/01(Dec)%20XOR%20Pairs%20less%20than%20K.md#-code-python>) |
-| 02 December  | Maximise String Score 💥📈🎯  |       | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/02(Dec)%20Maximise%20String%20Score.md#-code-python>) |
-| 03 December  | Travelling Salesman Problem 🚗🚖🗺️  |       | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/03(Dec)%20Travelling%20Salesman%20Problem.md#-code-python>) |
-| 04 December  | Optimal binary search tree date 🔢🌐🌳  |       | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/04(Dec)%20Optimal%20binary%20search%20tree.md#-code-python>) |
-| 05 December  | Walls Coloring II 🎨🔄🏗️  |       | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/05(Dec)%20Walls%20Coloring%20II.md#-code-python>) |
-| 06 December  | Optimal Strategy For A Game 📍🎮🧮  |   [Solution](</December%202025%20GFG%20SOLUTION/06(Dec)%20Optimal%20Strategy%20For%20A%20Game.md#%EF%B8%8F-code-c>)    | [Solution](</December%202025%20GFG%20SOLUTION/06(Dec)%20Optimal%20Strategy%20For%20A%20Game.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/06(Dec)%20Optimal%20Strategy%20For%20A%20Game.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/06(Dec)%20Optimal%20Strategy%20For%20A%20Game.md#-code-python>) |
-| 07 December  | Number of distinct subsequences 🔤📈🔍  |       | [Solution](</December%202025%20GFG%20SOLUTION/07(Dec)%20Number%20of%20distinct%20subsequences.md#%E2%80%8D-code-c>) | [Solution](</December%202025%20GFG%20SOLUTION/07(Dec)%20Number%20of%20distinct%20subsequences.md#-code-java>) | [Solution](</December%202025%20GFG%20SOLUTION/07(Dec)%20Number%20of%20distinct%20subsequences.md#-code-python>) |
+| 11 January  | Minimum Window Subsequence 🧵🔤🧠 |       | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-python>) |
 
 
 
