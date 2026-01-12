@@ -7,6 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 11: Minimum Window Subsequence](11(Jan)%20Minimum%20Window%20Subsequence.md)🧵🔤🧠
+- [Day 12: K Sized Subarray Maximum](12(Jan)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
 
 ## Introduction
 
@@ -15,9 +16,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 _Day 11(11 JAN) :_ Minimum Window Subsequence
 
-<!--_Day 12(12 JAN) :_ 
+_Day 12(12 JAN) :_ K Sized Subarray Maximum 
 
-_Day 13(13 JAN) :_ 
+<!--_Day 13(13 JAN) :_ 
 
 _Day 14(14 JAN) :_ 
 
