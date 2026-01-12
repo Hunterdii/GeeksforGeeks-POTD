@@ -36,7 +36,7 @@
 | **Date** |                     **Problem Name**                      | **C** |                                                              **C++**                                                              |                                                               **Java**                                                               |                                                               **Python**                                                               |
 | :------: | :-------------------------------------------------------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 | 11 January  | Minimum Window Subsequence 🧵🔤🧠 |       | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-python>) |
-
+| 12 January  | K Sized Subarray Maximum 🔢🟩🔄 |       | [Solution](</January%202026%20GFG%20SOLUTION/12(Jan)%20K%20Sized%20Subarray%20Maximum.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/12(Jan)%20K%20Sized%20Subarray%20Maximum.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/12(Jan)%20K%20Sized%20Subarray%20Maximum.md#-code-python>) |
 
 
 ---
