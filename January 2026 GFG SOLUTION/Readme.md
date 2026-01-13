@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
 - [Day 11: Minimum Window Subsequence](11(Jan)%20Minimum%20Window%20Subsequence.md)🧵🔤🧠
 - [Day 12: K Sized Subarray Maximum](12(Jan)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
+- [Day 13: Bus Ticket Change](13(Jan)Bus%20Ticket%20Change.md)🚌🚍🎫
 
 ## Introduction
 
@@ -18,9 +19,9 @@ _Day 11(11 JAN) :_ Minimum Window Subsequence
 
 _Day 12(12 JAN) :_ K Sized Subarray Maximum 
 
-<!--_Day 13(13 JAN) :_ 
+_Day 13(13 JAN) :_ Bus Ticket Change
 
-_Day 14(14 JAN) :_ 
+<!--_Day 14(14 JAN) :_ 
 
 _Day 15(15 JAN) :_ 
 
