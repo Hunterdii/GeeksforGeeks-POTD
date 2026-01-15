@@ -10,6 +10,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 12: K Sized Subarray Maximum](12(Jan)%20K%20Sized%20Subarray%20Maximum.md)🔢🟩🔄
 - [Day 13: Bus Ticket Change](13(Jan)Bus%20Ticket%20Change.md)🚌🚍🎫
 - [Day 14: Police and Thieves](14(Jan)%20Police%20and%20Thieves.md)🚓⛓️🏃‍♂️
+- [Day 15: Candy](15(Jan)%20Candy.md)🍬🍡🍭
 
 ## Introduction
 
@@ -24,9 +25,9 @@ _Day 13(13 JAN) :_ Bus Ticket Change
 
 _Day 14(14 JAN) :_ Police and Thieves 
 
-<!--_Day 15(15 JAN) :_ 
+_Day 15(15 JAN) :_ Candy
 
-_Day 16(16 JAN) :_ 
+<!--_Day 16(16 JAN) :_ 
 
 _Day 17(17 JAN) :_ 
 
