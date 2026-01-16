@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: Bus Ticket Change](13(Jan)Bus%20Ticket%20Change.md)🚌🚍🎫
 - [Day 14: Police and Thieves](14(Jan)%20Police%20and%20Thieves.md)🚓⛓️🏃‍♂️
 - [Day 15: Candy](15(Jan)%20Candy.md)🍬🍡🍭
+- [Day 16: Minimum Number of Workers](16(Jan)%20Minimum%20Number%20of%20Workers.md)👷🔧📍
 
 ## Introduction
 
@@ -27,9 +28,9 @@ _Day 14(14 JAN) :_ Police and Thieves
 
 _Day 15(15 JAN) :_ Candy
 
-<!--_Day 16(16 JAN) :_ 
+_Day 16(16 JAN) :_ Minimum Number of Workers 
 
-_Day 17(17 JAN) :_ 
+<!--_Day 17(17 JAN) :_ 
 
 _Day 18(18 JAN) :_ 
 
