@@ -12,6 +12,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 14: Police and Thieves](14(Jan)%20Police%20and%20Thieves.md)🚓⛓️🏃‍♂️
 - [Day 15: Candy](15(Jan)%20Candy.md)🍬🍡🍭
 - [Day 16: Minimum Number of Workers](16(Jan)%20Minimum%20Number%20of%20Workers.md)👷🔧📍
+- [Day 17: Expression contains redundant bracket or not](17(Jan)%20Expression%20contains%20redundant%20bracket%20or%20not.md)🔍🏁🎯
+- [Day 18: Next element with greater frequency](18(Jan)%20Next%20element%20with%20greater%20frequency.md)📈🔢🗺️
 
 ## Introduction
 
@@ -30,11 +32,11 @@ _Day 15(15 JAN) :_ Candy
 
 _Day 16(16 JAN) :_ Minimum Number of Workers 
 
-<!--_Day 17(17 JAN) :_ 
+_Day 17(17 JAN) :_ Expression contains redundant bracket or not 
 
-_Day 18(18 JAN) :_ 
+_Day 18(18 JAN) :_ Next element with greater frequency 
 
-_Day 19(19 JAN) :_ 
+<!--_Day 19(19 JAN) :_ 
 
 _Day 20(20 JAN) :_ 
 
