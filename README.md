@@ -41,6 +41,7 @@
 | 14 January  | Police and Thieves 🚓⛓️🏃‍♂️ |       | [Solution](</January%202026%20GFG%20SOLUTION/14(Jan)%20Police%20and%20Thieves.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/14(Jan)%20Police%20and%20Thieves.md#%E2%80%8D-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/14(Jan)%20Police%20and%20Thieves.md#-code-python>) |
 | 15 January  | Candy 🍬🍡🍭 |       | [Solution](</January%202026%20GFG%20SOLUTION/15(Jan)%20Candy.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/15(Jan)%20Candy.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/15(Jan)%20Candy.md#-code-python>) |
 | 16 January  | Minimum Number of Workers 👷🔧📍 |       | [Solution](</January%202026%20GFG%20SOLUTION/16(Jan)%20Minimum%20Number%20of%20Workers.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/16(Jan)%20Minimum%20Number%20of%20Workers.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/16(Jan)%20Minimum%20Number%20of%20Workers.md#-code-python>) |
+| 17 January  | Expression contains redundant bracket or not 🔍🏁🎯 |       | [Solution](</January%202026%20GFG%20SOLUTION/17(Jan)%20Expression%20contains%20redundant%20bracket%20or%20not.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/17(Jan)%20Expression%20contains%20redundant%20bracket%20or%20not.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/17(Jan)%20Expression%20contains%20redundant%20bracket%20or%20not.md#-code-python>) |
 
 
 
