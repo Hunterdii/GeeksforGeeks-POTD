@@ -14,6 +14,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 16: Minimum Number of Workers](16(Jan)%20Minimum%20Number%20of%20Workers.md)👷🔧📍
 - [Day 17: Expression contains redundant bracket or not](17(Jan)%20Expression%20contains%20redundant%20bracket%20or%20not.md)🔍🏁🎯
 - [Day 18: Next element with greater frequency](18(Jan)%20Next%20element%20with%20greater%20frequency.md)📈🔢🗺️
+- [Day 19: Remove K Digits](19(Jan)%20Remove%20K%20Digits.md)🗑️✂️📉
+- [Day 20: Implement UNDO & REDO](20(Jan)%20Implement%20UNDO%20%26%20REDO.md)📝🔄📚
 
 ## Introduction
 
@@ -36,11 +38,11 @@ _Day 17(17 JAN) :_ Expression contains redundant bracket or not
 
 _Day 18(18 JAN) :_ Next element with greater frequency 
 
-<!--_Day 19(19 JAN) :_ 
+_Day 19(19 JAN) :_ Remove K Digits 
 
-_Day 20(20 JAN) :_ 
+_Day 20(20 JAN) :_ Implement UNDO & REDO 
 
-_Day 21(21 JAN) :_ 
+<!--_Day 21(21 JAN) :_ 
 
 _Day 22(22 JAN) :_ 
 
