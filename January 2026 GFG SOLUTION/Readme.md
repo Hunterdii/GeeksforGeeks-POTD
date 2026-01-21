@@ -16,6 +16,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Next element with greater frequency](18(Jan)%20Next%20element%20with%20greater%20frequency.md)📈🔢🗺️
 - [Day 19: Remove K Digits](19(Jan)%20Remove%20K%20Digits.md)🗑️✂️📉
 - [Day 20: Implement UNDO & REDO](20(Jan)%20Implement%20UNDO%20%26%20REDO.md)📝🔄📚
+- [Day 21: Stock span problem](21(Jan)%20Stock%20span%20problem.md)📈🚀📊
 
 ## Introduction
 
@@ -42,9 +43,10 @@ _Day 19(19 JAN) :_ Remove K Digits
 
 _Day 20(20 JAN) :_ Implement UNDO & REDO 
 
-<!--_Day 21(21 JAN) :_ 
+_Day 21(21 JAN) :_ Stock span problem
 
-_Day 22(22 JAN) :_ 
+
+<!--_Day 22(22 JAN) :_ 
 
 _Day 23(23 JAN) :_ 
 
