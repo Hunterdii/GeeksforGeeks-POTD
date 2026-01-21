@@ -45,6 +45,7 @@
 | 18 January  | Next element with greater frequency 📈🔢🗺️ |       | [Solution](</January%202026%20GFG%20SOLUTION/18(Jan)%20Next%20element%20with%20greater%20frequency.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/18(Jan)%20Next%20element%20with%20greater%20frequency.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/18(Jan)%20Next%20element%20with%20greater%20frequency.md#-code-python>) |
 | 19 January  | Remove K Digits 🗑️✂️📉 |       | [Solution](</January%202026%20GFG%20SOLUTION/19(Jan)%20Remove%20K%20Digits.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/19(Jan)%20Remove%20K%20Digits.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/19(Jan)%20Remove%20K%20Digits.md#-code-python>) |
 | 20 January  | Implement UNDO & REDO 📝🔄📚 |       | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#-code-python>) |
+| 21 January  | Stock span problem 📈🚀📊 |       | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#-code-python>) |
 
 
 
