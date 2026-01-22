@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 19: Remove K Digits](19(Jan)%20Remove%20K%20Digits.md)🗑️✂️📉
 - [Day 20: Implement UNDO & REDO](20(Jan)%20Implement%20UNDO%20%26%20REDO.md)📝🔄📚
 - [Day 21: Stock span problem](21(Jan)%20Stock%20span%20problem.md)📈🚀📊
+- [Day 22: Sum of subarray ranges](22(Jan)%20Sum%20of%20subarray%20ranges.md)📦➕📐
 
 ## Introduction
 
@@ -45,10 +46,9 @@ _Day 20(20 JAN) :_ Implement UNDO & REDO
 
 _Day 21(21 JAN) :_ Stock span problem
 
+_Day 22(22 JAN) :_ Sum of subarray ranges 
 
-<!--_Day 22(22 JAN) :_ 
-
-_Day 23(23 JAN) :_ 
+<!--_Day 23(23 JAN) :_ 
 
 _Day 24(24 JAN) :_ 
 
