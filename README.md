@@ -47,6 +47,7 @@
 | 20 January  | Implement UNDO & REDO 📝🔄📚 |       | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/20(Jan)%20Implement%20UNDO%20%26%20REDO.md#-code-python>) |
 | 21 January  | Stock span problem 📈🚀📊 |       | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/21(Jan)%20Stock%20span%20problem.md#-code-python>) |
 | 22 January  | Sum of subarray ranges 📦➕📐 |       | [Solution](</January%202026%20GFG%20SOLUTION/22(Jan)%20Sum%20of%20subarray%20ranges.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/22(Jan)%20Sum%20of%20subarray%20ranges.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/22(Jan)%20Sum%20of%20subarray%20ranges.md#-code-python>) |
+| 22 January  | Maximum People Visible in a Line 👀🧍‍♂️🧍‍♀️  |       | [Solution](</January%202026%20GFG%20SOLUTION/23(Jan)%20Maximum%20People%20Visible%20in%20a%20Line.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/23(Jan)%20Maximum%20People%20Visible%20in%20a%20Line.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/23(Jan)%20Maximum%20People%20Visible%20in%20a%20Line.md#-code-python>) |
 
 
 
