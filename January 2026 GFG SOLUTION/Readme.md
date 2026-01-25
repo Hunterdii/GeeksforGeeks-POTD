@@ -19,6 +19,9 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Stock span problem](21(Jan)%20Stock%20span%20problem.md)📈🚀📊
 - [Day 22: Sum of subarray ranges](22(Jan)%20Sum%20of%20subarray%20ranges.md)📦➕📐
 - [Day 23: Maximum People Visible in a Line](23(Jan)%20Maximum%20People%20Visible%20in%20a%20Line.md)👀🧍‍♂️🧍‍♀️
+- [Day 24: Josephus problem](24(Jan)%20Josephus%20problem.md)👥🗡️⭕
+- [Day 25: Number of Valid Parentheses](25(Jan)%20Number%20of%20Valid%20Parentheses.md)🔢✅❌
+
 
 ## Introduction
 
@@ -51,11 +54,11 @@ _Day 22(22 JAN) :_ Sum of subarray ranges
 
 _Day 23(23 JAN) :_  Maximum People Visible in a Line 
 
-<!--_Day 24(24 JAN) :_ 
+_Day 24(24 JAN) :_ Josephus problem
 
-_Day 25(25 JAN) :_ 
+_Day 25(25 JAN) :_ Number of Valid Parentheses
 
-_Day 26(26 JAN) :_ 
+<!--_Day 26(26 JAN) :_ 
 
 _Day 27(27 JAN) :_ 
 
