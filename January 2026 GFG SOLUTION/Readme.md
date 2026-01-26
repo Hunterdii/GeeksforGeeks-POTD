@@ -21,6 +21,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 23: Maximum People Visible in a Line](23(Jan)%20Maximum%20People%20Visible%20in%20a%20Line.md)👀🧍‍♂️🧍‍♀️
 - [Day 24: Josephus problem](24(Jan)%20Josephus%20problem.md)👥🗡️⭕
 - [Day 25: Number of Valid Parentheses](25(Jan)%20Number%20of%20Valid%20Parentheses.md)🔢✅❌
+- [Day 26: Generate Permutations of an array](26(Jan)%20Generate%20Permutations%20of%20an%20array.md)🧮♻️🎯
 
 
 ## Introduction
@@ -58,9 +59,9 @@ _Day 24(24 JAN) :_ Josephus problem
 
 _Day 25(25 JAN) :_ Number of Valid Parentheses
 
-<!--_Day 26(26 JAN) :_ 
+_Day 26(26 JAN) :_ Generate Permutations of an array
 
-_Day 27(27 JAN) :_ 
+<!--_Day 27(27 JAN) :_ 
 
 _Day 28(28 JAN) :_ 
 
