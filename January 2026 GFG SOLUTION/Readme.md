@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Josephus problem](24(Jan)%20Josephus%20problem.md)👥🗡️⭕
 - [Day 25: Number of Valid Parentheses](25(Jan)%20Number%20of%20Valid%20Parentheses.md)🔢✅❌
 - [Day 26: Generate Permutations of an array](26(Jan)%20Generate%20Permutations%20of%20an%20array.md)🧮♻️🎯
+- [Day 27: Word Search](27(Jan)%20Word%20Search.md)🔤🔍🧠
 
 
 ## Introduction
@@ -61,9 +62,9 @@ _Day 25(25 JAN) :_ Number of Valid Parentheses
 
 _Day 26(26 JAN) :_ Generate Permutations of an array
 
-<!--_Day 27(27 JAN) :_ 
+_Day 27(27 JAN) :_ Word Search 
 
-_Day 28(28 JAN) :_ 
+<!--_Day 28(28 JAN) :_ 
 
 _Day 29(29 JAN) :_ 
 
