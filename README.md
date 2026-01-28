@@ -33,6 +33,78 @@
   </tr>
 </table>
 
+## 🏆 My GfG Connect Posting Challenge
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://www.geeksforgeeks.org/connect/post/95063/why-i-chose-m-sc-data-science-over-a-generic-sde-path/">
+        <img src="https://img.shields.io/badge/Day%201-Why%20I%20Chose%20MSc%20Data%20Science-2F80ED?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
+      </a>
+    </td>
+    <!-- <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%202-Resume%20Analyzer%20Project%20Journey-00C853?style=for-the-badge&logo=python&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+
+  <!-- <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%203-Top%205%20Interview%20Lessons-FF6D00?style=for-the-badge&logo=leetcode&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%204-ML%20Feature%20Engineering%20Truths-6A1B9A?style=for-the-badge&logo=tensorflow&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%205-Competitive%20Exam%20Prep%20Strategy-D500F9?style=for-the-badge&logo=bookstack&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%206-Tech%20News%20That%20Matters%202026-FF1744?style=for-the-badge&logo=googlenews&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%207-Interview%20Questions%20(Company%20Specific)-2962FF?style=for-the-badge&logo=codeforces&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%208-Project%20Idea%20for%20Students-1B5E20?style=for-the-badge&logo=opensourceinitiative&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%209-Interesting%20AI%20Fact%20You%20Didn’t%20Know-FFD600?style=for-the-badge&logo=ai&logoColor=black" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://img.shields.io/badge/Day%2010-My%20Campus%20Tech%20Journey-00B0FF?style=for-the-badge&logo=googleclassroom&logoColor=white" />
+      </a>
+    </td>
+  </tr> -->
+
+</table>
+
+
+
 | **Date** |                     **Problem Name**                      | **C** |                                                              **C++**                                                              |                                                               **Java**                                                               |                                                               **Python**                                                               |
 | :------: | :-------------------------------------------------------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 | 11 January  | Minimum Window Subsequence 🧵🔤🧠 |       | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/11(Jan)%20Minimum%20Window%20Subsequence.md#-code-python>) |
@@ -52,6 +124,7 @@
 | 25 January  | Number of Valid Parentheses 🔢✅❌  |    [Solution](</January%202026%20GFG%20SOLUTION/25(Jan)%20Number%20of%20Valid%20Parentheses.md#%EF%B8%8F-code-c>)   | [Solution](</January%202026%20GFG%20SOLUTION/25(Jan)%20Number%20of%20Valid%20Parentheses.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/25(Jan)%20Number%20of%20Valid%20Parentheses.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/25(Jan)%20Number%20of%20Valid%20Parentheses.md#-code-python>) |
 | 26 January  | Generate Permutations of an array 🧮♻️🎯  |       | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#-code-python>) |
 | 27 January  | Word Search 🔤🔍🧠  |       | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#-code-python>) |
+| 28 January  | Count Subset With Target Sum II 📦🔢🧮  |       | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#-code-python>) |
 
 
 
