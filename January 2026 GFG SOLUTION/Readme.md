@@ -23,6 +23,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 25: Number of Valid Parentheses](25(Jan)%20Number%20of%20Valid%20Parentheses.md)🔢✅❌
 - [Day 26: Generate Permutations of an array](26(Jan)%20Generate%20Permutations%20of%20an%20array.md)🧮♻️🎯
 - [Day 27: Word Search](27(Jan)%20Word%20Search.md)🔤🔍🧠
+- [Day 28: Count Subset With Target Sum II](28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md)📦🔢🧮
+- [Day 29: Stream First Non-repeating](29(Jan)%20Stream%20First%20Non-repeating.md)🔤🌊📊
 
 
 ## Introduction
@@ -64,10 +66,11 @@ _Day 26(26 JAN) :_ Generate Permutations of an array
 
 _Day 27(27 JAN) :_ Word Search 
 
-<!--_Day 28(28 JAN) :_ 
+_Day 28(28 JAN) :_ Count Subset With Target Sum II 
 
-_Day 29(29 JAN) :_ 
+_Day 29(29 JAN) :_ Stream First Non-repeating
 
-_Day 30(30 JAN) :_ 
+
+<!--_Day 30(30 JAN) :_ 
 
 _Day 31(31 JAN) :_ -->
