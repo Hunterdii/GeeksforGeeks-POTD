@@ -42,8 +42,8 @@
         <img src="https://img.shields.io/badge/Day%201-Why%20I%20Chose%20MSc%20Data%20Science-2F80ED?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
       </a>
     </td>
-    <!-- <td align="center">
-      <a href="#">
+   <td align="center">
+      <a href="https://www.geeksforgeeks.org/connect/post/99833/lt-h2-id-the-ml-project-that-made-data-science-real-for-me-style-text-align-left-class-editor/">
         <img src="https://img.shields.io/badge/Day%202-Resume%20Analyzer%20Project%20Journey-00C853?style=for-the-badge&logo=python&logoColor=white" />
       </a>
     </td>
@@ -125,6 +125,8 @@
 | 26 January  | Generate Permutations of an array 🧮♻️🎯  |       | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/26(Jan)%20Generate%20Permutations%20of%20an%20array.md#-code-python>) |
 | 27 January  | Word Search 🔤🔍🧠  |       | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/27(Jan)%20Word%20Search.md#-code-python>) |
 | 28 January  | Count Subset With Target Sum II 📦🔢🧮  |       | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/28(Jan)%20Count%20Subset%20With%20Target%20Sum%20II.md#-code-python>) |
+| 29 January  | Stream First Non-repeating 🔤🌊📊  |       | [Solution](</January%202026%20GFG%20SOLUTION/29(Jan)%20Stream%20First%20Non-repeating.md#%E2%80%8D-code-c>) | [Solution](</January%202026%20GFG%20SOLUTION/29(Jan)%20Stream%20First%20Non-repeating.md#-code-java>) | [Solution](</January%202026%20GFG%20SOLUTION/29(Jan)%20Stream%20First%20Non-repeating.md#-code-python>) |
+
 
 
 
