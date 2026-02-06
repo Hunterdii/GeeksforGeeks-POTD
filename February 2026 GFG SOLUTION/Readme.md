@@ -7,7 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 6: Happiest Triplet]()😄🤝📈
+- [Day 6: Happiest Triplet](06(Feb)%20Happiest%20Triplet.md)😄🤝📈
 
 ## Introduction
 
