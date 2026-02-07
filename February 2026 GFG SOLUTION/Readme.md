@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 6: Happiest Triplet](06(Feb)%20Happiest%20Triplet.md)😄🤝📈
+- [Day 7: Max sum in the configuration](07(Feb)%20Max%20sum%20in%20the%20configuration.md)🔄📊➕
 
 ## Introduction
 
@@ -15,9 +16,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 _Day 6(06 FEB) :_ Happiest Triplet
 
-<!--_Day 7(07 FEB) :_ 
+_Day 7(07 FEB) :_ Max sum in the configuration 
 
-_Day 8(08 FEB) :_ 
+<!--_Day 8(08 FEB) :_ 
 
 _Day 9(09 FEB) :_ 
 
