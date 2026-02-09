@@ -9,6 +9,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
 - [Day 6: Happiest Triplet](06(Feb)%20Happiest%20Triplet.md)😄🤝📈
 - [Day 7: Max sum in the configuration](07(Feb)%20Max%20sum%20in%20the%20configuration.md)🔄📊➕
+- [Day 8: Maximum Product Subarray](08(Feb)%20Maximum%20Product%20Subarray.md)🔁↪️➡️
+- [Day 9: Find Kth Rotation](09(Feb)%20Find%20Kth%20Rotation.md)🔢✖️📈
 
 ## Introduction
 
@@ -18,11 +20,11 @@ _Day 6(06 FEB) :_ Happiest Triplet
 
 _Day 7(07 FEB) :_ Max sum in the configuration 
 
-<!--_Day 8(08 FEB) :_ 
+_Day 8(08 FEB) :_ Maximum Product Subarray
 
-_Day 9(09 FEB) :_ 
+_Day 9(09 FEB) :_ Find Kth Rotation
 
-_Day 10(10 FEB) :_ 
+<!--_Day 10(10 FEB) :_ 
 
 _Day 11(11 FEB) :_ 
 
