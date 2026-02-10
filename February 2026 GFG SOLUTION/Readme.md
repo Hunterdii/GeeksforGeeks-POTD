@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 7: Max sum in the configuration](07(Feb)%20Max%20sum%20in%20the%20configuration.md)🔄📊➕
 - [Day 8: Maximum Product Subarray](08(Feb)%20Maximum%20Product%20Subarray.md)🔁↪️➡️
 - [Day 9: Find Kth Rotation](09(Feb)%20Find%20Kth%20Rotation.md)🔢✖️📈
+- [Day 10: Koko Eating Bananas](10(Feb)%20Koko%20Eating%20Bananas.md)🍌🐒⏳
 
 ## Introduction
 
@@ -24,9 +25,9 @@ _Day 8(08 FEB) :_ Maximum Product Subarray
 
 _Day 9(09 FEB) :_ Find Kth Rotation
 
-<!--_Day 10(10 FEB) :_ 
+_Day 10(10 FEB) :_ Koko Eating Bananas
 
-_Day 11(11 FEB) :_ 
+<!--_Day 11(11 FEB) :_ 
 
 _Day 12(12 FEB) :_ 
 
