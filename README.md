@@ -112,6 +112,7 @@
 | 08 February  | Maximum Product Subarray 🔁↪️➡️ |   [Solution](</February%202026%20GFG%20SOLUTION/08(Feb)%20Maximum%20Product%20Subarray.md#%E2%80%8D-code-c>)    | [Solution](</February%202026%20GFG%20SOLUTION/08(Feb)%20Maximum%20Product%20Subarray.md#%E2%80%8D-code-c-1>) | [Solution](</February%202026%20GFG%20SOLUTION/08(Feb)%20Maximum%20Product%20Subarray.md#-code-java>) | [Solution](</February%202026%20GFG%20SOLUTION/08(Feb)%20Maximum%20Product%20Subarray.md#-code-python>) |
 | 09 February  | Find Kth Rotation 🔢✖️📈 |       | [Solution](</February%202026%20GFG%20SOLUTION/09(Feb)%20Find%20Kth%20Rotation.md#%E2%80%8D-code-c>) | [Solution](</February%202026%20GFG%20SOLUTION/09(Feb)%20Find%20Kth%20Rotation.md#-code-java>) | [Solution](</February%202026%20GFG%20SOLUTION/09(Feb)%20Find%20Kth%20Rotation.md#-code-python>) |
 | 10 February  | Koko Eating Bananas 🍌🐒⏳ |       | [Solution](</February%202026%20GFG%20SOLUTION/10(Feb)%20Koko%20Eating%20Bananas.md#%E2%80%8D-code-c>) | [Solution](</February%202026%20GFG%20SOLUTION/10(Feb)%20Koko%20Eating%20Bananas.md#-code-java>) | [Solution](</February%202026%20GFG%20SOLUTION/10(Feb)%20Koko%20Eating%20Bananas.md#-code-python>) |
+| 11 February  | Equalize the Towers 🏗️📏🗼 |       | [Solution](</February%202026%20GFG%20SOLUTION/11(Feb)%20Equalize%20the%20Towers.md#%E2%80%8D-code-c>) | [Solution](</February%202026%20GFG%20SOLUTION/11(Feb)%20Equalize%20the%20Towers.md#-code-java>) | [Solution](</February%202026%20GFG%20SOLUTION/11(Feb)%20Equalize%20the%20Towers.md#-code-python>) |
 
 
 ---
