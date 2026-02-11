@@ -12,6 +12,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Maximum Product Subarray](08(Feb)%20Maximum%20Product%20Subarray.md)🔁↪️➡️
 - [Day 9: Find Kth Rotation](09(Feb)%20Find%20Kth%20Rotation.md)🔢✖️📈
 - [Day 10: Koko Eating Bananas](10(Feb)%20Koko%20Eating%20Bananas.md)🍌🐒⏳
+- [Day 11: Equalize the Towers](11(Feb)%20Equalize%20the%20Towers.md)🏗️📏🗼
 
 ## Introduction
 
@@ -27,9 +28,9 @@ _Day 9(09 FEB) :_ Find Kth Rotation
 
 _Day 10(10 FEB) :_ Koko Eating Bananas
 
-<!--_Day 11(11 FEB) :_ 
+_Day 11(11 FEB) :_ Equalize the Towers 
 
-_Day 12(12 FEB) :_ 
+<!--_Day 12(12 FEB) :_ 
 
 _Day 13(13 FEB) :_ 
 
