@@ -13,6 +13,12 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 9: Find Kth Rotation](09(Feb)%20Find%20Kth%20Rotation.md)🔢✖️📈
 - [Day 10: Koko Eating Bananas](10(Feb)%20Koko%20Eating%20Bananas.md)🍌🐒⏳
 - [Day 11: Equalize the Towers](11(Feb)%20Equalize%20the%20Towers.md)🏗️📏🗼
+- [Day 12: Max min Height](12(Feb)%20Max%20min%20Height.md)📏⬆️⚖️
+- [Day 13: All numbers with specific difference](13(Feb)%20All%20numbers%20with%20specific%20difference.md)➕🧮🔍
+- [Day 14: The Painter's Partition Problem-II](14(Feb)%20The%20Painter's%20Partition%20Problem-II.md)🎨🖌️⏱️
+- [Day 15: Chocolate Distribution Problem](15(Feb)%20Chocolate%20Distribution%20Problem.md)🍫📦👦
+
+
 
 ## Introduction
 
@@ -30,15 +36,15 @@ _Day 10(10 FEB) :_ Koko Eating Bananas
 
 _Day 11(11 FEB) :_ Equalize the Towers 
 
-<!--_Day 12(12 FEB) :_ 
+_Day 12(12 FEB) :_ Max min Height
 
-_Day 13(13 FEB) :_ 
+_Day 13(13 FEB) :_ All numbers with specific difference
 
-_Day 14(14 FEB) :_ 
+_Day 14(14 FEB) :_ The Painter's Partition Problem-II
 
-_Day 15(15 FEB) :_ 
+_Day 15(15 FEB) :_ Chocolate Distribution Problem
 
-_Day 16(16 FEB) :_ 
+<!--_Day 16(16 FEB) :_ 
 
 _Day 17(17 FEB) :_ 
 
