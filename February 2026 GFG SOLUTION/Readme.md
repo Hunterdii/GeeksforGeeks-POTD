@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 13: All numbers with specific difference](13(Feb)%20All%20numbers%20with%20specific%20difference.md)➕🧮🔍
 - [Day 14: The Painter's Partition Problem-II](14(Feb)%20The%20Painter's%20Partition%20Problem-II.md)🎨🖌️⏱️
 - [Day 15: Chocolate Distribution Problem](15(Feb)%20Chocolate%20Distribution%20Problem.md)🍫📦👦
+- [Day 16: Meeting Rooms](16(Feb)%20Meeting%20Rooms.md)🏢🗓️⏰
 
 
 
@@ -44,9 +45,9 @@ _Day 14(14 FEB) :_ The Painter's Partition Problem-II
 
 _Day 15(15 FEB) :_ Chocolate Distribution Problem
 
-<!--_Day 16(16 FEB) :_ 
+_Day 16(16 FEB) :_ Meeting Rooms
 
-_Day 17(17 FEB) :_ 
+<!--_Day 17(17 FEB) :_ 
 
 _Day 18(18 FEB) :_ 
 
