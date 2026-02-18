@@ -19,6 +19,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 15: Chocolate Distribution Problem](15(Feb)%20Chocolate%20Distribution%20Problem.md)🍫📦👦
 - [Day 16: Meeting Rooms](16(Feb)%20Meeting%20Rooms.md)🏢🗓️⏰
 - [Day 17: Maximum number of overlapping Intervals](17(Feb)%20Maximum%20number%20of%20overlapping%20Intervals.md)🔄⏱️🏁
+- [Day 18: Count Inversions](18(Feb)%20Count%20Inversions.md)🔢🔄↕️
 
 
 
@@ -50,9 +51,9 @@ _Day 16(16 FEB) :_ Meeting Rooms
 
 _Day 17(17 FEB) :_ Maximum number of overlapping Intervals
 
-<!--_Day 18(18 FEB) :_ 
+_Day 18(18 FEB) :_ Count Inversions 
 
-_Day 19(19 FEB) :_ 
+<!--_Day 19(19 FEB) :_ 
 
 _Day 20(20 FEB) :_ 
 
