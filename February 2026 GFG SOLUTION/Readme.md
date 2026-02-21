@@ -22,6 +22,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 18: Count Inversions](18(Feb)%20Count%20Inversions.md)🔢🔄↕️
 - [Day 19: Missing Element in Range](19(Feb)%20Missing%20Element%20in%20Range.md)❓🕳️🔍
 - [Day 20: Form the Largest Number](20(Feb)%20Form%20the%20Largest%20Number.md)🔢🧩🔀
+- [Day 21: Find H-Index](21(Feb)%20Find%20H-Index.md)📚📊🔢
 
 
 
@@ -59,9 +60,9 @@ _Day 19(19 FEB) :_ Missing Element in Range
 
 _Day 20(20 FEB) :_ Form the Largest Number
 
-<!--_Day 21(21 FEB) :_ 
+_Day 21(21 FEB) :_ Find H-Index 
 
-_Day 22(22 FEB) :_ 
+<!--_Day 22(22 FEB) :_ 
 
 _Day 23(23 FEB) :_ 
 
