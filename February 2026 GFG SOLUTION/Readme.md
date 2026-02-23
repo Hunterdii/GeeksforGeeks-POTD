@@ -24,6 +24,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 20: Form the Largest Number](20(Feb)%20Form%20the%20Largest%20Number.md)🔢🧩🔀
 - [Day 21: Find H-Index](21(Feb)%20Find%20H-Index.md)📚📊🔢
 - [Day 22: Count Subarrays with given XOR](22(Feb)%20Count%20Subarrays%20with%20given%20XOR.md)📊📏📈
+- [Day 23: Union of Arrays with Duplicates](23(Feb)%20Union%20of%20Arrays%20with%20Duplicates.md)📈🔗➕
 
 
 
@@ -65,9 +66,9 @@ _Day 21(21 FEB) :_ Find H-Index
 
 _Day 22(22 FEB) :_ Count Subarrays with given XOR 
 
-<!--_Day 23(23 FEB) :_ 
+_Day 23(23 FEB) :_ Union of Arrays with Duplicates 
 
-_Day 24(24 FEB) :_ 
+<!--_Day 24(24 FEB) :_ 
 
 _Day 25(25 FEB) :_ 
 
