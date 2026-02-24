@@ -25,6 +25,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 21: Find H-Index](21(Feb)%20Find%20H-Index.md)📚📊🔢
 - [Day 22: Count Subarrays with given XOR](22(Feb)%20Count%20Subarrays%20with%20given%20XOR.md)📊📏📈
 - [Day 23: Union of Arrays with Duplicates](23(Feb)%20Union%20of%20Arrays%20with%20Duplicates.md)📈🔗➕
+- [Day 24: Longest Span in two Binary Arrays](24(Feb)%20Longest%20Span%20in%20two%20Binary%20Arrays.md)1️⃣🔄⚖️
 
 
 
@@ -68,9 +69,9 @@ _Day 22(22 FEB) :_ Count Subarrays with given XOR
 
 _Day 23(23 FEB) :_ Union of Arrays with Duplicates 
 
-<!--_Day 24(24 FEB) :_ 
+_Day 24(24 FEB) :_ Longest Span in two Binary Arrays 
 
-_Day 25(25 FEB) :_ 
+<!--_Day 25(25 FEB) :_ 
 
 _Day 26(26 FEB) :_ 
 
