@@ -28,6 +28,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 24: Longest Span in two Binary Arrays](24(Feb)%20Longest%20Span%20in%20two%20Binary%20Arrays.md)1️⃣🔄⚖️
 - [Day 25: Longest Subarray with Majority Greater than K](25(Feb)%20Longest%20Subarray%20with%20Majority%20Greater%20than%20K.md)📏🛠️📈
 - [Day 26: Isomorphic Strings](26(Feb)%20Isomorphic%20Strings.md)🔤🔁🧩
+- [Day 27: Number of submatrix have sum X](27(Feb)%20Number%20of%20submatrix%20have%20sum%20X.md)🔲➕📏
+- [Day 28: Find the closest pair from two arrays](28(Feb)%20Find%20the%20closest%20pair%20from%20two%20arrays.md)🔢🤝🎯
 
 
 
@@ -77,6 +79,6 @@ _Day 25(25 FEB) :_ Longest Subarray with Majority Greater than K
 
 _Day 26(26 FEB) :_ Isomorphic Strings 
 
-<!--_Day 27(27 FEB) :_ 
+_Day 27(27 FEB) :_ Number of submatrix have sum X 
 
-_Day 28(28 FEB) :_ -->
+_Day 28(28 FEB) :_ Find the closest pair from two arrays 
