@@ -7,7 +7,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
-- [Day 1: Move All Zeroes to End]()0️⃣➡️📦
+- [Day 1: Move All Zeroes to End](01(Mar)%20Move%20All%20Zeroes%20to%20End.md)0️⃣➡️📦
 
 ## Introduction
 
