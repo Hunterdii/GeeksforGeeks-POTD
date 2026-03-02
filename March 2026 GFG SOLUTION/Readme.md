@@ -8,6 +8,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Introduction](../README.md)📝
 - [Solutions]()💡
 - [Day 1: Move All Zeroes to End](01(Mar)%20Move%20All%20Zeroes%20to%20End.md)0️⃣➡️📦
+- [Day 2: Trapping Rain Water](02(Mar)%20Trapping%20Rain%20Water.md)🌧️💧🏞️
 
 ## Introduction
 
@@ -15,8 +16,9 @@ This repository contains solutions to daily problems from GeeksforGeeks. Each da
 
 _Day 1(01 MAR) :_ Move All Zeroes to End
 
-<!--_Day 2(02 MAR) :_ 
-_Day 3(03 MAR) :_ 
+_Day 2(02 MAR) :_ Trapping Rain Water 
+
+<!--_Day 3(03 MAR) :_ 
 _Day 4(04 MAR) :_ 
 _Day 5(05 MAR) :_ 
 _Day 6(06 MAR) :_ 
