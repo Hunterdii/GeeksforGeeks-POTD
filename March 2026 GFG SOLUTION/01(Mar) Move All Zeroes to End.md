@@ -3,7 +3,7 @@ title: "🔄 Move All Zeroes to End | GFG Solution 🎯"
 keywords🏷️: ["🔄 move zeros", "🔍 two pointers", "📊 array rearrangement", "📈 in-place algorithm", "📘 GFG", "🏁 competitive programming", "📚 DSA"]
 author: "✍️ Het Patel (Hunterdii)"
 description: "✅ GFG solution to Move All Zeroes to End: rearrange array by moving zeros to end while maintaining order using efficient two-pointer technique. 🚀"
-date: 📅 2025-02-01
+date: 📅 2025-03-01
 ---
 
 # *01. Move All Zeroes to End*
