@@ -9,6 +9,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Solutions]()💡
 - [Day 1: Move All Zeroes to End](01(Mar)%20Move%20All%20Zeroes%20to%20End.md)0️⃣➡️📦
 - [Day 2: Trapping Rain Water](02(Mar)%20Trapping%20Rain%20Water.md)🌧️💧🏞️
+- [Day 3: Longest subarray with Atmost two distinct integers](03(Mar)%20Longest%20subarray%20with%20Atmost%20two%20distinct%20integers.md)🧩2️⃣⚖️
+- [Day 4: Max Xor Subarray of size K](04(Mar)%20Max%20Xor%20Subarray%20of%20size%20K.md)🔢📏📊
 
 ## Introduction
 
@@ -18,9 +20,12 @@ _Day 1(01 MAR) :_ Move All Zeroes to End
 
 _Day 2(02 MAR) :_ Trapping Rain Water 
 
-<!--_Day 3(03 MAR) :_ 
-_Day 4(04 MAR) :_ 
-_Day 5(05 MAR) :_ 
+_Day 3(03 MAR) :_ Longest subarray with Atmost two distinct integers 
+
+_Day 4(04 MAR) :_ Max Xor Subarray of size K 
+
+
+<!--_Day 5(05 MAR) :_ 
 _Day 6(06 MAR) :_ 
 _Day 7(07 MAR) :_ 
 _Day 8(08 MAR) :_ 
