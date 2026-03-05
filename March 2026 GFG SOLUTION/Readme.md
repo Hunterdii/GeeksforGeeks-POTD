@@ -11,6 +11,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 2: Trapping Rain Water](02(Mar)%20Trapping%20Rain%20Water.md)🌧️💧🏞️
 - [Day 3: Longest subarray with Atmost two distinct integers](03(Mar)%20Longest%20subarray%20with%20Atmost%20two%20distinct%20integers.md)🧩2️⃣⚖️
 - [Day 4: Max Xor Subarray of size K](04(Mar)%20Max%20Xor%20Subarray%20of%20size%20K.md)🔢📏📊
+- [Day 5: Longest Substring with K Uniques](05(Mar)%20Longest%20Substring%20with%20K%20Uniques.md)🔤📏🧩
 
 ## Introduction
 
@@ -24,9 +25,10 @@ _Day 3(03 MAR) :_ Longest subarray with Atmost two distinct integers
 
 _Day 4(04 MAR) :_ Max Xor Subarray of size K 
 
+_Day 5(05 MAR) :_ Longest Substring with K Uniques
 
-<!--_Day 5(05 MAR) :_ 
-_Day 6(06 MAR) :_ 
+
+<!--_Day 6(06 MAR) :_ 
 _Day 7(07 MAR) :_ 
 _Day 8(08 MAR) :_ 
 _Day 9(09 MAR) :_ 
