@@ -14,6 +14,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 5: Longest Substring with K Uniques](05(Mar)%20Longest%20Substring%20with%20K%20Uniques.md)🔤📏🧩
 - [Day 6: Smallest window containing all characters](06(Mar)%20Smallest%20window%20containing%20all%20characters.md)🔤🪟🔍
 - [Day 7: Dice throw](07(Mar)%20Dice%20throw.md)🎲🔢🎯
+- [Day 8: Pythagorean Triplet](08(Mar)%20Pythagorean%20Triplet.md)🟦📐🔺
 
 ## Introduction
 
@@ -33,9 +34,9 @@ _Day 6(06 MAR) :_ Smallest window containing all characters
 
 _Day 7(07 MAR) :_ Dice throw 
 
+_Day 8(08 MAR) :_ Pythagorean Triplet 
 
-<!--_Day 8(08 MAR) :_ 
-_Day 9(09 MAR) :_ 
+<!--_Day 9(09 MAR) :_ 
 _Day 10(10 MAR) :_
 _Day 11(11 MAR) :_
 _Day 12(12 MAR) :_
