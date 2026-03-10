@@ -15,6 +15,8 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 6: Smallest window containing all characters](06(Mar)%20Smallest%20window%20containing%20all%20characters.md)🔤🪟🔍
 - [Day 7: Dice throw](07(Mar)%20Dice%20throw.md)🎲🔢🎯
 - [Day 8: Pythagorean Triplet](08(Mar)%20Pythagorean%20Triplet.md)🟦📐🔺
+- [Day 9: Largest number in one swap](09(Mar)%20Largest%20number%20in%20one%20swap.md)🔢📊⬇️
+- [Day 10: Subarrays with First Element Minimum](10(Mar)%20Subarrays%20with%20First%20Element%20Minimum.md)1️⃣🏆🎯
 
 ## Introduction
 
@@ -36,9 +38,12 @@ _Day 7(07 MAR) :_ Dice throw
 
 _Day 8(08 MAR) :_ Pythagorean Triplet 
 
-<!--_Day 9(09 MAR) :_ 
-_Day 10(10 MAR) :_
-_Day 11(11 MAR) :_
+_Day 9(09 MAR) :_ Largest number in one swap 
+
+_Day 10(10 MAR) :_ Subarrays with First Element Minimum 
+
+
+<!--_Day 11(11 MAR) :_
 _Day 12(12 MAR) :_
 _Day 13(13 MAR) :_
 _Day 14(14 MAR) :_
