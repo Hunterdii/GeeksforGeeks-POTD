@@ -17,6 +17,7 @@ For discussions, questions, or doubts related to this solution, please visit my 
 - [Day 8: Pythagorean Triplet](08(Mar)%20Pythagorean%20Triplet.md)🟦📐🔺
 - [Day 9: Largest number in one swap](09(Mar)%20Largest%20number%20in%20one%20swap.md)🔢📊⬇️
 - [Day 10: Subarrays with First Element Minimum](10(Mar)%20Subarrays%20with%20First%20Element%20Minimum.md)1️⃣🏆🎯
+- [Day 11: Sum of subarray minimums](11(Mar)%20Sum%20of%20subarray%20minimums.md)🔢📊⬇️
 
 ## Introduction
 
@@ -42,9 +43,9 @@ _Day 9(09 MAR) :_ Largest number in one swap
 
 _Day 10(10 MAR) :_ Subarrays with First Element Minimum 
 
+_Day 11(11 MAR) :_ Sum of subarray minimums
 
-<!--_Day 11(11 MAR) :_
-_Day 12(12 MAR) :_
+<!--_Day 12(12 MAR) :_
 _Day 13(13 MAR) :_
 _Day 14(14 MAR) :_
 _Day 15(15 MAR) :_
