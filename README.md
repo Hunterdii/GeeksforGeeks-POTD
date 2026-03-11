@@ -117,6 +117,7 @@
 | 08 March  | Pythagorean Triplet 🟦📐🔺 |      | [Solution](</March%202026%20GFG%20SOLUTION/08(Mar)%20Pythagorean%20Triplet.md#%E2%80%8D-code-c>) | [Solution](</March%202026%20GFG%20SOLUTION/08(Mar)%20Pythagorean%20Triplet.md#%E2%80%8D-code-java>) | [Solution](</March%202026%20GFG%20SOLUTION/08(Mar)%20Pythagorean%20Triplet.md#-code-python>) |
 | 09 March  | Largest number in one swap 🔢📊⬇️ |      | [Solution](</March%202026%20GFG%20SOLUTION/09(Mar)%20Largest%20number%20in%20one%20swap.md#%E2%80%8D-code-c>) | [Solution](</March%202026%20GFG%20SOLUTION/09(Mar)%20Largest%20number%20in%20one%20swap.md#-code-java>) | [Solution](</March%202026%20GFG%20SOLUTION/09(Mar)%20Largest%20number%20in%20one%20swap.md#-code-python>) |
 | 10 March  | Subarrays with First Element Minimum 1️⃣🏆🎯   |      | [Solution](</March%202026%20GFG%20SOLUTION/10(Mar)%20Subarrays%20with%20First%20Element%20Minimum.md#%E2%80%8D-code-c>) | [Solution](</March%202026%20GFG%20SOLUTION/10(Mar)%20Subarrays%20with%20First%20Element%20Minimum.md#-code-java>) | [Solution](</March%202026%20GFG%20SOLUTION/10(Mar)%20Subarrays%20with%20First%20Element%20Minimum.md#-code-python>) |
+| 11 March  | Sum of subarray minimums 🔢📊⬇️   |      | [Solution](</March%202026%20GFG%20SOLUTION/11(Mar)%20Sum%20of%20subarray%20minimums.md#%E2%80%8D-code-c>) | [Solution](</March%202026%20GFG%20SOLUTION/11(Mar)%20Sum%20of%20subarray%20minimums.md#-code-java>) | [Solution](</March%202026%20GFG%20SOLUTION/11(Mar)%20Sum%20of%20subarray%20minimums.md#-code-python>) |
 
 
 ---
