@@ -445,30 +445,6 @@
 
 ---
 
-<div align="center">
-  <h3>🚀 Welcome to Our Coding Community! 🚀</h3>
-  <p>🌱 Dive into GeeksforGeeks Problem of the Day Solutions and level up your coding skills!</p>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Hunterdii.GeeksforGeeks-POTD" alt="Visitor Count" />
-</div>
-
-<!--Line-->
-<a href="https://github.com/Hunterdii/GeeksforGeeks-POTD" style="text-decoration: none;">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="70" width="100%">
-</a>
-
-<p align="center">
-  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD" style="text-decoration: none;">
-  <img src="https://socialify.git.ci/Hunterdii/GeeksforGeeks-POTD/image?description=1&descriptionEditable=Get%20daily%20solutions%20for%20GeeksforGeeks%20Problem%20of%20the%20Day%202024%20and%20become%20a%20coding%20pro!&font=Rokkitt&owner=1&pattern=Brick%20Wall&theme=Dark" alt="GeeksforGeeks POTD Banner" width="850"/>
-</p>
-
-<div align="center">
-  <h2>👥 Join the Conversation</h2>
-  <p>If you have any questions, insights, or solutions to share, don't miss out on our active <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions">Discussion Hub</a>! 🌟 Your participation is what makes this community great.</p>
-  <a href="https://github.com/Hunterdii/GeeksforGeeks-POTD/discussions/15" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Join%20Discussion%20Hub%20-%20Vote%20%26%20Suggest-blue?style=for-the-badge&logo=github&logoColor=white" alt="Discussion Badge">
-  </a>
-</div>
-
 ## **🌟 Smart AI Resume Analyzer - Final Year Project 🌟**
 
 Hello, GeeksforGeeks GitHub community! 🚀
